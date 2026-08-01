@@ -1,7 +1,9 @@
 ---
-// Two-step quote form — UI only in P1 (intake function wires up in P2).
-// Step 1: commitment-free project questions. Step 2: contact + consent.
+// Two-step quote form. Owner-specified order (2026-08-01):
+//   Step 1: contact details, all required. Captures the lead first.
+//   Step 2: project questions + consent, then submit.
 // Anti-spam: honeypot + time-to-complete stamp (Addendum A3, no OTP).
+// No pricing anywhere in this component: price is the specialist's to quote.
 
 interface Props {
   niche: any;
@@ -13,10 +15,10 @@ const CONSENT_VERSION = 'consent-v0-draft';
 const FORM_VERSION = 'p1-preview';
 ---
 
-<aside class="quote-card" aria-labelledby="quote-heading">
+<div class="quote-card">
   <p class="label">Get a quote</p>
-  <h2 id="quote-heading">Tell us about the project.</h2>
-  <p class="quote-sub">Free, no obligation.</p>
+  <h2>Tell us about the project.</h2>
+  <p class="quote-sub">Free, and no obligation.</p>
 
   <form
     id="quote-form"
@@ -26,24 +28,11 @@ const FORM_VERSION = 'p1-preview';
     data-consent-version={CONSENT_VERSION}
     novalidate
   >
-    <div class="step" data-step="1">
-      {niche.form_questions.map((q, i) => (
-        <fieldset>
-          <legend>{q.label}</legend>
-          {q.options.map((opt) => (
-            <label class="opt">
-              <input type="radio" name={q.key} value={opt} required={i === 0} />
-              <span>{opt}</span>
-            </label>
-          ))}
-        </fieldset>
-      ))}
-      <button type="button" class="btn" data-next>Continue</button>
-    </div>
+    <p class="steps"><span data-stepnum>Step 1 of 2</span></p>
 
-    <div class="step" data-step="2" hidden>
+    <div class="step" data-step="1">
       <label class="field">
-        <span>Name</span>
+        <span>Full name</span>
         <input type="text" name="name" autocomplete="name" required />
       </label>
       <label class="field">
@@ -55,23 +44,39 @@ const FORM_VERSION = 'p1-preview';
         <input type="tel" name="phone" autocomplete="tel" required />
       </label>
       <label class="field">
-        <span>Street address</span>
-        <input type="text" name="address" autocomplete="street-address" />
+        <span>Property address</span>
+        <input type="text" name="address" autocomplete="street-address" required />
       </label>
+      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp" />
+      <button type="button" class="btn" data-next>Continue</button>
+    </div>
+
+    <div class="step" data-step="2" hidden>
+      {niche.form_questions.map((q) => (
+        <fieldset>
+          <legend>{q.label}</legend>
+          {q.options.map((opt) => (
+            <label class="opt">
+              <input type="radio" name={q.key} value={opt} required />
+              <span>{opt}</span>
+            </label>
+          ))}
+        </fieldset>
+      ))}
       <label class="consent">
         <input type="checkbox" name="consent" required />
         <span>
-          I agree that Quotd and up to three matched specialists may contact me
-          about this request by phone, email or text. Consent is not a
-          condition of purchase. <em>(Draft wording, pending legal review.)</em>
+          I agree that Quotd and the specialists matched to this request may
+          contact me by phone, email or text. Consent is not a condition of
+          purchase. <em>(Draft wording, pending legal review.)</em>
         </span>
       </label>
-      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp" />
       <button type="submit" class="btn">Get quoted</button>
+      <button type="button" class="back" data-back>Back</button>
       <p class="quote-note" data-status role="status"></p>
     </div>
   </form>
-</aside>
+</div>
 
 <script>
   const form = document.getElementById('quote-form');
@@ -79,16 +84,35 @@ const FORM_VERSION = 'p1-preview';
     const startedAt = Date.now();
     const step1 = form.querySelector('[data-step="1"]');
     const step2 = form.querySelector('[data-step="2"]');
+    const stepnum = form.querySelector('[data-stepnum]');
+
+    const show = (n) => {
+      step1?.toggleAttribute('hidden', n !== 1);
+      step2?.toggleAttribute('hidden', n !== 2);
+      if (stepnum) stepnum.textContent = `Step ${n} of 2`;
+    };
+
     form.querySelector('[data-next]')?.addEventListener('click', () => {
-      step1?.setAttribute('hidden', '');
-      step2?.removeAttribute('hidden');
+      // Validate only step 1's fields before advancing.
+      const fields = step1?.querySelectorAll('input[required]') ?? [];
+      for (const f of fields) {
+        if (!(f instanceof HTMLInputElement)) continue;
+        if (!f.checkValidity()) {
+          f.reportValidity();
+          return;
+        }
+      }
+      show(2);
       step2?.querySelector('input')?.focus();
     });
+
+    form.querySelector('[data-back]')?.addEventListener('click', () => show(1));
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const status = form.querySelector('[data-status]');
       if (!form.reportValidity()) return;
-      // P1 preview: intake endpoint ships in P2. Payload shape is final:
+      // P1 preview: intake endpoint ships in P2. Payload shape is final.
       const payload = {
         niche: form.dataset.niche,
         city: form.dataset.city,
@@ -98,10 +122,7 @@ const FORM_VERSION = 'p1-preview';
         fields: Object.fromEntries(new FormData(form).entries()),
       };
       console.debug('quote payload (preview)', payload);
-      if (status) {
-        status.textContent =
-          'Preview build. The request form goes live at launch.';
-      }
+      if (status) status.textContent = 'Preview build. The form goes live at launch.';
     });
   }
 </script>
@@ -130,6 +151,16 @@ const FORM_VERSION = 'p1-preview';
     margin-bottom: var(--space-2);
     padding-bottom: var(--space-2);
     border-bottom: 1px solid var(--rule);
+  }
+
+  .steps {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: var(--space-2);
   }
 
   fieldset {
@@ -168,18 +199,23 @@ const FORM_VERSION = 'p1-preview';
 
   .field input {
     width: 100%;
-    padding: 0.55rem 0.6rem;
+    padding: 0.6rem;
     border: 1px solid var(--rule);
     background: var(--paper);
     color: var(--ink);
     font: inherit;
   }
 
+  .field input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -1px;
+  }
+
   .consent {
     display: flex;
     gap: 0.5rem;
     align-items: flex-start;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     color: var(--ink-soft);
     margin-bottom: var(--space-2);
   }
@@ -206,6 +242,18 @@ const FORM_VERSION = 'p1-preview';
 
   .btn:hover {
     background: var(--ink);
+  }
+
+  .back {
+    display: block;
+    margin: 0.6rem auto 0;
+    background: none;
+    border: 0;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   .quote-note {

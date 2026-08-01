@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import QuoteForm from '../../components/QuoteForm.astro';
-import { getNiche, getCity, getPages, getModules, collectSources } from '../../lib/data.js';
+import { getNiche, getCity, getPages, getModules } from '../../lib/data.js';
 
 export function getStaticPaths() {
   return getPages().map((p) => ({ params: { niche: p.niche, city: p.city }, props: { status: p.status } }));
@@ -13,7 +13,6 @@ const { status } = Astro.props;
 const niche = getNiche(nicheId);
 const city = getCity(citySlug);
 const modules = getModules(citySlug, nicheId);
-const sources = collectSources(modules);
 
 const contentFiles = import.meta.glob('../../../data/content/*.json', { eager: true });
 const content = Object.values(contentFiles)
@@ -26,41 +25,27 @@ const climate = modules.climate_curing;
 
 const MONTH_FULL = { jan: 'January', feb: 'February', mar: 'March', apr: 'April', may: 'May', jun: 'June', jul: 'July', aug: 'August', sep: 'September', oct: 'October', nov: 'November', dec: 'December' };
 const monthFull = (m) => MONTH_FULL[m] ?? m;
-const monthShort = (m) => monthFull(m).slice(0, 3);
 const window_ = climate?.derived?.limewash_exterior_window;
 
-const consumerTerm = niche.consumer_terms[1] ?? niche.consumer_terms[0]; // plural person-form
+const consumerTerm = niche.consumer_terms[1] ?? niche.consumer_terms[0];
 const h1 = `${consumerTerm.charAt(0).toUpperCase()}${consumerTerm.slice(1)} in ${city.name}`;
-const year = 2026;
-const title = `${h1}: Cost, Season & Who Does It (${year})`;
+const title = `${h1}: Season, Heritage Rules & Getting a Quote`;
 const description = content.answer.join(' ').slice(0, 155);
+const hero = content.hero ?? {};
 
-// Stat tiles render only from present, non-null module data — never defaults.
+// Label/value pairs. A tile renders only from real module data, never a default.
 const tiles = [];
-if (housing?.period_of_construction?.pre_1961_pct != null) {
+if (window_?.full_months?.length) {
   tiles.push({
-    stat: `${housing.period_of_construction.pre_1961_pct}%`,
-    caption: `of ${city.name} homes built before 1961, the masonry this finish suits`,
+    label: 'Season',
+    value: `${monthFull(window_.full_months[0])} to ${monthFull(window_.full_months.at(-1))}`,
   });
 }
 if (housing?.heritage?.hcd_count != null) {
-  tiles.push({
-    stat: String(housing.heritage.hcd_count),
-    caption: 'Heritage Conservation Districts, where exterior changes can need a permit',
-  });
+  tiles.push({ label: 'Heritage districts', value: `${housing.heritage.hcd_count} in ${city.name}` });
 }
-if (cost?.job_cost_anchors?.length) {
-  tiles.push({
-    stat: 'CAD $4–8',
-    caption: 'per sq ft, typical exterior limewash on brick',
-  });
-}
-if (window_?.full_months?.length) {
-  const w = window_.full_months;
-  tiles.push({
-    stat: `${monthShort(w[0])}–${monthShort(w[w.length - 1])}`,
-    caption: 'when exterior work can actually be done here',
-  });
+if (housing?.period_of_construction?.pre_1961_pct != null) {
+  tiles.push({ label: 'Pre-1961 homes', value: `${housing.period_of_construction.pre_1961_pct}%` });
 }
 
 const breadcrumb = {
@@ -97,12 +82,30 @@ const serviceSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   </Fragment>
 
-  <div class="money">
-    <article class="guide">
-      <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="/">Quotd</a> · <span>{niche.name}</span> · <span>{city.name}</span>
-      </nav>
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Quotd</a> <span aria-hidden="true">/</span> <span>{niche.name}</span>
+    <span aria-hidden="true">/</span> <span>{city.name}</span>
+  </nav>
 
+  <div class="money">
+    <div class="main">
+      {hero.image ? (
+        <figure class="hero">
+          <img src={hero.image} alt={hero.alt} width="1200" height="750" fetchpriority="high" />
+          {hero.badges?.length > 0 && (
+            <div class="badges">{hero.badges.map((b) => <span class="badge">{b}</span>)}</div>
+          )}
+          {hero.chip && <span class="chip">{hero.chip}</span>}
+          {hero.caption && <figcaption>{hero.caption}</figcaption>}
+        </figure>
+      ) : (
+        <div class="hero hero-empty">
+          <span>Hero photograph</span>
+          <span class="hero-empty-note">{hero.pending ?? 'Real limewashed brick, Toronto project. Awaiting owner photography.'}</span>
+        </div>
+      )}
+
+      <p class="kicker">{niche.name} in {city.name}</p>
       <h1>{h1}</h1>
 
       <div class="answer">
@@ -110,14 +113,14 @@ const serviceSchema = {
       </div>
 
       {tiles.length > 0 && (
-        <section class="databand" aria-label="Local data">
+        <div class="databand" aria-label="Local facts">
           {tiles.map((t) => (
             <div class="tile">
-              <span class="stat num">{t.stat}</span>
-              <span class="cap">{t.caption}</span>
+              <span class="tile-label">{t.label}</span>
+              <span class="tile-value num">{t.value}</span>
             </div>
           ))}
-        </section>
+        </div>
       )}
 
       <section>
@@ -145,26 +148,6 @@ const serviceSchema = {
         </section>
       )}
 
-      {cost && (
-        <section>
-          <h2>What limewash costs in {city.name}</h2>
-          <table class="costs num">
-            <thead>
-              <tr><th>Project</th><th>Typical range</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Exterior limewash on brick</td><td>$4 to $8 / sq ft</td></tr>
-              <tr><td>Exterior, full house</td><td>$6 to $12 / sq ft</td></tr>
-              <tr><td>Interior decorative work</td><td>from $12 / sq ft</td></tr>
-            </tbody>
-          </table>
-          <p class="fine">
-            These are published ranges, not quotes. Surface condition, access
-            and prep drive the spread, and HST applies on top.
-          </p>
-        </section>
-      )}
-
       {housing?.heritage && (
         <section>
           <h2>Check whether you're in a heritage district</h2>
@@ -188,7 +171,7 @@ const serviceSchema = {
       </section>
 
       <section>
-        <h2>Questions {city.name} homeowners actually ask</h2>
+        <h2>Frequently asked questions</h2>
         {content.faqs.map((f) => (
           <details class="faq">
             <summary>{f.q}</summary>
@@ -201,27 +184,44 @@ const serviceSchema = {
         Local figures on this page come from Statistics Canada, Environment and
         Climate Change Canada and the City of Toronto. Last checked 1 August 2026.
       </p>
-    </article>
-
-    <div class="rail" id="quote">
-      <QuoteForm niche={niche} city={city} />
     </div>
+
+    <aside class="rail" id="quote">
+      <QuoteForm niche={niche} city={city} />
+    </aside>
   </div>
 
   <a class="cta-bar" href="#quote">Get a quote</a>
 </Base>
 
 <style>
+  .crumbs {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin-bottom: var(--space-2);
+  }
+
+  .crumbs a {
+    text-decoration: none;
+  }
+
+  .crumbs span[aria-hidden] {
+    color: var(--ink-faint);
+    padding-inline: 0.15rem;
+  }
+
   .money {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: var(--space-4);
+    gap: var(--space-3);
+    align-items: start;
   }
 
   @media (min-width: 62rem) {
     .money {
-      grid-template-columns: minmax(0, 1fr) 22rem;
-      align-items: start;
+      grid-template-columns: minmax(0, 1fr) 21rem;
+      gap: var(--space-4);
     }
 
     .rail {
@@ -234,22 +234,98 @@ const serviceSchema = {
     }
   }
 
-  .crumbs {
+  .hero {
+    margin: 0 0 var(--space-3);
+    position: relative;
+  }
+
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .hero figcaption {
     font-family: var(--sans);
-    font-size: var(--step--1);
+    font-size: 0.78rem;
     color: var(--ink-soft);
-    margin-bottom: var(--space-2);
+    margin-top: 0.5rem;
+  }
+
+  .badges {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .badge,
+  .chip {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    background: var(--paper);
+    color: var(--ink);
+    padding: 0.3rem 0.6rem;
+  }
+
+  .chip {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .hero-empty {
+    aspect-ratio: 16 / 10;
+    border: 1px dashed var(--rule);
+    background: var(--paper-deep);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    text-align: center;
+    padding: var(--space-2);
+  }
+
+  .hero-empty span:first-child {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .hero-empty-note {
+    font-size: var(--step--1);
+    color: var(--ink-faint);
+    max-width: 22rem;
+  }
+
+  .kicker {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
   }
 
   h1 {
-    font-size: clamp(var(--step-3), 5vw, var(--step-4));
+    font-size: clamp(var(--step-3), 4.5vw, var(--step-4));
     margin-bottom: var(--space-2);
   }
 
   .answer {
     font-size: var(--step-1);
     line-height: 1.5;
-    max-width: 42rem;
+    max-width: 40rem;
   }
 
   .answer p {
@@ -258,37 +334,40 @@ const serviceSchema = {
 
   .databand {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 1px;
-    background: var(--rule);
-    border-block: 1px solid var(--rule);
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    border: 1px solid var(--rule);
     margin-block: var(--space-3) var(--space-4);
   }
 
   .tile {
-    background: var(--paper);
-    padding: var(--space-2);
+    padding: 0.9rem 1rem;
+    border-right: 1px solid var(--rule);
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 0.3rem;
   }
 
-  .stat {
-    font-size: var(--step-2);
-    font-weight: 600;
-    letter-spacing: -0.01em;
+  .tile:last-child {
+    border-right: 0;
   }
 
-  .cap {
+  .tile-label {
     font-family: var(--sans);
-    font-size: 0.8rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: var(--ink-soft);
-    line-height: 1.4;
+  }
+
+  .tile-value {
+    font-size: var(--step-0);
+    font-weight: 600;
   }
 
   section {
     margin-bottom: var(--space-4);
-    max-width: 42rem;
+    max-width: 40rem;
   }
 
   h2 {
@@ -309,7 +388,7 @@ const serviceSchema = {
 
   .costs th {
     font-family: var(--sans);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     text-align: left;
@@ -353,15 +432,15 @@ const serviceSchema = {
   .provenance {
     border-top: 1px solid var(--rule);
     padding-top: var(--space-2);
-    max-width: 42rem;
+    max-width: 40rem;
   }
 
   .cta-bar {
     position: fixed;
     inset-inline: 0;
     bottom: 0;
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--accent);
+    color: #fff;
     font-family: var(--sans);
     font-weight: 600;
     text-align: center;

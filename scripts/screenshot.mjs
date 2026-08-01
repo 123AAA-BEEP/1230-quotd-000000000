@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const OUT = '/tmp/claude-0/-home-user-1230-quotd-000000000/20b5d6cf-1e28-50f0-9baa-b4be5c86a8fb/scratchpad';
+const URL = 'http://localhost:4322/limewash/toronto-on/';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const p = await b.newPage({ viewport: { width: 1280, height: 1600 } });
+await p.goto(URL, { waitUntil: 'networkidle' });
+await p.screenshot({ path: OUT + '/top.png' });
+await p.click('[data-next]').catch(() => {});
+await p.screenshot({ path: OUT + '/step2.png' });
+await b.close();
