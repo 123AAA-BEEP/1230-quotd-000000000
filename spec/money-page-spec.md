@@ -21,7 +21,8 @@ Order matters: value first, form early but not obnoxious. Desktop is a 12-col as
 - **Step 1 (commitment-free):** niche-specific project questions from `form_questions` (e.g. surface, interior/exterior, approximate size, timeline: ASAP / 1–3 months / researching). Progress indicator. No contact fields visible.
 - **Step 2:** name, email, phone, street address (autocomplete), TCPA/CASL consent checkboxes (versioned text, timestamped).
 - Submit → validate → write to Supabase `leads` → email notification to leads@getquotd.com. No SMS OTP at launch (Addendum A3); honeypot + time-to-complete + format validation.
-- Form microcopy (policy claims only): "Free, no obligation." · "Up to 3 quotes from specialists." Post-submit sets honest expectations: "A specialist typically responds within 2 business days" appears **only after** we can measure it; until then: "We'll confirm by email and get your request to the right specialists."
+- CTA copy is singular and service-like: **"Get a quote"** / brand verb "Get quoted." Never quote-count copy ("up to 3 quotes"), never platform-mechanics talk — the site should feel like the service, not like a marketplace that shops your request around (Addendum A9). The max-3 routing rule stays operational policy and appears only where legally required (consent fine print discloses who may contact the user).
+- Form microcopy (policy claims only): "Free, no obligation." Post-submit sets honest expectations: "A specialist typically responds within 2 business days" appears **only after** we can measure it; until then: "We'll confirm by email and get your request to the right specialists."
 - No roster meta-copy anywhere on or around the form (A1).
 
 ### 4. Suitability verdict — "should you even do this here?"
