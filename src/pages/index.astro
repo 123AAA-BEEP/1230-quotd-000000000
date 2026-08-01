@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro';
+
+// Curated from data/niches (Tier A) — display names only, no dead links.
+const trades = [
+  'limewash painting',
+  'venetian plaster',
+  'roman clay finishes',
+  'historic window restoration',
+  'slate roof repair',
+  'french drains',
+  'basement egress windows',
+  'herringbone paver driveways',
+  'heated driveways',
+  'sauna builds',
+  'radon mitigation',
+  'trenchless sewer repair',
+  'pool removal',
+  'holiday lighting',
+];
+---
+
+<Base
+  title="Quotd — Get quoted for the jobs nobody seems to do"
+  description="Quotd gets homeowners quotes from specialists in unusual, high-skill home services — limewash, venetian plaster, french drains, slate repair and more. Toronto first, then across North America."
+>
+  <article>
+    <p class="label">Rare home services</p>
+    <h1>Get quoted for the jobs nobody seems to do.</h1>
+    <p class="lede">
+      Some projects defeat the contractor directory: a house that wants limewash,
+      a wall that wants venetian plaster, a wet basement that needs a real french
+      drain, a slate roof that deserves mending instead of replacement. Quotd finds
+      the specialists who actually do this work and gets you a quote.
+    </p>
+
+    <hr class="rule" />
+
+    <section>
+      <p class="label">The work</p>
+      <p class="trades">
+        {trades.join(' · ')} — and dozens more trades that are hard to find and
+        easy to get wrong.
+      </p>
+    </section>
+
+    <section>
+      <p class="label">The approach</p>
+      <p>
+        Every Quotd city guide is built on public local data — climate normals,
+        housing stock, permit records — because advice that ignores where you
+        live is guesswork.
+      </p>
+    </section>
+
+    <section>
+      <p class="label">When</p>
+      <p>
+        First city: Toronto. Then across North America. Launching autumn 2026.
+      </p>
+    </section>
+  </article>
+</Base>
+
+<style>
+  h1 {
+    font-size: clamp(var(--step-3), 6vw, var(--step-4));
+    margin-block: var(--space-2) var(--space-3);
+  }
+
+  .lede {
+    font-size: var(--step-1);
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: var(--space-4);
+  }
+
+  .rule {
+    margin-bottom: var(--space-4);
+  }
+
+  section {
+    margin-bottom: var(--space-4);
+  }
+
+  section .label {
+    margin-bottom: var(--space-1);
+  }
+
+  .trades {
+    color: var(--ink-soft);
+  }
+</style>
