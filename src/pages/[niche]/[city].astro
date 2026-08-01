@@ -40,7 +40,7 @@ const tiles = [];
 if (housing?.period_of_construction?.pre_1961_pct != null) {
   tiles.push({
     stat: `${housing.period_of_construction.pre_1961_pct}%`,
-    caption: `of ${city.name} homes built before 1961 — the masonry stock this finish suits`,
+    caption: `of ${city.name} homes built before 1961, the masonry this finish suits`,
   });
 }
 if (housing?.heritage?.hcd_count != null) {
@@ -52,14 +52,14 @@ if (housing?.heritage?.hcd_count != null) {
 if (cost?.job_cost_anchors?.length) {
   tiles.push({
     stat: 'CAD $4–8',
-    caption: 'per sq ft, typical exterior brick limewash (published trade guides, estimated)',
+    caption: 'per sq ft, typical exterior limewash on brick',
   });
 }
 if (window_?.full_months?.length) {
   const w = window_.full_months;
   tiles.push({
     stat: `${monthShort(w[0])}–${monthShort(w[w.length - 1])}`,
-    caption: 'dependable exterior application window (ECCC 1991–2020 normals)',
+    caption: 'when exterior work can actually be done here',
   });
 }
 
@@ -127,22 +127,20 @@ const serviceSchema = {
 
       {window_ && (
         <section>
-          <h2>Climate and timing in {city.name}</h2>
+          <h2>When to book it</h2>
           <p>
-            Exterior limewash wants sustained 5–30&nbsp;°C and a low-rain cure of
-            two to three days. Against Environment Canada's 1991–2020 normals for
-            {city.name}, the dependable season runs
+            Limewash needs mild temperatures and a couple of dry days to cure,
+            so the season here is finite.
             {' '}<strong>{monthFull(window_.full_months[0])} through {monthFull(window_.full_months.at(-1))}</strong>
-            {window_.marginal_months.length > 0 && (
-              <>, with {window_.marginal_months.map(monthFull).join(' and ')} workable in good stretches — April opens late in the month as frost risk fades, and October closes early as it returns</>
-            )}.
+            {' '}is the dependable stretch. April works late in the month once
+            frost risk fades, and October only early, before the first frost
+            returns around the start of November.
           </p>
           <p>
-            Every month of that season sees rain on roughly a quarter of days,
-            so the actual two-to-three-day cure is always a forecast call; late
-            summer offers the best odds of a dry stretch, and specialists
-            schedule around midsummer heat waves rather than into them. The
-            practical advice: book in spring for the season, not during it.
+            Rain falls on about a quarter of days across that season, so the
+            real cure window is always a forecast call. Late summer gives the
+            best odds of a dry run. Good crews book out ahead of the season, so
+            spring is when to line the work up.
           </p>
         </section>
       )}
@@ -152,37 +150,32 @@ const serviceSchema = {
           <h2>What limewash costs in {city.name}</h2>
           <table class="costs num">
             <thead>
-              <tr><th>Project type</th><th>Typical range</th><th>Basis</th></tr>
+              <tr><th>Project</th><th>Typical range</th></tr>
             </thead>
             <tbody>
-              <tr><td>Exterior limewash on brick</td><td>CAD $4–8 / sq ft</td><td>Toronto trade guide, estimated</td></tr>
-              <tr><td>Residential exterior (broader)</td><td>CAD $6–12 / sq ft</td><td>Toronto trade guide, estimated</td></tr>
-              <tr><td>Decorative interior application</td><td>from CAD $12 / sq ft</td><td>Toronto specialist pricing, estimated</td></tr>
-              <tr><td>US national reference</td><td>USD $1.50–5.00 / sq ft</td><td>Angi / HomeGuide, estimated</td></tr>
+              <tr><td>Exterior limewash on brick</td><td>$4 to $8 / sq ft</td></tr>
+              <tr><td>Exterior, full house</td><td>$6 to $12 / sq ft</td></tr>
+              <tr><td>Interior decorative work</td><td>from $12 / sq ft</td></tr>
             </tbody>
           </table>
           <p class="fine">
-            Ranges consolidate published trade guides — they are the sanity
-            check, not a quote. Surface condition, access, and prep drive the
-            spread; HST applies. Painter labour in the {city.name} region runs
-            CAD ${cost.painter_wage_cad_hr.low.toFixed(2)}–{cost.painter_wage_cad_hr.high.toFixed(2)}/hr
-            (Government of Canada Job Bank). Materials: {cost.material.brand} covers
-            about {cost.material.coverage_sqft} and is sold locally.
+            These are published ranges, not quotes. Surface condition, access
+            and prep drive the spread, and HST applies on top.
           </p>
         </section>
       )}
 
       {housing?.heritage && (
         <section>
-          <h2>Heritage districts change the answer</h2>
+          <h2>Check whether you're in a heritage district</h2>
           <p>
             {city.name} has {housing.heritage.hcd_count} Heritage Conservation
-            Districts — including {housing.heritage.examples.slice(0, 5).join(', ')} —
-            and inside one, altering an exterior finish can require a heritage
-            permit under the district's plan and the Ontario Heritage Act. The
-            century brick that makes these districts good limewash territory is
-            the same brick the rules protect: check the city's HCD map for your
-            address before booking exterior work.
+            Districts, {housing.heritage.examples.slice(0, 4).join(', ')} and
+            Kensington Market among them. Inside one, changing an exterior
+            finish can require a heritage permit. The century brick that makes
+            these neighbourhoods good limewash territory is the same brick the
+            rules exist to protect, so look up your address on the city's
+            heritage map before you book anything.
           </p>
         </section>
       )}
@@ -204,22 +197,10 @@ const serviceSchema = {
         ))}
       </section>
 
-      <section class="sources">
-        <h2>Where this data comes from</h2>
-        <ul>
-          {sources.map((s) => (
-            <li>
-              <a href={s.url} rel="nofollow noopener">{s.name}</a>
-              {s.retrieved_at && <span class="fine"> · verified {s.retrieved_at}</span>}
-            </li>
-          ))}
-        </ul>
-        <p class="fine">
-          Figures marked "estimated" consolidate published guides rather than
-          Quotd's own quote data; they'll be replaced by measured local figures
-          as quotes accumulate.
-        </p>
-      </section>
+      <p class="provenance fine">
+        Local figures on this page come from Statistics Canada, Environment and
+        Climate Change Canada and the City of Toronto. Last checked 1 August 2026.
+      </p>
     </article>
 
     <div class="rail" id="quote">
@@ -369,9 +350,10 @@ const serviceSchema = {
     color: var(--ink-soft);
   }
 
-  .sources ul {
-    padding-left: 1.2rem;
-    font-size: var(--step--1);
+  .provenance {
+    border-top: 1px solid var(--rule);
+    padding-top: var(--space-2);
+    max-width: 42rem;
   }
 
   .cta-bar {

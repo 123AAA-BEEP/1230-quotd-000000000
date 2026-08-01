@@ -3,8 +3,8 @@
 
 :root {
   /* color */
-  --paper: #faf7f2;
-  --paper-deep: #f3ede3;
+  --paper: #ffffff;
+  --paper-deep: #f7f4ef;
   --ink: #1c1917;
   --ink-soft: #57534e;
   --ink-faint: #a8a29e;
@@ -40,6 +40,7 @@
 html {
   background: var(--paper);
   color: var(--ink);
+  color-scheme: light;
   font-family: var(--serif);
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -101,14 +102,5 @@ a:hover {
   font-variant-numeric: tabular-nums;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #191614;
-    --paper-deep: #211d1a;
-    --ink: #ece7df;
-    --ink-soft: #b3aca2;
-    --ink-faint: #6f6961;
-    --accent: #c97f5e;
-    --rule: rgba(236, 231, 223, 0.16);
-  }
-}
+/* Light only, by owner direction (2026-08-01). Editorial paper look; no dark
+   variant. color-scheme keeps form controls from inverting on dark systems. */

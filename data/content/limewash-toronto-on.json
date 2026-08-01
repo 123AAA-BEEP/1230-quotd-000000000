@@ -1,53 +1,58 @@
 {
   "niche": "limewash",
   "city": "toronto-on",
-  "content_version": "p1-draft-1",
+  "content_version": "p1-draft-2",
   "written_at": "2026-08-01",
-  "grounding_note": "Every number in this prose traces to data/modules/*. Prose regenerates when modules change; numbers are never edited here directly.",
+  "voice_rules": [
+    "No em dashes. No 'judged against', no citing sources inside body copy.",
+    "Data informs the writing; the writing does not report the data. A Toronto reader knows the weather. Tell them what to DO about it.",
+    "Short sentences. Plain words. Say the awkward thing rather than hedging."
+  ],
+  "grounding_note": "Numbers here trace to data/modules/*. Provenance lives in the data files and the machine-readable twin, not in reader-facing prose.",
   "answer": [
-    "Limewash is specialist mineral work, and Toronto is unusually good territory for it: about three in ten homes here were built before 1961, most of them in the kind of brick that takes limewash beautifully.",
-    "Typical exterior brick work in Toronto runs roughly CAD $4–8 per square foot (estimated — firm quotes vary with surface condition and access), and decorative interior work starts higher.",
-    "If your house sits in one of the city's 27 Heritage Conservation Districts, read the permit question below before booking anything."
+    "Most painters don't offer limewash. It is mineral work with its own rules, and Toronto happens to be good territory for it: roughly a third of the housing stock here is pre-1961 brick, which is the surface limewash was made for.",
+    "Exterior work on brick generally runs $4 to $8 per square foot in the city. Interior decorative work starts higher. What a real quote costs depends on what shape the wall is in.",
+    "If your house sits in a heritage district, read the permit question before you book anything."
   ],
   "verdict": {
-    "heading": "Should you limewash a Toronto house at all?",
+    "heading": "Should you limewash a Toronto house?",
     "paragraphs": [
-      "The best candidates are unpainted brick and masonry — which Toronto has in unusual depth. If you own century brick in a district like Cabbagetown or Harbord Village, limewash is one of the few finishes that suits the wall, breathes with it, and can be renewed rather than stripped.",
-      "Already-painted brick is a different job: limewash won't bond to acrylic paint the way it bonds to bare masonry. The honest routes are a mineral-primer system or a german-schmear-style mortar finish — and a specialist should look at the substrate before anyone quotes you.",
-      "Interior work on drywall or plaster is open to almost any home, and a single accent wall is a reasonable DIY weekend with a quality limewash paint. A full exterior is not: substrate assessment, weather windows, and scaffolding make it specialist work.",
-      "If you want the look permanently and never want to re-coat, brick staining is the alternative worth pricing — but it is a one-way door. Limewash weathers and can be refreshed; stain is forever."
+      "The best candidate is unpainted brick, and Toronto has a lot of it. On century brick in Cabbagetown or Harbord Village, limewash is one of the few finishes that actually suits the wall. It breathes with the masonry instead of sealing it, and it can be renewed rather than stripped.",
+      "Already painted brick is a different job. Limewash bonds by soaking into porous masonry, and acrylic paint blocks that. What you likely need is a mineral primer system or a german schmear style mortar finish. Anyone quoting you without looking at the substrate first is guessing.",
+      "Interior work on drywall or plaster is open to almost any home. A single accent wall is a reasonable weekend if you are handy. A full exterior is not: substrate assessment, weather windows and scaffolding put it firmly in specialist territory.",
+      "If you want the look permanently and never want to recoat, price brick staining instead. Just know it is a one way door. Limewash weathers and can be refreshed. Stain is forever."
     ]
   },
   "process": {
-    "heading": "How the work actually goes",
+    "heading": "How the work goes",
     "steps": [
-      "A specialist looks at the wall first — substrate, previous coatings, mortar condition. This is where painted-brick and repair issues surface.",
-      "A sample panel goes up on your actual wall. Limewash reads differently on every brick; nobody serious skips this.",
-      "You get a firm quote by surface area and condition — the per-square-foot ranges on this page are the sanity check, not the quote.",
-      "Exterior work gets scheduled into a weather window: mild temperatures and a dry cure period, booked ahead during the season.",
-      "Application is typically two coats with cure time between; expect days, not hours, and some patina as it settles — that is the finish working as designed."
+      "A specialist looks at the wall first: substrate, previous coatings, mortar condition. This is where painted brick and repair problems surface.",
+      "A sample panel goes up on your actual wall. Limewash reads differently on every brick, and nobody serious skips this step.",
+      "You get a firm quote by surface area and condition. The ranges on this page are a sanity check, not the quote.",
+      "Exterior work gets booked into a weather window, which means scheduling ahead of the season rather than during it.",
+      "Application is usually two coats with cure time between. Expect days, not hours, and expect the finish to settle into a patina. That is the material working as designed."
     ]
   },
   "faqs": [
     {
       "q": "Do I need a permit to limewash a house in Toronto?",
-      "a": "Outside heritage districts, no — limewash is finish work, not construction. But Toronto has 27 Heritage Conservation Districts (Cabbagetown, Wychwood Park, Harbord Village, South Rosedale, Queen Street West, and Kensington Market among them), and inside one, altering an exterior finish can require a heritage permit under the district's plan and the Ontario Heritage Act. Check your address against the city's HCD map before booking exterior work."
+      "a": "Outside a heritage district, no. Limewash is finish work, not construction. But Toronto has 27 Heritage Conservation Districts, including Cabbagetown, Wychwood Park, Harbord Village, South Rosedale and Kensington Market. Inside one, changing an exterior finish can require a heritage permit. Check your address against the city's heritage map before you book exterior work."
     },
     {
       "q": "What does limewash cost in Toronto?",
-      "a": "Published Toronto trade guides put exterior limewash on brick around CAD $4–8 per square foot and residential exterior work more broadly at $6–12, with decorative interior application starting around $12 (all estimates; HST typically on top). US national references run USD $1.50–5.00 per square foot. Surface condition, access, and prep drive the spread — which is why the sample-panel step matters."
+      "a": "Exterior limewash on brick generally lands between $4 and $8 per square foot, with broader exterior work quoted up to about $12. Decorative interior application starts around $12. Add HST. The spread comes down to surface condition, access and how much prep the wall needs, which is why the sample panel and site visit matter before anyone commits to a number."
     },
     {
-      "q": "Can you limewash brick that's already been painted?",
-      "a": "Not directly — limewash bonds by soaking into porous masonry, and a coat of acrylic paint blocks that. Painted brick usually means a mineral-primer system or a german-schmear-style finish instead, which is why a substrate check is the first step of any serious quote."
+      "q": "Can you limewash brick that has already been painted?",
+      "a": "Not directly. Limewash works by soaking into porous masonry, and a coat of acrylic paint stops it from getting in. Painted brick usually means a mineral primer system or a german schmear style finish instead. This is the single most common reason a limewash quote changes after the site visit."
     },
     {
-      "q": "Limewash or regular paint — why choose limewash for brick?",
-      "a": "Limewash is breathable: moisture in the wall escapes instead of blistering a sealed film, which is exactly what old solid-masonry walls need. It also ages by softening rather than peeling. The trade-off is a mineral patina that weathers over years and wants occasional renewal — people who want a static, uniform film are better served by masonry paint, knowing it commits the wall to repainting cycles."
+      "q": "Why limewash instead of masonry paint?",
+      "a": "Limewash is breathable. Moisture in an old solid masonry wall escapes through it instead of blistering underneath a sealed film, which is exactly what those walls need. It also ages by softening rather than peeling. The trade off is a finish that weathers and wants renewal every several years. If you want a static, uniform film and are fine repainting on a cycle, masonry paint is the honest choice."
     },
     {
       "q": "When should exterior limewash happen in Toronto?",
-      "a": "The dependable season is May through September, judged against Environment Canada's 1991–2020 normals for Toronto: those are the months where nights as well as days stay in the 5–30 °C range limewash needs for its two-to-three-day cure. April and October are workable in good stretches — April late in the month once early frost fades, October only early, before the city's roughly November 1 first frost approaches. Rain falls on about a quarter of season days, so the actual cure window is always a forecast call; August and September give the best odds of a dry stretch. Book ahead of the season, not into it."
+      "a": "May through September is the dependable stretch. April can work late in the month once frost risk fades, and October only early, before the first frost comes back around the start of November. Rain falls on about a quarter of days through the season, so the actual cure window is always a forecast call. Late summer gives the best odds of a dry run. Book in spring for the season rather than trying to squeeze in during it."
     }
   ]
 }

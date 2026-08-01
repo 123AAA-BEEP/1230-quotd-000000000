@@ -62,9 +62,8 @@ const FORM_VERSION = 'p1-preview';
         <input type="checkbox" name="consent" required />
         <span>
           I agree that Quotd and up to three matched specialists may contact me
-          about this request by phone, email, or text. Consent is not a
-          condition of purchase. <em>(Draft wording — final text set with legal
-          review before launch.)</em>
+          about this request by phone, email or text. Consent is not a
+          condition of purchase. <em>(Draft wording, pending legal review.)</em>
         </span>
       </label>
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp" />
@@ -101,7 +100,7 @@ const FORM_VERSION = 'p1-preview';
       console.debug('quote payload (preview)', payload);
       if (status) {
         status.textContent =
-          'Preview build — the request form goes live at launch.';
+          'Preview build. The request form goes live at launch.';
       }
     });
   }
@@ -109,9 +108,15 @@ const FORM_VERSION = 'p1-preview';
 
 <style>
   .quote-card {
-    border: 1px solid var(--rule);
-    background: var(--paper-deep);
+    border: 1px solid var(--ink);
+    border-top: 4px solid var(--accent);
+    background: var(--paper);
+    box-shadow: 0 1px 3px rgba(28, 25, 23, 0.06);
     padding: var(--space-3);
+  }
+
+  .quote-card .label {
+    color: var(--accent);
   }
 
   .quote-card h2 {
@@ -123,6 +128,8 @@ const FORM_VERSION = 'p1-preview';
     color: var(--ink-soft);
     font-size: var(--step--1);
     margin-bottom: var(--space-2);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--rule);
   }
 
   fieldset {
@@ -188,16 +195,17 @@ const FORM_VERSION = 'p1-preview';
   .btn {
     font-family: var(--sans);
     font-weight: 600;
-    font-size: var(--step--1);
-    background: var(--ink);
-    color: var(--paper);
+    font-size: var(--step-0);
+    background: var(--accent);
+    color: #fff;
     border: 0;
-    padding: 0.7rem 1.2rem;
+    width: 100%;
+    padding: 0.85rem 1.2rem;
     cursor: pointer;
   }
 
   .btn:hover {
-    background: var(--accent);
+    background: var(--ink);
   }
 
   .quote-note {
