@@ -1,7 +1,7 @@
 {
   "niche": "limewash",
   "city": "toronto-on",
-  "content_version": "p1-draft-4",
+  "content_version": "p1-draft-5",
   "written_at": "2026-08-01",
   "voice_rules": [
     "No em dashes. No 'judged against', no citing sources inside body copy.",
@@ -39,7 +39,7 @@
   "faqs": [
     {
       "q": "Do I need a permit to limewash a house in Toronto?",
-      "a": "Outside a heritage district, no. Limewash is finish work, not construction. But Toronto has 27 Heritage Conservation Districts, including Cabbagetown, Wychwood Park, Harbord Village, South Rosedale and Kensington Market. Inside one, changing an exterior finish can require a heritage permit. Check your address against the city's heritage map before you book exterior work."
+      "a": "Outside a heritage district, no. Limewash is finish work, not construction. But Toronto has more than two dozen Heritage Conservation Districts, including Cabbagetown, Wychwood Park, Harbord Village, South Rosedale and Kensington Market. Inside one, changing an exterior finish can require a heritage permit. Check your address against the city's heritage map before you book exterior work."
     },
     {
       "q": "Does my house need to be old?",

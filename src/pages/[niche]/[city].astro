@@ -44,12 +44,16 @@ if (window_?.full_months?.length) {
   });
 }
 if (housing?.heritage?.hcd_count != null) {
-  tiles.push({ label: 'Heritage districts', value: `${housing.heritage.hcd_count} in ${city.name}` });
+  tiles.push({ label: 'Heritage districts', value: housing.heritage.hcd_count_display ?? `${housing.heritage.hcd_count}` });
 }
 if (housing?.period_of_construction?.pre_1961_pct != null) {
   // Framed as abundance in the city, never as a filter on the reader (voice rule).
-  const pct = housing.period_of_construction.pre_1961_pct;
-  tiles.push({ label: 'Older brick stock', value: pct >= 28 && pct <= 38 ? 'About 1 in 3 homes' : `${pct}% of homes` });
+  // No hardcoded phrase bands: those render an identical sentence across every
+  // city in the band, which is exactly what the dedup linter exists to catch.
+  tiles.push({
+    label: 'Older brick stock',
+    value: `${housing.period_of_construction.pre_1961_pct}% of homes`,
+  });
 }
 
 const breadcrumb = {
@@ -157,8 +161,8 @@ const serviceSchema = {
         <section>
           <h2>Check whether you're in a heritage district</h2>
           <p>
-            {city.name} has {housing.heritage.hcd_count} Heritage Conservation
-            Districts, {housing.heritage.examples.slice(0, 4).join(', ')} and
+            {city.name} has {housing.heritage.hcd_count_display ?? housing.heritage.hcd_count} Heritage
+            Conservation Districts, {housing.heritage.examples.slice(0, 4).join(', ')} and
             Kensington Market among them. Inside one, changing an exterior
             finish can require a heritage permit. The century brick that makes
             these neighbourhoods good limewash territory is the same brick the
