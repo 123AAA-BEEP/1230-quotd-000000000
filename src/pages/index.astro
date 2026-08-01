@@ -24,70 +24,102 @@ const trades = [
   title="Quotd: get quoted for the jobs nobody seems to do"
   description="Quotd gets homeowners quotes from specialists in unusual, high-skill home services: limewash, venetian plaster, french drains, slate repair and more. Toronto first, then across North America."
 >
-  <article>
-    <p class="label">Rare home services</p>
+  <div class="page hero">
+    <p class="eyebrow accent">Rare home services</p>
     <h1>Get quoted for the jobs nobody seems to do.</h1>
     <p class="lede">
-      Some projects defeat the contractor directory: a house that wants limewash,
-      a wall that wants venetian plaster, a wet basement that needs a real french
-      drain, a slate roof that deserves mending instead of replacement. Quotd finds
-      the specialists who actually do this work and gets you a quote.
+      Some projects defeat the contractor directory. A house that wants
+      limewash, a wall that wants venetian plaster, a wet basement that needs a
+      real french drain, a slate roof that deserves mending instead of
+      replacement. Quotd finds the specialists who actually do this work.
     </p>
+  </div>
 
-    <hr class="rule" />
-
-    <section>
-      <p class="label">The work</p>
-      <p class="trades">
-        {trades.join(' · ')}, and dozens more trades that are hard to find and
-        easy to get wrong.
-      </p>
+  <div class="page grid">
+    <section class="card">
+      <p class="eyebrow">The work</p>
+      <ul class="trades">
+        {trades.map((t) => <li>{t}</li>)}
+      </ul>
+      <p class="note muted">And dozens more trades that are hard to find and easy to get wrong.</p>
     </section>
 
-    <section>
-      <p class="label">The approach</p>
-      <p>
+    <section class="card">
+      <p class="eyebrow">The approach</p>
+      <p class="card-body">
         Every Quotd city guide is built on real local data: climate, housing
-        stock, local rules. Advice that ignores where you
-        live is guesswork.
+        stock, local rules. Advice that ignores where you live is guesswork.
       </p>
+      <p class="eyebrow launch">Launching</p>
+      <p class="card-body">First city Toronto, then across North America. Autumn 2026.</p>
     </section>
-
-    <section>
-      <p class="label">When</p>
-      <p>
-        First city: Toronto. Then across North America. Launching autumn 2026.
-      </p>
-    </section>
-  </article>
+  </div>
 </Base>
 
 <style>
+  .hero {
+    padding-block: var(--s6) var(--s10);
+    max-width: 52rem;
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
   h1 {
-    font-size: clamp(var(--step-3), 6vw, var(--step-4));
-    margin-block: var(--space-2) var(--space-3);
+    font-size: clamp(var(--text-3xl), 6vw, var(--text-4xl));
+    margin-block: var(--s4) var(--s5);
   }
 
   .lede {
-    font-size: var(--step-1);
-    line-height: 1.5;
-    color: var(--ink);
-    margin-bottom: var(--space-4);
+    font-size: var(--text-lg);
+    line-height: 1.65;
+    color: var(--text-muted);
+    max-width: var(--measure);
   }
 
-  .rule {
-    margin-bottom: var(--space-4);
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: var(--s5);
   }
 
-  section {
-    margin-bottom: var(--space-4);
-  }
-
-  section .label {
-    margin-bottom: var(--space-1);
+  .card {
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    padding: var(--s6);
   }
 
   .trades {
-    color: var(--ink-soft);
+    list-style: none;
+    padding: 0;
+    margin: var(--s4) 0 var(--s4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2);
+  }
+
+  .trades li {
+    font-size: var(--text-sm);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .card-body {
+    margin-top: var(--s4);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+  }
+
+  .note {
+    font-size: var(--text-sm);
+  }
+
+  .launch {
+    margin-top: var(--s6);
   }
 </style>

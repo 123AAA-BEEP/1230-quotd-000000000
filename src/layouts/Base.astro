@@ -4,11 +4,11 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
-  wide?: boolean;
   noindex?: boolean;
+  cta?: boolean;
 }
 
-const { title, description, wide = false, noindex = false } = Astro.props;
+const { title, description, noindex = false, cta = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -21,61 +21,117 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <slot name="head" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta name="generator" content={Astro.generator} />
+    <slot name="head" />
   </head>
   <body>
-    <header class:list={['wrap', 'site-header', { wide }]}>
-      <a href="/" class="wordmark">Quotd</a>
-      <span class="label">Toronto first · Autumn 2026</span>
+    <header class="site-header">
+      <div class="page header-inner">
+        <a href="/" class="wordmark">Quotd</a>
+        <div class="header-right">
+          <span class="eyebrow header-note">Toronto first</span>
+          {cta && <a href="#quote" class="btn btn-primary header-cta">Get a quote</a>}
+        </div>
+      </div>
     </header>
 
-    <main class:list={['wrap', 'site-main', { wide }]}>
+    <main class="site-main">
       <slot />
     </main>
 
-    <footer class:list={['wrap', 'site-footer', { wide }]}>
-      <hr class="rule" />
-      <p>© 2026 Quotd · getquotd.com</p>
+    <footer class="site-footer">
+      <div class="page footer-inner">
+        <div>
+          <p class="wordmark footer-mark">Quotd</p>
+          <p class="footer-line muted">
+            Quotes from specialists in rare, high-skill home services.
+          </p>
+        </div>
+        <p class="footer-legal muted">© 2026 Quotd</p>
+      </div>
     </footer>
   </body>
 </html>
 
 <style>
-  .wide {
-    width: min(100% - 2.5rem, 72rem);
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--border);
   }
 
-  .site-header {
+  .header-inner {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    gap: var(--space-2);
-    padding-block: var(--space-3) var(--space-4);
+    gap: var(--s4);
+    height: 60px;
   }
 
   .wordmark {
-    font-size: var(--step-1);
+    font-family: var(--serif);
+    font-size: var(--text-xl);
     font-weight: 600;
-    letter-spacing: -0.015em;
-    text-decoration: none;
+    letter-spacing: -0.03em;
+  }
+
+  .wordmark:hover {
+    color: var(--text);
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--s5);
+  }
+
+  .header-note {
+    display: none;
+  }
+
+  @media (min-width: 40rem) {
+    .header-note {
+      display: inline;
+    }
+  }
+
+  .header-cta {
+    padding-block: 0.55rem;
   }
 
   .site-main {
     flex: 1;
+    padding-block: var(--s8) var(--s12);
   }
 
   .site-footer {
-    padding-block: var(--space-4) var(--space-3);
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    padding-block: var(--s8);
   }
 
-  .site-footer p {
-    margin-top: var(--space-2);
-    font-size: var(--step--1);
-    color: var(--ink-soft);
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s5);
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .footer-mark {
+    font-size: var(--text-lg);
+    margin-bottom: var(--s1);
+  }
+
+  .footer-line,
+  .footer-legal {
+    font-size: var(--text-sm);
   }
 </style>

@@ -16,7 +16,7 @@ const FORM_VERSION = 'p1-preview';
 ---
 
 <div class="quote-card">
-  <p class="label">Get a quote</p>
+  <p class="eyebrow accent">Get a quote</p>
   <h2>Tell us about the project.</h2>
   <p class="quote-sub">Free, and no obligation.</p>
 
@@ -28,7 +28,7 @@ const FORM_VERSION = 'p1-preview';
     data-consent-version={CONSENT_VERSION}
     novalidate
   >
-    <p class="steps label"><span data-stepnum>Step 1 of 2</span></p>
+    <p class="steps eyebrow"><span data-stepnum>Step 1 of 2</span></p>
 
     <div class="step" data-step="1">
       <label class="field">
@@ -48,7 +48,7 @@ const FORM_VERSION = 'p1-preview';
         <input type="text" name="address" autocomplete="street-address" required />
       </label>
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp" />
-      <button type="button" class="btn" data-next>Continue</button>
+      <button type="button" class="btn btn-primary btn-block" data-next>Continue</button>
     </div>
 
     <div class="step" data-step="2" hidden>
@@ -71,7 +71,7 @@ const FORM_VERSION = 'p1-preview';
           purchase. <em>(Draft wording, pending legal review.)</em>
         </span>
       </label>
-      <button type="submit" class="btn">Get quoted</button>
+      <button type="submit" class="btn btn-primary btn-block">Get quoted</button>
       <button type="button" class="back" data-back>Back</button>
       <p class="quote-note" data-status role="status"></p>
     </div>
@@ -129,92 +129,112 @@ const FORM_VERSION = 'p1-preview';
 
 <style>
   .quote-card {
-    border: 1px solid var(--ink);
-    border-top: 4px solid var(--accent);
-    background: var(--paper);
-    box-shadow: 0 1px 3px rgba(28, 25, 23, 0.06);
-    padding: var(--space-3);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    background: var(--bg);
+    box-shadow: var(--shadow-md);
+    padding: var(--s6);
   }
 
-  .quote-card .label {
+  .accent {
     color: var(--accent);
   }
 
   .quote-card h2 {
-    font-size: var(--step-1);
-    margin-block: var(--space-1) 0.25rem;
+    font-size: var(--text-xl);
+    margin-block: var(--s3) var(--s2);
   }
 
   .quote-sub {
-    color: var(--ink-soft);
-    font-size: var(--step--1);
-    margin-bottom: var(--space-2);
-    padding-bottom: var(--space-2);
-    border-bottom: 1px solid var(--rule);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    padding-bottom: var(--s5);
+    border-bottom: 1px solid var(--border);
   }
 
   .steps {
-    color: var(--ink-faint);
-    margin-bottom: var(--space-2);
+    color: var(--text-subtle);
+    margin-block: var(--s5) var(--s4);
   }
 
   fieldset {
     border: 0;
     padding: 0;
-    margin: 0 0 var(--space-2);
+    margin: 0 0 var(--s5);
   }
 
   legend {
-    font-family: var(--sans);
-    font-size: var(--step--1);
+    font-size: var(--text-sm);
     font-weight: 600;
-    margin-bottom: var(--space-1);
+    margin-bottom: var(--s3);
     padding: 0;
   }
 
   .opt {
     display: flex;
-    gap: 0.5rem;
-    align-items: baseline;
-    padding: 0.2rem 0;
-    font-size: var(--step--1);
+    gap: var(--s3);
+    align-items: center;
+    padding: 0.4rem 0;
+    font-size: var(--text-sm);
+    cursor: pointer;
+  }
+
+  .opt input {
+    accent-color: var(--accent);
+    width: 1rem;
+    height: 1rem;
+    flex: none;
   }
 
   .field {
     display: block;
-    margin-bottom: var(--space-2);
-    font-family: var(--sans);
-    font-size: var(--step--1);
+    margin-bottom: var(--s4);
   }
 
   .field span {
     display: block;
+    font-size: var(--text-sm);
     font-weight: 600;
-    margin-bottom: 0.3rem;
+    margin-bottom: var(--s2);
   }
 
   .field input {
     width: 100%;
-    padding: 0.6rem;
-    border: 1px solid var(--rule);
-    background: var(--paper);
-    color: var(--ink);
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-sm);
+    background: var(--bg);
+    color: var(--text);
     font: inherit;
+    font-size: var(--text-sm);
+    transition: border-color 0.12s ease, box-shadow 0.12s ease;
   }
 
-  .field input:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: -1px;
+  .field input::placeholder {
+    color: var(--text-subtle);
+  }
+
+  .field input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-tint);
   }
 
   .consent {
     display: flex;
-    gap: 0.5rem;
+    gap: var(--s3);
     align-items: flex-start;
-    font-size: var(--step--1);
-    line-height: 1.45;
-    color: var(--ink-soft);
-    margin-bottom: var(--space-2);
+    font-size: var(--text-xs);
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin-bottom: var(--s5);
+    cursor: pointer;
+  }
+
+  .consent input {
+    accent-color: var(--accent);
+    margin-top: 0.15rem;
+    flex: none;
   }
 
   .hp {
@@ -225,37 +245,24 @@ const FORM_VERSION = 'p1-preview';
     opacity: 0;
   }
 
-  .btn {
-    font-family: var(--sans);
-    font-weight: 600;
-    font-size: var(--step-0);
-    background: var(--accent);
-    color: #fff;
-    border: 0;
-    width: 100%;
-    padding: 0.85rem 1.2rem;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    background: var(--ink);
-  }
-
   .back {
     display: block;
-    margin: 0.6rem auto 0;
+    margin: var(--s3) auto 0;
     background: none;
     border: 0;
     font-family: var(--sans);
-    font-size: var(--step--1);
-    color: var(--ink-soft);
-    text-decoration: underline;
+    font-size: var(--text-sm);
+    color: var(--text-muted);
     cursor: pointer;
   }
 
+  .back:hover {
+    color: var(--accent);
+  }
+
   .quote-note {
-    margin-top: var(--space-1);
-    font-size: var(--step--1);
+    margin-top: var(--s3);
+    font-size: var(--text-sm);
     color: var(--accent);
   }
 </style>
