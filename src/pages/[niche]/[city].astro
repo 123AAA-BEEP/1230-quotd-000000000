@@ -47,7 +47,9 @@ if (housing?.heritage?.hcd_count != null) {
   tiles.push({ label: 'Heritage districts', value: `${housing.heritage.hcd_count} in ${city.name}` });
 }
 if (housing?.period_of_construction?.pre_1961_pct != null) {
-  tiles.push({ label: 'Pre-1961 homes', value: `${housing.period_of_construction.pre_1961_pct}%` });
+  // Framed as abundance in the city, never as a filter on the reader (voice rule).
+  const pct = housing.period_of_construction.pre_1961_pct;
+  tiles.push({ label: 'Older brick stock', value: pct >= 28 && pct <= 38 ? 'About 1 in 3 homes' : `${pct}% of homes` });
 }
 
 const breadcrumb = {

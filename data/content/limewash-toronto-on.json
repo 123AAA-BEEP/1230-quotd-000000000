@@ -1,26 +1,28 @@
 {
   "niche": "limewash",
   "city": "toronto-on",
-  "content_version": "p1-draft-3",
+  "content_version": "p1-draft-4",
   "written_at": "2026-08-01",
   "voice_rules": [
     "No em dashes. No 'judged against', no citing sources inside body copy.",
     "Data informs the writing; the writing does not report the data. A Toronto reader knows the weather. Tell them what to DO about it.",
     "Short sentences. Plain words. Say the awkward thing rather than hedging.",
-    "NO PRICING. No dollar figures, no per-sq-ft ranges, no 'typical cost'. Price is the specialist's to quote, never ours to anchor. Cost data stays internal."
+    "NO PRICING. No dollar figures, no per-sq-ft ranges, no 'typical cost'. Price is the specialist's to quote, never ours to anchor. Cost data stays internal.",
+    "NEVER let local data read as a filter on the reader. Stats describe the city, not whether this person qualifies. Any fact that could be heard as 'you are probably not a candidate' must be reframed as abundance or removed. Every niche has a wider door than its ideal case: say the ideal, then say who else it works for."
   ],
   "grounding_note": "Numbers here trace to data/modules/*. Provenance lives in the data files and the machine-readable twin, not in reader-facing prose.",
   "answer": [
-    "Most painters don't offer limewash. It is mineral work with its own rules, and Toronto happens to be good territory for it: roughly a third of the housing stock here is pre-1961 brick, which is the surface limewash was made for.",
-    "What the job takes depends almost entirely on the wall. Whether the brick has been painted before, how much prep it needs, and how the crew reaches it are the things a specialist has to see in person.",
-    "If your house sits in a heritage district, read the permit question before you book anything."
+    "Most painters don't offer limewash. It is mineral work with its own rules, and finding someone who does it properly is usually the hard part.",
+    "It suits more houses than people expect. Bare brick and stucco outside, plaster and drywall inside, on a century semi or a house built last year. Toronto is good ground for it either way, because the city is full of masonry that takes limewash beautifully.",
+    "What decides the job is the surface, not the age of the house. If yours sits in a heritage district, read the permit question before you book anything."
   ],
   "verdict": {
-    "heading": "Should you limewash a Toronto house?",
+    "heading": "Is your house a good candidate?",
     "paragraphs": [
-      "The best candidate is unpainted brick, and Toronto has a lot of it. On century brick in Cabbagetown or Harbord Village, limewash is one of the few finishes that actually suits the wall. It breathes with the masonry instead of sealing it, and it can be renewed rather than stripped.",
-      "Already painted brick is a different job. Limewash bonds by soaking into porous masonry, and acrylic paint blocks that. What you likely need is a mineral primer system or a german schmear style mortar finish. Anyone quoting you without looking at the substrate first is guessing.",
-      "Interior work on drywall or plaster is open to almost any home. A single accent wall is a reasonable weekend if you are handy. A full exterior is not: substrate assessment, weather windows and scaffolding put it firmly in specialist territory.",
+      "Bare brick is the natural fit, and Toronto has plenty of it. On older brick in Cabbagetown or Harbord Village, limewash is one of the few finishes that genuinely suits the wall. It breathes with the masonry instead of sealing it, and it can be renewed rather than stripped.",
+      "Newer homes work too. Age is not the test, the surface is. Unsealed brick and stucco on a 1990s or 2010s build take limewash the same way, and the finish often reads cleaner on uniform modern brick if that is the look you are after.",
+      "Already painted brick is the one real complication. Limewash bonds by soaking into porous masonry, and acrylic paint blocks that. It is still doable, usually with a mineral primer system or a german schmear style mortar finish, but a specialist has to see the substrate before anyone quotes it.",
+      "Interior limewash is open to almost any home at any age. A single accent wall is a reasonable weekend if you are handy. A full exterior is not: substrate assessment, weather windows and scaffolding put that firmly in specialist territory.",
       "If you want the look permanently and never want to recoat, price brick staining instead. Just know it is a one way door. Limewash weathers and can be refreshed. Stain is forever."
     ]
   },
@@ -38,6 +40,10 @@
     {
       "q": "Do I need a permit to limewash a house in Toronto?",
       "a": "Outside a heritage district, no. Limewash is finish work, not construction. But Toronto has 27 Heritage Conservation Districts, including Cabbagetown, Wychwood Park, Harbord Village, South Rosedale and Kensington Market. Inside one, changing an exterior finish can require a heritage permit. Check your address against the city's heritage map before you book exterior work."
+    },
+    {
+      "q": "Does my house need to be old?",
+      "a": "No. Limewash is about the surface, not the age. It goes onto unsealed brick, stone and stucco whether the house went up in 1910 or 2015, and interior limewash works on plaster and drywall in any home. Older brick is simply where the finish looks most at home, and Toronto happens to have a lot of it. The one thing that genuinely changes the approach is whether the masonry has already been painted."
     },
     {
       "q": "Why do limewash quotes vary so much?",
