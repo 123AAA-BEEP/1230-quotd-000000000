@@ -28,7 +28,7 @@ const FORM_VERSION = 'p1-preview';
     data-consent-version={CONSENT_VERSION}
     novalidate
   >
-    <p class="steps"><span data-stepnum>Step 1 of 2</span></p>
+    <p class="steps label"><span data-stepnum>Step 1 of 2</span></p>
 
     <div class="step" data-step="1">
       <label class="field">
@@ -154,11 +154,6 @@ const FORM_VERSION = 'p1-preview';
   }
 
   .steps {
-    font-family: var(--sans);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: var(--ink-faint);
     margin-bottom: var(--space-2);
   }
@@ -174,6 +169,7 @@ const FORM_VERSION = 'p1-preview';
     font-size: var(--step--1);
     font-weight: 600;
     margin-bottom: var(--space-1);
+    padding: 0;
   }
 
   .opt {
@@ -215,7 +211,8 @@ const FORM_VERSION = 'p1-preview';
     display: flex;
     gap: 0.5rem;
     align-items: flex-start;
-    font-size: 0.78rem;
+    font-size: var(--step--1);
+    line-height: 1.45;
     color: var(--ink-soft);
     margin-bottom: var(--space-2);
   }
@@ -250,7 +247,7 @@ const FORM_VERSION = 'p1-preview';
     background: none;
     border: 0;
     font-family: var(--sans);
-    font-size: 0.8rem;
+    font-size: var(--step--1);
     color: var(--ink-soft);
     text-decoration: underline;
     cursor: pointer;
@@ -258,7 +255,7 @@ const FORM_VERSION = 'p1-preview';
 
   .quote-note {
     margin-top: var(--space-1);
-    font-size: 0.8rem;
+    font-size: var(--step--1);
     color: var(--accent);
   }
 </style>

@@ -1,30 +1,35 @@
-/* Quotd design tokens v1 — spec §8. Paper/ink, one accent, serif display,
-   tabular figures for data, near-zero motion. Light + dark. */
+/* Quotd design tokens v2 — spec §8. Paper/ink, one accent, serif display,
+   tabular figures for data, near-zero motion. Light only, by owner direction.
+
+   RULE: no component may declare a raw font-size. Every size comes from a
+   --step-* token. Ad-hoc rem values are what made the page look homemade. */
 
 :root {
   /* color */
   --paper: #ffffff;
   --paper-deep: #f7f4ef;
-  --ink: #1c1917;
-  --ink-soft: #57534e;
-  --ink-faint: #a8a29e;
-  --accent: #8b4a2f; /* iron-oxide — the limewash world */
-  --rule: rgba(28, 25, 23, 0.14);
+  --ink: #1a1714;
+  --ink-soft: #5c554d;
+  --ink-faint: #8d857b;
+  --accent: #8b4a2f;
+  --rule: rgba(26, 23, 20, 0.13);
+  --rule-strong: rgba(26, 23, 20, 0.28);
 
   /* type */
   --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, ui-serif, serif;
   --sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 
-  /* scale (minor third-ish, tuned by hand) */
-  --step--1: 0.875rem;
-  --step-0: 1.0625rem;
-  --step-1: 1.375rem;
-  --step-2: 1.75rem;
-  --step-3: 2.375rem;
-  --step-4: 3.25rem;
+  /* scale: one ratio, no exceptions */
+  --step--2: 0.75rem;   /* micro label, uppercase only */
+  --step--1: 0.9375rem; /* fine print, captions, form labels */
+  --step-0: 1.125rem;   /* body */
+  --step-1: 1.3125rem;  /* lede */
+  --step-2: 1.625rem;   /* section heading */
+  --step-3: 2.25rem;    /* page heading, small viewport */
+  --step-4: 3rem;       /* page heading, large viewport */
 
   /* rhythm */
-  --measure: 38rem;
+  --measure: 36rem;
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.75rem;
@@ -48,10 +53,11 @@ html {
 
 body {
   font-size: var(--step-0);
-  line-height: 1.6;
+  line-height: 1.65;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -60,18 +66,27 @@ h3 {
   font-family: var(--serif);
   font-weight: 500;
   line-height: 1.15;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.012em;
   text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 a {
   color: var(--ink);
-  text-decoration-color: var(--rule);
+  text-decoration-color: var(--rule-strong);
   text-underline-offset: 3px;
 }
 
 a:hover {
   text-decoration-color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 ::selection {
@@ -84,12 +99,21 @@ a:hover {
   margin-inline: auto;
 }
 
+/* The single uppercase micro-label treatment. Used for every kicker, legend,
+   table head and eyebrow on the site so they cannot drift apart. */
 .label {
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: var(--step--2);
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.11em;
+  line-height: 1.3;
   text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.fine {
+  font-size: var(--step--1);
+  line-height: 1.55;
   color: var(--ink-soft);
 }
 
@@ -101,6 +125,3 @@ a:hover {
 .num {
   font-variant-numeric: tabular-nums;
 }
-
-/* Light only, by owner direction (2026-08-01). Editorial paper look; no dark
-   variant. color-scheme keeps form controls from inverting on dark systems. */
