@@ -1,0 +1,114 @@
+id,name,category,job_value,tier,note
+french-drain-installation,French drain installation,drainage,$$$,A,Founding niche; rainfall + soil modules; panic demand after floods
+yard-drainage-systems,Yard drainage systems,drainage,$$$,A,"Broader umbrella: swales, catch basins, regrading"
+land-clearing-forestry-mulching,Land clearing & forestry mulching,earthwork,$$$$,A,Founding niche; rural metros wide open; equipment barrier = scarcity
+pool-removal-fill-in,Pool removal & fill-in,earthwork,$$$$,A,Nobody wants the pool; demo + engineering + permits; zero brand competition
+limewash-painting,Limewash painting,finishes,$$$,A,Founding niche; trend still elevated; climate module strong
+roman-clay-finishes,Roman clay finishes,finishes,$$,A,Same specialists as venetian plaster; shared cluster pages
+venetian-plaster,Venetian plaster,finishes,$$$,A,"Premium finish, providers rare, consumers know the term"
+wallpaper-installation,Wallpaper installation,finishes,$$,A,Grasscloth/mural hangers are genuinely scarce; roaring back in demand
+heated-driveways,Heated driveways,hardscape,$$$$,A,Snow-melt systems; snow-climate module is the perfect data wedge
+herringbone-clay-paver-driveways,Herringbone & clay paver driveways,hardscape,$$$$,A,Founding niche; pattern-work scarcity; design-led demand
+historic-window-restoration,Historic window restoration,heritage,$$$$,A,Sash restoration vs replacement; preservation-district module is a moat
+popcorn-ceiling-removal,Popcorn ceiling removal,interior,$$,A,Asbestos-era module; huge search volume; crews avoid it = scarcity
+sauna-builders,Sauna builders,interior,$$$$,A,Founding niche; wellness boom; barrel/infrared/traditional
+pickleball-court-construction,Pickleball court construction,outdoor,$$$$,A,The hottest court niche in NA; HOA + backyard demand; installer scarcity
+pond-water-feature-builders,Pond & water feature builders,outdoor,$$$$,A,"Koi ponds, waterfalls; certified-installer scarcity; maintenance recurring revenue"
+slate-roof-repair,Slate roof repair,roofing,$$$$,A,Almost nobody does it; heritage stock module; huge job values
+christmas-light-installation,Christmas light installation,seasonal,$$,A,Founding niche; frost-window module; rank-and-rent proven
+permanent-holiday-lighting,Permanent holiday lighting,seasonal,$$$,A,Track-style eave lighting (year-round); the fastest-growing lighting niche
+basement-egress-windows,Basement egress windows,structural,$$$,A,Code-driven (legal bedrooms); permit module perfect; scarce diggers
+ev-charger-installation,EV charger installation,systems,$$,A,Founding niche; rebate module; panel-capacity education
+radon-mitigation,Radon mitigation,systems,$$,A,Founding niche; certified-pro registry; real-estate deadline demand
+trenchless-sewer-repair,Trenchless sewer repair,systems,$$$$,A,Pipe bursting/lining vs dig-up; scarcity + urgency + $15k tickets
+home-elevators,Home elevators,accessibility,$$$$,B,Aging-in-place; dealer networks thin; huge ticket
+basement-waterproofing,Basement waterproofing,drainage,$$$$,B,Competitive but franchise-dominated — independent-specialist angle
+crawlspace-encapsulation,Crawlspace encapsulation,drainage,$$$,B,Moisture/radon adjacency; franchise presence growing
+erosion-control,Erosion control,earthwork,$$$,B,Hillside stabilization; ties to rainfall data
+grading-regrading,Grading & regrading,earthwork,$$$,B,Water-toward-house fixes; drainage cluster adjacency
+retaining-walls,Retaining walls,earthwork,$$$$,B,Engineered walls; permit module; failure-story content writes itself
+copper-gutters,Copper gutters,exterior,$$$$,B,Half-round copper; lifetime product; affluent-suburb skew
+stucco-remediation,Stucco remediation,exterior,$$$$,B,EIFS moisture failures; inspection-driven; litigation-adjacent demand
+automatic-gates,Automatic gates,fencing,$$$$,B,Gate operators + access control; electrician/welder hybrid scarcity
+deer-agricultural-fencing,Deer & agricultural fencing,fencing,$$$,B,Acreage exurbs; different crews than city fencers
+horizontal-cedar-fencing,Horizontal cedar fencing,fencing,$$$,B,Modern fence style; design-led buyers
+wrought-iron-restoration,Wrought iron restoration,fencing,$$$,B,Heritage fence/rail repair; blacksmith-adjacent scarcity
+brick-staining,Brick staining,finishes,$$$,B,Permanent alternative to limewash; same buyer journey
+german-schmear,German schmear,finishes,$$$,B,Mortar-wash brick look; searched by name since 2018
+ornamental-plaster-restoration,Ornamental plaster restoration,finishes,$$$$,B,"Ceiling medallions, crown, water-damage repair; heritage homes"
+shou-sugi-ban-siding,Shou sugi ban siding,finishes,$$$$,B,Charred-wood siding; design-forward builds
+tadelakt,Tadelakt,finishes,$$$,B,Moroccan waterproof plaster; bathrooms/showers; ultra-scarce providers
+terrazzo-restoration,Terrazzo restoration,flooring,$$$,B,Florida/deco stock; grinding specialists rare
+flagstone-patios,Flagstone patios,hardscape,$$$,B,Natural stone vs stamped; real craft gap
+permeable-pavers,Permeable pavers,hardscape,$$$$,B,Stormwater-code driven; rebate module in some cities
+plaster-wall-repair,Plaster wall repair,heritage,$$,B,Real plasterers (not drywallers); old-house staple demand
+cold-plunge-installation,Cold plunge installation,interior,$$$,B,Same wellness buyers as sauna; plumbing-electrical hybrid
+curved-floating-staircases,Curved & floating staircases,interior,$$$$,B,Stairbuilders are a dying trade; dramatic portfolio content
+golf-simulators,Golf simulators,interior,$$$$,B,Garage/basement builds; AV + construction hybrid = few true specialists
+murphy-beds-built-ins,Murphy beds & built-ins,interior,$$$,B,Custom millwork; ADU/small-space tailwind
+radiant-floor-heating,Radiant floor heating,interior,$$$$,B,Retrofit expertise scarce; climate module strong
+soundproofing,Soundproofing,interior,$$$,B,Home offices/theaters/condo walls; physics content differentiates
+steam-showers,Steam showers,interior,$$$$,B,Generator sizing expertise scarce; bathroom-remodel upsell
+timber-framing-exposed-beams,Timber framing & exposed beams,interior,$$$$,B,Faux and structural; craft scarcity real
+wine-cellars,Wine cellars,interior,$$$$,B,Climate-controlled builds; affluent metros
+chimney-relining,Chimney relining,masonry,$$$,B,"Stainless liners, clay tile repair; safety-driven"
+lime-mortar-repointing,Lime mortar repointing,masonry,$$$$,B,Historic masonry; wrong mortar destroys old brick — high-stakes education content
+outdoor-kitchens,Outdoor kitchens,outdoor,$$$$,B,Big platform presence but design-build scarcity is real
+pergolas-louvered-roofs,Pergolas & louvered roofs,outdoor,$$$$,B,Motorized louvers; dealer networks thin outside sunbelt
+putting-greens,Putting greens,outdoor,$$$,B,Synthetic greens; golf demographics = high ticket tolerance
+sport-courts,Sport courts,outdoor,$$$$,B,Multi-game courts; overlaps pickleball crews
+cedar-shake-roofing,Cedar shake roofing,roofing,$$$$,B,"Same scarcity dynamics as slate, West-coast skew"
+landscape-lighting,Landscape lighting,seasonal,$$$,B,Low-voltage design; adjacent crews to holiday lighting
+basement-lowering-underpinning,Basement lowering & underpinning,structural,$$$$,B,Bench footings; Toronto/older-city specialty; $50k+ jobs
+helical-piers,Helical piers,structural,$$$$,B,Settling foundations; engineering-adjacent; scarce independents
+fireplace-conversions,Fireplace conversions,systems,$$$,B,"Wood-to-gas, gas-to-electric; code + air-quality module"
+standby-generators,Standby generators,systems,$$$$,B,Generac-dominated but installer quality varies wildly; outage-data module
+water-well-drilling,Water well drilling,systems,$$$$,B,Rural; hydrology module; genuine scarcity
+bat-exclusion,Bat exclusion,wildlife,$$$,B,Protected-species rules = licensed scarcity; attic-damage stakes
+wildlife-exclusion,Wildlife exclusion,wildlife,$$$,B,Raccoons/squirrels; humane-removal angle vs pest control
+stair-lifts,Stair lifts,accessibility,$$,C,"Competitive, medical-supply adjacent"
+sump-pump-systems,Sump pump systems,drainage,$$,C,Commodity plumbing overlap; keep as content adjacency
+dry-stone-walling,Dry stone walling,earthwork,$$$$,C,Craft niche; New England/PNW; tiny but zero competition
+stump-grinding,Stump grinding,earthwork,$,C,Scarce-ish but low ticket; volume play
+board-batten-siding,Board & batten siding,exterior,$$$$,C,Style-specific siding crews; farmhouse trend cooling
+hidden-dog-fences,Hidden dog fences,fencing,$$,C,Installer networks exist; brand-dominated (Invisible Fence)
+cabinet-refinishing-spraying,Cabinet refinishing & spraying,finishes,$$$,C,"Bigger market, more competition — volume play not scarcity play"
+faux-finishing,Faux finishing,finishes,$$,C,"Marbling, wood graining; dated term but steady searches"
+gold-leaf-gilding,Gold leaf gilding,finishes,$$,C,"Frames, domes, signage; tiny but zero competition"
+murals-decorative-painting,Murals & decorative painting,finishes,$$,C,Custom interior murals; adjacent to faux finishing
+concrete-floor-polishing,Concrete floor polishing,flooring,$$$,C,Residential polished concrete; industrial crews moonlighting
+cork-specialty-flooring,Cork & specialty flooring,flooring,$$,C,"Cork, linoleum (real), bamboo specialists"
+epoxy-garage-floors,Epoxy garage floors,flooring,$$,C,Now competitive/franchised; volume play only
+hardwood-inlay-parquet-restoration,Hardwood inlay & parquet restoration,flooring,$$$,C,Heritage floors; refinishers who do pattern work are rare
+marble-floor-polishing,Marble floor polishing,flooring,$$,C,Stone-care crews; recurring maintenance angle
+cobblestone-belgian-block,Cobblestone & Belgian block,hardscape,$$$$,C,"Aprons, edging, full drives; Northeast skew"
+exposed-aggregate-concrete,Exposed aggregate concrete,hardscape,$$$,C,Regional finish; decent volume
+resin-bound-gravel,Resin-bound gravel,hardscape,$$$,C,UK import gaining US traction; watch
+tar-chip-driveways,Tar & chip driveways,hardscape,$$$,C,Rural favorite; very few installers advertise
+antique-hardware-restoration,Antique hardware restoration,heritage,$,C,Mail-in + local; content magnet for old-house crowd
+stained-glass-repair,Stained glass repair,heritage,$$,C,"Church-adjacent craft; tiny, zero competition"
+storm-windows-interior,Storm windows (interior),heritage,$$,C,Indow-style inserts; heritage adjacency
+heated-bathroom-floors,Heated bathroom floors,interior,$$,C,Smaller retrofit; tile-adjacent
+chimney-rebuilds,Chimney rebuilds,masonry,$$$$,C,Above-roofline rebuilds; adjacent to relining
+artificial-turf,Artificial turf,outdoor,$$$,C,Competitive in sunbelt; water-restriction module elsewhere
+bocce-courts,Bocce courts,outdoor,$$$,C,"Oyster-shell courts; hyper-niche, affluent"
+greenhouse-construction,Greenhouse construction,outdoor,$$$,C,Kit assembly + custom; gardening boom tail
+masonry-pizza-ovens,Masonry pizza ovens,outdoor,$$$,C,Passion purchase; small but devoted searches
+natural-swimming-pools,Natural swimming pools,outdoor,$$$$,C,"Swim ponds; tiny provider base, high fascination searches"
+copper-roofing-flashing,Copper roofing & flashing,roofing,$$$$,C,"Bays, porches, turrets; overlaps copper gutters"
+snow-removal-contracts,Snow removal contracts,seasonal,$$,C,Seasonal recurring; competitive; data module = snowfall
+string-bistro-lighting,String & bistro lighting,seasonal,$$,C,Patio lighting; wedding/venue crossover
+foundation-crack-repair,Foundation crack repair,structural,$$$,C,High volume; franchise-heavy SERPs
+window-well-installation,Window well installation,structural,$$,C,Adjacent to egress; often same crews
+central-vacuum-systems,Central vacuum systems,systems,$$,C,Install + revival repairs; dying-trade scarcity
+greywater-systems,Greywater systems,systems,$$$,C,Drought states; code module; early market
+home-theater-installation,Home theater installation,systems,$$$$,C,"AV integrators; competitive in metros, scarce elsewhere"
+lightning-protection,Lightning protection,systems,$$$,C,UL-listed installers ultra-scarce; strike-density data module
+motorized-shades-awnings,Motorized shades & awnings,systems,$$$,C,Dealer-network thin spots; smart-home adjacency
+retractable-screens,Retractable screens,systems,$$,C,Patio/lanai; sunbelt skew
+sewer-camera-inspection,Sewer camera inspection,systems,$,C,Feeder service for trenchless; real-estate driven
+water-treatment-systems,Water treatment systems,systems,$$,C,Softeners/filtration; competitive but PFAS module is a fresh angle
+well-pump-service,Well pump service,systems,$$,C,Adjacent to drilling; emergency demand
+whole-house-surge-panel-upgrades,Whole-house surge & panel upgrades,systems,$$,C,Electrician commodity overlap; EV adjacency
+live-bee-removal,Live bee removal,wildlife,$$,C,Relocation vs extermination; passionate searches
+mosquito-misting-systems,Mosquito misting systems,wildlife,$$,C,Gulf states; recurring refills revenue

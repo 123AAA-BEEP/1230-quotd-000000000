@@ -1,0 +1,1263 @@
+{
+ "meta": {
+  "generated": "2026-08-01",
+  "status": "PRIORS ONLY - tiers and values are pre-P0 estimates; P0 validates with keyword + provider data before anything launches",
+  "tiers": {
+   "A": "launch candidates (spec launch-10 plus near-misses)",
+   "B": "strong bench - score in P0 wave 2",
+   "C": "explore/watch - revisit quarterly"
+  },
+  "job_value": {
+   "$": "under $1k",
+   "$$": "$1k-5k",
+   "$$$": "$5k-15k",
+   "$$$$": "$15k+"
+  }
+ },
+ "niches": [
+  {
+   "id": "limewash-painting",
+   "name": "Limewash painting",
+   "category": "finishes",
+   "job_value": "$$$",
+   "tier": "A",
+   "note": "Founding niche; trend still elevated; climate module strong",
+   "consumer_terms": [
+    "limewash painters",
+    "limewash brick"
+   ]
+  },
+  {
+   "id": "venetian-plaster",
+   "name": "Venetian plaster",
+   "category": "finishes",
+   "job_value": "$$$",
+   "tier": "A",
+   "note": "Premium finish, providers rare, consumers know the term",
+   "consumer_terms": [
+    "venetian plaster contractors"
+   ]
+  },
+  {
+   "id": "roman-clay-finishes",
+   "name": "Roman clay finishes",
+   "category": "finishes",
+   "job_value": "$$",
+   "tier": "A",
+   "note": "Same specialists as venetian plaster; shared cluster pages",
+   "consumer_terms": [
+    "roman clay finishes"
+   ]
+  },
+  {
+   "id": "tadelakt",
+   "name": "Tadelakt",
+   "category": "finishes",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Moroccan waterproof plaster; bathrooms/showers; ultra-scarce providers",
+   "consumer_terms": [
+    "tadelakt"
+   ]
+  },
+  {
+   "id": "german-schmear",
+   "name": "German schmear",
+   "category": "finishes",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Mortar-wash brick look; searched by name since 2018",
+   "consumer_terms": [
+    "german smear"
+   ]
+  },
+  {
+   "id": "brick-staining",
+   "name": "Brick staining",
+   "category": "finishes",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Permanent alternative to limewash; same buyer journey",
+   "consumer_terms": [
+    "brick staining"
+   ]
+  },
+  {
+   "id": "lime-mortar-repointing",
+   "name": "Lime mortar repointing",
+   "category": "masonry",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Historic masonry; wrong mortar destroys old brick \u2014 high-stakes education content",
+   "consumer_terms": [
+    "tuckpointing historic brick"
+   ]
+  },
+  {
+   "id": "ornamental-plaster-restoration",
+   "name": "Ornamental plaster restoration",
+   "category": "finishes",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Ceiling medallions, crown, water-damage repair; heritage homes",
+   "consumer_terms": [
+    "ornamental plaster restoration"
+   ]
+  },
+  {
+   "id": "wallpaper-installation",
+   "name": "Wallpaper installation",
+   "category": "finishes",
+   "job_value": "$$",
+   "tier": "A",
+   "note": "Grasscloth/mural hangers are genuinely scarce; roaring back in demand",
+   "consumer_terms": [
+    "wallpaper hangers near me"
+   ]
+  },
+  {
+   "id": "faux-finishing",
+   "name": "Faux finishing",
+   "category": "finishes",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Marbling, wood graining; dated term but steady searches",
+   "consumer_terms": [
+    "faux finishing"
+   ]
+  },
+  {
+   "id": "gold-leaf-gilding",
+   "name": "Gold leaf gilding",
+   "category": "finishes",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Frames, domes, signage; tiny but zero competition",
+   "consumer_terms": [
+    "gold leaf gilding"
+   ]
+  },
+  {
+   "id": "murals-decorative-painting",
+   "name": "Murals & decorative painting",
+   "category": "finishes",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Custom interior murals; adjacent to faux finishing",
+   "consumer_terms": [
+    "murals & decorative painting"
+   ]
+  },
+  {
+   "id": "shou-sugi-ban-siding",
+   "name": "Shou sugi ban siding",
+   "category": "finishes",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Charred-wood siding; design-forward builds",
+   "consumer_terms": [
+    "charred wood siding"
+   ]
+  },
+  {
+   "id": "cabinet-refinishing-spraying",
+   "name": "Cabinet refinishing & spraying",
+   "category": "finishes",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Bigger market, more competition \u2014 volume play not scarcity play",
+   "consumer_terms": [
+    "cabinet refinishing & spraying"
+   ]
+  },
+  {
+   "id": "french-drain-installation",
+   "name": "French drain installation",
+   "category": "drainage",
+   "job_value": "$$$",
+   "tier": "A",
+   "note": "Founding niche; rainfall + soil modules; panic demand after floods",
+   "consumer_terms": [
+    "french drain installation"
+   ]
+  },
+  {
+   "id": "yard-drainage-systems",
+   "name": "Yard drainage systems",
+   "category": "drainage",
+   "job_value": "$$$",
+   "tier": "A",
+   "note": "Broader umbrella: swales, catch basins, regrading",
+   "consumer_terms": [
+    "yard flooding solutions"
+   ]
+  },
+  {
+   "id": "basement-waterproofing",
+   "name": "Basement waterproofing",
+   "category": "drainage",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Competitive but franchise-dominated \u2014 independent-specialist angle",
+   "consumer_terms": [
+    "basement waterproofing"
+   ]
+  },
+  {
+   "id": "basement-lowering-underpinning",
+   "name": "Basement lowering & underpinning",
+   "category": "structural",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Bench footings; Toronto/older-city specialty; $50k+ jobs",
+   "consumer_terms": [
+    "basement underpinning"
+   ]
+  },
+  {
+   "id": "foundation-crack-repair",
+   "name": "Foundation crack repair",
+   "category": "structural",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "High volume; franchise-heavy SERPs",
+   "consumer_terms": [
+    "foundation crack repair"
+   ]
+  },
+  {
+   "id": "helical-piers",
+   "name": "Helical piers",
+   "category": "structural",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Settling foundations; engineering-adjacent; scarce independents",
+   "consumer_terms": [
+    "helical piers"
+   ]
+  },
+  {
+   "id": "basement-egress-windows",
+   "name": "Basement egress windows",
+   "category": "structural",
+   "job_value": "$$$",
+   "tier": "A",
+   "note": "Code-driven (legal bedrooms); permit module perfect; scarce diggers",
+   "consumer_terms": [
+    "egress window installation"
+   ]
+  },
+  {
+   "id": "window-well-installation",
+   "name": "Window well installation",
+   "category": "structural",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Adjacent to egress; often same crews",
+   "consumer_terms": [
+    "window well installation"
+   ]
+  },
+  {
+   "id": "crawlspace-encapsulation",
+   "name": "Crawlspace encapsulation",
+   "category": "drainage",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Moisture/radon adjacency; franchise presence growing",
+   "consumer_terms": [
+    "crawlspace encapsulation"
+   ]
+  },
+  {
+   "id": "sump-pump-systems",
+   "name": "Sump pump systems",
+   "category": "drainage",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Commodity plumbing overlap; keep as content adjacency",
+   "consumer_terms": [
+    "sump pump systems"
+   ]
+  },
+  {
+   "id": "land-clearing-forestry-mulching",
+   "name": "Land clearing & forestry mulching",
+   "category": "earthwork",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Founding niche; rural metros wide open; equipment barrier = scarcity",
+   "consumer_terms": [
+    "land clearing & forestry mulching"
+   ]
+  },
+  {
+   "id": "retaining-walls",
+   "name": "Retaining walls",
+   "category": "earthwork",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Engineered walls; permit module; failure-story content writes itself",
+   "consumer_terms": [
+    "retaining walls"
+   ]
+  },
+  {
+   "id": "dry-stone-walling",
+   "name": "Dry stone walling",
+   "category": "earthwork",
+   "job_value": "$$$$",
+   "tier": "C",
+   "note": "Craft niche; New England/PNW; tiny but zero competition",
+   "consumer_terms": [
+    "dry stone walling"
+   ]
+  },
+  {
+   "id": "erosion-control",
+   "name": "Erosion control",
+   "category": "earthwork",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Hillside stabilization; ties to rainfall data",
+   "consumer_terms": [
+    "erosion control"
+   ]
+  },
+  {
+   "id": "stump-grinding",
+   "name": "Stump grinding",
+   "category": "earthwork",
+   "job_value": "$",
+   "tier": "C",
+   "note": "Scarce-ish but low ticket; volume play",
+   "consumer_terms": [
+    "stump grinding"
+   ]
+  },
+  {
+   "id": "grading-regrading",
+   "name": "Grading & regrading",
+   "category": "earthwork",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Water-toward-house fixes; drainage cluster adjacency",
+   "consumer_terms": [
+    "grading & regrading"
+   ]
+  },
+  {
+   "id": "slate-roof-repair",
+   "name": "Slate roof repair",
+   "category": "roofing",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Almost nobody does it; heritage stock module; huge job values",
+   "consumer_terms": [
+    "slate roof repair"
+   ]
+  },
+  {
+   "id": "cedar-shake-roofing",
+   "name": "Cedar shake roofing",
+   "category": "roofing",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Same scarcity dynamics as slate, West-coast skew",
+   "consumer_terms": [
+    "cedar shake roofing"
+   ]
+  },
+  {
+   "id": "copper-gutters",
+   "name": "Copper gutters",
+   "category": "exterior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Half-round copper; lifetime product; affluent-suburb skew",
+   "consumer_terms": [
+    "copper gutter installation"
+   ]
+  },
+  {
+   "id": "copper-roofing-flashing",
+   "name": "Copper roofing & flashing",
+   "category": "roofing",
+   "job_value": "$$$$",
+   "tier": "C",
+   "note": "Bays, porches, turrets; overlaps copper gutters",
+   "consumer_terms": [
+    "copper roofing & flashing"
+   ]
+  },
+  {
+   "id": "historic-window-restoration",
+   "name": "Historic window restoration",
+   "category": "heritage",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Sash restoration vs replacement; preservation-district module is a moat",
+   "consumer_terms": [
+    "wood window restoration"
+   ]
+  },
+  {
+   "id": "chimney-relining",
+   "name": "Chimney relining",
+   "category": "masonry",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Stainless liners, clay tile repair; safety-driven",
+   "consumer_terms": [
+    "chimney relining"
+   ]
+  },
+  {
+   "id": "chimney-rebuilds",
+   "name": "Chimney rebuilds",
+   "category": "masonry",
+   "job_value": "$$$$",
+   "tier": "C",
+   "note": "Above-roofline rebuilds; adjacent to relining",
+   "consumer_terms": [
+    "chimney rebuilds"
+   ]
+  },
+  {
+   "id": "stucco-remediation",
+   "name": "Stucco remediation",
+   "category": "exterior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "EIFS moisture failures; inspection-driven; litigation-adjacent demand",
+   "consumer_terms": [
+    "stucco remediation"
+   ]
+  },
+  {
+   "id": "board-batten-siding",
+   "name": "Board & batten siding",
+   "category": "exterior",
+   "job_value": "$$$$",
+   "tier": "C",
+   "note": "Style-specific siding crews; farmhouse trend cooling",
+   "consumer_terms": [
+    "board & batten siding"
+   ]
+  },
+  {
+   "id": "storm-windows-interior",
+   "name": "Storm windows (interior)",
+   "category": "heritage",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Indow-style inserts; heritage adjacency",
+   "consumer_terms": [
+    "storm windows (interior)"
+   ]
+  },
+  {
+   "id": "herringbone-clay-paver-driveways",
+   "name": "Herringbone & clay paver driveways",
+   "category": "hardscape",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Founding niche; pattern-work scarcity; design-led demand",
+   "consumer_terms": [
+    "brick driveway installers"
+   ]
+  },
+  {
+   "id": "permeable-pavers",
+   "name": "Permeable pavers",
+   "category": "hardscape",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Stormwater-code driven; rebate module in some cities",
+   "consumer_terms": [
+    "permeable pavers"
+   ]
+  },
+  {
+   "id": "heated-driveways",
+   "name": "Heated driveways",
+   "category": "hardscape",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Snow-melt systems; snow-climate module is the perfect data wedge",
+   "consumer_terms": [
+    "heated driveway installation"
+   ]
+  },
+  {
+   "id": "exposed-aggregate-concrete",
+   "name": "Exposed aggregate concrete",
+   "category": "hardscape",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Regional finish; decent volume",
+   "consumer_terms": [
+    "exposed aggregate concrete"
+   ]
+  },
+  {
+   "id": "resin-bound-gravel",
+   "name": "Resin-bound gravel",
+   "category": "hardscape",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "UK import gaining US traction; watch",
+   "consumer_terms": [
+    "resin-bound gravel"
+   ]
+  },
+  {
+   "id": "tar-chip-driveways",
+   "name": "Tar & chip driveways",
+   "category": "hardscape",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Rural favorite; very few installers advertise",
+   "consumer_terms": [
+    "tar & chip driveways"
+   ]
+  },
+  {
+   "id": "cobblestone-belgian-block",
+   "name": "Cobblestone & Belgian block",
+   "category": "hardscape",
+   "job_value": "$$$$",
+   "tier": "C",
+   "note": "Aprons, edging, full drives; Northeast skew",
+   "consumer_terms": [
+    "cobblestone & belgian block"
+   ]
+  },
+  {
+   "id": "flagstone-patios",
+   "name": "Flagstone patios",
+   "category": "hardscape",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Natural stone vs stamped; real craft gap",
+   "consumer_terms": [
+    "flagstone patios"
+   ]
+  },
+  {
+   "id": "outdoor-kitchens",
+   "name": "Outdoor kitchens",
+   "category": "outdoor",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Big platform presence but design-build scarcity is real",
+   "consumer_terms": [
+    "outdoor kitchens"
+   ]
+  },
+  {
+   "id": "masonry-pizza-ovens",
+   "name": "Masonry pizza ovens",
+   "category": "outdoor",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Passion purchase; small but devoted searches",
+   "consumer_terms": [
+    "masonry pizza ovens"
+   ]
+  },
+  {
+   "id": "pergolas-louvered-roofs",
+   "name": "Pergolas & louvered roofs",
+   "category": "outdoor",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Motorized louvers; dealer networks thin outside sunbelt",
+   "consumer_terms": [
+    "pergolas & louvered roofs"
+   ]
+  },
+  {
+   "id": "pond-water-feature-builders",
+   "name": "Pond & water feature builders",
+   "category": "outdoor",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Koi ponds, waterfalls; certified-installer scarcity; maintenance recurring revenue",
+   "consumer_terms": [
+    "koi pond builders"
+   ]
+  },
+  {
+   "id": "natural-swimming-pools",
+   "name": "Natural swimming pools",
+   "category": "outdoor",
+   "job_value": "$$$$",
+   "tier": "C",
+   "note": "Swim ponds; tiny provider base, high fascination searches",
+   "consumer_terms": [
+    "natural swimming pools"
+   ]
+  },
+  {
+   "id": "bocce-courts",
+   "name": "Bocce courts",
+   "category": "outdoor",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Oyster-shell courts; hyper-niche, affluent",
+   "consumer_terms": [
+    "bocce courts"
+   ]
+  },
+  {
+   "id": "putting-greens",
+   "name": "Putting greens",
+   "category": "outdoor",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Synthetic greens; golf demographics = high ticket tolerance",
+   "consumer_terms": [
+    "putting greens"
+   ]
+  },
+  {
+   "id": "pickleball-court-construction",
+   "name": "Pickleball court construction",
+   "category": "outdoor",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "The hottest court niche in NA; HOA + backyard demand; installer scarcity",
+   "consumer_terms": [
+    "pickleball court builders"
+   ]
+  },
+  {
+   "id": "sport-courts",
+   "name": "Sport courts",
+   "category": "outdoor",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Multi-game courts; overlaps pickleball crews",
+   "consumer_terms": [
+    "sport courts"
+   ]
+  },
+  {
+   "id": "artificial-turf",
+   "name": "Artificial turf",
+   "category": "outdoor",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Competitive in sunbelt; water-restriction module elsewhere",
+   "consumer_terms": [
+    "artificial turf"
+   ]
+  },
+  {
+   "id": "golf-simulators",
+   "name": "Golf simulators",
+   "category": "interior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Garage/basement builds; AV + construction hybrid = few true specialists",
+   "consumer_terms": [
+    "golf simulators"
+   ]
+  },
+  {
+   "id": "greenhouse-construction",
+   "name": "Greenhouse construction",
+   "category": "outdoor",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Kit assembly + custom; gardening boom tail",
+   "consumer_terms": [
+    "greenhouse construction"
+   ]
+  },
+  {
+   "id": "pool-removal-fill-in",
+   "name": "Pool removal & fill-in",
+   "category": "earthwork",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Nobody wants the pool; demo + engineering + permits; zero brand competition",
+   "consumer_terms": [
+    "swimming pool demolition"
+   ]
+  },
+  {
+   "id": "wrought-iron-restoration",
+   "name": "Wrought iron restoration",
+   "category": "fencing",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Heritage fence/rail repair; blacksmith-adjacent scarcity",
+   "consumer_terms": [
+    "wrought iron restoration"
+   ]
+  },
+  {
+   "id": "horizontal-cedar-fencing",
+   "name": "Horizontal cedar fencing",
+   "category": "fencing",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Modern fence style; design-led buyers",
+   "consumer_terms": [
+    "horizontal cedar fencing"
+   ]
+  },
+  {
+   "id": "deer-agricultural-fencing",
+   "name": "Deer & agricultural fencing",
+   "category": "fencing",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Acreage exurbs; different crews than city fencers",
+   "consumer_terms": [
+    "deer & agricultural fencing"
+   ]
+  },
+  {
+   "id": "automatic-gates",
+   "name": "Automatic gates",
+   "category": "fencing",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Gate operators + access control; electrician/welder hybrid scarcity",
+   "consumer_terms": [
+    "automatic gates"
+   ]
+  },
+  {
+   "id": "hidden-dog-fences",
+   "name": "Hidden dog fences",
+   "category": "fencing",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Installer networks exist; brand-dominated (Invisible Fence)",
+   "consumer_terms": [
+    "hidden dog fences"
+   ]
+  },
+  {
+   "id": "popcorn-ceiling-removal",
+   "name": "Popcorn ceiling removal",
+   "category": "interior",
+   "job_value": "$$",
+   "tier": "A",
+   "note": "Asbestos-era module; huge search volume; crews avoid it = scarcity",
+   "consumer_terms": [
+    "popcorn ceiling removal cost"
+   ]
+  },
+  {
+   "id": "soundproofing",
+   "name": "Soundproofing",
+   "category": "interior",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Home offices/theaters/condo walls; physics content differentiates",
+   "consumer_terms": [
+    "soundproofing"
+   ]
+  },
+  {
+   "id": "wine-cellars",
+   "name": "Wine cellars",
+   "category": "interior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Climate-controlled builds; affluent metros",
+   "consumer_terms": [
+    "wine cellars"
+   ]
+  },
+  {
+   "id": "sauna-builders",
+   "name": "Sauna builders",
+   "category": "interior",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Founding niche; wellness boom; barrel/infrared/traditional",
+   "consumer_terms": [
+    "home sauna installation"
+   ]
+  },
+  {
+   "id": "cold-plunge-installation",
+   "name": "Cold plunge installation",
+   "category": "interior",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Same wellness buyers as sauna; plumbing-electrical hybrid",
+   "consumer_terms": [
+    "cold plunge installation"
+   ]
+  },
+  {
+   "id": "steam-showers",
+   "name": "Steam showers",
+   "category": "interior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Generator sizing expertise scarce; bathroom-remodel upsell",
+   "consumer_terms": [
+    "steam showers"
+   ]
+  },
+  {
+   "id": "home-elevators",
+   "name": "Home elevators",
+   "category": "accessibility",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Aging-in-place; dealer networks thin; huge ticket",
+   "consumer_terms": [
+    "home elevators"
+   ]
+  },
+  {
+   "id": "stair-lifts",
+   "name": "Stair lifts",
+   "category": "accessibility",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Competitive, medical-supply adjacent",
+   "consumer_terms": [
+    "stair lifts"
+   ]
+  },
+  {
+   "id": "curved-floating-staircases",
+   "name": "Curved & floating staircases",
+   "category": "interior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Stairbuilders are a dying trade; dramatic portfolio content",
+   "consumer_terms": [
+    "curved & floating staircases"
+   ]
+  },
+  {
+   "id": "timber-framing-exposed-beams",
+   "name": "Timber framing & exposed beams",
+   "category": "interior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Faux and structural; craft scarcity real",
+   "consumer_terms": [
+    "timber framing & exposed beams"
+   ]
+  },
+  {
+   "id": "murphy-beds-built-ins",
+   "name": "Murphy beds & built-ins",
+   "category": "interior",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Custom millwork; ADU/small-space tailwind",
+   "consumer_terms": [
+    "murphy beds & built-ins"
+   ]
+  },
+  {
+   "id": "radiant-floor-heating",
+   "name": "Radiant floor heating",
+   "category": "interior",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Retrofit expertise scarce; climate module strong",
+   "consumer_terms": [
+    "radiant floor heating"
+   ]
+  },
+  {
+   "id": "heated-bathroom-floors",
+   "name": "Heated bathroom floors",
+   "category": "interior",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Smaller retrofit; tile-adjacent",
+   "consumer_terms": [
+    "heated bathroom floors"
+   ]
+  },
+  {
+   "id": "terrazzo-restoration",
+   "name": "Terrazzo restoration",
+   "category": "flooring",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Florida/deco stock; grinding specialists rare",
+   "consumer_terms": [
+    "terrazzo restoration"
+   ]
+  },
+  {
+   "id": "marble-floor-polishing",
+   "name": "Marble floor polishing",
+   "category": "flooring",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Stone-care crews; recurring maintenance angle",
+   "consumer_terms": [
+    "marble floor polishing"
+   ]
+  },
+  {
+   "id": "hardwood-inlay-parquet-restoration",
+   "name": "Hardwood inlay & parquet restoration",
+   "category": "flooring",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Heritage floors; refinishers who do pattern work are rare",
+   "consumer_terms": [
+    "hardwood inlay & parquet restoration"
+   ]
+  },
+  {
+   "id": "concrete-floor-polishing",
+   "name": "Concrete floor polishing",
+   "category": "flooring",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Residential polished concrete; industrial crews moonlighting",
+   "consumer_terms": [
+    "concrete floor polishing"
+   ]
+  },
+  {
+   "id": "epoxy-garage-floors",
+   "name": "Epoxy garage floors",
+   "category": "flooring",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Now competitive/franchised; volume play only",
+   "consumer_terms": [
+    "epoxy garage floors"
+   ]
+  },
+  {
+   "id": "cork-specialty-flooring",
+   "name": "Cork & specialty flooring",
+   "category": "flooring",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Cork, linoleum (real), bamboo specialists",
+   "consumer_terms": [
+    "cork & specialty flooring"
+   ]
+  },
+  {
+   "id": "stained-glass-repair",
+   "name": "Stained glass repair",
+   "category": "heritage",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Church-adjacent craft; tiny, zero competition",
+   "consumer_terms": [
+    "stained glass repair"
+   ]
+  },
+  {
+   "id": "antique-hardware-restoration",
+   "name": "Antique hardware restoration",
+   "category": "heritage",
+   "job_value": "$",
+   "tier": "C",
+   "note": "Mail-in + local; content magnet for old-house crowd",
+   "consumer_terms": [
+    "antique hardware restoration"
+   ]
+  },
+  {
+   "id": "plaster-wall-repair",
+   "name": "Plaster wall repair",
+   "category": "heritage",
+   "job_value": "$$",
+   "tier": "B",
+   "note": "Real plasterers (not drywallers); old-house staple demand",
+   "consumer_terms": [
+    "plaster wall repair"
+   ]
+  },
+  {
+   "id": "radon-mitigation",
+   "name": "Radon mitigation",
+   "category": "systems",
+   "job_value": "$$",
+   "tier": "A",
+   "note": "Founding niche; certified-pro registry; real-estate deadline demand",
+   "consumer_terms": [
+    "radon mitigation"
+   ]
+  },
+  {
+   "id": "ev-charger-installation",
+   "name": "EV charger installation",
+   "category": "systems",
+   "job_value": "$$",
+   "tier": "A",
+   "note": "Founding niche; rebate module; panel-capacity education",
+   "consumer_terms": [
+    "ev charger installation"
+   ]
+  },
+  {
+   "id": "standby-generators",
+   "name": "Standby generators",
+   "category": "systems",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Generac-dominated but installer quality varies wildly; outage-data module",
+   "consumer_terms": [
+    "standby generators"
+   ]
+  },
+  {
+   "id": "water-well-drilling",
+   "name": "Water well drilling",
+   "category": "systems",
+   "job_value": "$$$$",
+   "tier": "B",
+   "note": "Rural; hydrology module; genuine scarcity",
+   "consumer_terms": [
+    "water well drilling"
+   ]
+  },
+  {
+   "id": "well-pump-service",
+   "name": "Well pump service",
+   "category": "systems",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Adjacent to drilling; emergency demand",
+   "consumer_terms": [
+    "well pump service"
+   ]
+  },
+  {
+   "id": "water-treatment-systems",
+   "name": "Water treatment systems",
+   "category": "systems",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Softeners/filtration; competitive but PFAS module is a fresh angle",
+   "consumer_terms": [
+    "water treatment systems"
+   ]
+  },
+  {
+   "id": "greywater-systems",
+   "name": "Greywater systems",
+   "category": "systems",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Drought states; code module; early market",
+   "consumer_terms": [
+    "greywater systems"
+   ]
+  },
+  {
+   "id": "trenchless-sewer-repair",
+   "name": "Trenchless sewer repair",
+   "category": "systems",
+   "job_value": "$$$$",
+   "tier": "A",
+   "note": "Pipe bursting/lining vs dig-up; scarcity + urgency + $15k tickets",
+   "consumer_terms": [
+    "trenchless sewer line replacement"
+   ]
+  },
+  {
+   "id": "sewer-camera-inspection",
+   "name": "Sewer camera inspection",
+   "category": "systems",
+   "job_value": "$",
+   "tier": "C",
+   "note": "Feeder service for trenchless; real-estate driven",
+   "consumer_terms": [
+    "sewer camera inspection"
+   ]
+  },
+  {
+   "id": "lightning-protection",
+   "name": "Lightning protection",
+   "category": "systems",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "UL-listed installers ultra-scarce; strike-density data module",
+   "consumer_terms": [
+    "lightning protection"
+   ]
+  },
+  {
+   "id": "central-vacuum-systems",
+   "name": "Central vacuum systems",
+   "category": "systems",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Install + revival repairs; dying-trade scarcity",
+   "consumer_terms": [
+    "central vacuum systems"
+   ]
+  },
+  {
+   "id": "whole-house-surge-panel-upgrades",
+   "name": "Whole-house surge & panel upgrades",
+   "category": "systems",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Electrician commodity overlap; EV adjacency",
+   "consumer_terms": [
+    "whole-house surge & panel upgrades"
+   ]
+  },
+  {
+   "id": "fireplace-conversions",
+   "name": "Fireplace conversions",
+   "category": "systems",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Wood-to-gas, gas-to-electric; code + air-quality module",
+   "consumer_terms": [
+    "fireplace conversions"
+   ]
+  },
+  {
+   "id": "home-theater-installation",
+   "name": "Home theater installation",
+   "category": "systems",
+   "job_value": "$$$$",
+   "tier": "C",
+   "note": "AV integrators; competitive in metros, scarce elsewhere",
+   "consumer_terms": [
+    "home theater installation"
+   ]
+  },
+  {
+   "id": "motorized-shades-awnings",
+   "name": "Motorized shades & awnings",
+   "category": "systems",
+   "job_value": "$$$",
+   "tier": "C",
+   "note": "Dealer-network thin spots; smart-home adjacency",
+   "consumer_terms": [
+    "motorized shades & awnings"
+   ]
+  },
+  {
+   "id": "retractable-screens",
+   "name": "Retractable screens",
+   "category": "systems",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Patio/lanai; sunbelt skew",
+   "consumer_terms": [
+    "retractable screens"
+   ]
+  },
+  {
+   "id": "bat-exclusion",
+   "name": "Bat exclusion",
+   "category": "wildlife",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Protected-species rules = licensed scarcity; attic-damage stakes",
+   "consumer_terms": [
+    "bat exclusion"
+   ]
+  },
+  {
+   "id": "wildlife-exclusion",
+   "name": "Wildlife exclusion",
+   "category": "wildlife",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Raccoons/squirrels; humane-removal angle vs pest control",
+   "consumer_terms": [
+    "wildlife exclusion"
+   ]
+  },
+  {
+   "id": "live-bee-removal",
+   "name": "Live bee removal",
+   "category": "wildlife",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Relocation vs extermination; passionate searches",
+   "consumer_terms": [
+    "live bee removal"
+   ]
+  },
+  {
+   "id": "mosquito-misting-systems",
+   "name": "Mosquito misting systems",
+   "category": "wildlife",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Gulf states; recurring refills revenue",
+   "consumer_terms": [
+    "mosquito misting systems"
+   ]
+  },
+  {
+   "id": "christmas-light-installation",
+   "name": "Christmas light installation",
+   "category": "seasonal",
+   "job_value": "$$",
+   "tier": "A",
+   "note": "Founding niche; frost-window module; rank-and-rent proven",
+   "consumer_terms": [
+    "christmas light installation"
+   ]
+  },
+  {
+   "id": "permanent-holiday-lighting",
+   "name": "Permanent holiday lighting",
+   "category": "seasonal",
+   "job_value": "$$$",
+   "tier": "A",
+   "note": "Track-style eave lighting (year-round); the fastest-growing lighting niche",
+   "consumer_terms": [
+    "permanent christmas lights"
+   ]
+  },
+  {
+   "id": "landscape-lighting",
+   "name": "Landscape lighting",
+   "category": "seasonal",
+   "job_value": "$$$",
+   "tier": "B",
+   "note": "Low-voltage design; adjacent crews to holiday lighting",
+   "consumer_terms": [
+    "landscape lighting"
+   ]
+  },
+  {
+   "id": "string-bistro-lighting",
+   "name": "String & bistro lighting",
+   "category": "seasonal",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Patio lighting; wedding/venue crossover",
+   "consumer_terms": [
+    "string & bistro lighting"
+   ]
+  },
+  {
+   "id": "snow-removal-contracts",
+   "name": "Snow removal contracts",
+   "category": "seasonal",
+   "job_value": "$$",
+   "tier": "C",
+   "note": "Seasonal recurring; competitive; data module = snowfall",
+   "consumer_terms": [
+    "snow removal contracts"
+   ]
+  }
+ ]
+}
