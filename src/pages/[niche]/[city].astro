@@ -1,0 +1,377 @@
+---
+import Base from '../../layouts/Base.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import { getNiche, getCity, getPages, getModules, collectSources } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return getPages().map((p) => ({ params: { niche: p.niche, city: p.city }, props: { status: p.status } }));
+}
+
+const { niche: nicheId, city: citySlug } = Astro.params;
+const { status } = Astro.props;
+
+const niche = getNiche(nicheId);
+const city = getCity(citySlug);
+const modules = getModules(citySlug, nicheId);
+const sources = collectSources(modules);
+
+const contentFiles = import.meta.glob('../../../data/content/*.json', { eager: true });
+const content = Object.values(contentFiles)
+  .map((m) => m.default ?? m)
+  .find((c) => c.niche === nicheId && c.city === citySlug);
+
+const housing = modules.housing_age;
+const cost = modules.cost;
+const climate = modules.climate_curing;
+
+const consumerTerm = niche.consumer_terms[1] ?? niche.consumer_terms[0]; // plural person-form
+const h1 = `${consumerTerm.charAt(0).toUpperCase()}${consumerTerm.slice(1)} in ${city.name}`;
+const year = 2026;
+const title = `${h1}: Cost, Season & Who Does It (${year})`;
+const description = content.answer.join(' ').slice(0, 155);
+
+// Stat tiles render only from present, non-null module data — never defaults.
+const tiles = [];
+if (housing?.period_of_construction?.pre_1961_pct != null) {
+  tiles.push({
+    stat: `${housing.period_of_construction.pre_1961_pct}%`,
+    caption: `of ${city.name} homes built before 1961 — the masonry stock this finish suits`,
+  });
+}
+if (housing?.heritage?.hcd_count != null) {
+  tiles.push({
+    stat: String(housing.heritage.hcd_count),
+    caption: 'Heritage Conservation Districts, where exterior changes can need a permit',
+  });
+}
+if (cost?.job_cost_anchors?.length) {
+  tiles.push({
+    stat: 'CAD $4–8',
+    caption: 'per sq ft, typical exterior brick limewash (published trade guides, estimated)',
+  });
+}
+if (climate?.derived?.limewash_exterior_window?.full_months?.length) {
+  const w = climate.derived.limewash_exterior_window.full_months;
+  tiles.push({
+    stat: `${w[0]}–${w[w.length - 1]}`,
+    caption: 'exterior application window (Environment Canada normals)',
+  });
+}
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Quotd', item: 'https://getquotd.com/' },
+    { '@type': 'ListItem', position: 2, name: niche.name, item: `https://getquotd.com/${niche.id}` },
+    { '@type': 'ListItem', position: 3, name: city.name, item: `https://getquotd.com/${niche.id}/${city.slug}` },
+  ],
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: content.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: niche.name,
+  areaServed: { '@type': 'City', name: city.name },
+  provider: { '@type': 'Organization', name: 'Quotd', url: 'https://getquotd.com' },
+};
+---
+
+<Base title={title} description={description} wide noindex={status !== 'published'}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  </Fragment>
+
+  <div class="money">
+    <article class="guide">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Quotd</a> · <span>{niche.name}</span> · <span>{city.name}</span>
+      </nav>
+
+      <h1>{h1}</h1>
+
+      <div class="answer">
+        {content.answer.map((p) => <p>{p}</p>)}
+      </div>
+
+      {tiles.length > 0 && (
+        <section class="databand" aria-label="Local data">
+          {tiles.map((t) => (
+            <div class="tile">
+              <span class="stat num">{t.stat}</span>
+              <span class="cap">{t.caption}</span>
+            </div>
+          ))}
+        </section>
+      )}
+
+      <section>
+        <h2>{content.verdict.heading}</h2>
+        {content.verdict.paragraphs.map((p) => <p>{p}</p>)}
+      </section>
+
+      {climate?.monthly && (
+        <section>
+          <h2>Climate and timing in {city.name}</h2>
+          <p>
+            Exterior limewash wants sustained 5–30&nbsp;°C and a low-rain cure of
+            two to three days. Against Environment Canada's 1991–2020 normals for
+            {city.name}, that gives a working season of
+            {' '}{climate.derived.limewash_exterior_window.full_months.join(', ')}
+            {climate.derived.limewash_exterior_window.marginal_months.length > 0 && (
+              <>, with {climate.derived.limewash_exterior_window.marginal_months.join(' and ')} workable in good stretches</>
+            )}.
+          </p>
+        </section>
+      )}
+
+      {cost && (
+        <section>
+          <h2>What limewash costs in {city.name}</h2>
+          <table class="costs num">
+            <thead>
+              <tr><th>Project type</th><th>Typical range</th><th>Basis</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Exterior limewash on brick</td><td>CAD $4–8 / sq ft</td><td>Toronto trade guide, estimated</td></tr>
+              <tr><td>Residential exterior (broader)</td><td>CAD $6–12 / sq ft</td><td>Toronto trade guide, estimated</td></tr>
+              <tr><td>Decorative interior application</td><td>from CAD $12 / sq ft</td><td>Toronto specialist pricing, estimated</td></tr>
+              <tr><td>US national reference</td><td>USD $1.50–5.00 / sq ft</td><td>Angi / HomeGuide, estimated</td></tr>
+            </tbody>
+          </table>
+          <p class="fine">
+            Ranges consolidate published trade guides — they are the sanity
+            check, not a quote. Surface condition, access, and prep drive the
+            spread; HST applies. Painter labour in the {city.name} region runs
+            CAD ${cost.painter_wage_cad_hr.low.toFixed(2)}–{cost.painter_wage_cad_hr.high.toFixed(2)}/hr
+            (Government of Canada Job Bank). Materials: {cost.material.brand} covers
+            about {cost.material.coverage_sqft} and is sold locally.
+          </p>
+        </section>
+      )}
+
+      {housing?.heritage && (
+        <section>
+          <h2>Heritage districts change the answer</h2>
+          <p>
+            {city.name} has {housing.heritage.hcd_count} Heritage Conservation
+            Districts — including {housing.heritage.examples.slice(0, 5).join(', ')} —
+            and inside one, altering an exterior finish can require a heritage
+            permit under the district's plan and the Ontario Heritage Act. The
+            century brick that makes these districts good limewash territory is
+            the same brick the rules protect: check the city's HCD map for your
+            address before booking exterior work.
+          </p>
+        </section>
+      )}
+
+      <section>
+        <h2>{content.process.heading}</h2>
+        <ol class="process">
+          {content.process.steps.map((s) => <li>{s}</li>)}
+        </ol>
+      </section>
+
+      <section>
+        <h2>Questions {city.name} homeowners actually ask</h2>
+        {content.faqs.map((f) => (
+          <details class="faq">
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </section>
+
+      <section class="sources">
+        <h2>Where this data comes from</h2>
+        <ul>
+          {sources.map((s) => (
+            <li>
+              <a href={s.url} rel="nofollow noopener">{s.name}</a>
+              {s.retrieved_at && <span class="fine"> · verified {s.retrieved_at}</span>}
+            </li>
+          ))}
+        </ul>
+        <p class="fine">
+          Figures marked "estimated" consolidate published guides rather than
+          Quotd's own quote data; they'll be replaced by measured local figures
+          as quotes accumulate.
+        </p>
+      </section>
+    </article>
+
+    <div class="rail" id="quote">
+      <QuoteForm niche={niche} city={city} />
+    </div>
+  </div>
+
+  <a class="cta-bar" href="#quote">Get a quote</a>
+</Base>
+
+<style>
+  .money {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 62rem) {
+    .money {
+      grid-template-columns: minmax(0, 1fr) 22rem;
+      align-items: start;
+    }
+
+    .rail {
+      position: sticky;
+      top: var(--space-2);
+    }
+
+    .cta-bar {
+      display: none;
+    }
+  }
+
+  .crumbs {
+    font-family: var(--sans);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    margin-bottom: var(--space-2);
+  }
+
+  h1 {
+    font-size: clamp(var(--step-3), 5vw, var(--step-4));
+    margin-bottom: var(--space-2);
+  }
+
+  .answer {
+    font-size: var(--step-1);
+    line-height: 1.5;
+    max-width: 42rem;
+  }
+
+  .answer p {
+    margin-bottom: var(--space-2);
+  }
+
+  .databand {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border-block: 1px solid var(--rule);
+    margin-block: var(--space-3) var(--space-4);
+  }
+
+  .tile {
+    background: var(--paper);
+    padding: var(--space-2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .stat {
+    font-size: var(--step-2);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .cap {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  section {
+    margin-bottom: var(--space-4);
+    max-width: 42rem;
+  }
+
+  h2 {
+    font-size: var(--step-2);
+    margin-bottom: var(--space-2);
+  }
+
+  section p {
+    margin-bottom: var(--space-2);
+  }
+
+  .costs {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--step--1);
+    margin-bottom: var(--space-2);
+  }
+
+  .costs th {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: var(--ink-soft);
+  }
+
+  .costs th,
+  .costs td {
+    padding: 0.6rem 0.75rem 0.6rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .fine {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  .process {
+    padding-left: 1.2rem;
+  }
+
+  .process li {
+    margin-bottom: var(--space-1);
+  }
+
+  .faq {
+    border-bottom: 1px solid var(--rule);
+    padding-block: var(--space-1);
+  }
+
+  .faq summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .faq p {
+    margin-block: var(--space-1);
+    color: var(--ink-soft);
+  }
+
+  .sources ul {
+    padding-left: 1.2rem;
+    font-size: var(--step--1);
+  }
+
+  .cta-bar {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--sans);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.9rem;
+  }
+</style>

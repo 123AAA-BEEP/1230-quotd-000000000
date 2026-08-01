@@ -1,0 +1,208 @@
+---
+// Two-step quote form — UI only in P1 (intake function wires up in P2).
+// Step 1: commitment-free project questions. Step 2: contact + consent.
+// Anti-spam: honeypot + time-to-complete stamp (Addendum A3, no OTP).
+
+interface Props {
+  niche: any;
+  city: any;
+}
+
+const { niche, city } = Astro.props;
+const CONSENT_VERSION = 'consent-v0-draft';
+const FORM_VERSION = 'p1-preview';
+---
+
+<aside class="quote-card" aria-labelledby="quote-heading">
+  <p class="label">Get a quote</p>
+  <h2 id="quote-heading">Tell us about the project.</h2>
+  <p class="quote-sub">Free, no obligation.</p>
+
+  <form
+    id="quote-form"
+    data-niche={niche.id}
+    data-city={city.slug}
+    data-form-version={FORM_VERSION}
+    data-consent-version={CONSENT_VERSION}
+    novalidate
+  >
+    <div class="step" data-step="1">
+      {niche.form_questions.map((q, i) => (
+        <fieldset>
+          <legend>{q.label}</legend>
+          {q.options.map((opt) => (
+            <label class="opt">
+              <input type="radio" name={q.key} value={opt} required={i === 0} />
+              <span>{opt}</span>
+            </label>
+          ))}
+        </fieldset>
+      ))}
+      <button type="button" class="btn" data-next>Continue</button>
+    </div>
+
+    <div class="step" data-step="2" hidden>
+      <label class="field">
+        <span>Name</span>
+        <input type="text" name="name" autocomplete="name" required />
+      </label>
+      <label class="field">
+        <span>Email</span>
+        <input type="email" name="email" autocomplete="email" required />
+      </label>
+      <label class="field">
+        <span>Phone</span>
+        <input type="tel" name="phone" autocomplete="tel" required />
+      </label>
+      <label class="field">
+        <span>Street address</span>
+        <input type="text" name="address" autocomplete="street-address" />
+      </label>
+      <label class="consent">
+        <input type="checkbox" name="consent" required />
+        <span>
+          I agree that Quotd and up to three matched specialists may contact me
+          about this request by phone, email, or text. Consent is not a
+          condition of purchase. <em>(Draft wording — final text set with legal
+          review before launch.)</em>
+        </span>
+      </label>
+      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp" />
+      <button type="submit" class="btn">Get quoted</button>
+      <p class="quote-note" data-status role="status"></p>
+    </div>
+  </form>
+</aside>
+
+<script>
+  const form = document.getElementById('quote-form');
+  if (form instanceof HTMLFormElement) {
+    const startedAt = Date.now();
+    const step1 = form.querySelector('[data-step="1"]');
+    const step2 = form.querySelector('[data-step="2"]');
+    form.querySelector('[data-next]')?.addEventListener('click', () => {
+      step1?.setAttribute('hidden', '');
+      step2?.removeAttribute('hidden');
+      step2?.querySelector('input')?.focus();
+    });
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = form.querySelector('[data-status]');
+      if (!form.reportValidity()) return;
+      // P1 preview: intake endpoint ships in P2. Payload shape is final:
+      const payload = {
+        niche: form.dataset.niche,
+        city: form.dataset.city,
+        form_version: form.dataset.formVersion,
+        consent_text_version: form.dataset.consentVersion,
+        time_to_complete_ms: Date.now() - startedAt,
+        fields: Object.fromEntries(new FormData(form).entries()),
+      };
+      console.debug('quote payload (preview)', payload);
+      if (status) {
+        status.textContent =
+          'Preview build — the request form goes live at launch.';
+      }
+    });
+  }
+</script>
+
+<style>
+  .quote-card {
+    border: 1px solid var(--rule);
+    background: var(--paper-deep);
+    padding: var(--space-3);
+  }
+
+  .quote-card h2 {
+    font-size: var(--step-1);
+    margin-block: var(--space-1) 0.25rem;
+  }
+
+  .quote-sub {
+    color: var(--ink-soft);
+    font-size: var(--step--1);
+    margin-bottom: var(--space-2);
+  }
+
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 var(--space-2);
+  }
+
+  legend {
+    font-family: var(--sans);
+    font-size: var(--step--1);
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+  }
+
+  .opt {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0.2rem 0;
+    font-size: var(--step--1);
+  }
+
+  .field {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-family: var(--sans);
+    font-size: var(--step--1);
+  }
+
+  .field span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .field input {
+    width: 100%;
+    padding: 0.55rem 0.6rem;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+  }
+
+  .consent {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin-bottom: var(--space-2);
+  }
+
+  .hp {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  .btn {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: var(--step--1);
+    background: var(--ink);
+    color: var(--paper);
+    border: 0;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background: var(--accent);
+  }
+
+  .quote-note {
+    margin-top: var(--space-1);
+    font-size: 0.8rem;
+    color: var(--accent);
+  }
+</style>

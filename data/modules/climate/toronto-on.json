@@ -1,0 +1,87 @@
+{
+  "city": "toronto-on",
+  "module": "climate_curing",
+  "retrieved_at": "2026-08-01",
+  "retrieval_method": "official_dataset_mirror_plus_web_search_snippets",
+  "retrieval_caveat": "climate.weather.gc.ca, api.weather.gc.ca and all direct page fetches were blocked by this environment's egress policy (HTTP CONNECT 403). Monthly values were read in full from the WMO Climatological Standard Normals (CLINO) 1991-2020 datasheet for Toronto City, as submitted by ECCC to WMO and mirrored in the official WMO GitHub organization's repository (sourced from NOAA NCEI). Frost dates come from gardening/almanac-type secondary sources that conflict by station siting; conflict is documented. Re-verify against the ECCC Canadian Climate Normals 1991-2020 'TORONTO CITY' page (published 2024-03-27) before publish gate sign-off. See toronto-on.notes.md.",
+  "station": "Toronto City (downtown), ECCC climate ID 6158355, WMO 71508, WIGOS 0-20000-0-71508, 43°39'54\"N 79°23'42\"W, elev 113 m. NOT Toronto Pearson: Pearson runs ~1-2 °C colder in winter; no 1991-2020 CLINO sheet exists for Pearson, and cross-source January differences (e.g. -5.4 °C vs -3.5 °C mean) are station differences, not errors.",
+  "normals_period": "1991-2020",
+  "sources": [
+    {
+      "name": "WMO Climatological Standard Normals 1991-2020 (CLINO), Toronto City 71508 datasheet — official WMO GitHub mirror of the NCEI WMO Climate Normals (data as submitted by Environment and Climate Change Canada). Source of ALL monthly temperature, precipitation, precip-day and threshold-day values below. Repo commit 59660ef (2024-10-18).",
+      "url": "https://github.com/wmo-im/WMO-climatological-normals-CLINO/blob/main/data/Region-4-WMO-Normals-9120/Canada/CSV/Toronto_City_71508.csv"
+    },
+    {
+      "name": "NOAA NCEI WMO Climate Normals product page (upstream source of the WMO GitHub mirror; not directly fetchable from this environment)",
+      "url": "https://www.ncei.noaa.gov/products/wmo-climate-normals"
+    },
+    {
+      "name": "ECCC Canadian Climate Normals 1991-2020, station search 'Toronto' — canonical gold source, NOT RETRIEVED (egress blocked); verification target. ECCC 'TORONTO CITY' 1991-2020 normals published 2024-03-27.",
+      "url": "https://climate.weather.gc.ca/climate_normals/station_select_1991_2020_e.html?searchType=stnName_1991&txtStationName_1991=Toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0"
+    },
+    {
+      "name": "Wikipedia Template:Toronto weatherbox (transcribes the ECCC 1991-2020 Toronto City normals). Confirmed via search snippets: annual precipitation 831 mm (1991-2020), which coheres with the 9 populated CLINO months summing to 614.9 mm; also corroborated July high 27.0 / low 18.1.",
+      "url": "https://en.wikipedia.org/wiki/Template:Toronto_weatherbox"
+    },
+    {
+      "name": "ECCC-MSC station metadata (Toronto City = climate ID 6158355 = WMO 71508 = TC 'XTO', 43.6667/-79.4, 112.5 m, Climate-Auto, operated by ECCC-MSC) — mirrored station list used to bind the WMO number to the ECCC station identity",
+      "url": "https://github.com/June-Skeeter/CA_wxData_Download/blob/main/station_list/Stations.csv"
+    },
+    {
+      "name": "Plantmaps Toronto climate data: average last frost Apr 11-20, average first frost Nov 1-10 (interpolated station-based ranges)",
+      "url": "https://www.plantmaps.com/en/clim/c/ca/ontario/toronto/climate-data"
+    },
+    {
+      "name": "GrowersGuide.ca Toronto frost pages: last spring frost ~Apr 20, first fall frost ~Nov 1 (urban core, stated as 50th-percentile from ECCC 1991-2020 normals), ~197 frost-free days",
+      "url": "https://growersguide.ca/blog/toronto-planting-guide"
+    },
+    {
+      "name": "FrostDates.com Toronto: last spring frost ~May 1, first fall frost ~Oct 4, ~156 frost-free days (conservative inland/suburban-flavoured figures; station basis unstated) — kept as the low end of the documented range",
+      "url": "https://frostdates.com/canada/ontario/toronto"
+    },
+    {
+      "name": "Ho & Gough (2006), 'Freeze thaw cycles in Toronto, Canada in a changing climate', Theoretical and Applied Climatology 83:203-210 — peer-reviewed freeze-thaw analysis for three Toronto stations (1960-1989); per-station table values not retrievable from this environment, so no published single count is quoted",
+      "url": "https://link.springer.com/article/10.1007/s00704-005-0167-7"
+    }
+  ],
+  "monthly": {
+    "jan": { "mean": -3.5, "min": -6.7, "max": -0.3, "precip_mm": 64.6, "precip_days_ge_1mm": 10.3 },
+    "feb": { "mean": -2.7, "min": -6.0, "max": 0.6, "precip_mm": 53.8, "precip_days_ge_1mm": 8.5 },
+    "mar": { "mean": 1.7, "min": -1.8, "max": 5.1, "precip_mm": 52.8, "precip_days_ge_1mm": 8.5 },
+    "apr": { "mean": 7.8, "min": 3.9, "max": 11.6, "precip_mm": null, "precip_days_ge_1mm": 9.5 },
+    "may": { "mean": 14.4, "min": 10.0, "max": 18.8, "precip_mm": 76.4, "precip_days_ge_1mm": 8.9 },
+    "jun": { "mean": 19.8, "min": 15.3, "max": 24.2, "precip_mm": 81.6, "precip_days_ge_1mm": 8.2 },
+    "jul": { "mean": 22.5, "min": 18.1, "max": 27.0, "precip_mm": 76.5, "precip_days_ge_1mm": 8.1 },
+    "aug": { "mean": 21.9, "min": 17.6, "max": 26.1, "precip_mm": null, "precip_days_ge_1mm": 7.1 },
+    "sep": { "mean": 17.9, "min": 13.8, "max": 22.0, "precip_mm": 69.4, "precip_days_ge_1mm": 7.7 },
+    "oct": { "mean": 11.2, "min": 7.7, "max": 14.6, "precip_mm": 69.0, "precip_days_ge_1mm": 9.0 },
+    "nov": { "mean": 5.2, "min": 2.3, "max": 8.1, "precip_mm": 70.8, "precip_days_ge_1mm": 9.1 },
+    "dec": { "mean": -0.1, "min": -2.7, "max": 2.6, "precip_mm": null, "precip_days_ge_1mm": 9.7 }
+  },
+  "monthly_notes": {
+    "precip_mm_nulls": "Apr, Aug and Dec precipitation totals are blank in the official CLINO submission for Toronto City (number-of-years row is also blank for those months: too few complete years in 1991-2020 to meet the WMO completeness threshold). ECCC's own normals page publishes values for these months with data-completeness codes, but it is egress-blocked from this environment and no faithful transcription of those three cells was reachable, so they are null rather than guessed. Constraint: ECCC annual total is 831 mm and the 9 populated months sum to 614.9 mm, so Apr+Aug+Dec together are ~216 mm (~72 mm/month, in line with neighbouring months).",
+    "annual": { "precip_mm_eccc": 831, "precip_days_ge_1mm": 104.6, "days_min_le_0c": 101.2, "days_max_lt_0c": 42.8, "days_max_ge_30c": 14.6 },
+    "days_min_le_0c": { "jan": 25.6, "feb": 23.5, "mar": 18.5, "apr": 4.7, "may": 0.2, "jun": 0.0, "jul": 0.0, "aug": 0.0, "sep": 0.0, "oct": 0.5, "nov": 8.4, "dec": 19.8 },
+    "days_max_ge_30c": { "may": 0.5, "jun": 3.2, "jul": 6.4, "aug": 3.4, "sep": 1.1 }
+  },
+  "frost": {
+    "last_spring": "~April 20 (downtown/lakeshore; Plantmaps range Apr 11-20, GrowersGuide Apr 20; inland/suburban GTA sources run to ~May 1)",
+    "first_fall": "~November 1 (downtown/lakeshore; Plantmaps range Nov 1-10, GrowersGuide Nov 1; as early as ~Oct 4 at inland/suburban stations per FrostDates.com)",
+    "frost_free_days": 197,
+    "freeze_thaw_cycles": null,
+    "basis": "Frost dates are secondary-source gardening figures (33-50% probability of 0 °C, ECCC-normals-derived), not an ECCC-published normal; sources conflict by station siting (downtown ~Apr 20/Nov 1/~197 days vs inland ~May 1/Oct 4/~156 days). The downtown pair is used because the page's station is Toronto City, and the official CLINO frost-day distribution corroborates it (Apr 4.7 frost days vs May 0.2; Oct 0.5 vs Nov 8.4 — i.e. last frost is almost always April, first frost usually early November downtown). frost_free_days=197 is GrowersGuide's published downtown figure (Apr 20 to Nov 1). freeze_thaw_cycles is null because no credible source's single published count was retrievable (Ho & Gough 2006 publishes per-station values but the table was unreachable); see derived.freeze_thaw_days_0c_crossings for the value derived from official normals."
+  },
+  "derived": {
+    "limewash_exterior_window": {
+      "full_months": ["may", "jun", "jul", "aug", "sep"],
+      "marginal_months": ["apr", "oct"],
+      "rule": "5-30C sustained, 48-72h low-rain cure",
+      "logic": "FULL = normal daily minimum >= 5 °C AND normal daily maximum <= 30 °C, so the whole 48-72 h carbonation window, nights included, stays in range: May (10.0/18.8), Jun (15.3/24.2), Jul (18.1/27.0), Aug (17.6/26.1), Sep (13.8/22.0). APR is marginal: normal min 3.9 °C sits just under the 5 °C floor and April still averages 4.7 frost days (mostly early month) — late-April windows are workable with a 72 h frost-free forecast. OCT passes the naive monthly test (7.7/14.6) but is demoted to marginal: the monthly normal hides the late-month slide toward the ~Nov 1 median first frost, so second-half-of-October cures risk sub-5 °C nights. Nov-Mar are out (normal min <= 2.3 °C down to -6.7 °C; Dec-Mar have 18.5-25.6 frost days/month). Rain: every candidate month has 7.1-9.0 days with >= 1 mm (23-29% of days), so a specific 48-72 h dry window always needs a forecast check; by rain-day frequency August (7.1) and September (7.7) give the best odds of a dry 72 h stretch, October (9.0) the worst of the season.",
+      "hot_spell_caveat": "July averages 6.4 days >= 30 °C (Jun 3.2, Aug 3.4): schedule around heat waves and avoid direct-sun flash drying in high summer — a caveat, not a disqualifier, since mean daily highs stay <= 27.0 °C."
+    },
+    "freeze_thaw_days_0c_crossings": {
+      "value": 58.4,
+      "derivation": "Days/year crossing 0 °C = (days with min <= 0 °C: 101.2) - (days with max < 0 °C: 42.8) = 58.4, both rows from the official CLINO 1991-2020 Toronto City datasheet. This is a derived freeze-thaw-day proxy, not a published 'cycle' count; consistent with the peer-reviewed Ho & Gough (2006) analysis of Toronto freeze-thaw frequency. Label as derived if rendered."
+    }
+  }
+}

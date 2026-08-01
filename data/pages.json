@@ -1,0 +1,6 @@
+{
+  "note": "Build manifest: which niche×city combos render. A combo ships only after its publish-gate run is recorded here by scripts/publish-gates.mjs.",
+  "pages": [
+    { "niche": "limewash", "city": "toronto-on", "status": "preview" }
+  ]
+}

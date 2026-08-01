@@ -4,9 +4,11 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
+  wide?: boolean;
+  noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, wide = false, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -17,7 +19,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <slot name="head" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -25,16 +29,16 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
-    <header class="wrap site-header">
+    <header class:list={['wrap', 'site-header', { wide }]}>
       <a href="/" class="wordmark">Quotd</a>
       <span class="label">Toronto first · Autumn 2026</span>
     </header>
 
-    <main class="wrap site-main">
+    <main class:list={['wrap', 'site-main', { wide }]}>
       <slot />
     </main>
 
-    <footer class="wrap site-footer">
+    <footer class:list={['wrap', 'site-footer', { wide }]}>
       <hr class="rule" />
       <p>© 2026 Quotd · getquotd.com</p>
     </footer>
@@ -42,6 +46,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 </html>
 
 <style>
+  .wide {
+    width: min(100% - 2.5rem, 72rem);
+  }
+
   .site-header {
     display: flex;
     align-items: baseline;
