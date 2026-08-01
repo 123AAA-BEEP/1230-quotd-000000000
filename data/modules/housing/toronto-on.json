@@ -84,7 +84,8 @@
     ],
     "alteration_note": "Properties inside a Heritage Conservation District are designated under Part V of the Ontario Heritage Act. Certain alterations and renovations \u2014 each district's HCD Plan spells out which \u2014 require a heritage permit from the City; proposals to alter a building in an HCD are reviewed by Heritage Planning as part of the building permit application (City of Toronto Heritage Permit Guide).",
     "hcd_count_basis": "derived",
-    "hcd_count_display": "more than two dozen"
+    "hcd_count_display": "more than two dozen",
+    "hcd_count_short": "Two dozen+"
   },
   "verified_at": "2026-08-01",
   "verification": "data/modules/housing/toronto-on.verification.md"

@@ -44,7 +44,7 @@ if (window_?.full_months?.length) {
   });
 }
 if (housing?.heritage?.hcd_count != null) {
-  tiles.push({ label: 'Heritage districts', value: housing.heritage.hcd_count_display ?? `${housing.heritage.hcd_count}` });
+  tiles.push({ label: 'Heritage districts', value: housing.heritage.hcd_count_short ?? housing.heritage.hcd_count_display ?? `${housing.heritage.hcd_count}` });
 }
 if (housing?.period_of_construction?.pre_1961_pct != null) {
   // Framed as abundance in the city, never as a filter on the reader (voice rule).
@@ -207,7 +207,7 @@ const serviceSchema = {
   .crumbs {
     font-size: var(--text-sm);
     color: var(--text-muted);
-    margin-bottom: var(--s5);
+    margin-bottom: var(--s6);
     display: flex;
     gap: var(--s2);
     flex-wrap: wrap;
@@ -230,13 +230,13 @@ const serviceSchema = {
 
   @media (min-width: 64rem) {
     .money {
-      grid-template-columns: minmax(0, 1fr) 23rem;
-      gap: var(--s10);
+      grid-template-columns: minmax(0, 1fr) 24rem;
+      gap: var(--s12);
     }
 
     .rail {
       position: sticky;
-      top: calc(60px + var(--s5));
+      top: calc(72px + var(--s6));
     }
 
     .cta-bar {
@@ -246,7 +246,7 @@ const serviceSchema = {
 
   /* Hero */
   .hero {
-    margin: 0 0 var(--s6);
+    margin: 0 0 var(--s8);
     position: relative;
   }
 
@@ -256,7 +256,7 @@ const serviceSchema = {
     height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-radius: var(--r-lg);
+    border-radius: var(--r-md);
   }
 
   .hero figcaption {
@@ -279,8 +279,8 @@ const serviceSchema = {
     font-weight: 600;
     background: rgba(255, 255, 255, 0.94);
     color: var(--text);
-    padding: 0.35rem 0.7rem;
-    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--r-sm);
     box-shadow: var(--shadow-sm);
   }
 
@@ -293,7 +293,7 @@ const serviceSchema = {
   .hero-empty {
     aspect-ratio: 16 / 9;
     border: 1px solid var(--border);
-    border-radius: var(--r-lg);
+    border-radius: var(--r-md);
     background:
       radial-gradient(120% 120% at 50% 0%, #ffffff 0%, var(--surface) 60%, var(--surface-2) 100%);
     display: flex;
@@ -322,69 +322,64 @@ const serviceSchema = {
   }
 
   h1 {
-    font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl));
-    margin-bottom: var(--s3);
+    font-size: clamp(var(--text-3xl), 4.4vw, var(--text-4xl));
+    margin-bottom: var(--s4);
+    max-width: 20ch;
   }
 
   .dateline {
     font-size: var(--text-sm);
-    color: var(--text-muted);
-    margin-bottom: var(--s6);
+    color: var(--text-subtle);
+    margin-bottom: var(--s8);
   }
 
   .answer {
     max-width: var(--measure);
     font-size: var(--text-lg);
-    line-height: 1.65;
+    line-height: 1.68;
+    color: var(--text-muted);
   }
 
   .answer p + p {
-    margin-top: var(--s4);
+    margin-top: var(--s5);
   }
 
   /* Data band */
   .databand {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    border: 1px solid var(--border);
-    border-radius: var(--r-md);
-    background: var(--surface);
-    overflow: hidden;
-    margin-block: var(--s8);
+    border-block: 1px solid var(--border);
+    background: transparent;
+    margin-block: var(--s10);
   }
 
   .tile {
-    padding: var(--s5);
+    padding: var(--s6) var(--s5) var(--s6) 0;
     display: flex;
     flex-direction: column;
-    gap: var(--s2);
-    border-right: 1px solid var(--border);
-  }
-
-  .tile:last-child {
-    border-right: 0;
+    gap: var(--s3);
   }
 
   .tile-value {
     font-family: var(--serif);
-    font-size: var(--text-xl);
-    line-height: 1.15;
-    letter-spacing: -0.015em;
+    font-size: var(--text-2xl);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   /* Sections */
   section {
-    margin-bottom: var(--s10);
+    margin-bottom: var(--s12);
     max-width: var(--measure);
   }
 
   h2 {
     font-size: var(--text-2xl);
-    margin-bottom: var(--s4);
+    margin-bottom: var(--s5);
   }
 
   section p + p {
-    margin-top: var(--s4);
+    margin-top: var(--s5);
   }
 
   .fine {
@@ -401,8 +396,8 @@ const serviceSchema = {
   .process li {
     counter-increment: step;
     position: relative;
-    padding-left: 2.75rem;
-    margin-bottom: var(--s5);
+    padding-left: 3rem;
+    margin-bottom: var(--s6);
   }
 
   .process li::before {
@@ -431,7 +426,7 @@ const serviceSchema = {
     cursor: pointer;
     list-style: none;
     font-weight: 600;
-    padding-block: var(--s4);
+    padding-block: var(--s5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -458,13 +453,13 @@ const serviceSchema = {
 
   .faq p {
     color: var(--text-muted);
-    padding-bottom: var(--s5);
+    padding-bottom: var(--s6);
     max-width: 34rem;
   }
 
   .provenance {
     border-top: 1px solid var(--border);
-    padding-top: var(--s5);
+    padding-top: var(--s6);
     max-width: var(--measure);
   }
 

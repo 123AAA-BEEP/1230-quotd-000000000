@@ -62,8 +62,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     position: sticky;
     top: 0;
     z-index: 20;
-    background: rgba(255, 255, 255, 0.88);
-    backdrop-filter: saturate(180%) blur(12px);
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: saturate(180%) blur(16px);
     border-bottom: 1px solid var(--border);
   }
 
@@ -72,14 +72,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     align-items: center;
     justify-content: space-between;
     gap: var(--s4);
-    height: 60px;
+    height: 72px;
   }
 
   .wordmark {
     font-family: var(--serif);
     font-size: var(--text-xl);
-    font-weight: 600;
-    letter-spacing: -0.03em;
+    font-weight: 400;
+    letter-spacing: -0.025em;
   }
 
   .wordmark:hover {
@@ -103,12 +103,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   }
 
   .header-cta {
-    padding-block: 0.55rem;
+    padding-block: 0.65rem;
   }
 
   .site-main {
     flex: 1;
-    padding-block: var(--s8) var(--s12);
+    padding-block: var(--s8) var(--s16);
   }
 
   .site-footer {
