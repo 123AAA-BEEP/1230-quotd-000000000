@@ -17,9 +17,11 @@
  * page: a person picks, and the pick is recorded in data/content/<page>.json
  * with its licence and attribution.
  *
- * Usage:  node pipelines/images.mjs limewash "limewash" "lime wash facade"
- * Needs outbound network. The sandbox proxy blocks commons.wikimedia.org, so
- * run it locally or in CI where that host is reachable.
+ * Usage:  node --use-env-proxy pipelines/images.mjs limewash "limewash" "lime wash facade"
+ *
+ * The --use-env-proxy flag is REQUIRED in this environment: Node's built-in
+ * fetch ignores HTTPS_PROXY by default, so without it every request is refused
+ * with a 403 while curl to the same URL succeeds.
  */
 
 import { writeFile, mkdir } from 'node:fs/promises';
@@ -30,6 +32,21 @@ const COMMONS = 'https://commons.wikimedia.org/w/api.php';
 
 // Licences we will actually publish. Anything else is reported but flagged.
 const OK_LICENCES = /^(cc0|cc-by(-sa)?-[0-9.]+|public domain|pd-)/i;
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function getJson(url, attempt = 0) {
+  const res = await fetch(url, { headers: { 'User-Agent': UA } });
+  // Commons rate-limits bursts; back off rather than hammering it.
+  if (res.status === 429 && attempt < 4) {
+    const wait = 2000 * 2 ** attempt;
+    console.log(`    rate limited, waiting ${wait / 1000}s`);
+    await sleep(wait);
+    return getJson(url, attempt + 1);
+  }
+  if (!res.ok) throw new Error(`Commons ${res.status}`);
+  return res.json();
+}
 
 async function commonsSearch(term, limit = 12) {
   const url = new URL(COMMONS);
@@ -46,9 +63,7 @@ async function commonsSearch(term, limit = 12) {
     origin: '*',
   }).toString();
 
-  const res = await fetch(url, { headers: { 'User-Agent': UA } });
-  if (!res.ok) throw new Error(`Commons ${res.status} for "${term}"`);
-  const json = await res.json();
+  const json = await getJson(url);
   const pages = json?.query?.pages ?? {};
 
   return Object.values(pages).map((p) => {
@@ -93,6 +108,7 @@ for (const term of terms) {
   } catch (err) {
     console.error(`  ${term}: ${err.message}`);
   }
+  await sleep(1500);
 }
 
 // Landscape and large enough to be a hero, usable licence first.
