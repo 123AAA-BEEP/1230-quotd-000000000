@@ -1,6 +1,6 @@
 # P0 Report — Niche Validation & Launch-10
 
-date: 2026-08-01 · status: **AWAITING OWNER SIGN-OFF** · prepared per `prompts/P0-validate.md`
+date: 2026-08-01 · status: **SIGNED OFF by owner, 2026-08-01 (in-session: "I think you can start building")** — launch-10, laddering, cuts, and September constraint approved as presented · prepared per `prompts/P0-validate.md`
 
 **Method + honesty note.** No keyword-tool exports were provided, so every volume-adjacent number here is a **proxy estimate** (marked EST); the one *measured* input is the owner's torontolimewash.com GSC data. Evidence base: 22 per-niche demand files, a 24-cell supply spot-check, 14-niche SERP beatability audit (56 classified queries), and a Track-2 re-validation — all in `data/validation/evidence/` with URLs on every claim. Known limits, flagged in-file: WebSearch approximates organic SERPs only (no ads/local pack, US vantage); Reddit was unretrievable all session (substitute forums used); supply audited in 4 metros, not the prompt's 10 — accepted because 24/24 cells cleared with margin. Ahrefs/Semrush exports, if provided later, recalibrate estimates without changing structure.
 
