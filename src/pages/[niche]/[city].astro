@@ -24,6 +24,11 @@ const housing = modules.housing_age;
 const cost = modules.cost;
 const climate = modules.climate_curing;
 
+const MONTH_FULL = { jan: 'January', feb: 'February', mar: 'March', apr: 'April', may: 'May', jun: 'June', jul: 'July', aug: 'August', sep: 'September', oct: 'October', nov: 'November', dec: 'December' };
+const monthFull = (m) => MONTH_FULL[m] ?? m;
+const monthShort = (m) => monthFull(m).slice(0, 3);
+const window_ = climate?.derived?.limewash_exterior_window;
+
 const consumerTerm = niche.consumer_terms[1] ?? niche.consumer_terms[0]; // plural person-form
 const h1 = `${consumerTerm.charAt(0).toUpperCase()}${consumerTerm.slice(1)} in ${city.name}`;
 const year = 2026;
@@ -50,11 +55,11 @@ if (cost?.job_cost_anchors?.length) {
     caption: 'per sq ft, typical exterior brick limewash (published trade guides, estimated)',
   });
 }
-if (climate?.derived?.limewash_exterior_window?.full_months?.length) {
-  const w = climate.derived.limewash_exterior_window.full_months;
+if (window_?.full_months?.length) {
+  const w = window_.full_months;
   tiles.push({
-    stat: `${w[0]}–${w[w.length - 1]}`,
-    caption: 'exterior application window (Environment Canada normals)',
+    stat: `${monthShort(w[0])}–${monthShort(w[w.length - 1])}`,
+    caption: 'dependable exterior application window (ECCC 1991–2020 normals)',
   });
 }
 
@@ -120,17 +125,24 @@ const serviceSchema = {
         {content.verdict.paragraphs.map((p) => <p>{p}</p>)}
       </section>
 
-      {climate?.monthly && (
+      {window_ && (
         <section>
           <h2>Climate and timing in {city.name}</h2>
           <p>
             Exterior limewash wants sustained 5–30&nbsp;°C and a low-rain cure of
             two to three days. Against Environment Canada's 1991–2020 normals for
-            {city.name}, that gives a working season of
-            {' '}{climate.derived.limewash_exterior_window.full_months.join(', ')}
-            {climate.derived.limewash_exterior_window.marginal_months.length > 0 && (
-              <>, with {climate.derived.limewash_exterior_window.marginal_months.join(' and ')} workable in good stretches</>
+            {city.name}, the dependable season runs
+            {' '}<strong>{monthFull(window_.full_months[0])} through {monthFull(window_.full_months.at(-1))}</strong>
+            {window_.marginal_months.length > 0 && (
+              <>, with {window_.marginal_months.map(monthFull).join(' and ')} workable in good stretches — April opens late in the month as frost risk fades, and October closes early as it returns</>
             )}.
+          </p>
+          <p>
+            Every month of that season sees rain on roughly a quarter of days,
+            so the actual two-to-three-day cure is always a forecast call; late
+            summer offers the best odds of a dry stretch, and specialists
+            schedule around midsummer heat waves rather than into them. The
+            practical advice: book in spring for the season, not during it.
           </p>
         </section>
       )}
