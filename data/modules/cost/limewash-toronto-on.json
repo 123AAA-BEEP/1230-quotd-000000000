@@ -1,0 +1,150 @@
+{
+  "city": "toronto-on",
+  "niche": "limewash",
+  "module": "cost",
+  "retrieved_at": "2026-08-01",
+  "retrieval_method": "web_search_snippets_only",
+  "retrieval_caveat": "Direct page fetches (jobbank.gc.ca, homedepot.ca/.com, retailer sites) were blocked by this environment's egress policy (HTTP CONNECT 403). Every figure below was surfaced verbatim in web search result content on 2026-08-01 and is attributed to its source URL; values that could not be surfaced are null. Re-verify before publish gate sign-off. See ../housing/toronto-on.notes.md.",
+  "sources": [
+    {
+      "url": "https://www.jobbank.gc.ca/marketreport/wages-occupation/6520/22437",
+      "publisher": "Government of Canada Job Bank — Painter and Decorator near Toronto (ON), NOC 73112",
+      "provided": "hourly wage range $20.00-$39.45, wages updated 2025-11-19; median not surfaced",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.jobbank.gc.ca/marketreport/wages-occupation/6521/ON",
+      "publisher": "Government of Canada Job Bank — Painter in Ontario, NOC 73112",
+      "provided": "Ontario hourly wage range $20.00-$34.80, updated 2025-11-19 (context)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.jobbank.gc.ca/marketreport/wages-occupation/6520/ca",
+      "publisher": "Government of Canada Job Bank — Painter and Decorator in Canada, NOC 73112",
+      "provided": "Canada-wide hourly wage range $20.00-$40.99, updated 2025-11-19 (context)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://romabio.com/classicolimewash/",
+      "publisher": "Romabio (manufacturer)",
+      "provided": "coverage 325-450 sq ft per average gallon after 50% dilution; 1L/1QT 90-120 sq ft; 2.5L/0.67GAL 215-300 sq ft; 15L/4GAL 1300-1800 sq ft",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://romabio.com/wp-content/uploads/2020/11/Classico-Limewash-TDS-1120.pdf",
+      "publisher": "Romabio technical data sheet",
+      "provided": "corroborating product spec document (surfaced in search results)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.homedepot.com/p/ROMABIO-0-67-Gal-Bianco-White-Limewash-Interior-Exterior-Paint-1012E1/302796971",
+      "publisher": "The Home Depot (US)",
+      "provided": "Romabio Classico Limewash Bianco White 0.67 gal (2.5L) — USD 62.81 as surfaced 2026-08-01",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.homedepot.com/p/ROMABIO-0-67-Gal-Avorio-White-Limewash-Interior-Exterior-Paint-1012E2/302796945",
+      "publisher": "The Home Depot (US)",
+      "provided": "Romabio Classico Limewash Avorio White 0.67 gal (2.5L) — USD 54.56 as surfaced 2026-08-01",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://primetimepaint.ca/products/romabio-classic-limewash",
+      "publisher": "Primetime Paint & Paper (Toronto & Etobicoke)",
+      "provided": "CAD availability: Romabio Classico Limewash stocked for pickup in Downtown Toronto & Etobicoke (Lakeshore), ships Canada-wide; 2.5L and 15L sizes; listing states 2.5L covers 175-300 sq ft, 15L 1050-1800 sq ft. Price NOT surfaced.",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.amazon.ca/Romabio-Classico-Limewash-Interior-slaked-Lime/dp/B07L8N4JD9",
+      "publisher": "Amazon.ca (sold via Primetime Paint & Paper Inc)",
+      "provided": "CAD availability of Classico Limewash Bianco White 2.5L; price NOT surfaced",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.angi.com/articles/limewash-brick.htm",
+      "publisher": "Angi",
+      "provided": "US professional limewash cost range (job cost anchor 1)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://homeguide.com/costs/cost-to-paint-a-brick-house",
+      "publisher": "HomeGuide",
+      "provided": "US limewash/whitewash brick-house cost ranges (job cost anchor 2)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://venetianplastershop.ca/cost-estimate-for-limewash-exterior-walls-in-canada-2026-guide/",
+      "publisher": "Venetian Plaster Shop (Toronto), 2026 Canada cost guide",
+      "provided": "Toronto/Canada CAD exterior limewash ranges (job cost anchor 3)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.chromatist.com/decorative-wall-finishes/limewash-accent-wall/",
+      "publisher": "Chromatist (Toronto decorative finishes studio)",
+      "provided": "Toronto decorative limewash starting rate (job cost anchor 4)",
+      "retrieved_at": "2026-08-01"
+    }
+  ],
+  "painter_wage_cad_hr": {
+    "low": 20.00,
+    "median": null,
+    "high": 39.45,
+    "geography": "Toronto region (Job Bank 'near Toronto (ON)' wage page), NOC 73112 painters and decorators (except interior decorators)",
+    "wages_updated": "2025-11-19",
+    "median_note": "Job Bank publishes a median for this page but it did not surface in any retrievable search content; direct fetch of jobbank.gc.ca blocked by environment egress policy. Do not estimate — fetch the page when network access allows.",
+    "context": {
+      "ontario_low": 20.00,
+      "ontario_high": 34.80,
+      "canada_low": 20.00,
+      "canada_high": 40.99
+    }
+  },
+  "material": {
+    "brand": "Romabio Classico Limewash",
+    "price_cad": null,
+    "price_cad_note": "CAD retail price not surfaceable via search snippets and all Canadian retailer pages (primetimepaint.ca, shop.birchandbenjamin.com, amazon.ca, romabio.ca) were egress-blocked for direct fetch. Product is confirmed sold in Toronto (Primetime Paint & Paper, pickup Downtown Toronto & Etobicoke) and on Amazon.ca. Fetch a CAD price before this number renders on-page.",
+    "price_usd_reference": {
+      "bianco_white_2_5l_usd": 62.81,
+      "avorio_white_2_5l_usd": 54.56,
+      "source": "homedepot.com product pages (US), as surfaced in search results 2026-08-01",
+      "est": true
+    },
+    "size": "2.5 L (0.67 US gal); also sold in 1 L and 15 L (4 gal)",
+    "coverage_sqft": "215-300 sq ft per 2.5L container (manufacturer, approx. at 50% dilution)",
+    "coverage_sqft_per_gallon": "325-450 sq ft per average gallon after dilution (manufacturer)",
+    "coverage_note": "Toronto retailer listing (Primetime/Birch & Benjamin) states 175-300 sq ft per 2.5L — slightly wider low end than manufacturer's 215-300. Coverage varies with mortar joint depth, absorbency, texture.",
+    "alternative_brand": null,
+    "alternative_brand_note": "No second limewash brand with a retrievable Canadian price found in search content (Meoded Classico Limewash appears at US dealer Marketplace Paints, no price surfaced). Gap."
+  },
+  "job_cost_anchors": [
+    {
+      "range": "$1.50-$5.00 per sq ft; $1,500-$6,700 whole house, professional limewash",
+      "currency": "USD",
+      "geo": "United States (national)",
+      "url": "https://www.angi.com/articles/limewash-brick.htm",
+      "est": true
+    },
+    {
+      "range": "$1.50-$5.00 per sq ft or $1,500-$6,700 typical home to limewash a brick house; whitewash of a 2,500 sq ft brick house $2,225-$4,000",
+      "currency": "USD",
+      "geo": "United States (national)",
+      "url": "https://homeguide.com/costs/cost-to-paint-a-brick-house",
+      "est": true
+    },
+    {
+      "range": "$6-$12 per sq ft residential exterior limewash (Toronto); $4-$8 per sq ft exterior limewash on brick; commercial/storefront $8-$16; one surfaced phrasing adds '+13% HST'",
+      "currency": "CAD",
+      "geo": "Toronto / Canada (2026 guide)",
+      "url": "https://venetianplastershop.ca/cost-estimate-for-limewash-exterior-walls-in-canada-2026-guide/",
+      "est": true,
+      "note": "Two searches surfaced overlapping but not identical ranges from this page ($4-$8+HST vs $6-$12 residential / $4-$8 brick); page appears to quote multiple scenario ranges. Verify wording on the page before quoting a single range."
+    },
+    {
+      "range": "from $12 per sq ft, decorative interior limewash application (accent walls)",
+      "currency": "CAD",
+      "geo": "Toronto",
+      "url": "https://www.chromatist.com/decorative-wall-finishes/limewash-accent-wall/",
+      "est": true
+    }
+  ]
+}

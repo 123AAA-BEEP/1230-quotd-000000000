@@ -1,0 +1,94 @@
+{
+  "city": "toronto-on",
+  "module": "housing_age",
+  "retrieved_at": "2026-08-01",
+  "retrieval_method": "web_search_snippets_only",
+  "retrieval_caveat": "Direct page fetches (statcan.gc.ca, toronto.ca) were blocked by this environment's egress policy (HTTP CONNECT 403). Every figure below was surfaced verbatim in web search result content on 2026-08-01 and is attributed to its source URL. Re-verify against the StatCan Census Profile and toronto.ca before publish gate sign-off. See toronto-on.notes.md.",
+  "geography": "Toronto, ON (city) as published by Point2Homes, which aggregates Statistics Canada 2021 Census data. StatCan City of Toronto CSD (2021A00053520005) profile page is the gold source but was not directly fetchable from this environment; CSD geography not independently confirmed.",
+  "sources": [
+    {
+      "url": "https://www.point2homes.com/CA/Demographics/ON/Toronto-Demographics.html",
+      "publisher": "Point2Homes (aggregating Statistics Canada, 2021 Census)",
+      "provided": "period-of-construction percentage distribution for Toronto, ON",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=toronto&GENDERlist=1&STATISTIClist=1%2C4&DGUIDlist=2021A00053520005&HEADERlist=20%2C3",
+      "publisher": "Statistics Canada, 2021 Census Profile, Toronto City (CSD)",
+      "provided": "NOT RETRIEVED (egress blocked). Authoritative verification target for period of construction. Search snippet from this profile confirmed 1,160,892 occupied private dwellings in Toronto (City), +4.3% vs 2016.",
+      "retrieved_at": null
+    },
+    {
+      "url": "https://www.toronto.ca/wp-content/uploads/2022/09/8e3a-CityPlanning-2021-Census-Backgrounder-Housing-Indigenous-Peoples.pdf",
+      "publisher": "City of Toronto City Planning, 2021 Census Backgrounder: Housing",
+      "provided": "NOT RETRIEVED (egress blocked). Contains Figure H.1 'Percent of Households by Period of Construction, 2016 and 2021' (p.16) — secondary verification target.",
+      "retrieved_at": null
+    },
+    {
+      "url": "https://www.toronto.ca/legdocs/mmis/2025/pb/bgrd/backgroundfile-251703.pdf",
+      "publisher": "City of Toronto, Report for Action: Designation of the Kensington Market HCD (2025)",
+      "provided": "statement that 27 districts across Toronto are designated under Part V of the Ontario Heritage Act",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/kensington-market-heritage-conservation-district-plan/",
+      "publisher": "City of Toronto",
+      "provided": "Kensington Market HCD Plan adopted with amendments by City Council on 2025-02-05 (By-law 94-2025)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.toronto.ca/wp-content/uploads/2019/04/9512-CityPlanning-Toronto-Heritage-Conservation-Districts.pdf",
+      "publisher": "City of Toronto City Planning",
+      "provided": "named list of designated HCDs (Cabbagetown Metcalfe/North/Northwest/South, Wychwood Park, Harbord Village, South Rosedale, North Rosedale, Queen Street West, Draper Street, East Annex, Fort York, Union Station, Weston, Yorkville-Hazelton, Riverdale, Blythwood Road, Kingswood Road South, Lyall Avenue)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.toronto.ca/city-government/planning-development/heritage-preservation/heritage-permit-guide/",
+      "publisher": "City of Toronto, Heritage Permit Guide",
+      "provided": "heritage permit requirement language for alterations within HCDs (Part V, Ontario Heritage Act)",
+      "retrieved_at": "2026-08-01"
+    },
+    {
+      "url": "https://www.toronto.ca/wp-content/uploads/2018/05/90a0-HCD-FAQ_2018.pdf",
+      "publisher": "City of Toronto, HCD FAQ (May 2018)",
+      "provided": "corroborating FAQ language on heritage permits within HCDs",
+      "retrieved_at": "2026-08-01"
+    }
+  ],
+  "period_of_construction": {
+    "note": "Percentages as published by Point2Homes from StatCan 2021 Census. Aggregate buckets below are arithmetic sums of the published decade shares (marked computed); they were not published as aggregates by the source.",
+    "as_published": {
+      "before_1945_pct": 14.6,
+      "built_1946_1960_pct": 14.7,
+      "built_1961_1970_pct": 14.7,
+      "built_1971_1980_pct": 14.1,
+      "built_1981_1990_pct": 9.5,
+      "built_1991_2000_pct": 8.0
+    },
+    "pre_1946_pct": 14.6,
+    "pre_1946_note": "Source wording is 'built before 1945' (14.6%); the 2021 Census category boundary is 1921-1945 / '1920 or before'. Treat as approximately pre-1946.",
+    "pre_1961_pct": 29.3,
+    "pre_1961_note": "computed: 14.6 + 14.7",
+    "built_1961_1980_pct": 28.8,
+    "built_1961_1980_note": "computed: 14.7 + 14.1",
+    "built_1981_2000_pct": 17.5,
+    "built_1981_2000_note": "computed: 9.5 + 8.0",
+    "built_2001_plus_pct": 24.4,
+    "built_2001_plus_note": "computed residual (100 minus published shares, which sum to 75.6). Not directly published — verify against StatCan CSD profile before quoting on-page.",
+    "total_occupied_private_dwellings": 1160892,
+    "total_note": "1,160,892 occupied private dwellings, Toronto City (CSD), 2021 Census, +4.3% vs 2016 (via search snippet of StatCan Census Profile)."
+  },
+  "heritage": {
+    "hcd_count": 27,
+    "hcd_count_note": "'27 districts across Toronto designated under Part V of the Ontario Heritage Act' per the City's Kensington Market HCD designation report (early 2025). Kensington Market was then designated 2025-02-05 (By-law 94-2025), so the current total may be 28 — verify on toronto.ca before publishing a live count.",
+    "examples": [
+      "Cabbagetown (Metcalfe / North / Northwest / South)",
+      "Wychwood Park",
+      "Harbord Village",
+      "South Rosedale",
+      "Queen Street West",
+      "Kensington Market (designated February 2025)"
+    ],
+    "alteration_note": "Properties inside a Heritage Conservation District are designated under Part V of the Ontario Heritage Act. Certain alterations and renovations — each district's HCD Plan spells out which — require a heritage permit from the City; proposals to alter a building in an HCD are reviewed by Heritage Planning as part of the building permit application (City of Toronto Heritage Permit Guide)."
+  }
+}
