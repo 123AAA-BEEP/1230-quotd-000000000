@@ -39,8 +39,9 @@ default branch; domain setup is owner-side (getquotd.com apex + www 301).
 ## Status
 
 **Holding page live-able** (skeleton + tokens + homepage; no money pages yet).
-P0 validation is the next work block; money pages ship in P1/P2 behind the
-publish gates. Spec amendments to date: `spec/ADDENDUM-2026-08-01.md`.
+**P0 complete: `data/validation/p0-report.md` awaits owner sign-off** (launch-10
++ hub-probe laddering); evidence in `data/validation/evidence/`. Money pages
+ship in P1/P2 behind the publish gates. Spec amendments to date: `spec/ADDENDUM-2026-08-01.md`.
 Trademark screen on "Quotd/GetQuotd" still recommended before brand-asset
 spend. Change control: spec §0 survival rule, §3.3 sequencing, §6.3 anti-Bark
 commitments, and kill criteria require owner sign-off to alter.
