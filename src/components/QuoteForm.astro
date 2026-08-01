@@ -28,8 +28,6 @@ const FORM_VERSION = 'p1-preview';
     data-consent-version={CONSENT_VERSION}
     novalidate
   >
-    <p class="steps eyebrow"><span data-stepnum>Step 1 of 2</span></p>
-
     <div class="step" data-step="1">
       <label class="field">
         <span>Full name</span>
@@ -84,12 +82,10 @@ const FORM_VERSION = 'p1-preview';
     const startedAt = Date.now();
     const step1 = form.querySelector('[data-step="1"]');
     const step2 = form.querySelector('[data-step="2"]');
-    const stepnum = form.querySelector('[data-stepnum]');
 
     const show = (n) => {
       step1?.toggleAttribute('hidden', n !== 1);
       step2?.toggleAttribute('hidden', n !== 2);
-      if (stepnum) stepnum.textContent = `Step ${n} of 2`;
     };
 
     form.querySelector('[data-next]')?.addEventListener('click', () => {
@@ -149,12 +145,8 @@ const FORM_VERSION = 'p1-preview';
     color: var(--text-muted);
     font-size: var(--text-sm);
     padding-bottom: var(--s5);
+    margin-bottom: var(--s5);
     border-bottom: 1px solid var(--border);
-  }
-
-  .steps {
-    color: var(--text-subtle);
-    margin-block: var(--s5) var(--s4);
   }
 
   fieldset {

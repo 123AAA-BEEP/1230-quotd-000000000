@@ -1,0 +1,33 @@
+{
+  "niche": "limewash",
+  "retrieved_at": "2026-08-01",
+  "source_site": "https://torontolimewash.com (owner-operated)",
+  "owner_grant": "Owner stated 2026-08-01: 'I own torontolimewash.com you can pull any images you want from that.'",
+  "PROVENANCE_WARNING": "Owning the website is not the same as owning the photographs. Several of these look professionally shot and the architecture reads as US South (gas lanterns, board-and-batten shutters, shingle siding, cypress), not Toronto. They may have been saved as inspiration rather than taken on the owner's own jobs. OWNER MUST CONFIRM per-image before any page using one flips from preview to published.",
+  "images": [
+    {
+      "file": "public/images/limewash-hero.jpg",
+      "src": "13-1043x834",
+      "px": "1043x834",
+      "subject": "Limewashed brick exterior, gable with gas lantern",
+      "use": "hero (current)",
+      "ownership": "UNCONFIRMED - professionally shot, architecture not Toronto"
+    },
+    {
+      "file": "public/images/limewash-interior.jpg",
+      "src": "limewashpageimage3",
+      "px": "1920x1382",
+      "subject": "Interior limewash/plaster living room, warm ochre",
+      "use": "candidate",
+      "ownership": "UNCONFIRMED - reads as design-magazine photography"
+    },
+    {
+      "file": "public/images/limewash-entry.jpg",
+      "src": "img_6121",
+      "px": "828x811",
+      "subject": "Limewashed brick entry, arched door, climbing vine",
+      "use": "candidate",
+      "ownership": "UNCONFIRMED - iPhone-style filename suggests a phone photo, but architecture not Toronto"
+    }
+  ]
+}

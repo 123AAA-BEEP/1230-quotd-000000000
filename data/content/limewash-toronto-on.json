@@ -1,7 +1,7 @@
 {
   "niche": "limewash",
   "city": "toronto-on",
-  "content_version": "p1-draft-5",
+  "content_version": "p1-draft-6",
   "written_at": "2026-08-01",
   "voice_rules": [
     "No em dashes. No 'judged against', no citing sources inside body copy.",
@@ -61,5 +61,15 @@
       "q": "When should exterior limewash happen in Toronto?",
       "a": "May through September is the dependable stretch. April can work late in the month once frost risk fades, and October only early, before the first frost comes back around the start of November. Rain falls on about a quarter of days through the season, so the actual cure window is always a forecast call. Late summer gives the best odds of a dry run. Book in spring for the season rather than trying to squeeze in during it."
     }
-  ]
+  ],
+  "hero": {
+    "image": "/images/limewash-hero.jpg",
+    "alt": "Limewashed brick exterior with a gabled roofline and a hanging gas lantern",
+    "badges": [
+      "Exterior",
+      "Interior"
+    ],
+    "caption": null,
+    "ownership": "UNCONFIRMED - see data/images/limewash.sourced.json. Confirm with owner before publishing."
+  }
 }
