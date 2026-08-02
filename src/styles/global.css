@@ -1,18 +1,25 @@
-/* Quotd design system v4.
-   Audit reference: jiffyondemand.com (see spec/design-audit-2026-08-01.md).
-   Deliberately NOT their look. Jiffy is on-demand convenience: bright blue,
-   Nunito Sans, 8px rounding, compact 14px text. Quotd is high-consideration
-   craft work, so the signals invert: real typography, generous space, restraint.
-   What we take from them is discipline, not style.
+/* Quotd design system v5 — built on the LIQWD design kit.
 
-   Fonts self-hosted, no external requests:
-     Fraunces  - variable display serif, warm and high-contrast
-     Inter     - UI and body, impeccable at small sizes
+   Source: design-kit/{tokens.css, BRANDING.md, PATTERNS.md, components/*}
+   supplied by the owner 2026-08-02. Their kit is followed as written, with the
+   one sanctioned re-skin their own rules describe: "Re-skinning means replacing
+   the --color-brand-* ramp — nothing else." Teal becomes iron oxide, because
+   this is a materials brand. Everything structural is theirs.
+
+   Rules carried over verbatim:
+     - Primary buttons are INK, never the accent. ("the single easiest way to
+       get the look wrong")
+     - Radii ladder: 8 controls / 12 cards / 16 panels / full pills. Never 4px.
+     - Depth is a hairline border + shadow-sm. Heavy shadow only on hover.
+     - Display face on consumer pages only: Inter Tight, weight 650, -0.025em.
+     - Uppercase only for tiny kickers at 0.14em tracking. Never headlines.
+     - Numbers are always tabular.
+     - Body text slate-600 or darker. Never lighter for "elegance".
    RULE: no component may declare a raw font-size. Tokens only. */
 
 @font-face {
-  font-family: 'Fraunces';
-  src: url('/fonts/fraunces.woff2') format('woff2-variations');
+  font-family: 'Inter Tight';
+  src: url('/fonts/inter-tight.woff2') format('woff2-variations');
   font-weight: 400 700;
   font-display: swap;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2122, U+2191, U+2193, U+2212;
@@ -27,63 +34,75 @@
 }
 
 :root {
-  /* Surfaces. Warm-neutral, not blue-grey: this is a materials brand. */
+  /* The accent ramp. The ONLY thing re-skinned from LIQWD. Iron oxide. */
+  --brand-50: #fdf6f2;
+  --brand-100: #f8e5d9;
+  --brand-600: #8a3d1c;
+  --brand-700: #703117;
+  --brand-800: #5c2913;
+
+  /* Neutral foundation, LIQWD's slate. Warmth comes from the accent and the
+     photography, not from the greys. */
+  --ink: #0b1220;
   --bg: #ffffff;
-  --surface: #faf9f7;
-  --surface-2: #f2f0ec;
-  --border: #e6e2dc;
-  --border-strong: #cfc9c0;
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-900: #0f172a;
 
-  /* Ink */
-  --text: #17150f;
-  --text-muted: #5f594e;
-  --text-subtle: #9a9287;
-  --on-dark: #faf9f7;
+  --text: var(--slate-900);
+  --text-muted: var(--slate-600);
+  --text-subtle: var(--slate-500);
+  --text-meta: var(--slate-400);
+  --border: var(--slate-200);
+  --border-strong: var(--slate-300);
+  --surface: var(--slate-50);
+  --on-dark: #ffffff;
 
-  /* One accent, used sparingly. Iron oxide, not marketplace blue. */
-  --accent: #8a3d1c;
-  --accent-hover: #6f3016;
-  --accent-tint: #fdf5f0;
-
-  --serif: 'Fraunces', 'Iowan Old Style', Palatino, Georgia, serif;
+  --display: 'Inter Tight', 'Inter', ui-sans-serif, system-ui, sans-serif;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  /* Type scale. Body at 17px: bigger than Jiffy's 14px because this is
-     reading material, not a booking flow. */
+  /* Tailwind's scale, which the kit is written against. */
+  --text-xxs: 0.625rem;
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
-  --text-base: 0.9375rem;
-  --text-md: 1rem;
-  --text-lg: 1.0625rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
   --text-xl: 1.25rem;
-  --text-2xl: 1.625rem;
-  --text-3xl: 2.25rem;
-  --text-4xl: 3.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
 
-  /* Radius: restrained. Heavy rounding reads friendly/cheap; this brand wants
-     composed. One step for controls, one for large surfaces. */
-  /* LIQWD-aligned: 8px controls, 12px cards. Composed but not severe. */
-  --r-sm: 8px;
-  --r-md: 12px;
-  --r-lg: 16px;
+  /* Radii ladder. Never mix a 4px radius in. */
+  --r-control: 8px;
+  --r-card: 12px;
+  --r-panel: 16px;
+  --r-pill: 999px;
 
-  --shadow-sm: 0 1px 2px rgba(23, 21, 15, 0.04);
-  --shadow-md: 0 4px 24px -10px rgba(23, 21, 15, 0.10), 0 1px 2px rgba(23, 21, 15, 0.04);
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.1);
 
-  /* 4px grid, extended at the top end: whitespace is the premium signal. */
   --s1: 0.25rem;
   --s2: 0.5rem;
   --s3: 0.75rem;
   --s4: 1rem;
-  --s5: 1.5rem;
-  --s6: 2rem;
-  --s8: 3rem;
-  --s10: 4.5rem;
-  --s12: 7rem;
-  --s16: 10rem;
+  --s5: 1.25rem;
+  --s6: 1.5rem;
+  --s8: 2rem;
+  --s10: 2.5rem;
+  --s12: 3rem;
+  --s16: 4rem;
+  --s20: 5rem;
 
-  --measure: 38rem;
-  --page: 78rem;
+  /* Container widths carry meaning (BRANDING.md → Layout). */
+  --read: 48rem;
+  --hub: 56rem;
+  --grid: 72rem;
 }
 
 * {
@@ -98,31 +117,31 @@ html {
   font-family: var(--sans);
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-size: var(--text-lg);
-  line-height: 1.65;
+  font-size: var(--text-base);
+  line-height: 1.6;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  font-variant-ligatures: common-ligatures;
 }
 
+/* Display type: consumer surfaces only, per the kit. */
 h1,
-h2,
-h3 {
-  font-family: var(--serif);
-  font-variation-settings: 'SOFT' 0, 'WONK' 0;
-  font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -0.018em;
+h2 {
+  font-family: var(--display);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
   text-wrap: balance;
 }
 
-h1 {
-  font-variation-settings: 'opsz' 144, 'SOFT' 0, 'WONK' 0;
+h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
 }
 
 p {
@@ -135,37 +154,42 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--brand-700);
 }
 
-:focus-visible {
-  outline: 2px solid var(--accent);
+/* The 2px brand focus ring is non-negotiable and must never be removed. */
+:where(a, button, input, select, textarea, summary, details):focus-visible {
+  outline: 2px solid var(--brand-600);
   outline-offset: 2px;
-  border-radius: var(--r-sm);
 }
 
 ::selection {
-  background: var(--accent-tint);
-  color: var(--accent);
+  background: var(--brand-50);
+  color: var(--brand-800);
 }
 
 .page {
-  width: min(100% - 3rem, var(--page));
+  width: min(100% - 3rem, var(--grid));
   margin-inline: auto;
 }
 
-.prose {
-  max-width: var(--measure);
+/* Tiny kicker. Uppercase lives here and nowhere else. */
+.eyebrow {
+  font-size: var(--text-xxs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: var(--text-subtle);
 }
 
-/* One uppercase micro-label treatment, used everywhere. */
-.eyebrow {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  line-height: 1.3;
-  text-transform: uppercase;
-  color: var(--text-muted);
+.eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--r-pill);
+  background: var(--brand-50);
+  color: var(--brand-700);
+  padding: 0.3rem 0.75rem;
 }
 
 .muted {
@@ -176,46 +200,91 @@ a:hover {
   font-variant-numeric: tabular-nums;
 }
 
-/* Buttons */
+/* Card: hairline border + shadow-sm. Never stack tints on top. */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  background: var(--bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-body {
+  padding: var(--s5);
+}
+
+/* Badge: pill, xs, medium weight, tinted. */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--r-pill);
+  padding: 0.125rem 0.625rem;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  background: var(--slate-100);
+  color: var(--slate-600);
+}
+
+.badge-brand {
+  background: var(--brand-100);
+  color: var(--brand-800);
+}
+
+/* Buttons. Sizes map to h-9 / h-10 / h-12 as in the kit. */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--s2);
   font-family: var(--sans);
-  font-size: var(--text-md);
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  line-height: 1;
-  padding: 1rem 1.25rem;
+  font-weight: 500;
+  white-space: nowrap;
   border: 1px solid transparent;
-  border-radius: var(--r-sm);
+  border-radius: var(--r-control);
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
+.btn-md {
+  height: 2.5rem;
+  padding-inline: var(--s4);
+  font-size: var(--text-sm);
+}
+
+.btn-lg {
+  height: 3rem;
+  padding-inline: var(--s6);
+  font-size: var(--text-base);
+}
+
+/* Primary is INK, never the accent. */
 .btn-primary {
-  background: var(--text);
+  background: var(--ink);
   color: var(--on-dark);
 }
 
 .btn-primary:hover {
-  background: var(--accent);
+  background: var(--slate-900);
   color: var(--on-dark);
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--text);
+  background: var(--bg);
+  color: var(--slate-900);
   border-color: var(--border-strong);
 }
 
 .btn-secondary:hover {
-  background: var(--surface);
-  color: var(--text);
-  border-color: var(--text-subtle);
+  background: var(--slate-50);
+  color: var(--slate-900);
 }
 
 .btn-block {
   width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

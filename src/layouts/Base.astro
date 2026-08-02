@@ -34,7 +34,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         <a href="/" class="wordmark">Quotd</a>
         <div class="header-right">
           <span class="eyebrow header-note">Toronto first</span>
-          {cta && <a href="#quote" class="btn btn-primary header-cta">Get a quote</a>}
+          {cta && <a href="#quote" class="btn btn-primary btn-md">Get a quote</a>}
         </div>
       </div>
     </header>
@@ -62,7 +62,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     position: sticky;
     top: 0;
     z-index: 20;
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: saturate(180%) blur(16px);
     border-bottom: 1px solid var(--border);
   }
@@ -72,19 +72,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     align-items: center;
     justify-content: space-between;
     gap: var(--s4);
-    height: 72px;
+    height: 4rem;
   }
 
   .wordmark {
-    font-family: var(--serif);
+    font-family: var(--display);
     font-size: var(--text-xl);
-    font-weight: 400;
-    letter-spacing: -0.025em;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+    color: var(--ink);
   }
 
-  .wordmark:hover {
-    color: var(--text);
-  }
+  .wordmark:hover { color: var(--ink); }
 
   .header-right {
     display: flex;
@@ -92,46 +91,43 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     gap: var(--s5);
   }
 
-  .header-note {
-    display: none;
-  }
+  .header-note { display: none; }
 
   @media (min-width: 40rem) {
-    .header-note {
-      display: inline;
-    }
-  }
-
-  .header-cta {
-    padding-block: 0.65rem;
+    .header-note { display: inline; }
   }
 
   .site-main {
     flex: 1;
-    padding-block: var(--s8) var(--s16);
+    padding-block: var(--s10) var(--s20);
   }
 
   .site-footer {
     border-top: 1px solid var(--border);
     background: var(--surface);
-    padding-block: var(--s8);
+    padding-block: var(--s12);
   }
 
   .footer-inner {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--s5);
+    gap: var(--s6);
     align-items: flex-end;
     justify-content: space-between;
   }
 
   .footer-mark {
+    font-family: var(--display);
     font-size: var(--text-lg);
+    font-weight: 650;
+    letter-spacing: -0.025em;
+    color: var(--ink);
     margin-bottom: var(--s1);
   }
 
   .footer-line,
   .footer-legal {
     font-size: var(--text-sm);
+    color: var(--text-muted);
   }
 </style>
