@@ -43,25 +43,31 @@
 
   /* Neutral foundation, LIQWD's slate. Warmth comes from the accent and the
      photography, not from the greys. */
+  /* Azura's lesson: its whole site runs on five colours (black, one text
+     grey, one surface grey, one accent, white). We had seven greys in play,
+     which is seven chances to be inconsistent. Collapsed to four. */
   --ink: #0b1220;
   --bg: #ffffff;
-  --slate-50: #f8fafc;
-  --slate-100: #f1f5f9;
-  --slate-200: #e2e8f0;
-  --slate-300: #cbd5e1;
-  --slate-400: #94a3b8;
-  --slate-500: #64748b;
-  --slate-600: #475569;
-  --slate-900: #0f172a;
-
-  --text: var(--slate-900);
-  --text-muted: var(--slate-600);
-  --text-subtle: var(--slate-500);
-  --text-meta: var(--slate-400);
-  --border: var(--slate-200);
-  --border-strong: var(--slate-300);
-  --surface: var(--slate-50);
+  --grey-text: #475569;   /* all secondary copy */
+  --grey-line: #e2e8f0;   /* all borders and dividers */
+  --grey-surface: #f6f8fa; /* all tinted panels */
   --on-dark: #ffffff;
+
+  --text: #0f172a;
+  --text-muted: var(--grey-text);
+  --text-subtle: var(--grey-text);
+  --text-meta: var(--grey-text);
+  --border: var(--grey-line);
+  --border-strong: #cbd5e1;
+  --surface: var(--grey-surface);
+  --slate-50: var(--grey-surface);
+  --slate-100: var(--grey-line);
+  --slate-200: var(--grey-line);
+  --slate-300: #cbd5e1;
+  --slate-400: var(--grey-text);
+  --slate-500: var(--grey-text);
+  --slate-600: var(--grey-text);
+  --slate-900: #0f172a;
 
   --display: 'Inter Tight', 'Inter', ui-sans-serif, system-ui, sans-serif;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -74,9 +80,9 @@
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+  --text-5xl: 3.5rem;
 
   /* Radii ladder. Never mix a 4px radius in. */
   --r-control: 8px;
@@ -128,18 +134,21 @@ body {
 }
 
 /* Display type: consumer surfaces only, per the kit. */
+/* Azura sets every heading at 700 with 1.2-1.3 leading. Bold plus tight is
+   what reads as crisp; medium weight reads as tentative. */
 h1,
 h2 {
   font-family: var(--display);
-  font-weight: 650;
-  letter-spacing: -0.025em;
-  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
   text-wrap: balance;
+  color: var(--ink);
 }
 
 h3 {
-  font-family: var(--sans);
-  font-weight: 600;
+  font-family: var(--display);
+  font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.3;
 }
