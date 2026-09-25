@@ -59,6 +59,21 @@ Generated from the research and writing runs of 2026-09-25. Each item is somethi
 - Research note: An Oakville sample-drawing citation initially added for corroboration was removed because that PDF was not retrieved in this session.
 
 ### fort-erie
+- CCMC evaluation report: the page says we prepare 'the pile system's CCMC evaluation report' with the package; the owner must name which pile system is installed and its CCMC report number before that line is backed by a specific document (claims-register claim 2).
+- Engineer-sealed certificate of conformity after install: written per the claims-register wording (claim 7); the owner should confirm this is the document their engineer actually issues for Fort Erie jobs.
+- Winter pre-drilling or thawing: the page uses the approved claim 6 wording; the owner should confirm the crew's equipment does this and how it is priced.
+- Pre-drilling on shallow limestone (pricing note and rock FAQ): a process claim on the owner's equipment and practice, not sourced from the data module.
+- Frost-grip mechanism sentence in the season section ('a smooth galvanized shaft anchored below the frost gives it far less to grip') follows the claim 5 publishable wording; the owner should confirm their piles are galvanized.
+- Related note says Port Colborne is served 'while its page is in progress'; confirm Port Colborne is a live service area in data/business.json before publishing.
+- Travel from the western GTA as a quote line item for Fort Erie: pricing practice to confirm with the owner (no figure stated).
+- Gap: No Ontario Building Code clause cited: the module has clause null, so the 1200 mm depth is attributed only to the Town's sample deck drawings.
+- Gap: No Fort Erie climate station: all climate facts are Port Colborne (6136606), 1981 to 2010 normals, about 26 km west; the page states this. 1991 to 2020 normals were not available.
+- Gap: No measured depth to bedrock: the page says none was retrieved and cites only Wikipedia's qualitative description of shallow soil and the Point Abino to Miller's Creek limestone ridge.
+- Gap: The Town publishes no deck-specific inspection list and its drawings say nothing about helical piles; the page tells readers to confirm inspection stages with the Building Department rather than stating them.
+- Gap: The 'roughly 75 days a year cross 0 C' figure is derived by subtraction in the data module (120.7 minus 45.5), not a published ECCC line.
+- Gap: Douglastown row is based on an unverified approximate coordinate, flagged in the table and table_note. Black Creek row shows 'Not mapped at the query point' for both surface and bedrock.
+- Gap: The 38.9% pre-1960 census tile is derived from 25% sample data for period of construction.
+- Gap: The '900 m inland' contact statement in the ground section comes from the notes file's coordinate table (two Crystal Beach query points), not from a published geological boundary.
 - Research note: Template claim 'Queenston shale' does not hold for Fort Erie: bedrock is Devonian/Silurian limestone and dolostone; copy must not mention shale bedrock.
 - Research note: Template claim '36-inch gate' was not found on any Fort Erie Town page and should not be used for this city.
 - Research note: Unlike Oakville, Fort Erie's deck drawings say nothing about helical piles, CCMC or engineer requirements; do not reuse the Oakville helical-pile wording on the Fort Erie page.
@@ -214,6 +229,19 @@ Generated from the research and writing runs of 2026-09-25. Each item is somethi
 - Research note: The Old Town Wikipedia/OSM coordinates returned no MRD 219 bedrock feature; the Queenston Formation attribution for Old Town rests on the reference coordinate 500 m south. Do not present Old Town bedrock as a direct query result.
 
 ### pelham
+- The 200 mm granular-layer load-test statement (ground paragraph 1 and the Fonthill FAQ) comes from CCMC 13675-R (GoliathTech) via claims-register.md; it only holds for the pile system the owner actually installs, so the owner must name the system and its CCMC report or the sentence should be generalised or cut.
+- The season paragraph's 'engineer-sealed certificate of conformity' and 'installation torque is recorded on every pile' are the register's approved wordings; they presume the owner's engineer and per-pile torque log exist as described.
+- Permit paragraph 2 says we ask the Building Department whether it wants an engineer's layout or a Minister's Ruling reference; that is a process claim about our practice, not a Pelham rule, and the owner should confirm it reflects how the crew files.
+- The pricing note's mobilization-minimum line and 'travel from the western GTA' presume the owner's price policy in prices.json carries a mobilization minimum for Niagara jobs.
+- related_note names Welland, Thorold and St. Catharines as service areas and Wainfleet and West Lincoln as 'served on request'; the owner should confirm which of those pages exist or are planned before publish.
+- Gap: No footing depth or design frost depth is stated for Pelham anywhere on the page; the Town prints none and the OBC clause text was not retrievable, so the page says the engineer sets pile depth and the Building Department should be asked. Do not add a 1.2 m or 4 ft figure to this page.
+- Gap: No Pelham-specific helical pile, CCMC, BMEC or engineer requirement exists in any Town document, so the permits section states that plainly and defers to the Building Department rather than asserting a rule.
+- Gap: Fees are quoted from the 2026 Building Permit Guide, not the fee by-law itself; a fee and by-law study began in 2026 and the page flags that the figures may change.
+- Gap: Frost-free period (160 days) is an ECCC code D figure (15 years, 1991 to 2008), which the page discloses; temperature figures are code A.
+- Gap: Depth to bedrock under Pelham was not queried; the page says so and does not claim a depth. The 75 m kame height is from Wikipedia, not OGS.
+- Gap: Four of the eight neighbourhood table rows (North Pelham, Short Hills edge, East of Fonthill, South Pelham) rest on hand-placed query points; the table_note discloses this.
+- Gap: The 'roughly 88 days crossing 0 °C' figure is derived by subtraction (134.1 minus 46.1) in the data module, not printed by ECCC.
+- Gap: Tile 4 (75 m) cites the Wikipedia Fonthill Kame page because the 75 m figure comes from there; its OGS surficial URL is in the module's geology sources if the template prefers a government source.
 - Research note: Sub-area points for North Pelham, Short Hills edge, east Fonthill and south Pelham are hand-placed approximations (listed in notes.md), not surveyed centroids.
 - Research note: The Welland-Pelham frost-free figure is code D (15 years, 1991-2008); temperature elements are code A (30 years).
 - Research note: Some fee and inspection wording is paraphrased from a 7-page PDF; quotes in sources[] are verbatim fragments under 25 words.
@@ -276,6 +304,17 @@ Generated from the research and writing runs of 2026-09-25. Each item is somethi
 - Research note: toronto.ca site search returns a JS shell and Wikipedia's API rate-limited this session; both are noted in toronto.notes.md.
 
 ### welland
+- Season paragraph 2 says 'the smooth galvanized shaft gives frost less to hold': this is the claims-register claim 5 mechanism wording; it assumes the owner's pile system has a galvanized shaft, which business.json does not yet name.
+- Permits paragraph 2 and FAQ 2 promise 'the manufacturer's evaluation report' with the package: the owner must name the pile system and its CCMC report number (claims register claim 2) before that report can be identified on the page.
+- Pricing note and FAQ 5 mention a minimum charge on small jobs, travel as a quote line, and engineering as a separate line: these are pricing-policy statements the owner should confirm against prices.json.
+- Related note names Port Colborne, Niagara Falls and St. Catharines as served areas: consistent with the 'Niagara corridor to Fort Erie' owner decision in CLAUDE.md, but the owner should confirm those three are in business.json's service-area list.
+- Gap: Welland publishes no deck permit threshold of its own; the page relies on the GTA-standard A01 sheet (600 mm from grade, labelled general information only) and tells readers to confirm with the Building Division.
+- Gap: No inspection list for decks or piles is published by the City; the page says to confirm inspections with the Building Division and that status is tracked in the CityView Portal.
+- Gap: No Welland sheet mentions helical piles, CCMC, BMEC or an engineer; the page frames the pile package as the applicant's own drawings under the City's non-standard-construction rule rather than as a City requirement.
+- Gap: Climate figures are 1981 to 2010 normals from Port Colborne (record ends 2006), checked against St. Catharines A; no 1991 to 2020 normals were retrievable for any Niagara station, and the page says so.
+- Gap: No Ontario Building Code clause is cited; the 1,200 mm depth is attributed only to the City-hosted D01b and S01a sheets.
+- Gap: Depth to bedrock was not retrieved; the page states that and says no query point returned rock near the surface.
+- Gap: Regional names 'Haldimand clay plain', 'Wentworth till' and 'Bertie/Onondaga' were not confirmed by OGS attributes and are not used; the page uses 'lake bed' and the OGS unit descriptions only.
 - Research note: The A01 Q&A PDF text layer is OCR-garbled (W rendered as H); quotes were normalised to the printed wording.
 - Research note: The 1200 mm depth comes from GTA standard drawings that Welland hosts and accepts for submission, not from a Welland-authored drawing; the OBC clause text itself was not retrieved.
 - Research note: Scratch PDFs from other cities (Brampton, Halton Hills, Mississauga) were present in /tmp and appeared in one extraction run; none were used for Welland.

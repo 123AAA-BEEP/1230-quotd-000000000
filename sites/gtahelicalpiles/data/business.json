@@ -120,26 +120,26 @@
       "name": "Welland",
       "slug": "welland",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Pelham",
       "slug": "pelham",
       "region": "Niagara Region",
-      "live": false,
+      "live": true,
       "note": "Fonthill"
     },
     {
       "name": "Port Colborne",
       "slug": "port-colborne",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Fort Erie",
       "slug": "fort-erie",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "West Lincoln",

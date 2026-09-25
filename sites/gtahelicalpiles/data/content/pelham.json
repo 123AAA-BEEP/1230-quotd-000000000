@@ -1,0 +1,194 @@
+{
+  "slug": "pelham",
+  "title": "Helical pile installation in Pelham | GTA Helical Piles",
+  "description": "Helical piles in Pelham, Fonthill and Fenwick: the Town's deck permit rule and 2026 fee, kame sand versus clay under each village, frost dates and pricing.",
+  "h1": "Helical pile installation in Pelham",
+  "kicker": "Niagara Region",
+  "answer": [
+    "A wood deck in Pelham needs a building permit once its surface is more than 24 inches (600 mm) above ground level. That is the only deck trigger the Town's 2026 Building Permit Guide prints. The Town publishes no sample deck drawings and no footing depth, so the foundation goes on the applicant's own drawings and the Plans Examiner reviews them against the Ontario Building Code. Confirm with the Building Department what it wants shown for helical piles, because the Guide does not mention them.",
+    "The ground is the part that changes from village to village. Fonthill, Ridgeville and Fenwick stand on the Fonthill Kame, a hill of sand and gravel that rises about 75 metres over the country around it. Step off the kame in any direction, toward North Pelham, the Short Hills or the flats toward Welland, and the surface turns to glacial-lake silt and clay. Bedrock below all of it is Silurian dolostone, and the survey found no rock at the surface at any point we queried."
+  ],
+  "tiles": [
+    {
+      "value": "600 mm",
+      "label": "deck height above ground that triggers a Pelham building permit",
+      "source": {
+        "name": "Town of Pelham 2026 Building Permit Guide",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      }
+    },
+    {
+      "value": "$299",
+      "label": "Town of Pelham deck, porch or patio permit fee, 2026 Guide",
+      "source": {
+        "name": "Town of Pelham 2026 Building Permit Guide, fee table",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      }
+    },
+    {
+      "value": "May 6 to Oct 14",
+      "label": "average frost-free period, Welland-Pelham composite, 1991 to 2020",
+      "source": {
+        "name": "Environment Canada normals, Welland-Pelham",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1"
+      }
+    },
+    {
+      "value": "75 m",
+      "label": "height of the Fonthill Kame, sand and gravel, above the surrounding land",
+      "source": {
+        "name": "Fonthill Kame (Wikipedia) and OGS MRD 128-REV",
+        "url": "https://en.wikipedia.org/wiki/Fonthill_Kame"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "The ground under Pelham",
+    "paragraphs": [
+      "Pelham is unusual in Niagara because its three villages sit on the region's highest natural feature. The Ontario Geological Survey maps one continuous polygon of coarse glaciolacustrine deposits, sand and gravel with minor silt and clay, covering Fonthill, the centre of Ridgeville and Fenwick. That is the Fonthill Kame, left by a retreating glacier, about 6 km by 3 km, reaching 259 metres above sea level, with an aggregate quarry on top. For a pile crew this is granular ground: the helix must be sized for it, and where loose gravel runs deeper than about 200 mm some pile systems' evaluation reports call for an on-site load test.",
+      "Around the kame the survey shows fine glaciolacustrine deposits: silt and clay, massive to well laminated, the bottom sediment of a glacial lake. Our query points at south Ridgeville, North Pelham, the Pelham side of the Short Hills, east of Fonthill and the low ground toward Welland all return it. The boundary between the two units runs through Ridgeville, where the village centre queries as sand and gravel and a point 1.9 km south queries as clay. Fine-grained soil holds water and is where seasonal frost action matters most, so the same pile will not read the same torque on both sides of that line.",
+      "Bedrock is Silurian dolostone everywhere in Pelham, not the shale found under the Lake Ontario shore below the escarpment. Under Fonthill, North Pelham and the Short Hills edge it is the Lockport Formation, thick-bedded limestone to dolostone with shaly Vinemount beds. Under Fenwick, Ridgeville and east of Fonthill it is the tan, sugary-textured Guelph Formation. South toward Wainfleet it is the Salina Formation, thin-bedded argillaceous dolostone and shale with gypsum. The survey returned no bedrock-at-surface polygon at any point, and depth to rock was not queried, so we do not plan on early refusal on the kame. The engineer's layout and the torque record settle the depth."
+    ],
+    "table_note": "Surface unit and bedrock formation from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), retrieved 25 September 2026. Fonthill, Ridgeville and Fenwick use published village coordinates; North Pelham, the Short Hills edge, east Fonthill and south Pelham are hand-placed points. A point describes the area around it, not your lot.",
+    "neighbourhoods": [
+      {
+        "name": "Fonthill",
+        "surface": "Sand and gravel (Fonthill Kame)",
+        "bedrock": "Lockport Formation dolostone"
+      },
+      {
+        "name": "Ridgeville, village centre",
+        "surface": "Sand and gravel (Fonthill Kame)",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Ridgeville, south",
+        "surface": "Silt and clay (glacial-lake bottom)",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Fenwick",
+        "surface": "Sand and gravel (Fonthill Kame)",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "North Pelham",
+        "surface": "Silt and clay",
+        "bedrock": "Lockport Formation dolostone"
+      },
+      {
+        "name": "Short Hills edge",
+        "surface": "Silt and clay; steep glacial hills and valleys to the north",
+        "bedrock": "Lockport Formation dolostone"
+      },
+      {
+        "name": "East of Fonthill",
+        "surface": "Silt and clay",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "South Pelham, toward Welland",
+        "surface": "Silt and clay, massive to well laminated",
+        "bedrock": "Salina Formation, argillaceous dolostone, shale and gypsum"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Pelham",
+    "authority_short": "the Town of Pelham",
+    "paragraphs": [
+      "The Town of Pelham Building Department (the website files it under Construction and Building Services) takes applications through the City Reporter portal, where you also check status and request inspections. The 2026 Guide prices a deck, porch or patio permit at $299.00, plus $0.99 per square foot above 300 square feet, with $299.00 as the minimum for any permit. A non-refundable $299.00 application fee is billed after the zoning review and before plans examination, and the balance is due before the permit is issued. A re-inspection costs $90.00. The Town began a building fee and by-law study in 2026, so check the current figure when you apply.",
+      "Nothing in the Town's published material speaks to helical piles, CCMC or BMEC evaluations, or an engineer's involvement, and no footing depth is printed anywhere. What the Guide does say is that the Plans Examiner reviews the submission for Ontario Building Code compliance. So the foundation type, the pile layout and the manufacturer's evaluation report go on the drawings; we prepare the package with you, and we ask the Building Department before filing whether it wants an engineer's layout or a Minister's Ruling reference for the pile system. After the install the engineer issues an engineer-sealed certificate of conformity from the torque record, and installation torque is recorded on every pile.",
+      "The Guide's inspection list is written for poured footings: readiness to construct footings before pouring, then footings and foundations before backfill. Ask the Building Department which of those it applies to piles. Each stage needs at least 2 regular business days' notice. No review time in days is published; the sequence is prescreen, zoning review, application fee, the Plans Examiner queue, then a deficiency report or a recommendation to issue. A property on private septic needs a Niagara Region septic permit first."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Wood deck more than 24 inches (600 mm) above ground level; no area threshold printed",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "Nothing published by the Town; confirm what the Building Department wants shown before filing",
+        "url": "https://www.pelham.ca/pelham-government/permits-applications-licenses/building-permits/"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$299.00, plus $0.99 per ft² over 300 ft²; $299.00 minimum; $299.00 application fee collected after zoning review, balance before issuance",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      },
+      {
+        "label": "Inspection notice",
+        "value": "At least 2 regular business days before each stage; re-inspection $90.00",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      },
+      {
+        "label": "Apply",
+        "value": "City Reporter portal, linked from the Town's Building Permits page",
+        "url": "https://www.pelham.ca/pelham-government/permits-applications-licenses/building-permits/"
+      },
+      {
+        "label": "Fees under review",
+        "value": "Building fee and by-law study under way in 2026; figures may change",
+        "url": "https://www.pelham.ca/business-building-development/planning-applications/building-fee-and-by-law-study/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Pelham",
+    "paragraphs": [
+      "The closest published normals are the composite record Environment Canada names Welland-Pelham, from two sites 5 to 9 km south and south-west of Fonthill, for 1991 to 2020. January averages −4.1 °C with a daily minimum of −8.0 °C. The thermometer drops below −10 °C on 29.9 days a year and below −20 °C on 3.4. There are 46.1 days when the high stays at or below freezing and 134.1 days when the low does, so on roughly 88 days the air crosses 0 °C between night and day. Snowfall averages 141 cm. St. Catharines Airport, about 22 km north-east and below the escarpment, runs milder at −3.8 °C in January; Pelham sits on the high ground between the lakes, and Welland-Pelham is the closer and colder record.",
+      "The frost-free period at Welland-Pelham averages 160 days, May 6 to October 14, though that figure rests on 15 years of record rather than 30. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. What the pile needs is a helix anchored below the depth frost reaches. Pelham publishes no design frost depth and no deck footing depth, so the engineer sets the pile depth for the site, and we confirm anything the Building Department expects to see on the drawing before we file."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−4.1 °C, Welland-Pelham composite, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "29.9 a year, Welland-Pelham; 46.1 days with the high at or below 0 °C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "160 days, May 6 to October 14, Welland-Pelham (15-year record, 1991 to 2008)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1"
+      },
+      {
+        "label": "Design frost depth",
+        "value": "Not published by the Town; no footing depth in the 2026 Guide, so the engineer sets pile depth for the site",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Pelham is the far end of our service area from the western GTA, so travel and a mobilization minimum appear in the quote as their own line. On the kame, sand and gravel can call for a larger helix or a load test; on the clay around it, depth follows the engineer. Rural lots with long drives and septic beds shape access. All of it is priced in writing first.",
+  "faqs": [
+    {
+      "q": "Does a deck in Pelham need a permit?",
+      "a": "If the deck surface is more than 24 inches (600 mm) above ground level, yes. That is the only trigger the Town's 2026 Building Permit Guide prints for wood decks, and it lists no area threshold. Anything that extends the house itself needs a permit regardless of size. Apply through the City Reporter portal linked from the Town's Building Permits page."
+    },
+    {
+      "q": "What does the Town of Pelham want from us for helical piles?",
+      "a": "Its published material does not say. The Guide mentions no helical piles, no CCMC or BMEC evaluation and no engineer, and prints no footing depth; it states only that the Plans Examiner checks the drawings against the Ontario Building Code. We prepare the package with you, put the pile layout and the manufacturer's evaluation report on the drawings, and confirm with the Building Department before filing. After the install the engineer issues an engineer-sealed certificate of conformity."
+    },
+    {
+      "q": "Is Pelham sand or clay?",
+      "a": "Both, and the line between them is sharp. Fonthill, the centre of Ridgeville and Fenwick sit on the Fonthill Kame, coarse sand and gravel. The lower ground on every side, North Pelham, the Short Hills edge, south Ridgeville and the flats toward Welland, is glacial-lake silt and clay. Bedrock under all of it is dolostone, with none at the surface at any survey point. We confirm on site, and installation torque is recorded on every pile."
+    },
+    {
+      "q": "Can you install in a Pelham winter?",
+      "a": "Yes. The Welland-Pelham record shows 46.1 days a year when the high never rises above freezing and 29.9 days below −10 °C. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so a winter install is a scheduling question, not a structural one."
+    },
+    {
+      "q": "What does a Pelham deck permit cost in 2026?",
+      "a": "$299.00 for a deck, porch or patio, plus $0.99 per square foot over 300 square feet, on the Guide effective January 1 to December 31, 2026. $299.00 is also the minimum for any permit, and a non-refundable $299.00 application fee is collected after the zoning review, with the balance due before issuance. Re-inspections are $90.00. The Town has a fee study under way in 2026, so confirm before you budget. Engineering for the pile layout is a separate cost."
+    },
+    {
+      "q": "I am in Fonthill. Does the quarry hill change anything?",
+      "a": "It changes the ground. The kame under Fonthill is sand and gravel rising about 75 metres above the surrounding land, with Lockport Formation dolostone beneath it and no rock at the surface. Granular ground takes load well when the helix matches it; where a loose gravel layer is thick, the pile's evaluation report may require a load test in place of the torque correlation. The engineer's layout, not the village name, sets the depth."
+    }
+  ],
+  "related_note": "Our nearest other Niagara service areas are Welland, Thorold and St. Catharines; Wainfleet and West Lincoln are served on request."
+}
