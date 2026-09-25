@@ -1,0 +1,313 @@
+{
+  "slug": "caledon",
+  "name": "Caledon",
+  "region": "Peel Region",
+  "province": "ON",
+  "lat": 43.8667,
+  "lon": -79.8667,
+  "sub_areas": [
+    {
+      "name": "Bolton",
+      "note": "Southeast Caledon beside the Humber River, the town's most populous community (2021 population 26,795) and its primary administrative and commercial centre (Wikipedia). OGS point query at the Wikipedia coordinate (43.8972, -79.7381) returns clay-to-silt till (unit 5d) over Georgian Bay Formation; a second point on the Humber valley floor (43.8833, -79.7333) returns modern alluvium (unit 19) over Georgian Bay Formation."
+    },
+    {
+      "name": "Caledon East",
+      "note": "Central Caledon, seat of Town Hall at 6311 Old Church Road (Town deck checklist letterhead); population 5,575 (Wikipedia). OGS point query at the Wikipedia coordinate (43.8697, -79.8667) returns glaciofluvial river/delta deposits (unit 7) over Queenston Formation, the same result as the reference coordinate."
+    },
+    {
+      "name": "Caledon Village",
+      "note": "Northwest Caledon on the Escarpment upland; population 1,909 (Wikipedia). OGS point query at the Wikipedia coordinate (43.8604, -79.9958) returns stone-poor sandy silt till (unit 5b) over Amabel Formation dolostone (Silurian)."
+    },
+    {
+      "name": "Inglewood",
+      "note": "Village on the Credit River in west-central Caledon; population 1,175 (Wikipedia). OGS point query at the Wikidata coordinate (43.7956, -79.9339) returns clay-to-silt till (unit 5d) over Queenston Formation."
+    },
+    {
+      "name": "Palgrave",
+      "note": "Compact Rural Community about 10 km north of Bolton (Wikipedia). OGS point query at the Wikipedia coordinate (43.9486, -79.8339) returns ice-contact stratified sand and gravel (unit 6) over Georgian Bay Formation; the Town deck checklist flags Oak Ridges Moraine site-plan control as an applicable-law item for this part of Caledon, though the OGS layer does not carry the moraine name."
+    },
+    {
+      "name": "Alton",
+      "note": "Village in northwest Caledon, established 1820; population 1,116 (Wikipedia). OGS point query at the Wikipedia coordinate (43.8603, -80.0686) returns glaciofluvial deposits (unit 7) over thin Silurian units mapped together as Whirlpool/Manitoulin/Cabot Head/Fossil Hill (shale-, sandstone- or dolostone-dominated)."
+    },
+    {
+      "name": "Cheltenham",
+      "note": "Small village in southwest Caledon, population 729 (Wikipedia). OGS point query at the Wikidata coordinate (43.7516, -79.9230) returns fine-textured glaciolacustrine silt and clay (unit 8a) over Queenston Formation; the Cheltenham Badlands (exposed Queenston shale) lie nearby but were not point-queried."
+    },
+    {
+      "name": "Belfountain",
+      "note": "Hamlet on the Credit River below the Escarpment (Wikipedia). OGS point query at the Wikipedia coordinate (43.7942, -80.0142) returns glaciofluvial deposits (unit 7) over the thin Silurian Whirlpool/Manitoulin/Cabot Head/Fossil Hill units."
+    },
+    {
+      "name": "Mayfield West",
+      "note": "Suburban growth area on the Brampton border along Mayfield Road (Wikipedia coordinate 43.7564, -79.8292). OGS point query returns clay-to-silt till (unit 5d) over Queenston Formation, the same till the OGS maps across south Peel."
+    }
+  ],
+  "census": {
+    "population_2021": 76581,
+    "private_dwellings_occupied": 23699,
+    "single_detached_pct": 80.7,
+    "period_of_construction": {
+      "pre_1960_pct": 10.4,
+      "1961_1980_pct": 19.6,
+      "1981_2000_pct": 33.7,
+      "2001_2021_pct": 36.2
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 19,120 of 23,700 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 23,700): 1960 or before 2,465; 1961-1980 4,650; 1981-1990 3,060; 1991-2000 4,935 (1981-2000 = 7,995); 2001-2005 2,390; 2006-2010 1,115; 2011-2015 2,475; 2016-2021 2,600 (2001-2021 = 8,580). Category sum 23,690 vs stated total 23,700 reflects StatCan random rounding.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Caledon, Town (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Caledon&DGUIDlist=2021A00053521024&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 76,581; Private dwellings occupied by usual residents: 23,699"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Caledon (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Caledon&DGUIDlist=2021A00053521024&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling: 23,700; Single-detached house: 19,120"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Caledon (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Caledon&DGUIDlist=2021A00053521024&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 2,465; 1961 to 1980 4,650; 1981 to 1990 3,060; 1991 to 2000 4,935"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results for 'Caledon' (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Caledon",
+        "retrieved_at": "2026-09-25",
+        "quote": "2021A00053521024 Caledon"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 7 - Glaciofluvial deposits",
+        "description": "River deposits and delta topset facies (sand and gravel outwash).",
+        "where": "Reference coordinate (43.8667, -79.8667), Caledon East, Alton and Belfountain query points all return unit 7; this is the Credit headwaters and central-Caledon outwash belt."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Commonly called Halton Till in regional literature, a name not carried in the OGS layer attributes and not verified here.",
+        "where": "South and east Caledon: query points at Bolton (Wikipedia coordinate), Inglewood and Mayfield West return unit 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5b - Till",
+        "description": "Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain.",
+        "where": "Escarpment upland at the Caledon Village query point (43.8604, -79.9958)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 6 - Ice-contact stratified deposits",
+        "description": "Sand and gravel, minor silt, clay and till.",
+        "where": "Palgrave query point (43.9486, -79.8339) in northeast Caledon; consistent with, but not labelled as, Oak Ridges Moraine sands in the OGS layer."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel.",
+        "where": "Cheltenham query point (43.7516, -79.9230) in the Credit valley of southwest Caledon."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 19 - Modern alluvial deposits",
+        "description": "Clay, silt, sand, gravel, may contain organic remains.",
+        "where": "Humber River valley floor at Bolton (query point 43.8833, -79.7333)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (central and south Caledon), Georgian Bay Formation (east: Bolton, Palgrave), Amabel Formation dolostone (Escarpment cap at Caledon Village), and thin Silurian Whirlpool/Manitoulin/Cabot Head/Fossil Hill units on the Escarpment slope (Alton, Belfountain); all per OGS MRD219 point queries.",
+      "description": "Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds (Ordovician). Georgian Bay: interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone (Ordovician). Amabel: white to blue-grey, thick- to massive-bedded dolostone (Silurian). Whirlpool/Manitoulin/Cabot Head/Fossil Hill: thin units variously shale-, sandstone-, dolostone- or limestone-dominated (Silurian). Queenston returned at the reference coordinate, Caledon East, Inglewood, Cheltenham and Mayfield West; Georgian Bay at both Bolton points and Palgrave; Amabel at Caledon Village; the thin Silurian group at Alton and Belfountain.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). No OGS surficial query point in Caledon returned unit 3 (bedrock at or near surface); every point returned till, glaciofluvial, glaciolacustrine, ice-contact or alluvial cover of unstated thickness. Bedrock exposure is known at the Cheltenham Badlands and the Forks of the Credit from general references but was not verified by point query here."
+    },
+    "implications_for_piles": [
+      "The Town of Caledon's Building Inspections page lists 'helical anchors' by name in its footing/structural-slab inspection ('Footing or structural slab (foundations, piers, posts, sonotubes, helical anchors, rebar)'), so a pile-founded deck is inspected at the same stage as a poured pier, before any concrete or backfill.",
+      "The Town's 2015 deck checklist requires detailed construction drawings to include 'approval documents such as CCMC or BMEC and Minister's Rulings', which is the route a proprietary helical pile system is documented under; the Aug-2024 checklist asks for concrete pier diameter, spacing and depth on the foundation plan and section, so a helical design substitutes engineer-stamped pile information for those items.",
+      "The conventional baseline the Town's hosted standard details set for a wood deck is a poured concrete pier 'MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL', with the soil bearing capacity to be determined before construction; that is the depth and bearing question a helical pile design answers by torque and engineer review rather than by excavation.",
+      "Soil texture changes sharply across Caledon: OGS maps sand-and-gravel outwash (unit 7) at Caledon East, Alton and Belfountain, ice-contact sand and gravel (unit 6) at Palgrave, clay-to-silt till (unit 5d) at Bolton, Inglewood and Mayfield West, silt and clay (unit 8a) at Cheltenham, and sandy till over Amabel dolostone (unit 5b) at Caledon Village; pile depth and capacity therefore cannot be transferred between villages, and near-surface dolostone or shale on the Escarpment is a refusal condition to check before installation.",
+      "The Town deck checklists flag Niagara Escarpment Commission, Credit Valley Conservation, Toronto and Region Conservation and Oak Ridges Moraine site-plan approvals as applicable-law items 'if applicable'; those agency clearances precede the building permit in the affected parts of Caledon. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.8667, -79.8667)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.8667,43.8667&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 7, Deposit: Glaciofluvial deposits, Material: river deposits and delta topset facies"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.8667, -79.8667)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.8667,43.8667&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "OGS MRD 219 feature service, layer 4 query at Caledon Village (43.8604, -79.9958)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.9958,43.8604&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Amabel; white to blue-grey, thick-to massive-bedded, dolostone; AGE: Silurian"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service, layer 3 query at Palgrave (43.9486, -79.8339)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.8339,43.9486&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 6, Ice-contact stratified deposits, sand and gravel, minor silt, clay and till"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Caledon, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Caledon,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Caledon is primarily rural with a number of hamlets and small villages, but also contains the larger community of Bolton"
+      },
+      {
+        "name": "Wikipedia API - coordinates for Bolton, Palgrave, Alton, Belfountain, Caledon East, Caledon Village, Mayfield West",
+        "url": "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&titles=Bolton,%20Ontario|Palgrave,%20Ontario|Alton,%20Ontario|Belfountain,%20Ontario&format=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Bolton, Ontario 43.89722222 -79.73805556; Palgrave, Ontario 43.94861111 -79.83388889"
+      },
+      {
+        "name": "Wikidata - Inglewood (Q115174290) and Cheltenham (Q29574006) coordinates",
+        "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q115174290|Q29574006&props=claims|labels&languages=en&format=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Inglewood 43.7955555555556 -79.9338888888889; Cheltenham 43.751578 -79.9230427"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Caledon Building Services (letterhead on the Town's deck checklist: 'Building Services, 6311 Old Church Road, Caledon, ON L7C 1J6, 905-584-2272'); the Town's web pages also say 'Building division' and 'building department'",
+    "deck_permit_required_when": "The Town's Building Permits page lists 'decks (only if the deck is higher than 24\" off the ground at any point)' under projects that require a permit, and 'A deck with a finished level of not more than 60 cm (24\") above finished grade at any point' under projects that do not. No area threshold is stated for decks; any accessory structure attached to an existing structure is treated as an addition requiring a permit. Zoning clearance is required before any project starts.",
+    "footing_depth_requirement": "The Town's deck checklists ask for a foundation plan with 'diameter of concrete pier locations and spacing' and a section showing 'location, depth of concrete piers' (Aug 2024), and refer applicants to the TACBOC/LMCBO standard details the Town hosts, whose wood-deck sheet prints 'POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL' and note 7 'CONCRETE PIERS SHALL BEAR ON UNDISTURBED SOIL. THE BEARING CAPACITY OF THE SOIL SHALL BE DETERMINED PRIOR TO CONSTRUCTION.' Helical piles: the 2015 deck checklist requires 'approval documents such as CCMC or BMEC and Minister's Rulings' with the construction drawings; the inspections page names 'helical anchors' in the footing inspection. No Caledon-specific helical depth or engineer wording beyond that was found.",
+    "inspections": [
+      "Footing or structural slab (foundations, piers, posts, sonotubes, helical anchors, rebar) - excavation complete, before any concrete is poured; engineer's site report if on fill",
+      "Backfill (weeping tile, foundation walls)",
+      "Framing (rough framing, trusses) - structure weather-tight",
+      "Insulation and vapour barrier",
+      "Plumbing final and HVAC final (prior to occupancy, where applicable)",
+      "Building final (occupancy) - all construction complete including exterior work and grading; ESA final certificate provided"
+    ],
+    "fee_note": "2026 Fees By-law (By-law 2025-105, Schedule B building fees): '(j) Decks, porches, basement walkout, etc. to detached, semis, townhouses, duplexes - Each - $192.00'; the same schedule states 'The minimum permit fee shall be $193.00'. A non-refundable minimum fee is collected at application; if not paid within ten business days a full resubmission is required.",
+    "timeline_note": "Town states that once a complete application is paid, Ontario Building Code review timeframes apply: 'Residential Dwelling, Tents, Demountable Stages or Demountable Support Structures - 10 business days; Small Buildings and Additional Residential Units - 15 business days'. Which class a deck falls in is not stated on the page. Resubmissions have no guaranteed review time and 'could add two or more weeks'. Inspections: book with 24 hours notice before 1 p.m. for next-day service; inspections run Monday to Friday 9:00 a.m. to 4:30 p.m.",
+    "portal_url": "https://www.caledon.ca/en/living-here/building-permits.aspx",
+    "portal_note": "All building permit applications are accepted online only, in PDF, through the Town's Building Services web form (forms.caledon.ca, 'BuildingServicesForm'); the linked Building Permits page is the public entry point and hosts the 'Construction Companion' smart permit guide, checklists and the 2026 Fees By-law.",
+    "sources": [
+      {
+        "name": "Town of Caledon - Building Permits",
+        "url": "https://www.caledon.ca/en/living-here/building-permits.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "decks (only if the deck is higher than 24\" off the ground at any point)"
+      },
+      {
+        "name": "Town of Caledon - Building Permits (review timeframes)",
+        "url": "https://www.caledon.ca/en/living-here/building-permits.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Residential Dwelling, Tents, Demountable Stages or Demountable Support Structures - 10 business days"
+      },
+      {
+        "name": "Town of Caledon - Building Permit Application Checklist (B) Residential - Decks & Porches, Aug 2024 (PDF)",
+        "url": "https://www.caledon.ca/en/living-here/resources/Documents/forms-checklists/BBPA-Checklist---RESI-Decks-and-Porches-Aug-2024.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Section And Details - location, depth of concrete piers, deck & guard heights, and anchorage/connection details"
+      },
+      {
+        "name": "Town of Caledon - Building Permit Checklist for Decks Only, rev. Oct 2015 (PDF)",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/Deck.Checklist.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "approval documents such as CCMC or BMEC and Minister's Rulings ... See TACBOC details for assistance."
+      },
+      {
+        "name": "Town of Caledon - Standard Details / Climatic Design Requirements (LMCBO-TACBOC, Revision 01 April 2025, OBC 2024) (PDF hosted by the Town)",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/LMCBO.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL, FOR SIZES SEE SHEET D01d"
+      },
+      {
+        "name": "Town of Caledon - Building Inspections",
+        "url": "https://www.caledon.ca/en/living-here/inspections.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Footing or structural slab (foundations, piers, posts, sonotubes, helical anchors, rebar)"
+      },
+      {
+        "name": "Town of Caledon - By-law 2025-105, 2026 Fees and Charges (PDF)",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/2026-Fees-By-law.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "(j) Decks, porches, basement walkout, etc. to detached, semis, townhouses, duplexes | Each | $192.00"
+      },
+      {
+        "name": "Town of Caledon - By-law 2025-105, 2026 Fees and Charges (minimum fee)",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/2026-Fees-By-law.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "The minimum permit fee shall be $193.00, in addition unless stated otherwise."
+      },
+      {
+        "name": "Town of Caledon - Building Services online application form",
+        "url": "https://forms.caledon.ca/do.aspx?interviewID=E000024_BuildingServicesForm&lang=en&AppName=E000024_BuildingServicesForm",
+        "retrieved_at": "2026-09-25",
+        "quote": "All building permit applications are being accepted online only."
+      }
+    ]
+  },
+  "climate": {
+    "station": "Orangeville MOE (Climate ID 6155790; 43.92 N, 80.09 W; 411.5 m), about 19 km WNW of the reference coordinate, on the same Escarpment upland as Caledon Village and Alton; Toronto Pearson (Climate ID 6158731, 173.4 m, about 28 km SE) used as the low-elevation comparison for Bolton and Mayfield West",
+    "normals_period": "1981-2010 for Orangeville MOE (temperature computed from 1981-2006, 26 years, code C; frost-free from 18 years, code D); 1991-2020 for Toronto Pearson",
+    "frost_free_days": 132,
+    "jan_mean_temp_c": -7.5,
+    "days_below_minus_10c": 50.4,
+    "freeze_thaw_note": "Orangeville MOE 1981-2010: January daily minimum -11.6 C; 76.8 days/yr with daily maximum <= 0 C; 170.6 days/yr with daily minimum <= 0 C, so roughly 94 days a year cross 0 C between night and day (derived by subtraction); last spring frost May 20, first fall frost Sept 30; 151.5 cm annual snowfall. Toronto Pearson 1991-2020 for the low-lying southeast (Bolton, Mayfield West): January mean -5.0 C, January minimum -8.9 C, 34.2 days/yr below -10 C, 49.5 days/yr max <= 0 C, 130.6 days/yr min <= 0 C, 174 frost-free days (Apr 27 - Oct 20), 114.5 cm snowfall. Caledon spans about 200 m of relief, so the true figure for a given site lies between these two stations.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Orangeville MOE",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -7.5 -6.5 -2.1 5.3 11.7 16.9 19.4 18.4 14.3 7.8 2.0 -4.1 6.3 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Orangeville MOE (days min < -10 C, max <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 16.2 14.6 8.4 0.40 ... 50.4 C; <= 0 C 22.8 18.2 11.4 1.4 ... 76.8 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Orangeville MOE (frost-free)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Last Spring Frost May 20 D; First Fall Frost Sept 30 D; Average Length of Frost-Free Period 132 Days D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -5.0 ...; < -10 C ... 34.2 C; Average Length of Frost-Free Period 174 Days C"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 'MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL' pier depth printed on the wood-deck sheets (D01a/D01b, pages 26-27) of the LMCBO/TACBOC Standard Details PDF that the Town of Caledon hosts under its Building Services resources and points deck applicants to ('See TACBOC details for assistance'). That document is a Large Municipalities Chief Building Officials publication (Revision 01, April 2025, OBC 2024), not a Caledon-authored drawing; Caledon publishes no sample deck drawing of its own. The Ontario Building Code clause itself was NOT retrieved (e-Laws renders the regulation as a JavaScript shell; the 2024 Compendium is sold through Publications Ontario), so no clause number is cited.",
+    "sources": [
+      {
+        "name": "Town of Caledon - Standard Details (LMCBO-TACBOC, Revision 01 April 2025, OBC 2024), wood deck sheet (PDF hosted by the Town)",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/LMCBO.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "Town of Caledon - Building Permit Checklist for Decks Only (PDF), reference to TACBOC details",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/Deck.Checklist.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Must meet the design requirements in the OBC Div. C Part 3. See TACBOC details for assistance."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

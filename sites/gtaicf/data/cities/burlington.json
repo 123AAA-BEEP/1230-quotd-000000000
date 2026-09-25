@@ -1,0 +1,315 @@
+{
+  "slug": "burlington",
+  "name": "Burlington",
+  "region": "Halton Region",
+  "province": "ON",
+  "lat": 43.38621,
+  "lon": -79.83713,
+  "sub_areas": [
+    {
+      "name": "Aldershot",
+      "note": "West Burlington, formerly part of East Flamborough Township, annexed by Burlington on January 1, 1958 (Wikipedia). OGS point queries at both the Wikipedia article coordinate (43.30889, -79.84111) and the OpenStreetMap suburb centroid (43.31094, -79.84194) return coarse-textured glaciolacustrine sand and gravel (unit 9) over Queenston Formation red shale."
+    },
+    {
+      "name": "Downtown Burlington",
+      "note": "Lakeshore core around Brant Street and the Brant Street Pier (Wikipedia). OGS point query at the OpenStreetMap 'Downtown Burlington' centroid (43.32545, -79.79719) returns coarse-textured glaciolacustrine sand and gravel (unit 9) over Queenston Formation."
+    },
+    {
+      "name": "Roseland",
+      "note": "South-central Burlington east of downtown; OpenStreetMap maps the neighbourhood at 43.33450, -79.78002 with Roseland Creek to its north-east. OGS point query returns coarse-textured glaciolacustrine sand and gravel (unit 9) over Queenston Formation."
+    },
+    {
+      "name": "Shoreacres",
+      "note": "South-east Burlington on the lakeshore toward the Oakville border; OpenStreetMap neighbourhood centroid 43.36049, -79.75175, with Shoreacres Creek inland to the north-west. OGS point query returns coarse-textured glaciolacustrine sand and gravel (unit 9) over Queenston Formation."
+    },
+    {
+      "name": "Orchard",
+      "note": "North-east Burlington ('The Orchard' on OpenStreetMap, centroid 43.40446, -79.79432), listed as a Burlington community on Wikipedia. OGS point query returns clay-to-silt-textured till (unit 5d) over Queenston Formation."
+    },
+    {
+      "name": "Millcroft",
+      "note": "North-central Burlington, listed as a Burlington community on Wikipedia; OpenStreetMap neighbourhood centroid 43.39150, -79.80757. OGS point query returns clay-to-silt-textured till (unit 5d) over Queenston Formation."
+    },
+    {
+      "name": "Alton Village",
+      "note": "North Burlington near Dundas Street and Highway 407, listed as a Burlington community on Wikipedia; OpenStreetMap 'Alton West Village' residential area centroid 43.39354, -79.82941. OGS point query returns clay-to-silt-textured till (unit 5d) over Queenston Formation."
+    },
+    {
+      "name": "Tyandaga",
+      "note": "West Burlington on the slope below the Niagara Escarpment; OpenStreetMap neighbourhood centroid 43.34674, -79.84545. OGS point query returns clay-to-silt-textured till (unit 5d) over Queenston Formation."
+    },
+    {
+      "name": "Kilbride",
+      "note": "Rural village in north-west Burlington above the Niagara Escarpment, listed as a Burlington community on Wikipedia; OpenStreetMap village centroid 43.42450, -79.93869. OGS point query returns bedrock-drift complex with primarily till cover (unit 4a) over Amabel Formation dolostone (Silurian), not the Queenston shale that underlies the rest of the city."
+    }
+  ],
+  "census": {
+    "population_2021": 186948,
+    "private_dwellings_occupied": 73180,
+    "single_detached_pct": 50.3,
+    "period_of_construction": {
+      "pre_1960_pct": 14.0,
+      "1961_1980_pct": 33.5,
+      "1981_2000_pct": 28.2,
+      "2001_2021_pct": 24.4
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 36,795 of 73,180 occupied private dwellings by structural type (100% data). Period of construction (25% sample data, total 73,180): 1960 or before 10,220; 1961-1980 24,485; 1981-1990 10,035; 1991-2000 10,595; 2001-2005 6,475; 2006-2010 5,105; 2011-2015 3,420; 2016-2021 2,855. 1981-2000 = 20,630; 2001-2021 = 17,855. Percentages rounded to one decimal; they sum to 100.1 because of rounding.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Burlington, City (CY) [Census subdivision], Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Burlington&DGUIDlist=2021A00053524002&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 186,948; Private dwellings occupied by usual residents: 73,180"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Burlington (structural type of dwelling)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Burlington&DGUIDlist=2021A00053524002&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "structural type of dwelling - 100% data 73,180; Single-detached house 36,795 (50.3)"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Burlington (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Burlington&DGUIDlist=2021A00053524002&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 10,220; 1961 to 1980 24,485; 1981 to 1990 10,035; 1991 to 2000 10,595"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay (former glacial Lake Iroquois nearshore and shoreline deposits; the Lake Iroquois attribution is regional literature, not an attribute carried in the OGS layer).",
+        "where": "The whole lakeshore band south of roughly the QEW: query points at Aldershot (two coordinates), Downtown Burlington, Roseland and Shoreacres all return unit 9."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Commonly called Halton Till in regional literature, but that name is not carried in the OGS layer attributes and was not verified here.",
+        "where": "The plain between the lakeshore band and the escarpment: the reference coordinate (43.38621, -79.83713) and query points at Tyandaga, Millcroft, Alton Village and Orchard return unit 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 4a - Bedrock-drift complex in Paleozoic terrain",
+        "description": "Primarily till cover over bedrock at shallow, variable depth (drift too thin and discontinuous to map separately).",
+        "where": "Above the Niagara Escarpment in rural north-west Burlington: the Kilbride query point returns unit 4a."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (Upper Ordovician red shale) beneath all of urban Burlington below the escarpment; Amabel Formation (Silurian dolostone) forms the escarpment cap at Kilbride (OGS MRD219).",
+      "description": "Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds; returned at the reference coordinate and at Aldershot, Downtown, Roseland, Shoreacres, Orchard, Millcroft, Alton Village and Tyandaga. Amabel: white to blue-grey, thick- to massive-bedded dolostone including crinoidal grainstones and biohermal dolostone; returned at Kilbride. The Wikipedia city article describes the land area as the Niagara Escarpment, Lake Ontario and the sloping plain between them.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). OGS surficial mapping returns till (unit 5d) or glaciolacustrine sand and gravel (unit 9) of unstated thickness at every urban query point, and bedrock-drift complex (unit 4a, shallow bedrock) only at Kilbride above the escarpment. No unit 3 (bedrock at surface) polygon was returned at any Burlington point queried, unlike the creek valleys queried in Oakville."
+    },
+    "implications_for_piles": [
+      "The City of Burlington's Decks/Porches building permit checklist (August 22, 2023) lists 'BMEC Approvals or Minister's Rulings for innovative materials or systems (deck materials, helical piles, etc.)' as additional documentation, so a helical pile deck application in Burlington should carry the product's BMEC authorization or Minister's Ruling; the checklist does not mention CCMC.",
+      "The same checklist requires the plan view to show and note the sizes and spacing of footings (piers, sonotubes, etc.) and the cross-section to show footings below grade; the City publishes no sample deck drawing with a printed footing depth, so no Burlington-specific frost-depth figure was retrieved.",
+      "Soil texture divides the city in two bands: OGS maps coarse sand and gravel (unit 9) along the lakeshore (Aldershot, Downtown, Roseland, Shoreacres) and clay-to-silt till (unit 5d) across the plain north of it (Tyandaga, Millcroft, Alton Village, Orchard); a soil-specific pile design for one band is not transferable to the other.",
+      "Above the escarpment at Kilbride, OGS maps bedrock-drift complex (unit 4a) over Amabel dolostone rather than Queenston shale, so shallow hard rock is a site condition to confirm before installation there. No site-specific depth, torque or capacity figures were retrieved for any part of Burlington.",
+      "Properties within Conservation Halton or Niagara Escarpment Commission boundaries need those agencies' approvals before a building permit, per the City's deck page; this affects escarpment-slope and creek-valley lots (Bronte, Grindstone and other creeks) in particular."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.38621, -79.83713)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.83713,43.38621&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5d, Deposit: Till, Material: Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service, layer 3 query at Downtown Burlington (43.32545, -79.79719)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.7971890,43.3254470&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=UNIT,Deposit,Material&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9, Coarse-textured glaciolacustrine deposits, sand, gravel, minor silt and clay"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service, layer 3 query at Kilbride (43.42450, -79.93869)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.9386937,43.4245024&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=UNIT,Deposit,Material&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 4a, Bedrock-drift complex in Paleozoic terrain, Primarily till cover"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.38621, -79.83713)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.83713,43.38621&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "OGS MRD 219 feature service, layer 4 query at Kilbride (43.42450, -79.93869)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.9386937,43.4245024&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=FORMATION,PRIMARY_LITHO,DESCRIPT_FULL,AGE&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Amabel; PRIMARY_LITHO: dolostone; AGE: Silurian"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Burlington, Ontario (geography and communities)",
+        "url": "https://en.wikipedia.org/wiki/Burlington,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Niagara Escarpment, Lake Ontario and the sloping plain between the escarpment and the lake make up the land area of Burlington."
+      },
+      {
+        "name": "Wikipedia - Aldershot, Burlington (article coordinate)",
+        "url": "https://en.wikipedia.org/wiki/Aldershot,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "wgCoordinates lat 43.30888888888889, lon -79.8411111111111"
+      },
+      {
+        "name": "OpenStreetMap Nominatim - Burlington neighbourhood centroids (Aldershot, Downtown Burlington, Roseland, Shoreacres, Orchard, Millcroft, Alton Village, Tyandaga, Kilbride)",
+        "url": "https://nominatim.openstreetmap.org/search?q=Roseland%2C%20Burlington%2C%20Ontario&format=json&limit=3",
+        "retrieved_at": "2026-09-25",
+        "quote": "Roseland, Burlington, Halton Region, Golden Horseshoe, Ontario; lat 43.3344971, lon -79.7800239, type neighbourhood"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Burlington Building Department, 905-335-7731, buildingpermits@burlington.ca (name as printed on the City's Decks, Porches and Patios page and the Decks/Porches checklist)",
+    "deck_permit_required_when": "City deck page: a permit is required before construction if the deck is connected to a house or other structure, or a detached deck exceeds 10 square metres (108 square feet) in area, or exceeds a height of 600 mm (2 feet) from grade, or the deck is covered or has a roof. A porch needs a permit if greater than 10 m2, greater than 60 cm high from grade, covered or roofed, connected to a house or other structure, or constructed with footings and foundations. An uncovered patio on grade needs no permit (landscaping element). A Pre-Building Approval Application (zoning clearance certificate) must precede the building permit application, and Conservation Halton or Niagara Escarpment Commission approval may be needed depending on the property.",
+    "footing_depth_requirement": "Not published by the City. Burlington issues no deck sample drawing or deck guide with a printed footing depth; the Decks/Porches checklist only requires the plan view to show and note the sizes and spacing of footings (piers, sonotubes, etc.) and the cross-section to show footings below grade. For helical piles the checklist lists 'BMEC Approvals or Minister's Rulings for innovative materials or systems (deck materials, helical piles, etc.)' under additional documentation. No engineer requirement is stated for piles on the checklist; designer qualifications and BCIN numbers are required per the OBC schedules unless the homeowner designs their own project.",
+    "inspections": [
+      "An inspections checklist may be attached to the approved drawings; each inspection must be completed at its specified stage to close the permit (City Booking an Inspection page).",
+      "48-hour notice for building inspections; do not cover or continue construction until each stage is reviewed.",
+      "A final inspection is required to close the building permit.",
+      "Inspections are booked directly with the building inspector named on the permit card, quoting the permit number, address, inspection type and preferred date.",
+      "The City does not publish a deck-specific inspection list (footing/framing/final) on its pages; none was retrieved."
+    ],
+    "fee_note": "Building Permit By-law 30-2026 Schedule A (linked from the City's Applying for a Building Permit page): 'Attached/Detached Garage or Deck, Carport, Covered Deck/Patio' is charged the Minimum Permit Fee (footnote 7: all fees in the Schedule are flat fees); Section 2.1 sets the minimum permit fee at $377.00. The earlier Schedule A to By-law 18-2025, still linked from the deck page, shows the same $377 flat fee per item and $377 minimum. HST is charged where applicable.",
+    "timeline_note": "City deck page: once a complete application is submitted, a plan review is conducted within 10 business days, after which the permit is issued or an application status report is sent. The City's Building Permit Turnaround Times sheet (last updated Jan. 1, 2025) reproduces the OBC Division C table: 10 days for a house where no dwelling unit is above another and for a detached structure serving it up to 55 m2. Fees are to be paid within two days of the City's response email.",
+    "portal_url": "https://www.burlington.ca/en/building-and-renovating/applying-for-a-building-permit.aspx",
+    "portal_note": "There is no online permit portal: the City only accepts building permit applications by electronic submission emailed to buildingpermits@burlington.ca with the subject line 'Building Permit Application' followed by the project address, following the Electronic Building Permit Application Submission Standards; packages over 20 MB need a requested large-file transfer.",
+    "sources": [
+      {
+        "name": "City of Burlington - Decks, Porches and Patios",
+        "url": "https://www.burlington.ca/en/building-and-renovating/decks-porches-and-patios.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "A detached deck exceeds 10 square metres (108 square feet) in area, or Exceeds a height of 600mm (2 feet) high from grade"
+      },
+      {
+        "name": "City of Burlington - Decks, Porches and Patios (timeline and department)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/decks-porches-and-patios.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "a plan review will be conducted within 10 business days ... call the Building Department at 905-335-7731"
+      },
+      {
+        "name": "City of Burlington - Decks/Porches Building Permit Application Checklist (PDF, August 22, 2023)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Decks-Porches-Checklist.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "BMEC Approvals or Minister's Rulings for innovative materials or systems (deck materials, helical piles, etc.)"
+      },
+      {
+        "name": "City of Burlington - Decks/Porches checklist (footings)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Decks-Porches-Checklist.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Show and note the sizes and spacing of footings (i.e., piers, sonotubes etc.), floor joist and beams."
+      },
+      {
+        "name": "City of Burlington - Building Permit Fee Schedule A to By-law 30-2026 (PDF)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-Fee-Schedule-A-to-Bylaw.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "a minimum Permit fee of $377.00 shall be charged for processing and issuing Permits unless otherwise specified"
+      },
+      {
+        "name": "City of Burlington - Building Permit Fee Schedule A to By-law 30-2026 (deck line)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-Fee-Schedule-A-to-Bylaw.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Attached/Detached Garage or Deck, Carport, Covered Deck/Patio: Minimum Permit Fee7"
+      },
+      {
+        "name": "City of Burlington - Schedule A to By-law 18-2025 (PDF, linked from deck page)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-Fee-Schedule-A-to-Bylaw-18-2025.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Attached/detached garage or deck, carport, covered deck/patio ... 377(7) (for each item); (7) Fees are flat fees."
+      },
+      {
+        "name": "City of Burlington - Applying for a Building Permit",
+        "url": "https://www.burlington.ca/en/building-and-renovating/applying-for-a-building-permit.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Send your completed building permit application package to us by email at buildingpermits@burlington.ca"
+      },
+      {
+        "name": "City of Burlington - Building Permit Turnaround Times (PDF, last updated Jan. 1, 2025)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-turnaround-times.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "a house where no dwelling unit is located above another dwelling unit. 10 days"
+      },
+      {
+        "name": "City of Burlington - Booking an Inspection",
+        "url": "https://www.burlington.ca/en/building-and-renovating/booking-an-inspection.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "A 48-hour notice must be given for building inspections ... A final inspection is required to close your building permit"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Burlington TS (Climate ID 6151064; 43.33 N, 79.83 W; 99.1 m; about 6 km south of the reference coordinate) for January mean and daily minimum; Hamilton A (Climate ID 6153193, about 25 km south-west) for frost-free period and cold-day counts, which the Burlington station does not publish",
+    "normals_period": "1981-2010 for Burlington TS (temperature computed from 1981-1999 records, 19 years, code D; frost-free element has only 3 years and is unusable); 1991-2020 for Hamilton A",
+    "frost_free_days": 164,
+    "jan_mean_temp_c": -4.4,
+    "days_below_minus_10c": 35.7,
+    "freeze_thaw_note": "Burlington TS 1981-2010: January daily minimum -8.1 C, December daily mean -1.0 C, annual snowfall 99.9 cm (34.2 cm in January). Hamilton A 1991-2020: last spring frost May 1, first fall frost Oct 12, 164 frost-free days; 138.6 days/yr with minimum <= 0 C versus 54.8 days/yr with maximum <= 0 C, so roughly 84 days a year cross 0 C between night and day (derived by subtraction); January mean -5.3 C. The lakeshore station runs about 1 C milder than Hamilton airport on the escarpment, so the Hamilton cold-day counts likely overstate Burlington's lakeshore neighbourhoods.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Burlington TS",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=burlington&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6151064&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -4.4 -3.2 1.0 7.5 13.9 19.4 22.5 21.4 16.9 10.4 4.4 -1.0 9.1 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Burlington TS (daily minimum and snowfall)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=burlington&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6151064&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Minimum (C) -8.1 -7.1 -3.3 ...; Snowfall (cm) 34.2 21.5 16.9 2.4 0.0 ... 5.3 19.5 99.9 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Hamilton A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 13.4 10.9 4.6 0.05 ... 0.50 6.3 35.7 C; Average Length of Frost-Free Period 164 Days D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Hamilton A (days max <= 0 C and min <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Days with Maximum Temperature <= 0 C ... 54.8 C; Days with Minimum Temperature <= 0 C ... 138.6 C"
+      },
+      {
+        "name": "Wikipedia - Burlington, Ontario (climate box identifies Burlington TS station)",
+        "url": "https://en.wikipedia.org/wiki/Burlington,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Climate data for Burlington TS Climate ID: 6151064; elevation: 99.1 m; 1981-2010 normals"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Recorded as null because the City of Burlington publishes no deck guide or sample drawing that prints a footing depth; its Decks/Porches checklist asks only that footings be shown and noted on the drawings. The neighbouring Town of Oakville and Town of Milton deck sample drawings print 'MIN. 4'-0\" BELOW GRADE' (1.22 m), but those documents are not Burlington's and are not applied here. The Ontario Building Code clause text was not retrieved: ontario.ca/laws renders O. Reg. 332/12 as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario. Do not cite a clause number.",
+    "sources": [
+      {
+        "name": "City of Burlington - Decks/Porches Building Permit Application Checklist (PDF)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Decks-Porches-Checklist.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Cross Section/Elevations: Show the connections between the house and deck, the deck and beam, the beam and posts and footings below grade"
+      },
+      {
+        "name": "Town of Oakville - Deck building permit sample drawings (PDF; neighbouring municipality, not applied)",
+        "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MIN. 4'-0\" BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

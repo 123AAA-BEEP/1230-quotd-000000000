@@ -1,0 +1,346 @@
+---
+import '../styles/global.css';
+import { getBusiness, getLiveCities, getLiveGuides, isPlaceholderBusiness, safeJson, SERVICES } from '../lib/data.js';
+
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+  quoteHref?: string; // where the header and sticky-bar CTAs point
+  stickyBar?: boolean; // mobile call | quote bar (pages that carry the form)
+  schema?: Record<string, unknown>[]; // page-level JSON-LD objects
+}
+
+const { title, description, noindex = false, quoteHref = '#quote', stickyBar = true, schema = [] } = Astro.props;
+
+const biz = getBusiness();
+const placeholder = isPlaceholderBusiness();
+const indexable = !(noindex || placeholder);
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const cities = getLiveCities();
+const guides = getLiveGuides();
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+const year = 2026;
+
+// Sitewide business entity. Service-area business: locality only, no street.
+// `image` is added once a real photograph exists (Google lists it as required
+// for LocalBusiness rich results).
+const localBusiness = {
+  '@context': 'https://schema.org',
+  '@type': ['LocalBusiness', 'GeneralContractor'],
+  '@id': `${Astro.site}#business`,
+  name: biz.trading_name,
+  url: String(Astro.site),
+  telephone: biz.phone_e164,
+  email: biz.email,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: biz.address.locality,
+    addressRegion: biz.address.region,
+    addressCountry: biz.address.country,
+  },
+  areaServed: biz.service_area.map((c) => ({ '@type': 'City', name: `${c.name}, ON` })),
+  openingHours: biz.hours_schema,
+  priceRange: '$$$',
+};
+
+const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
+---
+
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {indexable ? <link rel="canonical" href={canonical} /> : <meta name="robots" content="noindex" />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={biz.trading_name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {indexable && <meta property="og:url" content={canonical} />}
+    <meta property="og:locale" content="en_CA" />
+    <meta name="generator" content={Astro.generator} />
+    <script type="application/ld+json" set:html={safeJson(localBusiness)} />
+    {schema.map((s) => <script type="application/ld+json" set:html={safeJson(s)} />)}
+    {plausibleDomain && (
+      <script defer data-domain={plausibleDomain} src="https://plausible.io/js/script.tagged-events.outbound-links.js"></script>
+    )}
+    <script is:inline>
+      // Plausible queue: events fired before the script loads are replayed.
+      // With no analytics configured the queue simply fills and is never read.
+      window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments); };
+      window.track = function (name, props, opts) {
+        var payload = { props: props || {} };
+        if (opts && typeof opts.callback === 'function') payload.callback = opts.callback;
+        window.plausible(name, payload);
+      };
+    </script>
+    <slot name="head" />
+  </head>
+  <body class:list={{ 'has-cta-bar': stickyBar }}>
+    <a href="#main" class="skip">Skip to content</a>
+
+    {placeholder && (
+      <div class="preview-strip" role="note">
+        <div class="page">Preview build. Contact details, credentials and prices are placeholders until the owner supplies them. This page is noindex.</div>
+      </div>
+    )}
+
+    <header class="site-header">
+      <div class="page header-inner">
+        <a href="/" class="wordmark" aria-label={`${biz.trading_name} home`}>
+          <svg class="mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
+            <rect x="2" y="4" width="4" height="14" rx="1" fill="currentColor" opacity="0.55" />
+            <rect x="16" y="4" width="4" height="14" rx="1" fill="currentColor" opacity="0.55" />
+            <rect x="7.5" y="4" width="7" height="14" fill="currentColor" />
+          </svg>
+          <span>{biz.trading_name}</span>
+        </a>
+        <nav class="header-right" aria-label="Primary">
+          <a href={`tel:${biz.phone_e164}`} class="phone num" data-track="call_click" data-place="header">
+            <span class="phone-label">Call</span>
+            <span class="phone-number">{biz.phone_display}</span>
+          </a>
+          <a href={quoteHref} class="btn btn-primary btn-md">Get a free quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main" id="main" tabindex="-1">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="page footer-grid">
+        <div class="footer-col footer-brand">
+          <p class="wordmark footer-mark">{biz.trading_name}</p>
+          <p class="small muted">Insulated concrete form foundations and full-height walls, built by our own crew.</p>
+          <p class="small muted">{biz.service_radius_line}</p>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Services</p>
+          <ul class="footer-list">
+            {SERVICES.map((s) => (
+              <li><a href={`/${s.slug}/`}>{s.title}</a></li>
+            ))}
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Service areas</p>
+          <ul class="footer-list">
+            {cities.map((c) => (
+              <li><a href={`/locations/${c.slug}/`}>{c.name}</a></li>
+            ))}
+          </ul>
+          {otherAreas.length > 0 && <p class="small muted footer-also">Also serving {otherAreas.join(', ')}.</p>}
+        </div>
+        <div class="footer-col" id="resources">
+          <p class="eyebrow">Technical resources</p>
+          <ul class="footer-list">
+            {guides.map((g) => (
+              <li><a href={`/guides/${g.slug}/`}>{g.title}</a></li>
+            ))}
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Contact</p>
+          <ul class="footer-list">
+            <li><a href={`tel:${biz.phone_e164}`} class="num" data-track="call_click" data-place="footer">{biz.phone_display}</a></li>
+            <li><a href={`mailto:${biz.email}`}>{biz.email}</a></li>
+            <li class="muted">{biz.hours_display}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="page footer-legal">
+        <p class="small muted">© {year} {biz.legal_name}. Prices and specifications are confirmed in the written quote.</p>
+        <p class="small muted footer-links"><a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a></p>
+      </div>
+    </footer>
+
+    {stickyBar && (
+      <nav class="cta-bar" aria-label="Quick actions">
+        <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg" data-track="call_click" data-place="sticky">Call</a>
+        <a href={quoteHref} class="btn btn-primary btn-lg">Get a free quote</a>
+      </nav>
+    )}
+
+    <script is:inline>
+      document.addEventListener('click', function (e) {
+        var el = e.target && e.target.closest && e.target.closest('[data-track]');
+        if (el) window.track(el.getAttribute('data-track'), { place: el.getAttribute('data-place') || '' });
+      });
+      // Hide the quick-action bar while the quote form itself is on screen.
+      var q = document.getElementById('quote');
+      if (q && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { document.body.toggleAttribute('data-quote-in-view', en.isIntersecting); });
+        }, { threshold: 0.15 }).observe(q);
+      }
+    </script>
+  </body>
+</html>
+
+<style>
+  .preview-strip {
+    background: var(--ink);
+    color: var(--on-dark);
+    font-size: var(--text-xs);
+    padding-block: var(--s2);
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* On phones the quick-action bar carries the CTA; the header scrolls away. */
+  @media (max-width: 63.99rem) {
+    .has-cta-bar .site-header { position: static; }
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s4);
+    height: var(--header-h);
+  }
+
+  .wordmark {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s2);
+    font-family: var(--display);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+
+  .wordmark:hover { color: var(--ink); }
+  .mark { color: var(--brand-700); flex: none; }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--s4);
+  }
+
+  .phone {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--s2);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .phone-label { display: none; }
+  .phone-number { display: none; }
+
+  @media (min-width: 40rem) {
+    .phone-number { display: inline; }
+  }
+
+  @media (max-width: 39.99rem) {
+    .phone { display: none; }
+    .header-right .btn { height: 2.75rem; }
+  }
+
+  .site-main {
+    flex: 1;
+    padding-block: var(--s8) var(--s20);
+  }
+
+  .site-main:focus { outline: none; }
+
+  .site-footer {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    padding-block: var(--s12) var(--s16);
+  }
+
+  /* Leave room under the fixed bar so the last footer links stay tappable. */
+  @media (max-width: 63.99rem) {
+    .has-cta-bar .site-footer { padding-bottom: calc(var(--s16) + 5.5rem + env(safe-area-inset-bottom, 0px)); }
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s8);
+  }
+
+  @media (min-width: 40rem) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (min-width: 64rem) {
+    .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; gap: var(--s8); }
+  }
+
+  .footer-brand p + p { margin-top: var(--s2); }
+
+  .footer-mark {
+    font-family: var(--display);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: var(--s2);
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--s3);
+    display: grid;
+    gap: var(--s2);
+    font-size: var(--text-sm);
+  }
+
+  .footer-list a { color: var(--text); display: inline-block; padding-block: var(--s1); }
+  .footer-list a:hover { color: var(--brand-700); }
+  .footer-also { margin-top: var(--s3); line-height: 1.5; }
+
+  .footer-legal {
+    margin-top: var(--s10);
+    padding-top: var(--s5);
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--s3);
+  }
+
+  .footer-links a { display: inline-block; padding-block: var(--s2); margin-right: var(--s4); }
+
+  .cta-bar {
+    position: fixed;
+    inset-inline: var(--s3);
+    bottom: calc(var(--s3) + env(safe-area-inset-bottom, 0px));
+    z-index: 30;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--s2);
+    padding: var(--s2);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r-panel);
+    box-shadow: var(--shadow-lg);
+  }
+
+  body[data-quote-in-view] .cta-bar,
+  body:has(#quote :focus-within) .cta-bar { display: none; }
+
+  @media (min-width: 64rem) {
+    .cta-bar { display: none; }
+  }
+</style>

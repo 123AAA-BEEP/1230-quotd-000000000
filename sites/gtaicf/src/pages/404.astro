@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { getLiveCities } from '../lib/data.js';
+
+const cities = getLiveCities();
+---
+
+<Base title="Page not found" description="The page you asked for is not on gtaicf.ca. Start from the home page or a service-area page." noindex stickyBar={false} quoteHref="/#quote">
+  <div class="page nf">
+    <p class="eyebrow">404</p>
+    <h1>That page is not here.</h1>
+    <p class="muted">
+      Try the <a href="/">home page</a>{cities.length > 0 && (
+        <span>, or a service-area page: {cities.map((c, i) => <span>{i > 0 ? ', ' : ''}<a href={`/locations/${c.slug}/`}>{c.name}</a></span>)}</span>
+      )}.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .nf { max-width: var(--read); padding-block: var(--s10); }
+  h1 { font-size: var(--text-3xl); margin-block: var(--s3) var(--s4); }
+  .nf a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+</style>

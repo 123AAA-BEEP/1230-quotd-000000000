@@ -1,0 +1,14 @@
+# GTA ICF
+
+Insulated concrete form (ICF) contractor serving Toronto, Peel, Halton, Hamilton, Guelph and the Niagara corridor, Ontario. Foundations, basements, full-height walls, additions and garages, built by the company's own crew with any locally stocked ICF system. Every page states its sources and its last-reviewed date.
+
+## Sections
+
+- / : what we build, where we work, how to get a quote
+- /foundations-and-basements/ and /full-height-walls/ : the two services
+- /locations/<city>/ : one page per municipality served, built from that municipality's own permit rules and fees, Ontario Geological Survey point queries by neighbourhood, Environment Canada climate normals and the 2021 census, with sources listed at the foot of the page
+- /guides/ : technical guides on ICF versus poured concrete cost, the Ontario Building Code and SB-12 requirements, R-value and thermal performance, and winter pours
+
+## Data
+
+Price ranges are illustrative, per square foot of wall, from one price table with a last-reviewed date; the firm price follows a site review. Local facts carry a source URL and a retrieval date. The sitemap at /sitemap.xml lists every published page.

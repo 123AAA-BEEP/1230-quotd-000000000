@@ -1,0 +1,273 @@
+---
+// City page template. One page per live city in data/business.json. All
+// substance comes from data/cities/<slug>.json (facts with sources) and
+// data/content/<slug>.json (editorial prose, tiles, FAQ). The template adds no
+// city facts of its own. Blocks marked data-city-prose are what the overlap
+// gate compares between cities.
+import Base from '../../layouts/Base.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import Estimator from '../../components/Estimator.astro';
+import StatBand from '../../components/StatBand.astro';
+import Process from '../../components/Process.astro';
+import Faq from '../../components/Faq.astro';
+import { getBusiness, getCity, getLiveCities, getLiveGuides, getPrices, collectSources, formatCad, formatCadPerSqft } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return getLiveCities().map((c) => ({ params: { city: c.slug } }));
+}
+
+const { city: slug } = Astro.params;
+const biz = getBusiness();
+const city = getCity(slug);
+const prices = getPrices();
+const guides = getLiveGuides();
+const contentFiles = import.meta.glob('../../../data/content/*.json', { eager: true });
+const content = Object.values(contentFiles).map((m) => m.default ?? m).find((c) => c.slug === slug);
+if (!city || !content) throw new Error(`Missing data or content for city ${slug}`);
+if (!content.permits?.authority_short) throw new Error(`content/${slug}.json needs permits.authority_short`);
+
+const area = biz.service_area.find((c) => c.slug === slug);
+const costGuide = guides.find((g) => g.slug === 'icf-vs-poured-concrete-ontario');
+
+// Nearest live city pages, by straight-line distance, for the link mesh.
+const km = (a, b) => {
+  const r = Math.PI / 180;
+  const dLat = (b.lat - a.lat) * r;
+  const dLon = (b.lon - a.lon) * r;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLon / 2) ** 2;
+  return 6371 * 2 * Math.asin(Math.sqrt(h));
+};
+const nearby = getLiveCities()
+  .filter((c) => c.slug !== slug)
+  .map((c) => ({ ...c, data: getCity(c.slug) }))
+  .filter((c) => c.data?.lat && c.data?.lon)
+  .map((c) => ({ ...c, d: km(city, c.data) }))
+  .sort((a, b) => a.d - b.d)
+  .slice(0, 4);
+const relatedNote = (content.related_note || '').replace(/[;,.]?\s*call for those until their pages are up\.?/i, '.').replace(/\.\.$/, '.');
+const foundation = prices.rows.find((r) => r.key === 'foundation');
+const sources = collectSources(city.census?.sources, city.geology?.sources, city.permits?.sources, city.climate?.sources, city.code?.sources);
+
+const steps = [
+  { title: 'Send the drawings', body: 'Architectural drawings with wall heights and the perimeter are enough to quote a foundation or full-height walls. For an addition, a sketch and photos start it and we measure on site.' },
+  { title: 'Engineering and permit package', body: `The engineer sizes the core, reinforcing and lintels to the loads and the soil at your address, and the drawings, the ICF system's evaluation report and the engineer's letter go to ${content.permits.authority_short} with the application. We prepare the package with you.` },
+  { title: 'Footings, forms, steel, pour', body: 'Our crew sets the footings below the frost zone, stacks and braces the forms, places the reinforcing, and pours the walls in one continuous lift after the pre-pour inspection.' },
+  { title: 'Waterproof, backfill, hand over', body: 'Membrane and weeping tile on the outside face, the pre-backfill inspection, then backfill. The framers take over a wall that is already insulated on both faces.' },
+];
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Service areas', item: `${Astro.site}#areas` },
+    { '@type': 'ListItem', position: 3, name: city.name, item: `${Astro.site}locations/${slug}/` },
+  ],
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: content.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Insulated concrete form (ICF) construction',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: { '@type': 'City', name: `${city.name}, ON` },
+};
+---
+
+<Base title={content.title} description={content.description} schema={[breadcrumb, faqSchema, serviceSchema]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <a href="/#areas">Service areas</a>
+    <span aria-hidden="true">/</span> <span aria-current="page">{city.name}</span>
+  </nav>
+
+  <div class="page money">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">{content.kicker}</p>
+      <h1>{content.h1}</h1>
+      {area?.note && <p class="dateline">{area.note}</p>}
+      <div class="answer prose" data-city-prose>
+        {content.answer.map((p) => <p>{p}</p>)}
+        {foundation && <p>ICF foundation walls run {formatCadPerSqft(foundation.low)} to {formatCadPerSqft(foundation.high)} per square foot of wall installed as an illustrative range. The ground under your lot, the water table and the wall height decide the rest.</p>}
+      </div>
+      <StatBand tiles={content.tiles} label={`${city.name} facts`} />
+    </div>
+
+    <aside class="rail">
+      <QuoteForm city={slug} />
+    </aside>
+
+    <div class="rest">
+      <section class="block">
+        <h2>{content.ground.heading}</h2>
+        <div class="prose" data-city-prose>{content.ground.paragraphs.map((p) => <p>{p}</p>)}</div>
+        {content.ground.neighbourhoods?.length > 0 && (
+          <div class="table-wrap">
+            <table class="table">
+              <thead><tr><th scope="col">Neighbourhood</th><th scope="col">Surface</th><th scope="col">Bedrock</th></tr></thead>
+              <tbody>
+                {content.ground.neighbourhoods.map((n) => (
+                  <tr><td><strong>{n.name}</strong></td><td>{n.surface}</td><td>{n.bedrock}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {content.ground.table_note && <p class="sources">{content.ground.table_note}</p>}
+      </section>
+
+      <section class="block">
+        <h2>{content.permits.heading}</h2>
+        <div class="prose" data-city-prose>{content.permits.paragraphs.map((p) => <p>{p}</p>)}</div>
+        <dl class="facts">
+          {content.permits.facts.map((f) => (
+            <div>
+              <dt>{f.label}</dt>
+              <dd>{f.value} <a href={f.url} rel="noopener" target="_blank" class="src">source<span class="sr-only"> for {f.label}, opens in a new tab</span></a></dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section class="block">
+        <h2>{content.season.heading}</h2>
+        <div class="prose" data-city-prose>{content.season.paragraphs.map((p) => <p>{p}</p>)}</div>
+        <dl class="facts">
+          {content.season.facts.map((f) => (
+            <div>
+              <dt>{f.label}</dt>
+              <dd>{f.value} <a href={f.url} rel="noopener" target="_blank" class="src">source<span class="sr-only"> for {f.label}, opens in a new tab</span></a></dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section class="block" id="pricing">
+        <h2>What it costs in {city.name}, illustratively</h2>
+        <p class="muted">{prices.illustrative_note}</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Wall</th><th scope="col">Typical core</th><th scope="col">Illustrative range</th></tr></thead>
+            <tbody>
+              {prices.rows.map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.core_options}</td>
+                  <td class="num">{formatCadPerSqft(r.low)} to {formatCadPerSqft(r.high)} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="prose" data-city-prose><p class="small pricing-note">{content.pricing_note}</p></div>
+        <p class="sources">Last reviewed {prices.last_reviewed}. {prices.excluded_note}
+          {costGuide && <span> What moves the price and what other Ontario builders publish: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <Estimator city={slug} heading={`Estimate a foundation in ${city.name}`} />
+
+      <Process steps={steps} />
+
+      <div data-city-prose>
+        <Faq items={content.faqs} heading={`Questions from ${city.name}`} />
+      </div>
+
+      <section class="block related">
+        <h2>Related</h2>
+        {nearby.length > 0 && (
+          <div class="nearby">
+            <p class="eyebrow">Nearby service areas</p>
+            <ul class="related-list">
+              {nearby.map((c) => <li><a href={`/locations/${c.slug}/`}>ICF in {c.name}</a> <span class="muted small">about {Math.round(c.d)} km</span></li>)}
+            </ul>
+          </div>
+        )}
+        <p class="eyebrow">Guides and services</p>
+        <ul class="related-list">
+          {guides.map((g) => <li><a href={`/guides/${g.slug}/`}>{g.title}</a></li>)}
+          <li><a href="/foundations-and-basements/">ICF foundations and basements</a></li>
+          <li><a href="/full-height-walls/">Full-height ICF walls and additions</a></li>
+          <li><a href="/#areas">All service areas and how we work</a></li>
+        </ul>
+        {relatedNote && <p class="muted small">{relatedNote}</p>}
+      </section>
+
+      <section class="block sources-block">
+        <h2>Sources and freshness</h2>
+        <p class="muted small">Local figures on this page come from the sources below, retrieved {city.retrieved_at}. Rules and fees change; confirm permit questions with the municipality.</p>
+        <ul class="sources source-list">
+          {sources.map((s) => (
+            <li><a href={s.url} rel="noopener" target="_blank">{s.name}</a></li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    margin-bottom: var(--s6);
+    display: flex;
+    gap: var(--s2);
+    flex-wrap: wrap;
+  }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .money {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--s8);
+    align-items: start;
+  }
+
+  @media (min-width: 64rem) {
+    .money { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+
+  h1 {
+    font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl));
+    margin-block: var(--s3) var(--s4);
+    max-width: 18ch;
+  }
+
+  .dateline { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s5); margin-top: calc(-1 * var(--s2)); }
+
+  .answer { max-width: var(--read); font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); }
+  .answer p + p { margin-top: var(--s4); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s8); }
+
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+
+  .table-wrap { margin-top: var(--s5); }
+  .pricing-note { margin-top: var(--s4); max-width: 40rem; }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .facts { margin-top: var(--s5); display: grid; gap: var(--s3); border-top: 1px solid var(--border-strong); }
+  .facts div { display: grid; grid-template-columns: 1fr; gap: var(--s1); padding-block: var(--s3); border-bottom: 1px solid var(--border); }
+  @media (min-width: 36rem) { .facts div { grid-template-columns: 11rem 1fr; gap: var(--s4); } }
+  .facts dt { font-size: var(--text-sm); font-weight: 600; color: var(--text); }
+  .facts dd { margin: 0; font-size: var(--text-sm); color: var(--text-muted); line-height: 1.6; }
+  .facts .src { margin-left: var(--s1); }
+
+  .nearby { margin-bottom: var(--s5); }
+  .related .eyebrow { margin-bottom: var(--s2); }
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
+  .related p { margin-top: var(--s4); }
+
+  .source-list { list-style: none; padding: 0; margin-top: var(--s3); display: grid; gap: var(--s2); }
+  .source-list a { display: inline-block; padding-block: var(--s1); }
+</style>

@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { getBusiness } from '../lib/data.js';
+
+const biz = getBusiness();
+const updated = '25 September 2026';
+---
+
+<Base title={`Terms of use | ${biz.trading_name}`} description={`The terms that apply to this website and to estimates produced on it.`} stickyBar={false} quoteHref="/#quote">
+  <article class="page legal prose">
+    <p class="eyebrow">Terms of use</p>
+    <h1>Using this site</h1>
+    <p class="small muted">Last updated {updated}. Template wording pending legal review; the operating entity is {biz.legal_name}.</p>
+
+    <h2>Estimates are not quotes</h2>
+    <p>Price ranges on this site, including anything the budget calculator shows, are general figures from our current price table. They are a starting point for a conversation, not an offer. A firm price is given in writing after we have reviewed the site, and only that written quote binds us.</p>
+
+    <h2>Engineering and code information</h2>
+    <p>Pages on this site describe how insulated concrete form walls are built, what the Ontario Building Code and its energy supplement ask for, and how municipal permits usually go. We keep it accurate and we cite our sources, but it is general information. Your project's design, load and permit requirements are set by the drawings, the engineer's letter and your municipality, not by this website.</p>
+
+    <h2>Service area</h2>
+    <p>{biz.service_radius_line} Requests from outside the area are welcome and we will tell you plainly if we cannot take the job.</p>
+
+    <h2>Liability</h2>
+    <p>We are not responsible for decisions made on the basis of general information on this site without a written quote or an engineer's review. Nothing here limits rights you have under Ontario consumer protection law.</p>
+
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of Ontario and the federal laws of Canada that apply there.</p>
+
+    <h2>Contact</h2>
+    <p>{biz.legal_name}. <a href={`mailto:${biz.email}`}>{biz.email}</a>, <a href={`tel:${biz.phone_e164}`} class="num">{biz.phone_display}</a>.</p>
+  </article>
+</Base>
+
+<style>
+  .legal { max-width: var(--read); padding-block: var(--s4); }
+  .legal h1 { font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl)); margin-block: var(--s3) var(--s3); }
+  .legal h2 { font-size: var(--text-xl); margin-block: var(--s8) var(--s3); }
+  .legal p { color: var(--text-muted); }
+</style>

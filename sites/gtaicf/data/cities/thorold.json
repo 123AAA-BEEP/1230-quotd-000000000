@@ -1,0 +1,316 @@
+{
+  "slug": "thorold",
+  "name": "Thorold",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 43.12,
+  "lon": -79.2,
+  "sub_areas": [
+    {
+      "name": "Downtown Thorold",
+      "note": "Historic core around Front Street beside the Welland Canal (Wikipedia places the city 'on the Niagara Escarpment' with Lock 7 and the Twin Flight Locks). OGS point queries at 43.1225, -79.1985 return fine-textured glaciolacustrine silt and clay (unit 8a) and at the Wikipedia city coordinate 43.1167, -79.2 return man-made deposits (unit 21, 'fill, sewage lagoon, landfill, urban development'); bedrock at both is Lockport Formation (Goat Island, Gasport, Vinemount members)."
+    },
+    {
+      "name": "Confederation Heights",
+      "note": "Residential subdivision south of downtown; the boundary was not verified against a City map, so the query point (43.108, -79.205) is an approximation from street location. OGS returns man-made deposits (unit 21) over Lockport Formation."
+    },
+    {
+      "name": "Rolling Meadows",
+      "note": "Newer subdivision on the north side of the city toward the St. Catharines boundary; no Wikipedia coordinate exists (the 'Rolling Meadows, Ontario' article is a stub without coordinates), so two approximate points were queried. At 43.128, -79.212 OGS returns fine-textured glaciolacustrine silt and clay (unit 8a) over Lockport Formation; 800 m further north at 43.135, -79.215 the surficial unit is man-made deposits (unit 21) and the bedrock flips to Queenston Formation red shale, i.e. that point is below the escarpment brow."
+    },
+    {
+      "name": "Allanburg",
+      "note": "Canal village at the Highway 20 bridge where construction of the First Welland Canal began in 1824 (Wikipedia, Welland Canal). Coordinate 43.0764, -79.2083 from Wikipedia. OGS returns fine-textured glaciolacustrine silt and clay (unit 8a) over the Eramosa Member of the Lockport Formation (dark brown bituminous dolostone)."
+    },
+    {
+      "name": "Port Robinson",
+      "note": "Village on the Welland River at the south end of the city; the canal section between Allanburg and Port Robinson was dug as a deep open cut because 'the sandy soil in this part of Ontario made a tunnel infeasible' (Wikipedia, Welland Canal). Coordinate 43.0389, -79.2164 from Wikipedia. OGS returns fine-textured glaciolacustrine silt and clay (unit 8a) over Guelph Formation dolostone."
+    },
+    {
+      "name": "Thorold South",
+      "note": "Industrial and residential area along the canal south of the escarpment ('Thorold South has several industrial and manufacturing businesses', Wikipedia). No published coordinate; two approximate points were queried (43.095, -79.19 and 43.088, -79.195). Both return fine-textured glaciolacustrine silt and clay (unit 8a); bedrock is Lockport Formation (Goat Island/Gasport/Vinemount at the northern point, Eramosa Member at the southern point)."
+    },
+    {
+      "name": "Beaverdams / DeCew (west Thorold)",
+      "note": "One of the earliest settled areas of the township and the War of 1812 Battle of Beaver Dams site (Wikipedia). Approximate query points 43.11, -79.23 and 43.12, -79.24 (near Brock University and DeCew Falls) return fine-textured glaciolacustrine silt and clay (unit 8a) over Lockport Formation."
+    }
+  ],
+  "census": {
+    "population_2021": 23816,
+    "private_dwellings_occupied": 9095,
+    "single_detached_pct": 69.1,
+    "period_of_construction": {
+      "pre_1960_pct": 31.9,
+      "1961_1980_pct": 23.1,
+      "1981_2000_pct": 20.0,
+      "2001_2021_pct": 25.0
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 6,285 of 9,095 occupied private dwellings (structural type, 100% data); period of construction (25% sample, total 9,095): 1960 or before 2,905; 1961-1980 2,105; 1981-1990 1,190; 1991-2000 630 (1981-2000 = 1,820); 2001-2005 350; 2006-2010 220; 2011-2015 315; 2016-2021 1,385 (2001-2021 = 2,270). Rounded buckets sum to 100.0. Population grew from 18,801 (2016) to 23,816 (2021).",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Thorold, City (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Thorold&DGUIDlist=2021A00053526037&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 23,816; Population, 2016: 18,801; Private dwellings occupied by usual residents: 9,095"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Thorold (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Thorold&DGUIDlist=2021A00053526037&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data 9,095; Single-detached house 6,285 (69.1)"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Thorold (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Thorold&DGUIDlist=2021A00053526037&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 2,905; 1961 to 1980 2,105; 1981 to 1990 1,190; 1991 to 2000 630; 2016 to 2021 1,385"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results for 'Thorold' (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Thorold",
+        "retrieved_at": "2026-09-25",
+        "quote": "DGUIDlist=2021A00053526037 Thorold"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated. (The regional name 'Haldimand clay' in the task hint is not carried in the OGS layer attributes and was not verified.)",
+        "where": "Every non-urban query point: the reference coordinate (43.12, -79.2), downtown Front Street, Rolling Meadows (43.128, -79.212), Thorold South (both points), Allanburg, Port Robinson, Beaverdams and the DeCew/Brock University area all return unit 8a. It is the dominant mapped surficial unit both above and below the escarpment."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 21 - Man-made deposits",
+        "description": "Fill, sewage lagoon, landfill, urban development.",
+        "where": "The built-up canal-side core: query points at the Wikipedia city coordinate (43.1167, -79.2), Confederation Heights (43.108, -79.205) and the northern Rolling Meadows point (43.135, -79.215) return unit 21. Canal construction spoil and urban fill are plausible causes but the layer does not say which."
+      }
+    ],
+    "bedrock": {
+      "formation": "Lockport Formation (Silurian dolostone) under most of the city; Clinton-Cataract Group (including the Rochester, Decew, Thorold and Grimsby formations) at the escarpment face by the Twin Flight Locks; Queenston Formation red shale below the brow on the north edge; Guelph Formation dolostone at Port Robinson in the south (OGS MRD219).",
+      "description": "Lockport (OGS unit 18b, Goat Island/Gasport/Vinemount): thick-bedded blue-grey crinoidal limestone to dolostone (Gasport), light brown locally cherty dolostone (Goat Island), argillaceous dolostone and shale (Vinemount shale beds); unit 18c is the Eramosa Member, dark brown bituminous dolostone, returned at Allanburg and southern Thorold South. Clinton-Cataract Group (unit 17) at 43.13, -79.195: 'thin units variously shale-, sandstone-, dolostone- or limestone-dominated' naming the Whirlpool, Manitoulin, Cabot Head, Grimsby, Thorold, Neahga, Reynales, Irondequoit, Rochester and Decew formations. Queenston (unit 16) at 43.135, -79.215: red shale and siltstone. Guelph (unit 20) at Port Robinson: tan to brown sucrosic dolostone. Wikipedia (Niagara Escarpment) describes the cliff-forming rock as Lockport limestone and dolomite, a resistant caprock over weaker shale.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). No OGS 'bedrock at or near surface' (unit 3) polygon was returned at any Thorold query point; the task hint that Lockport dolostone lies at shallow depth is therefore unverified here, although the escarpment face itself, the Twin Flight Locks cut and the historic canal cuts expose it."
+    },
+    "implications_for_piles": [
+      "The City of Thorold publishes no deck guide or sample deck drawing and nothing on helical piles, CCMC or BMEC; its building FAQ says only that 'Certification by a Professional Engineer is required for certain prefabricated structures or construction components. Check with City Hall's Building Customer Service.' Expect to be asked for engineer-stamped pile information.",
+      "OGS maps fine-textured glaciolacustrine silt and clay (unit 8a) at every open-ground query point in Thorold, so pile torque and capacity will be governed by clay strength unless dolostone is met; no site-specific depth, torque or capacity figures were retrieved.",
+      "Bedrock changes within the city: Lockport dolostone under the plateau, Clinton-Cataract shales and sandstones at the escarpment face by the Twin Flight Locks, Queenston red shale just below the brow on the north edge, and Guelph dolostone at Port Robinson. Refusal on shallow dolostone is a real possibility near the brow and the canal cuts; depth to rock must be confirmed on site.",
+      "The canal-side core (downtown, Confederation Heights, north Rolling Meadows) is mapped as man-made deposits (unit 21), meaning fill of unknown thickness and origin; piles there must be advanced through the fill into native material and the engineer's design cannot assume the 8a clay profile."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.12, -79.2)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2,43.12&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a, Fine-textured glaciolacustrine deposits, silt and clay, minor sand and gravel, Massive to well laminated"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at the Wikipedia city coordinate (43.1167, -79.2)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2,43.1167&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 21, Man-made deposits, fill, sewage lagoon, landfill, urban development"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.12, -79.2)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.2,43.12&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Lockport; MEMBER: Goat Island, Gasport, Vinemount; SUBUNIT 18b; argillaceous dolostone and shale (Vinemount shale beds)"
+      },
+      {
+        "name": "OGS MRD 219 bedrock query at the Twin Flight Locks (43.13, -79.195)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.195,43.13&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT_NAME: Clinton-Cataract Group; Whirlpool, Manitoulin, Cabot Head, Grimsby, Thorold, Neahga, Reynales, Irondequoit, Rochester, Decew"
+      },
+      {
+        "name": "OGS MRD 219 bedrock query north of the brow (43.135, -79.215)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.215,43.135&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone"
+      },
+      {
+        "name": "OGS MRD 219 bedrock query at Port Robinson (43.0389, -79.2164)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.2164,43.0389&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Guelph; tan to brown, fine- to medium-crystalline, sucrosic dolostone"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Niagara Escarpment",
+        "url": "https://en.wikipedia.org/wiki/Niagara_Escarpment",
+        "retrieved_at": "2026-09-25",
+        "quote": "The cliff-forming rock exposed along the escarpment is a belt of limestone and dolomite of the Lockport Formation of Silurian age."
+      },
+      {
+        "name": "Wikipedia - Welland Canal (Allanburg to Port Robinson deep cut)",
+        "url": "https://en.wikipedia.org/wiki/Welland_Canal",
+        "retrieved_at": "2026-09-25",
+        "quote": "the sandy soil in this part of Ontario made a tunnel infeasible, and a deep open-cut canal was dug instead"
+      },
+      {
+        "name": "Wikipedia - Thorold",
+        "url": "https://en.wikipedia.org/wiki/Thorold",
+        "retrieved_at": "2026-09-25",
+        "quote": "Thorold is a city in Ontario, Canada, located on the Niagara Escarpment. ... featuring lock 7 and the Twin Flight Locks."
+      },
+      {
+        "name": "Wikipedia - Allanburg, Ontario (coordinates)",
+        "url": "https://en.wikipedia.org/wiki/Allanburg,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "coord|43|4|35|N|79|12|30|W"
+      },
+      {
+        "name": "Wikipedia - Port Robinson, Ontario (coordinates)",
+        "url": "https://en.wikipedia.org/wiki/Port_Robinson,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "coord|43|2|20|N|79|12|59|W"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Thorold Building Division (Development Services - Building Division, 8 Carleton Street South, 2nd Floor; the City's FAQ also uses 'Planning & Building Services Department' and 'Building Services')",
+    "deck_permit_required_when": "The City's building FAQ lists decks and porches under 'What projects require a building permit?' beneath the heading 'The construction or alteration of any freestanding structure over 10m2 (108sq.ft.) in area', and lists 'A detached accessory structure, which measures less than 10m2 (108 sq. ft.) in area' among projects that do not need a permit. No height threshold (for example 0.6 m / 24 in) is published by the City; apply the Ontario Building Code test or ask the Building Division.",
+    "footing_depth_requirement": null,
+    "inspections": [
+      "City FAQ: 'Several inspections are required during construction to ensure that all work is done according to the approved plans' - the City's per-stage list (footing, framing, final) was not retrievable: its former /en/living-here/inspections.aspx page now returns 404 and web.archive.org is blocked from this environment",
+      "Fees and Charges By-law 14-2026, Schedule E: work commenced before permit issuance attracts a surcharge of 25% at 'Footings/foundations or any other work requiring the issuance of a permit', 50% at structural framing and 100% when the building is completed"
+    ],
+    "fee_note": "Fees and Charges By-law 14-2026 (consolidated April 14, 2026), Schedule E Building Division Fees: Group C residential accessory buildings, '(c) Covered deck/porch, per square foot, $0.46' and '(d) Uncovered deck/porch, per square foot, $0.42' (HST exempt); minimum permit fee $194.40; a Plans Examination Deposit is taken at application and applied to the calculated fee ($1,000 for a detached/semi/duplex/townhouse dwelling; deck-specific deposit not listed); a refundable Performance/Security Deposit of $500 applies to 'Miscellaneous construction accessory to' a dwelling 'with a construction value greater than $5000.00'.",
+    "timeline_note": "No review-time target for building permits is published; the City states a permit must be in the owner's possession before construction starts, that construction must begin within 6 months of issuance, and that the review begins only once payment is confirmed. The pool permit page says its review 'may take up to two (2) weeks' (pools only). Development Services office hours are Monday to Friday, 8:30 a.m. to 4:30 p.m.",
+    "portal_url": "https://www.thorold.ca/building-business-development/building-and-renovating/building-or-demolition-permits/",
+    "portal_note": "There is no online permit portal. Applications are paper: the 2026 Application for a Permit to Construct or Demolish (effective February 16, 2026) with two sets of scaled drawings for residential projects, filed in person at 8 Carleton St. S. (cheque, or cash/debit paid at the City Hall cashier at 3540 Schmon Parkway with the receipt emailed to building@thorold.ca) or by Canada Post to Development Services - Building Division, P.O. Box 1044, 3540 Schmon Pkwy, Thorold ON L2V 4A7. Building Division: 905-227-6613 ext. 277.",
+    "sources": [
+      {
+        "name": "City of Thorold - Building and Renovating (Building Division FAQ)",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The construction or alteration of any freestanding structure over 10m2 (108sq.ft.) in area, including: Decks"
+      },
+      {
+        "name": "City of Thorold - Building and Renovating (engineer note and inspections)",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Certification by a Professional Engineer is required for certain prefabricated structures or construction components."
+      },
+      {
+        "name": "City of Thorold - Building or Demolition Permits (how to apply)",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/building-or-demolition-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "please call the Building Division at 905-227-6613 ext. 277 or visit us in person at 8 Carleton St. S. 2nd Floor"
+      },
+      {
+        "name": "City of Thorold - Application for a Permit to Construct or Demolish, 2026 (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/jo0fwlli/application-to-construct-or-demolish-2026.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Application for a Permit to Construct or Demolish - Effective February 16, 2026"
+      },
+      {
+        "name": "City of Thorold - By-law 14-2026 Fees and Charges, consolidated April 14, 2026 (PDF), Schedule E",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "(c) Covered deck/porch Per square foot 0.46 E (d) Uncovered deck/porch Per square foot 0.42 E"
+      },
+      {
+        "name": "City of Thorold - By-law 14-2026 Fees and Charges (PDF), minimum fee and deposits",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "A minimum permit fee of $194.40 shall apply to all works proposed, unless otherwise indicated"
+      },
+      {
+        "name": "City of Thorold - By-laws index (links the consolidated Fees and Charges By-law)",
+        "url": "https://www.thorold.ca/council-administration/by-laws/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Fees and Charges By-law"
+      },
+      {
+        "name": "City of Thorold - Pool Permits (only published review-time statement)",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/pool-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "This process may take up to two (2) weeks."
+      },
+      {
+        "name": "Niagara Region - Local Municipalities",
+        "url": "https://www.niagararegion.ca/government/municipalities/default.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "12 local municipalities are in Niagara. Fort Erie Grimsby Lincoln Niagara Falls Niagara-on-the-Lake Pelham Port Colborne St. Catharines Thorold"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Welland (Climate ID 6139445; 42.993 N, 79.261 W; 175.3 m; about 15 km south of the Thorold reference point) as the primary station because its January temperature normals carry ECCC quality code A; Niagara Falls NPCSH (Climate ID 6135657; 43.133 N, 79.05 W; 175.3 m; about 12 km east) as the nearest station with any published normals, and Ridgeville (6137161, about 13 km southwest) for comparison. None of the St. Catharines stations (6137285, 6137287, 6137290 Brock U at 3.9 km, 6137306 Power Glen) has published normals.",
+    "normals_period": "1981-2010 (ECCC GeoMet climate-normals API; PERIOD_BEGIN 1981, PERIOD_END 2010). Welland: code A for January temperature, C for day counts, D for the frost-free period. Niagara Falls NPCSH: 22-year record, codes C to G. The 1991-2020 and 1981-2010 normals search pages on climate.weather.gc.ca returned the search form with no station list on 2026-09-25.",
+    "frost_free_days": 151,
+    "jan_mean_temp_c": -4.3,
+    "days_below_minus_10c": 30.5,
+    "freeze_thaw_note": "Welland 1981-2010: January mean daily temperature -4.3 C, January mean daily minimum -8.25 C; 30.5 days/yr with daily minimum below -10 C; 46.98 days/yr with daily maximum <= 0 C versus 138.73 days/yr with daily minimum <= 0 C, so roughly 92 days a year cross 0 C between night and day (derived by subtraction); 141.59 cm annual snowfall; mean frost-free period 151 days (code D). Niagara Falls NPCSH 1981-2010 for comparison: January mean -4.12 C, 24.95 days/yr below -10 C, 45.86 days/yr with maximum <= 0 C, 130.05 days/yr with minimum <= 0 C, frost-free 188 days (code G, low confidence), 153.48 cm snowfall. Ridgeville: January mean -4.39 C, 25.42 days below -10 C, 56.25 days with maximum <= 0 C, frost-free 183 days (code E). Thorold's core sits at about 162 m (Wikipedia infobox), comparable to the Welland and Niagara Falls stations and above the lake-plain stations at St. Catharines (about 98 m).",
+    "sources": [
+      {
+        "name": "ECCC GeoMet OGC API - Climate Normals 1981-2010, Welland (6139445), all elements",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean daily temperature deg C, month 1: -4.3 (code A); Days with daily min temperature LT -10 deg C, annual: 30.5 (code C)"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate Normals 1981-2010, Welland (frost-free period and days max <= 0)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean length frost-free period in days: 151 (code D); Days with daily max temperature LE 0 deg C, annual: 46.98"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate Normals 1981-2010, Niagara Falls NPCSH (6135657)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=NIAGARA%20FALLS%20NPCSH&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean daily temperature deg C, month 1: -4.12 (code C); Days with daily min temperature LT -10 deg C, annual: 24.95; frost-free 188 (G)"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate Normals 1981-2010, Ridgeville (6137161)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=RIDGEVILLE&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean daily temperature deg C, month 1: -4.39 (code A); Days with daily min temperature LT -10 deg C, annual: 25.42; frost-free 183"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate stations within bbox -79.45,42.95,-79.0,43.3 (metadata; St. Catharines stations have no normals)",
+        "url": "https://api.weather.gc.ca/collections/climate-stations/items?bbox=-79.45,42.95,-79.0,43.3&f=json&limit=200",
+        "retrieved_at": "2026-09-25",
+        "quote": "ST CATHARINES A 6137287 HAS_NORMALS_DATA N; ST CATHARINES BROCK U 6137290 HAS_NORMALS_DATA N; WELLAND 6139445 HAS_NORMALS_DATA Y"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 station search (returned the search form only, no station list)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Search by Location Name Enter the name of the location."
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Null because the City of Thorold publishes no deck guide, sample deck drawing or footing checklist that prints a numeric footing depth (4 ft / 1200 mm): the City's building pages carry only a FAQ and the provincial application form, the former /en/living-here/inspections.aspx page returns 404 and web.archive.org is blocked from this environment. The Ontario Building Code text itself was not retrieved (ontario.ca/laws renders the regulation as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario). Neighbouring Niagara municipalities' documents (for example the Town of Grimsby Footing Inspection Checklist's 1.2 m) are not this municipality's and are not used here. Do not cite a clause number.",
+    "sources": [
+      {
+        "name": "City of Thorold - Building and Renovating (no deck guide or footing depth published)",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Building staff is here to help property owners comply with the Ontario Building Code and the Building Code Act."
+      },
+      {
+        "name": "City of Thorold - Applications and Forms (building forms list; no deck drawing among them)",
+        "url": "https://www.thorold.ca/building-business-development/applications-and-forms/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Applicable Law Checklist Approval of an Alternative Solution Application Authorized Agent Authorization Change Request Form"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

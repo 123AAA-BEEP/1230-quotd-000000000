@@ -1,0 +1,68 @@
+---
+// Editorial data strip: hairline rules, no filled cards. Each tile is a fact
+// from a data module and carries its source as a footnote. A tile that would
+// read the same in every city does not belong here.
+interface Props {
+  tiles: { value: string; label: string; source?: { name: string; url: string } }[];
+  label?: string;
+}
+const { tiles, label = 'Local facts' } = Astro.props;
+---
+
+{tiles.length > 0 && (
+  <div class="databand" aria-label={label}>
+    {tiles.map((t) => (
+      <div class="tile">
+        <p class="tile-value num">{t.value}</p>
+        <p class="tile-label">{t.label}</p>
+        {t.source && (
+          <p class="tile-source"><a href={t.source.url} rel="noopener" target="_blank">{t.source.name}</a></p>
+        )}
+      </div>
+    ))}
+  </div>
+)}
+
+<style>
+  .databand {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s5) var(--s6);
+    padding-block: var(--s5);
+    border-top: 1px solid var(--border-strong);
+    border-bottom: 1px solid var(--border);
+    margin-block: var(--s8);
+  }
+
+  @media (min-width: 48rem) {
+    .databand { grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
+  }
+
+  .tile-value {
+    font-family: var(--display);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--ink);
+  }
+
+  .tile-label {
+    margin-top: var(--s1);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  .tile-source {
+    margin-top: var(--s1);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+  }
+
+  .tile-source a {
+    color: var(--brand-700);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+</style>

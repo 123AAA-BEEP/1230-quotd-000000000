@@ -1,0 +1,346 @@
+{
+  "slug": "toronto",
+  "name": "Toronto",
+  "region": "City of Toronto (single-tier; Statistics Canada census division 3520 'Toronto' contains only the City of Toronto census subdivision)",
+  "province": "ON",
+  "lat": 43.70643,
+  "lon": -79.39864,
+  "sub_areas": [
+    {
+      "name": "Old Toronto (former City of Toronto)",
+      "note": "The pre-1998 City of Toronto, downtown and the old lakeshore. OGS point query at 43.64917, -79.37806 (Wikipedia 'Old Toronto' coordinate, near Front and Yonge) returns unit 5e, undifferentiated older tills that may include stratified deposits, over Georgian Bay Formation shale. The Wikipedia coordinate for Toronto as a whole (43.6525, -79.38167) is 400 m away in the same polygons."
+    },
+    {
+      "name": "Etobicoke",
+      "note": "Western district and former city, amalgamated into Toronto in 1998; the Humber River is its eastern edge with North York (Wikipedia). OGS point query at 43.61611, -79.5125 (Wikipedia coordinate, south Etobicoke) returns unit 9c, coarse-textured glaciolacustrine foreshore and basinal sand and gravel, over Georgian Bay Formation."
+    },
+    {
+      "name": "Rexdale (north Etobicoke)",
+      "note": "OGS point query at 43.72194, -79.57194 (Wikipedia 'Rexdale' coordinate) returns unit 5d, clay-to-silt-textured till derived from glaciolacustrine deposits or shale, over Georgian Bay Formation. This is the same till unit that dominates inland Oakville and Mississauga."
+    },
+    {
+      "name": "North York",
+      "note": "Northern district, centred on Yonge Street north of Highway 401, bounded by Steeles Avenue, the Humber River and Victoria Park Avenue; amalgamated into Toronto on January 1, 1998 (Wikipedia). OGS point query at 43.76194, -79.41028 (Wikipedia coordinate, North York Centre) returns unit 5b, stone-poor sandy silt to silty sand-textured till, over Georgian Bay Formation."
+    },
+    {
+      "name": "Scarborough",
+      "note": "Eastern district. OGS point query at 43.7731, -79.2578 (Scarborough Centre, McCowan Road and Ellesmere Road area, coordinate taken from a map estimate, not a Wikipedia article) returns unit 5b, stone-poor sandy silt to silty sand-textured till, over Georgian Bay Formation."
+    },
+    {
+      "name": "Scarborough Bluffs",
+      "note": "Escarpment forming much of the eastern Toronto waterfront, up to 90 m above the shoreline and 15 km long (Wikipedia). OGS point query at 43.71889, -79.225 (Wikipedia coordinate) returns unit 5e, undifferentiated older tills that may include stratified deposits, over Georgian Bay Formation. Bluff-edge lots are a slope-stability question the OGS mapping does not answer."
+    },
+    {
+      "name": "York (former City of York)",
+      "note": "West-central district around Weston Road and Eglinton Avenue West. OGS point query at 43.6896, -79.478 (map estimate at Weston Road and Eglinton Avenue West, not a Wikipedia coordinate) returns unit 9c, coarse-textured glaciolacustrine foreshore and basinal sand and gravel, over Georgian Bay Formation."
+    },
+    {
+      "name": "The Junction",
+      "note": "West Toronto around Dundas Street West and Keele Street. OGS point query at 43.66556, -79.46444 (Wikipedia coordinate) returns unit 9c, coarse-textured glaciolacustrine sand and gravel, the same polygon as the York query point, over Georgian Bay Formation."
+    },
+    {
+      "name": "East York",
+      "note": "District and former borough, separated from the former City of Toronto by the Don River; Leaside, Bennington Heights and Thorncliffe Park are its portion northwest of the river (Wikipedia). OGS point query at 43.6913, -79.3278 (Wikipedia coordinate) returns unit 9b, coarse-textured glaciolacustrine littoral sand and gravel, over Georgian Bay Formation."
+    },
+    {
+      "name": "Leaside",
+      "note": "Part of East York northwest of the Don River (Wikipedia). OGS point query at 43.708, -79.368 (Wikipedia coordinate) returns unit 5e, undifferentiated older tills that may include stratified deposits, over Georgian Bay Formation."
+    },
+    {
+      "name": "Humber River mouth (Swansea / Humber Bay)",
+      "note": "OGS surficial query at 43.63222, -79.47194 (Wikipedia 'Humber River (Ontario)' coordinate, at the river mouth) returned no surficial polygon (open water or unmapped); the bedrock query returns Georgian Bay Formation."
+    }
+  ],
+  "census": {
+    "population_2021": 2794356,
+    "private_dwellings_occupied": 1160892,
+    "single_detached_pct": 23.3,
+    "period_of_construction": {
+      "pre_1960_pct": 29.3,
+      "1961_1980_pct": 28.8,
+      "1981_2000_pct": 17.5,
+      "2001_2021_pct": 24.5
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 270,490 of 1,160,890 occupied private dwellings by structural type (100% data) = 23.3%. Period of construction (25% sample, total 1,160,890): 1960 or before 340,185 (29.3%); 1961-1980 333,990 (28.8%); 1981-1990 109,780 + 1991-2000 92,985 = 202,765 (17.5%); 2001-2005 58,975 + 2006-2010 63,995 + 2011-2015 75,980 + 2016-2021 85,005 = 283,955 (24.5%). The profile's own rounded percentages (29.3, 28.8, 9.5, 8.0, 5.1, 5.5, 6.5, 7.3) agree.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Toronto, City (C) [Census subdivision], Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Toronto&DGUIDlist=2021A00053520005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 2,794,356; Private dwellings occupied by usual residents: 1,160,892"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Toronto (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Toronto&DGUIDlist=2021A00053520005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data: 1,160,890; Single-detached house: 270,490"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Toronto (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Toronto&DGUIDlist=2021A00053520005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 340,185; 1961 to 1980 333,990; 1981 to 1990 109,780; 1991 to 2000 92,985"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 search results for 'Toronto' (DGUIDs)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Toronto",
+        "retrieved_at": "2026-09-25",
+        "quote": "2021A00053520005 Toronto (census subdivision); 2021A00033520 Toronto (census division)"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 5b - Till",
+        "description": "Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain. Regional literature calls the upper till across much of Toronto the Halton Till, but that name is not carried in the OGS layer attributes and was not verified here.",
+        "where": "The reference coordinate (43.70643, -79.39864, midtown near Yonge and Eglinton), North York Centre and Scarborough Centre all return unit 5b: the plateau above the Lake Iroquois shoreline."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5e - Till (undifferentiated older tills)",
+        "description": "Undifferentiated older tills, may include stratified deposits.",
+        "where": "Old Toronto downtown (Front and Yonge area), Leaside and the Scarborough Bluffs query points return unit 5e. At the Bluffs this corresponds to the thick pre-glacial to glacial sequence exposed in the cliff face, but the OGS layer does not name the formations."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9b / 9c - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay: 9b littoral (beach) deposits, 9c foreshore and basinal deposits. These are the glacial Lake Iroquois beach and nearshore sands.",
+        "where": "East York (9b), The Junction and York at Weston Road and Eglinton (9c), and south Etobicoke (9c) return these sands; they sit along and below the old Lake Iroquois shoreline that runs across the city roughly at Davenport Road in the west and along the Bluffs plateau edge in the east."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till (clay to silt)",
+        "description": "Clay to silt-textured till derived from glaciolacustrine deposits or shale.",
+        "where": "Rexdale in north Etobicoke returns unit 5d, continuing the clay till that dominates neighbouring Mississauga and inland Halton."
+      },
+      {
+        "unit": "Ravine alluvium (Don and Humber valleys) - not mapped at the query points",
+        "description": "The Toronto ravine system was cut by meltwater flowing to glacial Lake Iroquois through nearly 100 m of soil, alluvial soft sand, gravel and clay till (Wikipedia). No OGS query point in this set landed in a modern alluvium (unit 19) polygon; the Humber River mouth query returned no surficial polygon at all.",
+        "where": "Don and Humber valleys and their tributary ravines; treat as unmapped here and confirm on site."
+      }
+    ],
+    "bedrock": {
+      "formation": "Georgian Bay Formation (Upper Ordovician shale and limestone) at every one of the 12 query points (OGS MRD219).",
+      "description": "OGS MRD219 describes the Georgian Bay Formation as interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone; the source-map lithology strings returned were 'alternating green shale with limestone and dolostone' (map m2544, most of the city) and 'grey-green and grey-blue shale, siltstone, limestone' (map m2337, Etobicoke and Rexdale). Wikipedia describes the formation as massive shale interbedded with siltstone/sandstone and limestone with sub-horizontal bedding and widely spaced jointing. No Queenston Formation polygon was returned anywhere in Toronto.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). None of the 12 query points returned OGS unit 3 (bedrock at or near surface), so unlike the Halton creek valleys, shallow shale is not indicated at any queried Toronto point; the Toronto ravine system article states the valleys were cut through nearly 100 m of soil, sand, gravel and till, which implies deep overburden along the Don and Humber. Site-specific depth is unknown."
+    },
+    "implications_for_piles": [
+      "Toronto Building's Decks and Porches guide requires the permit drawings to show details of footings including footing size, spacing, depth, height above grade and frost protection details, and where drawings carry a professional engineer's seal, a completed Assumption of Responsibility for Engineering Content Form. The City publishes no deck sample drawing and prints no footing depth of its own, so a helical pile deck submission is an engineered footing design rather than a match to a City standard detail.",
+      "Soil texture differs by district: sandy silt till (unit 5b) on the plateau at midtown, North York and Scarborough Centre; older undifferentiated tills (5e) downtown, at Leaside and along the Bluffs; Lake Iroquois beach and nearshore sands (9b/9c) at East York, The Junction, York and south Etobicoke; clay till (5d) at Rexdale. A pile depth or torque figure established in one of these is not transferable to another.",
+      "Bedrock is Georgian Bay Formation shale at all 12 query points and no point returned bedrock at or near surface, so shale refusal is not indicated at grade anywhere queried; depth to shale is unknown and was not retrieved.",
+      "Ravine lots along the Don and Humber and lots at the Scarborough Bluffs edge sit on alluvium or on the exposed older sediment sequence; the OGS point queries used here do not characterise those slopes and no site-specific depth, torque or capacity figures were retrieved for any Toronto location."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.70643, -79.39864)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.39864,43.70643&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5b, Deposit: Till, Material: Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at East York (43.6913, -79.3278)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.3278,43.6913&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9b, Coarse-textured glaciolacustrine deposits, sand, gravel, minor silt and clay, Littoral deposits"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at Old Toronto (43.64916667, -79.37805556)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.37805556,43.64916667&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5e, Till, Undifferentiated older tills, may include stratified deposits"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at Rexdale (43.72194444, -79.57194444)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.57194444,43.72194444&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5d, Till, Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.70643, -79.39864)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.39864,43.70643&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Georgian Bay; interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Georgian Bay Formation",
+        "url": "https://en.wikipedia.org/wiki/Georgian_Bay_Formation",
+        "retrieved_at": "2026-09-25",
+        "quote": "massive shale interbedded with siltstone/sandstone and limestone, with sub-horizontal bedding planes and widely spaced jointing"
+      },
+      {
+        "name": "Wikipedia - Toronto ravine system",
+        "url": "https://en.wikipedia.org/wiki/Toronto_ravine_system",
+        "retrieved_at": "2026-09-25",
+        "quote": "carving through nearly 100 metres (330 ft) of soil, alluvial soft sand, gravel, and clay till to form the ravine valleys"
+      },
+      {
+        "name": "Wikipedia - Scarborough Bluffs (REST summary)",
+        "url": "https://en.wikipedia.org/wiki/Scarborough_Bluffs",
+        "retrieved_at": "2026-09-25",
+        "quote": "the escarpment rises 90 metres (300 ft) above the coastline and spans a length of 15 kilometres"
+      },
+      {
+        "name": "Wikipedia - North York",
+        "url": "https://en.wikipedia.org/wiki/North_York",
+        "retrieved_at": "2026-09-25",
+        "quote": "bounded by York Region to the north at Steeles Avenue, on the west by the Humber River, on the east by Victoria Park Avenue"
+      },
+      {
+        "name": "Wikipedia - East York",
+        "url": "https://en.wikipedia.org/wiki/East_York",
+        "retrieved_at": "2026-09-25",
+        "quote": "It is separated by the Don River from the former City of Toronto."
+      },
+      {
+        "name": "Wikipedia - Etobicoke",
+        "url": "https://en.wikipedia.org/wiki/Etobicoke",
+        "retrieved_at": "2026-09-25",
+        "quote": "In 1998, six local municipalities (including Etobicoke) and the Metropolitan Toronto government merged to form the amalgamated city of Toronto."
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Toronto, Toronto Building (the City's pages use 'Toronto Building' and 'Toronto Building Inspections'; there is no 'Toronto Building Department')",
+    "deck_permit_required_when": "Toronto Building lists 'Construct a deck more than 60 centimetres (24 inches) above ground' among projects that require a building permit, and 'enclosing an existing deck, porch or patio of any size'. A permit is not required for an uncovered platform (e.g. deck) whose finished deck level is not more than 60 cm (24 inches) above the adjacent finished grade, that does not form part of an exit required under the building code, and that complies with the Zoning Bylaw. The City publishes no area threshold for decks (the 10 m2 rule used by Halton municipalities does not appear on Toronto's page). The Decks and Porches guide notes that some detached decks may not require a permit.",
+    "footing_depth_requirement": "Not printed by the City. The Decks and Porches guide requires the plans to show 'Details of footings, including footing size, spacing, depth, height above grade and frost protection details' and 'Sizes and locations of all columns; sizes, locations and spans of all beams', but the City publishes no deck sample drawing and no numeric footing depth. Nothing on the deck guide, the fee page or the permit-required page mentions helical piles, CCMC or BMEC. Drawings bearing a professional engineer's seal must be accompanied by the City's Assumption of Responsibility for Engineering Content Form.",
+    "inspections": [
+      "Footings - at completion of formwork, before pouring concrete",
+      "Foundations - at completion",
+      "Structural framing - at completion including rough-in of plumbing and HVAC",
+      "Fire separations - at completion of wall, floor and shaft separations and fire stopping (where applicable)",
+      "Insulation and vapour barrier - at completion (where applicable)",
+      "Final interior inspection - at completion of interior construction (where applicable)",
+      "Final exterior inspection - at completion of exterior construction; the owner must schedule a final inspection to close the permit"
+    ],
+    "fee_note": "Toronto Building fee schedule effective January 1, 2026: 'Residential Decks, Porches, Carports' $214.79 (flat, per the Decks and Porches guide fee table and the Building Permit Fees page section for stand-alone and miscellaneous work); minimum fee for all work $214.79 (2026); hourly examination/inspection fee $92.79 (2026); Zoning Applicable Law Certificate for accessory residential structures such as porches $214.79 (non-refundable). Cost of mandatory inspections is included in the permit fee.",
+    "timeline_note": "Decks and porches for a Part 9 house are an Express Services project type; Toronto Building's stated goal is to review eligible Express applications within 3 business days after the permit has been taken in. Applications outside Express fall in the House Stream, where complete applications are reviewed within 10 business days. Inspections take place within the next two business days of the request; inspections run Monday to Friday 8:30 a.m. to 4:30 p.m. and can be booked from the next business day up to four weeks ahead.",
+    "portal_url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/express-building-permits/express-building-permits-application/",
+    "portal_note": "Deck and porch permits must be applied for online through Toronto Building's Express web application portal (the Decks and Porches guide's 'Apply for a Deck Permit' button opens the Express application with appType=SR and subtopic=10043). All drawings, reports and forms must be PDF.",
+    "sources": [
+      {
+        "name": "City of Toronto, Toronto Building - Decks and Porches (Small Residential Project Guides)",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-application-guides/small-residential-project-guides/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Details of footings, including footing size, spacing, depth, height above grade and frost protection details."
+      },
+      {
+        "name": "City of Toronto - Decks and Porches (fee table and Express portal)",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-application-guides/small-residential-project-guides/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Fee Effective Jan. 1, 2026: Residential Decks, Porches, Carports $214.79; apply online using Toronto Building's Express web application portal"
+      },
+      {
+        "name": "City of Toronto - When Do I Need a Building Permit?",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/when-do-i-need-a-building-permit/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Construct a deck more than 60 centimetres (24 inches) above ground"
+      },
+      {
+        "name": "City of Toronto - When Do I Need a Building Permit? (not required)",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/when-do-i-need-a-building-permit/",
+        "retrieved_at": "2026-09-25",
+        "quote": "An uncovered platform (e.g. deck) provided: its finished deck level is not more than 60 cm (24 inches) above the adjacent finished grade"
+      },
+      {
+        "name": "City of Toronto - Building Permit Fees",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Minimum fee of $214.79 (2026) shall be charged for all work. An hourly fee $92.79 (2026)"
+      },
+      {
+        "name": "City of Toronto - Building Permit Review Streams (Express Services and House Stream)",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-review-streams/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Toronto Building's goal is to review eligible applications within 3 business days after the permit has been taken in."
+      },
+      {
+        "name": "City of Toronto - When to Call for Inspection of Small Buildings",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/building-inspections/about-building-inspections/when-to-call-for-inspection-of-small-buildings/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Footings: at completion of formwork, before pouring concrete; Inspections will take place within the next two business days"
+      },
+      {
+        "name": "City of Toronto - About Building Inspections",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/building-inspections/about-building-inspections/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Inspections are conducted Monday to Friday from 8:30 a.m. to 4:30 p.m.; Cost for these inspections is included in your building permit fee."
+      },
+      {
+        "name": "City of Toronto - Building Inspections",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/building-inspections/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Toronto Building Inspections conducts mandatory inspections of construction work"
+      },
+      {
+        "name": "City of Toronto - Express Building Permits Application",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/express-building-permits/express-building-permits-application/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Express Building Permits Application - City of Toronto"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Toronto City (composite TORONTO 6158350 / TORONTO CITY 6158355, WMO 71508; 43 40' N, 79 24' W; 112.5 m), about 4.4 km south-southwest of the reference coordinate; Toronto Pearson International Airport (6158731, about 19 km west) given for comparison",
+    "normals_period": "1991-2020 (Toronto City temperature elements code A, 30 years; frost-free elements code D, 1991-2011, 19 years; days with maximum <= 0 C code C)",
+    "frost_free_days": 208,
+    "jan_mean_temp_c": -3.5,
+    "days_below_minus_10c": 22.0,
+    "freeze_thaw_note": "Toronto City 1991-2020: January daily minimum -6.7 C, January daily maximum -0.3 C; 101.1 days/yr with minimum <= 0 C versus 43.9 days/yr with maximum <= 0 C, so roughly 57 days a year cross 0 C between night and day (derived by subtraction); average last spring frost Apr 11, first fall frost Nov 06 (D code, 19 years). Toronto Pearson 1991-2020, the exposed suburban comparison: January mean -5.0 C, 34.2 days/yr below -10 C, 49.5 days/yr with maximum <= 0 C, 130.6 days/yr with minimum <= 0 C, frost-free period 174 days (Apr 27 to Oct 20), 114.5 cm annual snowfall. Toronto's downtown station is markedly milder than Pearson; inland districts (North York, Scarborough, Etobicoke) sit between the two.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto City",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.5 -2.7 1.7 7.8 14.5 19.8 22.5 21.9 17.9 11.2 5.2 -0.1 9.7 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto City (days with minimum < -10 C; frost-free)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 9.6 6.8 2.0 ... 22.0 A; Average Length of Frost-Free Period 208 Days D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto City (days max <= 0 C and min <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "<= 0 C 15.6 12.3 5.5 0.32 ... 43.9 C; <= 0 C 25.6 23.5 18.4 4.5 ... 101.1 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson International Airport",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -5.0 ...; < -10 C ... 34.2 C; Average Length of Frost-Free Period 174 Days C"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Null because no City of Toronto document prints a numeric minimum footing depth. Toronto Building publishes no deck sample drawing; its Decks and Porches guide only requires that the applicant's plans show footing depth and 'frost protection details'. The 4'-0\" (1.2 m) figure printed on Oakville's and Milton's deck drawings is a Halton document and is not carried over here. The Ontario Building Code clause itself was not retrieved (ontario.ca/laws renders as a JavaScript shell; the 2024 Building Code Compendium is sold through Publications Ontario). Do not cite a clause number or a depth for Toronto until a Toronto or provincial primary document prints one.",
+    "sources": [
+      {
+        "name": "City of Toronto, Toronto Building - Decks and Porches (required documentation)",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-application-guides/small-residential-project-guides/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Details of footings, including footing size, spacing, depth, height above grade and frost protection details."
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

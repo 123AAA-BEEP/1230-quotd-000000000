@@ -1,0 +1,215 @@
+---
+// Budget estimator for ICF walls. Turns a wall perimeter and height (or a wall
+// area) into an illustrative installed price range from data/prices.json. It
+// never designs anything: core thickness, reinforcing and openings are the
+// engineer's and the drawings'. Every output is labelled as confirmed after a
+// site review.
+import { getPrices, formatCad, formatCadPerSqft, safeJson } from '../lib/data.js';
+
+interface Props {
+  heading?: string;
+  city?: string;
+}
+
+const { heading = 'Get an illustrative budget range', city = '' } = Astro.props;
+const prices = getPrices();
+const rows = prices.rows;
+const HEIGHT = prices.wall_height_default_ft ?? 9;
+const clientData = {
+  rows: rows.map((r) => ({ key: r.key, label: r.label, low: r.low, high: r.high, unit: r.unit })),
+  city,
+};
+---
+
+<section class="card estimator" id="estimator" aria-labelledby="estimator-heading">
+  <div class="estimator-head">
+    <p class="eyebrow eyebrow-brand">Budget calculator</p>
+    <h2 id="estimator-heading">{heading}</h2>
+    <p class="muted small">Pick the wall, enter the perimeter and height from your drawings (or the wall area if you know it), and see an illustrative range from our current price table. Every site is different: soil, water table, openings, access and season all move the number. The firm price follows a site review.</p>
+  </div>
+
+  <form class="estimator-form" data-estimator novalidate>
+    <fieldset>
+      <legend>What are we building?</legend>
+      <div class="choice-grid">
+        {rows.map((r, i) => (
+          <label class="chip"><input type="radio" name="application" value={r.key} checked={i === 0} /><span>{r.label}</span></label>
+        ))}
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Wall size</legend>
+      <div class="three-col">
+        <label class="field"><span>Perimeter (ft)</span><input type="number" name="perimeter" min="20" max="600" step="1" inputmode="numeric" value="140" /></label>
+        <label class="field"><span>Wall height (ft)</span><input type="number" name="height" min="4" max="14" step="0.5" inputmode="decimal" value={HEIGHT} /></label>
+        <label class="field"><span>Or wall area (sq ft)</span><input type="number" name="area" min="100" max="8000" step="1" inputmode="numeric" placeholder="Leave blank to use perimeter × height" /></label>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary btn-lg">Show my range</button>
+  </form>
+
+  <div class="result" data-result hidden aria-live="polite" tabindex="-1">
+    <div class="result-grid">
+      <div>
+        <p class="eyebrow">Wall area</p>
+        <p class="result-value num" data-area-out></p>
+        <p class="small muted" data-area-note></p>
+      </div>
+      <div>
+        <p class="eyebrow">Illustrative range, installed</p>
+        <p class="result-value num" data-range-out></p>
+        <p class="small muted" data-range-note></p>
+      </div>
+    </div>
+    <p class="small muted" data-caveat></p>
+    <div class="result-actions">
+      <button type="button" class="btn btn-primary btn-lg" data-handoff>Get a site-verified quote</button>
+      <a href="/guides/icf-vs-poured-concrete-ontario/" class="small">What moves the price</a>
+    </div>
+  </div>
+
+  <p class="sources est-sources">
+    Illustrative ranges from our price table, last reviewed {prices.last_reviewed}, per square foot of wall installed. They are examples, not a quote: each site carries its own conditions. Openings are not deducted; corners, bucks and anything outside the wall itself sit outside the figure.
+    <span> {rows.map((r, i) => `${i > 0 ? '; ' : ''}${r.label.toLowerCase()} ${formatCadPerSqft(r.low)} to ${formatCadPerSqft(r.high)}`).join('')} per sq ft.</span>
+  </p>
+  <script type="application/json" data-estimator-config set:html={safeJson(clientData)} />
+</section>
+
+<script>
+  const root = document.getElementById('estimator');
+  const form = root?.querySelector('[data-estimator]') as HTMLFormElement | null;
+  const cfgEl = root?.querySelector('[data-estimator-config]');
+  if (root && form && cfgEl) {
+    const cfg = JSON.parse(cfgEl.textContent || '{}');
+    const rowBy = (k: string) => cfg.rows.find((r: any) => r.key === k);
+    const fmt = (n: number) => new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(n);
+    const fmt2 = (n: number) => new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 2, minimumFractionDigits: 0 }).format(n);
+    const q = (sel: string) => root.querySelector(sel) as HTMLElement | null;
+    const input = (name: string) => form.querySelector(`input[name="${name}"]`) as HTMLInputElement;
+    const result = q('[data-result]');
+    const track = (name: string, props: Record<string, string>) => (window as any).track(name, props);
+    let last: any = null;
+
+    const application = () => (form.querySelector('input[name="application"]:checked') as HTMLInputElement).value;
+    form.querySelectorAll('input[name="application"]').forEach((el) => el.addEventListener('change', () => track('estimator_step', { application: application() })));
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const a = application();
+      const row = rowBy(a);
+      const areaEl = input('area');
+      const perEl = input('perimeter');
+      const hEl = input('height');
+      let area = 0;
+      let note = '';
+      let perimeter = 0;
+      let height = 0;
+      if (areaEl.value) {
+        if (!areaEl.checkValidity()) { areaEl.reportValidity(); return; }
+        area = Math.round(Number(areaEl.value));
+        note = 'Wall area you entered.';
+      } else {
+        if (!perEl.checkValidity()) { perEl.reportValidity(); return; }
+        if (!hEl.checkValidity()) { hEl.reportValidity(); return; }
+        perimeter = Number(perEl.value);
+        height = Number(hEl.value);
+        area = Math.round(perimeter * height);
+        note = `${perimeter} ft of wall × ${height} ft high. Openings are not deducted.`;
+      }
+      area = Math.min(area, 8000);
+      const low = row.low * area;
+      const high = row.high * area;
+      q('[data-area-out]')!.textContent = `${area.toLocaleString('en-CA')} sq ft`;
+      q('[data-area-note]')!.textContent = note;
+      q('[data-range-out]')!.textContent = `${fmt(low)} to ${fmt(high)}`;
+      q('[data-range-note]')!.textContent = `${fmt2(row.low)} to ${fmt2(row.high)} ${row.unit}.`;
+      q('[data-caveat]')!.textContent = 'Excavation, footings, waterproofing, windows and bucks, engineering, permits and the pump truck sit outside the wall figure. Deep water tables, poor access and winter heating push it up. Firm price after a site review.';
+      result?.removeAttribute('hidden');
+      last = { application: a, wall_area_sqft: area, perimeter_ft: perimeter || null, height_ft: height || null, estimate_low: low, estimate_high: high, city: cfg.city || null, summary: `Estimator: ${row.label}, ${area} sq ft of wall, ${fmt(low)} to ${fmt(high)}${note ? ' (' + note + ')' : ''}` };
+      track('estimator_result', { application: a, area: String(area) });
+      result?.focus({ preventScroll: true });
+      result?.scrollIntoView({ block: 'nearest' });
+    });
+
+    q('[data-handoff]')?.addEventListener('click', () => {
+      if (!last) return;
+      document.dispatchEvent(new CustomEvent('estimator:prefill', { detail: last }));
+      track('estimator_handoff', { application: last.application });
+    });
+  }
+</script>
+
+<style>
+  .estimator { padding: var(--s6); }
+  .estimator-head h2 { font-size: var(--text-2xl); margin-top: var(--s2); margin-bottom: var(--s2); }
+  .estimator-head p { max-width: 40rem; }
+  .estimator-form { margin-top: var(--s6); }
+
+  fieldset { border: 0; padding: 0; margin: 0 0 var(--s5); min-width: 0; }
+  legend { font-size: var(--text-sm); font-weight: 600; color: var(--text); margin-bottom: var(--s2); padding: 0; }
+
+  .choice-grid { display: grid; grid-template-columns: 1fr; gap: var(--s2); }
+  @media (min-width: 36rem) { .choice-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .chip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-control);
+    border-radius: var(--r-control);
+    background: var(--bg);
+    font-size: var(--text-sm);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .chip input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+  .chip input:checked + span::before { content: ''; position: absolute; inset: -1px; border: 2px solid var(--ink); border-radius: inherit; pointer-events: none; }
+  .chip input:focus-visible + span::after { content: ''; position: absolute; inset: -4px; border: 2px solid var(--brand-600); border-radius: inherit; pointer-events: none; }
+
+  .three-col { display: grid; grid-template-columns: 1fr; gap: var(--s3); align-items: end; }
+  @media (min-width: 36rem) { .three-col { grid-template-columns: 1fr 1fr 1.4fr; } }
+
+  .field { display: block; }
+  .field span { display: block; font-size: var(--text-sm); font-weight: 500; color: var(--text); margin-bottom: 0.375rem; }
+  .field input[type='number'] {
+    width: 100%;
+    font-size: var(--text-base);
+    font-family: var(--sans);
+    padding: 0.625rem 0.75rem;
+    border: 1px solid var(--border-control);
+    border-radius: var(--r-control);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 2.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .field input::placeholder { color: var(--grey-text); opacity: 0.8; }
+  .field input:focus { border-color: var(--brand-600); }
+
+  @media (max-width: 36rem) {
+    .estimator-form .btn, .result-actions .btn { width: 100%; }
+  }
+
+  .result { margin-top: var(--s6); padding-top: var(--s6); border-top: 1px solid var(--border); }
+  .result:focus { outline: none; }
+  .result-grid { display: grid; grid-template-columns: 1fr; gap: var(--s5); }
+  @media (min-width: 36rem) { .result-grid { grid-template-columns: 1fr 1.4fr; } }
+  .result-value {
+    font-family: var(--display);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-top: var(--s1);
+    min-height: 1.1em;
+  }
+  .result-actions { margin-top: var(--s5); display: flex; flex-wrap: wrap; align-items: center; gap: var(--s4); }
+  .result-actions a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+  .result [data-caveat] { margin-top: var(--s4); max-width: 40rem; }
+  .est-sources { margin-top: var(--s5); }
+</style>

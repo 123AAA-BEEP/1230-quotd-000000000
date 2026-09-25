@@ -1,0 +1,107 @@
+---
+// Sectional line diagram of an ICF foundation wall: footing below the frost
+// zone, EPS forms on both faces, reinforced concrete core, membrane and
+// weeping tile on the outside, slab on the inside. Not to scale. The frost
+// zone depth is the minimum pier depth on Halton municipalities' own deck
+// drawings and the design frost depth in Oakville geotechnical reports; the
+// page states the source. Explanations live in a numbered key under the
+// drawing so they stay legible at phone width.
+interface Props {
+  frostDepthLabel?: string;
+  caption?: string;
+}
+const { frostDepthLabel = 'to 1.2 m', caption } = Astro.props;
+---
+
+<figure class="diagram">
+  <svg viewBox="0 0 780 440" role="img" aria-labelledby="diagram-title diagram-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="diagram-title">Section through an ICF foundation wall</title>
+    <desc id="diagram-desc">Cross-section. A concrete footing sits below the frost zone. On it stands a wall made of two layers of EPS foam form with a reinforced concrete core between them. The outside face carries a waterproofing membrane down to a weeping tile beside the footing; the inside face meets a basement slab. Grade is near the top of the wall.</desc>
+
+    <!-- Grade -->
+    <line x1="40" y1="120" x2="330" y2="120" stroke="var(--ink)" stroke-width="2" />
+    <text x="44" y="110" class="lbl">Grade</text>
+
+    <!-- Frost zone band (outside only) -->
+    <rect x="40" y="120" width="290" height="120" fill="var(--brand-50)" />
+    <line x1="40" y1="240" x2="330" y2="240" stroke="var(--brand-600)" stroke-width="1.5" stroke-dasharray="6 4" />
+    <text x="44" y="152" class="lbl brand">Frost zone</text>
+    <text x="44" y="180" class="lbl brand">{frostDepthLabel}</text>
+    <text x="44" y="400" class="lbl muted">Undisturbed soil</text>
+
+    <!-- Footing -->
+    <rect x="300" y="330" width="180" height="50" fill="var(--bg)" stroke="var(--ink)" stroke-width="2" />
+    <circle cx="390" cy="355" r="15" fill="var(--ink)" />
+    <text x="390" y="361" text-anchor="middle" class="lbl key">4</text>
+
+    <!-- Wall: outer EPS, core, inner EPS -->
+    <rect x="330" y="60" width="30" height="270" fill="var(--grey-surface)" stroke="var(--ink)" stroke-width="2" />
+    <rect x="360" y="60" width="60" height="270" fill="var(--bg)" stroke="var(--ink)" stroke-width="2" />
+    <rect x="420" y="60" width="30" height="270" fill="var(--grey-surface)" stroke="var(--ink)" stroke-width="2" />
+    <!-- rebar in core -->
+    <g stroke="var(--ink)" stroke-width="2" fill="none">
+      <line x1="378" y1="70" x2="378" y2="320" stroke-dasharray="2 6" />
+      <line x1="402" y1="70" x2="402" y2="320" stroke-dasharray="2 6" />
+      <line x1="362" y1="120" x2="418" y2="120" stroke-dasharray="2 6" />
+      <line x1="362" y1="200" x2="418" y2="200" stroke-dasharray="2 6" />
+      <line x1="362" y1="280" x2="418" y2="280" stroke-dasharray="2 6" />
+    </g>
+    <!-- webs / ties -->
+    <g stroke="var(--grey-text)" stroke-width="2">
+      <line x1="336" y1="100" x2="444" y2="100" />
+      <line x1="336" y1="180" x2="444" y2="180" />
+      <line x1="336" y1="260" x2="444" y2="260" />
+    </g>
+    <!-- membrane on outer face -->
+    <line x1="326" y1="120" x2="326" y2="332" stroke="var(--brand-600)" stroke-width="4" />
+    <!-- weeping tile -->
+    <circle cx="288" cy="352" r="12" fill="var(--bg)" stroke="var(--brand-600)" stroke-width="2.5" />
+    <!-- slab inside -->
+    <rect x="450" y="300" width="230" height="30" fill="var(--grey-surface)" stroke="var(--ink)" stroke-width="2" />
+    <text x="500" y="322" class="lbl muted">Basement slab</text>
+    <!-- sill / top -->
+    <rect x="322" y="52" width="136" height="8" fill="var(--ink)" />
+    <text x="470" y="66" class="lbl muted">Floor framing above</text>
+
+    <!-- keys -->
+    <circle cx="345" cy="150" r="15" fill="var(--ink)" />
+    <text x="345" y="156" text-anchor="middle" class="lbl key">1</text>
+    <circle cx="390" cy="160" r="15" fill="var(--ink)" />
+    <text x="390" y="166" text-anchor="middle" class="lbl key">2</text>
+    <circle cx="288" cy="296" r="15" fill="var(--ink)" />
+    <text x="288" y="302" text-anchor="middle" class="lbl key">3</text>
+    <text x="500" y="400" class="lbl">ICF foundation wall</text>
+  </svg>
+  <ol class="diagram-key small muted">
+    <li>EPS foam forms on both faces stay in place as the wall's insulation.</li>
+    <li>A reinforced concrete core, poured in one lift, carries the load.</li>
+    <li>A waterproofing membrane on the outside face runs down to the weeping tile at the footing.</li>
+    <li>The footing bears in undisturbed soil below the frost zone.</li>
+  </ol>
+  {caption && <figcaption class="small muted">{caption}</figcaption>}
+</figure>
+
+<style>
+  .diagram { margin: 0; }
+  .diagram svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--r-panel);
+    background: var(--bg);
+  }
+  .diagram-key {
+    margin: var(--s3) 0 0;
+    padding-left: 1.5rem;
+    display: grid;
+    gap: var(--s1);
+    line-height: 1.5;
+  }
+  .diagram-key li::marker { font-weight: 600; color: var(--text); }
+  .diagram figcaption { margin-top: var(--s3); }
+  .lbl { font-family: var(--sans); font-size: var(--text-2xl); fill: var(--text); }
+  .lbl.muted { fill: var(--grey-text); }
+  .lbl.brand { fill: var(--brand-700); font-weight: 600; }
+  .lbl.key { fill: var(--on-dark); font-weight: 700; font-size: var(--text-xl); }
+</style>

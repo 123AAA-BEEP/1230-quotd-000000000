@@ -1,0 +1,282 @@
+{
+  "slug": "fort-erie",
+  "name": "Fort Erie",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 42.9,
+  "lon": -78.93,
+  "sub_areas": [
+    {
+      "name": "Fort Erie (Bridgeburg)",
+      "note": "The Niagara River-side town centre north of the original Fort Erie settlement; originally named Victoria and renamed Bridgeburg after the 1873 International Railway Bridge (Wikipedia). OGS point queries near the centre return clay-to-silt till (unit 5d) at -78.925, 42.91 and fine-textured glaciolacustrine silt and clay (unit 8a) at -78.917, 42.917, over Devonian Bois Blanc and Silurian Bertie bedrock respectively; the reference coordinate (42.9, -78.93) returns unit 8a over Onondaga limestone."
+    },
+    {
+      "name": "Crystal Beach",
+      "note": "Lakefront community on Lake Erie in the town's southwest, a separate village until the 1970 amalgamation with Bertie Township and Fort Erie (Wikipedia; coordinate 42.8675, -79.05917). OGS point query returns coarse-textured glaciolacustrine sand and gravel (unit 9) over Onondaga Formation limestone (Edgecliff Member)."
+    },
+    {
+      "name": "Ridgeway",
+      "note": "Commercial core west of the town centre, named for the limestone ridge that extends from Point Abino to near Miller's Creek (Wikipedia; coordinate 42.88361, -79.05743). OGS point query returns coarse-textured glaciolacustrine sand and gravel (unit 9) over Devonian Bois Blanc Formation."
+    },
+    {
+      "name": "Stevensville",
+      "note": "Inland commercial core in the town's northwest (Wikipedia; coordinate 42.94389, -79.05917). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8a) over Silurian Salina Formation (argillaceous dolostone, shale, gypsum)."
+    },
+    {
+      "name": "Douglastown",
+      "note": "Listed by Wikipedia among the town's smaller and historical neighbourhoods; no separate Wikipedia article or coordinate exists (the name redirects to the town article), so an approximate inland point (42.93, -78.99) was queried: fine-textured glaciolacustrine silt and clay (unit 8a) over Bois Blanc Formation. Treat the location as unverified."
+    },
+    {
+      "name": "Point Abino",
+      "note": "Lake Erie headland community west of Crystal Beach (Wikipedia list of neighbourhoods). OGS surficial query at 42.85, -79.09 returned no polygon (point falls outside mapped land); bedrock query returns Onondaga Formation."
+    }
+  ],
+  "census": {
+    "population_2021": 32901,
+    "private_dwellings_occupied": 14081,
+    "single_detached_pct": 82.5,
+    "period_of_construction": {
+      "pre_1960_pct": 38.9,
+      "1961_1980_pct": 23.2,
+      "1981_2000_pct": 19.1,
+      "2001_2021_pct": 18.9
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 11,620 of 14,080 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 14,080): 1960 or before 5,475; 1961-1980 3,265; 1981-1990 1,175; 1991-2000 1,510; 2001-2005 615; 2006-2010 695; 2011-2015 515; 2016-2021 840. 1981-2000 = 2,685/14,080 = 19.1%; 2001-2021 = 2,665/14,080 = 18.9%.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Fort Erie, Town (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Fort%20Erie&DGUIDlist=2021A00053526003&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 32,901; Private dwellings occupied by usual residents: 14,081"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Fort Erie (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Fort%20Erie&DGUIDlist=2021A00053526003&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling: 14,080; Single-detached house: 11,620 (82.5)"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Fort Erie (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Fort%20Erie&DGUIDlist=2021A00053526003&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 5,475; 1961 to 1980 3,265; 1981 to 1990 1,175; 1991 to 2000 1,510"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search - Fort Erie (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Fort%20Erie",
+        "retrieved_at": "2026-09-25",
+        "quote": "2021A00053526003 Fort Erie"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated (glacial-lake clay plain). Regional literature calls this the Haldimand clay plain, but that name is not carried in the OGS layer attributes and was not verified here.",
+        "where": "The dominant unit across inland Fort Erie: the reference coordinate (42.9, -78.93), the Niagara River shore at 42.917, -78.917, Stevensville (42.94389, -79.05917) and the approximate Douglastown point (42.93, -78.99) all return unit 8a. The polygon returned at the reference point is large (AREA 0.0389 sq. degrees)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay (former glacial-lake and modern shoreline sands).",
+        "where": "Lake Erie shore band: Crystal Beach (42.8675, -79.05917) and Ridgeway (42.88361, -79.05743) return unit 9; a second Ridgeway-area point (42.88, -79.05) also returns unit 9. Wikipedia describes low sand hills 2 to 15 m high along the Lake Erie shore."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale).",
+        "where": "A small polygon (AREA 0.00068 sq. degrees) at the Bridgeburg/town-centre point 42.91, -78.925."
+      }
+    ],
+    "bedrock": {
+      "formation": "Onondaga Formation (Devonian limestone) along the Niagara River and Lake Erie shore; Bois Blanc Formation (Devonian cherty limestone/dolostone) inland behind it; Bertie Formation (Silurian dolostone) at the Niagara River shore at 42.917, -78.917; Salina Formation (Silurian dolostone, shale, gypsum) in the north around Stevensville (OGS MRD219).",
+      "description": "Onondaga (Edgecliff Member at the reference point): variably cherty, fossiliferous or argillaceous limestone with local bioherms and minor shale. Bois Blanc: grey to brown, very cherty, fossiliferous, argillaceous limestone and dolostone with local glauconitic sandstone near the base. Bertie: argillaceous, laminated, bituminous or burrowed dolostone. Salina: thin-bedded argillaceous dolostone and shale with gypsum beds and nodules. OGS point queries return Onondaga at the reference coordinate, Crystal Beach and Point Abino; Bois Blanc at Bridgeburg (42.91, -78.925), Ridgeway and the Douglastown point; Bertie at 42.917, -78.917; Salina at Stevensville. Formation bands run roughly parallel to the Lake Erie shore, oldest (Salina) to the north.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried and the OGS surficial layer maps no bedrock-at-surface polygon at any Fort Erie query point). Wikipedia states the soil is shallow with a clay subsoil and that a limestone ridge extends from Point Abino to near Miller's Creek, and that the Peace Bridge site was an ancient source of Onondaga limestone; these are the only retrieved indications of shallow rock. No measured depth figure was found."
+    },
+    "implications_for_piles": [
+      "The Town of Fort Erie's deck sample drawings (TACBOC standard details, 2007) require poured concrete piers a minimum of 1200 mm below grade on undisturbed soil, and size piers from a soil-bearing-capacity table (soft clay 40 kPa through sound rock 500 kPa); the drawings do not mention helical or screw piles, CCMC or engineer requirements, so a helical design is an alternative to that conventional baseline and is reviewed by the Building Department on its own submission.",
+      "OGS maps fine-textured glaciolacustrine silt and clay (unit 8a) across most of inland Fort Erie (reference point, Niagara River shore, Stevensville), so pile capacity in these areas depends on clay strength rather than granular friction; the Town drawings' 40 to 150 kPa bearing range for soft to stiff clay illustrates why the soil class must be established on site.",
+      "The Lake Erie shore band at Crystal Beach and Ridgeway is mapped as coarse glaciolacustrine sand and gravel (unit 9), a different bearing regime from the inland clay; the engineer's soil-specific determination is not transferable between shore and inland lots.",
+      "Devonian limestone and dolostone (Onondaga, Bois Blanc) and Silurian dolostone (Bertie, Salina) underlie the town, and Wikipedia describes a limestone ridge from Point Abino toward Miller's Creek and shallow soil over clay subsoil; shallow or variable bedrock is a refusal condition to confirm before installation. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 42.9, -78.93)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-78.93,42.9&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a; Deposit: Fine-textured glaciolacustrine deposits; Material: silt and clay, minor sand and gravel"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Crystal Beach, 42.8675, -79.05917)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.05917,42.8675&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9; Deposit: Coarse-textured glaciolacustrine deposits; Material: sand, gravel, minor silt and clay"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 42.9, -78.93)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-78.93,42.9&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Onondaga; MEMBER: Edgecliff; limestone; variably cherty, fossiliferous, argillaceous, biohermal"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at Stevensville, 42.94389, -79.05917)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.05917,42.94389&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Salina; AGE: Silurian; argillaceous dolostone, shale, gypsum, salt (at depth)"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Fort Erie, Ontario (geography and neighbourhoods)",
+        "url": "https://en.wikipedia.org/wiki/Fort_Erie,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "a limestone ridge extends from Point Abino to near Miller's Creek, giving Ridgeway its name. The soil is shallow, with a clay subsoil"
+      },
+      {
+        "name": "Wikipedia - Crystal Beach, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Crystal_Beach,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Lakefront community in Fort Erie, Ontario"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Fort Erie Building Department (contact block on the Town's building pages; the applications page names it the 'Planning and Development Department - Building Division')",
+    "deck_permit_required_when": "A building permit is required for any deck, porch, pergola or verandah attached to the main dwelling. A permit is also required when a detached deck exceeds 10.0 sq. m (108 sq. ft) in size AND the walking surface exceeds 600 mm (24 inches) from grade, and when a detached pergola has a solid roof and exceeds 10.0 sq. m.",
+    "footing_depth_requirement": "Town sample deck drawings (TACBOC wood deck standard details DO1a/DO1b, 2007): 'POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL'; pier size = supported deck area x min. 1.9 kPa live load / soil bearing capacity, with a soil-bearing table from soft clay (40 kPa) to sound rock (500 kPa); 89x89 mm minimum wood post anchored to the concrete pier with a metal shoe. The drawings and the Town's deck page do not mention helical or screw piles, CCMC, BMEC or engineer requirements; the deck page requires 'construction drawings including foundation details' and suggests a building designer or architect.",
+    "inspections": [
+      "Town states a list of required inspections is issued specific to each Building Permit (no public deck-specific list published); the person responsible must request each inspection by phone or email 24 to 48 hours in advance with the civic address or permit number",
+      "Building By-law No. 80-2014 s.11.2: inspection notices are required a minimum of two business days before the stages of construction specified, in addition to the notices prescribed in the Building Code",
+      "Final inspection: the $500 Municipal Protection Deposit is returned once the project has passed the final inspection"
+    ],
+    "fee_note": "2026 permit fee for decks, porches, pergolas and verandahs: $0.56 per sq. ft. (Town deck page; 2026 Consolidated Schedule of Fees and Charges lists 'Uncovered deck/porch, shed/accessory building - per sq. ft $0.56' and 'covered deck/porch - per sq. ft. $0.56'), minimum permit fee $205.00 when the calculated fee does not exceed $205.00, plus a refundable Municipal Protection Deposit of $500.00. Reinspection when a previous inspection was not remedied: $103.10.",
+    "timeline_note": "Town publishes prescribed review periods: 10 business days for houses and semi-detached houses including decks (complete applications only); 15, 20 and 30 days for larger classes. Applications are submitted digitally in PDF by email to building@forterie.ca or at Town Hall, 1 Municipal Centre Drive, Building Department - Second Floor.",
+    "portal_url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permit-applications/",
+    "portal_note": "No online permit portal; the Town's applications page provides fillable PDF forms (Building Permit - Standard, February 2026 version) to be emailed to building@forterie.ca.",
+    "sources": [
+      {
+        "name": "Town of Fort Erie - Decks, Porches & Verandahs",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/decks-porches-verandahs/",
+        "retrieved_at": "2026-09-25",
+        "quote": "When a detached deck exceeds 10.0 sq.m (108.0 sq.ft) in size AND the walking surface exceeds 600 mm (24 inches) from grade."
+      },
+      {
+        "name": "Town of Fort Erie - Decks, Porches & Verandahs (2026 fees)",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/decks-porches-verandahs/",
+        "retrieved_at": "2026-09-25",
+        "quote": "2026 Permit Fees: Decks, Porches, Pergolas, & Verandahs: $0.56 per sq. ft. Municipal Protection Deposit: $500.00"
+      },
+      {
+        "name": "Town of Fort Erie - Sample deck drawings (PDF, TACBOC standard details 2007)",
+        "url": "https://www.forterie.ca/media/ladkxh05/sample-deck-drawings002.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL, FOR SIZES SEE SHEET DO1d"
+      },
+      {
+        "name": "Town of Fort Erie - Sample deck drawings (PDF), footing sizing sheet",
+        "url": "https://www.forterie.ca/media/ladkxh05/sample-deck-drawings002.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "PIER SIZE (M2) = SUPPORTED DECK AREA (M2) x MIN. 1.9 (kPa) LIVE LOAD / SOIL BEARING CAPACITY (kPa)"
+      },
+      {
+        "name": "Town of Fort Erie - Building Permits (process and inspections)",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The person responsible for the construction project must request each inspection via phone or email at least 24 to 48 hours in advance."
+      },
+      {
+        "name": "Town of Fort Erie - Building Permit Timelines",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permits/building-permit-timelines/",
+        "retrieved_at": "2026-09-25",
+        "quote": "10 Days: 1) Houses and semi-detached houses including: Additions, renovations Decks Attached garages, carports"
+      },
+      {
+        "name": "Town of Fort Erie - 2026 Consolidated Schedule of Fees and Charges (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/forterie-ca/media/cp2fcgsz/2026-building-fees-charges.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Uncovered deck/porch, shed/accessory building - per sq. ft $0.56; Minimum Permit Fee $205.00"
+      },
+      {
+        "name": "Town of Fort Erie - Building Permit Fees and Reports",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permit-fees-and-reports/",
+        "retrieved_at": "2026-09-25",
+        "quote": "2026 - Consolidated Schedule of Fees and Charges"
+      },
+      {
+        "name": "Town of Fort Erie - Building By-law No. 80-2014 (PDF)",
+        "url": "https://www.forterie.ca/media/2ydhuaul/building-by-law-no-80-2014.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Inspection notices are required a minimum of two (2) business days prior to the stages of construction specified therein"
+      },
+      {
+        "name": "Town of Fort Erie - Building Permit Applications",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permit-applications/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Town of Fort Erie Planning and Development Department - Building Division has provided the following list of permit forms"
+      },
+      {
+        "name": "Wikipedia - Regional Municipality of Niagara (upper tier; Fort Erie is a lower-tier town)",
+        "url": "https://en.wikipedia.org/wiki/Regional_Municipality_of_Niagara",
+        "retrieved_at": "2026-09-25",
+        "quote": "Niagara Region Regional municipality (upper-tier); Fort Erie Town Welland 32,901"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Port Colborne (Climate ID 6136606; 42.88 N, 79.25 W; 175.3 m), about 26 km west of the Fort Erie reference coordinate; nearest station found with temperature, cold-day and frost-free normals. No Fort Erie station page could be located through the ECCC station-name search (results list not rendered).",
+    "normals_period": "1981-2010 (temperature computed from 1981-2006 records, 26 years, code A; cold-day counts and frost-free period code C, 22 years for frost dates). The 1991-2020 pages for Port Colborne and St. Catharines A returned no data tables.",
+    "frost_free_days": 182,
+    "jan_mean_temp_c": -3.7,
+    "days_below_minus_10c": 23.2,
+    "freeze_thaw_note": "Port Colborne 1981-2010: January daily minimum -6.9 C; 45.5 days/yr with daily maximum <= 0 C versus 120.7 days/yr with daily minimum <= 0 C, so roughly 75 days a year cross 0 C between night and day (derived by subtraction); last spring frost Apr 25, first fall frost Oct 26; 137.7 cm annual snowfall. Lake Erie moderates the shore: January mean is about 1 C warmer and the frost-free season about a week longer than at Hamilton (1991-2020: -5.3 C, 164 days) recorded in the Oakville file.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port%20colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.7 -2.9 0.8 7.0 13.2 18.7 21.9 21.3 17.4 11.0 5.5 -0.4 9.2 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (days with minimum < -10 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port%20colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 8.8 7.3 3.0 0.04 0.0 0.0 0.0 0.0 0.0 0.0 0.12 4.0 23.2 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (frost-free period and days with maximum <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port%20colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Length of Frost-Free Period 182 Days C; <= 0 C 15.7 13.0 6.6 0.27 ... 45.5 C"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 'MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL' printed on the Town of Fort Erie's official sample deck drawings (TACBOC wood deck standard details DO1a and DO1b, 2007, sections 'A'). The Ontario Building Code clause itself was NOT retrieved: ontario.ca/laws renders O. Reg. 332/12 and O. Reg. 163/24 only as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario. Do not cite a clause number until the primary text is retrieved.",
+    "sources": [
+      {
+        "name": "Town of Fort Erie - Sample deck drawings (PDF, TACBOC standard details 2007)",
+        "url": "https://www.forterie.ca/media/ladkxh05/sample-deck-drawings002.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

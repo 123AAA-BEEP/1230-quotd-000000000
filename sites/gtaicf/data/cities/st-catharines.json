@@ -1,0 +1,360 @@
+{
+  "slug": "st-catharines",
+  "name": "St. Catharines",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 43.16,
+  "lon": -79.24,
+  "sub_areas": [
+    {
+      "name": "Downtown",
+      "note": "Historic core around St. Paul Street above the Twelve Mile Creek valley; Wikipedia records the original settlement near Twelve Mile Creek at the west end of what was Main Street. OGS point query (43.1588, -79.2444, OSM 'Downtown St. Catharines' centroid) returns unit 9b coarse glaciolacustrine littoral sand and gravel over Queenston Formation red shale; the reference coordinate (43.16, -79.24) returns the same."
+    },
+    {
+      "name": "Port Dalhousie",
+      "note": "Lakeshore community at the mouth of Twelve Mile Creek / Martindale Pond, terminus of the first three Welland Canals and home of the Royal Canadian Henley Regatta; a separate town until annexed in 1961 (Wikipedia). OGS point query (43.2019, -79.2681) returns unit 9 coarse glaciolacustrine sand and gravel over Queenston Formation."
+    },
+    {
+      "name": "Merritton",
+      "note": "South-central community and council ward along the old Welland Canal corridor, a separate town until 1961 (Wikipedia). OGS point query (43.1404, -79.2140) returns unit 5d clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "Grantham",
+      "note": "North-east St. Catharines, the part of former Grantham Township annexed in 1961 (Wikipedia). OGS point query (43.2010, -79.2221, OSM 'Grantham' neighbourhood node) returns unit 9 coarse glaciolacustrine sand and gravel over Queenston Formation."
+    },
+    {
+      "name": "Western Hill",
+      "note": "West of the Twelve Mile Creek valley; Wikipedia records it as land annexed to the south-west of the original city. No OSM node exists for the name; a proxy point on Louth Street (43.1520, -79.2627) was not queried separately. The nearest queried points, Twelve Mile Creek valley floor (43.1786, -79.2725, unit 19 modern alluvium) and Vansickle (unit 5d till), bracket the area over Queenston Formation."
+    },
+    {
+      "name": "Glenridge",
+      "note": "South of downtown toward the Niagara Escarpment; 'Old Glenridge' was annexed early in the city's growth (Wikipedia). OGS point query at Glenridge Avenue / Cliff Road (43.1450, -79.2387) returns unit 5d clay-to-silt till over Queenston Formation; at the Glenridge Quarry Naturalization Site above the escarpment (43.1228, -79.2369) it returns unit 8a fine glaciolacustrine silt and clay over Silurian Lockport Formation dolostone."
+    },
+    {
+      "name": "Martindale",
+      "note": "West-end subdivision along Martindale Road, begun in 1983 on former Louth Township land (Wikipedia). OGS point query (43.1758, -79.2751) returns unit 5d clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "Vansickle",
+      "note": "West-end subdivision along Vansickle Road, begun in 1987 (Wikipedia). OGS point query (43.1598, -79.2709) returns unit 5d clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "Brock University / escarpment brow",
+      "note": "Campus sits on the Niagara Escarpment at the city's south edge (Wikipedia). OGS point query (43.119, -79.249) returns unit 8a fine glaciolacustrine silt and clay over Lockport Formation dolostone, the only bedrock other than Queenston shale returned in the city."
+    },
+    {
+      "name": "Welland Canal corridor (east side)",
+      "note": "The present canal runs north-south through the east of the city from Port Weller (Wikipedia). OGS point query at Wikipedia's Welland Canal coordinate near Lock 3 (43.1556, -79.1938) returns unit 21 man-made deposits (fill, urban development) over Queenston Formation."
+    }
+  ],
+  "census": {
+    "population_2021": 136803,
+    "private_dwellings_occupied": 58903,
+    "single_detached_pct": 55.6,
+    "period_of_construction": {
+      "pre_1960_pct": 32.5,
+      "1961_1980_pct": 38.5,
+      "1981_2000_pct": 18.7,
+      "2001_2021_pct": 10.3
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 32,725 of 58,900 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 58,905): 1960 or before 19,160; 1961-1980 22,675; 1981-1990 6,560; 1991-2000 4,460 (1981-2000 = 11,020); 2001-2005 1,825; 2006-2010 1,355; 2011-2015 1,205; 2016-2021 1,655 (2001-2021 = 6,040). Rounded to one decimal; the four bands sum to 100.0.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - St. Catharines, City (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=St.%20Catharines&DGUIDlist=2021A00053526053&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 136,803; Private dwellings occupied by usual residents: 58,903"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - St. Catharines (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=St.%20Catharines&DGUIDlist=2021A00053526053&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data: 58,900; Single-detached house: 32,725"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - St. Catharines (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=St.%20Catharines&DGUIDlist=2021A00053526053&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 19,160; 1961 to 1980 22,675; 1981 to 1990 6,560; 1991 to 2000 4,460"
+      },
+      {
+        "name": "Statistics Canada, Census Profile search results - St. Catharines (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=St.%20Catharines",
+        "retrieved_at": "2026-09-25",
+        "quote": "2021A00053526053 St. Catharines"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 9 / 9b - Coarse-textured glaciolacustrine deposits (9b: littoral deposits)",
+        "description": "Sand, gravel, minor silt and clay. The layer's own 'Description' field for 9b reads 'Littoral deposits'; the OGS attributes do not name glacial Lake Iroquois and that name was not verified here.",
+        "where": "Downtown and the lake plain: query points at the reference coordinate (43.16, -79.24) and Downtown (43.1588, -79.2444) return 9b; Port Dalhousie (43.2019, -79.2681) and Grantham (43.2010, -79.2221) return 9."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Regional literature calls this the Halton Till; that name is not carried in the OGS layer attributes and was not verified here.",
+        "where": "Belt south and west of downtown below the escarpment: query points at Merritton (43.1404, -79.2140), Glenridge (43.1450, -79.2387), Martindale (43.1758, -79.2751) and Vansickle (43.1598, -79.2709) return 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated.",
+        "where": "Above the Niagara Escarpment at the south edge of the city: query points at Brock University (43.119, -79.249) and the Glenridge Quarry Naturalization Site (43.1228, -79.2369) return 8a."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 19 - Modern alluvial deposits",
+        "description": "Clay, silt, sand, gravel, may contain organic remains.",
+        "where": "Twelve Mile Creek valley floor (query point 43.1786, -79.2725, Wikipedia's Twelve Mile Creek coordinate)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 21 - Man-made deposits",
+        "description": "Fill, sewage lagoon, landfill, urban development.",
+        "where": "Welland Canal corridor on the east side (query point 43.1556, -79.1938, Wikipedia's Welland Canal coordinate)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (Upper Ordovician red shale) under the whole lake-plain city below the escarpment; Lockport Formation (Silurian dolostone) only at the escarpment brow around Brock University and the Glenridge Quarry (OGS MRD219).",
+      "description": "Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds. Lockport: thick-bedded blue-grey crinoidal limestone to dolostone (Gasport), cherty dolostone (Goat Island), argillaceous dolostone and shale (Vinemount), bituminous dolostone (Eramosa). OGS point queries return Queenston at the reference coordinate, Downtown, Port Dalhousie, Grantham, Merritton, Glenridge (Cliff Road), Martindale, Vansickle, Twelve Mile Creek and the Welland Canal; Lockport at Brock University and the Glenridge Quarry.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). No query point in the city returned OGS unit 3 (bedrock at or near surface), so unlike Oakville's creek valleys the OGS surficial map does not flag thin drift anywhere queried here; the Twelve Mile Creek valley returned modern alluvium rather than bedrock. Thickness of the sand, till and silt-clay units over the Queenston shale is unstated."
+    },
+    "implications_for_piles": [
+      "Surficial soil changes by neighbourhood on a regular pattern: coarse glaciolacustrine sand and gravel (OGS unit 9/9b) under Downtown, Port Dalhousie and Grantham on the lake plain; clay-to-silt till (unit 5d) under Merritton, Glenridge, Martindale and Vansickle; fine silt and clay (unit 8a) above the escarpment at Brock. A pile design proven in one of these is not transferable to another without a site check.",
+      "The City's deck and porch guide requires 'concrete piers size, depth and spacing' and 'footing details' on the drawings, and states that manufacturer's drawings, specifications or engineering details may be required for materials or systems not specifically described in the Ontario Building Code; that is the route a helical pile submission would take. The City publishes no helical-specific note and no printed footing depth (see permits).",
+      "Bedrock under the built-up city is Queenston red shale (OGS MRD219); only at the escarpment brow (Brock University, Glenridge Quarry) does the OGS map return Lockport dolostone. No query point returned bedrock at or near surface, so shallow refusal is not flagged by the map, but depth to shale is unstated and was not retrieved.",
+      "Two mapped non-natural or recent deposits matter locally: man-made fill (unit 21) along the Welland Canal corridor on the east side, and modern alluvium (unit 19) on the Twelve Mile Creek valley floor; both are variable materials where an engineer's site-specific determination is the only defensible basis. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.16, -79.24)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.24,43.16&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9b, Deposit: Coarse-textured glaciolacustrine deposits, Material: sand, gravel, minor silt and clay, Description: Littoral deposits"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at Merritton (43.1404, -79.2140)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2140,43.1404&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5d, Deposit: Till, Material: Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at Brock University (43.119, -79.249)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.249,43.119&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a, Deposit: Fine-textured glaciolacustrine deposits, Material: silt and clay, minor sand and gravel, Description: Massive to well laminated"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Ontario Geological Survey, Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.16, -79.24)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.24,43.16&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "OGS MRD 219 bedrock query at Brock University (43.119, -79.249)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.249,43.119&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Lockport; AGE: Silurian; thick-bedded, blue-grey, crinoidal limestone to dolostone (Gasport Mb)"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - St. Catharines (history, neighbourhoods, geography)",
+        "url": "https://en.wikipedia.org/wiki/St._Catharines",
+        "retrieved_at": "2026-09-25",
+        "quote": "The city expanded when it annexed Grantham Township, Merritton, and Port Dalhousie in 1961."
+      },
+      {
+        "name": "Wikipedia - Port Dalhousie (coordinates and description)",
+        "url": "https://en.wikipedia.org/wiki/Port_Dalhousie",
+        "retrieved_at": "2026-09-25",
+        "quote": "historically significant as the terminus for the first three (19th century) routes of the Welland Canal"
+      },
+      {
+        "name": "Wikipedia - Twelve Mile Creek (Ontario) (coordinates and description)",
+        "url": "https://en.wikipedia.org/wiki/Twelve_Mile_Creek_(Ontario)",
+        "retrieved_at": "2026-09-25",
+        "quote": "The creek's lower reaches flow through urban areas of Thorold and St. Catharines and has been heavily altered by human activity"
+      },
+      {
+        "name": "Wikipedia - Brock University (coordinates and escarpment setting)",
+        "url": "https://en.wikipedia.org/wiki/Brock_University",
+        "retrieved_at": "2026-09-25",
+        "quote": "at the centre of Canada's Niagara Peninsula on the Niagara Escarpment"
+      },
+      {
+        "name": "OpenStreetMap Nominatim geocoder (sub-area coordinates for Downtown, Merritton, Grantham, Glenridge, Martindale, Vansickle)",
+        "url": "https://nominatim.openstreetmap.org/search?q=Merritton%2C%20St.%20Catharines&format=json&limit=2",
+        "retrieved_at": "2026-09-25",
+        "quote": "Merritton, St. Catharines, Niagara Region, Golden Horseshoe, Ontario, L2T 1K1, Canada (43.1403845, -79.2140005)"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of St. Catharines, Planning and Building Services (the department's own guides abbreviate it 'PBS Department' and refer to its 'Building Section'; the deck guide says the City of St. Catharines Planning and Building Services issues building permits). Niagara Region is the upper tier and does not issue building permits.",
+    "deck_permit_required_when": "City deck and porch guide: a building permit is required for decks and porches regardless of size, except uncovered decks less than 0.6 m (24 in) above grade, which need no permit but must still comply with the Zoning By-laws; covered decks and porches always require a permit. The 'Do I need a Building Permit' page lists 'Decks (more than 600 mm above ground)' and the residential permit guide lists 'Wood Decks 24 inches or greater above grade or have a roof above'. The City does not publish an area threshold for decks.",
+    "footing_depth_requirement": "Not printed in any online City document. The deck and porch guide requires the drawings to show 'concrete piers size, depth and spacing' and 'concrete slab or footing details - size, thickness and reinforcement', and says the City's sample drawings ('Site Plan', 'Typical Wood Deck Cross Section', 'Typical Section - Patio') are available at the PBS Department counter, not online. On new materials/systems it states that manufacturer's drawings, specifications or engineering details may be required for materials/systems not specifically described in the Ontario Building Code. No helical pile, CCMC or BMEC wording appears in the City's deck guide, residential guide or drawings guide.",
+    "inspections": [
+      "Deck guide key inspections: prior to pouring any concrete for piers or footings; framing inspection; final inspection (all required inspections are listed on the permit)",
+      "City inspection list (all permits): footings, piers, and slabs on grade before pouring concrete",
+      "Foundation prior to backfilling",
+      "Framing and structural",
+      "Plumbing; heating and ventilation; insulation and vapour barrier (where applicable)",
+      "Fire and life safety; exits; occupancy (where applicable)",
+      "Final"
+    ],
+    "fee_note": "2024-2026 Schedule of Rates and Fees (By-law 2023-137), Planning and Building Services, Building Permit Fees, Group C residential (printed p. 60): 'Each attached garage or carport, shed, decks, open porch, balcony' $1.55 per square foot in 2024, $1.60 in 2025, $1.64 in 2026, before surcharges. Minimum Building Permit Fee (printed p. 59) $175.95 / $181.25 / $185.80 per permit for 2024 / 2025 / 2026. A separate road allowance damage deposit line lists 'Accessory Buildings Requiring Footings' at $336.50 / $346.60 / $355.25 per application where a sidewalk exists (printed p. 28); whether it is applied to decks is not stated. The July 22, 2024 amendment adds a pre-consultation fee and does not mention decks.",
+    "timeline_note": "The City's application page states only that 'Mandated timelines within the Building Code will start after we've reviewed your permit application and documentation'; no day-count is published for decks. The deck guide says the City will review the submission 'as quickly as we can'. Inspections must be requested at least 48 hours in advance (905-688-5601 ext. 1667 or bldginspections@stcatharines.ca, or the online portal for online permits).",
+    "portal_url": "https://build.stcatharines.ca/",
+    "portal_note": "'City of St. Catharines Online Applications' (Building Permit Application Portal) accepts, among others, 'Building a shed, detached deck, detached garage, pergola on a residential property' and 'Residential alteration permits'; other applications go by mail, courier, the James Street drop box at City Hall (50 Church St) or in person, with two sets of drawings. Support: building@stcatharines.ca, 905-688-5601 ext. 1660.",
+    "sources": [
+      {
+        "name": "City of St. Catharines - A Guide to Residential Decks and Porches (PDF, Planning and Building Services)",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "uncovered decks, less than 0.6 m (24\") above grade, do not require a building permit but must still comply with the ... Zoning By-laws"
+      },
+      {
+        "name": "City of St. Catharines - Deck and porch guide (new materials/systems clause)",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "manufacturer's drawings, specifications or engineering details may be required for materials/systems which are not specifically described In the Ontario Building Code"
+      },
+      {
+        "name": "City of St. Catharines - Deck and porch guide (inspections)",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Prior to pouring any concrete for piers or footings; Framing inspection; Final inspection"
+      },
+      {
+        "name": "City of St. Catharines - Do I need a Building Permit",
+        "url": "https://www.stcatharines.ca/applications-licences-and-permits/building-permits/do-i-need-a-building-permit/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Decks (more than 600 mm above ground)"
+      },
+      {
+        "name": "City of St. Catharines - A Guide to Residential Building Permits (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/muhhfeqg/pbs-residential-building-guide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Wood Decks 24 inches or greater above grade or have a roof above."
+      },
+      {
+        "name": "City of St. Catharines - Building Permits",
+        "url": "https://www.stcatharines.ca/applications-licences-and-permits/building-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "At the City of St. Catharines, Planning and Building Services issues building permits"
+      },
+      {
+        "name": "City of St. Catharines - Applying for a Building Permit",
+        "url": "https://www.stcatharines.ca/building-and-renovating/applying-for-a-building-permit/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mandated timelines within the Building Code will start after we've reviewed your permit application and documentation."
+      },
+      {
+        "name": "City of St. Catharines - Building Inspections",
+        "url": "https://www.stcatharines.ca/building-and-renovating/inspections/building-inspections/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Footings, piers, and slabs on grade before pouring concrete; Foundation prior to backfilling; Framing and structural"
+      },
+      {
+        "name": "City of St. Catharines - 2024-2026 Schedule of Rates and Fees, By-law 2023-137 (PDF)",
+        "url": "https://stcatharines-ca.govstack.com/media/bnqafmk2/rates-and-fees-by-law-2023-137.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Each attached garage or carport, shed, decks, open porch, balcony Per Square Foot $1.55 $1.60 $1.64"
+      },
+      {
+        "name": "City of St. Catharines - Rates and Fees By-law 2023-137 (minimum building permit fee)",
+        "url": "https://stcatharines-ca.govstack.com/media/bnqafmk2/rates-and-fees-by-law-2023-137.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Minimum Building Permit Fee Per Permit $175.95 $181.25 $185.80"
+      },
+      {
+        "name": "City of St. Catharines - Rates and Fees page (2024 to 2026 schedule and amendments)",
+        "url": "https://www.stcatharines.ca/council-and-administration/budget-and-finances/rates-and-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Amendment #3 re: Update to 2024-2026 Schedule of Rates and Fees (Approved July 22, 2024)"
+      },
+      {
+        "name": "City of St. Catharines - Online Applications portal",
+        "url": "https://build.stcatharines.ca/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Welcome to City of St. Catharines Online Applications ... Phone: 905 688 5601 Ext 1660 Email: building@stcatharines.ca"
+      }
+    ]
+  },
+  "climate": {
+    "station": "St. Catharines A (Climate ID 6137287, TC ID YSN; 43.20 N, 79.17 W; 97.8 m), about 7 km north-east of the reference coordinate, for all headline values; Vineland Station RCS (Climate ID 6139148, 43.18 N, 79.40 W; about 13 km west) for a 1991-2020 cross-check",
+    "normals_period": "1981-2010 for St. Catharines A (computed from 1981-2000 records, 20 years, code D; no 1991-2020 normals are published for this station); 1991-2020 for Vineland Station RCS and Hamilton A",
+    "frost_free_days": 179,
+    "jan_mean_temp_c": -3.8,
+    "days_below_minus_10c": 26.7,
+    "freeze_thaw_note": "St. Catharines A 1981-2010: January daily minimum -7.4 C; 46.0 days/yr with daily maximum <= 0 C versus 127.2 days/yr with daily minimum <= 0 C, so roughly 81 days a year cross 0 C between night and day (derived by subtraction); last spring frost Apr 24, first fall frost Oct 21; 137.1 cm annual snowfall. Vineland Station RCS 1991-2020 (about 13 km W): January mean -3.3 C, 21.1 days/yr below -10 C, 42.6 days/yr with maximum <= 0 C, 116.5 days/yr with minimum <= 0 C; median last spring frost Apr 25 and first fall frost Oct 20 (no average frost-free length is published there). Hamilton A 1991-2020 (about 55 km W): January mean -5.3 C, 35.7 days/yr below -10 C, 164 frost-free days. St. Catharines is measurably milder than the Halton and Hamilton service areas.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A (temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.8 -2.9 1.1 7.4 13.7 19.0 21.9 20.8 16.6 10.4 4.6 -0.9 9.0 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A (days with minimum below -10 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 10.5 8.3 3.5 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.05 4.5 26.7 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A (days with maximum <= 0 C and frost-free period)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "<= 0 C 16.1 12.6 6.5 0.25 ... 46.0 D; Average Length of Frost-Free Period 179 Days D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Vineland Station RCS",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.3 -2.9 1.4 ...; < -10 C 8.7 7.6 2.1 ... 21.1 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Hamilton A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -5.3 ...; < -10 C ... 35.7 C; Average Length of Frost-Free Period 164 Days"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Left null because no City of St. Catharines online document prints a minimum footing depth. The City's deck and porch guide asks for 'concrete piers size, depth and spacing' on the drawings and says its sample 'Typical Wood Deck Cross Section' drawing is available only at the Planning and Building Services counter; that counter drawing was not retrieved. The 4'-0\" (1.2 m) figure printed on Oakville's and Milton's deck drawings must not be reused for St. Catharines without a St. Catharines document. The Ontario Building Code clause text itself was not retrieved (ontario.ca/laws renders as a JavaScript shell; the 2024 Building Code Compendium is sold through Publications Ontario). Do not cite a clause number.",
+    "sources": [
+      {
+        "name": "City of St. Catharines - A Guide to Residential Decks and Porches (PDF), drawing requirements",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Concrete piers size, depth and spacing ... Concrete slab or footing details - size, thickness and reinforcement"
+      },
+      {
+        "name": "City of St. Catharines - Deck and porch guide (sample drawings available at counter only)",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Sample Drawings entitled Site Plan, Typical Wood Deck Cross Section, & Typical Section - Patio ... are available at the P.B.S. Department."
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

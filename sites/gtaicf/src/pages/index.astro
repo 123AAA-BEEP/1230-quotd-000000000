@@ -1,0 +1,204 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Diagram from '../components/Diagram.astro';
+import Process from '../components/Process.astro';
+import Faq from '../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, getLiveGuides, formatCadPerSqft } from '../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const liveCities = getLiveCities();
+const guides = getLiveGuides();
+const liveSlugs = new Set(liveCities.map((c) => c.slug));
+const costGuide = guides.find((g) => g.slug === 'icf-vs-poured-concrete-ontario');
+
+const title = 'ICF foundations and walls, western GTA | GTA ICF';
+const description = 'Insulated concrete form foundations and full-height walls across Toronto, Peel, Halton, Hamilton, Guelph and Niagara. Our own crew, any locally stocked ICF system, poured year-round.';
+
+const steps = [
+  { title: 'Send the drawings', body: 'Architectural drawings with wall heights and the perimeter are enough to quote. For an addition or a retrofit, a sketch and photos start the conversation and we take measurements on site.' },
+  { title: 'Engineering and permit package', body: 'The engineer sizes the core, the reinforcing and the lintels to the loads and the soil, and the drawings, the ICF system\'s evaluation report and the engineer\'s letter go in with the permit application. We prepare the package with you.' },
+  { title: 'Footings, forms, steel, pour', body: 'Our crew sets the footings, stacks and braces the forms, places the reinforcing, and pours the walls in one continuous lift with the concrete inspected and the forms staying in place as the insulation.' },
+  { title: 'Waterproof, backfill, hand over', body: 'The outside face gets its membrane and weeping tile, the pre-backfill inspection is booked, and the framers take over on a wall that is already insulated on both faces.' },
+];
+
+const faqs = [
+  { q: 'What is an ICF wall?', a: 'Insulated concrete forms are interlocking blocks of expanded polystyrene foam with plastic webs between them. They stack like oversized bricks, get reinforcing steel placed inside, and are filled with concrete. Unlike plywood forms, the foam stays in place after the pour, so the finished wall is reinforced concrete with continuous insulation on both faces.' },
+  { q: 'Which ICF brand do you use?', a: 'Whichever system the local supplier has in stock for the job: the common Ontario systems all carry a CCMC evaluation report and work the same way on site. We name the system on your quote and cite its evaluation report in the permit package. Not being tied to one brand keeps lead times short and the price honest.' },
+  { q: 'Can you pour in winter?', a: 'Yes. The foam form insulates the concrete while it cures, which is one of the practical reasons ICF is chosen for winter builds. Cold-weather concreting still has rules: the concrete arrives warm, the top of the wall is covered, and the schedule allows for the cure. We build year-round and price the winter measures into the quote.' },
+  { q: 'Do I still need waterproofing below grade?', a: 'Yes. The foam is not a waterproofing layer. Below grade the outside face gets a membrane or damp-proofing to the code and the manufacturer\'s detail, with a weeping tile at the footing, exactly as a poured wall would. The difference is that the insulation is already there when the membrane goes on.' },
+  { q: 'Is ICF more expensive than a poured foundation?', a: 'The wall itself usually costs more than a bare poured wall and less than a poured wall once you add the insulation, furring and vapour barrier a finished basement needs. Our price table on this site is illustrative and per square foot of wall, and the written quote after a site review is the number you pay.' },
+  { q: 'Do you build full-height ICF houses, not just basements?', a: 'Yes. Foundations are the most common ICF job, but our crew builds full-height ICF walls for whole houses, additions and garages as well. Above grade, the same wall gives you the insulation, the sound performance and the solid feel; the engineer sizes lintels and bearing for the openings.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Insulated concrete form (ICF) construction',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: biz.service_area.map((c) => ({ '@type': 'City', name: `${c.name}, ON` })),
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'ICF applications',
+    itemListElement: ['ICF foundations and basements', 'Full-height ICF walls', 'ICF additions and garages'].map((n) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: n } })),
+  },
+};
+---
+
+<Base title={title} description={description} schema={[faqSchema, serviceSchema]}>
+  <div class="page home">
+    <div class="hero">
+      <p class="eyebrow eyebrow-brand">Toronto · Peel · Halton · Hamilton · Niagara</p>
+      <h1>ICF foundations and full-height walls.</h1>
+      <p class="lede">Insulated concrete form walls, formed, reinforced and poured by our own crew. Insulated on both faces the day they are poured, built year-round, with any ICF system your local supplier stocks.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+        <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="hero">Call {biz.phone_display}</a>
+      </div>
+
+      <section class="policy-band" aria-label="How we work">
+        <div>
+          <p class="pb-value num">{biz.service_area.length}</p>
+          <p class="pb-label">municipalities served, Toronto to Fort Erie</p>
+        </div>
+        <div>
+          <p class="pb-value">1 business day</p>
+          <p class="pb-label">to call you back on every request</p>
+        </div>
+        <div>
+          <p class="pb-value">Free</p>
+          <p class="pb-label">quote, with a firm price once we have seen the drawings or the site</p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm />
+    </aside>
+
+    <div class="rest">
+      <section class="block">
+        <h2>What we build</h2>
+        <dl class="apps">
+          <div>
+            <dt><a href="/foundations-and-basements/">Foundations and basements</a></dt>
+            <dd>Footings, ICF walls poured in one lift, membrane and weeping tile, ready for framing. A basement that is insulated the day it is poured, with no furring, batts or vapour barrier to add later.</dd>
+          </div>
+          <div>
+            <dt><a href="/full-height-walls/">Full-height walls</a></dt>
+            <dd>Whole houses and storeys above grade in ICF, with the engineer sizing lintels and bearing for the openings. Quiet, solid and airtight in a way framed walls are not.</dd>
+          </div>
+          <div>
+            <dt><a href="/full-height-walls/#additions">Additions and garages</a></dt>
+            <dd>A new foundation and walls tied into an existing house, or a garage that wants to be warm. Same crew, same system, sized to the drawings.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="block">
+        <h2>How an ICF wall is built</h2>
+        <Diagram frostDepthLabel="to 1.2 m" caption="Not to scale. 1.2 m is the minimum footing depth on Halton municipalities' own drawings and the design frost depth in geotechnical reports filed with the Town of Oakville." />
+        <ul class="benefits">
+          <li><strong>Insulated on both faces from day one.</strong> The foam form is the insulation, continuous around the wall with no studs to bridge it. The R-value question is answered in the guide, with the difference between nominal and effective spelled out.</li>
+          <li><strong>Reinforced concrete core.</strong> Steel placed in the form, concrete poured in one continuous lift, inspected before the pour. The engineer sets the core thickness and the reinforcing from the loads.</li>
+          <li><strong>Poured year-round.</strong> The form keeps the concrete warm while it cures, so winter pours go ahead with the usual cold-weather measures instead of a wait for spring.</li>
+          <li><strong>Waterproofed like any foundation.</strong> Membrane and weeping tile outside, to the code and the manufacturer's detail. The foam is insulation, not waterproofing, and we say so.</li>
+        </ul>
+      </section>
+
+      <Process steps={steps} />
+
+      <section class="block">
+        <h2>What it costs, illustratively</h2>
+        <p class="muted">Ranges from our current price table, per square foot of wall installed. Each site carries its own conditions, so treat these as examples and the written quote as the price.</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th scope="col">Wall</th><th scope="col">Typical core</th><th scope="col">Illustrative range</th></tr>
+            </thead>
+            <tbody>
+              {prices.rows.map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.core_options}</td>
+                  <td class="num">{formatCadPerSqft(r.low)} to {formatCadPerSqft(r.high)} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">Last reviewed {prices.last_reviewed}. {prices.excluded_note}
+          {costGuide && <span> Full breakdown against poured concrete, what other Ontario builders publish, and a calculator: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <section class="block" id="areas">
+        <h2>Where we work</h2>
+        <p class="muted">{biz.service_radius_line}</p>
+        <ul class="areas">
+          {biz.service_area.map((c) => (
+            <li>
+              {liveSlugs.has(c.slug) ? <a href={`/locations/${c.slug}/`}>{c.name}</a> : <span>{c.name}</span>}
+              <span class="muted small"> {c.region}{c.note ? `, ${c.note}` : ''}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <Faq items={faqs} />
+
+      <section class="block final">
+        <h2>Ready for a firm price?</h2>
+        <p class="muted">Send the drawings and we call you back within one business day. Free, and no obligation.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+          <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="final">Call {biz.phone_display}</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .home { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .home { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .hero { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s4) var(--s4); max-width: 16ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: 36rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s6); }
+  .policy-band { display: grid; grid-template-columns: 1fr; gap: var(--s4) var(--s6); margin-top: var(--s10); padding-block: var(--s5); border-top: 1px solid var(--border-strong); border-bottom: 1px solid var(--border); }
+  @media (min-width: 36rem) { .policy-band { grid-template-columns: repeat(3, 1fr); } }
+  .pb-value { font-family: var(--display); font-size: var(--text-2xl); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; color: var(--ink); }
+  .pb-label { margin-top: var(--s1); font-size: var(--text-sm); color: var(--text-muted); line-height: 1.4; }
+  .rest { display: grid; gap: var(--s16); margin-top: var(--s8); max-width: var(--read); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+  .apps { display: grid; gap: var(--s5); margin-top: var(--s2); }
+  .apps dt { font-family: var(--display); font-weight: 700; font-size: var(--text-lg); letter-spacing: -0.01em; color: var(--ink); }
+  .apps dt a { color: var(--ink); text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; text-decoration-color: var(--border-control); }
+  .apps dt a:hover { color: var(--brand-700); text-decoration-color: currentColor; }
+  .apps dd { margin: var(--s1) 0 0; color: var(--text-muted); max-width: 40rem; }
+  .benefits { list-style: none; padding: 0; margin-top: var(--s6); display: grid; gap: var(--s4); }
+  .benefits li { position: relative; padding-left: 1.5rem; color: var(--text-muted); max-width: 40rem; }
+  .benefits li::before { content: ''; position: absolute; left: 0.2rem; top: 0.55rem; width: 0.4rem; height: 0.4rem; background: var(--brand-600); border-radius: 999px; }
+  .benefits strong { color: var(--text); }
+  .table-wrap { margin-top: var(--s5); }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+  .areas { list-style: none; padding: 0; margin-top: var(--s4); display: grid; grid-template-columns: 1fr; gap: var(--s2); }
+  @media (min-width: 36rem) { .areas { grid-template-columns: 1fr 1fr; } }
+  .areas li { padding-block: var(--s2); border-bottom: 1px solid var(--border); }
+  .areas a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+  .final { padding-top: var(--s8); border-top: 1px solid var(--border-strong); }
+  .final .hero-actions { margin-top: var(--s5); }
+</style>

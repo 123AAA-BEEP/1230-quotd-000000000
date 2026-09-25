@@ -1,0 +1,357 @@
+{
+  "slug": "niagara-falls",
+  "name": "Niagara Falls",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 43.09,
+  "lon": -79.08,
+  "sub_areas": [
+    {
+      "name": "Downtown (Queen Street)",
+      "note": "City Hall is at 4310 Queen Street (City contact block). Wikipedia lists a 'Central Business District' neighbourhood within the Elgin community. The task reference coordinate (43.09, -79.08), between downtown and the gorge, returns OGS unit 9 coarse glaciolacustrine sand and gravel over Guelph Formation dolostone; the Falls brink point (approx. 43.079, -79.078) returns unit 3 Paleozoic bedrock at surface."
+    },
+    {
+      "name": "Chippawa",
+      "note": "Former village at the Welland River mouth, annexed 1970 (Wikipedia); Wikipedia coordinate 43.0558, -79.0469. OGS point query returns unit 8a fine-textured glaciolacustrine silt and clay over Guelph Formation dolostone; the same result at an approximate second point (43.0575, -79.0627)."
+    },
+    {
+      "name": "Stamford",
+      "note": "Name used today for the area northwest of downtown (Wikipedia). Two approximate points on the Stamford plateau (43.115, -79.098 and 43.104, -79.069) return unit 9 sand and gravel over Lockport Formation (Goat Island/Gasport/Vinemount, subunit 18b). The Stamford Township article coordinate (43.16475, -79.064778) sits at the city's north edge below the escarpment and returns unit 8a silt and clay over Queenston Formation shale."
+    },
+    {
+      "name": "Drummond / Drummondville",
+      "note": "Historic Drummondville was near Lundy's Lane and Main Street (Wikipedia); 'Drummond' is one of the City's 11 planning communities (Wikipedia list). An approximate point on Lundy's Lane west of Main (43.084, -79.117) returns unit 21 man-made deposits over Guelph Formation dolostone."
+    },
+    {
+      "name": "Lundy's Lane",
+      "note": "Battle of Lundy's Lane site coordinate 43.0891, -79.0955 (Wikipedia). A nearby point (43.089, -79.088) returns unit 9 coarse glaciolacustrine sand and gravel over Guelph Formation dolostone."
+    },
+    {
+      "name": "Garner (Westlane)",
+      "note": "'Garner' is a neighbourhood of the Westlane community in the City's planning list (Wikipedia). Approximate points (43.090, -79.140 and 43.070, -79.155) return unit 8a silt and clay over Lockport Formation Eramosa Member (18c) and over Guelph Formation respectively. No Wikipedia coordinate exists for this neighbourhood; points are approximations."
+    },
+    {
+      "name": "Willoughby",
+      "note": "Former Willoughby Township, rural south end along the Niagara River Parkway, annexed 1970 (Wikipedia); Wikipedia coordinate 43.0108, -79.0772. OGS point query returns unit 8a silt and clay over Salina Formation (argillaceous dolostone, shale, gypsum); same result at approximate point 43.020, -79.075."
+    }
+  ],
+  "census": {
+    "population_2021": 94415,
+    "private_dwellings_occupied": 37793,
+    "single_detached_pct": 66.1,
+    "period_of_construction": {
+      "pre_1960_pct": 30.9,
+      "1961_1980_pct": 29.9,
+      "1981_2000_pct": 19.6,
+      "2001_2021_pct": 19.6
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 24,990 of 37,795 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 37,790): 1960 or before 11,695; 1961-1980 11,290; 1981-1990 4,080; 1991-2000 3,320; 2001-2005 1,455; 2006-2010 1,495; 2011-2015 1,865; 2016-2021 2,600. Buckets: 1981-2000 = 7,400; 2001-2021 = 7,415. Population 2016 was 88,071 (+7.2%).",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Niagara Falls, City (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara%20Falls&DGUIDlist=2021A00053526043&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 94,415; Private dwellings occupied by usual residents: 37,793"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Niagara Falls (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara%20Falls&DGUIDlist=2021A00053526043&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling: 37,795; Single-detached house: 24,990"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Niagara Falls (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara%20Falls&DGUIDlist=2021A00053526043&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 11,695; 1961 to 1980 11,290; 1981 to 1990 4,080; 1991 to 2000 3,320"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results - Niagara Falls (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Niagara%20Falls",
+        "retrieved_at": "2026-09-25",
+        "quote": "DGUIDlist=2021A00053526043 Niagara Falls"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated (OGS layer attributes). Regional names such as 'Haldimand clay' are not carried in the layer and were not verified.",
+        "where": "Most of the city away from the gorge: Chippawa (both points), Willoughby (both points), the Wikipedia city coordinate (43.06, -79.1067), Garner/Westlane (both points) and the Stamford Township north-edge point all return unit 8a."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay (OGS layer attributes).",
+        "where": "A band from the reference coordinate (43.09, -79.08) through Lundy's Lane (43.089, -79.088) and the Stamford plateau points (43.115, -79.098; 43.104, -79.069)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 3 - Paleozoic bedrock",
+        "description": "Bedrock at or near surface (drift too thin to map).",
+        "where": "Small polygon at the Falls brink / Table Rock area (approx. 43.079, -79.078). Not returned at any residential query point."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 21 - Man-made deposits",
+        "description": "Fill (OGS legend label 'Man-made deposits').",
+        "where": "Lundy's Lane west approximate point (43.084, -79.117)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Guelph Formation (Silurian dolostone) under most of the city, including the reference coordinate, Chippawa, Lundy's Lane and the Wikipedia city coordinate; Lockport Formation (Goat Island/Gasport/Vinemount, subunit 18b, and Eramosa Member, 18c) on the Stamford plateau and at Garner; Salina Formation (argillaceous dolostone, shale, gypsum) at Willoughby in the south; Queenston Formation red shale only at the north edge below the escarpment (OGS MRD219).",
+      "description": "Guelph: tan to brown, fine- to medium-crystalline, sucrosic dolostone, fossiliferous, locally biohermal (OGS MRD219 DESCRIPT_FULL). Lockport: thick-bedded blue-grey crinoidal limestone to dolostone (Gasport), light brown locally cherty dolostone (Goat Island), argillaceous dolostone and shale (Vinemount), bituminous dark brown dolostone (Eramosa). Wikipedia places the Guelph Formation at the top of the Lockport Group, the unit that 'makes up the Niagara Escarpment' and whose 'most famous feature is Niagara Falls'; the softer Clinton Group shales (including the Rochester Shale) lie beneath it and erode out from under it. Salina: thin-bedded argillaceous dolostone and shale with gypsum beds and nodules.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). OGS surficial mapping returns bedrock at surface (unit 3) only at the Falls brink; every residential point returns a silt-and-clay or sand-and-gravel cover of unstated thickness. The Rochester Shale / Clinton Group was not returned at any query point (it underlies the Lockport dolostone and is exposed only in the gorge walls per the Wikipedia Clinton Group article); its local depth was not verified."
+    },
+    "implications_for_piles": [
+      "The City of Niagara Falls' own deck page names the first required deck inspection as 'Footing/excavation (helical pile) - prior to pouring of concrete', so helical piles are an expected deck foundation in this municipality and are inspected at the footing stage.",
+      "The City publishes no deck sample drawing or footing-depth figure; deck applications must include 'Cross-section/Elevations including pier/footing/foundation details', so pile depth and capacity are set by the submitted design rather than a printed municipal minimum.",
+      "OGS maps fine-textured glaciolacustrine silt and clay (unit 8a) at Chippawa, Willoughby, Garner and the city-centre coordinate, and coarse sand and gravel (unit 9) along the Lundy's Lane-Stamford band; a pile design for one of these soils is not transferable to the other without site confirmation.",
+      "Bedrock is Silurian dolostone (Guelph and Lockport formations) under nearly all of the city and comes to surface at the Falls brink; shallow dolostone refusal is a site condition to confirm before installation near the gorge. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.09, -79.08)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.08,43.09&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9, Deposit: Coarse-textured glaciolacustrine deposits; Material: sand, gravel, minor silt and clay"
+      },
+      {
+        "name": "OGS MRD 128-REV layer 3 query at Chippawa (43.0558, -79.0469)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.0469,43.0558&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a, Deposit: Fine-textured glaciolacustrine deposits; Material: silt and clay, minor sand and gravel; Massive to well laminated"
+      },
+      {
+        "name": "OGS MRD 128-REV layer 3 query at the Falls brink (43.079, -79.078)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.078,43.079&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 3, Deposit: Paleozoic bedrock"
+      },
+      {
+        "name": "OGS MRD 128-REV layer 3 definition (unit legend labels)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "8a: Massive-well laminated; 9: Coarse-textured glaciolacustrine deposits; 21: Man-made deposits; 3: Paleozoic bedrock"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.09, -79.08)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.08,43.09&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Guelph; tan to brown, fine- to medium-crystalline, sucrosic dolostone; fossiliferous, locally biohermal"
+      },
+      {
+        "name": "OGS MRD 219 layer 4 query at Stamford plateau (43.115, -79.098)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.098,43.115&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Lockport; SUBUNIT: 18b; MEMBER: Goat Island, Gasport, Vinemount; shale, dolostone, limestone"
+      },
+      {
+        "name": "OGS MRD 219 layer 4 query at Willoughby (43.0108, -79.0772)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.0772,43.0108&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=FORMATION,SUBUNIT,MEMBER,UNIT_NUMBER,PRIMARY_LITHO,DESCRIPT_BRIEF&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Salina; argillaceous dolostone, shale, gypsum, salt (at depth)"
+      },
+      {
+        "name": "OGS MRD 219 layer 4 query at Stamford Township coordinate (43.16475, -79.064778)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.0648,43.1648&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=FORMATION,SUBUNIT,MEMBER,UNIT_NUMBER,PRIMARY_LITHO,DESCRIPT_BRIEF&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; shale, siltstone, minor limestone and sandstone"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Lockport Group",
+        "url": "https://en.wikipedia.org/wiki/Lockport_Group",
+        "retrieved_at": "2026-09-25",
+        "quote": "makes up the Niagara Escarpment. Its most famous feature is Niagara Falls. The Guelph Formation is at the top of the Lockport Group."
+      },
+      {
+        "name": "Wikipedia - Clinton Group (Rochester Shale redirects here)",
+        "url": "https://en.wikipedia.org/wiki/Clinton_Group",
+        "retrieved_at": "2026-09-25",
+        "quote": "the relatively soft, readily weathering Clinton Group and the massive dolomites of the overlying Lockport, the former tends to erode preferentially out from underneath"
+      },
+      {
+        "name": "Wikipedia - Niagara Falls, Ontario (communities and neighbourhoods)",
+        "url": "https://en.wikipedia.org/wiki/Niagara_Falls,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Niagara Falls has 11 communities and 67 neighbourhoods defined by Planning Neighbourhoods and Communities for the City of Niagara Falls."
+      },
+      {
+        "name": "Wikipedia - Chippawa, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Chippawa,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "coord|43|3|21|N|79|2|49|W"
+      },
+      {
+        "name": "Wikipedia - Willoughby Township, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Willoughby_Township,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "coord|43|0|39|N|79|4|38|W"
+      },
+      {
+        "name": "Wikipedia - Stamford Township",
+        "url": "https://en.wikipedia.org/wiki/Stamford_Township",
+        "retrieved_at": "2026-09-25",
+        "quote": "In 1962 the township was amalgamated with the city of Niagara Falls, Ontario. coord 43.16475 N 79.064778 W"
+      },
+      {
+        "name": "Wikipedia - Battle of Lundy's Lane",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Lundy%27s_Lane",
+        "retrieved_at": "2026-09-25",
+        "quote": "Coord|43.0891|N|79.0955|W"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Niagara Falls Building Department (the decks page says 'check with the Building Department'; the contact block reads 'City of Niagara Falls Planning and Building, 4343 Morrison Street'; the Do I Need a Building Permit page says 'contact Building Services'; email pbd@niagarafalls.ca, 905-356-7521 ext. 4330)",
+    "deck_permit_required_when": "City decks page: a permit is required before construction if the deck/porch is greater than 10 m2 (108 ft2), greater than 60 cm (23 5/8 inches) high from grade measured from the top of the adjacent walking surface, covered or has a roof, or connected to a house or other structure. The Do I Need a Building Permit page lists 'Detached covered or uncovered deck more than 600 mm above adjacent grade' among projects needing a permit, and exempts detached structures not more than 10 m2 (108 ft2) without plumbing (zoning still applies).",
+    "footing_depth_requirement": null,
+    "inspections": [
+      "Footing/excavation (helical pile) - prior to pouring of concrete",
+      "Framing",
+      "Final"
+    ],
+    "fee_note": "Schedule of Fees, fees effective January 1, 2026: Uncovered Deck/Porch $243.00 flat fee; Covered Deck/Porch $7.55 per m2; Minimum Building Permit Charge $243.00; Zoning Review for Building Permit $244.00 flat fee (a zoning compliance fee applies whether reviewed with the permit or as a separate Zoning Compliance Certificate); Not-ready inspection $135.00; Construction without a Permit 2x permit fee. Payment online through the CityView Portal, or cash/debit in person at 4343 Morrison Street (no credit cards), or cheque to 'City of Niagara Falls'.",
+    "timeline_note": "City states staff review the application for completeness within 2 business days; plans review for complete applications takes '10 to 30 days, depending on the building's class and size', with 'Decks' appearing in the list of project types under the 10/15/20/30-day headings (the page source renders the columns as a flat list, so the exact column for decks could not be confirmed from the HTML). Inspections need 48 hours' notice with a 3:00 pm cut-off, booked in 'any time', am or pm blocks.",
+    "portal_url": "https://cvweb.niagarafalls.ca/portal",
+    "portal_note": "Applications, fee payment and inspection booking go through the City's CityView Portal; the provincial 'Application for a Permit to Construct or Demolish' (2026 form) and the City's Applicable Law Checklist are uploaded there.",
+    "sources": [
+      {
+        "name": "City of Niagara Falls - Decks and Porches",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Greater than 60 cm (23 5/8 inches) high from grade measured from the top of the adjacent walking surface"
+      },
+      {
+        "name": "City of Niagara Falls - Decks and Porches (inspections)",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Required inspections for decks are: Footing/excavation (helical pile) - prior to pouring of concrete Framing Final"
+      },
+      {
+        "name": "City of Niagara Falls - Decks and Porches (drawings and department name)",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "check with the Building Department to see if you need a permit ... Cross-section/Elevations including pier/footing/foundation details"
+      },
+      {
+        "name": "City of Niagara Falls - Do I Need a Building Permit?",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/do-i-need-a-building-permit/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Detached covered or uncovered deck more than 600 mm above adjacent grade"
+      },
+      {
+        "name": "City of Niagara Falls - Building Permit Application Process",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/building-permit-application-process/",
+        "retrieved_at": "2026-09-25",
+        "quote": "City staff will review your application within 2 business days ... process a building permit application is 10 to 30 days"
+      },
+      {
+        "name": "City of Niagara Falls - Building Permit Inspections",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/building-permit-inspections/",
+        "retrieved_at": "2026-09-25",
+        "quote": "You must give 48 hours' notice to book your inspection. The cut-off time to book your inspection is 3:00 pm"
+      },
+      {
+        "name": "City of Niagara Falls - Schedule of Fees (Building permits - New construction, addition and renovation/alteration)",
+        "url": "https://niagarafalls.ca/city-government/budget-and-finances/schedule-of-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Covered Deck/Porch $7.55 Uncovered Deck/Porch $243.00 Flat Fee ... Minimum Building Permit Charge: $243.00"
+      },
+      {
+        "name": "City of Niagara Falls - Schedule of Fees (administration lines and effective date)",
+        "url": "https://niagarafalls.ca/city-government/budget-and-finances/schedule-of-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Fees are effective January 1, 2026 ... Zoning Review for Building Permit $244.00 Flat Fee ... Construction without a Permit 2x Permit Fee"
+      },
+      {
+        "name": "City of Niagara Falls - Building and Renovating (contact block)",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/",
+        "retrieved_at": "2026-09-25",
+        "quote": "City of Niagara Falls Planning and Building 4343 Morrison Street ... 905-356-7521 ext. 4330 pbd@niagarafalls.ca"
+      },
+      {
+        "name": "City of Niagara Falls - CityView Portal",
+        "url": "https://cvweb.niagarafalls.ca/portal",
+        "retrieved_at": "2026-09-25",
+        "quote": "Apply in the CityView Portal (link target as given on the City's decks page; portal itself not read)"
+      },
+      {
+        "name": "Niagara Region - Local Municipalities",
+        "url": "https://www.niagararegion.ca/government/municipalities/",
+        "retrieved_at": "2026-09-25",
+        "quote": "12 local municipalities are in Niagara. Fort Erie Grimsby Lincoln Niagara Falls Niagara-on-the-Lake Pelham Port Colborne St. Catharines Thorold Wainfleet Welland West Lincoln"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Niagara Falls NPCSH (Climate ID 6135657; 43.13 N, 79.05 W; 175.3 m), about 5 km north-northeast of the reference coordinate; cross-checked against Welland (6139445, about 18 km southwest)",
+    "normals_period": "1981-2010 (ECCC normals via the GeoMet climate-normals API; NPCSH temperature elements carry codes C-E, 17-25 years; its frost-free period carries code G, 4 years only). No 1991-2020 normals exist for any station in Niagara Falls; the closest 1991-2020 candidates named in the brief (St. Catharines A, Port Weller) returned no station list from the ECCC search page.",
+    "frost_free_days": 188,
+    "jan_mean_temp_c": -4.1,
+    "days_below_minus_10c": 24.95,
+    "freeze_thaw_note": "Niagara Falls NPCSH 1981-2010: January daily maximum -0.4 C, daily minimum -7.8 C; 45.86 days/yr with daily maximum <= 0 C (code E) versus 130.05 days/yr with daily minimum <= 0 C (code E), so roughly 84 days a year cross 0 C between night and day (derived by subtraction); 0.62 days/yr below -20 C; annual snowfall 153.48 cm; mean last spring frost day 119 (Apr 29) and first fall frost day 308 (Nov 4), both code G (4 years), which is why the 188-day frost-free figure is weak. Welland 1981-2010 (18-year frost record, code D): frost-free 151 days, January mean -4.3 C, 30.5 days/yr below -10 C, 46.98 days/yr with maximum <= 0 C, snowfall 141.59 cm.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Niagara Falls NPCSH (GeoMet climate-normals API)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=NIAGARA%20FALLS%20NPCSH&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean daily temperature deg C, month 1: -4.12 (code C); Days with daily min temperature LT -10 deg C, month 13: 24.95 (code E)"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Niagara Falls NPCSH (frost and 0 C day counts)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=NIAGARA%20FALLS%20NPCSH&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean length frost-free period in days: 188 (code G); Days with daily max temperature LE 0 deg C, month 13: 45.86"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Welland (GeoMet climate-normals API)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean daily temperature deg C, month 1: -4.3; Days LT -10: 30.5; Mean length frost-free period: 151 (code D)"
+      },
+      {
+        "name": "ECCC climate stations with normals within the Niagara Falls bounding box (GeoMet climate-stations API)",
+        "url": "https://api.weather.gc.ca/collections/climate-stations/items?bbox=-79.35,42.85,-78.9,43.3&f=json&limit=200&properties=STATION_NAME,CLIMATE_IDENTIFIER,HAS_NORMALS_DATA,LATITUDE,LONGITUDE,ELEVATION,FIRST_DATE,LAST_DATE",
+        "retrieved_at": "2026-09-25",
+        "quote": "6135657 NIAGARA FALLS NPCSH 43.133 -79.05 175.30 HAS_NORMALS_DATA Y"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 station search (returned the search form only, no station list)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=niagara&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "(no station rows returned for 'niagara', 'st. catharines' or 'port weller')"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Null because the City of Niagara Falls publishes no deck guide, sample deck drawing or footing checklist that prints a 4 ft / 1.2 m footing depth; the decks page asks only for 'pier/footing/foundation details' on the applicant's cross-section. The Ontario Building Code clause text was not retrieved (ontario.ca/laws renders the regulation as a JavaScript shell; the 2024 Building Code Compendium is sold through Publications Ontario). Do not cite a clause number or a depth for this city until a City document is found.",
+    "sources": [
+      {
+        "name": "City of Niagara Falls - Decks and Porches (no footing depth printed)",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Cross-section/Elevations including pier/footing/foundation details, connection details, height from grade, stair and guard details"
+      },
+      {
+        "name": "City of Niagara Falls - Building Permit Application Process (forms list, no deck drawings)",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/building-permit-application-process/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Forms Applicable Law Checklist Application to Construct or Demolish Application for Permit Supplemental Data"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}
