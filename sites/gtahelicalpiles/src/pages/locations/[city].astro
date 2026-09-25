@@ -28,6 +28,23 @@ if (!content.permits?.authority_short) throw new Error(`content/${slug}.json nee
 
 const area = biz.service_area.find((c) => c.slug === slug);
 const costGuide = guides.find((g) => g.slug === 'helical-pile-cost-per-pile-ontario');
+
+// Nearest live city pages, by straight-line distance, for the link mesh.
+const km = (a, b) => {
+  const r = Math.PI / 180;
+  const dLat = (b.lat - a.lat) * r;
+  const dLon = (b.lon - a.lon) * r;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLon / 2) ** 2;
+  return 6371 * 2 * Math.asin(Math.sqrt(h));
+};
+const nearby = getLiveCities()
+  .filter((c) => c.slug !== slug)
+  .map((c) => ({ ...c, data: getCity(c.slug) }))
+  .filter((c) => c.data?.lat && c.data?.lon)
+  .map((c) => ({ ...c, d: km(city, c.data) }))
+  .sort((a, b) => a.d - b.d)
+  .slice(0, 4);
+const relatedNote = (content.related_note || '').replace(/[;,.]?\s*call for those until their pages are up\.?/i, '.').replace(/\.\.$/, '.');
 const deck = prices.rows.find((r) => r.key === 'deck');
 const sources = collectSources(city.census?.sources, city.geology?.sources, city.permits?.sources, city.climate?.sources, city.code?.sources);
 
@@ -161,11 +178,22 @@ const serviceSchema = {
 
       <section class="block related">
         <h2>Related</h2>
+        {nearby.length > 0 && (
+          <div class="nearby">
+            <p class="eyebrow">Nearby service areas</p>
+            <ul class="related-list">
+              {nearby.map((c) => <li><a href={`/locations/${c.slug}/`}>Helical piles in {c.name}</a> <span class="muted small">about {Math.round(c.d)} km</span></li>)}
+            </ul>
+          </div>
+        )}
+        <p class="eyebrow">Guides and services</p>
         <ul class="related-list">
           {guides.map((g) => <li><a href={`/guides/${g.slug}/`}>{g.title}</a></li>)}
+          <li><a href="/decks-and-additions/">Decks, porches and additions</a></li>
+          <li><a href="/underpinning/">Underpinning and foundation repair</a></li>
           <li><a href="/#areas">All service areas and how we work</a></li>
         </ul>
-        {content.related_note && <p class="muted small">{content.related_note}</p>}
+        {relatedNote && <p class="muted small">{relatedNote}</p>}
       </section>
 
       <section class="block sources-block">
@@ -234,6 +262,8 @@ const serviceSchema = {
   .facts dd { margin: 0; font-size: var(--text-sm); color: var(--text-muted); line-height: 1.6; }
   .facts .src { margin-left: var(--s1); }
 
+  .nearby { margin-bottom: var(--s5); }
+  .related .eyebrow { margin-bottom: var(--s2); }
   .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
   .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
   .related p { margin-top: var(--s4); }

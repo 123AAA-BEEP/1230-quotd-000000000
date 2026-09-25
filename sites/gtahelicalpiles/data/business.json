@@ -21,7 +21,7 @@
       "name": "Toronto",
       "slug": "toronto",
       "region": "City of Toronto",
-      "live": false
+      "live": true
     },
     {
       "name": "Mississauga",

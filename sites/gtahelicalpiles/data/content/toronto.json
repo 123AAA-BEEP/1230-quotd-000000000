@@ -1,0 +1,214 @@
+{
+  "slug": "toronto",
+  "title": "Helical pile installation in Toronto | GTA Helical Piles",
+  "description": "Helical piles in Toronto: the 60 cm permit line, what Toronto Building wants on the drawings, the till and sand under each district, winter work and cost.",
+  "h1": "Helical pile installation in Toronto",
+  "kicker": "City of Toronto",
+  "answer": [
+    "Toronto Building requires a permit for a deck more than 60 cm (24 inches) above ground, and unlike the Halton towns it publishes no area threshold. It also prints no footing depth. The City has no deck sample drawing; its Decks and Porches guide asks the applicant to show footing size, spacing, depth and frost protection details, so a helical pile deck is submitted as an engineered footing design rather than matched to a standard detail.",
+    "The ground changes with the district. Midtown, North York Centre and Scarborough Centre sit on sandy silt till on the plateau above the old Lake Iroquois shoreline. Downtown, Leaside and the Scarborough Bluffs return older undifferentiated tills. East York, The Junction, York and south Etobicoke are on the sand and gravel the glacial lake left below its shoreline, and Rexdale is on clay till. Bedrock is Georgian Bay Formation shale at every point we queried, none of it at the surface."
+  ],
+  "tiles": [
+    {
+      "value": "60 cm",
+      "label": "deck height above ground at which Toronto Building requires a permit; no area threshold",
+      "source": {
+        "name": "City of Toronto, When Do I Need a Building Permit?",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/when-do-i-need-a-building-permit/"
+      }
+    },
+    {
+      "value": "$214.79",
+      "label": "Toronto Building fee for residential decks, porches and carports, effective 1 January 2026",
+      "source": {
+        "name": "Toronto Building, Decks and Porches guide",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-application-guides/small-residential-project-guides/decks-and-porches/"
+      }
+    },
+    {
+      "value": "208 days",
+      "label": "average frost-free period at the Toronto City station, 1991 to 2020 (19 years of record)",
+      "source": {
+        "name": "Environment Canada normals, Toronto City",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1"
+      }
+    },
+    {
+      "value": "23.3%",
+      "label": "of Toronto's occupied dwellings are single-detached houses, Census 2021",
+      "source": {
+        "name": "Statistics Canada, Census Profile 2021, Toronto",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Toronto&DGUIDlist=2021A00053520005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Toronto",
+    "paragraphs": [
+      "Toronto does not have one soil. The Ontario Geological Survey's surficial map returns five different map units across the twelve points we queried. On the plateau, at midtown, North York Centre and Scarborough Centre, it is stone-poor sandy silt till. Downtown near Front and Yonge, at Leaside and at the Scarborough Bluffs it is older undifferentiated till that may include layered deposits. Along and below the former Lake Iroquois shoreline, at East York, The Junction, York and south Etobicoke, it is sand and gravel from the glacial lake's beach and nearshore. Rexdale is clay-to-silt till, the same unit that runs through Mississauga and inland Halton.",
+      "Bedrock is one story here. All twelve query points, from Rexdale to the Bluffs, return the Georgian Bay Formation: grey-green to dark grey shale interbedded with calcareous siltstone and limestone. There is no red Queenston shale under Toronto. Just as important, no point returned bedrock at or near the surface, so the shallow shale refusal we plan for in the Halton creek valleys is not indicated anywhere we checked. How deep the shale lies was not retrieved. The Don and Humber ravines were cut through close to 100 metres of soil, sand, gravel and till, which points to deep overburden along those valleys.",
+      "What this means for the pile is that the district sets the design. A torque and depth that satisfied the engineer in North York sandy till says nothing about a lot on East York sand or Rexdale clay, so we do not carry figures from one job to the next. Coarse ground needs a helix sized for it; in clay till a standard pile is driven to torque. Ravine lots along the Don and Humber and lots at the Bluffs edge are a separate question: the survey points do not describe those slopes, and the engineer's layout for them starts with a site visit, not a map."
+    ],
+    "table_note": "Surface and bedrock are from Ontario Geological Survey point queries, one per district, retrieved 25 September 2026. The Scarborough Centre and York coordinates are map estimates. A point describes its map polygon, not your lot; the engineer's layout is based on the site.",
+    "neighbourhoods": [
+      {
+        "name": "Midtown (Yonge and Eglinton)",
+        "surface": "Sandy silt till, stone-poor",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "Old Toronto (Front and Yonge)",
+        "surface": "Older undifferentiated till, may include layered deposits",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "North York Centre",
+        "surface": "Sandy silt till, stone-poor",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "Scarborough Centre",
+        "surface": "Sandy silt till, stone-poor",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "Scarborough Bluffs",
+        "surface": "Older undifferentiated till; slope stability not covered by the map",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "East York",
+        "surface": "Sand and gravel (Lake Iroquois beach)",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "Leaside",
+        "surface": "Older undifferentiated till, may include layered deposits",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "The Junction",
+        "surface": "Sand and gravel (Lake Iroquois nearshore)",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "York (Weston Road and Eglinton)",
+        "surface": "Sand and gravel (Lake Iroquois nearshore)",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "South Etobicoke",
+        "surface": "Sand and gravel (Lake Iroquois nearshore)",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "Rexdale",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "Humber River mouth (Swansea)",
+        "surface": "Not mapped at the query point",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Toronto",
+    "authority_short": "the City of Toronto",
+    "paragraphs": [
+      "Deck permits in Toronto are issued by Toronto Building, which is the City's own name for the department, and are applied for online through the Express web portal with every drawing, report and form as a PDF. The trigger is height alone: a deck more than 60 cm (24 inches) above ground needs a permit, and an uncovered platform at or below 60 cm that is not a required exit and complies with the Zoning Bylaw does not. The City sets no area threshold, so the 10 square metre rule familiar from Halton does not apply here. The fee for residential decks, porches and carports is $214.79 on the schedule effective 1 January 2026, which is also the minimum fee for any work, and mandatory inspections are included in it.",
+      "Toronto Building publishes no deck sample drawing and no footing depth, and none of its deck pages mention helical piles, CCMC or BMEC. What the Decks and Porches guide asks for is a set of plans showing footing size, spacing, depth, height above grade and frost protection details, plus the sizes and locations of columns and beams. For a pile deck that is the engineer's layout, and where drawings carry an engineer's seal the City requires its Assumption of Responsibility for Engineering Content Form alongside them. We prepare the package with you: the manufacturer's evaluation report, the engineer's pile layout and the form. Installation torque is recorded on every pile, and once the piles are in the engineer issues an engineer-sealed certificate of conformity for the file.",
+      "Decks on a Part 9 house are an Express Services project type, and Toronto Building's stated goal is to review eligible applications within 3 business days after the permit has been taken in. Inspections run Monday to Friday, 8:30 a.m. to 4:30 p.m., and take place within two business days of the request. The published footing inspection is timed for completed formwork before concrete is poured, which does not describe a screw pile, so confirm with Toronto Building which inspection stage applies to piles when you book. The owner must schedule the final inspection to close the permit."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck more than 60 cm (24 inches) above ground; no area threshold published",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/when-do-i-need-a-building-permit/"
+      },
+      {
+        "label": "On the drawings",
+        "value": "Footing size, spacing, depth, height above grade and frost protection details; engineer-sealed drawings need the Assumption of Responsibility for Engineering Content Form",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-application-guides/small-residential-project-guides/decks-and-porches/"
+      },
+      {
+        "label": "Fee, 2026",
+        "value": "$214.79 for residential decks, porches and carports; also the minimum fee for all work; hourly examination fee $92.79",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-fees/"
+      },
+      {
+        "label": "Review time",
+        "value": "Express Services goal of 3 business days for decks on a Part 9 house; House Stream 10 business days",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-review-streams/"
+      },
+      {
+        "label": "Inspections",
+        "value": "Within two business days of the request, Monday to Friday 8:30 a.m. to 4:30 p.m.; cost included in the permit fee",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/building-inspections/about-building-inspections/when-to-call-for-inspection-of-small-buildings/"
+      },
+      {
+        "label": "Apply",
+        "value": "Toronto Building Express web application portal; all drawings, reports and forms as PDF",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/express-building-permits/express-building-permits-application/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Toronto",
+    "paragraphs": [
+      "The Toronto City station, about 4 km south-southwest of midtown, is the mildest reading in the region. Over 1991 to 2020 it averages -3.5 °C in January, sees 22 days a year below -10 °C and 44 days when the high never gets above 0 °C, against 101 days with a low at or below freezing, so roughly 57 days a year cross 0 °C between night and day. Its frost-free period averages 208 days, April 11 to November 6, though that element rests on 19 years of record rather than the full 30. Toronto Pearson, 19 km west and more exposed, runs -5.0 °C in January with 34 days below -10 °C and 174 frost-free days. North York, Scarborough and Etobicoke sit between the two.",
+      "None of that sets the pile depth. Toronto prints no frost depth of its own; its deck guide asks the applicant to show frost protection details, and the engineer sets the depth for the site so the helix bears below the ground that freezes. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so a January pile in Leaside carries load as soon as it reaches the torque the engineer specified."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "-3.5 °C, Toronto City station, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1"
+      },
+      {
+        "label": "Days below -10 °C",
+        "value": "22 a year, Toronto City; 34 a year at Toronto Pearson",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "208 days, April 11 to November 6, Toronto City, 1991 to 2020 (19 years of record)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1"
+      },
+      {
+        "label": "Suburban comparison",
+        "value": "-5.0 °C January mean and 174 frost-free days, Toronto Pearson, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "In Toronto the price moves on access more than on rock. No queried point shows shallow shale, but downtown and Old Toronto lots are tight, and a narrow side yard or laneway changes how the drive unit reaches the backyard. Sand and gravel at East York, The Junction and south Etobicoke can call for a larger helix. Ravine and Bluffs-edge lots need the engineer's site visit before we price them.",
+  "faqs": [
+    {
+      "q": "Does my Toronto deck need a permit?",
+      "a": "If the finished deck is more than 60 cm (24 inches) above ground, yes. An uncovered platform at or below 60 cm that is not a required exit and complies with the Zoning Bylaw does not need one. Toronto sets no area threshold, so size alone does not decide it. Applications go through Toronto Building's Express web portal, and the 2026 fee for a residential deck is $214.79."
+    },
+    {
+      "q": "What does Toronto Building ask for with helical piles?",
+      "a": "Nothing pile-specific is printed. The City's deck pages do not mention helical piles, CCMC or BMEC, and there is no sample drawing with a footing depth. The Decks and Porches guide wants plans that show footing size, spacing, depth, height above grade and frost protection details, which for piles is the engineer's layout, plus the Assumption of Responsibility for Engineering Content Form for sealed drawings. We prepare the package with you, and the engineer-sealed certificate of conformity follows the install."
+    },
+    {
+      "q": "What is under my Toronto house?",
+      "a": "It depends on the district. The Ontario Geological Survey shows sandy silt till on the plateau at midtown, North York and Scarborough Centre; older tills downtown, at Leaside and along the Bluffs; Lake Iroquois sand and gravel at East York, The Junction, York and south Etobicoke; and clay till at Rexdale. Bedrock is Georgian Bay shale everywhere we queried, and nowhere at the surface. Depth to shale was not retrieved, so we confirm on site."
+    },
+    {
+      "q": "Can you install in a Toronto winter?",
+      "a": "Yes. The Toronto City station averages 44 days a year when the temperature never rises above freezing, fewer than Pearson's 50, and we install year-round. In frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. Once the pile reaches the torque the engineer specified it is ready to build on, with no concrete waiting to cure."
+    },
+    {
+      "q": "What does a Toronto deck permit cost?",
+      "a": "$214.79 for residential decks, porches and carports on the Toronto Building schedule effective 1 January 2026. That is also the City's minimum fee for any work, and the cost of mandatory inspections is included in it. Additional examination or inspection time is billed at $92.79 an hour on the same schedule. Engineering for the pile layout is separate from the City's fee."
+    },
+    {
+      "q": "My lot is near the Scarborough Bluffs. Is that different?",
+      "a": "Yes, in one way that matters. The survey point at the Bluffs returns older undifferentiated till over Georgian Bay shale, but the escarpment rises up to 90 metres above the shoreline and the map says nothing about the stability of the slope. For a lot near the edge the engineer visits before any layout is drawn, and the pile depths and positions follow that visit rather than a district average."
+    }
+  ],
+  "related_note": "We also work in Mississauga and Brampton to the west and in Oakville along the lakeshore; call for those until their pages are up."
+}

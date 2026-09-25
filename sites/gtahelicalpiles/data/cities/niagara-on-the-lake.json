@@ -1,0 +1,307 @@
+{
+  "slug": "niagara-on-the-lake",
+  "name": "Niagara-on-the-Lake",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 43.25,
+  "lon": -79.07,
+  "sub_areas": [
+    {
+      "name": "Old Town",
+      "note": "The primary town site at the mouth of the Niagara River (Wikipedia: 'the primary town site of Niagara-on-the-Lake (the Old Town)'). Its historic centre is the Town's only Part V Heritage Conservation District, the Queen-Picton Heritage Conservation District, approved 1986; exterior alterations there need Council consent and a heritage permit in addition to any building permit (Town heritage page). OGS point queries at the reference coordinate (43.25, -79.07) and at Queen Street (43.2554, -79.0717) return unit 8a fine-textured glaciolacustrine silt and clay; bedrock at the reference coordinate is Queenston Formation, and the Queen Street point falls outside the MRD 219 bedrock polygons (no feature returned)."
+    },
+    {
+      "name": "Virgil",
+      "note": "'Just southwest of the Old Town', home of the sports park and a large Mennonite community (Wikipedia); Town Hall is at 1593 Four Mile Creek Road, Virgil (Building Services brochure). OGS point query at the OSM village node (43.2214, -79.1229) returns unit 5d clay-to-silt till over Queenston Formation. A second point at 43.20, -79.09 (Niagara Stone Road / Concession 2 area, task-chosen) also returns 5d over Queenston."
+    },
+    {
+      "name": "St. Davids",
+      "note": "Village in the southern part of the municipality below the Niagara Escarpment (Wikipedia lists it among the Town's settlements; St. Davids Public School 'serves ... the southern part of the municipality'). OGS point query at the OSM village node (43.1584, -79.1023) returns unit 8a fine-textured glaciolacustrine silt and clay over Queenston Formation. No article-level coordinate exists on Wikipedia; the escarpment-buried-gorge geology mentioned in the task hints was not verified."
+    },
+    {
+      "name": "Queenston",
+      "note": "Village on the Niagara River at Queenston Heights on the Niagara Escarpment, 'at the point where the Niagara River began eroding the Niagara Escarpment'; site of the former Queenston Quarry (Wikipedia). The Queenston Formation is named for it (Wikipedia: named for Queenston, Ontario, by J. F. Caley, 1940). OGS point queries at the Wikipedia/OSM coordinate (43.1642, -79.0546) and at 43.163, -79.053 return unit 8a silt and clay over Queenston Formation red shale."
+    },
+    {
+      "name": "Glendale",
+      "note": "'Near the junction of the Queen Elizabeth Way, Highway 405, and Highway 55, and adjacent to the Welland Canal'; home of Niagara College's Niagara-on-the-Lake campus and a large outlet mall (Wikipedia). OGS point query at the college campus (43.1526, -79.1650) returns unit 8a silt and clay over Queenston Formation. A task-chosen point 2 km south-east at 43.132, -79.155, on the escarpment brow, returns unit 8a over Lockport Formation dolostone, so bedrock type changes within the Glendale area."
+    },
+    {
+      "name": "Lakeshore / Niagara Parkway band north of Old Town",
+      "note": "Task-chosen point at 43.24, -79.08 (between the Old Town and the Niagara River near the Parkway) returns OGS unit 9 coarse-textured glaciolacustrine sand and gravel over Queenston Formation. This is the only sand-and-gravel return in the town; the 'Niagara River delta sands' name in the task hints is not carried in the OGS layer and was not verified."
+    }
+  ],
+  "census": {
+    "population_2021": 19088,
+    "private_dwellings_occupied": 7857,
+    "single_detached_pct": 79.2,
+    "period_of_construction": {
+      "pre_1960_pct": 20.2,
+      "1961_1980_pct": 18.0,
+      "1981_2000_pct": 19.7,
+      "2001_2021_pct": 42.2
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 6,225 of 7,860 occupied dwellings (structural type, 100% data; StatCan prints 79.2%); period of construction (25% sample, total 7,855): 1960 or before 1,585; 1961-1980 1,410; 1981-1990 745; 1991-2000 800; 2001-2005 835; 2006-2010 640; 2011-2015 1,040; 2016-2021 800. Land area 131.35 km2; density 145.3/km2; 2016 population 17,511 (+9.0%).",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Niagara-on-the-Lake, Town (CSD), Ontario (DGUID 2021A00053526047)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara-on-the-Lake&DGUIDlist=2021A00053526047&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 19,088; Private dwellings occupied by usual residents: 7,857; Land area in square kilometres 131.35"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Niagara-on-the-Lake (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara-on-the-Lake&DGUIDlist=2021A00053526047&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data 7,860; Single-detached house 6,225 ... 79.2"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Niagara-on-the-Lake (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara-on-the-Lake&DGUIDlist=2021A00053526047&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 1,585; 1961 to 1980 1,410; 1981 to 1990 745; 1991 to 2000 800; 2001 to 2005 835"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results - Niagara-on-the-Lake",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Niagara-on-the-Lake",
+        "retrieved_at": "2026-09-25",
+        "quote": "2021A00053526047 Niagara-on-the-Lake"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated (OGS layer attributes). Regionally these are the glacial Lake Iroquois plain sediments, but that lake name is not carried in the OGS attributes and was not verified here.",
+        "where": "The dominant unit: query points at the reference coordinate (43.25, -79.07), Old Town Queen Street (43.2554, -79.0717), St. Davids (43.1584, -79.1023), Queenston (43.1642, -79.0546 and 43.163, -79.053), Glendale / Niagara College (43.1526, -79.1650) and the escarpment brow south-east of Glendale (43.132, -79.155) all return 8a."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale) (OGS layer attributes).",
+        "where": "The Virgil upland in the centre of the municipality: query points at the Virgil village node (43.2214, -79.1229) and at 43.20, -79.09 return 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay (OGS layer attributes).",
+        "where": "A narrow band between the Old Town and the Niagara River: query point 43.24, -79.08 returns unit 9. No other query point returned sand or gravel."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (Upper Ordovician) under the whole lake plain; Lockport Formation (Silurian) on the Niagara Escarpment brow in the south-west corner of the municipality (OGS MRD219).",
+      "description": "Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds (primary lithology shale). Returned at the reference coordinate, Virgil (both points), St. Davids, Queenston (both points), Glendale / Niagara College and the lakeshore band. Lockport: thick-bedded blue-grey crinoidal limestone to dolostone (Gasport Member), light brown dolostone (Goat Island Member), argillaceous dolostone and shale (Vinemount shale beds) and dark brown bituminous dolostone (Eramosa Member); returned only at 43.132, -79.155 on the escarpment brow south-east of Glendale. The Queenston Formation's type area is Queenston itself (Wikipedia: named for Queenston, Ontario).",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). No query point returned OGS unit 3 (bedrock at or near surface); every point sits on glaciolacustrine silt and clay, till or sand of unstated thickness. Queenston red shale is exposed in the Niagara Escarpment face and gorge at Queenston (Wikipedia), but no on-site depth figure was found."
+    },
+    "implications_for_piles": [
+      "The Town of Niagara-on-the-Lake publishes no deck sample drawing, footing depth or helical-pile note online: the Building Services page says only that accurate drawings and a site plan are required, that drawings must be by the owner or a BCIN-qualified designer, and that 'engineered drawings' may be required depending on construction. Pile depth, torque and capacity therefore rest on the installer's engineer, not on a municipal figure.",
+      "OGS maps fine-textured glaciolacustrine silt and clay (unit 8a) under the Old Town, St. Davids, Queenston and Glendale, and clay-to-silt till (unit 5d) under Virgil; these are the two soil textures a site design must address, and the OGS attributes give no bearing or shrink-swell values.",
+      "A sand-and-gravel band (unit 9) is mapped between the Old Town and the Niagara River (query point 43.24, -79.08); soil texture can change within a few hundred metres of the Old Town, so a reading from one street is not transferable to the next.",
+      "Bedrock is Queenston red shale across the lake plain and Lockport dolostone on the escarpment brow south-east of Glendale; the OGS returns give no depth, so refusal-on-rock is a site condition to confirm, not a mapped one.",
+      "Old Town properties inside the Queen-Picton Heritage Conservation District (Part V, approved 1986) and individually designated Part IV properties need a heritage permit for exterior alterations in addition to the building permit; the Town's heritage page says any alterations to Part V properties or the exterior of structures on them require the consent of Council and a heritage permit."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.25, -79.07)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.07,43.25&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a; Deposit: Fine-textured glaciolacustrine deposits; Material: silt and clay, minor sand and gravel; Description: Massive to well laminated"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Virgil, 43.2214498, -79.1229367)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.1229367,43.2214498&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5d; Deposit: Till; Material: Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at 43.24, -79.08)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.08,43.24&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9; Deposit: Coarse-textured glaciolacustrine deposits; Material: sand, gravel, minor silt and clay"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.25, -79.07)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.07,43.25&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; AGE: Ordovician; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query on the escarpment brow at 43.132, -79.155)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.155,43.132&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Lockport; AGE: Silurian; DESCRIPT_BRIEF: dolostone, limestone, argillaceous dolostone; locally cherty; locally bituminous (Eramosa Mb)"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Queenston Formation",
+        "url": "https://en.wikipedia.org/wiki/Queenston_Formation",
+        "retrieved_at": "2026-09-25",
+        "quote": "the formation is dominated by red and grey shales with thin siltstone, limestone and sandstone interlayers"
+      },
+      {
+        "name": "Wikipedia - Queenston",
+        "url": "https://en.wikipedia.org/wiki/Queenston",
+        "retrieved_at": "2026-09-25",
+        "quote": "This village is at the point where the Niagara River began eroding the Niagara Escarpment."
+      },
+      {
+        "name": "Wikipedia - Niagara-on-the-Lake (communities)",
+        "url": "https://en.wikipedia.org/wiki/Niagara-on-the-Lake",
+        "retrieved_at": "2026-09-25",
+        "quote": "the town also includes the settlements of Colemans, Homer, McNab, Mississauga Beach, Queenston, St. Davids, and Virgil"
+      },
+      {
+        "name": "OpenStreetMap Nominatim - Virgil, St. Davids, Queenston and Niagara College coordinates",
+        "url": "https://nominatim.openstreetmap.org/search?q=Virgil,+Niagara-on-the-Lake,+Ontario&format=json&limit=3",
+        "retrieved_at": "2026-09-25",
+        "quote": "43.2214498 -79.1229367 village place | Virgil, Niagara-on-the-Lake, Niagara Region"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Niagara-on-the-Lake Building Services (the page also uses 'Building Department' and 'Building Division', email building.division@notl.com; the heritage page refers to the 'Planning, Building and Development Services Department'). Niagara Region is the upper tier and is listed by the Town only as a separate contact agency.",
+    "deck_permit_required_when": "Building Services page: 'Permits are required for most construction activities, including buildings greater than 108 square feet, inground and above-ground swimming pools, and decks greater than 24\" above grade.' The same page's FAQ lists 'uncovered decks that are 2 feet or greater above finished grade' among works needing a permit, and 'any other structure that is 108 square feet (10 square metres) or greater'. No covered-deck threshold is stated, but the fee schedule carries a separate 'Covered deck/porch' line.",
+    "footing_depth_requirement": "Not published. The Town posts no deck guide or sample drawings online; the Building Services page requires drawings to scale by the owner or a BCIN-qualified designer, a site plan (a Sample Site Plan PDF is linked) and, depending on the construction, 'engineered drawings'. Nothing retrieved mentions helical piles, CCMC or BMEC.",
+    "inspections": [
+      "Not itemised online: the Town states 'Inspection stages are outlined when a permit is issued' and that the owner or contractor must request each inspection before the next stage of construction.",
+      "Re-inspection fee due to improper work, not ready or similar: $145.00 flat (2026 fee schedule); additional inspection request not identified in regulation: $191.00.",
+      "Building Inspector contact: (905) 468-3266 ext. 259, to be called early in planning to determine whether other approvals are needed."
+    ],
+    "fee_note": "2026 Building User Fees & Service Charges: Residential uncovered deck less than 300 sq ft $230.00 each; uncovered deck greater than 300 sq ft $263.00 each; covered deck/porch $0.61 per sq ft; minimum permit fee $230.00; work started before a permit is issued doubles the applicable fee. The 2026 Building Services brochure still prints the January 1, 2024 figures ($150 / $172), which are superseded. Fees are payable when applying.",
+    "timeline_note": "No day-count is published. The page describes the sequence: zoning review, plans examination against the Ontario Building Code, review by a Building Inspector, then the Chief Building Official signs and issues the permit; incomplete drawings are not accepted and may delay issuance. Old Town properties in the Queen-Picton Heritage Conservation District (Part V) or individually designated (Part IV) also need Council consent and a heritage permit for exterior alterations.",
+    "portal_url": "https://ca.cloudpermit.com/login",
+    "portal_note": "Building permit applications are accepted only online through Cloudpermit; the Town links a 'Getting Started with Cloudpermit' PDF (April 2023) and a Cloudpermit support site. Public entry point: https://www.notl.com/building-services.",
+    "sources": [
+      {
+        "name": "Town of Niagara-on-the-Lake - Building Services",
+        "url": "https://www.notl.com/building-services",
+        "retrieved_at": "2026-09-25",
+        "quote": "Permits are required for most construction activities, including buildings greater than 108 square feet ... and decks greater than 24\" above grade."
+      },
+      {
+        "name": "Town of Niagara-on-the-Lake - Building Services (FAQ, when a permit is required)",
+        "url": "https://www.notl.com/building-services",
+        "retrieved_at": "2026-09-25",
+        "quote": "uncovered decks that are 2 feet or greater above finished grade"
+      },
+      {
+        "name": "Town of Niagara-on-the-Lake - Building Services (drawings and inspections)",
+        "url": "https://www.notl.com/building-services",
+        "retrieved_at": "2026-09-25",
+        "quote": "Inspection stages are outlined when a permit is issued."
+      },
+      {
+        "name": "Town of Niagara-on-the-Lake - Building Services (Cloudpermit)",
+        "url": "https://www.notl.com/building-services",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Town of Niagara-on-the-Lake uses community development software Cloudpermit to accept and issue complete building permits online."
+      },
+      {
+        "name": "Town of Niagara-on-the-Lake - 2026 Building User Fees & Service Charges (PDF)",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Residential: Uncovered deck - less than 300 sf Each $230.00; Residential: Uncovered deck - greater than 300 sf Each $263.00"
+      },
+      {
+        "name": "Town of Niagara-on-the-Lake - 2026 Building User Fees & Service Charges (PDF), minimum and re-inspection",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Minimum Fee $230.00; Re-inspection fee due to improper work, not ready or similar Flat Fee $145.00"
+      },
+      {
+        "name": "Town of Niagara-on-the-Lake - Building Services Brochure 2026 (PDF)",
+        "url": "https://www.notl.com/sites/default/files/2026-04/Building%20Services%20-%20Brochure%20-%20Editable_0.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Niagara Region Infrastructure Planning and Development Engineering niagararegion.ca | 905-980-6000; 1593 Four Mile Creek Road Box 100, Virgil"
+      },
+      {
+        "name": "Town of Niagara-on-the-Lake - Heritage Planning",
+        "url": "https://www.notl.com/heritage-planning",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Town of Niagara-on-the-Lake has one Heritage Conservation District, the Queen-Picton Heritage Conservation District, which was approved in 1986."
+      },
+      {
+        "name": "Cloudpermit - Town of Niagara-on-the-Lake application portal",
+        "url": "https://ca.cloudpermit.com/login",
+        "retrieved_at": "2026-09-25",
+        "quote": "Apply for a Building Permit Using Cloud Permit (link text on the Town's Building Services page; portal itself not fetched)"
+      }
+    ]
+  },
+  "climate": {
+    "station": "St. Catharines A (Climate ID 6137287; 43.20 N, 79.17 W; 97.8 m), about 10 km south-west of the reference coordinate; cross-checked against Vineland Station RCS (6139148, 43.18 N, 79.40 W, about 28 km west) and Port Colborne (6136606, 42.88 N, 79.25 W, about 44 km south-south-west)",
+    "normals_period": "1981-2010 for St. Catharines A (computed from 1981-2000 records, 20 years, code D; no 1991-2020 set published); 1991-2020 for Vineland Station RCS; 1981-2010 for Port Colborne (1981-2006 records)",
+    "frost_free_days": 179,
+    "jan_mean_temp_c": -3.8,
+    "days_below_minus_10c": 26.7,
+    "freeze_thaw_note": "St. Catharines A 1981-2010: January daily minimum -7.4 C; 46.0 days/yr with daily maximum <= 0 C; 127.2 days/yr with daily minimum <= 0 C, so roughly 81 days a year cross 0 C between night and day (derived by subtraction); last spring frost Apr 24, first fall frost Oct 21; 137.1 cm annual snowfall. Vineland Station RCS 1991-2020: January mean -3.3 C, 21.1 days/yr below -10 C, 42.6 days max <= 0 C, 116.5 days min <= 0 C (frost-free length not printed; 50% probability dates Apr 25 and Oct 20). Port Colborne 1981-2010: January mean -3.7 C, 23.2 days below -10 C, 182 frost-free days (Apr 25 - Oct 26). Port Weller (6136699), the closest station at 43.25 N 79.22 W, publishes only 2004-2006 extremes and no temperature normals.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.8 -2.9 1.1 7.4 13.7 19.0 21.9 20.8 16.6 10.4 4.6 -0.9 9.0 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A (days below -10 C, minimum temperature table)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 10.5 8.3 3.5 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.05 4.5 26.7 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A (frost-free period and days max <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Last Spring Frost Apr 24 D; First Fall Frost Oct 21 D; Average Length of Frost-Free Period 179 Days D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Vineland Station RCS",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.3 -2.9 1.4 7.0 13.3 19.1 22.2 21.4 17.6 11.3 5.2 0.1 9.4 A; < -10 C ... 21.1 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.7 ...; < -10 C ... 23.2 C; Average Length of Frost-Free Period 182 Days C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Weller (no temperature normals)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=weller&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136699&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Latitude: 43 15'00.000\" N Longitude: 79 13'00.000\" W Elevation: 79.00 m Climate ID: 6136699"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Null because the Town of Niagara-on-the-Lake publishes no deck guide or sample drawing that prints a footing depth; the only municipal text retrieved requires scaled drawings, a site plan and, where applicable, engineered drawings. The Ontario Building Code clause text was not retrieved (ontario.ca/laws renders O. Reg. 332/12 as a JavaScript shell and the 2024 Building Code Compendium is sold through Publications Ontario). Neighbouring Halton municipalities' drawings (Oakville, Milton) print 4'-0\", but those documents do not govern Niagara-on-the-Lake and are not cited here. Do not cite a clause number.",
+    "sources": [
+      {
+        "name": "Town of Niagara-on-the-Lake - Building Services (drawing requirements; no footing depth published)",
+        "url": "https://www.notl.com/building-services",
+        "retrieved_at": "2026-09-25",
+        "quote": "Drawings must be legible and drawn to scale ... completed by either the property owner or a qualified designer with a BCIN number"
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}
