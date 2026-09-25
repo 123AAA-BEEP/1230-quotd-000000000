@@ -1,0 +1,209 @@
+{
+  "slug": "port-colborne",
+  "title": "ICF foundations in Port Colborne | GTA ICF",
+  "description": "ICF foundations in Port Colborne: shallow limestone at Humberstone, dune sand on the Lake Erie shore, the City's permit fees and inspections, and when we pour.",
+  "h1": "ICF foundations and walls in Port Colborne",
+  "kicker": "Niagara Region",
+  "answer": [
+    "An ICF foundation in Port Colborne is a building permit from the City's Building Division and an excavation whose ground the Ontario Geological Survey maps four ways: fill in the old core beside the Welland Canal, wind-blown sand along Lake Erie at Sugarloaf and Nickel Beach, silt and clay at Lorraine and Gasline, and limestone at or near the surface at Humberstone, Cedar Bay and Sherkston. Onondaga limestone is the bedrock at all but two of the thirteen points queried.",
+    "No City of Port Colborne drawing prints a footing depth, so the figure on the drawings is the Building Code's: 1.2 m below grade under a heated basement on clay or soils not clearly defined, on undisturbed soil, and no minimum where the footing lands on rock. The City's fee schedule prices a house at $1.67 per square foot of floor area above grade in its 2024 column, reviews a complete single-family application in 10 business days, and asks for two working days' notice before each inspection."
+  ],
+  "tiles": [
+    {
+      "value": "182 days",
+      "label": "frost-free period at the City's own climate station, April 25 to October 26, 1981 to 2010 normals",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, Port Colborne",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      }
+    },
+    {
+      "value": "4 of 13",
+      "label": "survey points with bedrock at or near the surface: two in Humberstone, Cedar Bay Road and the Sherkston quarry, all on Onondaga limestone",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, point query at Humberstone",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2300,42.8960&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "54.9%",
+      "label": "of Port Colborne's 8,710 occupied homes were built in 1960 or before, and 70.6% are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Port Colborne",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Port%20Colborne&DGUIDlist=2021A00053526011&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "$1.67/ft²",
+      "label": "City of Port Colborne permit fee for a house or addition, per square foot of floor area above grade, 2024 column; $1.76 proposed for 2025",
+      "source": {
+        "name": "City of Port Colborne fee by-law, Appendix O",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Forms%20and%20Documents/Schedule%20O%20-%20Permits%20for%20Construction,%20Demolition,%20Occupancy%20and%20Change%20of%20Use,%20Transfer%20of%20Permits%20and%20Inspections.pdf"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Four grounds under Port Colborne",
+    "paragraphs": [
+      "Port Colborne's centre stands on made ground. At the downtown point on the west bank of the Welland Canal and along Lakeshore Road West, the Ontario Geological Survey's surficial map returns man-made deposits, its class for fill and urban development, and a third point beside the canal does the same. Fill is not the undisturbed soil the Building Code requires an excavation to reach, and the map says nothing about how thick it is or what it holds, so on a canal-side lot the depth of the dig and the bearing under the footing are settled by the open hole and by an engineer.",
+      "Along the lake the ground is dune sand. At Sugarloaf on Gravelly Bay, Nickel Beach and Pleasant Beach the survey returns eolian deposits, wind-blown fine sand and silt. Fine sand drains, so the weeping tile works, and it runs, so the faces of the cut are laid back or shored and the footing bears on sand the bucket has not loosened. East of the canal at Lorraine and Gasline, and north at Humberstone Marsh, the map turns to glaciolacustrine silt and clay, which stands in a cut but sheds water slowly, so seepage sits in the hole until it is pumped and clay backfill holds water against the membrane.",
+      "Rock is the Port Colborne difference. At Humberstone, Cedar Bay Road and the Sherkston quarry, the map shows bedrock at or near the surface, drift too thin to map, and it is the Onondaga Formation: variably cherty, fossiliferous or argillaceous limestone. On those lots the excavator reaches rock before footing depth; the Code sets no minimum depth for a footing on rock, and the last lift is rock excavation, priced as its own line. Elsewhere the limestone lies under sand, clay or fill at a depth the survey does not map, Bois Blanc rather than Onondaga at one point by the canal; only Humberstone Marsh returns Bertie dolostone."
+    ],
+    "table_note": "Each row is an Ontario Geological Survey point query, surficial map MRD 128-REV and bedrock map MRD 219, at one coordinate in the area, run 25 September 2026. The street coordinates are map centroids rather than surveyed intersections, the Humberstone point at Highway 3 is an estimate, and the survey has no drift-thickness layer, so depth to rock is not mapped except where the surface unit is rock itself. A row speaks for its area, not for your lot; the footing is designed from the excavation and, where the reviewer asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown (West Street, west bank of the canal)",
+        "surface": "Man-made deposits: fill and urban development",
+        "bedrock": "Onondaga, limestone; Bois Blanc limestone and dolostone at the canal reference point"
+      },
+      {
+        "name": "Lakeshore Road West",
+        "surface": "Man-made deposits: fill",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Sugarloaf and Tennessee Avenue",
+        "surface": "Wind-blown fine sand and silt (lakeshore dunes)",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Nickel Beach (Lake Road)",
+        "surface": "Wind-blown fine sand and silt",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Humberstone (Killaly Street East at Highway 3, and Killaly Street West)",
+        "surface": "Bedrock at or near the surface, drift too thin to map",
+        "bedrock": "Onondaga, cherty limestone"
+      },
+      {
+        "name": "Lorraine (Weaver Road)",
+        "surface": "Glaciolacustrine silt and clay, minor sand and gravel",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Gasline (Pinecrest Road)",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Cedar Bay (Cedar Bay Road)",
+        "surface": "Bedrock at or near the surface",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Sherkston (quarry point)",
+        "surface": "Bedrock at or near the surface",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Pleasant Beach",
+        "surface": "Wind-blown fine sand and silt",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Humberstone Marsh (rural north)",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Bertie, dolostone (Silurian)"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits, fees and inspections with the City of Port Colborne",
+    "authority_short": "the City of Port Colborne",
+    "paragraphs": [
+      "Building permits in Port Colborne come from the City's Building Division rather than from Niagara Region, and a foundation is reviewed inside the permit for the house or the addition above it. The City's guide puts two calls before the application: the Planning Department for its approval on grading and zoning, then the Building Clerk for the list of documents the project needs. The package goes in through the Citywide Customer Portal or over the counter at City Hall: the provincial application form, Schedule 1 designer information, the owner's authorization where an agent applies, any applicable-law approval the project needs, the Niagara Peninsula Conservation Authority's among them, the drawings and the non-refundable application fee. A complete single-family application is reviewed in 10 business days; an incomplete one is not on the clock. Work must be substantially started within six months of issue, with a year after that to finish.",
+      "The fee by-law's Appendix O prints a 2024 column and a 2025 proposed column and nothing later, so the figures are confirmed at application. Group C residential, which covers a single detached house, a semi, a duplex or a townhouse and their additions, is $1.67 per square foot of gross floor area above grade in 2024 and $1.76 proposed for 2025, measured to the outer face of the exterior walls; cellars, unfinished basements and crawl spaces are left out of that area for new construction, so an unfinished ICF basement under a new house is not billed by the foot. The minimum fee for any building permit is $145, $155 proposed, and the same $145 is the application fee due at submission. Three lines matter to foundation-only work. An unfinished basement with a new or replaced foundation is $0.36 per square foot, which is where a replacement foundation under one of the city's pre-1960 houses, more than half the stock, lands. Underpinning is $16.02 per $1,000 of construction value with a $200 minimum. A foundation-stage partial permit, complete to grade, is 15% of the new-construction fee plus a 50% administrative surcharge. A lot grading deposit of $2,184 is taken where the City requires one, development charges on a new house are due before the permit is issued, and properties inside the Olde Humberstone Main Street, Downtown Central Business District, Brownfield and East Waterfront community improvement plan areas pay half the schedule's fees.",
+      "For the wall itself the reviewer sees the ordinary set. The City's guide asks the foundation plan for foundation wall and footing details and the cross-sections for footing and foundation wall details with the height of exterior grade above the basement floor, drawn by a designer with a BCIN, a professional engineer or an architect unless the homeowner's own exemption applies. Ontario's Building Code carries prescriptive rules for flat ICF foundation walls in Subsection 9.15.4, for houses up to two storeys with floor-to-floor heights of 3 m or less on soil bearing 75 kPa or more; beyond those limits, or where the reviewer asks, an engineer seals the wall. The Code asks the form units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report; the system we install is named on the quote and its documentation goes in the package. The City publishes no ICF-specific checklist and no list of inspection stages: the permit package that comes with the issued permit says which inspections the project needs, each booked with at least two working days' notice, with the permit posted to the street and the plans kept on site. For an ICF wall the visits that count are the footing before concrete and the wall before backfill, because once the concrete is in and the ground is back neither the reinforcing nor the membrane can be seen; we confirm both stages with the Building Division at issuance and book them. We prepare the package with you."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Port Colborne Building Division, online through the Citywide Customer Portal or at the Building Division counter at City Hall; buildingadmin@portcolborne.ca; grading and zoning approval from the Planning Department first",
+        "url": "https://www.portcolborne.ca/en/business-and-development/building-and-construction.aspx"
+      },
+      {
+        "label": "House or addition fee",
+        "value": "$1.67 per square foot of gross floor area above grade for Group C residential (single detached, semi, duplex, townhouse), 2024 column; $1.76 proposed for 2025; cellars, unfinished basements and crawl spaces not counted for new construction; $145 minimum ($155 proposed); no 2026 schedule posted",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Forms%20and%20Documents/Schedule%20O%20-%20Permits%20for%20Construction,%20Demolition,%20Occupancy%20and%20Change%20of%20Use,%20Transfer%20of%20Permits%20and%20Inspections.pdf"
+      },
+      {
+        "label": "Foundation-only lines",
+        "value": "Unfinished basement with a new or replaced foundation $0.36 per square foot ($0.38 proposed); underpinning $16.02 per $1,000 of construction value, $200 minimum; foundation-stage partial permit, complete to grade, 15% of the new-construction fee plus a 50% administrative surcharge",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Forms%20and%20Documents/Schedule%20O%20-%20Permits%20for%20Construction,%20Demolition,%20Occupancy%20and%20Change%20of%20Use,%20Transfer%20of%20Permits%20and%20Inspections.pdf"
+      },
+      {
+        "label": "Application fee, deposit and reductions",
+        "value": "$145 application fee at submission ($155 proposed); lot grading deposit $2,184 ($2,295 proposed) where the City requires one; fees halved for properties inside the Olde Humberstone Main Street, Downtown Central Business District, Brownfield and East Waterfront community improvement plan areas",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Forms%20and%20Documents/Schedule%20O%20-%20Permits%20for%20Construction,%20Demolition,%20Occupancy%20and%20Change%20of%20Use,%20Transfer%20of%20Permits%20and%20Inspections.pdf"
+      },
+      {
+        "label": "Drawings and review time",
+        "value": "Foundation plan with foundation wall and footing details; cross-sections with footing and foundation wall details and the height of exterior grade above the basement floor; Schedule 1 designer information; non-refundable application fee; development charges due before issuance; complete single-family applications reviewed in 10 business days; work substantially started within six months of issue (Citizen's Guide, July 2024)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Building%20Permit%20Guide%202024.pdf"
+      },
+      {
+        "label": "Inspections",
+        "value": "Stages listed in the permit package rather than published; a minimum of two working days' notice to book each one, and the owner is responsible for booking; permit posted so it is visible from the street and plans kept on site; the guide names no ICF-specific requirement",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Building%20Permit%20Guide%202024.pdf"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Frost, snow and the pour season in Port Colborne",
+    "paragraphs": [
+      "Port Colborne has an Environment Canada station of its own, about a kilometre south of the centre at 175 m, and its 1981 to 2010 normals describe a winter the lake takes the edge off: a January mean of −3.7 °C with a daily minimum of −6.9 °C, 23.2 days a year below −10 °C, 45.5 days when the temperature never rises above freezing, and 137.7 cm of snow. The frost-free period averages 182 days, April 25 to October 26, and because the daily minimum reaches freezing on 120.7 days while the maximum does on 45.5, roughly 75 days a year cross 0 °C between night and day. The station has no 1991 to 2020 record; Welland-Pelham, about 11 km north-northwest, is the nearest that does, and its later period runs colder, with a January mean of −4.1 °C, 29.9 days below −10 °C and 160 frost-free days from May 6 to October 14. Whichever record you read, CSA A23.1 makes a pour cold-weather work when the forecast dips below 5 °C within 24 hours of placing: concrete for a wall thinner than 300 mm is placed at 10 to 32 °C, held at 10 °C or more while it cures, and gets to 7 MPa before any frost reaches it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS faces of the form keep heat in the core while it cures, which one form maker's installation manual calls thermal protection in cold weather, but the open top of the wall and the footing get cover of their own, the snow this shore collects comes out of the cavity before the pump starts, and de-icing salt stays out of the forms. The footing depth does not move with the season, and it is not a Port Colborne number, because no City drawing prints one. The Building Code's Table 9.12.2.2 sets 1.2 m under a heated basement on clay or on soils not clearly defined, which covers the silt and clay at Lorraine and Gasline; no minimum on rock, which covers a footing that lands on the Onondaga limestone at Humberstone, Cedar Bay or Sherkston; and no minimum on coarse-grained soil under a heated basement, and whether the fine lakeshore sand counts as that or as soil not clearly defined is the engineer's call, with 1.2 m the answer until a report for the lot says otherwise."
+    ],
+    "facts": [
+      {
+        "label": "Port Colborne station, 1981 to 2010",
+        "value": "January mean −3.7 °C and daily minimum −6.9 °C; 23.2 days a year below −10 °C; 45.5 days with a maximum at or below 0 °C against 120.7 with a minimum at or below 0 °C; 182 frost-free days, April 25 to October 26; 137.7 cm of snow; station at 175.3 m about 1 km south of the centre, with no 1991 to 2020 record",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Welland-Pelham, 1991 to 2020",
+        "value": "January mean −4.1 °C; 29.9 days a year below −10 °C; 46.1 days with a maximum at or below 0 °C; 160 frost-free days, May 6 to October 14; the nearest station with a 1991 to 2020 record, about 11 km north-northwest",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139449&dispBack=1"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1, as reproduced by Concrete Ontario: a forecast below 5 °C within 24 hours of placing; concrete for sections under 300 mm placed at 10 to 32 °C, held at 10 °C or more while curing, 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Minimum footing depth",
+        "value": "No Port Colborne drawing prints one; Building Code Table 9.12.2.2 sets 1.2 m under a heated basement on clay or soils not clearly defined, no minimum on rock, and none on coarse-grained soil under a heated basement, always on undisturbed soil (2024 Compendium, Volume 1)",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Port Colborne is the south end of our Niagara run, and travel is a line. The ground adds the rest: rock excavation where the limestone sits at or near the surface at Humberstone, Cedar Bay and Sherkston, shoring and a water-table check in the lakeshore sand at Sugarloaf and Nickel Beach, an engineer's call in the fill beside the canal, and pump reach on the older lots.",
+  "faqs": [
+    {
+      "q": "What does a foundation excavation meet in Port Colborne?",
+      "a": "One of four grounds. Fill in the core along the Welland Canal and on Lakeshore Road West, dug to undisturbed soil at a depth nobody knows until the hole is open. Wind-blown sand at Sugarloaf, Nickel Beach and Pleasant Beach, which drains and runs. Silt and clay at Lorraine, Gasline and Humberstone Marsh, which stands and holds water. And Onondaga limestone at or near the surface at Humberstone, Cedar Bay and Sherkston, where the dig ends in rock. Those are point queries, not a survey of your lot."
+    },
+    {
+      "q": "We are at Sugarloaf, a street from Lake Erie. Waterproofing or dampproofing?",
+      "a": "The water table decides, not the wall type. Every below-grade foundation wall gets dampproofing on its outer face and drainage at the footing under the Building Code, waterproofing instead where hydrostatic pressure occurs, and, because ICF insulation runs more than 900 mm below grade, a drainage layer against it as well. Sugarloaf, Tennessee Avenue and Nickel Beach sit on wind-blown sand that lets groundwater move, with Gravelly Bay close by, so we settle the question with a test pit before the quote, not with the dig."
+    },
+    {
+      "q": "What does the City of Port Colborne ask for with an ICF foundation?",
+      "a": "No special permit: the ordinary building permit for the house or the addition, through the Citywide Customer Portal, after the Planning Department's grading and zoning approval. The drawings carry foundation wall and footing details, and Schedule 1 names the designer. The Building Code asks the form units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report; the system is named on the quote and its documentation goes in the package. The City has no ICF-specific checklist. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in a Port Colborne winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Port Colborne's own station counts 45.5 days a year that stay at or below freezing, 23.2 below −10 °C and 137.7 cm of snow. On those days the pour follows CSA A23.1: concrete placed at 10 °C or more, the wall held at 10 °C through the cure, 7 MPa before frost, and the cavity cleared of snow first."
+    },
+    {
+      "q": "How deep does the footing go in Port Colborne?",
+      "a": "The City prints no footing depth; its sample drawing defers to Section 9 of the Building Code. The Code's Table 9.12.2.2 supplies the figure: 1.2 m below grade under a heated basement on clay or soils the Code calls not clearly defined; the silt and clay at Lorraine and Gasline get that treatment, always on undisturbed soil. Where the footing lands on the Onondaga limestone, as it can at Humberstone, Cedar Bay and Sherkston, the table sets no minimum and the rock and the engineer decide."
+    },
+    {
+      "q": "We are in Humberstone. Is the rock really that shallow?",
+      "a": "At both Humberstone points, Killaly Street East at Highway 3 and Killaly Street West, the map shows Paleozoic bedrock at or near the surface over Onondaga limestone; Cedar Bay Road and the Sherkston quarry returned the same unit. The Highway 3 coordinate is an estimate, so we read the result as a warning to expect rock, not a depth: the excavator finds out, and rock excavation is its own line on the quote. Properties inside the Olde Humberstone Main Street community improvement plan area pay half the City's permit fees."
+    }
+  ],
+  "related_note": "We also build in Welland, Fort Erie and Wainfleet, Port Colborne's neighbours to the north, east and west."
+}
