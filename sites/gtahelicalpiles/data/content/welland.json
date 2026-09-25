@@ -1,0 +1,189 @@
+{
+  "slug": "welland",
+  "title": "Helical pile installation in Welland | GTA Helical Piles",
+  "description": "Helical piles in Welland: the City's $199 deck permit, the 1,200 mm pier line on its drawings, the lake-bed clay under most streets, and winter installs.",
+  "h1": "Helical pile installation in Welland",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Welland publishes no deck threshold of its own. The guidance it hosts is the GTA standard permit Q and A sheet, which says a permit is not normally needed for a deck 600 mm or less from grade and is needed for a raised deck, and which tells you to confirm with the local office. The City's standard deck drawings set a poured pier at least 1,200 mm below grade on undisturbed soil, and that is the depth any pile design here is measured against.",
+    "The ground is the other half of the answer. The Ontario Geological Survey maps nearly all of built-up Welland as fine-textured glaciolacustrine silt and clay, the bed of a former glacial lake, with man-made fill along the canal corridor. Bedrock is Salina dolostone and shale under the centre and south, Guelph dolostone at the north edge, and no survey point in the city returned rock near the surface. Clay consistency, not rock, sets the pile here."
+  ],
+  "tiles": [
+    {
+      "value": "$199",
+      "label": "flat deck permit fee, City of Welland building fees",
+      "source": {
+        "name": "City of Welland building fees",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/building-fees/"
+      }
+    },
+    {
+      "value": "600 mm",
+      "label": "deck height at or below which a permit is not normally required, on the guide the City hosts",
+      "source": {
+        "name": "A guide to building permits (A01), hosted by the City of Welland",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/nx3fvzu3/a-guide-to-building-permits-a01-building-permit-q-and-a.pdf"
+      }
+    },
+    {
+      "value": "182 days",
+      "label": "average frost-free period, Port Colborne station, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada normals, Port Colborne",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      }
+    },
+    {
+      "value": "Silt and clay",
+      "label": "lake-bed deposit mapped at every built-up Welland survey point",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.25,42.99&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Welland",
+    "paragraphs": [
+      "Welland sits on an old lake bed. Every Ontario Geological Survey point we queried inside the built-up city, from downtown to Dain City in the south, Cooks Mills in the east and the Fonthill border in the northwest, returns the same unit: fine-textured glaciolacustrine deposits, silt and clay with minor sand and gravel, massive to laminated. There is no till and no sand plain inside the city limits at the map scale. That uniformity is unusual in our service area, and it means the variable that matters on a Welland lot is not which soil you have but how stiff that clay is.",
+      "The City-hosted deck sizing sheet D01d makes the point in numbers. It rates soft clay at 40 kPa allowable bearing, firm clay at 75 kPa and stiff clay at 150 kPa, so the same deck can call for a very different footing depending on which clay a site holds. A helical pile handles that by being screwed down until the installation torque, which is recorded on every pile, reaches the value the engineer set for the load. In soft clay that can mean a deeper pile or a larger helix; in stiff clay the pile reaches its torque sooner.",
+      "The exception is the canal. The survey maps the old channel through the centre, the Recreational Waterway, and the By-Pass channel east of the city as man-made deposits: fill, urban development, reworked ground. The City's own specification requires footings on natural undisturbed soil, rock or compacted granular fill, so lots along the corridor need a site check before any standard depth is assumed. Bedrock under all of this is Silurian: Salina Formation dolostone, shale and gypsum through the centre and south, and Guelph dolostone at the north and northeast edge. Depth to rock was not retrieved, and no point returned rock near the surface."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries at one coordinate per area, retrieved 25 September 2026. They describe the area at map scale, not your lot; the engineer's layout comes from the site.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown Welland",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Salina, dolostone and shale with gypsum"
+      },
+      {
+        "name": "Welland Canal corridor (old channel and By-Pass)",
+        "surface": "Man-made deposits (fill, reworked ground)",
+        "bedrock": "Salina, dolostone and shale with gypsum"
+      },
+      {
+        "name": "Dain City",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Salina, dolostone and shale with gypsum"
+      },
+      {
+        "name": "Cooks Mills",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Salina, dolostone and shale with gypsum"
+      },
+      {
+        "name": "Southeast Welland",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Salina, dolostone and shale with gypsum"
+      },
+      {
+        "name": "Northwest Welland (Fonthill border)",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Guelph, dolostone"
+      },
+      {
+        "name": "East Welland (north of the By-Pass)",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Guelph, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Welland",
+    "authority_short": "the City of Welland",
+    "paragraphs": [
+      "Deck permits in Welland are reviewed by the Building Division of the City's Planning and Development Services department, at Civic Square, 60 East Main Street. Applications, status checks and inspection requests run through the CityView Portal. The fee is a flat $199 for a garage, deck, shed or sunroom, which is also the City's minimum permit fee; other charges can apply after review. The City prints no day count for a decision. It says processing depends on the division's workload but must meet the maximum timeframe the Ontario Building Code allows, and that nothing starts until the application is complete.",
+      "The City hosts the GTA standard uncovered wood deck drawings and accepts them for submission. Those sheets draw a poured concrete pier at least 1,200 mm below grade on undisturbed soil, sized from the D01d table by soil bearing and deck area. None of the Welland sheets we retrieved mention helical piles, CCMC reports or an engineer, and the standard-drawings page says construction significantly different from a standard drawing must be submitted on the applicant's own drawings. A pile foundation is exactly that. We prepare the package with you: the manufacturer's evaluation report and an engineer's pile layout for the clay on your lot, and after installation the engineer-sealed certificate of conformity from the torque record.",
+      "Two things to confirm with the Building Division before you file, because the City does not publish them: whether your deck's height and attachment trigger a permit under the 600 mm guidance, and which inspections apply to a pile foundation. The City publishes no deck inspection list; inspection status is tracked in the portal."
+    ],
+    "facts": [
+      {
+        "label": "Permit guidance",
+        "value": "Not normally required for a deck 600 mm or less from grade; required for raised porches or decks; general information only, confirm with the City",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/nx3fvzu3/a-guide-to-building-permits-a01-building-permit-q-and-a.pdf"
+      },
+      {
+        "label": "Deck permit fee",
+        "value": "Flat $199 (garage, deck, shed, sunroom); $199 minimum permit fee",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/building-fees/"
+      },
+      {
+        "label": "Pier depth on the City-hosted drawings",
+        "value": "Minimum 1,200 mm below grade on undisturbed soil (D01b); footings on natural undisturbed soil, rock or compacted granular fill (S01a)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/f0ynccvk/wood-deck-d01b-fixed-to-brick-veneer-and-wood-framing.pdf"
+      },
+      {
+        "label": "Non-standard construction",
+        "value": "Construction significantly different from a standard drawing must be submitted on the applicant's own drawings",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/standard-drawings-and-samples/"
+      },
+      {
+        "label": "Who reviews",
+        "value": "Building Division, Planning and Development Services, 60 East Main Street, 905-735-1700 ext. 2251 or 2257",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/"
+      },
+      {
+        "label": "Apply",
+        "value": "CityView Portal: permits, application status and inspection status",
+        "url": "https://cviewportal.welland.ca/cityviewportal"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Welland",
+    "paragraphs": [
+      "Welland has no climate station of its own with published normals, so we use Port Colborne, about 12 km south, and check it against St. Catharines Airport, about 24 km north. Port Colborne's 1981 to 2010 record gives a January mean of −3.7 °C, about 23 days a year with a minimum below −10 °C, and 45.5 days when the high never gets above freezing. The frost-free period averages 182 days, from April 25 to October 26, and annual snowfall is 137.7 cm. St. Catharines reads much the same: −3.8 °C in January and 179 frost-free days. Newer 1991 to 2020 normals were not retrievable for any Niagara station, and Port Colborne's record ends in 2006, so treat these as the best published figures rather than current ones.",
+      "The design depth that matters is the 1,200 mm on the City-hosted deck drawings, not any single winter. Lake-bed clay holds water, and wet fine-grained ground is what frost grips and lifts, so a pier that stops short of that depth is at risk on a Welland lot whether the winter is mild or hard. A helical pile's helix sits below it and the smooth galvanized shaft gives frost less to hold. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. Frost movement is designed against, not eliminated."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−3.7 °C, Port Colborne, 1981 to 2010 (temperature record 1981 to 2006)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "23.2 a year, Port Colborne",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "182 days, April 25 to October 26, Port Colborne; 179 days at St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Footing depth on the City-hosted drawings",
+        "value": "Minimum 1,200 mm below finished grade (specification S01a)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/pvnnrz5u/specification-s01a-excavation-concrete-and-masonry.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Welland is at the far end of our service area from the western GTA, so travel is a line in the quote rather than an afterthought, and small jobs carry a minimum charge. Soft lake-bed clay can mean a deeper pile or a larger helix, and fill along the canal corridor can need a site check before we commit to a depth. Both are priced in writing, not on the day.",
+  "faqs": [
+    {
+      "q": "Does my Welland deck need a permit?",
+      "a": "The City does not publish its own threshold. The GTA guide it hosts says a permit is not normally required for a deck 600 mm or less from grade and is required for raised porches or decks, and it is marked general information only. Call the Building Division at 905-735-1700, extension 2251 or 2257, with your height and whether the deck attaches to the house, and they will tell you. If a permit is needed the fee is a flat $199."
+    },
+    {
+      "q": "What does the City of Welland ask for when the deck is on helical piles?",
+      "a": "Nothing specific, as far as the City's published sheets go: none of them mention helical piles, CCMC reports or an engineer. What the City does say is that construction significantly different from its standard drawings must come in on your own drawings. We prepare the package with you: the pile manufacturer's evaluation report, an engineer's layout sized to the clay on your lot, and after the install the engineer-sealed certificate of conformity built from the torque recorded on every pile."
+    },
+    {
+      "q": "What kind of ground is under Welland?",
+      "a": "Lake-bed clay, almost everywhere. The Ontario Geological Survey returns fine-textured glaciolacustrine silt and clay at every point we queried inside the built-up city, with man-made fill along the canal corridor. Bedrock is Salina dolostone and shale in the centre and south and Guelph dolostone at the north edge, and no point returned rock near the surface. The City's own sizing sheet rates soft clay at 40 kPa and stiff clay at 150 kPa, so what we are really sizing for is how stiff your clay is."
+    },
+    {
+      "q": "Can you install piles in Welland in winter?",
+      "a": "Yes. Port Colborne, the nearest station with published normals, averages about 45 days a year when the high stays at or below freezing and a January mean of −3.7 °C. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so the deck can go on as soon as the piles are in."
+    },
+    {
+      "q": "How much is a deck permit in Welland?",
+      "a": "A flat $199 on the City's building fees page, which covers a garage, deck, shed or sunroom, and $199 is also the City's minimum permit fee. The City notes other fees or deposits can apply after review. Engineering for the pile layout is separate from the City's fee and appears as its own line in our quote."
+    },
+    {
+      "q": "I am in Dain City or along the canal. Is anything different?",
+      "a": "Dain City itself, at the south end where the two canal channels meet, maps as the same silt and clay as the rest of the city over Salina bedrock, so nothing changes. The canal corridor is different: the survey maps the old channel through the centre and the By-Pass as man-made deposits, and the City's specification requires footings on natural undisturbed soil. On those lots we check the fill on site and the engineer sets the depth from what we find."
+    }
+  ],
+  "related_note": "We also serve Port Colborne, Niagara Falls and St. Catharines; call for those areas until their pages are up."
+}

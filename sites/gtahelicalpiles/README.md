@@ -39,7 +39,11 @@ Domain: apex `gtahelicalpiles.ca` canonical, `www` redirected to apex (Vercel do
 - `data/business.json`: name, phone, email, hours, service area, credentials. While `status` starts with `PLACEHOLDER`, every page renders `noindex` and a preview strip.
 - `data/prices.json`: the single source of truth for every price on the site. Illustrative ranges only; the firm price follows a site review. Carries `last_reviewed`.
 - `data/cities/<slug>.json`: one file per city page: census, geology, permits, climate, code, each fact with a source URL and retrieval date. `oakville.notes.md` records what was verified and what was not.
+- `data/content/<slug>.json`: the editorial content of each city page (answer block, tiles, ground, permits, season, pricing note, FAQ). Written from the city's data module only; the template adds the price line and the nearest-city links. A city goes live when `live: true` is set for it in `business.json`.
+- `data/guides/<slug>.json`: the three JSON-rendered guides (sections with per-section sources, FAQ, related links). The cost guide is a hand-built page.
 - `data/claims-register.md`: every engineering, regulatory and price claim used on the site, its status and its source. Nothing labelled certified, guaranteed, licensed or insured ships without a backing document.
+- `data/owner-review.md`: the aggregated list of things only the owner can confirm, per city and per guide, generated from the research runs. Starred items block launch.
+- `scripts/polish-content.mjs`: idempotent rewrite of research-log phrasing ("was not retrieved") into page wording. Run it after adding or regenerating content files.
 
 Content rule: the substance of every page comes from data files, the owner's own answers and cited sources. Prose is connective only.
 

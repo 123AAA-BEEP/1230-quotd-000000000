@@ -1,13 +1,14 @@
 # GTA Helical Piles
 
-Helical (screw) pile installation contractor serving Halton, Peel, Hamilton and Guelph, Ontario. Decks, additions, underpinning. Every page states its sources.
+Helical (screw) pile installation contractor serving Toronto, Peel, Halton, Hamilton, Guelph and the Niagara corridor, Ontario. Decks, porches, additions and underpinning. Every page states its sources and its last-reviewed date.
 
-## Pages
+## Sections
 
-- https://gtahelicalpiles.ca/ : what we do, where we work, how to get a quote
-- https://gtahelicalpiles.ca/locations/oakville/ : Oakville: soil, permits, frost depth, pricing, FAQ
-- https://gtahelicalpiles.ca/guides/helical-pile-cost-per-pile-ontario/ : cost per pile in Ontario, what moves the price, budget calculator
+- / : what we do, where we work, how to get a quote
+- /decks-and-additions/ and /underpinning/ : the two services
+- /locations/<city>/ : one page per municipality served, each built from that municipality's own permit rules and fees, Ontario Geological Survey point queries by neighbourhood, Environment Canada climate normals and the 2021 census, with sources listed at the foot of the page
+- /guides/ : technical guides on cost per pile, piles versus concrete sonotubes, soil and bedrock under the region, and underpinning a settling foundation
 
 ## Data
 
-Price ranges and local facts on each page carry a source and a last-reviewed date. Prices are confirmed after a site review.
+Price ranges are illustrative and come from one price table with a last-reviewed date; the firm price follows a site review. Local facts carry a source URL and a retrieval date. The sitemap at /sitemap.xml lists every published page.
