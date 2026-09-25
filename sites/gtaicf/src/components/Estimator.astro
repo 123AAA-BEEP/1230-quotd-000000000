@@ -90,6 +90,8 @@ const clientData = {
     const input = (name: string) => form.querySelector(`input[name="${name}"]`) as HTMLInputElement;
     const result = q('[data-result]');
     const track = (name: string, props: Record<string, string>) => (window as any).track(name, props);
+    // Price-table rows map onto the quote form's application choices.
+    const formApp: Record<string, string> = { foundation: 'foundation', above_grade: 'full-height', addition: 'addition' };
     let last: any = null;
 
     const application = () => (form.querySelector('input[name="application"]:checked') as HTMLInputElement).value;
@@ -127,7 +129,7 @@ const clientData = {
       q('[data-range-note]')!.textContent = `${fmt2(row.low)} to ${fmt2(row.high)} ${row.unit}.`;
       q('[data-caveat]')!.textContent = 'Excavation, footings, waterproofing, windows and bucks, engineering, permits and the pump truck sit outside the wall figure. Deep water tables, poor access and winter heating push it up. Firm price after a site review.';
       result?.removeAttribute('hidden');
-      last = { application: a, wall_area_sqft: area, perimeter_ft: perimeter || null, height_ft: height || null, estimate_low: low, estimate_high: high, city: cfg.city || null, summary: `Estimator: ${row.label}, ${area} sq ft of wall, ${fmt(low)} to ${fmt(high)}${note ? ' (' + note + ')' : ''}` };
+      last = { application: formApp[a] || a, row: a, wall_area_sqft: area, perimeter_ft: perimeter || null, height_ft: height || null, estimate_low: low, estimate_high: high, city: cfg.city || null, summary: `Estimator: ${row.label}, ${area} sq ft of wall, ${fmt(low)} to ${fmt(high)}${note ? ' (' + note + ')' : ''}` };
       track('estimator_result', { application: a, area: String(area) });
       result?.focus({ preventScroll: true });
       result?.scrollIntoView({ block: 'nearest' });

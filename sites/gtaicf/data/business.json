@@ -45,7 +45,7 @@
       "name": "Oakville",
       "slug": "oakville",
       "region": "Halton Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Burlington",

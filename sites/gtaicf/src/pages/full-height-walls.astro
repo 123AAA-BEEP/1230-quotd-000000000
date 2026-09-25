@@ -1,0 +1,187 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Estimator from '../components/Estimator.astro';
+import Process from '../components/Process.astro';
+import Faq from '../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, getLiveGuides, formatCadPerSqft } from '../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const cities = getLiveCities();
+const guides = getLiveGuides();
+const aboveGrade = prices.rows.find((r) => r.key === 'above_grade');
+const addition = prices.rows.find((r) => r.key === 'addition');
+const costGuide = guides.find((g) => g.slug === 'icf-vs-poured-concrete-ontario');
+const codeGuide = guides.find((g) => g.slug === 'ontario-building-code-icf-requirements');
+const energyGuide = guides.find((g) => g.slug === 'r-value-thermal-savings-icf-basements');
+const winterGuide = guides.find((g) => g.slug === 'winter-concrete-pouring-icf-ontario');
+
+const title = 'Full-height ICF walls, additions and garages | GTA ICF';
+const description = 'Whole houses, storeys above grade, additions and garages in insulated concrete form, poured by our own crew across Toronto, Peel, Halton, Hamilton and Niagara.';
+
+const steps = [
+  { title: 'Send the drawings', body: 'For a full-height house, the architectural set with wall heights, openings and the floor framing. For an addition or a garage, a sketch with dimensions and photos of where it meets the house starts it, and we measure on site.' },
+  { title: 'Engineering and permit package', body: 'Above grade the Code\'s Part 9 rules cover flat ICF walls up to two storeys and 3 m floor-to-floor; taller walls, wide openings and unusual loads are engineered to Part 4. The lintel and bearing details, the ICF system\'s documentation and the SB-12 summary go in with the application. We prepare the package with you.' },
+  { title: 'Forms, bucks, steel, pour', body: 'Our crew stacks and braces the forms storey by storey, sets the window and door bucks, places the reinforcing and the lintel steel, and pours each lift after the pre-pour inspection. Floor framing hangs on ledgers anchored into the wall.' },
+  { title: 'Weather in, hand over', body: 'The outside face gets its air barrier and cladding to Section 9.27, the inside face takes drywall straight onto the web flanges. The framers, the roofer and the trades take over a wall that is already insulated, airtight and solid.' },
+];
+
+const faqs = [
+  { q: 'Can a whole house be built in ICF, not just the basement?', a: 'Yes, and the Building Code says how. Subsection 9.20.17 carries prescriptive rules for flat ICF walls above ground in houses up to two storeys with floor-to-floor heights up to 3 m: a core of at least 140 mm, vertical bars in the middle third of the core at up to 400 mm on centre, lintels over openings wider than 900 mm in loadbearing walls, and no opening within 1.2 m of a corner. Outside those limits an engineer designs the wall.' },
+  { q: 'How do windows and doors work in a concrete wall?', a: 'Each opening is formed with a buck, a frame set in the wall before the pour that holds the opening square and gives the window something to fasten to. Above the opening the concrete is a lintel, reinforced to the Code\'s span tables or the engineer\'s detail. Openings are planned on the drawings; moving one after the pour means cutting concrete, so we go through the window schedule with you before we order forms.' },
+  { q: 'Is an ICF house quieter?', a: 'Manufacturer tests put a 6 inch core ICF wall with half-inch drywall on both sides at STC 50, and one system\'s 6.25 inch wall with extra drywall at STC 56. Those are laboratory values for the wall alone; windows, doors and the roof decide what you hear in the finished house. The wall itself is a solid, continuous slab of concrete and foam, and that is what people notice when they walk into one.' },
+  { q: 'Does the addition have to match the existing foundation?', a: 'The new foundation is designed for its own loads and ground, and where it meets the house the engineer details the tie and the footing step so nothing undermines the existing wall. Footings within reach of the old foundation go down to its bearing level. The above-grade ICF wall then carries the addition\'s roof and floors on its own, and the join is flashed and finished like any addition.' },
+  { q: 'Why build a garage in ICF?', a: 'Because the wall is insulated the day it is poured. A detached garage with a workshop, a garage with a suite above, or an attached garage sharing a wall with the house all benefit from a concrete wall with continuous foam on both faces. Municipal fees treat a garage that is part of the house design differently from a standalone one; Oakville, for example, prices additions with the house rate and unheated accessory buildings at a lower per-square-metre rate.' },
+  { q: 'Can you pour above-grade walls in winter?', a: 'Yes. Above grade the pour is more exposed than a foundation, so the cold-weather rules matter more: concrete arrives at 10 °C or above for walls under 300 mm thick, the wall is kept at 10 °C or more through the curing period, and it has to reach 7 MPa before it sees frost. The foam keeps the core warm; the top of the wall and the bucks are covered. It adds time and can add cost, and the quote says so.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Full-height ICF walls and additions', item: `${Astro.site}full-height-walls/` },
+  ],
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Full-height ICF wall construction for houses, additions and garages',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: biz.service_area.map((c) => ({ '@type': 'City', name: `${c.name}, ON` })),
+};
+---
+
+<Base title={title} description={description} schema={[breadcrumb, faqSchema, serviceSchema]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <span aria-current="page">Full-height walls</span>
+  </nav>
+
+  <div class="page svc">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">Service</p>
+      <h1>Full-height ICF walls, additions and garages</h1>
+      <p class="lede">Whole houses and storeys above grade in insulated concrete form, and the additions and garages that go with them. The same crew that pours your foundation keeps stacking: reinforced concrete walls with continuous insulation on both faces, quiet, airtight and solid in a way a framed wall is not.</p>
+      <div class="actions">
+        <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+        <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="service-hero">Call {biz.phone_display}</a>
+      </div>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm />
+    </aside>
+
+    <div class="rest">
+      <section class="block" id="houses">
+        <h2>Full-height houses</h2>
+        <div class="prose">
+          <p>Above grade an ICF wall does the same job as below it, with the loads coming from the floors and the roof instead of the backfill. Ontario's 2024 Building Code carries prescriptive rules for flat ICF walls above ground, Subsection 9.20.17, for houses up to two storeys with floor-to-floor heights up to 3 m: a concrete core of at least 140 mm kept constant through the storey, vertical 10M bars in the middle third of the core at not more than 400 mm on centre, lintels over openings wider than 900 mm in loadbearing walls, and no opening within 1,200 mm of a corner. Floor joists hang on ledgers bolted into the concrete.</p>
+          <p>What you get for the extra concrete is a wall that is insulated, air-sealed and structural in one pour, with no studs bridging the foam. SB-12 deems an ICF wall with at least RSI 1.76 (R10) of insulation on each face of the concrete to comply with its Zone 1 wall values, and the manufacturers rate their standard forms at nominal R-22 to R-30 for the foam alone. Where the design goes beyond the Part 9 limits, taller storeys, wide openings, unusual loads, the wall is engineered to Part 4 and we build to the engineer's drawings.</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf" rel="noopener" target="_blank">2024 Building Code Compendium, Volume 1 (Subsection 9.20.17)</a> · <a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf" rel="noopener" target="_blank">2024 Building Code Compendium, Volume 2 (SB-12, Sentences 3.1.1.2.(5) and (6))</a> · <a href="https://www.quadlock.com/insulated-concrete-forms/ICF_energy_performance.php" rel="noopener" target="_blank">manufacturer nominal R-value statements</a></p>
+      </section>
+
+      <section class="block" id="additions">
+        <h2>Additions</h2>
+        <div class="prose">
+          <p>An addition is a small house attached to a big one, and the ICF version is built the same way: a new footing and foundation wall for the addition, full-height ICF walls above it, and a detailed join where the new structure meets the old. The engineer sets the tie to the existing foundation and the footing steps so the new excavation never undermines the house, and the above-grade wall carries the addition's own roof and floors. Because the wall arrives insulated, the addition is often the warmest room in the house.</p>
+          <p>Short perimeters carry the same set-up as a whole house: the pump truck, the bracing, the mobilisation. That is why our additions row is priced as its own range rather than folded into the foundation figure. Tight side yards and rear lots are the usual complication; the form blocks go in by hand, but the concrete still has to reach the wall, so a photo of the route from the street to the addition is the most useful thing you can send with the sketch.</p>
+        </div>
+      </section>
+
+      <section class="block" id="garages">
+        <h2>Garages</h2>
+        <div class="prose">
+          <p>A garage is where ICF pays off in the second winter. A workshop garage, a garage with a suite over it, or an attached garage sharing a wall with the house all want a wall that is insulated and solid, and a poured wall with the foam already on both faces gives them that without a second trade coming back to frame and insulate. The Code treats a garage wall like any other above-grade ICF wall; the engineer or the designer sizes the lintel over the door, which is usually the widest opening in the building.</p>
+          <p>Municipal fees separate garages from houses. Oakville's 2026 schedule charges new houses and their additions, garages included when they are in the original design, at $17.80 per square metre, and garages and unheated accessory buildings that are not part of a new house at $5.90 per square metre. Other municipalities draw the line differently, and the city pages say where; we prepare the application with you either way.</p>
+        </div>
+        <p class="sources">Source: <a href="https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf" rel="noopener" target="_blank">Town of Oakville, 2026 Building Services rates and fees</a>, retrieved {prices.last_reviewed}</p>
+      </section>
+
+      <section class="block" id="builders">
+        <h2>For builders and designers</h2>
+        <div class="prose">
+          <p>Send the set with the wall heights, the window schedule and the floor framing, and you get a per-square-foot quote by storey with the exclusions written out. We are brand-agnostic, so the forms come from whichever yard near the site has stock, and we coordinate the bucks with your window supplier before the pour. If the design sits outside the Part 9 tables we work from your engineer's drawings and say so on the quote.</p>
+        </div>
+        <p><a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-md num" data-track="call_click" data-place="builders">Call {biz.phone_display}</a></p>
+      </section>
+
+      <section class="block" id="pricing">
+        <h2>What it costs, illustratively</h2>
+        <p class="muted">{prices.illustrative_note}</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Wall</th><th scope="col">Typical core</th><th scope="col">Illustrative range</th></tr></thead>
+            <tbody>
+              {[aboveGrade, addition].filter(Boolean).map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.core_options}</td>
+                  <td class="num">{formatCadPerSqft(r.low)} to {formatCadPerSqft(r.high)} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">Last reviewed {prices.last_reviewed}. {prices.excluded_note}
+          {costGuide && <span> Where these ranges sit against what other Ontario builders publish: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <Estimator heading="Estimate a storey, an addition or a garage" />
+
+      <Process steps={steps} />
+
+      <Faq items={faqs} heading="Full-height wall questions" />
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          <li><a href="/foundations-and-basements/">ICF foundations and basements</a></li>
+          {costGuide && <li><a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a></li>}
+          {codeGuide && <li><a href={`/guides/${codeGuide.slug}/`}>{codeGuide.title}</a></li>}
+          {energyGuide && <li><a href={`/guides/${energyGuide.slug}/`}>{energyGuide.title}</a></li>}
+          {winterGuide && <li><a href={`/guides/${winterGuide.slug}/`}>{winterGuide.title}</a></li>}
+          {cities.map((c) => <li><a href={`/locations/${c.slug}/`}>ICF walls in {c.name}</a></li>)}
+          <li><a href="/#areas">All service areas and how we work</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); display: flex; gap: var(--s2); flex-wrap: wrap; }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .svc { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .svc { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s3) var(--s4); max-width: 16ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: var(--read); }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s6); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s8); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+  .prose + p { margin-top: var(--s5); }
+  .table-wrap { margin-top: var(--s5); }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
+</style>

@@ -1,0 +1,214 @@
+{
+  "slug": "oakville",
+  "title": "ICF foundations in Oakville | GTA ICF",
+  "description": "ICF foundations in Oakville: what is under each neighbourhood, the Town's 2026 permit fees and inspections, when to pour, and illustrative per-square-foot costs.",
+  "h1": "ICF foundations and walls in Oakville",
+  "kicker": "Halton Region",
+  "answer": [
+    "An ICF foundation in Oakville is a building permit from the Town's Building Services, a footing at least 1.2 m below grade on undisturbed soil, and an excavation that meets one of three grounds: clay-to-silt till across the inland neighbourhoods, sand and gravel along the old lakeshore through Old Oakville, Bronte and Joshua Creek, and shale at or near the surface in the Sixteen Mile Creek and Bronte Creek valleys and at the Clearview and Iroquois Ridge North survey points.",
+    "The Town inspects the footing forms before any concrete is placed and the foundation again before backfill, with a site survey of the top-of-foundation elevation for new construction. Its 2026 schedule prices a new house or an addition at $17.80 per square metre of floor area, with a $200 minimum and a $100 pre-screening fee credited to the permit."
+  ],
+  "tiles": [
+    {
+      "value": "1.2 m",
+      "label": "design frost depth in geotechnical reports filed with the Town",
+      "source": {
+        "name": "Preliminary geotechnical investigation, Argus Road, Oakville",
+        "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf"
+      }
+    },
+    {
+      "value": "$17.80/m²",
+      "label": "Town of Oakville 2026 permit fee for a new house or addition",
+      "source": {
+        "name": "2026 Building Services rates and fees",
+        "url": "https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf"
+      }
+    },
+    {
+      "value": "3 grounds",
+      "label": "clay till inland, lakeshore sand and gravel, shale at surface in the creek valleys",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json"
+      }
+    },
+    {
+      "value": "44 days",
+      "label": "a year that never rise above 0 °C, Oakville Southeast WPCP station",
+      "source": {
+        "name": "Environment Canada normals, Oakville",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What an Oakville excavation meets",
+    "paragraphs": [
+      "A foundation dig is a different question from a post hole, because the whole footprint comes out to footing depth. Across inland Oakville, from Kerr Village through Glen Abbey, College Park, River Oaks, the Uptown Core and Palermo, the Ontario Geological Survey maps clay-to-silt till. Till holds a vertical cut well for the short time the excavation is open, but it drains slowly, so water that gets into the hole stays there, and backfilling with the same clay against the wall traps it. North Oakville adds the Trafalgar Moraine, silty clay-rich sand over shale that the survey literature notes absorbs water poorly.",
+      "The lakeshore band is the opposite ground. Through Old Oakville, Bronte and Joshua Creek the survey maps the coarse sand and gravel that glacial Lake Iroquois left along its shore. It drains freely, which is good news for the weeping tile, and it runs, which means the excavation faces need to be laid back or shored and the footing bears on material that must be confirmed undisturbed. At the mouth of Sixteen Mile Creek the mapping shows modern alluvium, soft mixed deposits that an engineer will want to see before a footing goes on them.",
+      "Shale is under all of Oakville, but only in some places does the excavator reach it. In the Sixteen Mile Creek and Bronte Creek valleys and at the Clearview and Iroquois Ridge North survey points the mapping shows bedrock at or near the surface, and a red Queenston shale outcrop is exposed at Bronte Creek just south of the QEW. West of roughly Sixteen Mile Creek the rock is red Queenston shale; east of it, grey Georgian Bay shale with limestone bands. Where a footing lands on rock the Code sets no minimum depth, but the last part of the dig is rock excavation, priced as such."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries at one location per neighbourhood, retrieved 25 September 2026. They describe the neighbourhood, not your lot; the footing design comes from the site and, where the reviewer asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Old Oakville",
+        "surface": "Sand and gravel (Lake Iroquois shore)",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Kerr Village",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Bronte",
+        "surface": "Sand and gravel; shale outcrops at Bronte Creek",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glen Abbey",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "College Park",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "River Oaks",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Uptown Core",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Palermo",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Joshua Creek",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Clearview",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Iroquois Ridge North",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Eastlake",
+        "surface": "Not mapped at the query point",
+        "bedrock": "Georgian Bay, grey shale"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits and inspections in Oakville",
+    "authority_short": "the Town of Oakville",
+    "paragraphs": [
+      "A new foundation is part of the building permit for the house or the addition, issued by the Town of Oakville's Building Services through the Town's Online Services account. The 2026 fee schedule prices new houses, semis and row houses up to three storeys, and their additions, at $17.80 per square metre; garages and unheated accessory buildings that are not part of a new house at $5.90 per square metre; and a walk-up basement with no other new foundation work at $400. The minimum permit fee is $200, and a $100 pre-screening fee is charged at submission and credited to the permit. The Town publishes no fixed review time; it follows the LMCBO application timelines and says volume, complexity and resubmissions move it.",
+      "Two documents the Town lists with an application matter for an ICF wall: the Energy Efficiency Design Summary, which is where the SB-12 path for the wall is declared, and the Commitment to have General Review Undertaken by Architects and/or Engineers, used when the design is sealed. The Town does not publish an ICF-specific checklist. The drawings, the ICF system's documentation and the energy summary go in together, and we prepare the package with you.",
+      "The inspections follow the concrete. The Town lists an excavation and footing forms inspection prior to pouring concrete, then a pre-backfill inspection for which new construction needs a site survey showing the top-of-foundation elevation submitted first. Online inspection requests before 6 pm are booked for the next business day, 9 am to 4 pm, Monday to Friday. We book both and are on site for each."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Oakville Building Services, through the Town's Online Services account",
+        "url": "https://www.oakville.ca/business-development/planning-development/planning-and-development-applications-forms/electronic-permits-applications/"
+      },
+      {
+        "label": "New house or addition fee, 2026",
+        "value": "$17.80 per m² of floor area; garages and unheated accessory buildings not part of a new house $5.90 per m²; walk-up basement alone $400",
+        "url": "https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf"
+      },
+      {
+        "label": "Minimum and pre-screening",
+        "value": "$200 minimum permit fee; $100 pre-screening fee at submission, credited to the permit",
+        "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-permit-application-process/"
+      },
+      {
+        "label": "Footing inspection",
+        "value": "Excavation and footing forms, prior to pouring concrete",
+        "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/"
+      },
+      {
+        "label": "Pre-backfill inspection",
+        "value": "Site survey with top-of-foundation elevation submitted first for new construction; requests before 6 pm booked for the next business day",
+        "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/"
+      },
+      {
+        "label": "Review time",
+        "value": "No fixed day count published; LMCBO application timelines apply",
+        "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-permit-application-process/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Pour season and frost in Oakville",
+    "paragraphs": [
+      "Oakville's own climate station, Southeast WPCP, averages −4.7 °C in January and counts about 44 days a year when the temperature never rises above freezing. Toronto Pearson, about 25 km away and the nearest station that publishes the full record, puts the frost-free period at 174 days, April 27 to October 20, with 34 days a year below −10 °C. Those are the days a pour is cold-weather work under CSA A23.1, which treats any pour with a forecast below 5 °C in the next 24 hours that way: the concrete arrives at 10 °C or more, the wall is kept at 10 °C or more through the cure, and it reaches 7 MPa before it sees frost.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam form does part of the work by insulating the core, but the open top of the wall and the footing still need cover, and snow and ice are cleared from the cavity before the pour. What does not change with the season is the footing depth: geotechnical reports filed with the Town use 1.2 m as the design frost penetration for the area, the same figure as the Building Code's minimum for a heated basement on clay."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−4.7 °C, Oakville Southeast WPCP, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1"
+      },
+      {
+        "label": "Days never above 0 °C",
+        "value": "44 a year, Oakville Southeast WPCP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "174 days, April 27 to October 20, Toronto Pearson, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Design frost depth",
+        "value": "1.2 m in geotechnical reports filed with the Town",
+        "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Travel is rarely a factor in Oakville. What moves an Oakville quote is the last metre of the dig: rock excavation where shale is at the surface along Sixteen Mile Creek and Bronte Creek and in Clearview and Iroquois Ridge North, shoring in the lakeshore sand and gravel, and a pump reach on the narrow lots south of Lakeshore Road. Each shows up as its own line in the written quote.",
+  "faqs": [
+    {
+      "q": "What does the Town of Oakville need for an ICF foundation permit?",
+      "a": "The same building permit as any house or addition, through Building Services on the Town's Online Services account. The application carries the drawings, the ICF system's documentation and the Energy Efficiency Design Summary that declares the SB-12 path; a sealed design adds the Town's commitment to general review form. The Town publishes no ICF-specific checklist. We prepare the package with you."
+    },
+    {
+      "q": "How much is an Oakville building permit for a new house or addition?",
+      "a": "On the Town's 2026 schedule, $17.80 per square metre of floor area for a new house, semi or row house up to three storeys and for additions, with garages included when they are in the original design. A standalone garage or unheated accessory building is $5.90 per square metre. The minimum permit fee is $200, and the $100 pre-screening fee paid at submission is credited to the permit."
+    },
+    {
+      "q": "Is there rock under my Oakville lot?",
+      "a": "Shale is under all of Oakville, but the excavator only reaches it where the survey maps bedrock at or near the surface: the Sixteen Mile Creek and Bronte Creek valleys and the Clearview and Iroquois Ridge North query points. There the footing may land on rock, which the Code allows at any depth, and the last part of the dig is rock excavation. Those are point queries, so we confirm on site."
+    },
+    {
+      "q": "My house is in Old Oakville or Bronte. What does the sand mean for a basement?",
+      "a": "Good drainage and a running excavation. The lakeshore band is the sand and gravel of the old Lake Iroquois shore; it drains well, so the weeping tile has an easier job, but the cut faces need to be laid back or shored and the footing must sit on undisturbed material. Near the lake the water table is the question, and where hydrostatic pressure occurs the Code asks for waterproofing rather than dampproofing."
+    },
+    {
+      "q": "Can you pour an ICF foundation in an Oakville winter?",
+      "a": "Yes. Oakville has about 44 days a year that stay below freezing all day, and on those the pour is cold-weather work: the concrete arrives at 10 °C or more, the wall is covered and kept warm through the cure, and it reaches 7 MPa before frost. The foam insulates the core, which is one reason ICF is chosen for winter builds. It adds time and can add cost, and the quote says so."
+    },
+    {
+      "q": "Which inspections does the Town book for a foundation?",
+      "a": "Two before the wall is buried: excavation and footing forms prior to pouring concrete, and pre-backfill, for which new construction needs a site survey with the top-of-foundation elevation submitted first. Framing follows once the house is weather-tight. Online requests before 6 pm are booked for the next business day, and we are on site for each visit."
+    }
+  ],
+  "related_note": "We also build in Burlington, Milton and Mississauga."
+}

@@ -1,0 +1,277 @@
+---
+import Base from '../../layouts/Base.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import Estimator from '../../components/Estimator.astro';
+import Faq from '../../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, GUIDES, formatCad, formatCadPerSqft } from '../../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const cities = getLiveCities();
+const guide = GUIDES.find((g) => g.slug === 'icf-vs-poured-concrete-ontario');
+const foundation = prices.rows.find((r) => r.key === 'foundation');
+const oakville = cities.find((c) => c.slug === 'oakville');
+const examples = prices.project_examples ?? [];
+const publicPoints = prices.public_price_points ?? [];
+const cadPoints = publicPoints.filter((p) => p.currency === 'CAD');
+const usdPoints = publicPoints.filter((p) => p.currency !== 'CAD');
+
+const title = 'ICF vs poured concrete foundations in Ontario (2026) | GTA ICF';
+const description = 'What an ICF wall costs per square foot in Ontario against a poured and insulated wall, what moves the price, what other builders publish, and a calculator.';
+
+const rows = [
+  { q: 'What the wall is', icf: 'Reinforced concrete core, 150 mm or more, between two layers of EPS foam that stay in place', poured: 'Reinforced concrete, typically 200 mm, in removable plywood or aluminum forms; bare when stripped' },
+  { q: 'Insulation', icf: 'Continuous foam on both faces from the pour; SB-12 deems an ICF wall with R10 each side to comply with its wall values', poured: 'Added later: framing, batts or rigid foam, and a vapour barrier inside to reach SB-12\'s RSI 3.52 (about R-20) basement value' },
+  { q: 'Interior finish', icf: 'Drywall screws to the plastic web flanges every 8 inches; no furring', poured: 'Stud wall or strapping inside the insulation before drywall' },
+  { q: 'Waterproofing and drainage', icf: 'Required, the same as any foundation: membrane on the foam, weeping tile and a drainage layer at the footing', poured: 'Required: dampproofing or membrane on the concrete, weeping tile at the footing' },
+  { q: 'Code path', icf: 'Part 9, Subsection 9.15.4, for houses up to 2 storeys and 3 m floor-to-floor; Part 4 engineering beyond that', poured: 'Part 9, Section 9.15, with the same limits; Part 4 beyond them' },
+  { q: 'Inspections', icf: 'Footing forms and reinforcing before the pour; foundation before backfill', poured: 'The same stages, the same inspectors' },
+  { q: 'Winter', icf: 'Poured year-round; the foam insulates the curing concrete, the top of the wall and the footing still need cover', poured: 'Poured year-round with heated enclosures or insulated blankets on a bare wall' },
+  { q: 'Wall price, illustrative', icf: `${formatCadPerSqft(foundation.low)} to ${formatCadPerSqft(foundation.high)} per sq ft of wall installed (our table)`, poured: '$15 to $25 per sq ft bare, $28 to $38 once insulated to the 2024 Code, per one Ontario contractor\'s published figures' },
+];
+
+const drivers = [
+  { title: 'Wall area, not floor area', body: 'ICF is priced per square foot of wall: perimeter times height. A 40 by 30 ft bungalow has 140 ft of perimeter; at 8 ft high that is 1,120 sq ft of wall, at 9 ft it is 1,260. Openings are not deducted, because the buck and the lintel cost more than the concrete they replace.', src: { name: 'BuildersOntario, worked example', url: 'https://buildersontario.com/icf-foundation-cost-2/' } },
+  { title: 'Core thickness and steel', body: 'The Code sets a 150 mm minimum core for an ICF foundation wall, steps up to 200 mm as the height of backfill grows, and never lets the core below be thinner than the wall above. More concrete and more reinforcing is the first thing that moves the price.', src: { name: '2024 Building Code Compendium, Vol. 1, 9.15.4.2 and Table 9.15.4.2.-A', url: 'https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf' } },
+  { title: 'Ground and water', body: 'Clay till holds a cut but drains slowly; the sand and gravel of the old lakeshore runs and may need shoring; shale near the surface in Oakville\'s creek valleys means rock excavation. Excavation, shoring and dewatering sit outside the wall figure, and they differ street by street.', src: { name: 'Ontario Geological Survey, MRD 128-REV', url: 'https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json' } },
+  { title: 'Openings and bucks', body: 'Every window and door is a buck set before the pour and a reinforced lintel above it. Walk-out basements with large openings carry more bucks and more lintel steel per foot of wall than a plain box, and the Code asks for lintels over any opening wider than 900 mm in a loadbearing wall.', src: { name: '2024 Building Code Compendium, Vol. 1, 9.20.17.4', url: 'https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf' } },
+  { title: 'Access and the pump', body: 'ICF concrete is pumped, so the truck and the boom have to reach the wall. A rear-yard addition behind a narrow side yard costs more per foot than a house on an open lot. The pump truck is listed separately in the quote.', src: null },
+  { title: 'Season', body: 'We pour year-round. In cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. One Ontario contractor publishes a 20 to 30 percent premium on concrete in shoulder-season pours.', src: { name: 'ICFpro, ICF foundation cost vs poured concrete', url: 'https://icfpro.ca/icf-foundation-cost-vs-poured-concrete-ontario/' } },
+  { title: 'What the figure leaves out', body: prices.excluded_note, src: null },
+];
+
+const faqs = [
+  { q: 'Why ranges instead of a price?', a: 'Because each site carries its own conditions. Two 1,200 sq ft foundations a street apart can differ by soil, water table, wall height, openings and access. The ranges are illustrative examples from our current price table; the firm price is the written quote after we have seen the drawings and the site, and that is the number you pay.' },
+  { q: 'How much more is ICF than a poured wall?', a: 'It depends on what you compare it with. One Ontario contractor puts a bare poured wall at $15 to $25 per square foot of wall and the same wall framed, insulated and vapour-sealed to the 2024 Code at $28 to $38, which makes the ICF premium $7 to $15 per square foot of wall. An Ontario builder guide puts the premium over a bare poured wall at $8,000 to $18,000 per house. Whole-house percentage figures you see quoted describe finished houses against wood frame, not wall against wall.' },
+  { q: 'What does a typical foundation come to?', a: `Wall only, at our foundation range of ${formatCadPerSqft(foundation.low)} to ${formatCadPerSqft(foundation.high)} per square foot: a 40 by 30 ft bungalow with 8 ft walls is 1,120 sq ft of wall, or ${formatCad(foundation.low * 1120)} to ${formatCad(foundation.high * 1120)}. Excavation, footings, waterproofing, weeping tile, slab and backfill are extra; one Ontario builder guide puts those site costs at $40,000 to $70,000 on top to reach a finished foundation. The calculator on this page uses the same arithmetic.` },
+  { q: 'Is the price per square foot of wall or of floor?', a: 'Wall. Perimeter multiplied by height, both faces of the form, the concrete core, the reinforcing, the bracing, the pour and the stripping of the bracing. Some marketing quotes a price per square foot of finished floor area, which is a different and smaller-looking number; we do not use it.' },
+  { q: 'Do prices change by city?', a: 'The per-square-foot ranges are the same across our area. What changes is the ground, the water and the travel: rock excavation in Oakville\'s creek valleys, a high water table near the lake, a long pump reach on a tight Toronto lot, and the municipality\'s own permit fee. The city pages describe each one, and the written quote shows all of it.' },
+  { q: 'Is engineering included?', a: 'Within the Code\'s Part 9 limits a qualified designer can draw an ICF foundation without an engineer. Beyond them, or when the reviewer asks, an engineer seals the wall design, and Toronto then requires its Assumption of Responsibility for Engineering Content form. Engineering and permit fees are listed separately in the quote so you can see them.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Technical resources', item: `${Astro.site}#resources` },
+    { '@type': 'ListItem', position: 3, name: guide.title, item: `${Astro.site}guides/${guide.slug}/` },
+  ],
+};
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'ICF vs poured concrete foundations in Ontario',
+  datePublished: '2026-09-25',
+  dateModified: prices.last_reviewed,
+  author: { '@type': 'Organization', name: biz.trading_name },
+  publisher: { '@id': `${Astro.site}#business` },
+};
+---
+
+<Base title={title} description={description} schema={[breadcrumb, faqSchema, article]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <a href="/#resources">Technical resources</a>
+    <span aria-hidden="true">/</span> <span aria-current="page">ICF vs poured</span>
+  </nav>
+
+  <div class="page guide">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">Comparison and cost guide · reviewed {prices.last_reviewed}</p>
+      <h1>ICF vs poured concrete foundations in Ontario</h1>
+      <p class="lede">Per square foot of wall, installed, in the western GTA and Niagara. The ranges here are illustrative: every site carries its own conditions, and the firm price is the written quote after a site review. This page sets the two walls side by side, shows our table and what other Ontario builders publish, lists what moves the number, and ends with a calculator.</p>
+
+      <section class="block head-block">
+        <h2>Our illustrative ranges</h2>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Wall</th><th scope="col">Typical core</th><th scope="col">Illustrative range</th></tr></thead>
+            <tbody>
+              {prices.rows.map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.core_options}</td>
+                  <td class="num">{formatCadPerSqft(r.low)} to {formatCadPerSqft(r.high)} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small note">{prices.illustrative_note} {prices.unit_basis.charAt(0).toUpperCase() + prices.unit_basis.slice(1)}.</p>
+      </section>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm compact />
+    </aside>
+
+    <div class="rest">
+      <section class="block" id="side-by-side">
+        <h2>Side by side</h2>
+        <p class="muted">Each row is worded only as far as a retrievable source supports it: the 2024 Building Code Compendium, its SB-12 energy supplement, the form manufacturers' own documents, and published Ontario price pages. Where we could not find a primary source for a figure, the row describes the mechanism instead.</p>
+        <div class="table-wrap">
+          <table class="table compare3">
+            <thead><tr><th scope="col">Question</th><th scope="col">ICF wall</th><th scope="col">Poured wall</th></tr></thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr><td><strong>{r.q}</strong></td><td>{r.icf}</td><td>{r.poured}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">Sources: <a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf" rel="noopener" target="_blank">2024 Building Code Compendium, Volume 1 (9.13, 9.14, 9.15.4)</a> · <a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf" rel="noopener" target="_blank">Volume 2, SB-12 Table 3.1.1.2.A and Sentences 3.1.1.2.(5) and (6)</a> · <a href="https://www.nudura.com/resource/download/nudura_10_part_specification.pdf" rel="noopener" target="_blank">manufacturer specification (web spacing)</a> · <a href="https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf" rel="noopener" target="_blank">Concrete Ontario, cold weather concreting</a> · <a href="https://icfpro.ca/icf-foundation-cost-vs-poured-concrete-ontario/" rel="noopener" target="_blank">ICFpro, ICF foundation cost vs poured concrete (poured-wall figures)</a></p>
+      </section>
+
+      <section class="block" id="premium">
+        <h2>What the ICF premium actually is</h2>
+        <div class="prose">
+          <p>The honest comparison is not ICF against a bare poured wall. A bare wall is not a finished basement: SB-12 asks for a nominal RSI 3.52, about R-20, of continuous insulation on a basement wall in its Zone 1 package A1, which means framing or strapping, insulation and a vapour barrier before drywall. An ICF wall with R10 of foam on each face of the concrete is deemed to comply with the same table as poured. So the fair pair is a poured wall plus the interior insulation package against an ICF wall with nothing added.</p>
+          <p>{prices.poured_comparison_note}</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf" rel="noopener" target="_blank">2024 Building Code Compendium, Volume 2, SB-12</a> · <a href="https://icfpro.ca/icf-foundation-cost-vs-poured-concrete-ontario/" rel="noopener" target="_blank">ICFpro</a> · <a href="https://buildersontario.com/icf-foundation-cost-2/" rel="noopener" target="_blank">BuildersOntario</a></p>
+      </section>
+
+      <section class="block" id="published">
+        <h2>What other Ontario builders publish</h2>
+        <p class="muted">Public figures retrieved {prices.last_reviewed}, so you can see where our ranges sit. Contractor and builder pages are the better evidence; manufacturer and association pages are listed for completeness. US manufacturer figures are shown in a separate list and were not used to set our bands.</p>
+        <div class="table-wrap">
+          <table class="table compare">
+            <thead><tr><th scope="col">Source</th><th scope="col">Published figure</th></tr></thead>
+            <tbody>
+              {cadPoints.map((p) => (
+                <tr>
+                  <td><a href={p.url} rel="noopener" target="_blank">{p.source}</a><br /><span class="muted small">{p.quality}, {p.currency}</span></td>
+                  <td>{p.figure}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {usdPoints.length > 0 && (
+          <details class="usd">
+            <summary class="small">US manufacturer figures, for context only ({usdPoints.length})</summary>
+            <ul class="small muted">
+              {usdPoints.map((p) => <li><a href={p.url} rel="noopener" target="_blank">{p.source}</a>: {p.figure}</li>)}
+            </ul>
+          </details>
+        )}
+        <p class="muted small note">Our foundation range of {formatCadPerSqft(foundation.low)} to {formatCadPerSqft(foundation.high)} spans the three Ontario contractor and builder bands. The written quote states exactly what the per-square-foot price includes.</p>
+      </section>
+
+      <section class="block" id="drivers">
+        <h2>What moves the price</h2>
+        <dl class="drivers">
+          {drivers.map((d) => (
+            <div>
+              <dt>{d.title}</dt>
+              <dd>
+                {d.body}
+                {d.src && <p class="sources">Source: <a href={d.src.url} rel="noopener" target="_blank">{d.src.name}</a></p>}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section class="block" id="examples">
+        <h2>Worked examples</h2>
+        <p class="muted">Wall only, from our foundation range. Site costs sit on top.</p>
+        <ul class="examples num">
+          {examples.map((e) => (
+            <li><strong>{e.label}:</strong> {e.wall_area_calc}, {formatCad(e.low)} to {formatCad(e.high)}<br /><span class="small muted">{e.basis}</span></li>
+          ))}
+        </ul>
+        <p class="muted small">Illustrative, before excavation, footings, waterproofing, drainage, slab, backfill, engineering and permit fees.</p>
+      </section>
+
+      <Estimator heading="Turn your perimeter and height into a range" />
+
+      <Faq items={faqs} heading="Cost questions" />
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          <li><a href="/foundations-and-basements/">ICF foundations and basements: what we build and how it is inspected</a></li>
+          <li><a href="/full-height-walls/">Full-height ICF walls, additions and garages</a></li>
+          {oakville && <li><a href="/locations/oakville/">Building in Oakville: what the Town asks for, its 2026 fees, and what is under each neighbourhood</a></li>}
+          <li><a href="/#quote">Get a free quote</a></li>
+        </ul>
+      </section>
+
+      <section class="block sources-block">
+        <h2>Sources</h2>
+        <ul class="sources source-list">
+          {publicPoints.map((p) => <li><a href={p.url} rel="noopener" target="_blank">{p.source}</a>, retrieved {p.retrieved_at}</li>)}
+          <li><a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf" rel="noopener" target="_blank">Ministry of Municipal Affairs and Housing, 2024 Building Code Compendium, Volume 1 (digital copy; not an official copy of the Code)</a>, retrieved {prices.last_reviewed}</li>
+          <li><a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf" rel="noopener" target="_blank">2024 Building Code Compendium, Volume 2, Supplementary Standard SB-12</a>, retrieved {prices.last_reviewed}</li>
+          <li><a href="https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf" rel="noopener" target="_blank">Concrete Ontario, Cold Weather Concreting (CSA A23.1:24 tables reproduced with permission)</a>, retrieved {prices.last_reviewed}</li>
+          <li><a href="https://www.nudura.com/resource/download/nudura_10_part_specification.pdf" rel="noopener" target="_blank">Nudura 10-part specification (form geometry)</a>, retrieved {prices.last_reviewed}</li>
+          <li><a href="https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json" rel="noopener" target="_blank">Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV</a>, retrieved {prices.last_reviewed}</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); display: flex; gap: var(--s2); flex-wrap: wrap; }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .guide { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .guide { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s3) var(--s4); max-width: 18ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: var(--read); }
+  .head-block { margin-top: var(--s8); max-width: var(--read); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s8); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+  .table-wrap { margin-top: var(--s4); }
+  .note { margin-top: var(--s4); max-width: 40rem; }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+  .table a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+
+  /* Two- and three-column comparison tables stack on phones. */
+  @media (max-width: 40rem) {
+    .compare thead, .compare3 thead { display: none; }
+    .compare tr, .compare3 tr { display: block; padding-block: var(--s3); border-bottom: 1px solid var(--border); }
+    .compare td, .compare3 td { display: block; border: 0; padding: 0; }
+    .compare td + td { margin-top: var(--s1); color: var(--text); }
+    .compare3 td + td { margin-top: var(--s1); padding-left: var(--s4); border-left: 2px solid var(--border); }
+    .compare3 td:nth-child(2)::before { content: 'ICF: '; font-weight: 600; color: var(--text); }
+    .compare3 td:nth-child(3)::before { content: 'Poured: '; font-weight: 600; color: var(--text); }
+  }
+
+  .usd { margin-top: var(--s4); max-width: 40rem; }
+  .usd summary { cursor: pointer; color: var(--text); }
+  .usd ul { margin: var(--s2) 0 0; padding-left: 1.25rem; display: grid; gap: var(--s2); }
+  .usd a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+
+  .drivers { display: grid; gap: var(--s2); border-top: 1px solid var(--border-strong); }
+  .drivers div { padding-block: var(--s4); border-bottom: 1px solid var(--border); }
+  .drivers dt { font-family: var(--display); font-weight: 700; font-size: var(--text-lg); letter-spacing: -0.01em; color: var(--ink); }
+  .drivers dd { margin: var(--s1) 0 0; color: var(--text-muted); max-width: 40rem; }
+  .drivers dd p { margin-top: var(--s1); }
+
+  .examples { list-style: none; padding: 0; margin-top: var(--s4); display: grid; gap: var(--s3); color: var(--text-muted); max-width: 40rem; }
+  .examples strong { color: var(--text); }
+  .examples + p { margin-top: var(--s3); }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
+  .source-list { list-style: none; padding: 0; margin-top: var(--s3); display: grid; gap: var(--s2); }
+  .source-list a { display: inline-block; padding-block: var(--s1); }
+</style>

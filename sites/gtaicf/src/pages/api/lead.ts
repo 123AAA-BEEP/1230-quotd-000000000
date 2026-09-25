@@ -112,12 +112,13 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
     const parsed = obj(f.estimate ? JSON.parse(f.estimate) : null);
     if (parsed) {
       const num = (v: unknown) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
+      const ROWS = new Set(['foundation', 'above_grade', 'addition']);
       estimate = {
         application: APPLICATIONS.has(String(parsed.application)) ? String(parsed.application) : null,
-        count: num(parsed.count),
-        deck_length_ft: num(parsed.deck_length_ft),
-        deck_width_ft: num(parsed.deck_width_ft),
-        attached: typeof parsed.attached === 'boolean' ? parsed.attached : null,
+        row: ROWS.has(String(parsed.row)) ? String(parsed.row) : null,
+        wall_area_sqft: num(parsed.wall_area_sqft),
+        perimeter_ft: num(parsed.perimeter_ft),
+        height_ft: num(parsed.height_ft),
         estimate_low: num(parsed.estimate_low),
         estimate_high: num(parsed.estimate_high),
         summary: clean(parsed.summary).slice(0, 300) || null,
