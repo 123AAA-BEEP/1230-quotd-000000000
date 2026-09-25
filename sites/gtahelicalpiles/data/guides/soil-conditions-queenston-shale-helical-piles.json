@@ -1,0 +1,533 @@
+{
+  "slug": "soil-conditions-queenston-shale-helical-piles",
+  "title": "Soil and shale under the western GTA | GTA Helical Piles",
+  "description": "What the Ontario Geological Survey maps show under Toronto, Peel, Halton, Hamilton, Guelph and Niagara, and what each soil and rock unit means for a pile.",
+  "h1": "Shale, clay and till: what is under your deck",
+  "kicker": "Geology guide",
+  "lede": "For homeowners and deck builders from Toronto to St. Catharines who want to know what a helical pile will meet under their yard. We queried the Ontario Geological Survey's surface and bedrock map services at sixteen points across our area and explain each recurring unit in plain language: what it is, how a pile behaves in it, and why one street's engineering does not carry to the next.",
+  "sections": [
+    {
+      "id": "how-we-read-the-ground",
+      "heading": "How we read the ground: two provincial maps",
+      "paragraphs": [
+        "Two Ontario Geological Survey datasets describe the ground under every town we serve. Surficial Geology of Southern Ontario (MRD 128-REV) maps the loose material left by glaciers, lakes and rivers, compiled from 125 maps mostly at 1:50,000. Paleozoic Geology of Southern Ontario (MRD 219) maps the bedrock beneath it at the same scale. Both are public ArcGIS feature services: one coordinate returns the unit at that spot.",
+        "The table lists the sixteen points we queried on 2026-09-25. Each row is one coordinate, not a municipality; the unit can change within a few hundred metres near creeks and the old shoreline. A 1:50,000 map cannot show a buried channel or the fill beside a foundation, and neither dataset gives depth to bedrock. Treat the table as a starting hypothesis, not the engineer's determination."
+      ],
+      "table": {
+        "caption": "OGS map units returned at sixteen query points, retrieved 2026-09-25 (MRD 128-REV layer 3 for surface, MRD 219 layer 4 for bedrock)",
+        "columns": [
+          "Municipality",
+          "Area (query point)",
+          "Surface unit",
+          "Bedrock formation"
+        ],
+        "rows": [
+          [
+            "Toronto",
+            "Downtown west, Trinity Bellwoods (43.647, -79.414)",
+            "9c: coarse glaciolacustrine sand and gravel, foreshore and basinal",
+            "Georgian Bay Formation (Ordovician shale and limestone)"
+          ],
+          [
+            "Toronto",
+            "North York, Yonge and Sheppard (43.7615, -79.411)",
+            "5b: stone-poor sandy silt to silty sand till",
+            "Georgian Bay Formation"
+          ],
+          [
+            "Mississauga",
+            "City Centre, Square One (43.589, -79.6441)",
+            "5d: clay to silt-textured till",
+            "Georgian Bay Formation"
+          ],
+          [
+            "Mississauga",
+            "Port Credit lakeshore (43.551, -79.586)",
+            "19: modern alluvium, clay to gravel, may contain organic remains",
+            "Georgian Bay Formation"
+          ],
+          [
+            "Brampton",
+            "Downtown, Queen and Main (43.685, -79.7597)",
+            "5d: clay to silt-textured till",
+            "Queenston Formation (Ordovician red shale)"
+          ],
+          [
+            "Caledon",
+            "Bolton (43.876, -79.736)",
+            "5d: clay to silt-textured till",
+            "Georgian Bay Formation"
+          ],
+          [
+            "Caledon",
+            "Palgrave, Oak Ridges Moraine (43.95, -79.838)",
+            "6: ice-contact stratified sand and gravel, minor silt, clay and till",
+            "Georgian Bay Formation"
+          ],
+          [
+            "Halton Hills",
+            "Georgetown, Main Street (43.6474, -79.9264)",
+            "7b: glaciofluvial gravelly deposits",
+            "Queenston Formation"
+          ],
+          [
+            "Milton",
+            "Old Milton, Main Street (43.5183, -79.8774)",
+            "8b: fine glaciolacustrine silt and clay, interbedded with pebbly flow till",
+            "Queenston Formation"
+          ],
+          [
+            "Burlington",
+            "Downtown, Brant Street (43.3255, -79.799)",
+            "9: coarse glaciolacustrine sand and gravel",
+            "Queenston Formation"
+          ],
+          [
+            "Hamilton",
+            "Lower city, James Street North (43.26, -79.867)",
+            "9: coarse glaciolacustrine sand and gravel",
+            "Queenston Formation"
+          ],
+          [
+            "Hamilton",
+            "Mountain, Upper James and Mohawk (43.227, -79.879)",
+            "8a: fine glaciolacustrine silt and clay, massive to laminated",
+            "Lockport Formation (Silurian dolostone)"
+          ],
+          [
+            "Hamilton",
+            "Ancaster village (43.2182, -79.9873)",
+            "9: coarse glaciolacustrine sand and gravel",
+            "Lockport Formation"
+          ],
+          [
+            "Guelph",
+            "Downtown, Wyndham Street (43.5448, -80.2482)",
+            "7b: glaciofluvial gravelly deposits",
+            "Guelph Formation (Silurian dolostone)"
+          ],
+          [
+            "Grimsby",
+            "Downtown, Main Street West (43.193, -79.562)",
+            "12: older alluvium, clay to gravel, may contain organic remains",
+            "Queenston Formation"
+          ],
+          [
+            "St. Catharines",
+            "Downtown, St. Paul Street (43.1594, -79.2469)",
+            "9b: coarse glaciolacustrine sand and gravel, littoral",
+            "Queenston Formation"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "name": "Ontario Geological Survey, Surficial Geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 point query; example URL at the Mississauga City Centre point)",
+          "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.6441,43.5890&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 point query; example URL at the Mississauga City Centre point)",
+          "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.6441,43.5890&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "OGS MRD 128-REV feature service item (compiled from 125 maps, primarily 1:50,000)",
+          "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Ontario GeoHub dataset record for MRD 219 (based on 1:50,000 scale maps)",
+          "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "halton-till-and-the-peel-clay-plain",
+      "heading": "Halton Till and the Peel clay plain",
+      "paragraphs": [
+        "The most common answer inland is unit 5d, clay to silt-textured till derived from lake sediment or shale. Regional reports call it Halton Till. A Peel Region geotechnical desktop study describes it as dense, sandy to silty clay till, clast poor and reddish brown, typically 3 to 6 m thick but locally 15 to 30 m. Brampton, Bolton, Mississauga City Centre and inland Oakville sit on it.",
+        "Over parts of Peel and Halton a skin of lake clay lies on the till. The Peel Plain is a level to undulating tract of clayey soil covering about 800 square kilometres of York, Peel and Halton, the bed of glacial Lake Peel, which pooled between the ice front, the Niagara Escarpment and the Trafalgar Moraine. Old Milton returned unit 8b, silt and clay with flow till; Hamilton Mountain unit 8a.",
+        "For a pile, dense clay till is dependable ground: torque climbs steadily and the pile reaches its design value without surprises. Installation torque is recorded on every pile and correlated to capacity using the torque tables in the pile's CCMC evaluation report. Two cautions from OGS Report 257: the till was preconsolidated by glacial overriding, so the weathered top metre can read low, and the lake silts above it may be frost-susceptible."
+      ],
+      "sources": [
+        {
+          "name": "Region of Peel, Geotechnical Desktop Analysis, New Watermain to Service Downtown Brampton (Peel Plain, glacial Lake Peel, Halton Till thickness)",
+          "url": "https://peelregion.ca/sites/default/files/2024-08/g-geotechnical-desktop-analysis.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Ontario Geological Survey Report 257, Quaternary Geology, Brampton Area (preconsolidation; frost-susceptible lake sediments)",
+          "url": "https://prd-0420-geoontario-0000-blob-cge0eud7azhvfsf7.z01.azurefd.net/lrc-geology-documents/publication/R257/R257.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Trafalgar Moraine (composed of Halton Till sediment, rich in silt and clay)",
+          "url": "https://en.wikipedia.org/wiki/Trafalgar_Moraine",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "OGS MRD 128-REV unit descriptions returned by the feature service (unit 8b at Old Milton)",
+          "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.8774,43.5183&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "CCMC evaluation report 13675-R (torque to allowable load relationship)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "lake-iroquois-sands-and-moraine-gravels",
+      "heading": "Lake Iroquois sands, outwash gravels and the Oak Ridges Moraine",
+      "paragraphs": [
+        "When the ice retreated, an enlarged Lake Ontario called glacial Lake Iroquois stood roughly 30 to 45 m above today's lake. Its waves cut a shorecliff and dropped bars of sand and gravel along a strip 3 to 5 km wide inland of the present shore; in Toronto, Davenport Road follows it. Downtown Toronto, Burlington, Hamilton lower city, Ancaster and St. Catharines all returned unit 9, coarse glaciolacustrine sand and gravel.",
+        "Two other granular units appear north and west. Georgetown and downtown Guelph returned unit 7b, gravelly glaciofluvial river and delta deposits. Palgrave in Caledon returned unit 6, ice-contact stratified sand and gravel: the Oak Ridges Moraine, primarily sand and gravel rather than clay till. North York returned unit 5b, a sandy silt till closer to these than to Halton Till.",
+        "Granular ground changes how we prove a pile. CCMC report 13675-R states that where the pile is installed in granular material exceeding 200 mm in diameter the relationship between torque and allowable load is not as predictable, and the allowable loads have to be confirmed by on-site load tests under a with a licence geotechnical engineer. Torque can rise in a gravel bar and fall in loose sand beneath."
+      ],
+      "sources": [
+        {
+          "name": "Ontario Geological Survey Report 257 (Iroquois Plain 3 to 5 km wide, waters about 45 m above Lake Ontario)",
+          "url": "https://prd-0420-geoontario-0000-blob-cge0eud7azhvfsf7.z01.azurefd.net/lrc-geology-documents/publication/R257/R257.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Glacial Lake Iroquois (level about 30 m above present Lake Ontario)",
+          "url": "https://en.wikipedia.org/wiki/Glacial_Lake_Iroquois",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Geography of Toronto (Davenport Road follows the Lake Iroquois shoreline)",
+          "url": "https://en.wikipedia.org/wiki/Geography_of_Toronto",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Geography of Hamilton, Ontario (Lake Iroquois sand and clay in the lower city; tills in the upper city)",
+          "url": "https://en.wikipedia.org/wiki/Hamilton_Mountain",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Trafalgar Moraine (Oak Ridges Moraine is primarily sand and gravel)",
+          "url": "https://en.wikipedia.org/wiki/Trafalgar_Moraine",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Oak Ridges Moraine (between Caledon and Rice Lake)",
+          "url": "https://en.wikipedia.org/wiki/Oak_Ridges_Moraine",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "CCMC evaluation report 13675-R (load tests where granular material exceeds 200 mm)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "queenston-and-georgian-bay-shale",
+      "heading": "Queenston and Georgian Bay shale: the bedrock under the lake plain",
+      "paragraphs": [
+        "Below the till and beach sand, from Toronto to St. Catharines, the bedrock is Ordovician shale. MRD 219 describes the Georgian Bay Formation as interbedded grey-green to dark grey shale with calcareous siltstone to limestone, and the Queenston Formation as red shale and siltstone with minor green shale and limestone interbeds. Toronto, Mississauga and Bolton are on Georgian Bay; Brampton, Milton, Georgetown, Burlington, Hamilton lower city, Grimsby and St. Catharines on Queenston.",
+        "Shale is usually buried, but not always. OGS mapping shows bedrock at or near surface in the Sixteen Mile Creek and Bronte Creek valleys in Oakville, a Queenston outcrop is exposed at Bronte Creek just south of the QEW, and the Lake Iroquois shorecliff west of Clarkson in Mississauga is cut in shale. Report 257 says bedrock is commonly shallow below the Trafalgar Moraine. Creek-side lots and the old shorecliff are where we expect rock.",
+        "A pile that reaches hard shale before its design torque hits refusal: rotation without advance. Magnum's bulletin on bedrock end bearing explains that a sharp soil-to-rock transition can make the pile spin out, after which the torque correlation is no longer valid; its example specification lists the responses: record refusal, back out and re-advance with less crowd, resize to fewer or smaller helices, pre-drill a pilot hole matching the shaft, or excavate a shallow obstruction. GoliathTech relocates the pile where the layout allows. The engineer decides, from our torque record, whether the pile is accepted. Our illustrative deck range is $325 to $475 per pile installed; pre-drilling adds time, and the firm price follows the site review."
+      ],
+      "sources": [
+        {
+          "name": "OGS MRD 219 formation descriptions returned by the feature service (Queenston at the Brampton point)",
+          "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.7597,43.6850&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Queenston Formation (outcrop at Bronte Creek just south of the QEW)",
+          "url": "https://en.wikipedia.org/wiki/Queenston_Formation",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Ontario Geological Survey Report 257 (shorecliff cut in shale west of Clarkson; shallow bedrock below the Trafalgar Moraine)",
+          "url": "https://prd-0420-geoontario-0000-blob-cge0eud7azhvfsf7.z01.azurefd.net/lrc-geology-documents/publication/R257/R257.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Magnum Piering, Technical Bulletin MTB 002.0, End Bearing on Bedrock and Helical Pile Refusal",
+          "url": "http://www.magnumpiering.com/wp-content/uploads/2017/01/TB003.0-END-BEARING-ON-BEDROCK.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Magnum Piering, Example Specification for Helical Piles (obstruction and refusal procedure)",
+          "url": "https://magnumpiering.com/wp-content/uploads/2017/01/SPEC.EX-Example-Specs-for-Helical-Pile.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "GoliathTech FAQ (approaches when there is rock in the soil)",
+          "url": "https://www.goliathtechpiles.com/faq",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "GAMCON, Toronto (public deck-pile figures corroborating our illustrative range from prices.json)",
+          "url": "https://www.gamcon.ca/helical-piles-installation-cost-toronto/",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "escarpment-dolostone-hamilton-mountain-and-guelph",
+      "heading": "Escarpment dolostone: Hamilton Mountain, Ancaster and Guelph",
+      "paragraphs": [
+        "Above the Niagara Escarpment the bedrock changes. The escarpment is not a fault but the edge of a resistant cap of Silurian dolostone, the Lockport Group, on weaker shale that erodes from beneath it; the soft Clinton Group, including the Rochester Shale, undercuts the falls at Niagara, with Queenston shale below. Our Hamilton Mountain and Ancaster points returned Lockport Formation: thick-bedded limestone to dolostone, cherty dolostone and argillaceous dolostone with shale beds.",
+        "Guelph sits further up the same stack: its downtown point returned the Guelph Formation, tan to brown crystalline dolostone named for the city, under gravelly glaciofluvial deposits. Dolostone is harder than shale and the contact can be abrupt. Magnum's bulletin says end bearing on hard rock is common, usually on a single helix, but torque only verifies capacity where the transition is gradual or weathered; otherwise the engineer relies on adjacent logs or a load test. Guelph's deck page asks for the type, depth and size of piers."
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia, Niagara Escarpment (dolostone caprock over weaker shale; Lockport Formation; not a fault)",
+          "url": "https://en.wikipedia.org/wiki/Niagara_Escarpment",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Clinton Group / Rochester Shale (soft Clinton Group erodes from under the Lockport dolomites)",
+          "url": "https://en.wikipedia.org/wiki/Rochester_Shale",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Lockport Group (Gasport, Goat Island, Eramosa and Guelph formations)",
+          "url": "https://en.wikipedia.org/wiki/Lockport_Group",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Wikipedia, Guelph Formation (named for Guelph, Ontario; primary lithology dolomite)",
+          "url": "https://en.wikipedia.org/wiki/Guelph_Formation",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "OGS MRD 219 formation descriptions returned by the feature service (Lockport at the Ancaster point)",
+          "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.9873,43.2182&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Magnum Piering, Technical Bulletin MTB 002.0, End Bearing on Bedrock and Helical Pile Refusal",
+          "url": "http://www.magnumpiering.com/wp-content/uploads/2017/01/TB003.0-END-BEARING-ON-BEDROCK.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "City of Guelph, Decks and porches (permit drawing requirements)",
+          "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/decks-and-porches/",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "creek-valleys-and-alluvium",
+      "heading": "Creek valleys and modern alluvium",
+      "paragraphs": [
+        "Every creek that crosses the lake plain, from the Humber and Etobicoke Creek to the Credit, Sixteen Mile, Bronte and Forty Mile creeks, has laid down its own floor. The map calls this unit 19, modern alluvium, and unit 12, older alluvium: clay, silt, sand and gravel that may contain organic remains. Port Credit returned unit 19 and downtown Grimsby unit 12.",
+        "Alluvium is the least predictable ground on this page: loose sand over soft silt over gravel over shale within a few metres, and organic layers that carry little load. Report 257 warns that fine lake sands and silts may yield troublesome quantities of water during excavation and that bank stability is likely to be a problem near valleys. For a pile this usually means more extension sections."
+      ],
+      "sources": [
+        {
+          "name": "OGS MRD 128-REV unit descriptions returned by the feature service (unit 19 at Port Credit)",
+          "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.5860,43.5510&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "OGS MRD 128-REV unit descriptions returned by the feature service (unit 12 at Grimsby)",
+          "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.5620,43.1930&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Ontario Geological Survey Report 257 (engineering notes: water in fine lake sediments, bank stability)",
+          "url": "https://prd-0420-geoontario-0000-blob-cge0eud7azhvfsf7.z01.azurefd.net/lrc-geology-documents/publication/R257/R257.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "CCMC evaluation report 13675-R (extensions added to the shaft until the specified torque is reached)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "why-the-engineers-determination-does-not-travel",
+      "heading": "Why the engineer's determination does not travel between neighbourhoods",
+      "paragraphs": [
+        "Oakville's deck permit drawings say it directly: for steel helical piers or piles, a professional engineer must determine the depth, spacing and size based on soil condition, with the manufacturer's information and CCMC approval submitted with the application. Hamilton's deck and porch checklist asks for helical pier engineer-approved specifications and the Minister's Ruling or BMEC approval. Halton Hills requires drawings to show the depth, size, spacing and type of foundations.",
+        "The maps show why. In Oakville alone the surface flips from clay till to beach sand at the Lake Iroquois shoreline and to bare shale in the creek valleys, and the bedrock changes from Queenston to Georgian Bay across town. The Peel Region study for downtown Brampton found both formations in boreholes although the map shows only Queenston. Every pile carries its own torque log, and the engineer's sealed certificate of conformity rests on it."
+      ],
+      "sources": [
+        {
+          "name": "Town of Oakville, deck building permit sample drawings (PDF)",
+          "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "City of Hamilton, building permit checklist, deck and porch (PDF)",
+          "url": "https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Town of Halton Hills, Residential Deck Guide (PDF)",
+          "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Region of Peel, Geotechnical Desktop Analysis, downtown Brampton (both Queenston and Georgian Bay rock in borehole logs)",
+          "url": "https://peelregion.ca/sites/default/files/2024-08/g-geotechnical-desktop-analysis.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "CCMC Technical Bulletin, Auger-Installed Steel Pile Foundations (signed and sealed certificate of conformity)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-technical-bulletin-auger-installed-steel-pile-foundations",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "frost-depth-and-adfreeze",
+      "heading": "Frost depth and adfreeze in these soils",
+      "paragraphs": [
+        "The design figure we work to is 1.2 m, the minimum pier depth on Halton municipalities' deck drawings and the design frost depth in geotechnical reports filed with the Town of Oakville. Oakville's drawings print a minimum of 4 ft below grade on undisturbed soil, Halton Hills prints 1,200 mm, and two geotechnical reports on oakville.ca use 1.2 m. Hamilton's checklist asks only that pier depth be shown.",
+        "Frost acts on a pile in two ways, and the soil decides which matters. Heave is the soil expanding as pore water freezes; it needs water and a frost-susceptible soil, so a silty lake deposit over a shallow water table can heave a great deal while a well-drained gravel bar barely moves. Adfreeze is ice bonding to the shaft. In one winter comparison on stiff clay, a drilled concrete pier heaved about 36 mm, a helical pile about 5 mm.",
+        "The till and lake-clay areas of Peel, Halton and the Hamilton Mountain are where frost matters most, the Iroquois sands and escarpment gravels least. In both, the pile is screwed below the frost line and anchored by the helix, so resistance below the frost zone is designed to exceed the adfreeze pull. Frost movement is designed against, not eliminated. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost."
+      ],
+      "sources": [
+        {
+          "name": "Town of Oakville, deck building permit sample drawings (minimum 4 ft below grade on undisturbed soil)",
+          "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Town of Halton Hills, Residential Deck Guide (pier minimum 1,200 mm below grade)",
+          "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "B.I.G. Consulting, preliminary geotechnical investigation, 581-587 Argus Road, Oakville (design frost penetration 1.2 m)",
+          "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Geotechnical report filed with the Town of Oakville, May 2024 (frost penetration 1.2 m)",
+          "url": "https://www.oakville.ca/getmedia/7741c70f-7cd6-445d-a707-c8a79c458d5c/da-131212-GeotechReport-S1.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "City of Hamilton, building permit checklist, deck and porch (show depth and size of piers)",
+          "url": "https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Hubbell / CHANCE, Using Helical Piles to Resist Frost Heave (adfreeze definition; 36 mm versus 5 mm comparison)",
+          "url": "https://blog.hubbell.com/en/chancefoundationsolutions/using-helical-piles-to-resist-frost-heave",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "PileConnect, Frost Adfreeze on Helical Piles (heave versus adfreeze; silty soil over a shallow water table versus well-drained granular soil)",
+          "url": "https://www.pileconnect.com/articles/frost-adfreeze-on-helical-piles",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "CCMC evaluation report 13675-R (screwed to below the frost line)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Techno Metal Post FAQ (winter installation: pre-drill with an auger or thaw the ground)",
+          "url": "https://www.technometalpost.com/en-CA/faq/",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "what-you-can-find-out-before-calling",
+      "heading": "What you can find out before you call",
+      "paragraphs": [
+        "Three things are free and take an evening. First, your municipality's deck drawings: Oakville, Milton and Halton Hills publish sample drawings showing the pier depth, the footing table and the helical pile note, so you can see what the building department will ask for. Second, the OGS maps: the MRD 128-REV and MRD 219 services are public, and the query URLs in our sources return the unit at any coordinate.",
+        "Third, a neighbour's dig: a fence post, pool or sewer lateral on your street tells you where the till starts, whether water came in, and whether anyone hit rock. If a development near you filed a geotechnical report, it is often on the town's website with the planning application, as the two Oakville reports we cite are; Peel Region publishes desktop studies for its own works."
+      ],
+      "list": [
+        "Town deck drawings: pier depth, footing sizes and the helical-pile note.",
+        "OGS maps: paste your coordinate into the MRD 128-REV and MRD 219 query URLs.",
+        "A neighbour's dig: depth to dense till, water, rock.",
+        "Filed geotechnical reports: search your town's planning applications."
+      ],
+      "sources": [
+        {
+          "name": "Town of Oakville, deck building permit sample drawings (PDF)",
+          "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Town of Milton, deck permit sample drawings (PDF)",
+          "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Town of Halton Hills, Residential Deck Guide (PDF)",
+          "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Ontario GeoHub dataset record for MRD 219",
+          "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "OGS MRD 128-REV feature service item",
+          "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "B.I.G. Consulting, preliminary geotechnical investigation filed with the Town of Oakville",
+          "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Region of Peel, Geotechnical Desktop Analysis, downtown Brampton",
+          "url": "https://peelregion.ca/sites/default/files/2024-08/g-geotechnical-desktop-analysis.pdf",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the ground under my house the same as the map says?",
+      "a": "Usually, but the map is drawn at 1:50,000 and cannot show fill, a buried ravine or the disturbed strip beside a foundation. We use the OGS unit as the starting hypothesis and confirm it with the torque record as each pile goes in. The engineer's determination is for your lot."
+    },
+    {
+      "q": "What happens if the pile hits shale before it reaches its torque?",
+      "a": "Rotation stops advancing, which the industry calls refusal. We record it in the log and the engineer decides: accept the pile on adjacent logs or a load test, back it out and re-advance, resize the helices, pre-drill a pilot hole the width of the shaft, or move the pile."
+    },
+    {
+      "q": "Why might a job in gravel need a load test?",
+      "a": "CCMC report 13675-R states that where the pile is installed in granular material larger than 200 mm the torque-to-load relationship is not as predictable, and allowable loads must then be confirmed by on-site load tests under a with a licence geotechnical engineer. Cobbly gravel on the Lake Iroquois shoreline is where that applies."
+    },
+    {
+      "q": "Does clay till hold a pile well?",
+      "a": "Dense Halton Till is dependable ground: torque builds steadily and the pile reaches its design value without surprises. The top metre can be weathered and softer, and the lake silts that sometimes cover it are frost-susceptible, so the pile bears in dense till below the design frost depth."
+    },
+    {
+      "q": "How deep is frost here?",
+      "a": "We design to 1.2 m, the minimum pier depth on Halton municipalities' deck drawings and the design frost depth in geotechnical reports filed with the Town of Oakville. Hamilton's checklist asks that pier depth be shown without printing a figure, so we carry 1.2 m there."
+    },
+    {
+      "q": "Do you serve Toronto and Niagara?",
+      "a": "Toronto and the Niagara municipalities from Grimsby to St. Catharines appear here because the same shale and Lake Iroquois deposits continue under them. Ask when you request a quote and we will confirm coverage and any minimum charge in the written quote."
+    }
+  ],
+  "related": [
+    {
+      "href": "/guides/helical-pile-cost-per-pile-ontario/",
+      "label": "What a helical pile costs in Ontario, and why shale and gravel move the price"
+    },
+    {
+      "href": "/locations/oakville/",
+      "label": "Building in Oakville: what is under each neighbourhood and what the Town asks for"
+    }
+  ],
+  "cta": {
+    "heading": "Tell us your address",
+    "body": "We will tell you which OGS unit the map returns at your lot and quote the job after a site review. Installation torque is recorded on every pile, and the engineer's sealed certificate of conformity follows from that record."
+  },
+  "reviewed": "2026-09-25"
+}

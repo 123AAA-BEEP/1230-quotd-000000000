@@ -1,0 +1,162 @@
+{
+  "slug": "underpinning-settling-foundations-screw-piles",
+  "title": "Helical pile underpinning in Ontario | GTA Helical Piles",
+  "description": "Why foundations settle in southern Ontario, how helical pile underpinning works, what the engineer and the permit need, what it costs and when not to do it.",
+  "h1": "Underpinning a settling foundation with helical piles",
+  "kicker": "Underpinning guide",
+  "lede": "This guide is for homeowners in Toronto, Peel, Halton, Hamilton, Guelph and Niagara who have a cracking or sinking foundation, and for the engineers and contractors they bring in. It covers the signs of settlement and their common causes here, how a helical pile and bracket carry a footing, what the engineer decides, what the building department asks for, what happens on site, what it costs, and the cases where underpinning is the wrong answer.",
+  "sections": [
+    {
+      "id": "signs-of-settlement",
+      "heading": "Signs that a foundation is settling",
+      "paragraphs": [
+        "Settlement usually shows up inside before it shows up outside. The pattern engineers look for is cracking in drywall at the corners of doors and windows, stair-step cracking in exterior brick that follows the mortar joints, and floors that begin to slope toward one part of the house. Doors that bind in one season and free up in another point to movement that is still going on rather than an old crack that has stopped.",
+        "Not every crack means the foundation moved. The National Research Council's foundation digest puts it plainly: when cracks appear it is assumed the foundation moved and that this is the sole cause, and neither assumption is correct. Uniform settlement and a modest tilt do not greatly affect a structure; it is non-uniform settlement, one corner or one wall dropping more than the rest, that racks openings and opens cracks.",
+        "So the first job is to establish whether the movement is differential and whether it is still active. We mark and date cracks, set a level line and look outside for the bowl-shaped dips in walks, driveways and lawns that the NRC describes as the signature of shrinkage settlement near trees. An engineer reads that record before anyone talks about steel."
+      ],
+      "sources": [
+        { "name": "CHANCE Foundation Solutions, Residential foundation repair and remediation options", "url": "https://blog.hubbell.com/en/chancefoundationsolutions/residential-foundation-repair-remediation-options", "retrieved_at": "2026-09-25" },
+        { "name": "NRC-IRC, Canadian Building Digest CBD-148, Foundation Movements (Crawford, 1972)", "url": "https://nrc-publications.canada.ca/eng/view/ft/?id=b65498c9-e6fa-4a88-86e7-d26381ead9e7", "retrieved_at": "2026-09-25" },
+        { "name": "NRC-IRC, Canadian Building Digest CBD-84, Swelling and Shrinking Subsoils (Hamilton, 1966)", "url": "https://web.mit.edu/parmstr/Public/NRCan/CanBldgDigests/cbd084_e.html", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "causes-in-this-region",
+      "heading": "What makes foundations settle around the western Lake Ontario shore",
+      "paragraphs": [
+        "Most of our service area sits on glacial clay tills and lake sediments. The NRC's digest on shrinking and swelling subsoils notes that glacial clay tills are occasionally troublesome, and that on shrinkable clays the shallow foundation problem is almost always shrinkage settlement caused by deep drying. A dry summer pulls water out of the clay under a footing and the footing follows it down; a wet autumn puts some back, so cracks open and close with the season.",
+        "The other causes in the table act on the same mechanism: anything that changes the moisture in the clay under one part of a house, but not the rest, produces differential movement. Trees do it by drinking, bad grading and downspouts by soaking one side, an addition on a shallow footing by sitting on ground that dries and freezes differently from the ground under the basement, and fill by compressing under its own weight for years after the house is finished."
+      ],
+      "table": {
+        "caption": "Common causes of differential settlement in this region and the engineering or government source for each",
+        "columns": ["Cause", "What the source says", "Source"],
+        "rows": [
+          ["Clay shrink-swell in dry summers", "Shrinkable clays produce shrinkage settlements from deep drying; glacial clay tills are occasionally troublesome.", "NRC CBD-184 and CBD-84"],
+          ["Trees close to the house", "During drought, deep-rooted trees have caused differential movements of several inches in a single growing season; cumulative movements within one dwelling have exceeded a foot.", "NRC CBD-184 and CBD-84"],
+          ["Downspouts and lot grading", "Subsurface drainage and surface irrigation can cause marked changes in the moisture content, volume or stresses within a subsoil. Toronto lists poor lot grading or drainage among flooding causes and makes downspout disconnection mandatory.", "NRC CBD-184; City of Toronto, Basement Flooding"],
+          ["Additions on shallow footings", "Appendages to a house undergo accentuated differential movements relative to the stationary main structure. Oakville requires any footing within 4 ft of the house foundation to extend down to the level of the existing foundation.", "NRC CBD-184; Town of Oakville deck sample drawings"],
+          ["Construction on fill", "The weight of a relatively low fill can be far more significant than that of the building on it; a structure on a 3 ft sand fill over compressible clay settled more than 1.5 ft differentially. Poorly compacted fill is a listed cause of sinking shallow foundations.", "NRC CBD-184 and CBD-148; CHANCE Foundation Solutions"]
+        ]
+      },
+      "sources": [
+        { "name": "NRC-IRC, Canadian Building Digest CBD-184, Foundations on Swelling or Shrinking Subsoils (Hamilton, 1977)", "url": "https://web.mit.edu/parmstr/Public/NRCan/CanBldgDigests/cbd184_e.html", "retrieved_at": "2026-09-25" },
+        { "name": "NRC-IRC, Canadian Building Digest CBD-84, Swelling and Shrinking Subsoils (Hamilton, 1966)", "url": "https://web.mit.edu/parmstr/Public/NRCan/CanBldgDigests/cbd084_e.html", "retrieved_at": "2026-09-25" },
+        { "name": "NRC-IRC, Canadian Building Digest CBD-148, Foundation Movements (Crawford, 1972)", "url": "https://nrc-publications.canada.ca/eng/view/ft/?id=b65498c9-e6fa-4a88-86e7-d26381ead9e7", "retrieved_at": "2026-09-25" },
+        { "name": "City of Toronto, Basement Flooding", "url": "https://www.toronto.ca/services-payments/water-environment/managing-rain-melted-snow/basement-flooding/", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Oakville, deck building permit sample drawings", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "CHANCE Foundation Solutions, Residential foundation repair and remediation options", "url": "https://blog.hubbell.com/en/chancefoundationsolutions/residential-foundation-repair-remediation-options", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "how-helical-underpinning-works",
+      "heading": "How helical underpinning carries a footing",
+      "paragraphs": [
+        "A helical pile is a steel shaft with one or more helix plates welded near the tip. It is screwed into the ground beside the footing with a hydraulic torque head until it reaches the torque the engineer specified, which here means passing through the seasonal drying zone and the frost zone into soil that does not move. The pile does not use the house as a reaction, which is one reason it suits lighter houses and houses without a basement.",
+        "The bracket is what connects the pile to the house. ICC-ES acceptance criteria AC358, section 3.10, classifies brackets into four types. The two that matter for underpinning are Type A, a side-load bracket that carries loads not concentric with the shaft, and Type B, a direct-load bracket that carries loads on the shaft's axis. In the Postech evaluation report ESR-4735, the Type A underpinning bracket is a bracket, a steel tube and two threaded rods, and it transfers axial compressive load from an existing concrete foundation to the pile.",
+        "Capacity is not guessed. Installation torque is recorded on every pile and correlated to capacity using the torque tables in the pile's CCMC evaluation report; ESR-4735 states the same principle as ultimate capacity equal to a torque factor times final torque, and CCMC 13675-R as a direct relationship between applied torque and allowable load. Whether the house is then lifted toward level or held where it is, is the engineer's call. A lift closes cracks but loads the structure in reverse; stabilising stops movement without that risk."
+      ],
+      "sources": [
+        { "name": "ICC-ES AC358, Acceptance Criteria for Helical Pile Systems and Devices (June 2012 public copy), section 3.10", "url": "https://www.helicalpileworld.com/ac358%20-%20revised%20June%202012.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "ICC-ES ESR-4735, Postech Screw Pile Foundation System", "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4735.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13675-R, GoliathTech screw pile", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R", "retrieved_at": "2026-09-25" },
+        { "name": "CHANCE Foundation Solutions, Residential foundation repair and remediation options", "url": "https://blog.hubbell.com/en/chancefoundationsolutions/residential-foundation-repair-remediation-options", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "engineer-and-permit",
+      "heading": "The engineer's role and what the permit needs",
+      "paragraphs": [
+        "Underpinning is engineered work, and the building departments say so. Toronto's residential underpinning guide requires professional design and field review where the soil is clay or silt, where the underpinning exceeds 1200 mm of laterally unsupported height, or where new foundations go below an adjacent building's footings within the angle of repose. Nearly every house in our area is on clay or silt, so plan on an engineer. Toronto also wants the stages of underpinning drawn in numbered sequence and a signed Commitment to General Reviews form.",
+        "For helical piles specifically, Oakville's sample drawings state that manufacturer's information and CCMC approval must be submitted with the application, and that a professional engineer must determine the depth, spacing and size of the piles based on soil condition. Hamilton's checklist lists helical pier engineer-approved specifications and a Minister's Ruling or BMEC approval among the documents it may ask for. We have not found a helical-specific underpinning page for Halton or Hamilton; the engineer's drawings and the department's review decide the route.",
+        "After installation the engineer's work is not finished. The CCMC technical bulletin on auger-installed steel piles requires a signed and sealed certificate attesting to the conformity of the installation and the allowable loads for every project. Our per-pile torque log is what that engineer-sealed certificate of conformity rests on, and it is what the inspector wants to see before the pits are backfilled."
+      ],
+      "sources": [
+        { "name": "City of Toronto, Residential Underpinning (including basement entrances) permit guide", "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-application-guides/small-residential-project-guides/residential-underpinning-including-basement-entrances/", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Oakville, deck building permit sample drawings (helical pile note)", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "City of Hamilton, building permit checklist for decks and porches", "url": "https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC technical bulletin, Auger-installed steel pile foundations", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-technical-bulletin-auger-installed-steel-pile-foundations", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "what-happens-on-site",
+      "heading": "What happens on site",
+      "paragraphs": [
+        "The job starts with the assessment: the engineer's inspection, the crack record, and where possible a look at what the ground is doing. Sometimes a geotechnical investigation is warranted. Reports filed with the Town of Oakville use a 1.2 m design frost depth for the area, which is also the minimum pier depth on Halton municipalities' deck drawings, and the engineer uses that and the soil profile to set a target torque and a minimum depth for each pile.",
+        "On the day, we excavate a pit at each pile location to expose the footing, usually from outside, and clean the footing face so the bracket seats flush. The pile is screwed in beside the footing with a compact tracked drive unit. CCMC 13675-R describes the method: screwed to below the frost line using mechanized equipment, with sufficient downward pressure, until the specified torque is reached. Extensions are added as the ground demands; the ground sets the depth, not the drawing.",
+        "The bracket is then fitted under the footing and the threaded rods tightened so the bracket bears on the pile. If the engineer has called for a lift, the house is raised in small increments with the engineer present. Pits are backfilled and the grade restored. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. The written schedule shows what we expect for the soil on that street, not a blanket promise."
+      ],
+      "sources": [
+        { "name": "Town of Oakville, geotechnical report filed with development application DA-131212 (1.2 m frost penetration)", "url": "https://www.oakville.ca/getmedia/7741c70f-7cd6-445d-a707-c8a79c458d5c/da-131212-GeotechReport-S1.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Halton Hills, Residential Deck Guide (1200 mm pier depth)", "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13675-R, GoliathTech screw pile", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R", "retrieved_at": "2026-09-25" },
+        { "name": "ICC-ES ESR-4735, Postech Screw Pile Foundation System (underpinning bracket assembly)", "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4735.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Techno Metal Post FAQ (winter installation)", "url": "https://www.technometalpost.com/en-CA/faq/", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "cost",
+      "heading": "What underpinning costs",
+      "paragraphs": [
+        "Our illustrative range for underpinning is $950 to $1,650 and up per bracket and pile installed, in Canadian dollars. It is an illustration, not a quote: the pile count, the depth to bearing, the access to each pit and whether the engineer calls for a lift all move the number, and the firm price is the written quote after a site review. Engineering and permit fees are listed separately on that quote so you can see them.",
+        "Public Ontario figures give you a second reference point. Two Toronto contractors publish $800 and up per pile for underpinning piles, which is the pile alone. A Southern Ontario foundation-repair contractor publishes $2,000 to $5,000 per pier for full repair scope, and $800 to $2,500 for the structural engineer's report. Our range sits between the pile-only and the full-scope figures; the quote states exactly what is in it."
+      ],
+      "table": {
+        "caption": "Illustrative underpinning figures, CAD, retrieved 2026-09-25",
+        "columns": ["Item", "Figure", "Basis"],
+        "rows": [
+          ["Our range, per bracket and pile installed", "$950 to $1,650 and up", "Our current price table; firm price after site review"],
+          ["Underpinning pile alone, Toronto", "$800 and up per pile", "GAMCON; Screw Piles Quotes (Toronto)"],
+          ["Helical pier, full repair scope, Southern Ontario", "$2,000 to $5,000 per pier", "Foundation Fix"],
+          ["Structural engineer's report", "$800 to $2,500", "Foundation Fix"]
+        ]
+      },
+      "sources": [
+        { "name": "GAMCON, helical pile installation cost in Toronto", "url": "https://www.gamcon.ca/helical-piles-installation-cost-toronto/", "retrieved_at": "2026-09-25" },
+        { "name": "Screw Piles Quotes, helical pile prices in Toronto", "url": "https://screwpilesquotes.ca/helical-piles-price-toronto/", "retrieved_at": "2026-09-25" },
+        { "name": "Foundation Fix, foundation repair costs in Southern Ontario", "url": "https://www.foundationfix.ca/new-blog/2025/10/30/the-ultimate-guide-to-foundation-repair-costs-in-southern-ontario", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "alternatives",
+      "heading": "Alternatives, honestly compared",
+      "paragraphs": [
+        "Push piers, sold under names such as resistance piers, are steel pipe sections pushed into the ground by a hydraulic cylinder that reacts against the house itself. The manufacturer's own guidance is candid: installation quality depends on the weight and strength of the building, a lightweight single-storey house without a basement may not generate enough reaction, and in that case a helical pile installed independently of the building is the better option. On a heavy two-storey house with a full basement either can work, and we say so.",
+        "Slab jacking pumps grout or expanding polyurethane foam under a slab through drilled holes to float it back up. It is a good tool for driveways and interior basement floors, and a foam manufacturer notes it is often paired with piers, foam for the interior slab and piers for the exterior footings. It does not reach the soil sinking under a footing, so it does not stop a house from settling. Fixing the water is the cheapest fix of all: where the cause is a downspout or a grade sloping toward the house, correcting it and monitoring for a year is a legitimate engineering answer."
+      ],
+      "sources": [
+        { "name": "CHANCE Foundation Solutions, Residential foundation repair and remediation options", "url": "https://blog.hubbell.com/en/chancefoundationsolutions/residential-foundation-repair-remediation-options", "retrieved_at": "2026-09-25" },
+        { "name": "NCFI, Foundation repair: piering vs polyurethane concrete lifting", "url": "https://ncfi.com/news-and-blog/foundation-repair-piering-vs-polyurethane-concrete-lifting", "retrieved_at": "2026-09-25" },
+        { "name": "NRC-IRC, Canadian Building Digest CBD-184, Foundations on Swelling or Shrinking Subsoils", "url": "https://web.mit.edu/parmstr/Public/NRCan/CanBldgDigests/cbd184_e.html", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "when-not-to-underpin",
+      "heading": "When not to underpin",
+      "paragraphs": [
+        "Do not underpin a foundation that is heaving. On clay subsoils the NRC's digests record basement floors and wall footings pushed up by swelling, not down by settlement, and a pile under a footing that is rising does nothing useful. The direction of movement is a diagnosis the engineer makes from the crack pattern and level survey, and it is the reason we will not price an underpinning job from a photograph.",
+        "Do not underpin a foundation that has stopped moving. Old cracks with paint in them, stable widths over a season of monitoring and no change at the doors point to settlement that finished years ago; the right response may be crack repair and drainage, not steel. And do not underpin before the water is dealt with: if a disconnected downspout or a regraded bed would remove the cause, the engineer will usually want that done and the house watched first."
+      ],
+      "sources": [
+        { "name": "NRC-IRC, Canadian Building Digest CBD-84, Swelling and Shrinking Subsoils", "url": "https://web.mit.edu/parmstr/Public/NRCan/CanBldgDigests/cbd084_e.html", "retrieved_at": "2026-09-25" },
+        { "name": "NRC-IRC, Canadian Building Digest CBD-148, Foundation Movements", "url": "https://nrc-publications.canada.ca/eng/view/ft/?id=b65498c9-e6fa-4a88-86e7-d26381ead9e7", "retrieved_at": "2026-09-25" },
+        { "name": "City of Toronto, Basement Flooding", "url": "https://www.toronto.ca/services-payments/water-environment/managing-rain-melted-snow/basement-flooding/", "retrieved_at": "2026-09-25" }
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Do we need an engineer for helical underpinning?", "a": "Yes. Toronto's underpinning guide requires professional design and field review wherever the soil is clay or silt, which covers nearly all of our area, and Oakville requires an engineer to determine the depth, spacing and size of helical piles. The engineer also issues the engineer-sealed certificate of conformity after installation, based on our per-pile torque log." },
+    { "q": "Will the house be lifted back to level?", "a": "Only if the engineer decides it should be. Lifting closes cracks and levels floors but loads the structure in the opposite direction from the settlement, so it is done in small increments with the engineer present. Stabilising holds the house where it is. Many jobs are stabilise-only; the choice comes from the survey, not from preference." },
+    { "q": "How deep do the piles go?", "a": "As deep as the ground requires. Each pile is screwed in until it reaches the torque the engineer specified, which puts the helix below the zone that dries in summer and below the design frost depth; geotechnical reports filed with the Town of Oakville use 1.2 m for the area. Final depth and torque are recorded for every pile." },
+    { "q": "How much does underpinning cost per pile?", "a": "Our illustrative range is $950 to $1,650 and up per bracket and pile installed, in CAD. Public Ontario figures run from $800 and up for the pile alone to $2,000 to $5,000 per pier for full repair scope, plus a structural engineer's report of $800 to $2,500. The firm price is the written quote after a site review." },
+    { "q": "Is a crack in my basement wall an emergency?", "a": "Usually not, but it is a reason to start a record. Mark the ends of the crack, date it, and measure the width at the same point each month. Growth over a season, doors that begin to bind, or a stair-step crack in the brick outside are the signs that call for an engineer. Cracks unchanged for years are generally repaired and watched." }
+  ],
+  "related": [
+    { "href": "/guides/helical-pile-cost-per-pile-ontario/", "label": "What a helical pile costs in Ontario: our ranges, what other installers publish, and what moves the price" },
+    { "href": "/locations/oakville/", "label": "Building in Oakville: what the Town asks for with a helical pile permit and what is under each neighbourhood" }
+  ],
+  "cta": {
+    "heading": "Talk to us about a settling foundation",
+    "body": "Send us the crack photos and the engineer's report if you have one, and we will tell you whether helical underpinning fits before anyone quotes. Every quote is in writing after a site review, with engineering and permit fees shown separately."
+  },
+  "reviewed": "2026-09-25"
+}

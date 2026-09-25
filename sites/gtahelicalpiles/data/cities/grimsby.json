@@ -1,0 +1,316 @@
+{
+  "slug": "grimsby",
+  "name": "Grimsby",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 43.2,
+  "lon": -79.55,
+  "sub_areas": [
+    {
+      "name": "Downtown Grimsby",
+      "note": "Main Street core south of the QEW around the Christie Street / Ontario Street / Maple Avenue interchange (Wikipedia). OGS point query at 43.1935, -79.5595 returns older alluvial deposits (unit 12: clay, silt, sand, gravel) over Queenston Formation red shale."
+    },
+    {
+      "name": "Grimsby Beach",
+      "note": "Historic lakeshore neighbourhood of 'gingerbread cottages' on a narrow cul-de-sac street network laid out in 1875 and 1885 subdivision plans, with waterfront access to Lake Ontario (Town of Grimsby page). OGS point query at 43.2085, -79.5215 returned no surficial polygon (point falls at the shoreline); bedrock query returns Queenston Formation."
+    },
+    {
+      "name": "Casablanca",
+      "note": "West Grimsby around the Casablanca Boulevard QEW interchange, the preferred site for the proposed Grimsby GO station (Wikipedia). OGS point query at 43.1955, -79.6215 returns Paleozoic bedrock at or near surface (unit 3) over Queenston Formation."
+    },
+    {
+      "name": "Winona border",
+      "note": "Western town limit against Winona (City of Hamilton), around Fifty Road; Winona's centre is at 43.20806, -79.65111 (Wikipedia). OGS point query at 43.212, -79.652 returns Paleozoic bedrock at or near surface (unit 3) over Queenston Formation."
+    },
+    {
+      "name": "Grimsby Mountain (above the escarpment)",
+      "note": "Rural area on top of the Niagara Escarpment south of the built-up town; the ECCC station 'Grimsby Mountain' sits at 170.6 m elevation. OGS point query at 43.17, -79.56 returns fine-textured glaciolacustrine silt and clay (unit 8a) over Lockport Formation dolostone; a point at 43.183, -79.565 on the escarpment face returns clay-to-silt till (unit 5d) over Lockport."
+    },
+    {
+      "name": "Forty Mile Creek corridor",
+      "note": "Creek crossing the town from the escarpment to Lake Ontario at the harbour. OGS point query at 43.205, -79.55 near the creek mouth returns Paleozoic bedrock at or near surface (unit 3) over Queenston Formation."
+    },
+    {
+      "name": "East Grimsby (Bartlett Avenue)",
+      "note": "East end around the Bartlett Avenue QEW interchange (Wikipedia). OGS point query at 43.1985, -79.5165 returns coarse-textured glaciolacustrine sand and gravel (unit 9) over Queenston Formation, the same unit as the town reference coordinate."
+    }
+  ],
+  "census": {
+    "population_2021": 28883,
+    "private_dwellings_occupied": 11395,
+    "single_detached_pct": 64.4,
+    "period_of_construction": {
+      "pre_1960_pct": 20.4,
+      "1961_1980_pct": 21.8,
+      "1981_2000_pct": 22.7,
+      "2001_2021_pct": 35.1
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 7,340 of 11,395 occupied private dwellings (structural type, 100% data). Period of construction (25% sample data, total 11,395): 1960 or before 2,320; 1961-1980 2,485; 1981-1990 1,295; 1991-2000 1,295; 2001-2005 1,005; 2006-2010 910; 2011-2015 945; 2016-2021 1,135. 1981-2000 = 2,590/11,395 = 22.7%; 2001-2021 = 3,995/11,395 = 35.1%.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Grimsby, Town (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Grimsby&DGUIDlist=2021A00053526065&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 28,883; Private dwellings occupied by usual residents: 11,395"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Grimsby (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Grimsby&DGUIDlist=2021A00053526065&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data: 11,395; Single-detached house: 7,340; 64.4"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Grimsby (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Grimsby&DGUIDlist=2021A00053526065&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 2,320; 1961 to 1980 2,485; 1981 to 1990 1,295; 1991 to 2000 1,295"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results for 'Grimsby' (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Grimsby",
+        "retrieved_at": "2026-09-25",
+        "quote": "Grimsby (Town) [Census subdivision], Ontario ... DGUIDlist=2021A00053526065"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay (former glacial Lake Iroquois nearshore deposits).",
+        "where": "Central and east Grimsby below the escarpment: the town reference coordinate (43.2, -79.55) and the Bartlett Avenue point (43.1985, -79.5165) both return unit 9."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 3 - Paleozoic bedrock",
+        "description": "Bedrock at or near surface (drift too thin to map).",
+        "where": "West Grimsby and the creek corridor: points at Casablanca/QEW (43.1955, -79.6215), the Winona border (43.212, -79.652) and near the Forty Mile Creek mouth (43.205, -79.55) return unit 3."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 12 - Older alluvial deposits",
+        "description": "Clay, silt, sand, gravel, may contain organic remains.",
+        "where": "Downtown Grimsby along Forty Mile Creek (query point 43.1935, -79.5595)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale).",
+        "where": "Escarpment face south of downtown (query point 43.183, -79.565)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated.",
+        "where": "Grimsby Mountain, above the escarpment (query point 43.17, -79.56)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (Upper Ordovician) below the Niagara Escarpment; Lockport Formation (Silurian) above it (OGS MRD219).",
+      "description": "Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds. Lockport (MRD219 subunit 18b): Vinemount shale beds (argillaceous dolostone and shale), Goat Island Member light brown dolostone, and Gasport Member blue-grey dolostone and limestone. OGS point queries return Queenston at all seven points on the lake plain (reference, downtown, Grimsby Beach, Casablanca, Winona border, Forty Mile Creek mouth, Bartlett Avenue) and Lockport at the two points on and above the escarpment (43.183, -79.565 and 43.17, -79.56).",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). OGS surficial mapping shows bedrock at or near surface (unit 3) at the Casablanca, Winona-border and Forty Mile Creek query points; elsewhere on the lake plain bedrock lies beneath glaciolacustrine sand and gravel or alluvium of unstated thickness."
+    },
+    "implications_for_piles": [
+      "The Town of Grimsby's own deck permit checklist states that if helical piers are used, supporting engineering and CCMC approval will be required with the application; the foundation plan must show footing locations, sizes and depths, and the cross section must show the depth and size of piers below grade.",
+      "The Town's footing inspection checklist sets the conventional baseline: footing elevation a minimum of 1.2 m below finished grade on solid, clean, unfrozen, undisturbed soil, with a geotechnical engineer's confirmation of design bearing pressure suggested and an engineer's report required where high groundwater is suspected.",
+      "OGS maps bedrock at or near surface (unit 3) across west Grimsby (Casablanca, Winona border) and along Forty Mile Creek, over Queenston red shale; shallow shale refusal is a site condition to confirm before installation there. No site-specific depth, torque or capacity figures were retrieved.",
+      "Soil texture differs by area: coarse sand and gravel (unit 9) in central and east Grimsby, older alluvium (unit 12) downtown along the creek, and fine silt and clay (unit 8a) above the escarpment on Grimsby Mountain, where the bedrock changes to Lockport dolostone; an engineer's soil-specific determination is not transferable between the lake plain and the mountain."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.2, -79.55)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.55,43.2&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9, Deposit: Coarse-textured glaciolacustrine deposits, Material: sand, gravel, minor silt and clay"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at Grimsby Mountain (43.17, -79.56)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.56,43.17&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a, Deposit: Fine-textured glaciolacustrine deposits, Material: silt and clay, minor sand and gravel"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at Casablanca/QEW (43.1955, -79.6215)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.6215,43.1955&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 3, Deposit: Paleozoic bedrock"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "SurficialGeology (MRD128REV) ... GIS based geological map that shows the distribution and characteristics of surficial deposits"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.2, -79.55)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.55,43.2&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "OGS MRD 219 bedrock query at Grimsby Mountain (43.17, -79.56)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.56,43.17&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Lockport; SUBUNIT 18b; MEMBER: Goat Island, Gasport, Vinemount; AGE: Silurian"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "id 4b1bbee3cd6f4fde8d3ce9ecfe206630, type dataset, access public, contentStatus public_authoritative"
+      },
+      {
+        "name": "Wikipedia - Grimsby, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Grimsby,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "The majority of residents reside in the area bounded by Lake Ontario and the Niagara Escarpment"
+      },
+      {
+        "name": "Town of Grimsby - Grimsby Beach",
+        "url": "https://www.grimsby.ca/parks-recreation-and-culture/grimsby-beach/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Grimsby Beach is an historic neighbourhood ... commonly referred to as 'gingerbread cottages' or 'painted ladies'"
+      },
+      {
+        "name": "Wikipedia - Winona, Ontario (coordinate for the western border)",
+        "url": "https://en.wikipedia.org/wiki/Winona,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "43.20806; -79.65111"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Grimsby Building Division (the Town's deck handout is headed 'BUILDING DEPARTMENT' and its web page says 'check with your local building department'); Niagara Region is the upper tier and does not issue building permits",
+    "deck_permit_required_when": "Town residential-permit page: a building permit is required for a deck or porch when the deck is greater than 10 m2 or greater than 0.6 metres in height, and also if the structure is attached to a building or serves as a primary entrance to the house. The Town's Decks and Covered Porches handout lists the triggers as: greater than 10 m2 in area; attached to a building; providing a primary entrance to the house.",
+    "footing_depth_requirement": "Town Footing Inspection Checklist: 'The elevation of the footings is a minimum of 1.2 m below finished grade level and provides the proper frost protection cover'; footings on solid, clean, unfrozen, undisturbed ground; engineer's report where high groundwater is suspected. Deck checklist: foundation plan must show footing locations, dimensions, sizes and depths; cross section must show depth and size of piers below grade; 'If using helical piers, supporting engineering and CCMC approval will be required.' No numeric deck-footing depth is printed on the deck handout itself; the sample permit drawings PDF is an image-only file and its text was not read.",
+    "inspections": [
+      "Footings (undisturbed soil, minimum footing depth, form layout, footings, waterproofing, surrounding precautions)",
+      "Foundation",
+      "Framing",
+      "Building drains and sewers",
+      "Rough-in plumbing",
+      "Plumbing final",
+      "Air barrier",
+      "Insulation",
+      "Rough-in heating",
+      "Heating final",
+      "Occupancy"
+    ],
+    "fee_note": "2026 Consolidated Fees and Charges, Schedule C - Building: line 10 'Decks, Porches, Accessory Buildings, Carports' $1.12 per ft2 (no HST); minimum fee for a permit $232.00; decks are charged in addition to any floor-area fee on the same application; multiple decks built simultaneously on one property are charged 50% of the applicable fee. Revision fees for 2026: major revision up to 3 hours review $264.00, each hour after $132.00. Fees are payable at application submission.",
+    "timeline_note": "Town page: if the application is complete, initial review time for residential applications is 10 business days (second units 15, non-residential 20); incomplete applications do not follow these timelines; each resubmission may extend review by two or more weeks. Published average processing time: residential alterations (detached, semi) 7 weeks; new residential 13 weeks.",
+    "portal_url": "https://ca.cloudpermit.com/gov/login",
+    "portal_note": "The Town introduced Cloudpermit for 2026 for online submission, payment and inspection requests; the Town's entry page is https://www.grimsby.ca/build-and-invest/building-division/applying-for-a-building-permit/ . Building Division contact: building@grimsby.ca, 905-309-2022; Town Hall 160 Livingston Avenue, Grimsby ON L3M 0J5.",
+    "sources": [
+      {
+        "name": "Town of Grimsby - Residential Buildings (building permit requirements, Decks section)",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/applying-for-a-building-permit/residential-buildings/",
+        "retrieved_at": "2026-09-25",
+        "quote": "required for the construction of a deck or porch when the deck is greater than 10 m2 or greater than 0.6 metres in height"
+      },
+      {
+        "name": "Town of Grimsby - Residential Buildings (helical pier note)",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/applying-for-a-building-permit/residential-buildings/",
+        "retrieved_at": "2026-09-25",
+        "quote": "If using helical piers, supported engineering and CCMC approval will be required"
+      },
+      {
+        "name": "Town of Grimsby - A Guide for Decks and Covered Porches (handout and checklist PDF)",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/1bxfab5c/decks-and-porches-handout.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "A building permit is required ... when: The deck is greater than 10m2 in area. The deck is attached to a building."
+      },
+      {
+        "name": "Town of Grimsby - Footing Inspection Checklist (PDF)",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/5c4pakmt/footing-inspections.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "The elevation of the footings is a minimum of 1.2 m below finished grade level and provides the proper frost protection cover."
+      },
+      {
+        "name": "Town of Grimsby - Building Inspections",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/building-inspections/",
+        "retrieved_at": "2026-09-25",
+        "quote": "get in touch with the Grimsby Building Division to schedule inspections. Work stoppages or delays may result from missing inspections."
+      },
+      {
+        "name": "Town of Grimsby - 2026 Consolidated Fees and Charges, Schedule C - Building (PDF)",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/fc3n3qnw/schedule-c-building-permit-fees-2026.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "10 Decks, Porches, Accessory Buildings, Carports $/ft2 1.12; The minimum fee for a permit shall be $232.00"
+      },
+      {
+        "name": "Town of Grimsby - Applying for a Building Permit (Cloudpermit, timeframes, revision fees)",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/applying-for-a-building-permit/",
+        "retrieved_at": "2026-09-25",
+        "quote": "If your application is considered complete, the initial review time will be: Residential applications: 10 business days"
+      },
+      {
+        "name": "Town of Grimsby - Rates and Fees (index linking the 2026 building fee schedules)",
+        "url": "https://www.grimsby.ca/town-hall/rates-and-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "2026-building-fees-imperial.pdf; by-law-24-78-user-fees-and-charges.pdf"
+      },
+      {
+        "name": "Niagara Region - Local Municipalities",
+        "url": "https://www.niagararegion.ca/government/municipalities/default.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "12 local municipalities are in Niagara. ... Grimsby"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Vineland Rittenhouse (Climate ID 6139143; 43.167 N, 79.417 W; about 11 km east-southeast of the Grimsby reference point) for all values; Hamilton A (Climate ID 6153194; 43.172 N, 79.934 W; about 31 km west-southwest) as the nearest 30-year full-record comparison",
+    "normals_period": "1981-2010 (ECCC GeoMet climate-normals API). Vineland Rittenhouse normals are computed from 1981-2001 records: 21 years, code C for temperature, code D for the frost-free period. Hamilton A: 30 years, code A. The 1991-2020 normals pages on climate.weather.gc.ca did not return a data table on 2026-09-25 (see notes).",
+    "frost_free_days": 174,
+    "jan_mean_temp_c": -3.7,
+    "days_below_minus_10c": 23.4,
+    "freeze_thaw_note": "Vineland Rittenhouse 1981-2010: January mean daily temperature -3.67 C, January mean daily minimum -7.11 C; 23.44 days/yr with daily minimum below -10 C; 0.72 days/yr below -20 C; 46.3 days/yr with daily maximum <= 0 C versus 121.03 days/yr with daily minimum <= 0 C, so roughly 75 days a year cross 0 C between night and day (derived by subtraction); mean last spring frost day 116 (about Apr 26), first fall frost day 291 (about Oct 18); 112.2 cm annual snowfall. Hamilton A 1981-2010 for comparison: January mean -5.5 C, 37.69 days/yr below -10 C, 56.14 days/yr with maximum <= 0 C, 167 frost-free days, 156.5 cm snowfall. The ECCC station 'Grimsby Mountain' (6133055, 170.6 m, recording since 2005) has no published normals.",
+    "sources": [
+      {
+        "name": "ECCC GeoMet OGC API - Climate Normals 1981-2010, Vineland Rittenhouse (6139143), all elements",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=VINELAND%20RITTENHOUSE&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean daily temperature deg C, month 1: -3.67 (code C); Days with daily min temperature LT -10 deg C, annual: 23.44"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate Normals 1981-2010, Vineland Rittenhouse (frost-free period and days max <= 0)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=VINELAND%20RITTENHOUSE&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean length frost-free period in days: 174 (code D); Days with daily max temperature LE 0 deg C, annual: 46.3"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate Normals 1981-2010, Hamilton A (6153194)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=HAMILTON%20A&f=json&limit=3000",
+        "retrieved_at": "2026-09-25",
+        "quote": "Mean daily temperature deg C, month 1: -5.5 (code A); Days with daily min temperature LT -10 deg C, annual: 37.69; frost-free 167"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate stations named GRIMSBY (metadata)",
+        "url": "https://api.weather.gc.ca/collections/climate-stations/items?STATION_NAME=GRIMSBY&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "GRIMSBY MOUNTAIN, 6133055, 2005-08-01 to 2026-09-23, HAS_NORMALS_DATA N, elevation 170.60"
+      },
+      {
+        "name": "ECCC GeoMet OGC API - Climate stations named VINELAND (metadata)",
+        "url": "https://api.weather.gc.ca/collections/climate-stations/items?STATION_NAME=VINELAND&f=json&limit=20",
+        "retrieved_at": "2026-09-25",
+        "quote": "VINELAND RITTENHOUSE, 6139143, 1965 to 2001, HAS_NORMALS_DATA Y"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the minimum footing elevation below finished grade printed on the Town of Grimsby's official Footing Inspection Checklist ('a minimum of 1.2 m below finished grade level and provides the proper frost protection cover'). It is a Town inspection document, not a deck drawing; the Town's deck handout prints no numeric depth and its sample permit drawings PDF is image-only and was not read. The Ontario Building Code clause text itself was NOT retrieved (ontario.ca/laws renders the regulation as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario). Do not cite a clause number.",
+    "sources": [
+      {
+        "name": "Town of Grimsby - Footing Inspection Checklist (PDF)",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/5c4pakmt/footing-inspections.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "The elevation of the footings is a minimum of 1.2 m below finished grade level and provides the proper frost protection cover."
+      },
+      {
+        "name": "Town of Grimsby - Building Inspections (footing inspection scope)",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/building-inspections/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The list below entails the main items of review for a footing inspection. Undisturbed soil, Minimum footing depth, Form layout"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}
