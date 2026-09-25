@@ -6,7 +6,7 @@
 //   VERCEL_TOKEN=... node scripts/vercel-setup.mjs
 //
 // Optional env: VERCEL_TEAM_ID (deploy into a team), PROJECT_NAME
-// (default gtahelicalpiles), LEAD_INBOX, RESEND_API_KEY, LEAD_WEBHOOK_URL,
+// (default gtaicf), LEAD_INBOX, RESEND_API_KEY, LEAD_WEBHOOK_URL,
 // LEAD_FROM, PUBLIC_PLAUSIBLE_DOMAIN (each is stored on the project when set).
 //
 // After the first deploy, connect the Git repository in the Vercel dashboard

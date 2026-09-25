@@ -75,8 +75,8 @@ Content rule: the substance of every page comes from data files, the owner's own
 When the owner wants this site in a dedicated repo:
 
 ```
-git subtree split --prefix=sites/gtaicf -b gtahelicalpiles-standalone
-git push <new-remote> gtahelicalpiles-standalone:main
+git subtree split --prefix=sites/gtaicf -b gtaicf-standalone
+git push <new-remote> gtaicf-standalone:main
 ```
 
 Then point the Vercel project at the new repository with Root Directory cleared. Nothing in this folder references the parent repository.
