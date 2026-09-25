@@ -1,0 +1,194 @@
+{
+  "slug": "pelham",
+  "title": "ICF foundations in Pelham and Fonthill | GTA ICF",
+  "description": "ICF foundations in Pelham: sand and gravel on the Fonthill Kame, clay on the plain around it, the Town's 2026 permit fees and inspections, and when we pour.",
+  "h1": "ICF foundations and walls in Pelham",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Pelham is a hill and the flat land around it. Fonthill, Ridgeville village and Fenwick stand on the Fonthill Kame, a glacial hill of sand and gravel that the Ontario Geological Survey maps as one deposit; North Pelham, the Short Hills edge, south Ridgeville and the land toward Welland are silt and clay from a glacial lake bottom. Silurian dolostone lies under both, at no survey point close to the surface, and the permit comes from the Town of Pelham Building Department through its online portal.",
+    "The Town prints no footing depth. Ontario's Building Code sets 1.2 m for a heated basement on clay or on soils not clearly defined, and no minimum for a heated basement on coarse-grained soil like the kame, where the design decides; every footing bears on undisturbed ground. The Building Department inspects footings before they are poured and the foundation before backfill, on two business days' notice, and its 2026 guide prices a single, semi or duplex at $1.69 per square foot and a residential addition at $1.50, $299 minimum."
+  ],
+  "tiles": [
+    {
+      "value": "$1.69/ft²",
+      "label": "Town of Pelham 2026 permit fee per square foot for a single, semi-detached or duplex dwelling; $1.50 for a residential addition; $299 minimum",
+      "source": {
+        "name": "Town of Pelham 2026 Building Permit Guide and Fees",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      }
+    },
+    {
+      "value": "160 days",
+      "label": "frost-free period at the Welland-Pelham station, May 6 to October 14, 1991 to 2020 normals",
+      "source": {
+        "name": "Environment Canada normals 1991 to 2020, Welland-Pelham",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1"
+      }
+    },
+    {
+      "value": "82.8%",
+      "label": "of Pelham's 6,960 occupied dwellings are single-detached houses, and a quarter were built in 1960 or before, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Pelham (Town)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Pelham&DGUIDlist=2021A00053526028&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "Sand and gravel",
+      "label": "the Fonthill Kame under Fonthill, Ridgeville and Fenwick; silt and clay on the plain around it; dolostone beneath, at no point near the surface",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, point query at Fonthill",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.28,43.04&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "The kame and the plain: Pelham's two grounds",
+    "paragraphs": [
+      "Fonthill, the village centre of Ridgeville and Fenwick share one polygon on the Ontario Geological Survey's surficial map: coarse-textured glaciolacustrine deposits, sand and gravel. That polygon is the Fonthill Kame, a glacial hill about 6 km by 3 km that rises about 75 m above the surrounding land, the highest natural feature in Niagara. A basement dug into it comes out fast and will not stand vertical, so the faces are laid back or boxed and the footing bears on sand the bucket has not loosened; in return the ground drains, water reaches the weeping tile instead of standing, and the spoil can go back against the wall.",
+      "Off the kame the ground turns over. At south Ridgeville, North Pelham, the Short Hills edge, east of Fonthill and south Pelham the survey returns fine-textured glaciolacustrine deposits: silt and clay from a glacial lake bottom. The cut stands, but rain and seepage sit in the hole until pumped, the footing base softens if left open, and clay pushed back against the wall holds water at the membrane. So drainage matters more than shoring here, with a drainage layer, weeping tile and drainable backfill, and the Code's 1.2 m minimum for a heated basement applies. The change is abrupt: Ridgeville's centre is on sand; a point 1.9 km south of it is on clay.",
+      "The bedrock is Silurian dolostone, not shale: the Lockport Formation under Fonthill and the north, the Guelph Formation under Fenwick, Ridgeville and east of Fonthill, and the Salina Formation, thin-bedded with shale and gypsum, in the south. No point returned rock at or near the surface, and a hill about 75 m above the plain is not one where a basement reaches rock, so a Pelham dig is planned as a soil excavation. The question to plan for is slope: the Short Hills north-west of Fonthill, on the Escarpment's southern edge, are small steep hills and valleys, and a lot there sees an engineer before it sees a bucket."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries, surficial map MRD 128-REV and bedrock map MRD 219, run 25 September 2026 at one coordinate per area; Fonthill, Ridgeville and Fenwick use published village coordinates, the rest are placed by hand inside the area. A row speaks for the map around the point, not for your lot: the kame's edge runs through Ridgeville, and neither map gives the depth to rock. The footing is designed from what the excavation shows and, where the Plans Examiner asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Fonthill (Pelham Town Square)",
+        "surface": "Sand and gravel, the Fonthill Kame",
+        "bedrock": "Lockport Formation, dolostone"
+      },
+      {
+        "name": "Ridgeville, village centre",
+        "surface": "Sand and gravel, the Fonthill Kame",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Ridgeville, 1.9 km south of the centre",
+        "surface": "Silt and clay, glacial lake bottom",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Fenwick",
+        "surface": "Sand and gravel, the Fonthill Kame",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "North Pelham",
+        "surface": "Silt and clay, glacial lake bottom",
+        "bedrock": "Lockport Formation, dolostone"
+      },
+      {
+        "name": "Short Hills edge, north of Fonthill",
+        "surface": "Silt and clay at the survey point; steep glacial hills and valleys beside it",
+        "bedrock": "Lockport Formation, dolostone"
+      },
+      {
+        "name": "East of Fonthill",
+        "surface": "Silt and clay, glacial lake bottom",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "South Pelham, toward Welland and Wainfleet",
+        "surface": "Silt and clay, massive to well laminated",
+        "bedrock": "Salina Formation, dolostone and shale with gypsum"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "The Town of Pelham's permit, fees and inspections",
+    "authority_short": "the Town of Pelham",
+    "paragraphs": [
+      "The permit for a new house, an addition or a rebuilt foundation comes from the Town of Pelham Building Department, the name the Town's 2026 Building Permit Guide uses; the website files it under Construction and Building Services, and the contact is the Building Intake and Zoning Technician at building-info@pelham.ca, Town Hall, 20 Pelham Town Square, Fonthill. Applications go in through the Town's online permit portal, which runs on the City Reporter system: an account is created, the documents are uploaded, and the same account shows the status and takes inspection requests. The Guide's sequence is a prescreen for complete documents, a zoning review, a $299 non-refundable application fee once zoning clears, a queue for the Plans Examiner, a deficiency report or a recommendation to issue, then a statement of the remaining fees, paid before the permit is issued. No day count is published. A lot on private septic needs a Niagara Region septic permit before the building permit, and the Guide lists repairing or reconstructing foundations and basement walls, and dampproofing or waterproofing a foundation wall, among the jobs that need a permit, so a basement retrofit is permitted the same way as a new build.",
+      "Fees for 2026, in force January 1 to December 31, are per square foot of new construction: $1.69 for a single, semi-detached or duplex dwelling, $1.73 for a multiple-unit building and $1.50 for a residential addition, with a $299 minimum on any permit. The Guide's note defines the area as the gross area of all floors at or above grade, measured from the outer face of the exterior walls, so a basement below grade is not in the count. Staged construction is on the schedule, with the fee split 15% for the building foundation, 75% for the shell and 10% for completion, and a conditional permit is $716 plus a $299 agreement. Starting work before issuance doubles the fee. A new dwelling also carries a $1,000 security deposit and a $1,000 lot grading deposit, $500 and $300 for an addition, and development charges collected at the permit stage: $28,236 Town-wide per single or semi-detached unit, a further $8,235 for water and sanitary sewer in Fonthill and Fenwick, and Regional and school board charges the Guide refers on. Fees move with the consumer price index each January 1, and the Town began a building fee and by-law study in 2026, so we confirm the figures when we apply. With 82.8% of Pelham's homes single-detached and a quarter of them built in 1960 or before, additions and new foundations under standing houses are a large share of the work here.",
+      "The Guide has no ICF text; the Plans Examiner reviews the drawings against the Ontario Building Code, which carries its own rules for flat insulating concrete form foundation walls in Subsection 9.15.4 and asks the form units to conform to CAN/ULC-S717.1. Some systems also carry a CCMC evaluation report. The system we install is named on the quote, and its documentation goes in the permit package with the drawings and the energy compliance for the wall; within the Code's Part 9 limits, two storeys, 3 m floor to floor and soil bearing 75 kPa or more, a qualified designer can draw the wall, and beyond them, or when the examiner asks, an engineer seals it. We prepare the package with you. Inspections follow the list in the Guide, taken from Division C, Sentence 1.3.5.1(2) of the Code: readiness to construct footings, before pouring; completion of footings and foundations, before backfilling; then framing with the HVAC rough-in, insulation with the air and vapour barriers, plumbing tests, occupancy and final. Each needs at least two regular business days' notice to building-info@pelham.ca or 905-980-6683, and a visit called before the work is ready costs a $90 re-inspection fee. Two points for an ICF wall: the insulation the Town lists as a later stage is the form itself, in place before the pour, and the wall's reinforcing is hidden once the concrete is in, so we ask at issuance whether the inspector wants to see the steel in the cavity before the wall pour, between the two concrete-stage visits on the list."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Pelham Building Department, Town Hall, 20 Pelham Town Square, Fonthill; online through the Town's permit portal (City Reporter), which also shows status and takes inspection requests; building-info@pelham.ca; a lot on private septic needs a Niagara Region septic permit first",
+        "url": "https://www.pelham.ca/pelham-government/permits-applications-licenses/building-permits/"
+      },
+      {
+        "label": "New house and addition fees, 2026",
+        "value": "$1.69 per square foot for a single, semi-detached or duplex dwelling; $1.73 for a multiple-unit dwelling; $1.50 for a residential addition; area is the gross area of all floors at or above grade, to the outer face of the exterior walls; $299 minimum; adjusted by the consumer price index each January 1",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      },
+      {
+        "label": "Application fee and staged permit",
+        "value": "$299 non-refundable application fee collected after the zoning review, remaining fees before issuance; staged construction splits the fee 15% foundation, 75% shell, 10% completion; conditional permit $716 plus a $299 agreement; fee doubled where construction starts before the permit",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      },
+      {
+        "label": "Deposits and development charges",
+        "value": "Security deposit $1,000 for a new dwelling, $500 for an addition; lot grading deposit $1,000 for a new single-family dwelling, $300 for a major addition; driveway apron deposit $500; Town-wide development charge $28,236 per single or semi-detached unit plus $8,235 for water and sanitary sewer in Fonthill and Fenwick; Regional and school board charges separate",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      },
+      {
+        "label": "Concrete-stage inspections",
+        "value": "Readiness to construct footings, prior to pouring; completion of footings and foundations, prior to backfilling; at least 2 regular business days' notice to building-info@pelham.ca or 905-980-6683 (905-892-2607 ext. 344); $90 re-inspection fee where a request is premature",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf"
+      },
+      {
+        "label": "Review time and fee study",
+        "value": "No day count published; prescreen, zoning review, application fee, Plans Examiner queue, deficiency report or recommendation, remaining fees, issuance; a building fee and by-law study began in 2026, so the 2026 figures may change",
+        "url": "https://www.pelham.ca/business-building-development/planning-applications/building-fee-and-by-law-study/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Winter on the hill: Pelham's pour season",
+    "paragraphs": [
+      "Pelham's record is the Environment Canada composite named Welland-Pelham, threaded from the Welland station and then the Welland-Pelham station, both about 5 to 9 km south-west of Fonthill at 175 to 178 m, and it is the closer and colder of the two records that bracket the town; St. Catharines A, 22 km north-east, runs milder. For 1991 to 2020 Welland-Pelham gives a January mean of −4.1 °C with a daily minimum of −8.0 °C, 29.9 days a year below −10 °C and 3.4 below −20 °C, 46.1 days when the high stays at or below 0 °C, 134.1 nights at or below freezing, and 141.0 cm of snow. The last spring frost averages May 6 and the first fall frost October 14, a 160-day frost-free period from 15 years of frost records, against 179 days at St. Catharines A. The gap between 134.1 freezing nights and 46.1 freezing days means roughly 88 days a year cross 0 °C between night and day, the cycle that works on the clay plain. CSA A23.1 draws the line at a forecast below 5 °C within 24 hours of placing: concrete for a wall under 300 mm arrives at 10 to 32 °C, is held at 10 °C or more while it cures, and reaches 7 MPa before frost can get at it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS on both faces of the form shelters the core while it cures, which the form makers' manuals describe as thermal protection in cold weather; what is exposed is the top of the wall and the footing, which are covered, and the cavity, which is cleared of snow and ice before the pump arrives, with no de-icing salt in the forms. On the clay plain the freeze-thaw count also shapes the schedule: a footing base left open through those cycles softens, so the excavation is timed to the footing pour rather than opened weeks early. The footing depth does not move with the season, and the Town prints none of its own. Ontario's Building Code table sets 1.2 m for a heated basement on clay or on soils not clearly defined, and 1.2 m but not less than the frost penetration where those soils carry no heated space; on coarse-grained soil under a heated basement, the kame, it sets no minimum, and the depth comes from the design and the bearing the excavation shows, on undisturbed soil in every case."
+    ],
+    "facts": [
+      {
+        "label": "Welland-Pelham, 1991 to 2020",
+        "value": "January mean −4.1 °C, January daily minimum −8.0 °C; 46.1 days a year with a maximum at or below 0 °C; 134.1 days with a minimum at or below 0 °C; 29.9 days below −10 °C and 3.4 below −20 °C; 141.0 cm of snow; frost-free period 160 days, May 6 to October 14, from 15 years of frost records; composite of the Welland and Welland-Pelham stations, about 5 to 9 km south-west of Fonthill",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1"
+      },
+      {
+        "label": "St. Catharines A, 1981 to 2010, for comparison",
+        "value": "January mean −3.8 °C; 26.7 days below −10 °C; 46.0 days with a maximum at or below 0 °C; 179-day frost-free period, April 24 to October 21; about 22 km north-east of Fonthill",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=st.%20catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Cold-weather concreting",
+        "value": "CSA A23.1 as reproduced by Concrete Ontario: cold weather is a forecast below 5 °C within 24 hours of placing; concrete for sections under 300 mm placed at 10 to 32 °C, held at 10 °C or more through curing, 7 MPa before frost; snow and ice removed before placing, no de-icing salt in the forms",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Footing depth",
+        "value": "Ontario's Building Code Table 9.12.2.2: 1.2 m for a heated basement on clay or soils not clearly defined; 1.2 m but not less than the frost penetration where there is no heated space; no minimum on rock or, under a heated basement, on coarse-grained soil; excavations to undisturbed soil; the Town of Pelham prints no depth of its own",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Pelham is a Niagara run for us, so travel is a line on the quote. After that the hill decides: a trench box or laid-back faces in the kame sand under Fonthill, Ridgeville and Fenwick, pumping and a protected footing base on the clay plain, a slope engineer at the Short Hills edge, and pump reach on the older village lots. Rock is not a Pelham line.",
+  "faqs": [
+    {
+      "q": "What does a basement excavation meet in Fonthill or Fenwick?",
+      "a": "Sand and gravel, and a lot of it. Both villages, and Ridgeville's centre, sit on the one Ontario Geological Survey polygon that is the Fonthill Kame, a glacial hill about 75 m above the land around it. The material digs quickly and drains, but it will not hold a vertical face, so the cut is laid back or boxed and the footing sits on material nobody has loosened. The dolostone beneath is far below a basement; rock excavation is not the expectation anywhere on the hill."
+    },
+    {
+      "q": "Does an ICF basement on Pelham's clay need waterproofing or dampproofing?",
+      "a": "Water, not the wall, decides. The Code requires dampproofing on every below-grade wall and drainage at the footing, waterproofing where hydrostatic pressure occurs, and a drainage layer where the insulation runs more than 900 mm below grade, which a full-height ICF wall does. On the silt and clay of North Pelham, south Ridgeville and south Pelham, water sits in the hole and in clay backfill, so the drainage layer and drainable fill carry the job; on the kame the question is the water table in ground that drains."
+    },
+    {
+      "q": "What does the Town of Pelham ask for with an ICF foundation?",
+      "a": "The same permit as any house or addition, filed through the Town's online portal; the 2026 Guide has no ICF text, and the Plans Examiner reviews to the Building Code. The Code asks the form units to conform to CAN/ULC-S717.1, and some systems carry a CCMC report as well; the system we install is named on the quote, so its documentation goes in with the drawings and the wall's energy compliance. Beyond the Part 9 limits, or when the examiner asks, an engineer seals the wall. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Pelham in winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Welland-Pelham counts 46.1 days when the high never passes 0 °C and 29.9 below −10 °C, and on those days CSA A23.1 sets the terms: concrete placed at 10 °C or more, held there while it cures, 7 MPa before frost. The foam keeps the core warm; the wall top and the footing get their own cover."
+    },
+    {
+      "q": "How deep does a footing go in Pelham?",
+      "a": "The Town prints no depth, so the Building Code table applies. On the silt and clay around the hill, 1.2 m for a heated basement, and 1.2 m but not less than the frost penetration where the space above is unheated. On the kame's sand and gravel the table sets no minimum under a heated basement, so the depth comes from the design and the bearing the excavation shows rather than from a frost line. Every footing bears on undisturbed soil, whichever ground it is, and on a lot near the kame's edge a test pit says which ground you are on."
+    },
+    {
+      "q": "We are in Ridgeville. Are we on the sand or the clay?",
+      "a": "Either, and the map cannot tell you which. The survey's point at Ridgeville's village centre returns the kame's sand and gravel; a second point 1.9 km south returns fine glaciolacustrine silt and clay, both over Guelph Formation dolostone. The boundary runs through the area, so a lot can be on one and its neighbour on the other. That changes the shoring, the drainage plan and the footing depth rule, which is why we open a test pit before the quote rather than after the excavator arrives."
+    }
+  ],
+  "related_note": "We also build in Welland, Thorold and St. Catharines, and take work in Wainfleet and West Lincoln."
+}

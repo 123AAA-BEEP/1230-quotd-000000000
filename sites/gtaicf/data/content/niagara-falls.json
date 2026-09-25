@@ -1,0 +1,204 @@
+{
+  "slug": "niagara-falls",
+  "title": "ICF foundations in Niagara Falls | GTA ICF",
+  "description": "ICF foundations in Niagara Falls: silt and clay or sand and gravel over dolostone, the City's 2026 permit fees and inspection stages, and when we pour.",
+  "h1": "ICF foundations and walls in Niagara Falls",
+  "kicker": "Niagara Region",
+  "answer": [
+    "An ICF foundation in Niagara Falls is dug, at most addresses, into glaciolacustrine silt and clay: eight of the fourteen points we queried on the Ontario Geological Survey's map return it, from Chippawa and Willoughby to Garner and the city's north edge. The band from downtown to the gorge, along Lundy's Lane and over the Stamford plateau is coarse sand and gravel instead. Silurian dolostone, mostly the Guelph Formation, lies under nearly all of the city and reaches the surface only at the Falls brink.",
+    "The permit comes from the City of Niagara Falls Building Department, applied for through the CityView Portal. The City prints no footing depth of its own, so the Building Code's 1.2 m minimum for a heated basement on clay sets the floor of the dig. Its inspector sees the footings formed before any concrete is poured, and the drainage layer, weeping tile and stone before the foundation is backfilled, each on 48 hours' notice; a complete house application gets a plans review of 10 to 30 days."
+  ],
+  "tiles": [
+    {
+      "value": "Dolostone",
+      "label": "Silurian bedrock under most of Niagara Falls, the Guelph Formation at the reference point; at the surface only at the Falls brink",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, bedrock point query",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.08,43.09&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "66.1%",
+      "label": "of the city's 37,793 occupied homes are single-detached, and 30.9% were built in 1960 or before, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Niagara Falls",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara%20Falls&DGUIDlist=2021A00053526043&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "−4.1 °C",
+      "label": "January mean at Niagara Falls NPCSH, the City's own station, with 46 days a year that never rise above 0 °C, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, Niagara Falls NPCSH",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=NIAGARA%20FALLS%20NPCSH&f=json&limit=3000"
+      }
+    },
+    {
+      "value": "10 to 30 days",
+      "label": "plan review for a complete application at the City of Niagara Falls Building Department, by building class and size, after a two-business-day completeness check",
+      "source": {
+        "name": "City of Niagara Falls, Building Permit Application Process",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/building-permit-application-process/"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Clay plain, gravel band and dolostone under Niagara Falls",
+    "paragraphs": [
+      "Eight of the fourteen points we queried on the Ontario Geological Survey's surficial map return one unit: fine-textured glaciolacustrine silt and clay, covering most of the city away from the gorge. Both Chippawa points, both Willoughby points, both Garner points and the north edge below the escarpment sit on it. For a basement it is ground that stands up and stays wet. The cut faces hold while the forms are stacked, but water that reaches the hole has nowhere to go, and clay pushed back against the wall keeps the membrane wet, so the drainage layer, weeping tile and stone the City inspects before backfill matter most here.",
+      "The exception is a band of coarse sand and gravel that the survey maps from the reference point between downtown and the gorge, west along Lundy's Lane and north across the Stamford plateau. It drains, so the weeping tile has somewhere to send water, but it will not stand vertical, so the faces are laid back or shored and the footing sits on material the bucket has not touched. One point there, on Lundy's Lane west of Main Street, returns man-made deposits, the survey's label for fill. Fill is not undisturbed soil, so the dig continues to ground that is, and an engineer decides what the footing bears on.",
+      "Under nearly all of it is Silurian dolostone. The Guelph Formation is the bedrock at the reference point, Chippawa, Lundy's Lane and the brink; the Lockport Formation is under the Stamford plateau; the Salina Formation, argillaceous dolostone and shale with gypsum beds, is under Willoughby; red Queenston shale shows only at the north edge below the escarpment. Rock reaches the surface at the brink around Table Rock and at no residential point, and the survey maps no depth to rock, so near the gorge we confirm the rock depth before the footing is designed. On rock the Code sets no minimum footing depth, and that last lift is rock excavation."
+    ],
+    "table_note": "Surface and bedrock come from point queries of the Ontario Geological Survey's MRD 128-REV and MRD 219 layers on 25 September 2026, two coordinates where the module had them. Stamford, Drummond, Garner and Lundy's Lane carry no published coordinate, so those points were placed by street and are approximate. A row speaks for its area, not your lot; the survey maps no depth to rock, and the footing is designed from what the site shows and, where the reviewer asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown to the gorge (Queen Street)",
+        "surface": "Sand and gravel, coarse glaciolacustrine",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Falls brink and Table Rock (tourist core, not residential)",
+        "surface": "Bedrock at or near surface, drift too thin to map",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Lundy's Lane (near the battlefield)",
+        "surface": "Sand and gravel",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Drummond (Lundy's Lane west of Main Street)",
+        "surface": "Man-made deposits (fill) at the query point",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Stamford plateau (two points)",
+        "surface": "Sand and gravel",
+        "bedrock": "Lockport Formation: Goat Island, Gasport, Vinemount"
+      },
+      {
+        "name": "Stamford, north edge below the escarpment",
+        "surface": "Silt and clay, massive to well laminated",
+        "bedrock": "Queenston Formation, red shale"
+      },
+      {
+        "name": "Chippawa (two points)",
+        "surface": "Silt and clay, massive to well laminated",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Garner (Westlane), north point",
+        "surface": "Silt and clay",
+        "bedrock": "Lockport Formation, Eramosa Member"
+      },
+      {
+        "name": "Garner (Westlane), south point",
+        "surface": "Silt and clay",
+        "bedrock": "Guelph Formation, dolostone"
+      },
+      {
+        "name": "Willoughby (two points)",
+        "surface": "Silt and clay",
+        "bedrock": "Salina Formation: argillaceous dolostone, shale, gypsum"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permit, fees and inspections at the City of Niagara Falls",
+    "authority_short": "the City of Niagara Falls",
+    "paragraphs": [
+      "A foundation in Niagara Falls is permitted as part of the house or the addition above it by the City's Building Department, part of Planning and Building at 4343 Morrison Street, and the application goes in through the CityView Portal. The City's own page sets the order of work: agency approvals first, zoning second, drawings third. Its Applicable Law Checklist names the bodies whose sign-off may be needed before the permit, the Niagara Escarpment Commission, the Niagara Peninsula Conservation Authority, the Region and the Ministry of Transportation among them, and zoning is cleared either inside the permit review or by a separate Zoning Compliance Certificate, with the $244 zoning fee payable either way. Staff check a submission for completeness within two business days, fees are paid when the portal says they are due, and a plans examiner then has 10 to 30 days depending on the building's class and size, with houses and semi-detached houses, including additions, first on the City's list of project types. One instruction on that page matters for any excavation: existing damage to the sidewalk, curb or pavement in front of the lot is reported with dated photographs at application, or the owner can be held responsible for damage the inspector notes after issuance.",
+      "Fees follow the schedule the City posts as effective January 1, 2026. A new single or semi-detached house is $18.83 per square metre, a heated addition to a house $18.33 and an unheated one $12.82, a finished basement $10.78, and a replacement foundation under a standing house $3.37 per square metre, all subject to a $243 minimum permit charge. Underpinning and shoring have their own line at $31.26 per linear metre, a basement walkout is a $323 flat fee, and deposits sit on top: $1,000 per dwelling on a new house permit, $750 for an addition that needs excavation, and a lot grading deposit of $1,500 for a house on an infill lot. With three in ten of the city's homes built in 1960 or before and two thirds of them single-detached, the addition, basement and replacement-foundation lines are the ones most Niagara Falls quotes touch, and we confirm the figures with the Building Department at application.",
+      "Nothing on the City's forms list is written for ICF, and it publishes no checklist for the wall. The package is the provincial Application to Construct or Demolish, the Applicable Law Checklist, the drawings, the SB-12 Energy Efficiency Design Summary on the City's prescriptive or performance form, its Radon Mitigation Form, and the Commitment to General Professional Review when an engineer seals the wall. The Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report; the system we install is named on the quote and its documentation goes in the permit package. We prepare the package with you. Inspections then follow the City's example schedule, with the list for your permit handed over at issuance: footings, column pads and slabs formed, prior to pouring concrete; drainage layer, weeping tile and stone installed, prior to backfilling the foundation excavation; the radon pipe before the basement floor is poured; framing; insulation, vapour barrier and air barrier; and a final for which grading must be complete and the lot grading certificate filed with the Building Department. Each visit is booked through the portal, by email or at 905-356-7521 extension 4330, with 48 hours' notice and a 3 pm cut-off, in an any-time, morning or afternoon block, and a visit to work that is not ready costs $135. We book the two concrete-stage inspections, keep the approved drawings on site, and cover nothing the inspector has not seen."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Niagara Falls Building Department (Planning and Building), 4343 Morrison Street, 905-356-7521 ext. 4330, pbd@niagarafalls.ca; application, fee payment and inspection booking through the CityView Portal",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/building-permit-application-process/"
+      },
+      {
+        "label": "New house and addition fee, 2026",
+        "value": "$18.83 per m² for a single or semi-detached house; heated addition to a house $18.33 per m², unheated $12.82; attached garage on an existing house $17.40; $243 minimum permit charge; fees effective January 1, 2026",
+        "url": "https://niagarafalls.ca/city-government/budget-and-finances/schedule-of-fees/"
+      },
+      {
+        "label": "Basement and foundation lines",
+        "value": "Finished basement $10.78 per m²; replacement foundation $3.37 per m²; underpinning or shoring $31.26 per linear metre; basement walkout $323 flat; weeping tile replacement $243 flat; conditional permit, substructure phase, 15% of the permit fee with a $538 agreement fee and a security deposit of 10% of that phase's construction cost",
+        "url": "https://niagarafalls.ca/city-government/budget-and-finances/schedule-of-fees/"
+      },
+      {
+        "label": "Deposits and penalties",
+        "value": "$1,000 per dwelling on a single permit for a detached or semi-detached house; $750 for an addition where excavation is required; lot grading deposit $1,500 per dwelling on an infill lot or $1,000 in an unassumed subdivision; zoning review $244 flat; not-ready inspection $135; construction without a permit twice the fee",
+        "url": "https://niagarafalls.ca/city-government/budget-and-finances/schedule-of-fees/"
+      },
+      {
+        "label": "Concrete-stage inspections",
+        "value": "Footings, column pads and slabs formed, prior to pouring concrete; drainage layer, weeping tile and stone installed, prior to backfilling foundation excavations; 48 hours' notice with a 3 pm cut-off, in any-time, am or pm blocks; the full list for the project is issued with the permit",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/building-permit-inspections/"
+      },
+      {
+        "label": "Forms and review time",
+        "value": "Application to Construct or Demolish, Applicable Law Checklist, SB-12 Energy Efficiency Design Summary (prescriptive or performance), Radon Mitigation Form, Commitment to General Professional Review; completeness check within 2 business days, then a plan review of 10 to 30 days by building class and size",
+        "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/building-permit-application-process/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Winter pours and frost depth in Niagara Falls",
+    "paragraphs": [
+      "The City has a climate station of its own, Niagara Falls NPCSH, about 5 km north-north-east of the centre at 175 m, and its 1981 to 2010 normals put January's mean at −4.1 °C and its daytime high at −0.4 °C, with 46 days a year when the temperature never rises above freezing, 25 days below −10 °C, fewer than one below −20 °C, and 153 cm of snow. The overnight low reaches freezing on 130 days a year and the daytime high on 46, so roughly 84 days cross 0 °C between night and day, which is the count that shapes a winter pour. Under CSA A23.1 any placing with a forecast below 5 °C in the next 24 hours is cold-weather work: concrete for a wall under 300 mm thick arrives at 10 °C or more, is held at 10 °C or more while it cures, and reaches 7 MPa before frost can touch it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS panels hold heat in the core while it cures, so the exposed work is the top of the wall and the footing, which are covered, and the cavity, which is cleared of snow and ice before the pump arrives. The frost-free season is harder to pin down here than the cold days are: the station's 188 days, April 29 to November 4, rest on only four years of record, while Welland, 18 km south-west with an 18-year record, averages 151, so the shoulder seasons are planned on the forecast rather than on either figure. The footing depth does not move at all. The City prints none of its own, and the Building Code's Table 9.12.2.2 sets 1.2 m as the minimum for a heated basement on clay or on soils not clearly defined, which describes the silt and clay under most of the city; on rock there is no limit, and every footing bears on undisturbed soil."
+    ],
+    "facts": [
+      {
+        "label": "Niagara Falls NPCSH, 1981 to 2010",
+        "value": "January mean −4.1 °C, daily high −0.4 °C, daily low −7.8 °C; 46 days a year with a maximum at or below 0 °C; 25 days below −10 °C; 153 cm of snow; frost-free period 188 days, April 29 to November 4, on a four-year record",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=NIAGARA%20FALLS%20NPCSH&f=json&limit=3000"
+      },
+      {
+        "label": "Welland cross-check",
+        "value": "About 18 km south-west: frost-free period 151 days on an 18-year record; January mean −4.3 °C; 30.5 days below −10 °C; 47 days with a maximum at or below 0 °C; 1981 to 2010",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1, in Concrete Ontario's reproduction: a forecast below 5 °C within 24 hours of placing makes it cold-weather work; walls under 300 mm thick take concrete at 10 to 32 °C, stay at 10 °C or more through the cure, and reach 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Minimum footing depth",
+        "value": "1.2 m for a heated basement on clay or soils not clearly defined, no limit on rock, Building Code Table 9.12.2.2 in the 2024 Compendium, Volume 1; the City of Niagara Falls prints no footing depth of its own",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Travel to the Niagara corridor is a line on the quote. On site the price turns on water and rock: a dry hole in the silt and clay of Chippawa, Willoughby and Garner, shoring in the sand and gravel band, dolostone close under a lot near the gorge, an engineer's call on fill along Lundy's Lane, and pump reach where an older street leaves no room for the truck.",
+  "faqs": [
+    {
+      "q": "What does an excavator hit in Niagara Falls, clay or rock?",
+      "a": "Clay first, at most addresses. Eight of the fourteen survey points we queried return glaciolacustrine silt and clay, at Chippawa, Willoughby, Garner and the city's north edge among others. The band from downtown to the gorge, along Lundy's Lane and over the Stamford plateau is sand and gravel instead. Dolostone is under nearly all of it, but the survey shows it at the surface only at the Falls brink and does not map how deep it lies elsewhere, so near the gorge we check for it before the footing is designed."
+    },
+    {
+      "q": "Our lot is in Chippawa, near the Welland River. Dampproofing or waterproofing?",
+      "a": "Both Chippawa points return silt and clay over Guelph dolostone, ground that holds water, and the village sits at the mouth of the Welland River, so groundwater comes first. The Code asks for dampproofing on the outside of every below-grade wall with drainage at the footing, and for waterproofing where hydrostatic pressure occurs; an ICF wall is insulated more than 900 mm below grade, so it also gets a drainage layer against the membrane. A test pit before the quote tells us which side of that line the lot is on."
+    },
+    {
+      "q": "Does the City of Niagara Falls treat an ICF foundation differently from a poured one?",
+      "a": "No. It is the same building permit for the house or addition, through the CityView Portal, and none of the City's forms mentions ICF. What changes is the package: the drawings, the documentation for the ICF system named on the quote, and the SB-12 Energy Efficiency Design Summary. The Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report; a wall beyond the Code's Part 9 limits is sealed by an engineer, with the City's Commitment to General Professional Review. We prepare the package with you."
+    },
+    {
+      "q": "Will you pour an ICF wall in Niagara Falls in February?",
+      "a": "Yes. The City's own station counts 46 days a year with no thaw and 25 below −10 °C, and on those days CSA A23.1 sets the terms: concrete placed at 10 °C or more, a covered wall held at that temperature while it cures, and 7 MPa before frost reaches it. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam does part of the covering; the top of the wall and the footing get their own."
+    },
+    {
+      "q": "How deep does the footing go when the City prints no depth?",
+      "a": "At least 1.2 m below grade on undisturbed soil, on the silt and clay that covers most of the city. Niagara Falls publishes no footing drawing or checklist with a depth on it, so the figure is the Building Code's, from Table 9.12.2.2: 1.2 m for a heated basement on clay or on soils not clearly defined, no limit on rock or, under a heated basement, on coarse-grained soil. On the sand and gravel band the design rather than the frost line sets the depth, and we hold 1.2 m unless the engineer says otherwise."
+    },
+    {
+      "q": "We are in Willoughby, off the Niagara Parkway. What is different there?",
+      "a": "The rock and, on a rural lot, the sewage system. Both Willoughby points return silt and clay, but the bedrock beneath is the Salina Formation, thin-bedded argillaceous dolostone and shale with gypsum beds, rather than the Guelph dolostone under the rest of the city; the survey does not say how deep it lies. Where the house is on a septic system the Niagara Region, not the City, inspects the sewage system, its tank and its drainage bed, while the building permit and the footing and backfill inspections still come from the City."
+    }
+  ],
+  "related_note": "We also build in Niagara-on-the-Lake, Thorold and Fort Erie."
+}

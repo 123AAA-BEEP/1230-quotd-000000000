@@ -1,0 +1,199 @@
+{
+  "slug": "halton-hills",
+  "title": "ICF foundations in Halton Hills | GTA ICF",
+  "description": "ICF foundations in Halton Hills: shale under Georgetown, dolostone under Acton, the Town's 2026 fee per square metre, footing depth, and when we pour.",
+  "h1": "ICF foundations and walls in Halton Hills",
+  "kicker": "Halton Region",
+  "answer": [
+    "Halton Hills is two grounds divided by the Niagara Escarpment. On the Georgetown side the Ontario Geological Survey maps clay-to-silt till and river gravel over red Queenston shale, with Credit River alluvium at Glen Williams, Norval and Hornby; on the Acton side it maps ice-contact sand and gravel over Amabel dolostone. The Town's own residential deck details, a deck drawing rather than a house figure, draw a concrete pier at least 1,200 mm below grade on undisturbed soil, and we hold that depth under a house.",
+    "The permit is a building permit from the Town of Halton Hills Building Services, applied for online with the fee paid at submission. On the 2026 schedule a new detached house, semi or townhouse unit, or an addition to one, is $23.54 per square metre of floor area under 475 square metres and $25.70 from 475 up, with a $263.37 minimum that covers plan review and two inspections; an unfinished basement adds nothing to the area. Footings and foundations is the first stage on the Town's inspection list."
+  ],
+  "tiles": [
+    {
+      "value": "2 bedrocks",
+      "label": "red Queenston shale under Georgetown and the Credit valley, Amabel dolostone under Acton, Limehouse and Ballinafad, either side of the Escarpment",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, bedrock query at Acton",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-80.03889,43.63139&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "$23.54/m²",
+      "label": "Town of Halton Hills 2026 permit fee for a new house or an addition under 475 m² of floor area; $25.70 at 475 m² and over; $263.37 minimum",
+      "source": {
+        "name": "Town of Halton Hills, Building Services Fees 2026 (BLDG-2026)",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en"
+      }
+    },
+    {
+      "value": "1,200 mm",
+      "label": "minimum depth below grade on undisturbed soil for a concrete pier on the Town's own residential deck details, a deck drawing rather than a house figure; we hold the same 1.2 m under a house",
+      "source": {
+        "name": "Town of Halton Hills, Residential Deck Permit Application Guide, detail D01a",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf"
+      }
+    },
+    {
+      "value": "55.8 days",
+      "label": "a year when the high stays at or below 0 °C at Georgetown WWTP, the Town's own climate station, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada climate normals, Georgetown WWTP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Georgetown ground, Acton ground",
+    "paragraphs": [
+      "The Niagara Escarpment crosses Halton Hills from south-west to north-east and splits its ground in two. East of it, around Georgetown, the Ontario Geological Survey maps clay-to-silt till over red Queenston shale, and the published geology of the town puts that shale under more than 15 m of glacial sediment, mostly Halton Till, so a Georgetown basement is a soil dig. Not always the same soil, though: the survey point at the town's map coordinate, 350 m from our reference point, returns gravelly river deposits rather than till, and south Georgetown and Stewarttown return gravel and sand too. That till-and-gravel contact runs through the built-up area.",
+      "Which side of that contact a lot sits on decides how the hole behaves. Till stands vertical but drains slowly, so seepage pools on the footing base until pumped and clay backfill holds water against the wall; gravel drains but runs, so the faces are laid back or boxed. Along the Credit River the survey maps a third case: modern alluvium at Glen Williams and Hornby, older alluvium at Norval, sorted river deposits that may hold organic remains. There the water table and any soft layer govern the footing; the Town's deck guide halves the allowable bearing pressure where water stands in the bottom of the hole.",
+      "West of the Escarpment the bedrock is Amabel dolostone at Acton, Limehouse and Ballinafad. Over it the survey maps ice-contact sand and gravel at Acton and Limehouse, which drains and runs, and stone-poor sandy silt till on the Horseshoe Moraines at Ballinafad. Limehouse ran lime kilns in the 1800s on Clinton-formation rock quarried off the Escarpment face, and Acton quarried too, a sign of how close rock can sit under these communities. Neither survey layer gives a depth to it, so an Acton-side dig is planned with rock excavation as a possibility; a footing on dolostone needs no minimum depth under the Code, but the digging is priced as rock."
+    ],
+    "table_note": "Each row is an Ontario Geological Survey point query, surficial layer MRD 128-REV and bedrock layer MRD 219, at one coordinate per community, retrieved 25 September 2026; the Stewarttown, Hornby, Ballinafad and south Georgetown points are approximations rather than surveyed centres. A point stands for the area around it, not for a lot, and neither layer carries a depth to rock. The footing design comes from the excavation and, where the plans examiner asks, from a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Georgetown",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Georgetown, south",
+        "surface": "Gravelly glacial river deposits",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glen Williams",
+        "surface": "Modern alluvium of the Credit River: clay, silt, sand, gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Norval",
+        "surface": "Older alluvium of the Credit River",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Stewarttown",
+        "surface": "Sandy glacial river deposits",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Hornby and the south rural area",
+        "surface": "Modern alluvium",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Acton",
+        "surface": "Ice-contact sand and gravel",
+        "bedrock": "Amabel, dolostone"
+      },
+      {
+        "name": "Limehouse",
+        "surface": "Ice-contact sand and gravel",
+        "bedrock": "Amabel, dolostone"
+      },
+      {
+        "name": "Ballinafad and the north-west rural area",
+        "surface": "Stone-poor sandy silt till, Horseshoe Moraines",
+        "bedrock": "Amabel, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "The permit from the Town of Halton Hills",
+    "authority_short": "the Town of Halton Hills",
+    "paragraphs": [
+      "Whether the ICF wall carries a new house or an addition, or replaces the foundation under a house that stays, the permit is a building permit from the Town of Halton Hills Building Services, whose counter is on the lower floor of Town Hall at 1 Halton Hills Drive and whose applications go in through the Town's online form, with the fee due at submission. On the 2026 schedule, BLDG-2026, a new detached house, semi or townhouse unit, or an addition to one, is priced by floor area: $23.54 per square metre where the gross floor area is under 475 square metres and $25.70 where it is 475 or more, taken to the outside face of the exterior walls, an unfinished basement not counted. The small residential minimum is $263.37 and includes plan review and two inspections; any further required inspection is charged on top. A basement walkout, exterior stair or ramp on its own is a $278.97 flat rate, and shoring and underpinning, which is what lowering an existing basement involves, has its own line with a $789.69 minimum.",
+      "The Town publishes no review time in days. Its residential guide describes the order of events: the online application, a review report if anything is missing or does not comply, resubmission through a link the Town sends, then the permit placard and stamped plans downloaded from the same account. Building Services publishes no ICF checklist, and none of the Town pages this page cites mentions ICF at all. The Building Code asks flat-wall ICF units to conform to CAN/ULC-S717.1 and carries its own prescriptive rules for ICF walls inside the Part 9 limits; some systems also carry a CCMC evaluation report. Within those limits the wall can be drawn by a qualified designer; outside them, or if the examiner wants it, the wall design carries an engineer's seal and the letter travels with the drawings. The system is named on the quote, its documentation goes in the permit package, and we prepare the package with you. Where a foundation has to go in ahead of the full permit, the schedule prices a conditional or partial permit at $1,996.20, accepted only with a complete full submission, a signed agreement and security of 30 per cent of the construction value.",
+      "The Town's inspection booking page lists the stages it inspects, and footings and foundations comes first, ahead of framing, plumbing and HVAC, insulation, occupancy and final. The page does not split the foundation stage into a pre-pour visit and a pre-backfill visit, so at issuance we confirm with the inspector whether the footing forms and reinforcing are looked at before concrete and whether the wall, membrane and weeping tile are looked at before backfill, because once the ground goes back neither can be seen; the Town's residential guide says requests made before 3 p.m. are booked for the next day, and we book every one. Much of this work in Halton Hills is not a new house. Of the town's 21,825 occupied dwellings, 73 per cent are single-detached and 46.3 per cent were built before 1981, so the permit is often for an addition, a replacement foundation or a basement lowered under a standing house, and the walkout rate and the underpinning line come up more often than the new-house rate."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Halton Hills Building Services, through the Town's online building permit application, fee payable at submission; counter on the lower floor of Town Hall, 1 Halton Hills Drive, 8:30 a.m. to 4:30 p.m.; 905-873-2600, permit intake ext. 2925",
+        "url": "https://forms.haltonhills.ca/Building-Services/Building-Permit-Application"
+      },
+      {
+        "label": "New house or addition fee, 2026",
+        "value": "$23.54 per m² of floor area for a single detached, semi-detached or townhouse unit, or an addition, with gross floor area under 475 m²; $25.70 per m² at 475 m² or more; floor area to the outer face of the exterior walls, unfinished basement excluded (BLDG-2026, Part C, Group C)",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en"
+      },
+      {
+        "label": "Minimum, walkout, underpinning, conditional permit",
+        "value": "$263.37 small residential minimum, covering plan review and two inspections; walkouts, exterior stairs and ramps $278.97 flat; shoring and underpinning on its own line, $789.69 minimum; conditional or partial permit $1,996.20, only with a complete full submission, a signed agreement and security of 30% of construction value; work started without a permit 1.5 times the fee",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en"
+      },
+      {
+        "label": "Inspections",
+        "value": "Stages listed by the Town: footings and foundations, framing, plumbing and HVAC, insulation, occupancy, final; the foundation stage is not split into pre-pour and pre-backfill visits on the page, so both are confirmed at issuance; inspections 905-873-2600 ext. 2922",
+        "url": "https://www.haltonhills.ca/town-hall/applications-forms-resources/building-services/inspectionbookingrequest"
+      },
+      {
+        "label": "Process and review time",
+        "value": "No day count published; online application, a review report if anything is missing or does not comply, resubmission through a link the Town sends, then the placard and stamped plans downloaded; inspection requests before 3 p.m. booked for the next day (the Town's residential guide, written for decks)",
+        "url": "https://www.haltonhills.ca/getContentAsset/5d0e8f70-bfc0-4bfc-a054-08bb4078e359/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/DeckPermitApplicationGuide.pdf?language=en"
+      },
+      {
+        "label": "Housing stock, 2021 Census",
+        "value": "21,825 occupied dwellings, 73.0% single-detached; built 1960 or before 20.0%, 1961 to 1980 26.3%, 1981 to 2000 25.8%, 2001 to 2021 27.9%",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Halton%20Hills&DGUIDlist=2021A00053524015&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Frost, snow and the pour season in Halton Hills",
+    "paragraphs": [
+      "Halton Hills has a climate record of its own, the Georgetown WWTP station at 221 m, and its 1981 to 2010 normals read like an inland town: a January mean of −6.3 °C, a January daily low of −10.9 °C, 46 days a year with a low below −10 °C, 55.8 days when the high stays at or below freezing, and 135.9 cm of snow. Georgetown publishes its frost-free season only as probabilities from a 12-year record: at even odds the last spring frost is May 19, the first fall frost September 24, and the frost-free period 121 days or fewer. Toronto Pearson, 26 km east and the nearest station with a published average, gives 174 days, April 27 to October 20, and the town's own figure is likely the shorter. The published geography also puts the town in two hardiness zones, 5a north of the Escarpment and 5b south of it. Under CSA A23.1 a pour with a forecast below 5 °C in the next 24 hours is cold-weather work: concrete for a wall under 300 mm thick is placed at 10 to 32 °C, held at 10 °C or more through the cure, and reaches 7 MPa before frost can get at it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam on both faces of the form keeps heat in the core, so what needs protecting is the top of the wall and the footing, which get covered, and the cavity, which is cleared of snow and ice before the pump starts; no de-icing salt goes into the forms. The other winter question here is the open hole. Georgetown counts about 113 days a year that freeze at night and thaw by day (its 169 days with a low at or below 0 °C less its 55.8 days with a high at or below it), and till left open through that cycle goes soft at the base, so the excavation is timed to the footing pour rather than left open for weeks. Frost does not move the footing depth. The Town's residential deck details draw a concrete pier at least 1,200 mm below grade on undisturbed soil, a deck drawing rather than a house one, and the Building Code's Table 9.12.2.2 sets the same 1.2 m under a heated basement on clay or soils not clearly defined, with no minimum on rock; that is where our footings go across the town unless a geotechnical report for the lot calls for more."
+    ],
+    "facts": [
+      {
+        "label": "Georgetown WWTP, 1981 to 2010",
+        "value": "January mean −6.3 °C; January daily minimum −10.9 °C; 46.0 days a year with a low below −10 °C; 55.8 days with a high at or below 0 °C; 169.0 days with a low at or below 0 °C; 135.9 cm of snow; the Town's own station, 221 m, temperature normals computed from 1981 to 2006",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "Georgetown WWTP publishes percentiles only, from 12 years: at 50% probability the last spring frost is May 19, the first fall frost September 24, and the frost-free period 121 days or fewer. The nearest station with a published average, Toronto Pearson (1991 to 2020, about 26 km east), gives 174 days, April 27 to October 20",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Cold-weather concreting",
+        "value": "CSA A23.1, as reproduced by Concrete Ontario: cold weather when the forecast falls below 5 °C within 24 hours of placing; sections under 300 mm placed at 10 to 32 °C, held at 10 °C or more through curing, 7 MPa before frost; snow and ice removed from the forms first, no de-icing salts",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Footing depth",
+        "value": "1.2 m minimum under a heated basement on clay or soils not clearly defined, Building Code Table 9.12.2.2, with no minimum on rock; the Town's residential deck details print 1,200 mm below grade on undisturbed soil for a concrete pier, a deck drawing rather than a house figure",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "In Halton Hills the quote moves with the side of the Escarpment the lot is on: rock excavation around Acton and Limehouse if dolostone sits within footing depth, and shoring in the sand and gravel; pumping and waterproofing on the Credit River alluvium at Glen Williams and Norval; in Georgetown, which side of the till and gravel contact the lot falls on. Rural lots add travel and pump reach.",
+  "faqs": [
+    {
+      "q": "What does a basement excavation meet in Georgetown?",
+      "a": "Two grounds within a few hundred metres of each other. The Ontario Geological Survey returns clay-to-silt till at the Georgetown coordinate and gravelly glacial river deposits at a point about 350 m away and again in south Georgetown, with red Queenston shale under both, generally more than 15 m down. Till stands in the cut and holds water; gravel drains and runs. We read the ground when the first bucket comes out and plan the shoring, pumping and backfill for the side of the contact the lot is on."
+    },
+    {
+      "q": "Will an ICF basement in Halton Hills need waterproofing or is dampproofing enough?",
+      "a": "The Building Code requires dampproofing on the outside of every below-grade foundation wall, waterproofing where hydrostatic pressure occurs, weeping tile at the footing, and a drainage layer where the wall insulation runs more than 900 mm below grade, which a full-height ICF wall does. In Halton Hills the pressure question is local: alluvium along the Credit at Glen Williams, Norval and Hornby, and Georgetown till that holds water against the wall, argue for waterproofing; on the free-draining sand and gravel at Acton and Limehouse the site decides."
+    },
+    {
+      "q": "What does the Town of Halton Hills need for an ICF foundation permit?",
+      "a": "The same building permit as any new house, addition or replacement foundation, applied for online through Building Services with the fee paid at submission. The Town publishes no ICF checklist and none of its pages mentions ICF; the Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report. The system is named on the quote, its documentation goes in the permit package with the drawings and, where the design is sealed, the engineer's letter, and we prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Halton Hills in winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Georgetown's station counts 55.8 days a year that never rise above freezing and 46 with a low below −10 °C, and CSA A23.1 governs those: concrete placed at 10 °C or more, held at 10 °C through the cure, 7 MPa before frost, snow and ice out of the cavity first. The foam shelters the core; wall top and footing get covered."
+    },
+    {
+      "q": "How deep does a footing go in Halton Hills?",
+      "a": "At least 1.2 m below finished grade on undisturbed soil. The Town's residential deck details print 1,200 mm below grade for a concrete pier, and although that is a deck drawing rather than a house figure, the Building Code's Table 9.12.2.2 sets the same 1.2 m under a heated basement on clay or soils not clearly defined, and the Town publishes no separate house figure. On rock the Code sets no minimum, which matters on the Acton side; on the Credit River alluvium the engineer may call for more."
+    },
+    {
+      "q": "We are in Acton. What changes on the Escarpment side?",
+      "a": "The rock and the water. Acton's survey point returns ice-contact sand and gravel over Amabel dolostone, not the Queenston shale under Georgetown, so the cut drains and runs, the faces are laid back or shored, and a footing that reaches dolostone is rock excavation with no minimum depth under the Code. Acton also sits near the divide between the Credit and Grand watersheds, and the published hardiness zone north of the Escarpment is 5a against 5b south of it, a reminder that Acton runs colder than Georgetown."
+    }
+  ],
+  "related_note": "We also build in Milton, Brampton and Guelph, the neighbours to the south, east and west."
+}

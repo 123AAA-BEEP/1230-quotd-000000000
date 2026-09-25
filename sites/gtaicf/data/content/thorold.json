@@ -1,0 +1,209 @@
+{
+  "slug": "thorold",
+  "title": "ICF foundations in Thorold | GTA ICF",
+  "description": "ICF foundations in Thorold: silt and clay on the Escarpment plateau, fill beside the canal, the City's 2026 permit fee and deposits, and when we pour.",
+  "h1": "ICF foundations and walls in Thorold",
+  "kicker": "Niagara Region",
+  "answer": [
+    "An ICF foundation in Thorold goes into the silt and clay of the Escarpment plateau: ten of thirteen survey points, from Front Street to Port Robinson, return fine-textured glaciolacustrine silt and clay over Lockport dolostone, and the three that do not, all built-up ground in the core or below the brow, return fill. The City prints no footing depth, so the Building Code's 1.2 m minimum for a heated basement on clay applies. The permit comes from the City of Thorold Building Division, on paper, with two sets of drawings.",
+    "The 2026 schedule prices a new house or an addition at $1.41 per square foot of gross floor area, with the unfinished basement left out of that area, a $194.40 minimum and a $1,000 Plans Examination Deposit at application. The City says several inspections are required during construction but publishes no stage list, so we confirm the footing and pre-backfill visits with the Building Division when the permit is issued. Welland's record puts the mean frost-free period at 151 days, and we pour outside it under cold-weather measures."
+  ],
+  "tiles": [
+    {
+      "value": "$1.41/sq ft",
+      "label": "City of Thorold 2026 permit fee for a new house or addition, on gross floor area that leaves out the unfinished basement",
+      "source": {
+        "name": "Fees and Charges By-law 14-2026, Schedule E, Building Division fees",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf"
+      }
+    },
+    {
+      "value": "151 days",
+      "label": "mean frost-free period at Welland, the nearest station with published normals, 1981 to 2010",
+      "source": {
+        "name": "Environment and Climate Change Canada climate normals, Welland",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      }
+    },
+    {
+      "value": "10 of 13",
+      "label": "survey points across Thorold that return laminated silt and clay; the other three, in the built-up core and below the brow, return fill",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, surficial point query",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2,43.12&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "69.1%",
+      "label": "of Thorold's 9,095 occupied homes are single-detached; a quarter of the stock has been built since 2001",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Thorold",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Thorold&DGUIDlist=2021A00053526037&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "The ground on the plateau and beside the canal",
+    "paragraphs": [
+      "Thorold sits on the plateau above the Niagara Escarpment, and at ten of the thirteen points we queried in the Ontario Geological Survey's surficial map the ground is the same: fine-textured glaciolacustrine silt and clay, from Front Street downtown to Beaverdams, Thorold South, Allanburg and Port Robinson. The cut faces stand while the hole is open, and the footing bears on clay, the ground the Code's minimum depth table is written for. Laminated silt and clay sheds rain slowly, so a wet hole stays wet until pumped, and clay returned as backfill keeps water against the membrane rather than letting it drop to the weeping tile.",
+      "Three points came back different, and all three are built-up ground: the city's own map coordinate downtown, Confederation Heights, and north Rolling Meadows. There the survey maps man-made deposits, its category for fill and urban development, without saying what the fill is or how thick it lies. Canal spoil is one plausible origin, but the map does not say. Fill is not undisturbed soil, which the Code requires under every footing, and the Part 9 rules for an ICF foundation assume stable ground of a stated bearing, so on these lots the dig goes through the fill and an engineer decides what the footing bears on.",
+      "The bedrock changes four times within the city. Lockport dolostone, the caprock of the Escarpment, underlies eight points on the plateau, with its dark Eramosa Member at Allanburg and southern Thorold South. At the Twin Flight Locks it is the Clinton-Cataract Group, the thin shale and sandstone beds of the escarpment face. Below the brow at north Rolling Meadows it is Queenston red shale, and at Port Robinson it is Guelph dolostone. No point returned rock at the surface and the survey does not map depth to rock, so rock excavation is a site finding, though the lock cuts show how close the dolostone can be."
+    ],
+    "table_note": "Each row is one Ontario Geological Survey point query, surficial map MRD 128-REV and bedrock map MRD 219, run on 25 September 2026 at a coordinate chosen for the area; the City publishes no neighbourhood map, so several points are approximations from street location. A row describes an area, not a lot, and the survey does not map depth to rock.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown, Front Street",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Lockport, dolostone (Goat Island, Gasport, Vinemount)"
+      },
+      {
+        "name": "Downtown, canal side",
+        "surface": "Man-made deposits (fill)",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Confederation Heights",
+        "surface": "Man-made deposits (fill); point approximate",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Rolling Meadows, south",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Rolling Meadows, north edge below the brow",
+        "surface": "Man-made deposits (fill)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Twin Flight Locks and Lock 7",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Clinton-Cataract Group, shale and sandstone beds"
+      },
+      {
+        "name": "Thorold South",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Lockport, dolostone; Eramosa Member at the southern point"
+      },
+      {
+        "name": "Allanburg",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Lockport, Eramosa Member, dark bituminous dolostone"
+      },
+      {
+        "name": "Port Robinson",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Guelph, dolostone"
+      },
+      {
+        "name": "Beaverdams",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "DeCew Falls and the Brock University edge",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Lockport, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Thorold's permit, its fee schedule and its inspections",
+    "authority_short": "the City of Thorold",
+    "paragraphs": [
+      "Thorold's building permits come from the City of Thorold Building Division, part of Development Services on the second floor of 8 Carleton Street South, not from Niagara Region. There is no online portal. The application is the 2026 provincial form for a permit to construct or demolish, filed on paper with two sets of scaled drawings for a residential project, at the counter or by Canada Post to the Division's box at 3540 Schmon Parkway. Payment is by cheque, or by cash or debit at the City Hall cashier with the receipt emailed to the Division, and the review starts only once payment is confirmed. The City publishes no review time for building permits; it does say the permit must be in hand before work starts and that construction must begin within six months of issuance.",
+      "Fees come from Schedule E of the 2026 Fees and Charges By-law. A single detached, semi-detached, duplex or townhouse dwelling, new or as an addition, is priced at $1.41 per square foot of gross floor area, HST exempt, and the schedule's notes leave unfinished basements, crawlspaces and, on a new house, the attached garage out of that area, so the foundation itself adds nothing to the calculation. The minimum permit fee is $194.40. At application the City takes a Plans Examination Deposit of $1,000 per dwelling, or $194.50 for an addition, and applies it against the calculated fee, plus two refundable deposits on a new house: $1,000 for lot grading, unless a subdivision agreement already holds one, and a $1,000 performance deposit, which is $750 for an addition that needs excavation. A partial permit for the foundation alone, complete to grade with the underground services, is 15% of the new-construction fee plus a $324 partial-permit surcharge; replacing the foundation under an unfinished basement is $0.28 per square foot and underpinning $4.86 per linear foot. Pouring the footings before the permit is issued adds 25% to the fee, framing 50%, a finished building 100%.",
+      "For the ICF wall the package is the drawings, the documentation of the system named on the quote, and the energy compliance for the wall under SB-12. Ontario's Building Code sets prescriptive rules for flat insulating concrete form foundation walls in Subsection 9.15.4, for houses of up to two storeys, and asks the form units to conform to CAN/ULC-S717.1; some systems also carry a CCMC evaluation report. A wall within those limits is not an alternative solution, so the City's alternative solution form and its hourly review fee do not come into it; a taller wall, a surcharge or weak ground sends the design to an engineer under Part 4, and the City's FAQ notes that certain prefabricated structures or construction components require a professional engineer's certification. We prepare the package with you. On inspections the City says only that several are required during construction to check the work against the approved plans, and the stage list from its former inspections page is no longer online. The by-law's surcharge table names footings and foundations, structural framing and completion as its stages; we confirm the list with the Building Division when the permit is issued and call in the footing and pre-backfill visits ourselves."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Thorold Building Division, Development Services, 8 Carleton Street South, 2nd floor; paper application on the 2026 provincial form with two sets of scaled drawings, in person or by mail; no online portal; 905-227-6613 ext. 277",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/building-or-demolition-permits/"
+      },
+      {
+        "label": "New house or addition fee, 2026",
+        "value": "$1.41 per square foot of gross floor area for a single detached, semi-detached, duplex or townhouse dwelling, HST exempt; unfinished basements, crawlspaces and, on a new house, the attached garage are left out of the area; $194.40 minimum permit fee",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf"
+      },
+      {
+        "label": "Deposits at application",
+        "value": "Plans Examination Deposit $1,000 per dwelling ($194.50 for an addition), applied to the fee; refundable lot grading deposit $1,000 and performance deposit $1,000 on a new dwelling, $750 for an addition that needs excavation",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf"
+      },
+      {
+        "label": "Foundation-only lines",
+        "value": "Partial permit for the foundation to grade with underground services at 15% of the new-construction fee plus a $324 partial-permit surcharge; replacing a foundation under an unfinished basement $0.28 per square foot; underpinning $4.86 per linear foot; footings poured before the permit add 25% to the fee",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf"
+      },
+      {
+        "label": "Inspections",
+        "value": "The City states that several inspections are required during construction to check the work against the approved plans; no stage list is published, so the footing and pre-backfill visits are confirmed with the Building Division at permit issuance; an engineer's certification is required for certain prefabricated structures or components",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/"
+      },
+      {
+        "label": "Review time and start",
+        "value": "No day count published; review begins once payment is confirmed; construction must begin within 6 months of issuance; Development Services is open Monday to Friday, 8:30 am to 4:30 pm",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/building-or-demolition-permits/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Frost, winter pours and the footing depth in Thorold",
+    "paragraphs": [
+      "No station inside Thorold publishes climate normals, and the Brock University station 4 km away has none, so the nearest full record is Welland, about 15 km south at 175 m, close to the roughly 162 m elevation of Thorold's core. Its 1981 to 2010 normals put the January mean at −4.3 °C and the January mean minimum at −8.25 °C, with 30.5 days a year below −10 °C, about 47 days when the daily high stays at or below freezing, and 142 cm of snow. Under CSA A23.1 a pour is cold-weather work whenever the forecast has the air below 5 °C in the following 24 hours: for a wall under 300 mm the mix is placed between 10 and 32 °C, held at 10 °C or warmer while it cures, and brought to 7 MPa before it meets frost.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam of the form holds heat in the core while it cures, which the form makers' manuals describe as thermal protection, but the top of the wall and the footing get cover of their own and the cavity is cleared of snow and ice before the pump arrives. The season sets the frost-free window, which Welland's record puts at a mean of 151 days, an element ECCC gives a lower quality code than the temperature normals; the Niagara Falls and Ridgeville stations report 188 and 183 days on lower-confidence records. What the season does not set is the footing depth. Thorold prints none of its own, so Ontario's Building Code applies directly: 1.2 m below grade for a heated basement on clay or on soils not clearly defined, which is the ground the survey maps across the plateau, no limit on rock, and undisturbed soil under every footing."
+    ],
+    "facts": [
+      {
+        "label": "Winter at Welland",
+        "value": "January mean −4.3 °C, January mean minimum −8.25 °C; 30.5 days a year below −10 °C; about 47 days with a maximum at or below 0 °C; 142 cm of snow; 1981 to 2010 normals, station about 15 km south of Thorold",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "Mean 151 days at Welland (ECCC quality code D, against code A for its January temperature); Niagara Falls NPCSH 188 days and Ridgeville 183 days on lower-confidence records",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1 as reproduced by Concrete Ontario: forecast below 5 °C within 24 hours of placing; sections under 300 mm placed at 10 to 32 °C; kept at 10 °C or more through curing; 7 MPa before exposure to frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Minimum footing depth",
+        "value": "1.2 m for a heated basement on clay or soils not clearly defined, no limit on rock, Ontario Building Code Table 9.12.2.2; the City of Thorold publishes no drawing or checklist that prints a depth",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "What moves a Thorold quote is what the hole turns up. Fill of unknown depth on the built-up streets downtown, in Confederation Heights and at the north end of Rolling Meadows can mean a deeper dig and an engineer's design; dolostone near the brow or the lock cuts means rock excavation; a wet silt-and-clay hole needs pumping and a drainage layer; and the drive to Niagara is its own line.",
+  "faqs": [
+    {
+      "q": "What will the excavator find under a Thorold lot?",
+      "a": "Silt and clay at most addresses. Ten of the thirteen points we queried in the provincial surficial map, from Front Street through Beaverdams, Thorold South, Allanburg and Port Robinson, return fine-textured glaciolacustrine silt and clay over Lockport dolostone. The three exceptions, the canal-side downtown coordinate, Confederation Heights and north Rolling Meadows, return man-made deposits, the map's word for fill. No point returned rock at the surface. These are point queries for an area; the footing is designed from what your excavation shows."
+    },
+    {
+      "q": "Is silt and clay a wet dig, and does that mean waterproofing?",
+      "a": "It drains slowly, so water that gets into the hole stays until it is pumped, and clay backfilled against the wall holds water at the membrane. The Code decides the membrane by pressure: every below-grade wall is dampproofed and drained at the footing, and where hydrostatic pressure occurs it is waterproofed instead. An ICF wall is insulated deeper than 900 mm below grade, which under the Code brings a drainage layer outside the membrane, so that layer is part of every ICF foundation we build in Thorold."
+    },
+    {
+      "q": "What does the City of Thorold ask for with an ICF foundation?",
+      "a": "The paper application any house or addition needs: the 2026 provincial form, two sets of drawings, the $1,000 Plans Examination Deposit for a dwelling or $194.50 for an addition, and the balance when the fee is set. The system named on the quote goes in with its documentation; the Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report. The City publishes no ICF-specific checklist and refers prefabricated components that need an engineer to Building Customer Service. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Thorold in winter?",
+      "a": "Yes. Welland, the nearest full record, counts about 47 days a year when the high stays at or below 0 °C and 30.5 days below −10 °C. On those days the pour follows CSA A23.1: the mix is placed at 10 °C or warmer, the wall is held at that temperature through the cure, and the concrete reaches 7 MPa before frost. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost."
+    },
+    {
+      "q": "How deep does the footing go in Thorold?",
+      "a": "The City publishes no drawing or checklist that prints a footing depth, so the Building Code's own table governs. For a heated basement on clay or on soils not clearly defined, which is the silt and clay under most of Thorold, the minimum is 1.2 m below grade on undisturbed soil. On rock the table sets no minimum, and on the fill in the built-up core there is no depth to quote until the excavation reaches native ground and an engineer confirms what it bears."
+    },
+    {
+      "q": "We are in Allanburg or Port Robinson. Is the ground different from the city?",
+      "a": "At the surface, no: both query points return the plateau's silt and clay. The bedrock differs. Allanburg sits on the Lockport's dark Eramosa Member, and Port Robinson on Guelph dolostone. The canal's history adds a caution: the deep cut between the two villages was dug open because sandy soil ruled out a tunnel, and two survey points cannot tell you whether your lot is that sand or the clay. Port Robinson also sits on the Welland River, where the water table is the first question we ask."
+    }
+  ],
+  "related_note": "We also build in St. Catharines, Niagara Falls and Welland."
+}

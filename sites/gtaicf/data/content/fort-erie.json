@@ -1,0 +1,194 @@
+{
+  "slug": "fort-erie",
+  "title": "ICF foundations in Fort Erie | GTA ICF",
+  "description": "ICF foundations in Fort Erie: clay plain, shore sand at Crystal Beach and Ridgeway, limestone below, the Town's 2026 fees and inspections, when we pour.",
+  "h1": "ICF foundations and walls in Fort Erie",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Most of Fort Erie is a glacial-lake clay plain, so a foundation dig here comes out of silt and clay, the unit the Ontario Geological Survey maps at the reference point, on the Niagara River shore and at Stevensville. The exceptions are the Lake Erie shore, where Crystal Beach and Ridgeway sit on sand and gravel, and a pocket of clay-to-silt till at the Bridgeburg town centre. Devonian and Silurian limestone and dolostone lie under all of it, and no survey point put rock at the surface.",
+    "The permit comes from the Town of Fort Erie Building Department rather than Niagara Region, on a PDF application emailed to building@forterie.ca; the Town runs no online portal. Its sample drawings put poured concrete a minimum of 1200 mm below grade on undisturbed soil, the same depth Ontario's Code requires under a heated basement on clay. The 2026 schedule prices a house at $1.67 per square foot of above-grade floor area, with a $0.56 line for an unfinished basement, new foundation or crawl space."
+  ],
+  "tiles": [
+    {
+      "value": "182 days",
+      "label": "average frost-free period at Port Colborne, April 25 to October 26, the nearest station with full normals",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, Port Colborne",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port%20colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      }
+    },
+    {
+      "value": "82.5%",
+      "label": "of Fort Erie's 14,080 occupied homes are single-detached; 38.9% were built in 1960 or before",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Fort Erie",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Fort%20Erie&DGUIDlist=2021A00053526003&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "Limestone",
+      "label": "Devonian and Silurian limestone and dolostone under every survey point in the town, none of it mapped at the surface",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, bedrock point query",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-78.93,42.9&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "1200 mm",
+      "label": "minimum depth below grade, on undisturbed soil, for poured concrete on the Town's sample drawings",
+      "source": {
+        "name": "Town of Fort Erie sample drawings, standard details 2007",
+        "url": "https://www.forterie.ca/media/ladkxh05/sample-deck-drawings002.pdf"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Clay plain, shore sand and the limestone under Fort Erie",
+    "paragraphs": [
+      "Inland Fort Erie is mapped almost entirely as fine-textured glaciolacustrine deposits, silt and clay from the floor of a glacial lake. The survey returns that unit at the reference point, on the Niagara River shore, at Stevensville and at the estimated Douglastown point. For a basement it is dependable, slow ground. The cut stands while the hole is open, but rain that reaches the excavation stays in it, and the same clay used as backfill keeps water sitting against the membrane rather than draining to the tile, so the drainage layer earns its place. One small polygon of clay-to-silt till breaks the plain at the Bridgeburg town centre.",
+      "Along Lake Erie the ground turns to sand. The Crystal Beach and Ridgeway points return coarse-textured glaciolacustrine sand and gravel, old and modern shoreline deposits that form the low sand hills along the lakefront. Sand drains, so the weeping tile has an easy job, and sand runs, so the sides of the hole are sloped or shored and the footing goes only on material the bucket has not disturbed. Close to the lake the water table decides between dampproofing and waterproofing. The band is narrow: a second Crystal Beach query about 900 m inland came back as clay, which is the shore sand meeting the plain.",
+      "Fort Erie's bedrock is limestone and dolostone in bands that run parallel to the lake, oldest to the north: Onondaga limestone along the river and the lakeshore, Bois Blanc limestone and dolostone inland behind it, Bertie dolostone at the river shore point and Salina dolostone, shale and gypsum at Stevensville. No query returned rock at the surface, and the survey carries no layer for cover thickness, but the limestone ridge that gives Ridgeway its name and the Peace Bridge site's history as a source of Onondaga limestone say the cover can be thin. The Code puts no lower limit on a footing that sits on rock, and that last lift is rock excavation."
+    ],
+    "table_note": "Surface unit from Ontario Geological Survey map MRD 128-REV and bedrock formation from MRD 219, one point query per community, run 25 September 2026. Douglastown has no mapped coordinate, so its point is an estimate, and the Point Abino query fell outside the mapped surficial polygons. A row speaks for a community, not for your lot; the footing is designed from what the excavation shows, with a geotechnical report where the Building Department asks for one.",
+    "neighbourhoods": [
+      {
+        "name": "Bridgeburg (town centre)",
+        "surface": "Clay-to-silt till, one small polygon",
+        "bedrock": "Bois Blanc, cherty limestone and dolostone"
+      },
+      {
+        "name": "Fort Erie, survey reference point",
+        "surface": "Silt and clay, glacial-lake plain",
+        "bedrock": "Onondaga, limestone (Edgecliff Member)"
+      },
+      {
+        "name": "Niagara River shore",
+        "surface": "Silt and clay, glacial-lake plain",
+        "bedrock": "Bertie, dolostone"
+      },
+      {
+        "name": "Crystal Beach",
+        "surface": "Sand and gravel (Lake Erie shore)",
+        "bedrock": "Onondaga, limestone"
+      },
+      {
+        "name": "Ridgeway",
+        "surface": "Sand and gravel",
+        "bedrock": "Bois Blanc, cherty limestone and dolostone"
+      },
+      {
+        "name": "Stevensville",
+        "surface": "Silt and clay, glacial-lake plain",
+        "bedrock": "Salina, dolostone, shale and gypsum"
+      },
+      {
+        "name": "Douglastown (approximate point)",
+        "surface": "Silt and clay, glacial-lake plain",
+        "bedrock": "Bois Blanc, cherty limestone and dolostone"
+      },
+      {
+        "name": "Point Abino",
+        "surface": "No surficial polygon at the query point",
+        "bedrock": "Onondaga, limestone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "The Town of Fort Erie permit, its fees and its inspections",
+    "authority_short": "the Town of Fort Erie",
+    "paragraphs": [
+      "Fort Erie is a lower-tier town in Niagara Region, and the building permit is the Town's, issued by the Building Department on the second floor of Town Hall at 1 Municipal Centre Drive. The Town runs no online portal; the application is a fillable PDF, the Building Permit Standard form in its February 2026 version, emailed to building@forterie.ca or handed in at the counter. The Town's own process starts with a conversation with a Building Official, who checks the proposal against zoning before anything is filed, and it publishes a prescribed review period of 10 business days for houses and semi-detached houses, including additions, renovations and attached garages, counted only once the application is complete. Building By-law 80-2014 says what complete means: legible drawings, fully dimensioned and to scale, and a plot plan that references a current plan of survey by an Ontario Land Surveyor unless the Chief Building Official waives it.",
+      "The 2026 Consolidated Schedule of Fees and Charges prices a one-family, semi-detached or multiple-unit dwelling at $1.67 per square foot, and the square footage it means is the gross area of the floors above grade, measured from the outer face of the exterior walls, so the basement itself is not in the count; an attached garage, carport or covered porch is charged separately at $0.56 per square foot. Under residential alterations the schedule carries a line for an unfinished basement, new foundation and crawl space, at $0.56 per square foot, and a finished basement at $0.88. The minimum permit fee is $205, a reinspection after a visit that was not remedied is $103.10, and work started before the permit issues draws an administration fee equal to the permit fee for what was built. Deposits are a separate list: a $500 sidewalk repair deposit taken at application, a $500 deposit against soil or debris tracked onto the street, and lot grading deposits for a new home of $2,500 per lot for a Tarion-registered builder or $5,000 for one who is not. Which of them attach to a given permit we confirm with the Building Department when the application goes in.",
+      "Nothing on the Town's pages is written for ICF and no ICF-specific checklist exists, so the foundation is reviewed inside the house or addition permit like any other wall. Subsection 9.15.4 of Ontario's Building Code gives a flat ICF foundation wall a prescriptive path on stable soils with an allowable bearing pressure of 75 kPa or more, with the form units conforming to CAN/ULC-S717.1; a few systems also hold a CCMC evaluation report. The quote names the system we install, and that system's documentation travels into the package alongside the drawings and the wall's SB-12 energy compliance. Soft clay on the Town's own soil-bearing table sits at 40 kPa, below that 75 kPa floor, so on the clay plain the soil class found in the hole decides whether the wall is drawn under Part 9 or designed by an engineer under Part 4. We prepare the package with you. The Town does not publish a list of inspection stages; it issues one with each permit, each visit is requested by phone at 905-871-1600 extension 5510 or by email 24 to 48 hours ahead, and the by-law asks for at least two business days' notice before every specified stage. In the municipalities on this site that publish their lists the concrete stages are the footing before the pour and the foundation before backfill, we expect the same two here, and we call each in only when it is ready. One more Fort Erie step sits between foundation and framing: the by-law lets the Chief Building Official require a surveyor's plan of the location and elevation of the top of the foundation wall for a detached, semi-detached, triplex, fourplex or townhouse dwelling before the framing inspection."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Fort Erie Building Department, Town Hall second floor, 1 Municipal Centre Drive; fillable PDF forms (Building Permit Standard, February 2026 version) emailed to building@forterie.ca; no online portal",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permit-applications/"
+      },
+      {
+        "label": "Fees, 2026",
+        "value": "One-family, semi-detached or multiple-unit dwelling $1.67 per sq ft of gross floor area above grade, measured from the outer face of the exterior walls; attached garage, carport or covered porch $0.56 per sq ft, charged separately; unfinished basement, new foundation and crawl space $0.56 per sq ft; finished basement $0.88 per sq ft; $205 minimum permit fee; reinspection when the previous inspection was not remedied $103.10; work begun before the permit issues, an added administration fee equal to the permit fee for the work completed",
+        "url": "https://media-003-ca.cdn.govstack.com/forterie-ca/media/cp2fcgsz/2026-building-fees-charges.pdf"
+      },
+      {
+        "label": "Deposits, 2026",
+        "value": "Sidewalk repair deposit $500 on filing a building permit application; tracking of construction debris deposit $500 for materials, waste or soil tracked onto public streets; lot grading deposit for a new home $2,500 per lot for a Tarion-registered builder, $5,000 per lot for a builder not registered with Tarion",
+        "url": "https://media-003-ca.cdn.govstack.com/forterie-ca/media/cp2fcgsz/2026-building-fees-charges.pdf"
+      },
+      {
+        "label": "Review time",
+        "value": "10 business days prescribed for houses and semi-detached houses, including additions, renovations and attached garages; complete applications only; 15, 20 and 30 days for larger classes",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permits/building-permit-timelines/"
+      },
+      {
+        "label": "Inspection requests",
+        "value": "A list of required inspections is issued with each permit; request each by phone (905-871-1600 ext. 5510) or email at least 24 to 48 hours ahead, giving the civic address or permit number",
+        "url": "https://www.forterie.ca/build-and-invest/building-and-renovating/building-permits/"
+      },
+      {
+        "label": "Building By-law 80-2014",
+        "value": "Inspection notices a minimum of two business days before each specified stage (s. 11.2); drawings legible, fully dimensioned and to scale, with a plot plan that references a current plan of survey (s. 5.2); on completion of the foundation of a detached, semi-detached, triplex, fourplex or townhouse dwelling the Chief Building Official may require a surveyor's plan of the location and elevation of the top of the foundation wall before the framing inspection (s. 5.6)",
+        "url": "https://www.forterie.ca/media/2ydhuaul/building-by-law-no-80-2014.pdf"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Winter on the Lake Erie shore and when we pour",
+    "paragraphs": [
+      "Fort Erie has no climate station with a full set of normals, so the record we use is Port Colborne, about 26 km west along the same Lake Erie shore, for 1981 to 2010. January there averages −3.7 °C with a daily minimum of −6.9 °C; 23.2 days a year fall below −10 °C and 45.5 days never rise above freezing, against 120.7 days when the night reaches 0 °C or lower, so about 75 days a year cross freezing between night and day. The frost-free period is 182 days, April 25 to October 26. Lake Erie moderates the shore, with a milder January mean and a longer frost-free season than at Hamilton's airport station, but it does not spare it snow: 137.7 cm a year, which is what gets cleared out of the form cavity before a winter pour. CSA A23.1 calls a pour cold-weather work when the forecast has the air dropping under 5 °C in the 24 hours after placing: for a wall thinner than 300 mm the mix goes in between 10 and 32 °C, is kept from falling under 10 °C through the cure, and is brought to 7 MPa before any frost reaches it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam panels keep heat in the core while it cures, which the form makers' manuals describe as thermal protection in cold weather, but the open top of the wall and the footing are covered separately, and the ready-mix supplier heats the mix. The footing depth does not follow the calendar. The Town's sample drawings, standard details dated 2007, print poured concrete a minimum of 1200 mm below grade on undisturbed soil, and Ontario's Building Code sets the same 1.2 m as the minimum for a heated basement on clay or on soils not clearly defined, with no limit on rock and, for a heated basement, none on the coarse-grained soils of the shore band. Undisturbed soil is the rule in every case."
+    ],
+    "facts": [
+      {
+        "label": "Winter at Port Colborne",
+        "value": "January mean −3.7 °C, daily minimum −6.9 °C; 45.5 days a year with a maximum at or below 0 °C and 120.7 with a minimum at or below 0 °C; 23.2 days below −10 °C; 137.7 cm of snow; 1981 to 2010 normals at a station about 26 km west of Fort Erie",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port%20colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "182 days on average, April 25 to October 26, Port Colborne, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port%20colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1, as reproduced by Concrete Ontario: forecast below 5 °C within 24 hours; concrete for sections under 300 mm placed at 10 to 32 °C, kept at 10 °C or more while curing, 7 MPa before frost; snow and ice removed from the forms first",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Building Code minimum depth",
+        "value": "1.2 m for a heated basement on clay or soils not clearly defined; no limit on rock, or on coarse-grained soils for a heated basement; excavations extend to undisturbed soil (Table 9.12.2.2 and Article 9.12.2.1, 2024 Compendium)",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Fort Erie is the far end of our Niagara run, so travel is a line on every quote here. The others are local: a dry hole and a drainage layer in the clay plain, shoring and a water-table call in the shore sand of Crystal Beach and Ridgeway, rock excavation where the limestone ridge comes up under a footing, and pump reach on a tight lakefront lot.",
+  "faqs": [
+    {
+      "q": "What is the digging like in Fort Erie?",
+      "a": "Mostly silt and clay. The survey maps a glacial-lake clay plain across inland Fort Erie, from the river shore to Stevensville, with a small pocket of clay-to-silt till at the Bridgeburg centre. It stands in a cut and drains slowly, so the hole is kept dry and the wall gets a drainage layer. At Crystal Beach and Ridgeway the ground is shore sand and gravel that drains but runs. Limestone and dolostone lie under everything at a depth the survey does not map, so we confirm on site."
+    },
+    {
+      "q": "Do we need waterproofing or just dampproofing at Crystal Beach?",
+      "a": "Every below-grade wall is dampproofed on the outside and drained at the footing; where hydrostatic pressure occurs the Code requires waterproofing instead. At Crystal Beach and Ridgeway the sand lets groundwater move, and close to the lake the water table can be the deciding fact, so we check it before the quote rather than in the dig. Because an ICF wall is insulated its full height, the Code's drainage layer applies to it as well, and on the clay plain inland that layer is what keeps water off the membrane."
+    },
+    {
+      "q": "What does the Town of Fort Erie ask for with an ICF foundation?",
+      "a": "The ordinary building permit for the house or addition, on the Town's PDF form emailed to building@forterie.ca, with drawings that meet By-law 80-2014 and a plot plan tied to a current survey. Ontario's Code wants the form units to conform to CAN/ULC-S717.1, and a few systems hold a CCMC evaluation report on top; the quote names the system we install, and its documentation goes in beside the drawings and the SB-12 energy summary. The Town has no ICF checklist, and we prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Fort Erie in winter?",
+      "a": "Yes. Port Colborne's normals give the shore 45.5 days a year with no thaw, 23.2 days below −10 °C and 137.7 cm of snow, cleared from the form cavity first. On those days CSA A23.1 runs the pour: mix placed no colder than 10 °C, a covered wall kept at that temperature through the cure, and 7 MPa before frost. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost."
+    },
+    {
+      "q": "How deep does the footing go in Fort Erie?",
+      "a": "At least 1200 mm below grade on undisturbed soil, printed on the Town's sample drawings and matching the Code's 1.2 m for a heated basement on clay. On rock the Code table sets no depth limit, and none on the shore sand under a heated basement, so there the design and the hole decide. The Town's drawings carry a soil-bearing table from soft clay at 40 kPa to sound rock at 500 kPa; a prescriptive ICF wall needs 75 kPa or better, so the soil class is settled on site."
+    },
+    {
+      "q": "We are in Ridgeway. Is there rock under us?",
+      "a": "Possibly close. Ridgeway is named for the limestone ridge that runs from Point Abino toward Miller's Creek, and the bedrock at its query point is Bois Blanc, a cherty limestone and dolostone, under shore sand and gravel. No point in Fort Erie returned rock at the surface, and the survey does not map how thick the cover is, so a test pit before the quote settles it. A footing that reaches rock has no minimum depth under the Code, and the last part of the dig becomes rock excavation."
+    }
+  ],
+  "related_note": "We also build in Niagara Falls, Port Colborne and Welland."
+}

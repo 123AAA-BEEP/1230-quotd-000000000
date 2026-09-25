@@ -1,0 +1,199 @@
+{
+  "slug": "niagara-on-the-lake",
+  "title": "ICF foundations in Niagara-on-the-Lake | GTA ICF",
+  "description": "ICF foundations in Niagara-on-the-Lake: silt and clay on the lake plain, till under Virgil, the Town's 2026 fees, Old Town heritage permits, and when we pour.",
+  "h1": "ICF foundations and walls in Niagara-on-the-Lake",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Under most of Niagara-on-the-Lake an excavation for a full-depth foundation cuts into glacial-lake silt and clay: the Ontario Geological Survey returns that unit at Old Town, St. Davids, Queenston and Glendale. Virgil sits on clay-to-silt till, and one narrow band between Old Town and the Niagara River is sand and gravel. No survey point put bedrock at the surface, so the dig is soil work and the footing bears on soil, with Queenston red shale below at a depth the survey does not map.",
+    "The Town of Niagara-on-the-Lake's Building Services issues the permit, with applications taken only online through Cloudpermit, and its 2026 schedule prices a new single, semi or duplex dwelling at $2.16 per square foot of floor area above grade, leaving an unfinished basement out of the count. The Town prints no footing depth of its own, so on clay the Building Code's 1.2 m minimum for a heated basement governs, on undisturbed soil. In Old Town's Queen-Picton Heritage Conservation District, exterior work also needs a heritage permit."
+  ],
+  "tiles": [
+    {
+      "value": "Silt and clay",
+      "label": "the glacial-lake ground at the Old Town, St. Davids, Queenston and Glendale survey points; clay-to-silt till under Virgil",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, point query at 43.25, -79.07",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.07,43.25&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "79.2%",
+      "label": "of the Town's 7,860 occupied homes are single-detached, and 42% of the stock was built after 2000",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Niagara-on-the-Lake",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara-on-the-Lake&DGUIDlist=2021A00053526047&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "46 days",
+      "label": "a year when the temperature never rises above 0 °C at St. Catharines A, about 10 km south-west, the nearest station with full normals",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      }
+    },
+    {
+      "value": "$2.16/sq ft",
+      "label": "the Town's 2026 permit fee for a new single, semi or duplex dwelling or an addition, on floor area above grade; an unfinished basement is not counted",
+      "source": {
+        "name": "Town of Niagara-on-the-Lake, 2026 Building User Fees & Service Charges",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Lake plain, river band and Escarpment: the ground in Niagara-on-the-Lake",
+    "paragraphs": [
+      "Most of the Town is lake plain. Point queries from Queen Street in Old Town to St. Davids, Queenston and the Niagara College campus at Glendale all return fine-textured glaciolacustrine deposits: silt and clay, massive to well laminated. For a basement excavation that is workable but wet ground. Laminated silt and clay stands in a cut for the days the hole is open, yet water moves through it slowly, so rain and seepage collect at footing level instead of draining away, and the same material pushed back against the wall holds moisture at the membrane. Bearing values are not in the survey attributes; the footing width comes from the site.",
+      "Virgil is different. The village node and a second point near Niagara Stone Road both return clay-to-silt till, which the survey describes as derived from glaciolacustrine deposits or shale. Till holds a vertical face well but is as slow to drain as the clay, so till pushed back against an ICF wall traps water unless clear stone or a drainage layer sits between. Between Old Town and the Niagara River, along the Parkway, one point returns coarse-textured glaciolacustrine sand and gravel, the only sand in the Town's queries. Sand drains, which suits the weeping tile, but it runs, so the faces are shored or laid back.",
+      "Bedrock is the Queenston Formation, red shale and siltstone, under every point the bedrock map covers except one on the Escarpment brow, and the formation takes its name from the village of Queenston, where the Niagara River began cutting into the Escarpment and the red beds are exposed in the gorge. South-east of Glendale, on the brow, a single point returns Lockport Formation dolostone instead. How far down either rock lies is not mapped by the survey, and no query point returned bedrock at or near the surface, so we plan a Niagara-on-the-Lake excavation as soil work; rock excavation is a site finding here, not a mapped expectation."
+    ],
+    "table_note": "Surface unit from Ontario Geological Survey MRD 128-REV and bedrock formation from MRD 219, each a point query at one coordinate per settlement, run 25 September 2026. The Queen Street point sits at the edge of the bedrock map's coverage and returns no formation. A point describes the settlement, not your lot; the footing is designed from the open excavation and, where the Town's plans examiner asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Old Town, Queen Street",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Outside the bedrock map's coverage at this point"
+      },
+      {
+        "name": "Old Town, south end",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Parkway band between Old Town and the river",
+        "surface": "Sand and gravel, coarse glacial-lake deposits",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Virgil, village centre",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Virgil, Niagara Stone Road and Concession 2",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "St. Davids",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Queenston",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Queenston, red shale; the formation's type area"
+      },
+      {
+        "name": "Glendale, Niagara College campus",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Escarpment brow, south-east of Glendale",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Lockport, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits, fees and heritage approvals in Niagara-on-the-Lake",
+    "authority_short": "the Town of Niagara-on-the-Lake",
+    "paragraphs": [
+      "Building permits in Niagara-on-the-Lake are issued by the Town's Building Services, and applications are taken only online, through Cloudpermit; the property owner applies, or authorizes a contractor or designer in writing to apply for them. A foundation is permitted as part of the house or addition above it, and the Town's own list of work that needs a permit also includes finished basements and dampproofing a basement, so a retrofit on an older house is a permit job too. The 2026 schedule prices a new single, semi or duplex dwelling and additions at $2.16 per square foot of gross floor area above grade, measured to the outside of the walls; its notes leave an unfinished basement, a crawl space and an attached garage up to a double out of that area for a new dwelling or an addition over 1,000 square feet, so the ICF foundation under a new house adds nothing to the fee unless the basement is finished. The minimum fee is $230, the permit fee is paid at application with the balance of other charges due before issuance, and construction that starts before the permit is issued is charged double; the schedule counts the placing of concrete as a start.",
+      "Three other lines on the schedule matter for a foundation. A partial permit for the foundation stage, complete to grade including underground services, is priced at the minimum fee plus 20 per cent of the total permit fee; the schedule does not say when the Town allows staged construction, so we ask before a job is planned around it. An alterations line marked 'Foundation' is $0.60 per square foot with no scope printed, and a finished basement is the same rate. A new dwelling unit carries a refundable $4,500 lot grading and damage deposit, returned when an Ontario Land Surveyor or engineer confirms the final grading, and the Town lists Regional and Town development charges, a water meter fee and heavy loading charges among the sums settled before the permit issues. What goes in is a drawing set with plans, elevations, sections and details, a site plan and, depending on the construction, engineered drawings, to scale and by the owner or a BCIN-qualified designer, preferably as PDF. For an ICF wall the wall system's documentation goes in beside them: the Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report. The system we install is named on the quote. Within the Part 9 limits, two storeys, 3 m floor to floor and soil of 75 kPa or better without surcharge, a qualified designer can draw the wall; beyond them, or when the plans examiner asks, an engineer seals the design and the Town's Commitment to General Review form for architects and engineers goes in with it. We prepare the package with you.",
+      "The Town does not publish its inspection stages; they are set out on the permit when it is issued, and the owner or the contractor requests each one before the next stage of construction by phoning 905-468-3266 with the permit number, the address and the type of inspection, on at least 48 hours' notice and without a fixed time slot. A visit that finds the work not ready costs a $145 re-inspection fee in 2026, and an inspection outside the regulated list $191. We request every stage the permit lists and stand the visits; on our jobs the footing forms and steel before concrete and the wall before backfill are the ones that decide whether the work goes on. The permit is good for a year and work must start within six months. The Town also lists approvals that may be needed before a permit issues: a heritage permit from the Municipal Heritage Committee, a septic permit from the Niagara Region Health Department, a development permit from the Niagara Escarpment Commission, a permit from the Niagara Peninsula Conservation Authority and an entrance permit from the Town's Operations Department. Heritage is the one Old Town meets most: the Queen-Picton Heritage Conservation District, approved in 1986, is the Town's only Part V district, and any alteration to the exterior of a structure on a property within it, or on an individually designated Part IV property, needs the consent of Council and a heritage permit as well as the building permit."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Niagara-on-the-Lake Building Services; applications online only, through Cloudpermit; the owner applies or authorizes a contractor or designer in writing; Building Department 905-468-3266 ext. 332",
+        "url": "https://www.notl.com/building-services"
+      },
+      {
+        "label": "New dwelling or addition fee, 2026",
+        "value": "$2.16 per square foot of gross floor area above grade for a single, semi or duplex dwelling and for additions; unfinished basements, crawl spaces and attached garages up to a double are not counted for a new dwelling or an addition over 1,000 square feet; $230 minimum",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf"
+      },
+      {
+        "label": "Foundation lines on the schedule",
+        "value": "Partial permit for the foundation stage, complete to grade including underground services: minimum fee plus 20% of the total permit fee; an alterations line marked 'Foundation' at $0.60 per square foot, scope not printed; fee doubled where concrete is placed before the permit is issued",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf"
+      },
+      {
+        "label": "Deposit on a new dwelling",
+        "value": "$4,500 lot grading and damage deposit per new dwelling unit, refundable when construction is complete and an Ontario Land Surveyor or Professional Engineer confirms the final grading; development charges and other charges are settled before issuance",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf"
+      },
+      {
+        "label": "Inspections",
+        "value": "Stages are set out on the permit when it is issued; request each by phone to 905-468-3266 with at least 48 hours' notice, no fixed time slots; re-inspection $145 and an inspection outside the regulated list $191 in 2026",
+        "url": "https://www.notl.com/building-services"
+      },
+      {
+        "label": "Heritage and other approvals",
+        "value": "Queen-Picton Heritage Conservation District (Part V, approved 1986) and individually designated Part IV properties: consent of Council and a heritage permit for exterior alterations; the Town also lists Niagara Escarpment Commission, Conservation Authority, Region septic and Town entrance permits as approvals that may come first",
+        "url": "https://www.notl.com/heritage-planning"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Winter pours and frost depth in Niagara-on-the-Lake",
+    "paragraphs": [
+      "Niagara-on-the-Lake has no station of its own with full temperature normals; Port Weller, the closest, publishes only a few years of extremes and no temperature normals, so we use St. Catharines A, about 10 km south-west. Its 1981 to 2010 record gives a January mean of −3.8 °C, 46 days a year when the maximum never gets above 0 °C, 26.7 days below −10 °C and 137 cm of snow, with a frost-free period of 179 days from April 24 to October 21. CSA A23.1 makes a pour cold-weather work when the forecast has air below 5 °C within 24 hours: concrete for a wall under 300 mm arrives at 10 to 32 °C, is held at 10 °C or more while it cures, and reaches 7 MPa before frost touches it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS on both faces of the form insulates the core while it cures, which is one reason winter foundations go up in ICF, but the top of the wall and the footing are still covered, and the snow this area averages has to come out of the form cavity before the pump arrives, without de-icing salts. The footing depth does not change with the calendar. The Town prints none of its own, so the Building Code's Table 9.12.2.2 governs: 1.2 m below grade for a heated basement on clay or on soils not clearly defined, which is the lake-plain silt and clay and the Virgil till, no limit on coarse-grained soils for a heated basement, and undisturbed soil in every case."
+    ],
+    "facts": [
+      {
+        "label": "Nearest station",
+        "value": "Port Weller, the closest Environment Canada station, publishes no temperature normals, so St. Catharines A, about 10 km south-west of the Old Town, stands in",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=weller&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136699&dispBack=1"
+      },
+      {
+        "label": "Winter and frost-free period, St. Catharines A",
+        "value": "January mean −3.8 °C; 46 days a year with a maximum at or below 0 °C; 26.7 days below −10 °C; 137.1 cm of snow; frost-free period 179 days, April 24 to October 21; 1981 to 2010 normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1 as reproduced by Concrete Ontario: forecast below 5 °C within 24 hours; concrete for sections under 300 mm placed at 10 to 32 °C, kept at 10 °C or more while curing, 7 MPa before frost; snow and ice removed from forms, no de-icing salts",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Minimum footing depth",
+        "value": "1.2 m for a heated basement on clay or soils not clearly defined, no limit on coarse-grained soils or rock, always to undisturbed soil, Building Code Table 9.12.2.2 and Article 9.12.2.1; the Town prints no depth of its own",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Rock is not the line to expect on a Niagara-on-the-Lake quote; water and access are. Dewatering and waterproofing where the lake-plain clay or the sand band by the river holds a high water table, shoring in that sand, pump reach and truck access on Old Town's heritage streets, the Town's refundable new-dwelling deposit, and travel to the far end of our Niagara run each appear as their own line.",
+  "faqs": [
+    {
+      "q": "What does the excavator meet under a Niagara-on-the-Lake lot?",
+      "a": "Silt and clay across most of the Town: the Ontario Geological Survey returns fine-textured glacial-lake deposits at Old Town, St. Davids, Queenston and Glendale. Virgil is the exception, on clay-to-silt till, and the Parkway band toward the Niagara River is sand and gravel. The two fine soils hold a cut and drain slowly; the sand drains and runs. No point returned rock at the surface, so the dig is soil work, with Queenston red shale beneath at an unmapped depth."
+    },
+    {
+      "q": "Will a basement near the lake or the river need waterproofing?",
+      "a": "The Building Code requires every below-grade foundation wall to be dampproofed on the outside and drained at the footing; where hydrostatic pressure occurs, waterproofing instead. Lake-plain silt and clay holds water against a wall, and the sand band along the Niagara River lets groundwater move, so in both the water table decides the treatment, and we settle it from a test pit or the open excavation. An ICF wall is insulated its full height, which under the Code adds a drainage layer outside the membrane."
+    },
+    {
+      "q": "What does the Town of Niagara-on-the-Lake want in the package for an ICF foundation?",
+      "a": "The same application as any house or addition, filed through Cloudpermit: a drawing set with plans, elevations, sections and details, a site plan, and engineered drawings where the construction calls for them, to scale, by the owner or a BCIN-qualified designer. The ICF system's documentation goes in beside them; the Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report. The system we install is named on the quote, and the Town publishes no ICF-specific checklist. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation here in winter?",
+      "a": "Yes. St. Catharines A, our reference station here, counts 46 days a year with no thaw and 26.7 below −10 °C. On those days CSA A23.1 makes the pour cold-weather work: concrete placed at 10 °C or more, the wall covered and held at that temperature through the cure, 7 MPa before frost, and no snow or ice left in the cavity. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost."
+    },
+    {
+      "q": "How deep does the footing go, and does the Town print a depth?",
+      "a": "The Town prints no footing depth; its Building Services page asks for scaled drawings and a site plan. Ontario's Building Code fills the gap with Table 9.12.2.2: 1.2 m below grade for a heated basement on clay or on soils not clearly defined, which covers the silt and clay of the lake plain and the till at Virgil, and no depth limit for a heated basement on coarse-grained soil such as the sand band by the river, or on rock. In every case the excavation goes to undisturbed soil."
+    },
+    {
+      "q": "We are in Old Town. What does the heritage district change?",
+      "a": "Old Town's historic centre is the Queen-Picton Heritage Conservation District, approved in 1986 and the Town's only Part V district. Any alteration to the exterior of a structure on a property within it, and any on an individually designated Part IV property, needs Council's consent and a heritage permit before the building permit is issued, so an addition or a rebuilt foundation there starts with the Town's heritage planner. Under it all is the same lake-plain silt and clay."
+    }
+  ],
+  "related_note": "We also build in St. Catharines, Niagara Falls and Thorold."
+}
