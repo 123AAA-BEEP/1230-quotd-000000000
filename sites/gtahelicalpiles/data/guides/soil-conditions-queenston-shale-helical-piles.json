@@ -185,7 +185,7 @@
       "paragraphs": [
         "When the ice retreated, an enlarged Lake Ontario called glacial Lake Iroquois stood roughly 30 to 45 m above today's lake. Its waves cut a shorecliff and dropped bars of sand and gravel along a strip 3 to 5 km wide inland of the present shore; in Toronto, Davenport Road follows it. Downtown Toronto, Burlington, Hamilton lower city, Ancaster and St. Catharines all returned unit 9, coarse glaciolacustrine sand and gravel.",
         "Two other granular units appear north and west. Georgetown and downtown Guelph returned unit 7b, gravelly glaciofluvial river and delta deposits. Palgrave in Caledon returned unit 6, ice-contact stratified sand and gravel: the Oak Ridges Moraine, primarily sand and gravel rather than clay till. North York returned unit 5b, a sandy silt till closer to these than to Halton Till.",
-        "Granular ground changes how we prove a pile. CCMC report 13675-R states that where the pile is installed in granular material exceeding 200 mm in diameter the relationship between torque and allowable load is not as predictable, and the allowable loads have to be confirmed by on-site load tests under a with a licence geotechnical engineer. Torque can rise in a gravel bar and fall in loose sand beneath."
+        "Granular ground changes how we prove a pile. CCMC report 13675-R states that where the pile is installed in granular material exceeding 200 mm in diameter the relationship between torque and allowable load is not as predictable, and the allowable loads have to be confirmed by on-site load tests under a geotechnical engineer holding a licence. Torque can rise in a gravel bar and fall in loose sand beneath."
       ],
       "sources": [
         {
@@ -500,7 +500,7 @@
     },
     {
       "q": "Why might a job in gravel need a load test?",
-      "a": "CCMC report 13675-R states that where the pile is installed in granular material larger than 200 mm the torque-to-load relationship is not as predictable, and allowable loads must then be confirmed by on-site load tests under a with a licence geotechnical engineer. Cobbly gravel on the Lake Iroquois shoreline is where that applies."
+      "a": "CCMC report 13675-R states that where the pile is installed in granular material larger than 200 mm the torque-to-load relationship is not as predictable, and allowable loads must then be confirmed by on-site load tests under a geotechnical engineer holding a licence. Cobbly gravel on the Lake Iroquois shoreline is where that applies."
     },
     {
       "q": "Does clay till hold a pile well?",
