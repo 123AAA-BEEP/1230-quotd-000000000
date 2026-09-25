@@ -1,0 +1,330 @@
+{
+  "slug": "oakville",
+  "name": "Oakville",
+  "region": "Halton Region",
+  "province": "ON",
+  "lat": 43.45011,
+  "lon": -79.68292,
+  "sub_areas": [
+    {
+      "name": "Old Oakville",
+      "note": "Downtown, on the Lake Ontario shore between Sixteen Mile Creek/Oakville Harbour and Chartwell Road, north to Cornwall Road (Wikipedia). OGS point query at the Lakeshore Road area returns coarse glaciolacustrine sand and gravel over Georgian Bay Formation shale."
+    },
+    {
+      "name": "Kerr Village",
+      "note": "Just west of the Old Village around Kerr Street between Speers Road and Lakeshore Road (Wikipedia); a Livable Oakville growth area (Town page). OGS point query returns clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "Bronte",
+      "note": "Southwest Oakville, centred on Bronte Harbour (Wikipedia); 'Bronte Village' is a Livable Oakville growth area (Town page). OGS point query returns coarse glaciolacustrine sand and gravel over Queenston Formation; Queenston red shale outcrops at Bronte Creek just south of the QEW (Wikipedia)."
+    },
+    {
+      "name": "Glen Abbey",
+      "note": "West Oakville along Third Line and Dorval Drive, west of Glen Abbey Golf Course (Wikipedia; Town 'Glen Abbey Information' page). OGS point query returns clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "River Oaks",
+      "note": "North-central Oakville, includes the Oak Park development (Wikipedia). OGS point query returns clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "Joshua Creek",
+      "note": "Named on the Town's Neighbourhood Information Map list (ARGO and Mattamy 'Joshua Creek' subdivisions) and after Joshua's Creek (Town creeks page). OGS point query in this area returns coarse glaciolacustrine sand and gravel over Georgian Bay Formation."
+    },
+    {
+      "name": "Eastlake (Morrison / Ford)",
+      "note": "Southeast Oakville on the lakeshore, Chartwell Road east to the Mississauga border (Wikipedia). OGS bedrock query returns Georgian Bay Formation; no surficial polygon returned at the query point."
+    },
+    {
+      "name": "Clearview",
+      "note": "Centre-east Oakville on the Mississauga border (Wikipedia). OGS point query returns Paleozoic bedrock at/near surface over Georgian Bay Formation."
+    },
+    {
+      "name": "College Park",
+      "note": "Between Sixteen Mile Creek and just east of Trafalgar Road, QEW to Upper Middle Road, around Sheridan College (Wikipedia). OGS point query returns clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "Iroquois Ridge North",
+      "note": "Northeast Oakville between Upper Middle Road and Dundas Street (Wikipedia). OGS point query returns Paleozoic bedrock at/near surface over Georgian Bay Formation."
+    },
+    {
+      "name": "Iroquois Ridge South (Falgarwood)",
+      "note": "Northeast Oakville; Falgarwood is at its southern end (Wikipedia)."
+    },
+    {
+      "name": "Palermo",
+      "note": "Northwest Oakville around Dundas Street and Bronte Road (Wikipedia). OGS point query returns clay-to-silt till over Queenston Formation."
+    },
+    {
+      "name": "Uptown Core",
+      "note": "Either side of Trafalgar Road between Dundas Street and Glenashton Drive (Wikipedia). OGS point query returns clay-to-silt till over Queenston Formation."
+    }
+  ],
+  "census": {
+    "population_2021": 213759,
+    "private_dwellings_occupied": 73558,
+    "single_detached_pct": 58.6,
+    "period_of_construction": {
+      "pre_1960_pct": 8.1,
+      "1961_1980_pct": 18.9,
+      "1981_2000_pct": 34.7,
+      "2001_2021_pct": 38.3
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 43,130 of 73,555 occupied dwellings (structural type, 100% data); period of construction (25% sample, total 73,560): 1960 or before 5,950; 1961-1980 13,935; 1981-1990 13,600; 1991-2000 11,910; 2001-2005 8,055; 2006-2010 6,480; 2011-2015 5,310; 2016-2021 8,320.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Oakville, Town (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Oakville&DGUIDlist=2021A00053524001&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 213,759; Private dwellings occupied by usual residents: 73,558"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Oakville (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Oakville&DGUIDlist=2021A00053524001&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling: 73,555; Single-detached house: 43,130"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Oakville (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Oakville&DGUIDlist=2021A00053524001&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 5,950; 1961 to 1980 13,935; 1981 to 1990 13,600; 1991 to 2000 11,910"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Commonly called Halton Till in regional literature, but that name is not carried in the OGS layer attributes and was not verified here.",
+        "where": "Most of Oakville inland of the lakeshore band: query points at Kerr Village, College Park, Glen Abbey, River Oaks, Uptown Core, Palermo, Town Hall (1225 Trafalgar Rd) and north Oakville near Dundas St all return unit 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay (former glacial Lake Iroquois nearshore deposits).",
+        "where": "Lakeshore band: query points at Old Oakville (Lakeshore Rd), Bronte and Joshua Creek return unit 9."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 3 - Paleozoic bedrock",
+        "description": "Bedrock at or near surface (drift too thin to map).",
+        "where": "Creek valleys and the east side: query points in the Sixteen Mile Creek valley at the town-centre coordinate (43.45011, -79.68292), Bronte Creek at the QEW, Clearview and Iroquois Ridge North return unit 3."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 19 - Modern alluvial deposits",
+        "description": "Clay, silt, sand, gravel, may contain organic remains.",
+        "where": "Sixteen Mile Creek mouth / harbour flats (query point 43.442, -79.669)."
+      },
+      {
+        "unit": "Trafalgar Moraine (north Oakville)",
+        "description": "End moraine formed primarily of silty, clay-rich sand, underpinned by shale bedrock; hinders water absorption (Wikipedia).",
+        "where": "Straddles Oakville and Milton; about 20 km long, 30 m high and 4 km wide, extending from the Niagara Escarpment north of Nelson toward Streetsville (Wikipedia)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (west and central Oakville) and Georgian Bay Formation (east Oakville); both Upper Ordovician shale-dominated units (OGS MRD219).",
+      "description": "Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds. Georgian Bay: interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone. OGS point queries return Queenston at Bronte, Kerr Village, College Park, Town Hall, Glen Abbey, Palermo, Uptown Core and north Oakville, and Georgian Bay at Old Oakville lakeshore, Eastlake, Clearview, Joshua Creek and the town-centre coordinate; the contact runs roughly north-south through central Oakville near Sixteen Mile Creek.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). OGS surficial mapping shows bedrock at or near surface (unit 3) in the Sixteen Mile Creek and Bronte Creek valleys and at the Clearview and Iroquois Ridge North query points; Wikipedia records a Queenston outcrop at Bronte Creek just south of the QEW. Elsewhere bedrock lies beneath till or glaciolacustrine sand of unstated thickness."
+    },
+    "implications_for_piles": [
+      "The Town of Oakville's own deck permit sample drawings require, for steel helical piers/piles, that manufacturer's information and CCMC approval be submitted with the permit application and that a professional engineer determine depth, spacing and size based on soil condition.",
+      "The same Town drawings set the conventional baseline any pile design is compared against: footings a minimum of 4'-0\" below grade on undisturbed soil, sized on an assumed soil bearing capacity of 2,000 lbs/ft2; any footing within 4'-0\" of the house foundation must extend down to the level of the existing foundation.",
+      "Soil texture differs by neighbourhood: OGS maps clay-to-silt till (unit 5d) across inland Oakville and coarse sand and gravel (unit 9) along the lakeshore (Old Oakville, Bronte, Joshua Creek); the engineer's soil-specific determination the Town requires is therefore not transferable between these areas.",
+      "OGS maps bedrock at or near surface (unit 3) in the Sixteen Mile Creek and Bronte Creek valleys and at the Clearview and Iroquois Ridge North query points, over Queenston or Georgian Bay shale; shallow shale is a site condition to confirm before installation in those areas. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.45011, -79.68292)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.68292,43.45011&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 3, Deposit: Paleozoic bedrock"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.45011, -79.68292)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.68292,43.45011&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Georgian Bay; interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Queenston Formation",
+        "url": "https://en.wikipedia.org/wiki/Queenston_Formation",
+        "retrieved_at": "2026-09-25",
+        "quote": "A typical outcrop of the formation is exposed at Bronte Creek just south of the Queen Elizabeth Way"
+      },
+      {
+        "name": "Wikipedia - Trafalgar Moraine",
+        "url": "https://en.wikipedia.org/wiki/Trafalgar_Moraine",
+        "retrieved_at": "2026-09-25",
+        "quote": "formed primarily of silty, clay-rich sand, and underpinned by shale bedrock, all of which hinder water absorption"
+      },
+      {
+        "name": "Wikipedia - Oakville, Ontario (neighbourhoods)",
+        "url": "https://en.wikipedia.org/wiki/Oakville,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Oakville's Planning Department divides the town into communities. These are based on traditional neighbourhoods."
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Oakville Building Services (the Town's permit pages also refer to 'Building Department' staff)",
+    "deck_permit_required_when": "Decks greater than 10 square metres in area and higher than 61 centimetres above the adjacent grade require a building permit; any size deck attached to a house requires a building permit. The application-process page lists 'Deck greater than 0.61 metres (two feet) in height and is attached to a building' under projects requiring a permit, and 'Deck less than 0.61 mm [sic] (two feet) in height and not attached to a building' under projects that do not.",
+    "footing_depth_requirement": "Town deck sample drawings: 'MIN. 4'-0\" BELOW GRADE ON UNDISTURBED SOIL'; any deck footing (excluding deck blocks) within 4'-0\" of the house foundation must extend down to the level of the existing foundation; footing/pier sizing table assumes a soil bearing capacity of 2,000 lbs/ft2. Steel helical pier/pile: manufacturer's information must be submitted with the permit application along with CCMC approval, and a professional engineer must determine the depth, spacing and size based on soil condition.",
+    "inspections": [
+      "Excavation/footing forms (prior to pouring concrete)",
+      "Pre-backfill (site survey including top of foundation elevation for new construction)",
+      "Framing (house weather-tight prior to inspection)",
+      "HVAC final (prior to occupancy)",
+      "Plumbing final (prior to occupancy)",
+      "Final interior and exterior safety (prior to occupancy)",
+      "Final exterior (to be completed within six months)"
+    ],
+    "fee_note": "2026 Building Services Rates and Fees: Deck (each) $220.00, unchanged 2024-2026, effective date shown as Mar-23; minimum fee for a building permit $200; a $100 non-refundable pre-screening fee is charged at online submission and credited toward the permit.",
+    "timeline_note": "Town states applications are subject to the Large Municipalities Chief Building Officers (LMCBO) development application process timelines and that review times vary with volume, complexity, staffing and resubmissions; no fixed day-count is published on the page. Inspection requests submitted online before 6 p.m. are booked for the next business day; inspections run 9 a.m. to 4 p.m., Monday to Friday.",
+    "portal_url": "https://www.oakville.ca/business-development/planning-development/planning-and-development-applications-forms/electronic-permits-applications/",
+    "portal_note": "Building Services permit applications are submitted through the Town's 'Online Services' account (sign-in hosted at oakvillecrm.my.site.com); the linked Town page is the public entry point.",
+    "sources": [
+      {
+        "name": "Town of Oakville - Decks (building permit guide)",
+        "url": "https://www.oakville.ca/home-environment/building-renovations/building-permits-inspections/construction-projects/decks/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Decks greater than 10 square metres in area and higher than 61 centimetres above the adjacent grade require a building permit."
+      },
+      {
+        "name": "Town of Oakville - Deck building permit sample drawings (PDF)",
+        "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MIN. 4'-0\" BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "Town of Oakville - Deck building permit sample drawings (PDF), helical note",
+        "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "PROFESSIONAL ENGINEER MUST DETERMINE THE DEPTH, SPACING AND SIZE OF HELICAL PIERS/PILES BASED ON SOIL CONDITION"
+      },
+      {
+        "name": "Town of Oakville - Building Permit Application Process",
+        "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-permit-application-process/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The minimum fee for a building permit is $200."
+      },
+      {
+        "name": "Town of Oakville - Building Permits",
+        "url": "https://www.oakville.ca/home-environment/building-renovations/building-permits-inspections/building-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Meet with Building Department staff on October 1, 2026, at Town Hall's South Atrium"
+      },
+      {
+        "name": "Town of Oakville - Building Inspection Scheduling Process",
+        "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Excavation/footing forms (prior to pouring concrete)"
+      },
+      {
+        "name": "Town of Oakville - 2026 Building Services Rates and Fees (PDF)",
+        "url": "https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Deck each N $220.00 $220.00 $220.00 N/A $220.00 Mar-23"
+      },
+      {
+        "name": "Town of Oakville - Rates and Fees (2026 schedules index)",
+        "url": "https://www.oakville.ca/town-hall/budget-finances/rates-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "2026 Building Services Rates and Fees (pdf)"
+      },
+      {
+        "name": "Town of Oakville - Electronic Permits and Applications",
+        "url": "https://www.oakville.ca/business-development/planning-development/planning-and-development-applications-forms/electronic-permits-applications/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Building Services permit applications Submit your application using Online Services."
+      },
+      {
+        "name": "Halton Region - About Halton Region",
+        "url": "https://www.halton.ca/The-Region/About-Halton-Region",
+        "retrieved_at": "2026-09-25",
+        "quote": "the four Mayors and ward Councillors representing Burlington, Halton Hills, Milton and Oakville"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Oakville Southeast WPCP (Climate ID 615N745; 43.48 N, 79.63 W; 86.9 m) for temperature; Toronto Pearson (Climate ID 6158731, about 25 km NE) for frost-free period and cold-day counts, which the Oakville station does not publish",
+    "normals_period": "1981-2010 for Oakville Southeast WPCP (computed from 1981-2001 records, 19 years, code D); 1991-2020 for Toronto Pearson and Hamilton",
+    "frost_free_days": 174,
+    "jan_mean_temp_c": -4.7,
+    "days_below_minus_10c": 34.2,
+    "freeze_thaw_note": "Oakville Southeast WPCP: January daily minimum -8.9 C; 44.0 days/yr with daily maximum <= 0 C; 81.0 cm annual snowfall. Toronto Pearson 1991-2020: last spring frost Apr 27, first fall frost Oct 20; 130.6 days/yr with minimum <= 0 C versus 49.5 days/yr with maximum <= 0 C, so roughly 81 days a year cross 0 C between night and day (derived by subtraction). Hamilton 1991-2020 (about 37 km SW): January mean -5.3 C, 35.7 days/yr below -10 C, 164 frost-free days (May 1 - Oct 12).",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Oakville Southeast WPCP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -4.7 -3.9 0.1 6.4 12.3 17.7 20.9 20.1 15.6 9.3 4.0 -1.3 8.1 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Oakville Southeast WPCP (days max <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "<= 0 C 16.4 13.0 5.7 0.22 0.0 0.0 0.0 0.0 0.0 0.0 1.1 7.6 44.0 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Length of Frost-Free Period 174 Days; < -10 C 13.4 10.8 4.0 ... 34.2 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Hamilton",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -5.3 ...; < -10 C ... 35.7 C; Average Length of Frost-Free Period 164 Days"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 4'-0\" (1.22 m) minimum footing depth below grade printed on the Town of Oakville's and Town of Milton's official deck permit sample drawings. The Ontario Building Code clause itself (commonly cited as Division B, Sentence 9.12.2.2) was NOT retrieved: ontario.ca/laws renders O. Reg. 332/12 and O. Reg. 163/24 only as a JavaScript shell with no document API found, and the 2024 Building Code Compendium is distributed through Publications Ontario rather than as open web text. Do not cite the clause number until the primary text is retrieved.",
+    "sources": [
+      {
+        "name": "Town of Oakville - Deck building permit sample drawings (PDF)",
+        "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MIN. 4'-0\" BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "Town of Milton - Deck permit sample drawings (PDF, June 2018)",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MIN 4'-0\" BELOW GRADE"
+      },
+      {
+        "name": "City of Burlington - Decks and Porches checklist (PDF)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Decks-Porches-Checklist.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "BMEC Approvals or Minister's Rulings for innovative materials or systems (deck materials, helical piles, etc.)"
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      },
+      {
+        "name": "Ontario e-Laws - O. Reg. 332/12 Building Code (page renders as JS shell; text not retrievable)",
+        "url": "https://www.ontario.ca/laws/regulation/120332",
+        "retrieved_at": "2026-09-25",
+        "quote": "e-Laws | Ontario.ca"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

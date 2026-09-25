@@ -1,0 +1,203 @@
+---
+import Base from '../../layouts/Base.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import Estimator from '../../components/Estimator.astro';
+import Faq from '../../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, GUIDES, formatCad } from '../../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const cities = getLiveCities();
+const guide = GUIDES.find((g) => g.slug === 'helical-pile-cost-per-pile-ontario');
+const deck = prices.rows.find((r) => r.key === 'deck');
+const addition = prices.rows.find((r) => r.key === 'addition');
+const underpinning = prices.rows.find((r) => r.key === 'underpinning');
+const oakville = cities.find((c) => c.slug === 'oakville');
+
+const title = 'Helical pile cost per pile in Ontario (2026) | GTA Helical Piles';
+const description = 'What a helical pile costs installed in the western GTA, what moves the price, what other installers publish, and a calculator for deck size to pile count.';
+
+const drivers = [
+  { title: 'Shaft size and load', body: 'A deck pile is a 2 to 2-3/8 inch shaft carrying a post. An addition pile is 2-7/8 to 3-1/2 inches with more helix area, and underpinning adds a bracket that clamps to the footing. More steel and more torque is the first thing that moves the price.', src: null },
+  { title: 'Depth and extensions', body: 'A pile is driven until it reaches its design torque, so the ground sets the depth. Where bearing soil is deep, extension sections are added; one Toronto contractor publishes $15 to $30 per foot beyond about 7 ft.', src: { name: 'GAMCON', url: 'https://www.gamcon.ca/helical-piles-installation-cost-toronto/' } },
+  { title: 'Shale and rock', body: 'Much of Halton and Hamilton sits on shale, and in creek valleys it is near the surface. A pile that hits refusal early is pre-drilled or resized, and the engineer confirms capacity from the torque record. That is extra time on site.', src: null },
+  { title: 'Access', body: 'Compact tracked drive units are built for backyards; the narrowest on the market is 29 inches wide. Where even that cannot get in, portable equipment does the job more slowly.', src: { name: 'Techno Metal Post equipment', url: 'https://www.technometalpost.com/en-CA/installation-equipment/' } },
+  { title: 'Frozen ground', body: 'We install year-round. In winter the frost crust is pre-drilled with an auger or thawed first, which adds time and can add cost.', src: { name: 'Techno Metal Post FAQ', url: 'https://www.technometalpost.com/en-CA/faq/' } },
+  { title: 'Travel and small jobs', body: 'Public GTA installers publish minimum charges of roughly $400 to $800 by area rather than folding travel into the per-pile price; one lists $650 for Oakville, Milton and Georgetown. Expect a minimum on a very small job.', src: { name: 'The Post Hole Diggers price list', url: 'https://www.thepostholediggers.ca/pricing/' } },
+  { title: 'Engineering and permits', body: 'The engineer\'s layout and sealed certificate are separate from the pile price. Aggregators put engineering and permit costs at $100 to $500 for a deck; a structural engineer\'s report for foundation repair runs $800 to $2,500 per a Southern Ontario contractor. Oakville\'s 2026 deck permit fee is $220.', src: { name: 'Screw Piles Quotes', url: 'https://screwpilesquotes.ca/helical-piles-price-toronto/' } },
+];
+
+const faqs = [
+  { q: 'Why ranges instead of a price?', a: 'Because each site carries its own conditions. Two 16 by 12 decks a street apart can differ by soil, depth to bearing, access and season. The ranges are illustrative examples from our current price table; the firm price is the written quote after we have looked at the job, and that is the number you pay.' },
+  { q: 'Is engineering included in the per-pile price?', a: 'The engineer\'s layout and sealed certificate of conformity are listed separately in the quote, as are permit fees, so you can see them. Halton towns require the engineer\'s determination with the permit application for helical piles, so it is part of nearly every job.' },
+  { q: 'Do prices change by city?', a: 'The per-pile ranges are the same across our area. What changes is the ground and the travel: shallow shale in parts of Oakville and Hamilton can mean pre-drilling, and a very small job in Guelph or Caledon carries a minimum charge that a 20-pile job absorbs.' },
+  { q: 'What does underpinning really cost?', a: 'Per bracket and pile, our illustrative range starts at $950 and runs past $1,650. Published Ontario figures run from $800 per pile for the pile alone to $2,000 to $5,000 per pier for full foundation-repair scope including excavation and engineering. Underpinning always starts with a site assessment, and the quote states exactly what is in it.' },
+  { q: 'When does a job get volume pricing?', a: 'Larger pile counts are priced as a job rather than per pile, because mobilization, engineering and the day rate are spread across more piles. Ask with your drawings and we will quote it that way.' },
+  { q: 'How does this compare with concrete sonotubes?', a: 'A sonotube costs less in materials and more in everything else: a dug hole to 1.2 m, concrete, one to two days of curing before you can build, and a footing inspection before the pour. A helical pile is installed in minutes, carries load the same day and leaves nothing to haul away. On a deck the totals often land close; on a site with poor access or a tight schedule the pile wins clearly.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Technical resources', item: `${Astro.site}#resources` },
+    { '@type': 'ListItem', position: 3, name: guide.title, item: `${Astro.site}guides/${guide.slug}/` },
+  ],
+};
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'What a helical pile costs in Ontario',
+  dateModified: prices.last_reviewed,
+  author: { '@type': 'Organization', name: biz.trading_name },
+  publisher: { '@id': `${Astro.site}#business` },
+};
+---
+
+<Base title={title} description={description} schema={[breadcrumb, faqSchema, article]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <span>Technical resources</span>
+    <span aria-hidden="true">/</span> <span>Cost per pile</span>
+  </nav>
+
+  <div class="page guide">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">Cost guide · reviewed {prices.last_reviewed}</p>
+      <h1>What a helical pile costs in Ontario</h1>
+      <p class="lede">Per pile, installed, in the western GTA. The ranges here are illustrative: every site carries its own conditions, and the firm price is the written quote after a site review. This page shows our table, what other installers publish, what moves the number, and a calculator.</p>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm compact />
+    </aside>
+
+    <div class="rest">
+      <section class="block">
+        <h2>Our illustrative ranges</h2>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Application</th><th>Typical shaft</th><th>Illustrative range</th></tr></thead>
+            <tbody>
+              {prices.rows.map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.shaft_short}</td>
+                  <td class="num">{formatCad(r.low)} to {formatCad(r.high)}{r.high_open_ended ? '+' : ''} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small note">{prices.illustrative_note} Engineering and permit fees are listed separately in the quote. Larger pile counts are priced as a job rather than per pile.</p>
+      </section>
+
+      <section class="block">
+        <h2>What other GTA installers publish</h2>
+        <p class="muted">Public figures retrieved {prices.last_reviewed}, so you can see where our ranges sit. Installer and contractor pages are the better evidence; aggregators and manufacturer FAQs are listed for completeness.</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Source</th><th>Published figure</th></tr></thead>
+            <tbody>
+              {prices.public_price_points.map((p) => (
+                <tr>
+                  <td><a href={p.url} rel="noopener" target="_blank">{p.source}</a><br /><span class="muted small">{p.quality}</span></td>
+                  <td>{p.figure}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small note">Deck piles at {formatCad(deck.low)} to {formatCad(deck.high)} sit inside the published band. Our addition and underpinning ranges sit at or above most published figures, which reflects heavier shafts and, for underpinning, the bracket; the quote states what is included.</p>
+      </section>
+
+      <section class="block">
+        <h2>What moves the price</h2>
+        <dl class="drivers">
+          {drivers.map((d) => (
+            <div>
+              <dt>{d.title}</dt>
+              <dd>{d.body} {d.src && <a href={d.src.url} rel="noopener" target="_blank" class="src">{d.src.name}</a>}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section class="block">
+        <h2>How many piles a deck needs</h2>
+        <p class="muted">A pile goes under every post. With posts about every 8 ft along each beam and a beam line about every 8 ft across the depth, a 16 by 12 ft deck attached to the house on one side takes 6 piles: three along each of two beam lines, the third side carried on the house ledger. Freestanding, the same deck takes 9. A 20 by 16 ft attached deck takes 8. Your drawings govern; the calculator below uses the same rule.</p>
+        <ul class="examples num">
+          <li><strong>16 × 12 ft, attached:</strong> 6 piles, {formatCad(deck.low * 6)} to {formatCad(deck.high * 6)}</li>
+          <li><strong>16 × 12 ft, freestanding:</strong> 9 piles, {formatCad(deck.low * 9)} to {formatCad(deck.high * 9)}</li>
+          <li><strong>20 × 16 ft, attached:</strong> 8 piles, {formatCad(deck.low * 8)} to {formatCad(deck.high * 8)}</li>
+        </ul>
+        <p class="muted small">Illustrative, before engineering, permit and any minimum charge.</p>
+      </section>
+
+      <Estimator />
+
+      <Faq items={faqs} heading="Cost questions" />
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          {oakville && <li><a href="/locations/oakville/">Building in Oakville: permit fee, what the Town asks for, and what is under each neighbourhood</a></li>}
+          <li><a href="/#quote">Get a free quote</a></li>
+          <li><a href="/">How we work and where</a></li>
+        </ul>
+      </section>
+
+      <section class="block sources-block">
+        <h2>Sources</h2>
+        <ul class="sources source-list">
+          {prices.public_price_points.map((p) => <li><a href={p.url} rel="noopener" target="_blank">{p.source}</a>, retrieved {p.retrieved_at}</li>)}
+          <li><a href="https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf" rel="noopener" target="_blank">Town of Oakville, 2026 Building Services Rates and Fees</a>, retrieved {prices.last_reviewed}</li>
+          <li><a href="https://www.technometalpost.com/en-CA/installation-equipment/" rel="noopener" target="_blank">Techno Metal Post, installation equipment dimensions</a>, retrieved {prices.last_reviewed}</li>
+          <li><a href="https://www.foundationfix.ca/new-blog/2025/10/30/the-ultimate-guide-to-foundation-repair-costs-in-southern-ontario" rel="noopener" target="_blank">Foundation Fix, foundation repair costs in Southern Ontario</a>, retrieved {prices.last_reviewed}</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); display: flex; gap: var(--s2); flex-wrap: wrap; }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .guide { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .guide { grid-template-columns: minmax(0, 1fr) 21rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: calc(4rem + var(--s6)); }
+  }
+
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s3) var(--s4); max-width: 16ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: var(--read); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s4); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+  .table-wrap { margin-top: var(--s4); }
+  .note { margin-top: var(--s4); max-width: 40rem; }
+  .table a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+
+  .drivers { display: grid; gap: var(--s2); border-top: 1px solid var(--border-strong); }
+  .drivers div { padding-block: var(--s4); border-bottom: 1px solid var(--border); }
+  .drivers dt { font-family: var(--display); font-weight: 700; font-size: var(--text-lg); letter-spacing: -0.01em; color: var(--ink); }
+  .drivers dd { margin: var(--s1) 0 0; color: var(--text-muted); max-width: 40rem; }
+  .src { font-size: var(--text-xs); color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+
+  .examples { list-style: none; padding: 0; margin-top: var(--s4); display: grid; gap: var(--s2); color: var(--text-muted); }
+  .examples strong { color: var(--text); }
+  .examples + p { margin-top: var(--s3); }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+  .source-list { list-style: none; padding: 0; margin-top: var(--s3); display: grid; gap: var(--s2); }
+</style>

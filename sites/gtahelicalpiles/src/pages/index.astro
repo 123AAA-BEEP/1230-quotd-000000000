@@ -1,0 +1,268 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Diagram from '../components/Diagram.astro';
+import Process from '../components/Process.astro';
+import Faq from '../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, getLiveGuides, formatCad } from '../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const liveCities = getLiveCities();
+const guides = getLiveGuides();
+const liveSlugs = new Set(liveCities.map((c) => c.slug));
+const costGuide = guides.find((g) => g.slug === 'helical-pile-cost-per-pile-ontario');
+
+const title = 'Helical pile installation, western GTA | GTA Helical Piles';
+const description = 'Helical (screw) piles for decks, additions and underpinning across Halton, Peel, Hamilton and Guelph. Installed in a day, torque-logged, no excavation. Free quote.';
+
+const steps = [
+  { title: 'Tell us the project', body: 'Use the form or call. A deck plan, a sketch with dimensions, or photos of the yard and the gate are enough to start. Drawings from your builder or engineer are better.' },
+  { title: 'Layout and firm quote', body: 'Decks are usually quoted from the plan. Additions and underpinning get a site review first. Where your permit needs it, an engineer sets the pile depth, spacing and size for the soil, and that layout goes in with the application.' },
+  { title: 'Install day', body: 'A compact tracked machine screws each pile in with a hydraulic torque head until it reaches the torque the engineer specified. The reading on every pile is recorded as it goes in. Most decks are done in a single visit, with no excavation and nothing to haul away.' },
+  { title: 'Build the same day', body: 'Helical piles carry load as soon as they are in. The engineer issues the sealed certificate of conformity from our per-pile torque log, which is what the inspector wants to see, and your builder can start framing.' },
+];
+
+const faqs = [
+  { q: 'Do I need a permit for a deck on helical piles?', a: 'Usually, yes. Each municipality sets its own threshold by deck height and area; in Oakville, for example, a deck over 10 square metres and higher than 61 cm, or any deck attached to the house, needs one. Halton towns ask for the pile manufacturer\'s CCMC evaluation report and an engineer\'s layout with the application, and we supply both.' },
+  { q: 'Can you install in winter?', a: 'Yes, year-round. Helical piles are screwed in, not poured, so there is no concrete to cure and no weather window to wait for. In frozen ground the frost crust is pre-drilled with an auger or thawed first, which adds time and can add cost.' },
+  { q: 'How deep do the piles go?', a: 'Below the frost zone and into soil that can carry the load. Every pile is screwed in until it reaches the torque the engineer specified, so the depth is set by the ground, not by a fixed number. Halton building departments draw conventional deck piers at a minimum 1.2 m below grade, and pile depth is normally well past that.' },
+  { q: 'Will you tear up my lawn?', a: 'No. The drive unit is compact and runs on rubber tracks, and a pile leaves a hole the width of its shaft. There is no excavation, no spoil pile and no concrete truck.' },
+  { q: 'What if you hit rock or hard shale?', a: 'Much of Halton and Hamilton sits on shale, and in places it is close to the surface. The torque reading tells us when a pile has found its bearing; where shale is shallow the pile is pre-drilled or sized differently, and the engineer confirms the capacity. If a site needs something other than what the quote assumed, we tell you before the price changes.' },
+  { q: 'Are the prices on this site firm?', a: 'No. Every price here is an illustrative range from our current price table. Each site carries its own conditions: soil, access, loads and travel all move the number. The firm price is the written quote after we have reviewed the job, and that is the number you pay.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Helical pile installation',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: biz.service_area.map((c) => ({ '@type': 'City', name: `${c.name}, ON` })),
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Helical pile applications',
+    itemListElement: ['Deck and porch foundations', 'Addition and sunroom foundations', 'Underpinning and foundation repair'].map((n) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: n } })),
+  },
+};
+---
+
+<Base title={title} description={description} schema={[faqSchema, serviceSchema]}>
+  <div class="page home">
+    <div class="hero">
+      <p class="eyebrow eyebrow-brand">Halton · Peel · Hamilton · Guelph</p>
+      <h1>Helical piles for decks, additions and underpinning.</h1>
+      <p class="lede">Engineered screw piles installed in a day, with a torque log for your permit. No excavation, no curing time. Your builder frames the same afternoon.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+        <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="hero">Call {biz.phone_display}</a>
+      </div>
+
+      <div class="policy-band" aria-label="How we work">
+        <div>
+          <p class="pb-value num">{biz.service_area.length}</p>
+          <p class="pb-label">municipalities served, Mississauga to Guelph</p>
+        </div>
+        <div>
+          <p class="pb-value">1 business day</p>
+          <p class="pb-label">to call you back on every request</p>
+        </div>
+        <div>
+          <p class="pb-value">Free</p>
+          <p class="pb-label">quote, with a firm price after the site review</p>
+        </div>
+      </div>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm />
+    </aside>
+
+    <div class="rest">
+      <section class="block">
+        <h2>What we put piles under</h2>
+        <dl class="apps">
+          <div>
+            <dt>Decks, porches and pergolas</dt>
+            <dd>Piles driven along each beam line, with a saddle bracket on top ready for the post. Most decks are done in one visit and framed the same day.</dd>
+          </div>
+          <div>
+            <dt>Additions and sunrooms</dt>
+            <dd>Heavier-wall piles for structural loads, laid out to the engineer's drawing, with the letter and torque log your permit needs.</dd>
+          </div>
+          <div>
+            <dt>Underpinning and foundation repair</dt>
+            <dd>Brackets on the existing footing carried by piles to competent ground, to stop a settling wall or lift it back. Always starts with a site assessment.</dd>
+          </div>
+        </dl>
+        <p class="muted small">We also anchor boardwalks, retaining walls and light structures. Ask.</p>
+      </section>
+
+      <section class="block">
+        <h2>Why helical piles instead of concrete</h2>
+        <Diagram caption="Not to scale. Concrete piers give frost something to grip; a helical pile's shaft does not, and its helix bears below the frost zone." />
+        <ul class="benefits">
+          <li><strong>Load-bearing the moment it is in.</strong> No cure time, so the deck or addition is framed the day the piles go in, not two days later.</li>
+          <li><strong>Capacity you can read off a gauge.</strong> Installation torque is recorded for every pile as it goes in and correlated to load capacity using the torque tables in the pile's CCMC evaluation report. The log is what the engineer certifies from.</li>
+          <li><strong>No excavation.</strong> Compact tracked drive units are built to get through a backyard gate; the narrowest on the market is 29 inches wide. There is no dug hole, no spoil and no concrete delivery.</li>
+          <li><strong>Anchored below the frost zone.</strong> Frost grips a rough concrete pier far harder than a smooth galvanized shaft. The helix bears below the local frost depth, so seasonal frost has little to lift and little to lift with. Frost movement is designed against, not wished away.</li>
+        </ul>
+      </section>
+
+      <Process steps={steps} />
+
+      <section class="block">
+        <h2>What it costs, illustratively</h2>
+        <p class="muted">Ranges from our current price table, per pile installed. Each site carries its own conditions, so treat these as examples and the written quote as the price.</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Application</th><th>Typical shaft</th><th>Illustrative range</th></tr>
+            </thead>
+            <tbody>
+              {prices.rows.map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.shaft_short}</td>
+                  <td class="num">{formatCad(r.low)} to {formatCad(r.high)}{r.high_open_ended ? '+' : ''} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">Last reviewed {prices.last_reviewed}. Larger pile counts are priced as a job rather than per pile. Rock or shale pre-drilling, no gate access, heavy loads, frozen ground, travel on small jobs, and engineering and permit fees all sit outside the per-pile figure.
+          {costGuide && <span> Full breakdown, what other GTA installers publish, and a budget calculator: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <section class="block" id="areas">
+        <h2>Where we work</h2>
+        <p class="muted">{biz.service_radius_line}</p>
+        <ul class="areas">
+          {biz.service_area.map((c) => (
+            <li>
+              {liveSlugs.has(c.slug) ? <a href={`/locations/${c.slug}/`}>{c.name}</a> : <span>{c.name}</span>}
+              <span class="muted small"> {c.region}{c.note ? `, ${c.note}` : ''}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <Faq items={faqs} />
+
+      <section class="block final">
+        <h2>Ready for a firm price?</h2>
+        <p class="muted">Tell us the project and we call you back within one business day. Free, and no obligation.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+          <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="final">Call {biz.phone_display}</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .home {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--s8);
+    align-items: start;
+  }
+
+  @media (min-width: 64rem) {
+    .home {
+      grid-template-columns: minmax(0, 1fr) 23rem;
+      column-gap: var(--s16);
+      row-gap: 0;
+    }
+    .hero { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: calc(4rem + var(--s6)); }
+  }
+
+  .hero { padding-top: var(--s4); }
+
+  h1 {
+    font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl));
+    margin-block: var(--s4) var(--s4);
+    max-width: 16ch;
+  }
+
+  .lede {
+    font-size: var(--text-lg);
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 36rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s3);
+    margin-top: var(--s6);
+  }
+
+  .policy-band {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s4) var(--s6);
+    margin-top: var(--s10);
+    padding-block: var(--s5);
+    border-top: 1px solid var(--border-strong);
+    border-bottom: 1px solid var(--border);
+  }
+
+  @media (min-width: 36rem) {
+    .policy-band { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .pb-value {
+    font-family: var(--display);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--ink);
+  }
+
+  .pb-label { margin-top: var(--s1); font-size: var(--text-sm); color: var(--text-muted); line-height: 1.4; }
+
+  .rest { display: grid; gap: var(--s16); margin-top: var(--s10); max-width: var(--read); }
+  @media (min-width: 64rem) { .rest { margin-top: var(--s16); } }
+
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+
+  .apps { display: grid; gap: var(--s5); margin-top: var(--s2); }
+  .apps dt { font-family: var(--display); font-weight: 700; font-size: var(--text-lg); letter-spacing: -0.01em; color: var(--ink); }
+  .apps dd { margin: var(--s1) 0 0; color: var(--text-muted); max-width: 40rem; }
+  .apps + p { margin-top: var(--s5); }
+
+  .benefits { list-style: none; padding: 0; margin-top: var(--s6); display: grid; gap: var(--s4); }
+  .benefits li { position: relative; padding-left: 1.5rem; color: var(--text-muted); max-width: 40rem; }
+  .benefits li::before {
+    content: '';
+    position: absolute; left: 0.2rem; top: 0.55rem;
+    width: 0.4rem; height: 0.4rem;
+    background: var(--brand-600);
+    border-radius: 999px;
+  }
+  .benefits strong { color: var(--text); }
+
+  .table-wrap { margin-top: var(--s5); }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .areas { list-style: none; padding: 0; margin-top: var(--s4); display: grid; grid-template-columns: 1fr; gap: var(--s2); }
+  @media (min-width: 36rem) { .areas { grid-template-columns: 1fr 1fr; } }
+  .areas li { padding-block: var(--s2); border-bottom: 1px solid var(--border); }
+  .areas a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+
+  .final { padding-top: var(--s8); border-top: 1px solid var(--border-strong); }
+  .final .hero-actions { margin-top: var(--s5); }
+</style>

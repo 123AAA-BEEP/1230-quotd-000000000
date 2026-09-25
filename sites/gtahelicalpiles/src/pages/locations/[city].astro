@@ -1,0 +1,237 @@
+---
+// City page template. One page per live city in data/business.json. All
+// substance comes from data/cities/<slug>.json (facts with sources) and
+// data/content/<slug>.json (editorial prose, tiles, FAQ). The template adds no
+// city facts of its own.
+import Base from '../../layouts/Base.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import Estimator from '../../components/Estimator.astro';
+import StatBand from '../../components/StatBand.astro';
+import Process from '../../components/Process.astro';
+import Faq from '../../components/Faq.astro';
+import { getBusiness, getCity, getLiveCities, getLiveGuides, getPrices, collectSources, formatCad } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return getLiveCities().map((c) => ({ params: { city: c.slug } }));
+}
+
+const { city: slug } = Astro.params;
+const biz = getBusiness();
+const city = getCity(slug);
+const prices = getPrices();
+const guides = getLiveGuides();
+const contentFiles = import.meta.glob('../../../data/content/*.json', { eager: true });
+const content = Object.values(contentFiles).map((m) => m.default ?? m).find((c) => c.slug === slug);
+if (!city || !content) throw new Error(`Missing data or content for city ${slug}`);
+
+const area = biz.service_area.find((c) => c.slug === slug);
+const costGuide = guides.find((g) => g.slug === 'helical-pile-cost-per-pile-ontario');
+const sources = collectSources(city.census?.sources, city.geology?.sources, city.permits?.sources, city.climate?.sources, city.code?.sources);
+
+const steps = [
+  { title: 'Tell us the project', body: `Use the form or call. A deck plan or a sketch with dimensions, plus a photo of the yard and the gate, is enough to start. If you already have your builder's or engineer's drawings, send those.` },
+  { title: 'Layout and firm quote', body: `Decks are usually quoted from the plan. Additions and underpinning get a site review first. The engineer sets the pile depth, spacing and size for the soil at your address, and that layout goes to ${content.permits.authority_short ?? 'the Town'} with the application.` },
+  { title: 'Install day', body: 'A compact tracked machine screws each pile in with a hydraulic torque head until it reaches the torque the engineer specified. Every reading is recorded. Most decks are done in one visit with no excavation.' },
+  { title: 'Build the same day', body: 'The piles carry load as soon as they are in. The engineer issues the sealed certificate of conformity from the torque log for your permit file, and framing can start.' },
+];
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Service areas', item: `${Astro.site}#areas` },
+    { '@type': 'ListItem', position: 3, name: city.name, item: `${Astro.site}locations/${slug}/` },
+  ],
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: content.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Helical pile installation',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: { '@type': 'City', name: `${city.name}, ON` },
+};
+---
+
+<Base title={content.title} description={content.description} schema={[breadcrumb, faqSchema, serviceSchema]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <a href="/#areas">Service areas</a>
+    <span aria-hidden="true">/</span> <span>{city.name}</span>
+  </nav>
+
+  <div class="page money">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">{content.kicker}</p>
+      <h1>{content.h1}</h1>
+      <p class="dateline">{city.name}, {city.region}{area?.note ? `. ${area.note}.` : ''}</p>
+      <div class="answer prose">
+        {content.answer.map((p) => <p>{p}</p>)}
+      </div>
+      <StatBand tiles={content.tiles} label={`${city.name} facts`} />
+    </div>
+
+    <aside class="rail">
+      <QuoteForm city={slug} />
+    </aside>
+
+    <div class="rest">
+      <section class="block">
+        <h2>{content.ground.heading}</h2>
+        <div class="prose">{content.ground.paragraphs.map((p) => <p>{p}</p>)}</div>
+        {content.ground.neighbourhoods?.length > 0 && (
+          <div class="table-wrap">
+            <table class="table">
+              <thead><tr><th>Neighbourhood</th><th>Surface</th><th>Bedrock</th></tr></thead>
+              <tbody>
+                {content.ground.neighbourhoods.map((n) => (
+                  <tr><td><strong>{n.name}</strong></td><td>{n.surface}</td><td>{n.bedrock}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {content.ground.table_note && <p class="sources">{content.ground.table_note}</p>}
+      </section>
+
+      <section class="block">
+        <h2>{content.permits.heading}</h2>
+        <div class="prose">{content.permits.paragraphs.map((p) => <p>{p}</p>)}</div>
+        <dl class="facts">
+          {content.permits.facts.map((f) => (
+            <div>
+              <dt>{f.label}</dt>
+              <dd>{f.value} <a href={f.url} rel="noopener" target="_blank" class="src">source</a></dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section class="block">
+        <h2>{content.season.heading}</h2>
+        <div class="prose">{content.season.paragraphs.map((p) => <p>{p}</p>)}</div>
+        <dl class="facts">
+          {content.season.facts.map((f) => (
+            <div>
+              <dt>{f.label}</dt>
+              <dd>{f.value} <a href={f.url} rel="noopener" target="_blank" class="src">source</a></dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section class="block" id="pricing">
+        <h2>What it costs in {city.name}, illustratively</h2>
+        <p class="muted">{prices.illustrative_note}</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Application</th><th>Typical shaft</th><th>Illustrative range</th></tr></thead>
+            <tbody>
+              {prices.rows.map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.shaft_short}</td>
+                  <td class="num">{formatCad(r.low)} to {formatCad(r.high)}{r.high_open_ended ? '+' : ''} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small pricing-note">{content.pricing_note}</p>
+        <p class="sources">Last reviewed {prices.last_reviewed}. Engineering and permit fees are separate from the per-pile figure.
+          {costGuide && <span> What moves the price and what other GTA installers publish: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <Estimator city={slug} heading={`Estimate a ${city.name} job`} />
+
+      <Process steps={steps} />
+
+      <Faq items={content.faqs} heading={`Questions from ${city.name}`} />
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          {guides.map((g) => <li><a href={`/guides/${g.slug}/`}>{g.title}</a></li>)}
+          <li><a href="/">All service areas and how we work</a></li>
+        </ul>
+        {content.related_note && <p class="muted small">{content.related_note}</p>}
+      </section>
+
+      <section class="block sources-block">
+        <h2>Sources and freshness</h2>
+        <p class="muted small">Local figures on this page come from the sources below, retrieved {city.retrieved_at}. Rules and fees change; confirm permit questions with the municipality.</p>
+        <ul class="sources source-list">
+          {sources.map((s) => (
+            <li><a href={s.url} rel="noopener" target="_blank">{s.name}</a></li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    margin-bottom: var(--s6);
+    display: flex;
+    gap: var(--s2);
+    flex-wrap: wrap;
+  }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .money {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--s8);
+    align-items: start;
+  }
+
+  @media (min-width: 64rem) {
+    .money { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: calc(4rem + var(--s6)); }
+  }
+
+  h1 {
+    font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl));
+    margin-block: var(--s3) var(--s3);
+    max-width: 18ch;
+  }
+
+  .dateline { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); }
+
+  .answer { max-width: var(--read); font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); }
+  .answer p + p { margin-top: var(--s4); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); }
+  @media (min-width: 64rem) { .rest { margin-top: var(--s6); } }
+
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+
+  .table-wrap { margin-top: var(--s5); }
+  .pricing-note { margin-top: var(--s4); max-width: 40rem; }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .facts { margin-top: var(--s5); display: grid; gap: var(--s3); border-top: 1px solid var(--border-strong); }
+  .facts div { display: grid; grid-template-columns: 1fr; gap: var(--s1); padding-block: var(--s3); border-bottom: 1px solid var(--border); }
+  @media (min-width: 36rem) { .facts div { grid-template-columns: 11rem 1fr; gap: var(--s4); } }
+  .facts dt { font-size: var(--text-sm); font-weight: 600; color: var(--text); }
+  .facts dd { margin: 0; font-size: var(--text-sm); color: var(--text-muted); line-height: 1.6; }
+  .src { font-size: var(--text-xs); color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; margin-left: var(--s1); }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+  .related p { margin-top: var(--s4); }
+
+  .source-list { list-style: none; padding: 0; margin-top: var(--s3); display: grid; gap: var(--s2); }
+</style>

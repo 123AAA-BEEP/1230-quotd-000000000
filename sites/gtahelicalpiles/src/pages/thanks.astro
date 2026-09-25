@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { getBusiness } from '../lib/data.js';
+
+const biz = getBusiness();
+---
+
+<Base title="Thanks, we have your request" description="Your quote request is in. Here is what happens next." noindex stickyBar={false} quoteHref="/#quote">
+  <div class="page thanks">
+    <p class="eyebrow eyebrow-brand">Request received</p>
+    <h1>Thanks. We have your request.</h1>
+    <p class="lede">{biz.callback_promise} Here is what happens next.</p>
+
+    <ol class="next">
+      <li>
+        <h2>We call you</h2>
+        <p>Expect a call from {biz.trading_name} during business hours ({biz.hours_display}). We will confirm the job, the access and the timing.</p>
+      </li>
+      <li>
+        <h2>Send anything useful</h2>
+        <p>If you have drawings, a deck plan or photos of the site, reply to the confirmation email with them. A photo of the gate or the path to the backyard saves a visit.</p>
+      </li>
+      <li>
+        <h2>You get a firm price</h2>
+        <p>Decks are usually quoted from the plan. Additions and underpinning get a site review first. Either way the number you get is the number you pay, unless the ground surprises us and we agree the change with you first.</p>
+      </li>
+    </ol>
+
+    <p class="talk">Want to talk now? Call <a href={`tel:${biz.phone_e164}`} class="num" data-track="call_click" data-place="thanks">{biz.phone_display}</a>.</p>
+    <p><a href="/" class="btn btn-secondary btn-md">Back to the site</a></p>
+  </div>
+</Base>
+
+<style>
+  .thanks { max-width: var(--read); padding-block: var(--s6); }
+  h1 { font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl)); margin-block: var(--s3) var(--s4); }
+  .lede { font-size: var(--text-lg); color: var(--text-muted); }
+  .next { list-style: none; padding: 0; margin-block: var(--s10); counter-reset: step; display: grid; gap: var(--s6); }
+  .next li { position: relative; padding-left: 3rem; counter-increment: step; }
+  .next li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 0.1rem;
+    width: 2rem; height: 2rem; display: grid; place-items: center;
+    background: var(--ink); color: var(--on-dark); border-radius: var(--r-pill);
+    font-size: var(--text-sm); font-weight: 600;
+  }
+  .next h2 { font-size: var(--text-lg); margin-bottom: var(--s1); }
+  .next p { color: var(--text-muted); }
+  .talk { margin-bottom: var(--s6); }
+  .talk a { font-weight: 600; color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+</style>

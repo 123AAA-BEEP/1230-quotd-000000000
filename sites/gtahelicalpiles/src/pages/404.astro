@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Page not found" description="That page does not exist." noindex stickyBar={false} quoteHref="/#quote">
+  <div class="page nf">
+    <p class="eyebrow">404</p>
+    <h1>That page is not here.</h1>
+    <p class="muted">Try the <a href="/">home page</a>, or the <a href="/locations/oakville/">Oakville page</a>.</p>
+  </div>
+</Base>
+
+<style>
+  .nf { max-width: var(--read); padding-block: var(--s10); }
+  h1 { font-size: var(--text-3xl); margin-block: var(--s3) var(--s4); }
+  .nf a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+</style>

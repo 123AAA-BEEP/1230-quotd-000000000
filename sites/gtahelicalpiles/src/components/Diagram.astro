@@ -1,0 +1,85 @@
+---
+// Sectional line diagram: a concrete sonotube pier in the frost zone next to a
+// helical pile bearing below it. Drawn by hand as inline SVG so it scales,
+// prints and reads in the page's own type. Not to scale; the frost-zone depth
+// label is the OBC minimum, supplied by the page from its data module.
+interface Props {
+  frostDepthLabel?: string; // short, e.g. "1.2 m under the OBC"
+  caption?: string;
+}
+const { frostDepthLabel = '1.2 m OBC minimum', caption } = Astro.props;
+---
+
+<figure class="diagram">
+  <svg viewBox="0 0 780 440" role="img" aria-labelledby="diagram-title diagram-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="diagram-title">Concrete pier versus helical pile in frost-prone ground</title>
+    <desc id="diagram-desc">Cross-section. On the left, a concrete sonotube pier sits with much of its length inside the frost zone; freezing soil grips its rough sides and lifts it. On the right, a helical pile's smooth galvanized shaft passes through the frost zone and its helix plate bears in undisturbed soil below it.</desc>
+
+    <!-- Deck level -->
+    <line x1="40" y1="70" x2="740" y2="70" stroke="var(--border-strong)" stroke-width="1" stroke-dasharray="4 4" />
+    <text x="44" y="60" class="lbl muted">Deck beam</text>
+
+    <!-- Ground surface -->
+    <line x1="40" y1="130" x2="740" y2="130" stroke="var(--ink)" stroke-width="2" />
+    <text x="44" y="122" class="lbl">Grade</text>
+
+    <!-- Frost zone band -->
+    <rect x="40" y="130" width="700" height="120" fill="var(--brand-50)" />
+    <line x1="40" y1="250" x2="740" y2="250" stroke="var(--brand-600)" stroke-width="1.5" stroke-dasharray="6 4" />
+    <text x="44" y="150" class="lbl brand">Frost zone</text>
+    <text x="44" y="168" class="lbl brand">{frostDepthLabel}</text>
+
+    <!-- Bearing soil below -->
+    <text x="44" y="404" class="lbl muted">Undisturbed soil below frost</text>
+
+    <!-- LEFT: sonotube pier (rough, mostly in frost zone, lifted) -->
+    <g transform="translate(260 0)">
+      <rect x="-12" y="70" width="24" height="26" fill="none" stroke="var(--ink)" stroke-width="2" />
+      <path d="M-28 96 L28 96 L30 120 L26 150 L31 180 L27 210 L30 240 L26 262 L-26 262 L-30 240 L-27 210 L-31 180 L-26 150 L-30 120 Z" fill="var(--bg)" stroke="var(--ink)" stroke-width="2" />
+      <g stroke="var(--warn)" stroke-width="2" fill="none">
+        <path d="M-50 232 L-50 172 M-50 172 l-6 8 M-50 172 l6 8" />
+        <path d="M50 232 L50 172 M50 172 l-6 8 M50 172 l6 8" />
+      </g>
+      <path d="M-30 264 q30 8 60 0" fill="none" stroke="var(--warn)" stroke-width="2" stroke-dasharray="3 3" />
+      <text x="0" y="300" text-anchor="middle" class="lbl">Concrete sonotube</text>
+      <text x="0" y="320" text-anchor="middle" class="lbl muted">Frozen soil grips the rough</text>
+      <text x="0" y="338" text-anchor="middle" class="lbl muted">sides and lifts the pier</text>
+    </g>
+
+    <!-- RIGHT: helical pile (smooth shaft, helix below frost) -->
+    <g transform="translate(560 0)">
+      <rect x="-22" y="72" width="44" height="10" fill="var(--ink)" />
+      <rect x="-6" y="82" width="12" height="14" fill="none" stroke="var(--ink)" stroke-width="2" />
+      <rect x="-6" y="96" width="12" height="250" fill="var(--bg)" stroke="var(--ink)" stroke-width="2" />
+      <path d="M-40 318 L40 330 L40 338 L-40 326 Z" fill="var(--bg)" stroke="var(--ink)" stroke-width="2" />
+      <path d="M-40 318 L-40 326" stroke="var(--ink)" stroke-width="2" />
+      <path d="M-6 346 L0 366 L6 346" fill="var(--bg)" stroke="var(--ink)" stroke-width="2" />
+      <g stroke="var(--ok)" stroke-width="2" fill="none">
+        <path d="M-24 372 L-24 348 M-24 348 l-5 7 M-24 348 l5 7" />
+        <path d="M24 376 L24 352 M24 352 l-5 7 M24 352 l5 7" />
+      </g>
+      <text x="0" y="404" text-anchor="middle" class="lbl">Helical pile</text>
+      <text x="-16" y="184" text-anchor="end" class="lbl muted">Smooth galvanized shaft:</text>
+      <text x="-16" y="202" text-anchor="end" class="lbl muted">nothing to grip</text>
+      <text x="52" y="300" class="lbl muted">Helix bears in</text>
+      <text x="52" y="318" class="lbl muted">soil below frost</text>
+    </g>
+  </svg>
+  {caption && <figcaption class="small muted">{caption}</figcaption>}
+</figure>
+
+<style>
+  .diagram { margin: 0; }
+  .diagram svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--r-panel);
+    background: var(--bg);
+  }
+  .diagram figcaption { margin-top: var(--s3); }
+  .lbl { font-family: var(--sans); font-size: var(--text-sm); fill: var(--text); }
+  .lbl.muted { fill: var(--grey-text); }
+  .lbl.brand { fill: var(--brand-700); font-weight: 600; }
+</style>

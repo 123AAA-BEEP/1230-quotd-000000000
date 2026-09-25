@@ -1,0 +1,260 @@
+---
+// Budget estimator. Turns a deck size or a pile count into a pile count and an
+// installed price range from data/prices.json. It never sizes piles for load:
+// the layout rule is a typical spacing the owner or their engineer confirms,
+// and every output is labelled as confirmed after site review. Underpinning
+// always says "site assessment required".
+import { getPrices, formatCad } from '../lib/data.js';
+
+interface Props {
+  heading?: string;
+  city?: string;
+}
+
+const { heading = 'Get an illustrative budget range', city = '' } = Astro.props;
+const prices = getPrices();
+const rows = prices.rows;
+const deck = rows.find((r) => r.key === 'deck');
+const addition = rows.find((r) => r.key === 'addition');
+const underpinning = rows.find((r) => r.key === 'underpinning');
+
+// Typical post spacing along a beam, in feet. Owner or engineer to confirm.
+const SPACING_FT = 8;
+const clientData = { rows: rows.map((r) => ({ key: r.key, low: r.low, high: r.high, unit: r.unit })), spacing: SPACING_FT, volume_at: prices.volume_threshold ?? 10, city };
+---
+
+<section class="card estimator" id="estimator" aria-labelledby="estimator-heading">
+  <div class="estimator-head">
+    <p class="eyebrow eyebrow-brand">Budget calculator</p>
+    <h2 id="estimator-heading">{heading}</h2>
+    <p class="muted small">Pick the job, enter the size or the pile count, and see an illustrative range from our current price table. Every site is different: soil, access, loads and travel all move the number. The firm price follows a site review.</p>
+  </div>
+
+  <form class="estimator-form" data-estimator novalidate>
+    <fieldset>
+      <legend>What are we supporting?</legend>
+      <div class="choice-grid">
+        <label class="chip"><input type="radio" name="application" value="deck" checked /><span>Deck or porch</span></label>
+        <label class="chip"><input type="radio" name="application" value="addition" /><span>Addition or sunroom</span></label>
+        <label class="chip"><input type="radio" name="application" value="underpinning" /><span>Underpinning</span></label>
+      </div>
+    </fieldset>
+
+    <div data-mode="deck">
+      <fieldset>
+        <legend>Deck size</legend>
+        <div class="three-col">
+          <label class="field"><span>Length (ft)</span><input type="number" name="length" min="4" max="80" step="1" inputmode="numeric" value="16" /></label>
+          <label class="field"><span>Width (ft)</span><input type="number" name="width" min="4" max="80" step="1" inputmode="numeric" value="12" /></label>
+          <label class="field field-check"><input type="checkbox" name="attached" checked /><span>Attached to the house on one side</span></label>
+        </div>
+      </fieldset>
+      <p class="or small muted">Or, if your drawings show a pile count:</p>
+    </div>
+
+    <fieldset>
+      <legend data-count-label>Pile count</legend>
+      <div class="three-col">
+        <label class="field"><span data-count-span>Piles (leave blank to use the size above)</span><input type="number" name="count" min="1" max="200" step="1" inputmode="numeric" /></label>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary btn-lg">Show my range</button>
+  </form>
+
+  <div class="result" data-result hidden>
+    <div class="result-grid">
+      <div>
+        <p class="eyebrow">Typical layout</p>
+        <p class="result-value num" data-count-out>—</p>
+        <p class="small muted" data-count-note></p>
+      </div>
+      <div>
+        <p class="eyebrow">Illustrative range, installed</p>
+        <p class="result-value num" data-range-out>—</p>
+        <p class="small muted" data-range-note></p>
+      </div>
+    </div>
+    <p class="small muted" data-caveat></p>
+    <div class="result-actions">
+      <button type="button" class="btn btn-primary btn-lg" data-handoff>Get a site-verified quote</button>
+      <a href="/guides/helical-pile-cost-per-pile-ontario/" class="small">What moves the price</a>
+    </div>
+  </div>
+
+  <p class="sources est-sources">
+    Illustrative ranges from our price table, last reviewed {prices.last_reviewed}. They are examples, not a quote: each site carries its own conditions. Typical deck layout assumes posts every {SPACING_FT} ft along each beam; your drawings govern.
+    {deck && addition && underpinning && (
+      <span> Deck piles {formatCad(deck.low)} to {formatCad(deck.high)} each; addition piles {formatCad(addition.low)} to {formatCad(addition.high)}; underpinning {formatCad(underpinning.low)} to {formatCad(underpinning.high)} per bracket and pile.</span>
+    )}
+  </p>
+  <script type="application/json" data-estimator-config set:html={JSON.stringify(clientData)} />
+</section>
+
+<script>
+  const root = document.getElementById('estimator');
+  const form = root?.querySelector('[data-estimator]') as HTMLFormElement | null;
+  const cfgEl = root?.querySelector('[data-estimator-config]');
+  if (root && form && cfgEl) {
+    const cfg = JSON.parse(cfgEl.textContent || '{}');
+    const rowBy = (k: string) => cfg.rows.find((r: any) => r.key === k);
+    const fmt = (n: number) => new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(n);
+    const q = (sel: string) => root.querySelector(sel) as HTMLElement | null;
+    const deckMode = q('[data-mode="deck"]');
+    const result = q('[data-result]');
+    const countLabel = q('[data-count-label]');
+    const countSpan = q('[data-count-span]');
+    let last: any = null;
+
+    const application = () => (form.querySelector('input[name="application"]:checked') as HTMLInputElement).value;
+
+    const syncMode = () => {
+      const a = application();
+      deckMode?.toggleAttribute('hidden', a !== 'deck');
+      if (countLabel) countLabel.textContent = a === 'underpinning' ? 'Bracket count' : 'Pile count';
+      if (countSpan) {
+        countSpan.textContent =
+          a === 'deck' ? 'Piles (leave blank to use the size above)'
+          : a === 'addition' ? 'Piles shown on your drawings, or your best guess'
+          : 'Brackets along the settled wall, or your best guess';
+      }
+      const countInput = form.querySelector('input[name="count"]') as HTMLInputElement;
+      countInput.required = a !== 'deck';
+    };
+
+    form.querySelectorAll('input[name="application"]').forEach((el) => el.addEventListener('change', () => {
+      syncMode();
+      (window as any).track('estimator_step', { application: application() });
+    }));
+    syncMode();
+
+    const deckCount = (L: number, W: number, attached: boolean) => {
+      // Posts every SPACING ft along each beam line; beam lines every SPACING ft
+      // across the depth. A ledger-attached deck carries one side on the house.
+      const perBeam = Math.ceil(L / cfg.spacing) + 1;
+      let beams = Math.ceil(W / cfg.spacing) + 1;
+      if (attached) beams -= 1;
+      return Math.max(2, perBeam * Math.max(1, beams));
+    };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const a = application();
+      const row = rowBy(a);
+      const countIn = Number((form.querySelector('input[name="count"]') as HTMLInputElement).value);
+      let count = Number.isFinite(countIn) && countIn > 0 ? Math.round(countIn) : 0;
+      let note = '';
+      let L = 0, W = 0, attached = false;
+      if (a === 'deck' && !count) {
+        L = Number((form.querySelector('input[name="length"]') as HTMLInputElement).value);
+        W = Number((form.querySelector('input[name="width"]') as HTMLInputElement).value);
+        attached = (form.querySelector('input[name="attached"]') as HTMLInputElement).checked;
+        if (!(L >= 4 && W >= 4)) { (form.querySelector('input[name="length"]') as HTMLInputElement).reportValidity(); return; }
+        count = deckCount(L, W, attached);
+        note = `${L} × ${W} ft deck, ${attached ? 'attached on one side' : 'freestanding'}, posts about every ${cfg.spacing} ft.`;
+      } else if (!count) {
+        (form.querySelector('input[name="count"]') as HTMLInputElement).reportValidity();
+        return;
+      } else {
+        note = a === 'underpinning' ? 'Brackets you entered. Spacing is set by the engineer after the assessment.' : 'Count you entered.';
+      }
+
+      const low = row.low * count;
+      const high = row.high * count;
+      const unitWord = a === 'underpinning' ? 'brackets' : 'piles';
+      q('[data-count-out]')!.textContent = `${count} ${unitWord}`;
+      q('[data-count-note]')!.textContent = note;
+      q('[data-range-out]')!.textContent = `${fmt(low)} to ${fmt(high)}`;
+      q('[data-range-note]')!.textContent = `${fmt(row.low)} to ${fmt(row.high)} ${row.unit}${count >= cfg.volume_at ? '; larger pile counts are priced as a job rather than per pile, so ask' : ''}.`;
+      q('[data-caveat]')!.textContent =
+        a === 'underpinning'
+          ? 'Underpinning always needs a site assessment. Soil, load and access set the real number; treat this as an order-of-magnitude figure only.'
+          : 'Rock or dense shale, no gate access, heavy loads and long travel push the price up. Firm price after a site review.';
+      result?.removeAttribute('hidden');
+      last = { application: a, count, deck_length_ft: L || null, deck_width_ft: W || null, attached: a === 'deck' ? attached : null, estimate_low: low, estimate_high: high, city: cfg.city || null, summary: `Estimator: ${count} ${unitWord}, ${fmt(low)} to ${fmt(high)}${note ? ' (' + note + ')' : ''}` };
+      (window as any).track('estimator_result', { application: a, count: String(count) });
+      result?.scrollIntoView({ block: 'nearest' });
+    });
+
+    q('[data-handoff]')?.addEventListener('click', () => {
+      if (!last) return;
+      document.dispatchEvent(new CustomEvent('estimator:prefill', { detail: last }));
+      (window as any).track('estimator_handoff', { application: last.application });
+    });
+  }
+</script>
+
+<style>
+  .estimator { padding: var(--s6); }
+  .estimator-head h2 { font-size: var(--text-2xl); margin-top: var(--s2); margin-bottom: var(--s2); }
+  .estimator-head p { max-width: 40rem; }
+  .estimator-form { margin-top: var(--s6); }
+
+  fieldset { border: 0; padding: 0; margin: 0 0 var(--s5); min-width: 0; }
+  legend { font-size: var(--text-sm); font-weight: 600; color: var(--text); margin-bottom: var(--s2); padding: 0; }
+
+  .choice-grid { display: grid; grid-template-columns: 1fr; gap: var(--s2); }
+  @media (min-width: 36rem) { .choice-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .chip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-control);
+    background: var(--bg);
+    font-size: var(--text-sm);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .chip input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+  .chip:has(input:checked) { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+  .chip:has(input:focus-visible) { outline: 2px solid var(--brand-600); outline-offset: 2px; }
+
+  .three-col { display: grid; grid-template-columns: 1fr; gap: var(--s3); align-items: end; }
+  @media (min-width: 36rem) { .three-col { grid-template-columns: 1fr 1fr 1.6fr; } }
+
+  .field { display: block; }
+  .field span { display: block; font-size: var(--text-sm); font-weight: 500; color: var(--text); margin-bottom: 0.375rem; }
+  .field input[type='number'] {
+    width: 100%;
+    font-size: var(--text-base);
+    font-family: var(--sans);
+    padding: 0.625rem 0.75rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-control);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 2.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .field input:focus { border-color: var(--brand-600); }
+  .field-check { display: flex; align-items: center; gap: var(--s2); min-height: 2.75rem; font-size: var(--text-sm); cursor: pointer; }
+  .field-check span { margin: 0; font-weight: 400; }
+  .field-check input { width: 1.1rem; height: 1.1rem; accent-color: var(--ink); flex: none; }
+
+  .or { margin: calc(-1 * var(--s2)) 0 var(--s4); }
+
+  .result {
+    margin-top: var(--s6);
+    padding-top: var(--s6);
+    border-top: 1px solid var(--border);
+  }
+  .result-grid { display: grid; grid-template-columns: 1fr; gap: var(--s5); }
+  @media (min-width: 36rem) { .result-grid { grid-template-columns: 1fr 1.4fr; } }
+  .result-value {
+    font-family: var(--display);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-top: var(--s1);
+  }
+  .result-actions { margin-top: var(--s5); display: flex; flex-wrap: wrap; align-items: center; gap: var(--s4); }
+  .result-actions a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+  .result [data-caveat] { margin-top: var(--s4); max-width: 40rem; }
+  .est-sources { margin-top: var(--s5); }
+</style>
