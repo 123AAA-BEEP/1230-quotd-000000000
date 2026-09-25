@@ -1,12 +1,19 @@
 ---
 import Base from '../layouts/Base.astro';
+import { getLiveCities } from '../lib/data.js';
+
+const cities = getLiveCities();
 ---
 
-<Base title="Page not found" description="That page does not exist." noindex stickyBar={false} quoteHref="/#quote">
+<Base title="Page not found" description="The page you asked for is not on gtahelicalpiles.ca. Start from the home page or a service-area page." noindex stickyBar={false} quoteHref="/#quote">
   <div class="page nf">
     <p class="eyebrow">404</p>
     <h1>That page is not here.</h1>
-    <p class="muted">Try the <a href="/">home page</a>, or the <a href="/locations/oakville/">Oakville page</a>.</p>
+    <p class="muted">
+      Try the <a href="/">home page</a>{cities.length > 0 && (
+        <span>, or a service-area page: {cities.map((c, i) => <span>{i > 0 ? ', ' : ''}<a href={`/locations/${c.slug}/`}>{c.name}</a></span>)}</span>
+      )}.
+    </p>
   </div>
 </Base>
 

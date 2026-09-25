@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { getBusiness, getLiveCities, getLiveGuides, isPlaceholderBusiness } from '../lib/data.js';
+import { getBusiness, getLiveCities, getLiveGuides, isPlaceholderBusiness, safeJson } from '../lib/data.js';
 
 interface Props {
   title: string;
@@ -15,6 +15,7 @@ const { title, description, noindex = false, quoteHref = '#quote', stickyBar = t
 
 const biz = getBusiness();
 const placeholder = isPlaceholderBusiness();
+const indexable = !(noindex || placeholder);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const cities = getLiveCities();
 const guides = getLiveGuides();
@@ -22,6 +23,8 @@ const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 const year = 2026;
 
 // Sitewide business entity. Service-area business: locality only, no street.
+// `image` is added once a real photograph exists (Google lists it as required
+// for LocalBusiness rich results).
 const localBusiness = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'GeneralContractor'],
@@ -47,11 +50,10 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
 <html lang="en-CA">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    {(noindex || placeholder) && <meta name="robots" content="noindex" />}
+    {indexable ? <link rel="canonical" href={canonical} /> : <meta name="robots" content="noindex" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
@@ -59,23 +61,29 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
     <meta property="og:site_name" content={biz.trading_name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
+    {indexable && <meta property="og:url" content={canonical} />}
     <meta property="og:locale" content="en_CA" />
     <meta name="generator" content={Astro.generator} />
-    <script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
-    {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <script type="application/ld+json" set:html={safeJson(localBusiness)} />
+    {schema.map((s) => <script type="application/ld+json" set:html={safeJson(s)} />)}
     {plausibleDomain && (
       <script defer data-domain={plausibleDomain} src="https://plausible.io/js/script.tagged-events.outbound-links.js"></script>
     )}
     <script is:inline>
-      // Analytics helper. No-op when Plausible is not loaded.
-      window.track = function (name, props) {
-        if (typeof window.plausible === 'function') window.plausible(name, { props: props || {} });
+      // Plausible queue: events fired before the script loads are replayed.
+      // With no analytics configured the queue simply fills and is never read.
+      window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments); };
+      window.track = function (name, props, opts) {
+        var payload = { props: props || {} };
+        if (opts && typeof opts.callback === 'function') payload.callback = opts.callback;
+        window.plausible(name, payload);
       };
     </script>
     <slot name="head" />
   </head>
-  <body>
+  <body class:list={{ 'has-cta-bar': stickyBar }}>
+    <a href="#main" class="skip">Skip to content</a>
+
     {placeholder && (
       <div class="preview-strip" role="note">
         <div class="page">Preview build. Contact details, credentials and prices are placeholders until the owner supplies them. This page is noindex.</div>
@@ -101,7 +109,7 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
       </div>
     </header>
 
-    <main class="site-main">
+    <main class="site-main" id="main" tabindex="-1">
       <slot />
     </main>
 
@@ -139,16 +147,16 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
         </div>
       </div>
       <div class="page footer-legal">
-        <p class="small muted">© {year} {biz.legal_name}. Prices and specifications are confirmed after a site review.</p>
+        <p class="small muted">© {year} {biz.legal_name}. Prices and specifications are confirmed in the written quote.</p>
         <p class="small muted footer-links"><a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a></p>
       </div>
     </footer>
 
     {stickyBar && (
-      <div class="cta-bar" aria-label="Quick actions">
+      <nav class="cta-bar" aria-label="Quick actions">
         <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg" data-track="call_click" data-place="sticky">Call</a>
         <a href={quoteHref} class="btn btn-primary btn-lg">Get a free quote</a>
-      </div>
+      </nav>
     )}
 
     <script is:inline>
@@ -156,6 +164,13 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
         var el = e.target && e.target.closest && e.target.closest('[data-track]');
         if (el) window.track(el.getAttribute('data-track'), { place: el.getAttribute('data-place') || '' });
       });
+      // Hide the quick-action bar while the quote form itself is on screen.
+      var q = document.getElementById('quote');
+      if (q && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { document.body.toggleAttribute('data-quote-in-view', en.isIntersecting); });
+        }, { threshold: 0.15 }).observe(q);
+      }
     </script>
   </body>
 </html>
@@ -176,12 +191,17 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
     border-bottom: 1px solid var(--border);
   }
 
+  /* On phones the quick-action bar carries the CTA; the header scrolls away. */
+  @media (max-width: 63.99rem) {
+    .has-cta-bar .site-header { position: static; }
+  }
+
   .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--s4);
-    height: 4rem;
+    height: var(--header-h);
   }
 
   .wordmark {
@@ -221,8 +241,8 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
   }
 
   @media (max-width: 39.99rem) {
-    /* Phone lives in the sticky bar on small screens; keep the header clean. */
     .phone { display: none; }
+    .header-right .btn { height: 2.75rem; }
   }
 
   .site-main {
@@ -230,10 +250,17 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
     padding-block: var(--s8) var(--s20);
   }
 
+  .site-main:focus { outline: none; }
+
   .site-footer {
     border-top: 1px solid var(--border);
     background: var(--surface);
     padding-block: var(--s12) var(--s16);
+  }
+
+  /* Leave room under the fixed bar so the last footer links stay tappable. */
+  @media (max-width: 63.99rem) {
+    .has-cta-bar .site-footer { padding-bottom: calc(var(--s16) + 5.5rem + env(safe-area-inset-bottom, 0px)); }
   }
 
   .footer-grid {
@@ -266,7 +293,7 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
     font-size: var(--text-sm);
   }
 
-  .footer-list a { color: var(--text); }
+  .footer-list a { color: var(--text); display: inline-block; padding-block: var(--s1); }
   .footer-list a:hover { color: var(--brand-700); }
   .footer-also { margin-top: var(--s3); line-height: 1.5; }
 
@@ -280,12 +307,12 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
     gap: var(--s3);
   }
 
-  .footer-links a { margin-right: var(--s4); }
+  .footer-links a { display: inline-block; padding-block: var(--s2); margin-right: var(--s4); }
 
   .cta-bar {
     position: fixed;
     inset-inline: var(--s3);
-    bottom: var(--s3);
+    bottom: calc(var(--s3) + env(safe-area-inset-bottom, 0px));
     z-index: 30;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -296,6 +323,9 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
     border-radius: var(--r-panel);
     box-shadow: var(--shadow-lg);
   }
+
+  body[data-quote-in-view] .cta-bar,
+  body:has(#quote :focus-within) .cta-bar { display: none; }
 
   @media (min-width: 64rem) {
     .cta-bar { display: none; }

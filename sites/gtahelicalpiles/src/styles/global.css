@@ -49,6 +49,8 @@
   --grey-text: #475569;
   --grey-line: #e2e8f0;
   --grey-line-strong: #cbd5e1;
+  /* Control borders need 3:1 against white (WCAG 1.4.11); dividers do not. */
+  --grey-control: #7c8899;
   --grey-surface: #f6f8fa;
   --on-dark: #ffffff;
 
@@ -56,6 +58,7 @@
   --text-muted: var(--grey-text);
   --border: var(--grey-line);
   --border-strong: var(--grey-line-strong);
+  --border-control: var(--grey-control);
   --surface: var(--grey-surface);
 
   /* Verdict colours. State only, never decoration. */
@@ -96,6 +99,7 @@
   --s16: 4rem;
   --s20: 5rem;
 
+  --header-h: 4rem;
   --read: 44rem;
   --hub: 56rem;
   --grid: 72rem;
@@ -114,6 +118,9 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: auto;
+  /* Anchor targets land below the sticky header. Applies to #hash links and
+     scrollIntoView alike. */
+  scroll-padding-top: calc(var(--header-h) + var(--s4));
 }
 
 body {
@@ -168,7 +175,7 @@ a:hover {
 }
 
 /* The 2px brand focus ring is non-negotiable and must never be removed. */
-:where(a, button, input, select, textarea, summary, details):focus-visible {
+:where(a, button, input, select, textarea, summary, details, [tabindex]):focus-visible {
   outline: 2px solid var(--brand-600);
   outline-offset: 2px;
 }
@@ -176,6 +183,23 @@ a:hover {
 ::selection {
   background: var(--brand-50);
   color: var(--brand-800);
+}
+
+/* Skip link: visible only on focus. */
+.skip {
+  position: absolute;
+  left: var(--s4);
+  top: -100%;
+  z-index: 40;
+  padding: var(--s2) var(--s3);
+  background: var(--ink);
+  color: var(--on-dark);
+  border-radius: var(--r-control);
+  font-size: var(--text-sm);
+}
+
+.skip:focus {
+  top: var(--s2);
 }
 
 .page {
@@ -288,7 +312,7 @@ a:hover {
 .btn-secondary {
   background: var(--bg);
   color: var(--text);
-  border-color: var(--border-strong);
+  border-color: var(--border-control);
 }
 
 .btn-secondary:hover {
@@ -347,6 +371,37 @@ a:hover {
   color: var(--brand-700);
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+
+/* Footnote-style source link with a tap target the line height does not show. */
+.src {
+  display: inline-block;
+  padding-block: var(--s2);
+  margin-block: calc(-1 * var(--s2));
+  font-size: var(--text-xs);
+  color: var(--brand-700);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Sticky form rail on wide screens: scrolls inside itself when taller than
+   the viewport; sits in flow on short viewports. */
+@media (min-width: 64rem) {
+  .rail {
+    position: sticky;
+    top: calc(var(--header-h) + var(--s6));
+    max-height: calc(100vh - var(--header-h) - var(--s6) - var(--s4));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+@media (min-width: 64rem) and (max-height: 56rem) {
+  .rail {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
 }
 
 /* Visually hidden, still read by screen readers. */

@@ -22,7 +22,7 @@
         "https://www.technometalpost.com/en-CA/faq/"
       ],
       "label": "Deck or porch",
-      "shaft_short": "2 to 2-3/8 in round shaft"
+      "shaft_short": "2 to 2‑3/8 in round shaft"
     },
     {
       "key": "addition",
@@ -44,7 +44,7 @@
         "https://www.technometalpost.com/en-CA/faq/how-much-do-helical-piles-cost/"
       ],
       "label": "Addition or sunroom",
-      "shaft_short": "2-7/8 to 3-1/2 in round shaft"
+      "shaft_short": "2‑7/8 to 3‑1/2 in round shaft"
     },
     {
       "key": "underpinning",
@@ -67,7 +67,7 @@
         "https://icc-es.org/wp-content/uploads/report-directory/ESR-4735.pdf"
       ],
       "label": "Underpinning (pile and bracket)",
-      "shaft_short": "2-7/8 to 3-1/2 in shaft with bracket"
+      "shaft_short": "2‑7/8 to 3‑1/2 in shaft with bracket"
     }
   ],
   "volume_note": "Public sources say per-pile cost 'could drop based on volume' (screwpilesquotes.ca) and suggest grouping with neighbours for a discount (screwpilesquotes.ca London ON). No source states an 8-pile threshold; the PDF's 'volume discount at 8+ piles' is the owner's policy and needs the owner's written price schedule before it publishes. Until then say 'volume pricing on larger pile counts'.",
@@ -146,5 +146,7 @@
     "Postech Halton / Postech Hamilton / Xtreme Post Hamilton dealer pages: no figures published"
   ],
   "illustrative_note": "Illustrative ranges only. Each site carries its own conditions: soil, access, loads and travel all move the number. The firm price is the written quote after a site review.",
-  "included_note": "Owner to confirm what the per-pile price includes (bracket, mobilization, torque log, engineer's certificate). Until then the ranges are shown as installed price per pile with engineering and permit fees listed separately."
+  "included_note": "Owner to confirm what the per-pile price includes (bracket, mobilization, torque log, engineer's certificate). Until then the ranges are shown as installed price per pile with engineering and permit fees listed separately.",
+  "deck_post_spacing_ft": 8,
+  "deck_post_spacing_basis": "Illustrative layout rule for the estimator only: posts about every 8 ft along each beam, beam lines about every 8 ft across the depth; a ledger-attached deck carries one side on the house. Owner or engineer to confirm; the drawings govern every real layout."
 }

@@ -3,6 +3,9 @@
 // free). Step 2 is contact details. Phone is required because a pile job is
 // quoted by phone, not from an email address. Anti-spam: honeypot field plus
 // time-to-complete stamp. No OTP. No CAPTCHA.
+//
+// Consent: the text shown here comes from data/business.json and the server
+// stores that same text by version, so the record is what the visitor saw.
 import { getBusiness } from '../lib/data.js';
 
 interface Props {
@@ -33,8 +36,6 @@ const ROLES = [
   { key: 'engineer', label: 'Engineer or architect' },
   { key: 'other', label: 'Other' },
 ];
-
-const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} may contact you by phone, text or email about this request. No marketing lists, no sharing with third parties.`;
 ---
 
 <div class:list={['card', 'quote-card', { compact }]} id="quote">
@@ -63,6 +64,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
             </label>
           ))}
         </div>
+        <p class="field-error small" data-error hidden>Please pick one.</p>
       </fieldset>
 
       <fieldset class="choice">
@@ -70,7 +72,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
         <div class="two-col">
           <label class="field">
             <span>City or town</span>
-            <select name="city" required>
+            <select name="city" autocomplete="address-level2" required>
               <option value="" disabled selected={!city}>Choose</option>
               {biz.service_area.map((c) => (
                 <option value={c.slug} selected={c.slug === city}>{c.name}</option>
@@ -80,7 +82,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
           </label>
           <label class="field">
             <span>Postal code</span>
-            <input type="text" name="postal_code" inputmode="text" autocomplete="postal-code" pattern="^[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]$" placeholder="L6J 1A1" required />
+            <input type="text" name="postal_code" inputmode="text" autocomplete="postal-code" pattern="^[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]$" title="Canadian postal code, for example L6J 1A1" placeholder="L6J 1A1" required />
           </label>
         </div>
       </fieldset>
@@ -95,6 +97,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
             </label>
           ))}
         </div>
+        <p class="field-error small" data-error hidden>Please pick one.</p>
       </fieldset>
 
       <button type="button" class="btn btn-primary btn-lg btn-block" data-next>Continue</button>
@@ -108,11 +111,11 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
       </label>
       <label class="field">
         <span>Mobile number</span>
-        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required minlength="10" />
+        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required pattern="([^0-9]*[0-9]){10,}[^0-9]*" title="A phone number with at least 10 digits" />
       </label>
       <label class="field">
         <span>Email</span>
-        <input type="email" name="email" autocomplete="email" required />
+        <input type="email" name="email" autocomplete="email" required pattern="[^@ ]+@[^@ ]+[.][^@ ]{2,}" title="An email address such as name@example.ca" />
       </label>
       <fieldset class="choice">
         <legend>I am a</legend>
@@ -124,6 +127,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
             </label>
           ))}
         </div>
+        <p class="field-error small" data-error hidden>Please pick one.</p>
       </fieldset>
       <label class="field">
         <span>Anything we should know? <em class="muted">(optional)</em></span>
@@ -134,10 +138,9 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
       <input type="hidden" name="estimate" value="" />
       <input type="hidden" name="page" value="" />
       <input type="hidden" name="utm" value="" />
-      <input type="hidden" name="started_at" value="" />
 
       <button type="submit" class="btn btn-primary btn-lg btn-block">Get my free quote</button>
-      <p class="consent small muted" data-consent-text>{CONSENT_TEXT}</p>
+      <p class="consent small muted">{biz.consent_text}</p>
       <button type="button" class="back" data-back>Back</button>
       <p class="status" data-status role="status" aria-live="polite"></p>
     </div>
@@ -152,13 +155,13 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
     const step2 = form.querySelector('[data-step="2"]') as HTMLElement | null;
     const indicator = form.querySelector('[data-step-indicator]');
     const status = form.querySelector('[data-status]') as HTMLElement | null;
+    const track = (name: string, props: Record<string, string>, opts?: { callback?: () => void }) => (window as any).track(name, props, opts);
     const setHidden = (name: string, value: string) => {
       const el = form.querySelector(`input[name="${name}"]`) as HTMLInputElement | null;
       if (el) el.value = value;
     };
 
     setHidden('page', location.pathname);
-    setHidden('started_at', String(startedAt));
     const utm: Record<string, string> = {};
     new URLSearchParams(location.search).forEach((v, k) => {
       if (k.startsWith('utm_') || k === 'gclid') utm[k] = v;
@@ -166,10 +169,16 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
     setHidden('utm', JSON.stringify(utm));
 
     let started = false;
-    form.addEventListener('change', () => {
+    form.addEventListener('change', (e) => {
       if (!started) {
         started = true;
-        (window as any).track('form_start', { page: location.pathname });
+        track('form_start', { page: location.pathname });
+      }
+      // Clear a radio-group error as soon as the user picks one.
+      const fs = (e.target as HTMLElement).closest('fieldset');
+      if (fs) {
+        fs.removeAttribute('aria-invalid');
+        fs.querySelector('[data-error]')?.setAttribute('hidden', '');
       }
     });
 
@@ -187,13 +196,14 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
         if (f instanceof HTMLInputElement && f.type === 'radio') {
           if (seenRadio.has(f.name)) continue;
           seenRadio.add(f.name);
-          const group = form.querySelector(`input[name="${f.name}"]:checked`);
-          if (!group) {
+          const fs = f.closest('fieldset');
+          if (!form.querySelector(`input[name="${f.name}"]:checked`)) {
+            fs?.setAttribute('aria-invalid', 'true');
+            fs?.querySelector('[data-error]')?.removeAttribute('hidden');
+            if (status) status.textContent = `Please pick one: ${fs?.querySelector('legend')?.textContent ?? ''}`;
             f.focus();
-            f.closest('fieldset')?.classList.add('invalid');
             return false;
           }
-          f.closest('fieldset')?.classList.remove('invalid');
           continue;
         }
         if (!f.checkValidity()) {
@@ -201,16 +211,18 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
           return false;
         }
       }
+      if (status) status.textContent = '';
       return true;
     };
 
-    form.querySelector('[data-next]')?.addEventListener('click', () => {
+    const advance = () => {
       if (!validStep(step1)) return;
       show(2);
-      (window as any).track('form_step2', { page: location.pathname });
+      track('form_step2', { page: location.pathname });
       (step2?.querySelector('input[name="name"]') as HTMLInputElement | null)?.focus();
-    });
+    };
 
+    form.querySelector('[data-next]')?.addEventListener('click', advance);
     form.querySelector('[data-back]')?.addEventListener('click', () => show(1));
 
     // Estimator hand-off: prefill application and notes, jump to the form.
@@ -228,6 +240,11 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      // Enter inside step 1 submits the form: treat it as Continue.
+      if (!step2 || step2.hidden) {
+        advance();
+        return;
+      }
       if (!validStep(step2)) return;
       const submit = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
       if (submit) submit.disabled = true;
@@ -237,28 +254,43 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
       const payload = {
         form_version: form.dataset.formVersion,
         consent_version: form.dataset.consentVersion,
-        consent_text: form.querySelector('[data-consent-text]')?.textContent?.trim() ?? '',
         time_to_complete_ms: Date.now() - startedAt,
         fields,
       };
 
+      let res: Response | null = null;
+      let data: any = {};
       try {
-        const res = await fetch(form.action, {
+        res = await fetch(form.action, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
         });
-        const data = await res.json().catch(() => ({}));
-        if (res.ok && data.ok) {
-          (window as any).track('form_submit', { page: location.pathname, application: String(fields.application || '') });
-          location.href = '/thanks/';
-          return;
-        }
-        throw new Error(data.error || 'Request failed');
-      } catch (err) {
-        if (status) status.textContent = 'That did not send. Please try again, or call us on the number above.';
-        if (submit) submit.disabled = false;
+        data = await res.json().catch(() => ({}));
+      } catch {
+        res = null;
       }
+
+      if (res && res.ok && data.ok) {
+        let gone = false;
+        const go = () => {
+          if (gone) return;
+          gone = true;
+          location.href = '/thanks/';
+        };
+        // Let the conversion event leave before the page unloads.
+        track('form_submit', { page: location.pathname, application: String(fields.application || '') }, { callback: go });
+        setTimeout(go, 600);
+        return;
+      }
+
+      if (status) {
+        status.textContent =
+          res && res.status === 422 && data && data.error
+            ? `Please check: ${String(data.error).replace(/^Check: /, '')}.`
+            : 'That did not send. Please try again, or call us on the number above.';
+      }
+      if (submit) submit.disabled = false;
     });
   }
 </script>
@@ -292,11 +324,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
     padding: 0;
   }
 
-  fieldset.invalid legend::after {
-    content: ' Please pick one.';
-    font-weight: 400;
-    color: var(--warn);
-  }
+  .field-error { margin-top: var(--s2); color: var(--warn); }
 
   .choice-grid {
     display: grid;
@@ -315,7 +343,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
     align-items: center;
     min-height: 2.75rem;
     padding: 0.5rem 0.75rem;
-    border: 1px solid var(--border-strong);
+    border: 1px solid var(--border-control);
     border-radius: var(--r-control);
     background: var(--bg);
     font-size: var(--text-sm);
@@ -334,14 +362,23 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
     cursor: pointer;
   }
 
-  .chip:has(input:checked) {
-    border-color: var(--ink);
-    box-shadow: inset 0 0 0 1px var(--ink);
+  /* Selected and focused states without :has(), for older browsers. */
+  .chip input:checked + span::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border: 2px solid var(--ink);
+    border-radius: inherit;
+    pointer-events: none;
   }
 
-  .chip:has(input:focus-visible) {
-    outline: 2px solid var(--brand-600);
-    outline-offset: 2px;
+  .chip input:focus-visible + span::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 2px solid var(--brand-600);
+    border-radius: inherit;
+    pointer-events: none;
   }
 
   .two-col {
@@ -373,7 +410,7 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
     font-family: var(--sans);
     line-height: 1.5;
     padding: 0.625rem 0.75rem;
-    border: 1px solid var(--border-strong);
+    border: 1px solid var(--border-control);
     border-radius: var(--r-control);
     background: var(--bg);
     color: var(--text);
@@ -401,7 +438,9 @@ const CONSENT_TEXT = `By requesting a quote you agree that ${biz.trading_name} m
 
   .back {
     display: block;
-    margin: var(--s3) auto 0;
+    margin: var(--s2) auto 0;
+    padding: var(--s3) var(--s4);
+    min-height: 2.75rem;
     background: none;
     border: 0;
     font-family: var(--sans);

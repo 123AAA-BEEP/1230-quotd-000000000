@@ -6,73 +6,204 @@
   "kicker": "Halton Region",
   "answer": [
     "In Oakville, a deck over 10 square metres and higher than 61 cm above grade needs a building permit, and so does any deck attached to the house. The Town's own deck drawings put conventional footings at least 1.2 m (4 ft) below grade on undisturbed soil. For helical piles they ask for the manufacturer's CCMC evaluation report and for an engineer to set the depth, spacing and size of the piles to suit the soil.",
-    "That last word matters more here than in most towns. Inland Oakville sits on clay-to-silt till, the lakeshore band through Old Oakville, Bronte and Joshua Creek is sand and gravel, and along Sixteen Mile Creek and Bronte Creek the shale is at or near the surface. Deck piles run $325 to $475 each installed as an illustrative range. The ground under your street decides the rest."
+    "That last word matters more here than in most towns. Inland Oakville sits on clay-to-silt till, the lakeshore band through Old Oakville, Bronte and Joshua Creek is sand and gravel, and along Sixteen Mile Creek and Bronte Creek the shale is at or near the surface."
   ],
   "tiles": [
-    { "value": "1.2 m", "label": "minimum footing depth on the Town's deck drawings", "source": { "name": "Town of Oakville deck drawings", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf" } },
-    { "value": "$220", "label": "Town of Oakville deck permit fee, 2026 schedule", "source": { "name": "2026 Building Services fees", "url": "https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf" } },
-    { "value": "Apr 27 to Oct 20", "label": "average frost-free period, Toronto Pearson, 1991 to 2020", "source": { "name": "Environment Canada normals", "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1" } },
-    { "value": "2 shales", "label": "red Queenston under west Oakville, grey Georgian Bay under the east", "source": { "name": "Ontario Geological Survey MRD 219", "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630" } }
+    {
+      "value": "1.2 m",
+      "label": "minimum footing depth on the Town's deck drawings",
+      "source": {
+        "name": "Town of Oakville deck drawings",
+        "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf"
+      }
+    },
+    {
+      "value": "$220",
+      "label": "Town of Oakville deck permit fee, 2026 schedule",
+      "source": {
+        "name": "2026 Building Services fees",
+        "url": "https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf"
+      }
+    },
+    {
+      "value": "Apr 27 to Oct 20",
+      "label": "average frost-free period, Toronto Pearson, 1991 to 2020",
+      "source": {
+        "name": "Environment Canada normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      }
+    },
+    {
+      "value": "2 shales",
+      "label": "red Queenston under west Oakville, grey Georgian Bay under the east",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630"
+      }
+    }
   ],
   "ground": {
     "heading": "What is under Oakville",
     "paragraphs": [
-      "The Ontario Geological Survey maps most of Oakville inland of the lake as clay-to-silt till: dense, fine-grained ground that a helical pile screws into steadily and that builds torque predictably. Along the lakeshore, through Old Oakville, Bronte and Joshua Creek, the surface is the sand and gravel that glacial Lake Iroquois left behind. Coarse ground carries load well but the helix has to be sized for it, and some pile systems' evaluation reports call for a load test rather than torque alone where a loose gravel layer is thick.",
+      "The Ontario Geological Survey maps most of Oakville inland of the lake as clay-to-silt till, and the lakeshore band through Old Oakville, Bronte and Joshua Creek as the sand and gravel that glacial Lake Iroquois left behind. In coarse ground the helix has to be sized for it, and some pile systems' evaluation reports call for a load test rather than torque alone where granular material is more than about 200 mm thick.",
       "Bedrock is shale everywhere under Oakville, but not the same shale. West and central Oakville, from Bronte through Kerr Village, Glen Abbey, College Park and Palermo, sits on the red Queenston Formation. East of roughly Sixteen Mile Creek, under Old Oakville's lakeshore, Clearview, Eastlake, Joshua Creek and Iroquois Ridge North, it is the grey Georgian Bay Formation, shale interbedded with harder limestone. In the creek valleys and at the Clearview and Iroquois Ridge North query points the survey shows bedrock at or near the surface, and a Queenston outcrop is exposed at Bronte Creek just south of the QEW.",
-      "For a pile that means three different jobs. In till, a standard pile driven to torque. In the lakeshore sand and gravel, a helix matched to coarse ground. Where shale is shallow, a pile can reach refusal early, so we pre-drill or size it differently and the engineer confirms the capacity from the torque record. The Town requires a soil-specific layout for exactly this reason: a design that works in Glen Abbey is not automatically right in Old Oakville. North Oakville adds the Trafalgar Moraine, silty clay-rich sand over shale that sheds water slowly."
+      "For a pile that means three different jobs. In till, a standard pile driven to torque. In the lakeshore sand and gravel, a helix matched to coarse ground. Where shale is shallow, a pile can reach refusal early, so we pre-drill or size it differently and the engineer confirms the capacity from the torque record. The Town requires a soil-specific layout for exactly this reason: a design that works in Glen Abbey is not automatically right in Old Oakville. North Oakville adds the Trafalgar Moraine, silty clay-rich sand over shale that absorbs water poorly."
     ],
     "table_note": "Surface and bedrock from Ontario Geological Survey point queries at one location per neighbourhood, retrieved 25 September 2026. They describe the neighbourhood, not your lot; the engineer's layout is based on the site.",
     "neighbourhoods": [
-      { "name": "Old Oakville", "surface": "Sand and gravel (Lake Iroquois shore)", "bedrock": "Georgian Bay, grey shale" },
-      { "name": "Kerr Village", "surface": "Clay-to-silt till", "bedrock": "Queenston, red shale" },
-      { "name": "Bronte", "surface": "Sand and gravel; shale outcrops at Bronte Creek", "bedrock": "Queenston, red shale" },
-      { "name": "Glen Abbey", "surface": "Clay-to-silt till", "bedrock": "Queenston, red shale" },
-      { "name": "College Park", "surface": "Clay-to-silt till", "bedrock": "Queenston, red shale" },
-      { "name": "River Oaks", "surface": "Clay-to-silt till", "bedrock": "Queenston, red shale" },
-      { "name": "Uptown Core", "surface": "Clay-to-silt till", "bedrock": "Queenston, red shale" },
-      { "name": "Palermo", "surface": "Clay-to-silt till", "bedrock": "Queenston, red shale" },
-      { "name": "Joshua Creek", "surface": "Sand and gravel", "bedrock": "Georgian Bay, grey shale" },
-      { "name": "Clearview", "surface": "Bedrock at or near surface", "bedrock": "Georgian Bay, grey shale" },
-      { "name": "Iroquois Ridge North", "surface": "Bedrock at or near surface", "bedrock": "Georgian Bay, grey shale" },
-      { "name": "Eastlake", "surface": "Not mapped at the query point", "bedrock": "Georgian Bay, grey shale" }
+      {
+        "name": "Old Oakville",
+        "surface": "Sand and gravel (Lake Iroquois shore)",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Kerr Village",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Bronte",
+        "surface": "Sand and gravel; shale outcrops at Bronte Creek",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glen Abbey",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "College Park",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "River Oaks",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Uptown Core",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Palermo",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Joshua Creek",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Clearview",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Iroquois Ridge North",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Eastlake",
+        "surface": "Not mapped at the query point",
+        "bedrock": "Georgian Bay, grey shale"
+      }
     ]
   },
   "permits": {
     "heading": "Permits in Oakville",
     "paragraphs": [
       "Permits go through the Town's Building Services, which its own pages also call the Building Department, via the Town's Online Services account. The 2026 fee schedule lists a deck permit at $220, with a $100 pre-screening fee charged at submission and credited to the permit; the minimum fee for any building permit is $200. The Town does not publish a fixed review time. It follows the LMCBO application timelines and says volume, complexity and resubmissions move it.",
-      "For helical piles the Town's deck sample drawings say two things. The manufacturer's information and CCMC approval must be submitted with the application, and a professional engineer must determine the depth, spacing and size of the piles based on the soil. We supply both with the application. After the install, the engineer issues a sealed certificate of conformity from our per-pile torque log; that certificate, not a hole in the ground, is what stands in for the footing inspection. Confirm the inspection sequence with Building Services when the permit is issued, because the Town's published inspection list is written for poured footings.",
+      "For helical piles the Town's deck sample drawings say two things. The manufacturer's information and CCMC approval must be submitted with the application, and a professional engineer must determine the depth, spacing and size of the piles based on the soil. We prepare both for your application. After the install, the engineer issues a sealed certificate of conformity from our per-pile torque log, which goes to the Town. Confirm with Building Services which inspections apply to piles, because the Town's published inspection list is written for poured footings.",
       "One detail catches attached decks: any footing within 4 ft of the house foundation must extend down to the level of the existing foundation. Piles along the house wall are driven accordingly."
     ],
     "facts": [
-      { "label": "Permit needed when", "value": "Deck over 10 m² and higher than 61 cm above grade, or any deck attached to the house", "url": "https://www.oakville.ca/home-environment/building-renovations/building-permits-inspections/construction-projects/decks/" },
-      { "label": "Helical piles, with the application", "value": "Manufacturer's information and CCMC approval; engineer sets depth, spacing and size for the soil", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf" },
-      { "label": "Deck permit fee, 2026", "value": "$220 each; $100 pre-screening credited; $200 minimum permit fee", "url": "https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf" },
-      { "label": "Inspection booking", "value": "Online requests before 6 pm are booked for the next business day, 9 am to 4 pm, Monday to Friday", "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/" },
-      { "label": "Apply", "value": "Town of Oakville Online Services (electronic permits)", "url": "https://www.oakville.ca/business-development/planning-development/planning-and-development-applications-forms/electronic-permits-applications/" }
-    ]
+      {
+        "label": "Permit needed when",
+        "value": "Deck over 10 m² and higher than 61 cm above grade, or any deck attached to the house",
+        "url": "https://www.oakville.ca/home-environment/building-renovations/building-permits-inspections/construction-projects/decks/"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "Manufacturer's information and CCMC approval; engineer sets depth, spacing and size for the soil",
+        "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$220 each; $100 pre-screening credited; $200 minimum permit fee",
+        "url": "https://www.oakville.ca/getmedia/f7c6c09f-e976-4f07-b9ff-c3059248d479/budget-rates-fees-building-services.pdf"
+      },
+      {
+        "label": "Inspection booking",
+        "value": "Online requests before 6 pm are booked for the next business day, 9 am to 4 pm, Monday to Friday",
+        "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/"
+      },
+      {
+        "label": "Apply",
+        "value": "Town of Oakville Online Services (electronic permits)",
+        "url": "https://www.oakville.ca/business-development/planning-development/planning-and-development-applications-forms/electronic-permits-applications/"
+      }
+    ],
+    "authority_short": "the Town of Oakville"
   },
   "season": {
     "heading": "Season and frost in Oakville",
     "paragraphs": [
-      "Oakville's own climate station on the lakeshore averages −4.7 °C in January, with about 44 days a year when the temperature never gets above freezing. Toronto Pearson, the nearest station that publishes the full record, puts the average frost-free period at 174 days, April 27 to October 20, with 34 days a year below −10 °C. Between those figures lie roughly 80 days a year when the ground surface crosses 0 °C between night and day, which is the cycle that lifts concrete piers.",
-      "Deck season runs from late April to late October, and the good weeks in it book up. Piles do not need the season. We install year-round, and in frozen ground the frost crust is pre-drilled with an auger or thawed first, which adds time and can add cost. What a pile needs is to bear below the depth frost reaches. Geotechnical reports filed with the Town use 1.2 m as the design frost penetration for the area, the same depth the Town's deck drawings use for footings, and a helical pile's helix sits below that by design."
+      "Oakville's own climate station (Southeast WPCP) averages −4.7 °C in January, with about 44 days a year when the temperature never gets above freezing. Toronto Pearson, about 25 km away and the closest station we checked that publishes the full record, puts the average frost-free period at 174 days, April 27 to October 20, with 34 days a year below −10 °C. At Pearson, roughly 80 days a year see the air cross 0 °C between night and day. Frost heave itself comes from the ground freezing to depth and gripping whatever is in it, which is why the design frost depth matters more than any single cold snap.",
+      "The frost-free window runs from late April to late October. Piles do not need it. We install year-round, and in frozen ground the frost crust is pre-drilled with an auger or thawed first, which adds time and can add cost. What a pile needs is to bear below the depth frost reaches. Geotechnical reports filed with the Town use 1.2 m as the design frost penetration for the area, the same depth the Town's deck drawings use for footings, and a helical pile's helix sits below that by design."
     ],
     "facts": [
-      { "label": "January mean", "value": "−4.7 °C, Oakville Southeast WPCP, 1981 to 2010", "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1" },
-      { "label": "Days never above 0 °C", "value": "44 a year, Oakville Southeast WPCP", "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1" },
-      { "label": "Frost-free period", "value": "174 days, April 27 to October 20, Toronto Pearson, 1991 to 2020", "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1" },
-      { "label": "Design frost depth", "value": "1.2 m in geotechnical reports filed with the Town", "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf" }
+      {
+        "label": "January mean",
+        "value": "−4.7 °C, Oakville Southeast WPCP, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1"
+      },
+      {
+        "label": "Days never above 0 °C",
+        "value": "44 a year, Oakville Southeast WPCP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "174 days, April 27 to October 20, Toronto Pearson, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Design frost depth",
+        "value": "1.2 m in geotechnical reports filed with the Town",
+        "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf"
+      }
     ]
   },
-  "pricing_note": "Travel is rarely a factor in Oakville, though a very small job carries a minimum charge. Shallow shale along Sixteen Mile Creek and Bronte Creek and in Clearview and Iroquois Ridge North can mean pre-drilling; lakeshore sand and gravel can mean a larger helix. Both show up in the written quote, not after.",
+  "pricing_note": "Travel is rarely a factor in Oakville, though very small jobs are subject to a minimum charge, stated in the quote. Shallow shale along Sixteen Mile Creek and Bronte Creek and in Clearview and Iroquois Ridge North can mean pre-drilling; lakeshore sand and gravel can mean a larger helix. Both show up in the written quote, not after.",
   "faqs": [
-    { "q": "Does my Oakville deck need a permit?", "a": "If it is over 10 square metres and higher than 61 cm above grade, yes. If it is attached to the house, yes at any size. Smaller freestanding decks under 61 cm do not. Applications go through the Town's Online Services account, and the 2026 deck permit fee is $220." },
-    { "q": "What does the Town need from you for helical piles?", "a": "Two things with the application: the pile manufacturer's information with its CCMC evaluation report, and a professional engineer's determination of depth, spacing and size based on the soil. After installation the engineer issues a sealed certificate of conformity from our per-pile torque log. We handle all of it." },
-    { "q": "Is there shale under my street?", "a": "Under all of Oakville, at some depth. It is close to the surface in the Sixteen Mile Creek and Bronte Creek valleys and at the Clearview and Iroquois Ridge North survey points. West of Sixteen Mile Creek it is red Queenston shale; east of it, grey Georgian Bay shale with limestone bands. Those are survey point queries, so we confirm on site." },
-    { "q": "My house is in Old Oakville or Bronte. Does the sand matter?", "a": "It changes the helix, not the answer. The lakeshore band is sand and gravel from the old Lake Iroquois shoreline. Coarse ground carries load well once the helix is sized for it, and where a loose gravel layer is thick, some pile systems' evaluation reports require a load test to confirm capacity instead of relying on torque alone." },
-    { "q": "Can you install in an Oakville winter?", "a": "Yes. Oakville has about 44 days a year that stay below freezing all day, and on those the frost crust is pre-drilled or thawed before the pile goes in. That adds time and can add cost, but there is no concrete to cure and no season to wait for." },
-    { "q": "What does an Oakville deck permit cost?", "a": "$220 for the deck permit on the Town's 2026 schedule, with a $100 pre-screening fee charged at submission and credited to the permit. The minimum fee for any building permit is $200. Engineering for the pile layout is separate from the Town's fee." }
+    {
+      "q": "Does my Oakville deck need a permit?",
+      "a": "If it is over 10 square metres and higher than 61 cm above grade, yes. If it is attached to the house, yes at any size. Smaller freestanding decks under 61 cm do not. Applications go through the Town's Online Services account, and the 2026 deck permit fee is $220."
+    },
+    {
+      "q": "What does the Town need from you for helical piles?",
+      "a": "Two things with the application: the pile manufacturer's information with its CCMC evaluation report, and a professional engineer's determination of depth, spacing and size based on the soil. After installation the engineer issues a sealed certificate of conformity from our per-pile torque log. We prepare the package with you."
+    },
+    {
+      "q": "Is there shale under my street?",
+      "a": "Under all of Oakville, at some depth. It is close to the surface in the Sixteen Mile Creek and Bronte Creek valleys and at the Clearview and Iroquois Ridge North survey points. Roughly west of Sixteen Mile Creek it is red Queenston shale; east of it, grey Georgian Bay shale with limestone bands. Those are survey point queries, so we confirm on site."
+    },
+    {
+      "q": "My house is in Old Oakville or Bronte. Does the sand matter?",
+      "a": "It changes the helix, not the answer. The lakeshore band is sand and gravel from the old Lake Iroquois shoreline. Coarse ground carries load well once the helix is sized for it, and where a loose gravel layer is thick, some pile systems' evaluation reports require a load test to confirm capacity instead of relying on torque alone."
+    },
+    {
+      "q": "Can you install in an Oakville winter?",
+      "a": "Yes. Oakville has about 44 days a year that stay below freezing all day, and on those the frost crust is pre-drilled or thawed before the pile goes in. That adds time and can add cost, but there is no concrete to cure and no season to wait for."
+    },
+    {
+      "q": "What does an Oakville deck permit cost?",
+      "a": "$220 for the deck permit on the Town's 2026 schedule, with a $100 pre-screening fee charged at submission and credited to the permit. The minimum fee for any building permit is $200. Engineering for the pile layout is separate from the Town's fee."
+    }
   ],
   "related_note": "We also work in Burlington, Milton and Mississauga. Call for those until their pages are up."
 }

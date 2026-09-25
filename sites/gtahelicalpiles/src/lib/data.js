@@ -84,3 +84,9 @@ export function collectSources(...groups) {
 export function formatCad(n) {
   return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(n);
 }
+
+// JSON for inline <script> bodies: a "</script>" inside a string must not end
+// the tag.
+export function safeJson(value) {
+  return JSON.stringify(value).replace(/</g, '\\u003c');
+}
