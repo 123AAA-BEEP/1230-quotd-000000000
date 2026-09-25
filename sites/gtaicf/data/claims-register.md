@@ -154,3 +154,33 @@ Band chosen (CAD, per sq ft of wall installed, wall system only):
 - RDH Laboratories "Energy Code Review Canada" (Fox Blocks resource listing): title only; no measured savings figure retrieved from any primary source.
 - Municipal: Hamilton permit-requirements page returned navigation text only (inspections page used); Burlington Booking an Inspection page had no extractable stage list; Guelph inspection pages 404 (landing page only); Quad-Lock FAQ 404; Toronto and Hamilton publish no house footing depth (geotechnical reports filed with Hamilton and Burlington used).
 - No public source prices ICF additions or garage walls separately; that row in prices.json is flagged.
+
+## Addendum 2026-09-25: clauses and municipal lines added by the guide and city research pass
+
+The guide writers retrieved the 2024 Compendium Volume 1 (301880.pdf) again and cited clauses not in the summary table above. All VERIFIED against the digital Compendium (which states it is not an official copy; spot-check against e-Laws before quoting verbatim). Page indexes are the PDF's own.
+
+| Clause | What it says (as the guides use it) | Used on |
+|---|---|---|
+| 9.3.1.9 Cold Weather Requirements | Below 5 °C, concrete mixed and placed at 10 to 25 °C, kept at 10 °C or more for 72 h, no frozen material or ice in the mix | Winter guide |
+| 9.12.1.2, 9.12.1.3 | Excavations kept free of standing water; the bottom of an excavation kept from freezing throughout construction | Winter guide |
+| 9.12.2.2.(2) and (5) | Insulated foundations take the "no heated space" depth; depths may be reduced where local experience or design supports it | Winter guide |
+| 9.12.3.1, 9.12.3.3, 9.12.3.4 | Backfill placement, no debris, brace the wall before backfilling where it has not reached strength | Winter guide |
+| 9.10.17.10 Protection of Foamed Plastics | Interior foam covered by an interior finish per 9.29.4 to 9.29.9 or a thermal barrier to 3.1.5.15.(2) | R-value guide |
+| 9.11.1.1 with 9.11.1.4 | ASTC 47 or STC 50 for assemblies separating a dwelling unit from other spaces (not exterior walls) | R-value guide |
+| 9.14.2.1.(1.1) | Drainage-layer options where insulation runs more than 900 mm below grade, including 57 kg/m3 mineral fibre and 100 mm granular | R-value guide |
+
+Not found anywhere in the Compendium: a Code or CSA statement on frozen backfill (the winter guide describes it as our practice, without a clause). The CSA mix-water heating clause remains paywalled: null.
+
+Municipal fee and stage lines the city writers read from each municipality's own schedule (URLs are in the city content files' facts rows; all retrieved 2026-09-25). None of these is in the shared data modules' `permits.fee_note`, which were researched for decks; a module refresh should carry them.
+
+| Municipality | New house / addition line used | Other foundation-relevant lines |
+|---|---|---|
+| Toronto | Group C single family, semis, townhouses $18.56/m² of floor area (unfinished basement of a new house excluded); $214.79 minimum | $56.33 per new residential unit; shoring $12.37 per linear metre; House Stream 10-day review; Assumption of Responsibility for Engineering Content form |
+| Mississauga | New detached/semi/townhouse $18.99/m²; residential addition $13.96; unheated addition $12.25 | Detached garage $6.43/m²; $244 minimum; $50 pre-screening; City average 13 weeks to issue a new detached/semi permit; footing inspection checks 75 kPa example and reinforcement to drawings |
+| Brampton | Custom detached/semi/row $17.80/m² gross floor area, $2,004.10 minimum; heated addition $12.03/m², unheated $9.34/m² | $1,500 deposit per unit; stages: footing (ready to pour, undisturbed soil, no standing water), wall reinforcement reports, backfill (dampproofing on, weeping tile under 6 in of stone) |
+| Oakville | New houses, semis, row up to 3 storeys and additions $17.80/m²; $200 minimum; $100 pre-screening credited | Garages and unheated accessory buildings not part of a new house $5.90/m²; walk-up basement alone $400; stages: excavation/footing forms, pre-backfill with top-of-foundation survey |
+| Burlington | Detached/semi/townhouse/addition $23.18/m² up to 300 m², $29.90/m² above (unfinished basement and garage excluded) | $377 flat minimum for basement excavation or walkout; 10 business days; Dwelling Unit Checklist (Feb 2025) lists BMEC/Minister's Rulings with CCMC listings for innovative systems |
+| Milton | New house or addition $25.13/m², $264.20 minimum (fee table prints no effective date) | Part 9 Residential permit checklist (Feb 2019); no published stage list for a house foundation |
+| Hamilton | Detached/semi/row house $18.32/m²; new basement or cold cellar $6.58/m²; garage $6.58/m²; $291 minimum (page carries no effective date) | Residential Part 9 foundation permit $453 flat in addition to the regular fee; $248 premature-inspection re-attendance; stages per the summary table (footing; backfill with drainage layer, weeping tile and stone) |
+| Guelph | Low-rise residential $1.97/ft² of floor area from July 1, 2026 ($2.03 from Jan 1, 2027); $160 minimum | Conditional foundation permit $0.23/ft²; foundation-elevation certificate from an OLS, P.Eng or architect on completion of the foundation (s. 8.2); one business day's notice per stage (s. 9); $640 alternative-solution fee |
+| St. Catharines | Single/semi/duplex/triplex/row $1.78/ft² (2026); addition or finished basement $1.59/ft²; $185.80 minimum | "Foundation" line $0.55/ft² and underpinning $390.10 (scope not printed); road allowance deposit where a sidewalk exists; alternative solutions $500 per application; 48-hour inspection notice |

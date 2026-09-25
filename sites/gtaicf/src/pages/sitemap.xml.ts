@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { getLiveCities, getLiveGuides, getPrices, getCity, isPlaceholderBusiness } from '../lib/data.js';
+import { getLiveCities, getLiveGuides, getPrices, getCity, isPlaceholderBusiness, SERVICES } from '../lib/data.js';
 
 // Empty while the business is a placeholder: every page is noindex then, and
 // a sitemap that lists noindex pages is a contradictory signal.
@@ -10,6 +10,7 @@ export const GET: APIRoute = () => {
     ? []
     : [
         { path: '/', lastmod: prices.last_reviewed },
+        ...SERVICES.map((s) => ({ path: `/${s.slug}/`, lastmod: prices.last_reviewed })),
         ...getLiveCities().map((c) => ({ path: `/locations/${c.slug}/`, lastmod: getCity(c.slug)?.retrieved_at })),
         ...getLiveGuides().map((g) => ({ path: `/guides/${g.slug}/`, lastmod: prices.last_reviewed })),
         { path: '/privacy/' },

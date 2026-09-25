@@ -1,6 +1,6 @@
 # gtaicf.ca
 
-First-party lead-generation site for the same contractor as gtaicf.ca, here building insulated concrete form (ICF) foundations and full-height walls across Toronto, Peel, Halton, Hamilton, Guelph and the Niagara corridor. Static Astro site, one server route for lead intake, no client JavaScript beyond the quote form, the budget calculator and analytics. The code is a clone of `sites/gtaicf`; the city data modules under `data/cities/` are shared and trade-independent.
+First-party lead-generation site for the same contractor as gtahelicalpiles.ca, here building insulated concrete form (ICF) foundations and full-height walls across Toronto, Peel, Halton, Hamilton, Guelph and the Niagara corridor. Static Astro site, one server route for lead intake, no client JavaScript beyond the quote form, the budget calculator and analytics. The code is a clone of `sites/gtahelicalpiles`; the city data modules under `data/cities/` are shared and trade-independent.
 
 This folder is a **standalone project** that happens to live inside the Quotd repository. It has its own `package.json`, its own build, and its own deploy. The Quotd `CLAUDE.md` and `spec/` at the repository root describe a different product and do not govern this site; see `CLAUDE.md` in this folder.
 
