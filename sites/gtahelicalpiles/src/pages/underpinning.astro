@@ -1,0 +1,183 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Process from '../components/Process.astro';
+import Faq from '../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, getLiveGuides, formatCad } from '../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const cities = getLiveCities();
+const guides = getLiveGuides();
+const row = prices.rows.find((r) => r.key === 'underpinning');
+const costGuide = guides.find((g) => g.slug === 'helical-pile-cost-per-pile-ontario');
+const underpinningGuide = guides.find((g) => g.slug === 'underpinning-settling-foundations-screw-piles');
+const publicPoints = prices.public_price_points.filter((p) => /underpinning|pier/i.test(p.figure));
+
+const title = 'Underpinning with helical piles | GTA Helical Piles';
+const description = 'Underpinning and foundation repair with helical piles and brackets across Toronto, Peel, Halton, Hamilton and Niagara. Engineer-led, assessment first.';
+
+const steps = [
+  { title: 'Site assessment', body: 'Every underpinning job starts on site. We look at the cracks, the grading, the downspouts and the soil, and we tell you whether piles are the right answer or whether a drainage or grading fix comes first. If piles are right, an engineer takes over the design.' },
+  { title: 'Engineered design', body: 'The engineer sets the bracket type, the pile size and depth, and the spacing along the settled wall from the loads and the soil. Underpinning is permitted work with engineered drawings, and we prepare the package with you.' },
+  { title: 'Install', body: 'The footing is exposed at each bracket location, the pile is driven beside it to the torque the engineer specified, and the bracket is fitted and loaded. Installation torque is recorded on every pile.' },
+  { title: 'Certify and backfill', body: 'The engineer issues the sealed certificate of conformity from the torque log, the excavation is backfilled, and you have a document trail for the permit file and for the day you sell the house.' },
+];
+
+const faqs = [
+  { q: 'How do I know my foundation is settling?', a: 'The usual signs are cracks that widen over a season rather than stay put, doors and windows that start to stick on one side of the house, a floor that runs out of level toward one wall, and a gap opening between a step or a porch and the house. None of those proves settlement on its own. The assessment is how we tell settlement from ordinary shrinkage, and it comes before any quote.' },
+  { q: 'What does helical underpinning actually do?', a: 'A pile is driven beside the settled footing to the torque the engineer specified, so its capacity is known. A steel bracket is fitted under or against the footing and connected to the pile, and the load of that section of wall is transferred through the bracket to the pile and down to competent ground. Whether the wall can also be lifted back toward level is the engineer\'s call after the assessment.' },
+  { q: 'What does it cost?', a: `Per bracket and pile, our illustrative range starts at ${formatCad(row.low)} and runs past ${formatCad(row.high)}. Published Ontario figures run from $800 per pile for the pile alone to $2,000 to $5,000 per pier for full foundation-repair scope, with a structural engineer's report of $800 to $2,500 on top. The written quote after the assessment states exactly what is in it.` },
+  { q: 'Do I need an engineer and a permit?', a: 'Yes to both. Underpinning changes the structure of the house, so it is permitted work with engineered drawings, and the municipalities that publish a position on helical piles ask for the manufacturer\'s CCMC evaluation report and an engineer\'s layout with the application. The engineer\'s sealed certificate of conformity closes the file after the install.' },
+  { q: 'Is there a cheaper fix?', a: 'Sometimes. A footing that moves because water is soaking the clay beside it may be fixed by extending downspouts and regrading, and we will say so. A slab that has sunk can sometimes be lifted without touching the footing. Underpinning is for a footing that has lost its bearing, and the assessment is where we tell you which problem you have.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Underpinning and foundation repair', item: `${Astro.site}underpinning/` },
+  ],
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Foundation underpinning with helical piles',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: biz.service_area.map((c) => ({ '@type': 'City', name: `${c.name}, ON` })),
+};
+---
+
+<Base title={title} description={description} schema={[breadcrumb, faqSchema, serviceSchema]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <span aria-current="page">Underpinning</span>
+  </nav>
+
+  <div class="page svc">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">Service</p>
+      <h1>Underpinning and foundation repair with helical piles</h1>
+      <p class="lede">When a footing has lost its bearing, helical piles and brackets carry that section of wall down to ground that can hold it. Engineer-led from the first visit, torque-verified at every pile, and honest about when a cheaper fix comes first.</p>
+      <div class="actions">
+        <a href="#quote" class="btn btn-primary btn-lg">Book an assessment</a>
+        <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="service-hero">Call {biz.phone_display}</a>
+      </div>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm />
+    </aside>
+
+    <div class="rest">
+      <section class="block" id="how">
+        <h2>How helical underpinning works</h2>
+        <div class="prose">
+          <p>The footing at each bracket location is exposed. A helical pile is driven into the ground beside it, through the frost zone and into competent soil, until its installation torque reaches the value the engineer specified for the load. The installation torque is recorded on every pile and correlated to capacity using the torque tables in the pile's CCMC evaluation report, so the capacity of each pile is known before any load goes on it.</p>
+          <p>A steel bracket is then fitted to the footing and connected to the pile head. ICC-ES acceptance criteria AC358 describe the two bracket types in use: a repair bracket that fits under the footing and takes the load through the footing's underside, and a direct-load bracket that is cast or bolted into the structure. The engineer chooses the type and the spacing along the wall. Once the brackets are loaded, that section of foundation bears on the piles rather than on the soil that let it down.</p>
+          <p>Whether the wall can be lifted back toward level, or is stabilised where it sits, is the engineer's decision after the assessment. Lifting an old masonry wall is a judgement about what the wall will tolerate, not a default.</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.helicalpileworld.com/ac358%20-%20revised%20June%202012.pdf" rel="noopener" target="_blank">ICC-ES AC358, helical pile systems and devices (2012 public copy)</a> · <a href="https://icc-es.org/wp-content/uploads/report-directory/ESR-4735.pdf" rel="noopener" target="_blank">ICC-ES ESR-4735, bracket definitions</a> · <a href="https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R" rel="noopener" target="_blank">CCMC 13675-R, torque and capacity</a></p>
+      </section>
+
+      <section class="block" id="assessment">
+        <h2>The assessment comes first</h2>
+        <div class="prose">
+          <p>Underpinning is the most expensive thing we do, and it is the wrong answer to several problems that look like it. Clay soils in this region shrink in a dry summer and swell when the water comes back, downspouts that discharge beside the wall soak the footing, and grading that slopes toward the house does the same. Some of those are fixed with a downspout extension and a load of soil. We tell you which you have before anyone talks about piles.</p>
+          <p>When the footing has genuinely lost its bearing, an engineer designs the repair: bracket type, pile size, depth and spacing along the settled length. Underpinning is permitted work with engineered drawings, and the municipalities that publish a position on helical piles, Oakville and Hamilton among them, ask for the manufacturer's CCMC evaluation report and the engineer's layout with the application. We prepare the package with you.</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf" rel="noopener" target="_blank">Town of Oakville, helical pile permit note</a> · <a href="https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf" rel="noopener" target="_blank">City of Hamilton checklist, helical pier engineer-approved specifications</a></p>
+      </section>
+
+      <section class="block" id="pricing">
+        <h2>What it costs, illustratively</h2>
+        <p class="muted">{prices.illustrative_note} Underpinning always needs a site assessment; soil, load and access set the real number.</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Application</th><th scope="col">Typical shaft</th><th scope="col">Illustrative range</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>{row.label}</strong></td>
+                <td>{row.shaft_short}</td>
+                <td class="num">{formatCad(row.low)} to {formatCad(row.high)}{row.high_open_ended ? '+' : ''} <span class="muted">{row.unit}</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        {publicPoints.length > 0 && (
+          <div class="prose">
+            <p class="small">What other Ontario sources publish for underpinning, retrieved {prices.last_reviewed}:</p>
+            <ul class="bullets small">
+              {publicPoints.map((p) => <li><a href={p.url} rel="noopener" target="_blank">{p.source}</a>: {p.figure}</li>)}
+            </ul>
+          </div>
+        )}
+        <p class="sources">Last reviewed {prices.last_reviewed}. The engineer's assessment and report, excavation and permit fees are listed separately in the quote.
+          {costGuide && <span> More on what moves the price: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <Process steps={steps} heading="How an underpinning job runs" />
+
+      <Faq items={faqs} heading="Underpinning questions" />
+
+      <section class="block final">
+        <h2>Start with the assessment</h2>
+        <p class="muted">Tell us what you are seeing and where the house is. We call back within one business day and book the visit.</p>
+        <div class="actions">
+          <a href="#quote" class="btn btn-primary btn-lg">Book an assessment</a>
+          <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="service-final">Call {biz.phone_display}</a>
+        </div>
+      </section>
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          {underpinningGuide && <li><a href={`/guides/${underpinningGuide.slug}/`}>{underpinningGuide.title}</a></li>}
+          {costGuide && <li><a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a></li>}
+          {cities.map((c) => <li><a href={`/locations/${c.slug}/`}>Helical piles in {c.name}</a></li>)}
+          <li><a href="/decks-and-additions/">Decks, porches and additions</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); display: flex; gap: var(--s2); flex-wrap: wrap; }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .svc { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .svc { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s3) var(--s4); max-width: 18ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: var(--read); }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s6); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s8); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+  .table-wrap { margin-top: var(--s5); }
+  .table-wrap + .prose { margin-top: var(--s4); }
+  .bullets { margin: var(--s2) 0 0; padding-left: 1.25rem; color: var(--text-muted); display: grid; gap: var(--s1); }
+  .bullets a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .final { padding-top: var(--s8); border-top: 1px solid var(--border-strong); }
+  .final .actions { margin-top: var(--s5); }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
+</style>

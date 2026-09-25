@@ -1,0 +1,180 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Estimator from '../components/Estimator.astro';
+import Process from '../components/Process.astro';
+import Faq from '../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, getLiveGuides, formatCad } from '../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const cities = getLiveCities();
+const guides = getLiveGuides();
+const deck = prices.rows.find((r) => r.key === 'deck');
+const addition = prices.rows.find((r) => r.key === 'addition');
+const costGuide = guides.find((g) => g.slug === 'helical-pile-cost-per-pile-ontario');
+const sonotubeGuide = guides.find((g) => g.slug === 'helical-piles-vs-sonotubes-frost-depth');
+
+const title = 'Helical piles for decks and additions | GTA Helical Piles';
+const description = 'Helical pile foundations for decks, porches, sunrooms and additions across Toronto, Peel, Halton, Hamilton and Niagara. Torque-logged, no excavation.';
+
+const steps = [
+  { title: 'Send the plan', body: 'A deck plan or a sketch with dimensions and the post layout is enough. For an addition, the architect\'s or engineer\'s drawings with the loads. Add a photo of the route into the yard.' },
+  { title: 'Layout and quote', body: 'For a permitted job the engineer sets the pile depth, spacing and size for the soil at the address. You get a written quote that states what is included: piles, brackets, the torque log, and the engineering and permit lines shown separately.' },
+  { title: 'Install', body: 'A compact tracked drive unit screws each pile in to the torque the engineer specified. Every reading is recorded. No hole, no spoil, no concrete truck.' },
+  { title: 'Frame the same day', body: 'Piles carry load as soon as they are in. Saddle brackets take the posts for a deck; a grade beam or a bracket detail takes an addition. The engineer\'s sealed certificate of conformity goes to the municipality with the torque log.' },
+];
+
+const faqs = [
+  { q: 'How many piles does my deck need?', a: 'One under every post. As an illustration, a 16 by 12 ft deck attached to the house on one side takes about six piles at posts every 8 ft along two beam lines; freestanding it takes nine. Your drawings govern the count, and the calculator on this page uses the same rule so you can test your own dimensions.' },
+  { q: 'Do I need a permit for a deck on piles?', a: 'Usually. Each municipality sets the threshold by height and area; in Oakville a deck over 10 square metres and higher than 61 cm, or any deck attached to the house, needs one. Oakville asks for the pile manufacturer\'s CCMC evaluation report and an engineer\'s layout with the application, and Burlington lists BMEC approvals or Minister\'s Rulings for helical piles. We prepare the package with you.' },
+  { q: 'Can an addition sit on helical piles?', a: 'Yes, and it often does where excavation would be awkward or the schedule is tight. The engineer sizes larger-shaft piles to the loads on the drawings, the piles are driven to the torque that matches, and the installation torque is recorded on every pile and correlated to capacity using the torque tables in the pile\'s CCMC evaluation report. The engineer certifies from that log.' },
+  { q: 'What if the pile hits rock?', a: 'Oakville sits on shale, and along its creek valleys it is at or near the surface; other towns are confirmed on site. A pile that reaches refusal early is pre-drilled or resized, and the engineer confirms the capacity from the torque record. If that changes the price, we tell you before it does.' },
+  { q: 'Can you install in winter?', a: 'Yes, year-round. There is no concrete to cure and no weather window to wait for. In frozen ground the frost crust is pre-drilled with an auger or thawed first, which adds time and can add cost. For a builder that means a deck or addition foundation can go in when the crew is free, not when the ground says so.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Decks, porches and additions', item: `${Astro.site}decks-and-additions/` },
+  ],
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Helical pile foundations for decks, porches and additions',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: biz.service_area.map((c) => ({ '@type': 'City', name: `${c.name}, ON` })),
+};
+---
+
+<Base title={title} description={description} schema={[breadcrumb, faqSchema, serviceSchema]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <span aria-current="page">Decks and additions</span>
+  </nav>
+
+  <div class="page svc">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">Service</p>
+      <h1>Helical piles for decks, porches and additions</h1>
+      <p class="lede">A pile under every post, driven to a recorded torque, ready to frame the day it goes in. For homeowners who want the deck done without a dug-up yard, and for builders who want the foundation off the critical path.</p>
+      <div class="actions">
+        <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+        <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="service-hero">Call {biz.phone_display}</a>
+      </div>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm />
+    </aside>
+
+    <div class="rest">
+      <section class="block" id="decks">
+        <h2>Decks and porches</h2>
+        <div class="prose">
+          <p>A deck on helical piles is laid out the same way as a deck on concrete piers: a post at each beam support, posts about every 8 ft along the beam, one beam line fewer when the deck hangs off a ledger on the house. The difference is what happens at each post location. Instead of a hole dug to 1.2 m, a sonotube, a concrete delivery and a wait for cure, a galvanized steel pile is screwed into the ground until its installation torque reaches the value the engineer set, and a saddle bracket on top takes the post.</p>
+          <p>Halton municipalities draw conventional deck piers at a minimum 1.2 m below grade on undisturbed soil, and a pile's helix bears below that depth by design. Frost grips a rough concrete pier far harder than a smooth galvanized shaft, and the helix sits in ground that does not freeze, so seasonal frost has little to lift and little to lift with. There is no spoil to haul, the lawn is walked on rather than dug up, and the crew that frames can start the same afternoon.</p>
+        </div>
+      </section>
+
+      <section class="block" id="additions">
+        <h2>Additions and sunrooms</h2>
+        <div class="prose">
+          <p>An addition puts real structural load on its foundation, so the pile is different: a 2-7/8 to 3-1/2 inch shaft with more helix, sized by the engineer to the loads on the drawings. The piles are driven to the torque that matches those loads, and the installation torque is recorded on every pile and correlated to capacity using the torque tables in the pile's CCMC evaluation report. The engineer certifies the installation from that log.</p>
+          <p>Where an addition meets an existing house, the municipality's own rule applies to conventional footings too: in Oakville, any footing within 4 ft of the house foundation must extend down to the level of the existing foundation. Piles along that wall are driven accordingly. Tight lots, rear yards with no machine access, and schedules that cannot wait for concrete are the usual reasons an addition goes on piles.</p>
+        </div>
+      </section>
+
+      <section class="block" id="permits">
+        <h2>What the permit needs</h2>
+        <div class="prose">
+          <p>Municipalities that publish a position on helical piles ask for the same two things. The Town of Oakville's deck sample drawings say the manufacturer's information and CCMC approval must be submitted with the application and that a professional engineer must determine the depth, spacing and size of the piles based on soil condition. The City of Hamilton's deck and porch checklist lists helical pier engineer-approved specifications and BMEC approvals or Minister's Rulings. Burlington's checklist lists BMEC approvals for helical piles.</p>
+          <p>After the install, the engineer issues a sealed certificate of conformity from the per-pile torque log, which is the document the CCMC technical bulletin on auger-installed steel piles says must go to the authority for every project. We prepare the package with you, and we tell you which inspections your municipality still books, since most published inspection lists are written for poured footings.</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf" rel="noopener" target="_blank">Town of Oakville deck sample drawings</a> · <a href="https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf" rel="noopener" target="_blank">City of Hamilton deck and porch checklist</a> · <a href="https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Decks-Porches-Checklist.pdf" rel="noopener" target="_blank">City of Burlington decks and porches checklist</a> · <a href="https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-technical-bulletin-auger-installed-steel-pile-foundations" rel="noopener" target="_blank">CCMC technical bulletin, auger-installed steel pile foundations</a></p>
+      </section>
+
+      <section class="block" id="builders">
+        <h2>For deck builders and contractors</h2>
+        <div class="prose">
+          <p>Send the drawings and the post layout, and you get a pile layout back with the quote. Installation is scheduled around your framing date, the torque log and the engineer's certificate are delivered for your permit file, and there is no concrete cure holding up your crew. If you build several decks a season, ask about pricing the year rather than the job.</p>
+        </div>
+        <p><a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-md num" data-track="call_click" data-place="builders">Call {biz.phone_display}</a></p>
+      </section>
+
+      <section class="block" id="pricing">
+        <h2>What it costs, illustratively</h2>
+        <p class="muted">{prices.illustrative_note}</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Application</th><th scope="col">Typical shaft</th><th scope="col">Illustrative range</th></tr></thead>
+            <tbody>
+              {[deck, addition].map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.shaft_short}</td>
+                  <td class="num">{formatCad(r.low)} to {formatCad(r.high)} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">Last reviewed {prices.last_reviewed}. Engineering and permit fees are separate. Volume pricing on larger pile counts.
+          {costGuide && <span> Full breakdown: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <Estimator heading="Size a deck and see the range" />
+
+      <Process steps={steps} />
+
+      <Faq items={faqs} heading="Deck and addition questions" />
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          {sonotubeGuide && <li><a href={`/guides/${sonotubeGuide.slug}/`}>{sonotubeGuide.title}</a></li>}
+          {costGuide && <li><a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a></li>}
+          {cities.map((c) => <li><a href={`/locations/${c.slug}/`}>Helical piles in {c.name}</a></li>)}
+          <li><a href="/underpinning/">Underpinning and foundation repair</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); display: flex; gap: var(--s2); flex-wrap: wrap; }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .svc { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .svc { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s3) var(--s4); max-width: 16ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: var(--read); }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s6); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s8); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+  .prose + p { margin-top: var(--s5); }
+  .table-wrap { margin-top: var(--s5); }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
+</style>

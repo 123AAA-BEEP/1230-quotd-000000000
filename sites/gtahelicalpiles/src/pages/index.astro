@@ -88,15 +88,15 @@ const serviceSchema = {
         <h2>What we put piles under</h2>
         <dl class="apps">
           <div>
-            <dt>Decks, porches and pergolas</dt>
+            <dt><a href="/decks-and-additions/">Decks, porches and pergolas</a></dt>
             <dd>Piles driven along each beam line, with a saddle bracket on top ready for the post. Because there is no concrete to cure, framing can start the same day.</dd>
           </div>
           <div>
-            <dt>Additions and sunrooms</dt>
+            <dt><a href="/decks-and-additions/#additions">Additions and sunrooms</a></dt>
             <dd>Larger-shaft piles for structural loads, laid out to the engineer's drawing, with the sealed certificate of conformity and torque log your permit needs.</dd>
           </div>
           <div>
-            <dt>Underpinning and foundation repair</dt>
+            <dt><a href="/underpinning/">Underpinning and foundation repair</a></dt>
             <dd>Brackets on the existing footing, carried by piles to competent ground, to stop a settling wall. Whether it can be lifted back is the engineer's call after the site assessment, which every underpinning job starts with.</dd>
           </div>
         </dl>
@@ -238,6 +238,8 @@ const serviceSchema = {
 
   .apps { display: grid; gap: var(--s5); margin-top: var(--s2); }
   .apps dt { font-family: var(--display); font-weight: 700; font-size: var(--text-lg); letter-spacing: -0.01em; color: var(--ink); }
+  .apps dt a { color: var(--ink); text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; text-decoration-color: var(--border-control); }
+  .apps dt a:hover { color: var(--brand-700); text-decoration-color: currentColor; }
   .apps dd { margin: var(--s1) 0 0; color: var(--text-muted); max-width: 40rem; }
   .apps + p { margin-top: var(--s5); }
 

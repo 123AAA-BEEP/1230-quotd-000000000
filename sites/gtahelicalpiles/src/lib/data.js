@@ -30,6 +30,12 @@ export function getLiveCities() {
   return business.service_area.filter((c) => c.live && getCity(c.slug));
 }
 
+// Service pages (commercial-intent landing pages).
+export const SERVICES = [
+  { slug: 'decks-and-additions', title: 'Decks, porches and additions', nav: 'Decks and additions' },
+  { slug: 'underpinning', title: 'Underpinning and foundation repair', nav: 'Underpinning' },
+];
+
 // Guides registry. A guide is listed here only once its page exists.
 export const GUIDES = [
   {
@@ -62,8 +68,25 @@ export const GUIDES = [
   },
 ];
 
+// Guides rendered from JSON (data/guides/<slug>.json). The cost guide is a
+// hand-built page and is always live.
+const guideFiles = import.meta.glob('../../data/guides/*.json', { eager: true });
+
+export function getGuideData(slug) {
+  for (const mod of Object.values(guideFiles)) {
+    const data = mod.default ?? mod;
+    if (data.slug === slug) return data;
+  }
+  return null;
+}
+
+export function getGuideSlugs() {
+  return Object.values(guideFiles).map((m) => (m.default ?? m).slug).filter(Boolean);
+}
+
 export function getLiveGuides() {
-  return GUIDES.filter((g) => g.live);
+  const jsonSlugs = new Set(getGuideSlugs());
+  return GUIDES.filter((g) => g.live || jsonSlugs.has(g.slug));
 }
 
 // Flatten module sources for a provenance footer, deduped by URL.

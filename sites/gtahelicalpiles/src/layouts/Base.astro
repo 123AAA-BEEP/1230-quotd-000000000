@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { getBusiness, getLiveCities, getLiveGuides, isPlaceholderBusiness, safeJson } from '../lib/data.js';
+import { getBusiness, getLiveCities, getLiveGuides, isPlaceholderBusiness, safeJson, SERVICES } from '../lib/data.js';
 
 interface Props {
   title: string;
@@ -119,6 +119,14 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
           <p class="wordmark footer-mark">{biz.trading_name}</p>
           <p class="small muted">Engineered helical pile installation for decks, additions and underpinning.</p>
           <p class="small muted">{biz.service_radius_line}</p>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Services</p>
+          <ul class="footer-list">
+            {SERVICES.map((s) => (
+              <li><a href={`/${s.slug}/`}>{s.title}</a></li>
+            ))}
+          </ul>
         </div>
         <div class="footer-col">
           <p class="eyebrow">Service areas</p>
@@ -269,8 +277,12 @@ const otherAreas = biz.service_area.filter((c) => !c.live).map((c) => c.name);
     gap: var(--s8);
   }
 
-  @media (min-width: 48rem) {
-    .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: var(--s10); }
+  @media (min-width: 40rem) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (min-width: 64rem) {
+    .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; gap: var(--s8); }
   }
 
   .footer-brand p + p { margin-top: var(--s2); }
