@@ -1,0 +1,199 @@
+{
+  "slug": "caledon",
+  "title": "Helical pile installation in Caledon | GTA Helical Piles",
+  "description": "Helical piles in Caledon: the 60 cm permit threshold, what Building Services asks for, the ground under Bolton and the Escarpment villages, and winter work.",
+  "h1": "Helical pile installation in Caledon",
+  "kicker": "Peel Region",
+  "answer": [
+    "Caledon requires a building permit for any deck higher than 60 cm (24 in) off the ground at any point, and the Town lists no area exemption below that height. The standard details the Town refers deck applicants to draw a conventional pier at least 1.2 m below grade on undisturbed soil. Where helical piles replace those piers, the Town's deck checklist asks for the system's CCMC, BMEC or Minister's Ruling documents, and its footing inspection names helical anchors.",
+    "What you are building on depends on which part of Caledon you are in. Caledon East, Alton and Belfountain sit on sand and gravel outwash; Bolton, Inglewood and Mayfield West on clay-to-silt till; Cheltenham on lake-laid silt and clay; Palgrave on ice-contact sand and gravel; and Caledon Village on sandy till over Amabel dolostone. Four different bedrock units lie beneath, so a pile design from one village does not carry to the next."
+  ],
+  "tiles": [
+    {
+      "value": "60 cm",
+      "label": "deck height at any point above which Caledon requires a permit",
+      "source": {
+        "name": "Town of Caledon Building Permits",
+        "url": "https://www.caledon.ca/en/living-here/building-permits.aspx"
+      }
+    },
+    {
+      "value": "$192",
+      "label": "deck permit fee in the Town's 2026 Fees By-law (minimum permit fee $193)",
+      "source": {
+        "name": "By-law 2025-105, 2026 Fees and Charges",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/2026-Fees-By-law.pdf"
+      }
+    },
+    {
+      "value": "132 days",
+      "label": "frost-free period, May 20 to September 30, Orangeville MOE, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada normals, Orangeville MOE",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1"
+      }
+    },
+    {
+      "value": "4 bedrock units",
+      "label": "Queenston and Georgian Bay shales, Amabel dolostone and thin Silurian beds on the Escarpment",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Caledon",
+    "paragraphs": [
+      "Caledon is large and rural, and its ground changes from village to village. The Ontario Geological Survey's surficial map returned six different deposits at the points we queried. The Credit headwaters and the centre of the town, around Caledon East, Alton and Belfountain, are glaciofluvial outwash: river and delta sand and gravel. The south and east, at Bolton, Inglewood and Mayfield West, are clay-to-silt till, the same fine till the survey maps across south Peel. Cheltenham sits on fine glaciolacustrine silt and clay, Palgrave on ice-contact stratified sand and gravel, Caledon Village on stone-poor sandy till, and the Humber valley floor at Bolton on modern river alluvium.",
+      "Bedrock changes just as much. The Queenston Formation, red shale and siltstone, underlies the centre and south: Caledon East, Inglewood, Cheltenham and Mayfield West. Under Bolton and Palgrave the survey returns the Georgian Bay Formation, grey shale interbedded with calcareous siltstone and limestone. Up on the Escarpment, Caledon Village sits on Amabel dolostone, and Alton and Belfountain on the thin Silurian units the survey maps together as Whirlpool, Manitoulin, Cabot Head and Fossil Hill. No query point returned bedrock at the surface, but depth to rock was not retrieved, and outcrop is known at the Cheltenham Badlands and the Forks of the Credit from general references we did not point-check.",
+      "For a helical pile each of these is a different installation. In the till at Bolton or Mayfield West the pile is screwed down until it reaches the torque the engineer specified. In outwash and ice-contact sand and gravel the helix is matched to coarse ground, and where a granular layer is thick the CCMC report for some systems requires an on-site load test to confirm capacity. On the Escarpment upland, dolostone or shale near the surface is a refusal condition we check before the machine arrives. Installation torque is recorded on every pile, and the engineer's certificate rests on that record, whichever village you are in."
+    ],
+    "table_note": "Surface deposit from OGS MRD 128-REV and bedrock formation from OGS MRD 219, one point query per village, retrieved 25 September 2026. Each row describes the village at that coordinate, not your lot, and depth to bedrock was not retrieved. The engineer's pile layout is based on the site.",
+    "neighbourhoods": [
+      {
+        "name": "Bolton",
+        "surface": "Clay-to-silt till; modern alluvium on the Humber valley floor",
+        "bedrock": "Georgian Bay, grey shale with limestone interbeds"
+      },
+      {
+        "name": "Caledon East",
+        "surface": "Glaciofluvial sand and gravel (river and delta outwash)",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Caledon Village",
+        "surface": "Stone-poor sandy silt till",
+        "bedrock": "Amabel, dolostone (Silurian)"
+      },
+      {
+        "name": "Inglewood",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Palgrave",
+        "surface": "Ice-contact stratified sand and gravel",
+        "bedrock": "Georgian Bay, grey shale with limestone interbeds"
+      },
+      {
+        "name": "Alton",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Thin Silurian units (Whirlpool, Manitoulin, Cabot Head, Fossil Hill)"
+      },
+      {
+        "name": "Cheltenham",
+        "surface": "Fine glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Belfountain",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Thin Silurian units (Whirlpool, Manitoulin, Cabot Head, Fossil Hill)"
+      },
+      {
+        "name": "Mayfield West",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale and siltstone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Caledon",
+    "authority_short": "the Town of Caledon",
+    "paragraphs": [
+      "Building permits in Caledon are issued by Building Services at Town Hall in Caledon East, and every application is submitted online, in PDF, through the Town's Building Services web form. The 2026 Fees By-law (By-law 2025-105) lists decks and porches on detached, semi-detached and townhouse homes at $192.00 each, and the same schedule states a minimum permit fee of $193.00; confirm with Building Services which figure applies to your deck. A non-refundable minimum fee is collected at application, and if it is not paid within ten business days the Town requires a full resubmission.",
+      "Once a complete application is paid, the Town says Ontario Building Code review timeframes apply: 10 business days for residential dwellings and 15 business days for small buildings and additional residential units. The Town does not say which class a deck falls under, so ask when you submit. Resubmissions have no fixed review time and, in the Town's words, could add two or more weeks.",
+      "For helical piles, the Town's deck checklist asks that approval documents such as CCMC or BMEC reports and Minister's Rulings go in with the construction drawings, and the foundation plan and section that would otherwise show concrete pier diameter, spacing and depth carry the pile layout instead. We prepare the package with you. The Town's footing inspection lists helical anchors and is held before any concrete or backfill; after installation the engineer issues an engineer-sealed certificate of conformity from our torque record. Zoning clearance comes before the permit, and in the affected parts of Caledon so do Niagara Escarpment Commission, Credit Valley Conservation, Toronto and Region Conservation or Oak Ridges Moraine approvals."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck higher than 60 cm (24 in) off the ground at any point; attached structures are treated as additions; no area threshold stated",
+        "url": "https://www.caledon.ca/en/living-here/building-permits.aspx"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "Approval documents such as CCMC or BMEC reports and Minister's Rulings, submitted with the construction drawings",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/Deck.Checklist.pdf"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$192.00 each (decks, porches, basement walkouts); minimum permit fee $193.00 in the same schedule",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/2026-Fees-By-law.pdf"
+      },
+      {
+        "label": "Review timeframe",
+        "value": "10 business days (residential dwelling) or 15 business days (small buildings) once paid; deck class not stated",
+        "url": "https://www.caledon.ca/en/living-here/building-permits.aspx"
+      },
+      {
+        "label": "Footing inspection",
+        "value": "Names helical anchors; book with 24 hours notice before 1 p.m. for next-day service, Monday to Friday 9:00 a.m. to 4:30 p.m.",
+        "url": "https://www.caledon.ca/en/living-here/inspections.aspx"
+      },
+      {
+        "label": "Apply",
+        "value": "Online only, PDF, through the Town's Building Services form",
+        "url": "https://forms.caledon.ca/do.aspx?interviewID=E000024_BuildingServicesForm&lang=en&AppName=E000024_BuildingServicesForm"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Caledon",
+    "paragraphs": [
+      "Caledon spans about 200 m of relief, and no single climate station describes all of it. Orangeville MOE, the nearest station with a full 1981 to 2010 temperature record, sits at 411 m on the Escarpment upland that Caledon Village and Alton share. It averages -7.5 °C in January, has 50 days a year below -10 °C, 77 days when the temperature never rises above freezing, and a frost-free period of 132 days, May 20 to September 30. Toronto Pearson, at 173 m and about 28 km to the southeast, is the closer reference for Bolton and Mayfield West: a January mean of -5.0 °C, 34 days below -10 °C and 174 frost-free days. Your site sits somewhere between the two.",
+      "The frost-free window matters for curing concrete, not for piles. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. What the pile needs is bearing below the depth frost reaches. The standard details the Town refers deck applicants to put a conventional pier at least 1.2 m below grade on undisturbed soil, and the helix of a pile is set below that depth by design. On the upland, where the Orangeville record shows a longer, colder winter, more of the year needs pre-drilling than it does in Bolton, and the quote says so."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "-7.5 °C, Orangeville MOE (411 m), 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1"
+      },
+      {
+        "label": "Days below -10 °C",
+        "value": "50 a year, Orangeville MOE; 77 days a year never rise above 0 °C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "132 days, May 20 to September 30, Orangeville MOE, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1"
+      },
+      {
+        "label": "Low-elevation comparison",
+        "value": "Toronto Pearson (173 m), 1991 to 2020: January mean -5.0 °C, 34 days below -10 °C, 174 frost-free days",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "Caledon is large and rural, so travel between villages is a line in the quote. Escarpment sites at Caledon Village, Alton and Belfountain can meet dolostone or shale near the surface, which means pre-drilling or a different pile. Sand and gravel at Caledon East, Palgrave and Belfountain can call for a larger helix; clay till at Bolton is routine. Conservation or Escarpment clearances add time, not pile cost.",
+  "faqs": [
+    {
+      "q": "Does my Caledon deck need a permit?",
+      "a": "Yes if any part of the deck's finished level is more than 60 cm (24 in) above finished grade. Below that height at every point, the Town lists decks among projects that do not need a permit, and it applies no area test either way. A deck attached to the house is treated as an addition and needs one. Zoning clearance comes first, and applications are online only through the Town's Building Services form."
+    },
+    {
+      "q": "What does the Town ask for when a deck sits on helical piles?",
+      "a": "The Town's deck checklist calls for approval documents such as CCMC or BMEC reports and Minister's Rulings alongside the construction drawings, and the foundation plan and section show pile location, spacing and depth in place of concrete piers. Caledon does not print an engineer-must-design line the way some Halton towns do, so confirm with Building Services what layout detail they want. We prepare the package with you, and after installation the engineer issues an engineer-sealed certificate of conformity from our torque record."
+    },
+    {
+      "q": "Is Caledon on Queenston shale?",
+      "a": "Only part of it. The Ontario Geological Survey returns the red Queenston Formation under Caledon East, Inglewood, Cheltenham and Mayfield West. Bolton and Palgrave sit on the grey Georgian Bay Formation, Caledon Village on Amabel dolostone, and Alton and Belfountain on thin Silurian beds. Surface cover of unstated thickness was returned at every point, so no village is known to have rock at grade; on the Escarpment we check for it before installing."
+    },
+    {
+      "q": "Can you install piles in a Caledon winter?",
+      "a": "We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. Orangeville, the upland station nearest Caledon, records 77 days a year when the temperature never rises above freezing, against 50 at Toronto Pearson, so a January job in Caledon Village usually needs more pre-drilling than one in Bolton. No concrete means nothing to cure, and the helix sits below the frost depth in any month."
+    },
+    {
+      "q": "What does a Caledon deck permit cost?",
+      "a": "The 2026 Fees By-law lists decks, porches and basement walkouts on detached, semi-detached and townhouse homes at $192.00 each. The same schedule states that the minimum permit fee is $193.00, and the Town collects a non-refundable minimum fee at application. The by-law does not say how those two figures interact for a deck, so confirm the amount with Building Services when you file. Engineering for the pile layout is separate from the Town's fee."
+    },
+    {
+      "q": "I am in Bolton. Is my ground different from the rest of Caledon?",
+      "a": "Yes. Bolton sits on clay-to-silt till over the grey Georgian Bay Formation, and the Humber valley floor is modern river alluvium; the centre of Caledon is sand and gravel outwash over red Queenston shale. Bolton is also lower and milder, closer to Toronto Pearson's 174 frost-free days than Orangeville's 132. Sites along the Humber may need Toronto and Region Conservation clearance before the building permit."
+    }
+  ],
+  "related_note": "We also work in Brampton, Halton Hills and Mississauga; those pages are on the way, so call for them in the meantime."
+}

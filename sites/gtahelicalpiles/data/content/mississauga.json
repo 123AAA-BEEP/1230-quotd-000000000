@@ -1,0 +1,204 @@
+{
+  "slug": "mississauga",
+  "title": "Helical pile installation in Mississauga | GTA Helical Piles",
+  "description": "Helical piles in Mississauga: the 0.61 m deck permit threshold, the $244 City fee, sand south of Dundas and till north of it, and how winter changes the job.",
+  "h1": "Helical pile installation in Mississauga",
+  "kicker": "Peel Region",
+  "answer": [
+    "A Mississauga deck higher than 0.61 m (2 ft) above grade needs a building permit; one under 600 mm does not, and the City prints no separate area threshold for decks. Applications go in through the ePlans portal. The deck sample drawing the City hosts draws poured concrete piers a minimum of 1200 mm below grade on undisturbed soil and asks the floor plan to state the soil bearing capacity and the size, thickness and material of the foundation.",
+    "The ground splits along Dundas Street, which follows the old Lake Iroquois shoreline. South of it, at Port Credit, Lakeview, Lorne Park and Clarkson, the survey maps sand and gravel. North of it, from the city centre out to Erin Mills, Streetsville, Meadowvale and Malton, it is clay-to-silt till. Grey Georgian Bay shale lies under nearly all of it, red Queenston shale only in the west, and at the Cooksville GO Station query point bedrock is at or near the surface."
+  ],
+  "tiles": [
+    {
+      "value": "$244",
+      "label": "City of Mississauga deck permit fee, February 2026 schedule",
+      "source": {
+        "name": "Abbreviated Building Division Fees, Feb 1 2026",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/27095505/ABBREVIATED-BUILDING-DIVISION-FEES-FEB-01-2026-1.pdf"
+      }
+    },
+    {
+      "value": "0.61 m",
+      "label": "deck height above grade at which the City requires a permit",
+      "source": {
+        "name": "City of Mississauga, when a building permit is required",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/when-a-building-permit-is-required/"
+      }
+    },
+    {
+      "value": "37.1%",
+      "label": "of Mississauga's 244,575 occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Mississauga",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Mississauga&DGUIDlist=2021A00053521005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "−5.0 °C",
+      "label": "January daily mean at Toronto Pearson, the station inside the city at Malton, 1991 to 2020",
+      "source": {
+        "name": "Environment Canada normals, Toronto Pearson",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Mississauga",
+    "paragraphs": [
+      "Dundas Street is the useful dividing line. Wikipedia records that the former shoreline of glacial Lake Iroquois roughly follows the Dundas alignment, and the Ontario Geological Survey point queries agree with it: every lakeshore point we checked, at Port Credit, Lakeview, Lorne Park and Clarkson, returns coarse glaciolacustrine sand and gravel, the foreshore and basin deposits of that old lake. Every inland point, at the city centre, Erin Mills, Streetsville, Meadowvale and Malton, returns clay-to-silt till derived from lake deposits or shale. Regional literature has names for these units, but the survey attributes give only the texture, so texture is what we go by.",
+      "The bedrock is Upper Ordovician shale of two kinds. The Georgian Bay Formation, grey-green to dark grey shale interbedded with calcareous siltstone and limestone, came back at nine of the eleven points queried, including the city centre, the whole lakeshore, Streetsville, Cooksville and Malton. The red Queenston Formation appeared only at Erin Mills and Meadowvale, so the contact runs through the west of the city, between Streetsville and Erin Mills. At the Cooksville GO Station point the surficial map shows bedrock at or near the surface, drift too thin to map, which may reflect the Cooksville Creek valley more than the plain around it.",
+      "For a pile, the same design does not travel across Dundas. On the inland till the pile is screwed to its specified torque and bears in firm ground. In the lakeshore sand and gravel the helix is chosen for coarse material, and a thick granular layer can mean the pile system's evaluation report wants a load test on top of the torque record. Along Cooksville Creek and the Credit River valley shallow shale is a condition to confirm before the machine arrives, since a pile can refuse early there. No depth-to-bedrock figure exists for the city in our sources, so we check it lot by lot."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries at one coordinate per neighbourhood, retrieved 25 September 2026. Cooksville was queried at the GO station because the neighbourhood itself has no published coordinate. They describe the area around that point, not your lot, and the engineer lays out the piles from the site itself.",
+    "neighbourhoods": [
+      {
+        "name": "Port Credit",
+        "surface": "Sand and gravel (Lake Iroquois foreshore)",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Lakeview",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Lorne Park",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Clarkson",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Cooksville (GO Station point)",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "City Centre",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Erin Mills",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Streetsville",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Meadowvale",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Malton",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Mississauga",
+    "authority_short": "the City of Mississauga",
+    "paragraphs": [
+      "The City of Mississauga Building Division, the name printed on its fee schedule, issues deck permits under Building By-law 0236-2024. Every application is submitted online through ePlans, with each drawing uploaded as its own greyscale landscape PDF named to match the title block. The fee schedule in force from February 1, 2026 lists decks and porches to houses at $244 each, which is also the residential minimum, and a $50 non-refundable pre-screening fee is paid at submission and credited to the permit. Pre-screening usually takes 7 to 10 business days, a complete residential application gets its first review within 10 business days, and the City reports an average of 7 weeks to issue a residential alteration permit. Each resubmission can add two weeks or more.",
+      "Nothing the City publishes for decks mentions helical piles, CCMC or BMEC reports, or an engineer. Its deck checklist wants the floor plan to show the soil bearing capacity and the size, thickness and material of the foundation, plus a Schedule 1 Designer Information form, and its sample drawing is written for poured concrete piers 1200 mm below grade. Whether the City wants an engineer's design for a pile foundation is not stated anywhere we could find, so we confirm it with the plans examiner before submitting. Our package for a helical foundation is the manufacturer's CCMC evaluation report and the engineer's layout; we prepare the package with you, and after installation the engineer issues an engineer-sealed certificate of conformity from our torque record, because installation torque is recorded on every pile.",
+      "Inspections follow Schedule D of the by-law: footing, backfill, framing and final. The City asks you to book an initial site inspection before any work starts, and that visit sets which of those apply to your deck and in what order. Because the footing and backfill stages are written for excavated piers, ask at that visit how the inspector wants to see piles, which are driven with no excavation. Inspections run Monday to Friday, 8:30 a.m. to 4:30 p.m."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck greater than 0.61 m (2 ft) high; decks under 600 mm are exempt; no deck area threshold printed",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/when-a-building-permit-is-required/"
+      },
+      {
+        "label": "Drawings must show",
+        "value": "Soil bearing capacity; size, thickness and material of the foundation; Schedule 1 Designer Information form",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/drawings-and-documents-you-need-for-a-building-permit/deck-porch-or-balcony/"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$244 each; $244 residential minimum; $50 pre-screening fee credited to the permit",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/27095505/ABBREVIATED-BUILDING-DIVISION-FEES-FEB-01-2026-1.pdf"
+      },
+      {
+        "label": "Time frames",
+        "value": "Pre-screen 7 to 10 business days; first residential review 10 business days; residential alteration permit averages 7 weeks",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/building-permit-cost-and-time-frames/"
+      },
+      {
+        "label": "Inspections",
+        "value": "Initial site inspection before work, then footing, backfill, framing and final per Schedule D; Monday to Friday 8:30 to 4:30",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/book-a-building-permit-inspection/"
+      },
+      {
+        "label": "Apply",
+        "value": "City of Mississauga ePlans portal (all applications online)",
+        "url": "https://www.mississauga.ca/eplans/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Mississauga",
+    "paragraphs": [
+      "Mississauga has no Environment Canada normals station of its own, but Toronto Pearson sits inside the city limits at Malton, about 11 km from the city centre, so its record is the local one. Over 1991 to 2020 the January daily mean there was −5.0 °C and the January daily minimum −8.9 °C. On average 34 days a year drop below −10 °C, 50 days never rise above freezing, and 131 days see a minimum at or below 0 °C, so roughly 81 days a year cross the freezing point between night and day. The frost-free period averages 174 days, from April 27 to October 20.",
+      "None of that sets a season for piles. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. The depth that matters is the one the helix bears below. The City's hosted deck drawing puts conventional piers at least 1200 mm below grade, which is the same figure Halton municipalities use and the depth a helical pile is designed to pass. The Ontario Building Code sentence behind that number was not retrieved for this page, so we do not quote its clause here."
+    ],
+    "facts": [
+      {
+        "label": "January mean and minimum",
+        "value": "−5.0 °C mean, −8.9 °C daily minimum, Toronto Pearson, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "34.2 a year, Toronto Pearson",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Days never above 0 °C",
+        "value": "49.5 a year, Toronto Pearson",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Pier depth on the City's deck drawing",
+        "value": "Minimum 1200 mm below grade on undisturbed soil",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/19124113/Deck-Sample-Drawing.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Mississauga is inside our normal travel range, so mobilization is usually the minimum charge on small jobs, stated in the quote. What moves the per-pile figure is ground: lakeshore sand and gravel south of Dundas may call for a larger helix, and shallow shale near Cooksville Creek or the Credit valley may need pre-drilling. Both are priced in writing before we start.",
+  "faqs": [
+    {
+      "q": "Does my Mississauga deck need a permit?",
+      "a": "If the deck is higher than 0.61 m (2 ft) above grade, yes. Below 600 mm the City lists it as exempt. Mississauga prints no separate area threshold for decks, though any structure other than a shed over 10 square metres and any covered porch needs a permit. You apply through the ePlans portal, and the 2026 deck fee is $244."
+    },
+    {
+      "q": "What does the City ask for when the deck sits on helical piles?",
+      "a": "The published deck checklist asks for the soil bearing capacity and the size, thickness and material of the foundation on the floor plan, and a Schedule 1 Designer Information form. It says nothing about helical piles or an engineer, so we confirm with the plans examiner whether an engineered layout is wanted. Our package is the manufacturer's CCMC report and the engineer's layout, and we prepare the package with you. After the install the engineer issues an engineer-sealed certificate of conformity."
+    },
+    {
+      "q": "Is the ground the same across the city?",
+      "a": "No. Dundas Street marks the old Lake Iroquois shoreline. South of it the survey maps sand and gravel; north of it, clay-to-silt till. The bedrock is grey Georgian Bay shale nearly everywhere, red Queenston shale in the west at Erin Mills and Meadowvale, and at the Cooksville GO Station query point the shale is at or near the surface. We treat those as area facts and confirm the lot on site."
+    },
+    {
+      "q": "I live in Port Credit. Does the sand change the job?",
+      "a": "It changes the helix. Port Credit, along with Lakeview, Lorne Park and Clarkson, sits on the coarse sand and gravel of the old lake foreshore. Sand and gravel hold a correctly sized helix well, but a thick granular layer can trigger a load test under the pile system's evaluation report in addition to the torque correlation. Installation torque is recorded on every pile either way, and the engineer reads capacity from that record."
+    },
+    {
+      "q": "Can you install piles in a Mississauga winter?",
+      "a": "Yes. Toronto Pearson, inside the city at Malton, records about 50 days a year that never climb above freezing and 34 days below −10 °C. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so cold does not stop the work, it only slows the first metre."
+    },
+    {
+      "q": "What does a Mississauga deck permit cost and how long does it take?",
+      "a": "$244 for the deck permit on the schedule in force from February 1, 2026, which is also the residential minimum. A $50 pre-screening fee is paid online at submission and credited to the permit. Pre-screening takes about 7 to 10 business days, the first review of a complete residential application 10 business days, and the City reports a 7-week average to issue a residential alteration permit. The engineer's pile layout is billed apart from what the City charges."
+    }
+  ],
+  "related_note": "We also work in Oakville, Brampton and Toronto; Oakville has its own page and the others are on the way."
+}

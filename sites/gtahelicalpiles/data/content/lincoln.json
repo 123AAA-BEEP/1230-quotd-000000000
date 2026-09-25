@@ -1,0 +1,204 @@
+{
+  "slug": "lincoln",
+  "title": "Helical pile installation in Lincoln | GTA Helical Piles",
+  "description": "Helical piles in Beamsville, Vineland and Jordan: Queenston shale below the escarpment, dolostone above it, a 179-day frost-free season, and what to confirm.",
+  "h1": "Helical pile installation in Lincoln",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Lincoln is one town with two kinds of ground. Below the Niagara Escarpment, where Beamsville, Vineland, Jordan and the two Stations sit, our piles advance through clay-to-silt till or old lake sand toward red Queenston shale. On the escarpment and the plateau behind it, around Campden, they advance through thin till or laminated silt-clay toward Lockport dolostone, which is far harder. The pile that suits one side of the brow is not automatically right for the other, so the engineer's layout starts from where your lot is.",
+    "The Town's own permit rules we could not read. Every request to lincoln.ca failed from our research environment, so we do not print a deck permit threshold, a footing depth from the Town's drawings, a fee or a review time for Lincoln. Before we quote, we confirm those with the Town's building staff in Beamsville and set them down in writing in the package we prepare with you."
+  ],
+  "tiles": [
+    {
+      "value": "179 days",
+      "label": "frost-free period at 50% probability, Vineland, 1991 to 2020",
+      "source": {
+        "name": "Environment Canada normals, Vineland",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      }
+    },
+    {
+      "value": "−3.3 °C",
+      "label": "January daily average at Vineland, the Town's own climate station",
+      "source": {
+        "name": "Environment Canada normals, Vineland",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      }
+    },
+    {
+      "value": "2 bedrocks",
+      "label": "Queenston red shale below the escarpment, Lockport dolostone on and above it",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630"
+      }
+    },
+    {
+      "value": "69.8%",
+      "label": "of Lincoln's 9,555 occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Lincoln",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Lincoln&DGUIDlist=2021A00053526057&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Two kinds of ground in Lincoln",
+    "paragraphs": [
+      "The escarpment splits the town. The Ontario Geological Survey's bedrock map returns the Queenston Formation, an Upper Ordovician red shale with siltstone and thin limestone interbeds, at every point we queried on the lake plain: the Beamsville centre, Vineland, Vineland Station, Jordan and Jordan Station. Where the map crosses the escarpment face south of the built-up area, the bedrock becomes the Silurian Lockport Formation, a thick-bedded dolostone with cherty and shaly members. Campden, the plateau south of it and the plateau south of Vineland toward Rockway all return Lockport. Dolostone takes far more torque than shale, and refusal comes sooner.",
+      "The surface cover changes as well. Most of the plain is mapped as clay-to-silt till, derived from reworked lake sediment and shale. The exceptions cluster along Twenty Mile Creek: its mouth at Jordan Station and the Vineland village point both return coarse glaciolacustrine sand and gravel, the beach and nearshore deposits of glacial Lake Iroquois. A helix sized for till is not the right helix for that sand, and some pile systems' CCMC reports require a load test where a granular layer runs thicker than about 200 mm. Above the escarpment, two plateau points return laminated silt and clay instead of till.",
+      "Two places carry a shallow-rock flag. At the escarpment brow between Beamsville and Vineland, and at a lakeshore point north of the QEW in Beamsville, the survey maps bedrock at or near the surface, drift too thin to draw. We did not query a drift-thickness dataset, so elsewhere in the town the shale could be a metre down or many metres down. We treat early refusal as a site condition to confirm before the install, not a surprise on the day. The engineer's layout is set from the lot, and installation torque is recorded on every pile."
+    ],
+    "table_note": "Surface unit and bedrock formation from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one to two points per community, retrieved 25 September 2026. The plateau rows are query locations chosen from the map, not named places. A point describes the area around it, not your lot.",
+    "neighbourhoods": [
+      {
+        "name": "Beamsville",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Beamsville lakeshore, north of the QEW",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vineland village",
+        "surface": "Sand and gravel (Lake Iroquois beach)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vineland, west side",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vineland Station",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Jordan",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Jordan Station",
+        "surface": "Sand and gravel (Twenty Mile Creek mouth)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Campden",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Escarpment brow, between Beamsville and Vineland",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Plateau south of Campden",
+        "surface": "Laminated silt and clay",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Plateau south of Vineland, toward Rockway",
+        "surface": "Laminated silt and clay",
+        "bedrock": "Lockport, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Lincoln",
+    "authority_short": "the Town of Lincoln",
+    "paragraphs": [
+      "Lincoln is a lower-tier town in Niagara Region, and building permits in Ontario are issued by the local municipality, so the Town is the authority to ask. We say that with a caveat: its website would not load from our research environment on any attempt, so nothing on this page quotes a Lincoln threshold, footing depth, inspection list, fee or timeline. A search listing points to a Building Division at 4800 South Service Road in Beamsville and to Cloudpermit as the application route. Treat both as leads until the Town confirms them; we will not print either as fact.",
+      "What we can say is how helical piles are usually handled by Ontario towns whose rules we have read, and what we will confirm with Lincoln for your job: whether the deck size and height thresholds match the Ontario Building Code's usual cut-offs, what depth the Town's own drawings draw for footings, whether it asks for the pile manufacturer's CCMC evaluation report and an engineer's layout with the application, and which inspections apply to a pile instead of a poured pier. We prepare the package with you once those answers are in writing.",
+      "Whatever the Town asks for, the post-install document is the same: the engineer issues an engineer-sealed certificate of conformity from our per-pile torque record, and that is what goes to the municipality to close the file."
+    ],
+    "facts": [
+      {
+        "label": "Authority",
+        "value": "Town of Lincoln (lower-tier municipality in Niagara Region); department name and contact to be confirmed, page not retrievable at time of writing",
+        "url": "https://www.lincoln.ca/buildingpermit"
+      },
+      {
+        "label": "Permit needed when",
+        "value": "Not verified for Lincoln; we confirm the deck area and height thresholds with the Town before quoting",
+        "url": "https://www.lincoln.ca/buildingpermit"
+      },
+      {
+        "label": "Footing depth on Town drawings",
+        "value": "No Lincoln deck drawing retrieved; we do not print a depth for this town until the Town's guide is read",
+        "url": "https://www.lincoln.ca/buildingpermit"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "Whether the Town asks for the CCMC report and an engineer's layout is unconfirmed; we ask before we apply",
+        "url": "https://www.lincoln.ca/buildingpermit"
+      },
+      {
+        "label": "Provincial code",
+        "value": "Ontario Building Code, 2024 Compendium, available through Publications Ontario; clause text not reproduced here",
+        "url": "https://www.ontario.ca/page/ontarios-building-code"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Lincoln",
+    "paragraphs": [
+      "Lincoln has its own climate record, at Vineland, between the lake and the escarpment. Over 1991 to 2020 the January daily average there was −3.3 °C, with a daily high of 0.2 °C and a daily low of −6.8 °C. About 21 days a year drop below −10 °C and fewer than one a year below −20 °C. Roughly 43 days a year never rise above freezing, while 117 nights a year dip to 0 °C or lower, so on the order of 74 days the ground surface freezes at night and softens by afternoon. St. Catharines Airport, 26 km east, tells the same story over 1981 to 2010: January −3.8 °C and 27 days below −10 °C.",
+      "The frost-free season at Vineland is given as a probability rather than an average: a 50% chance that the last spring frost is past by April 25 and the first fall frost holds off until October 20, a window of 179 days. St. Catharines Airport publishes an average of exactly 179 days as well. That window is when the ground is easiest to work, but it is not a limit. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. The helix bears below the depth frost reaches in this area, a depth the engineer sets for the site because the Town's own figure could not be read."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−3.3 °C, Vineland composite station, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "21.1 a year, Vineland; 42.6 days a year never above 0 °C; 116.5 nights at or below 0 °C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "179 days at 50% probability, April 25 to October 20, Vineland, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      },
+      {
+        "label": "Cross-check",
+        "value": "St. Catharines A, 1981 to 2010: January −3.8 °C, 26.7 days below −10 °C, average frost-free period 179 days",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "Lincoln is a drive from our western GTA base, so a mobilization charge appears as its own line on the quote. Above the escarpment, Lockport dolostone can bring refusal early and mean pre-drilling; at the Twenty Mile Creek mouth, sand and gravel can mean a larger helix or a load test. Orchard and vineyard lots with long laneways change access too. All of it is priced in the written quote.",
+  "faqs": [
+    {
+      "q": "Does my deck in Lincoln need a permit?",
+      "a": "Probably, if it is attached to the house or above a modest height, but we cannot quote the Town's exact thresholds because its website could not be reached when this page was researched. Ask the Town of Lincoln's building staff in Beamsville, or let us ask on your behalf. We put the answer in writing before the quote is final."
+    },
+    {
+      "q": "What will the Town of Lincoln want from you for helical piles?",
+      "a": "We do not yet know Lincoln's exact list. Other Ontario municipalities whose rules we have read ask for the pile manufacturer's CCMC evaluation report and an engineer's layout of depth, spacing and size for the soil, and we expect something similar. After the install, the engineer issues an engineer-sealed certificate of conformity from our torque record. We prepare the package with you once the Town confirms its requirements."
+    },
+    {
+      "q": "Is it shale or rock under my house?",
+      "a": "It depends which side of the escarpment you are on. Below it, in Beamsville, Vineland, Jordan and the Stations, the bedrock is red Queenston shale under till or lake sand. On the escarpment and the plateau behind it, around Campden and toward Rockway, it is Lockport dolostone, much harder, under thin till or laminated silt and clay. Depth to rock is not mapped, so we confirm on site."
+    },
+    {
+      "q": "Can you install in a Lincoln winter?",
+      "a": "Yes. Vineland's record shows about 43 days a year that stay below freezing all day and only about 21 below −10 °C, milder than most of the GTA. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so the schedule is ours, not the weather's."
+    },
+    {
+      "q": "What does a deck permit cost in Lincoln?",
+      "a": "We do not print a figure, because the Town's fee schedule could not be retrieved when this page was written and a neighbouring town's schedule is not evidence for Lincoln. We confirm the current fee with the Town and list it as its own line in the quote, separate from the engineering for the pile layout."
+    },
+    {
+      "q": "My house is in Jordan Station. Does the creek change anything?",
+      "a": "Yes, at the surface. The survey maps the mouth of Twenty Mile Creek at Jordan Station, and the Vineland village point beside it, as sand and gravel from the old Lake Iroquois shoreline rather than the till that covers the rest of the plain. Coarse ground carries load well once the helix is sized for it, and where the granular layer is thick some pile systems' CCMC reports call for a load test rather than torque alone."
+    }
+  ],
+  "related_note": "We also work in Grimsby, St. Catharines and Hamilton, the neighbouring service areas on either side of Lincoln."
+}

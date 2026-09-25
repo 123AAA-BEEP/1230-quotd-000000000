@@ -1,0 +1,199 @@
+{
+  "slug": "burlington",
+  "title": "Helical pile installation in Burlington | GTA Helical Piles",
+  "description": "Helical piles in Burlington: the $377 deck permit, what the City's checklist asks for with piles, sand or till under each neighbourhood, and winter installs.",
+  "h1": "Helical pile installation in Burlington",
+  "kicker": "Halton Region",
+  "answer": [
+    "Burlington requires a building permit for any deck connected to the house or another structure, and for a detached deck that is larger than 10 square metres, more than 600 mm above grade, or covered. The City publishes no sample deck drawing with a printed footing depth. Its Decks/Porches checklist asks that footing sizes and spacing be shown on the plan and that the cross-section show the footings below grade, and it names helical piles among the systems that need a BMEC authorization or Minister's Ruling.",
+    "The ground under Burlington comes in two bands, with a third above the escarpment. Along the lake, from Aldershot through downtown to Roseland and Shoreacres, the Ontario Geological Survey maps coarse sand and gravel. Across the plain between the lakeshore and the escarpment, in Tyandaga, Millcroft, Alton Village and the Orchard, it maps clay-to-silt till. Both sit on Queenston red shale. Up at Kilbride the survey shows thin till over Amabel dolostone, so hard rock can be close to the surface."
+  ],
+  "tiles": [
+    {
+      "value": "$377",
+      "label": "City of Burlington deck permit, the flat minimum permit fee",
+      "source": {
+        "name": "Schedule A to Building Permit By-law 30-2026",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-Fee-Schedule-A-to-Bylaw.pdf"
+      }
+    },
+    {
+      "value": "600 mm",
+      "label": "height above grade at which a detached deck needs a permit",
+      "source": {
+        "name": "City of Burlington, Decks, Porches and Patios",
+        "url": "https://www.burlington.ca/en/building-and-renovating/decks-porches-and-patios.aspx"
+      }
+    },
+    {
+      "value": "May 1 to Oct 12",
+      "label": "average frost-free period, Hamilton A, 1991 to 2020",
+      "source": {
+        "name": "Environment Canada normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      }
+    },
+    {
+      "value": "47.5%",
+      "label": "of Burlington homes were built before 1981, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, Census Profile 2021",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Burlington&DGUIDlist=2021A00053524002&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Burlington",
+    "paragraphs": [
+      "Two surface materials cover urban Burlington. The Ontario Geological Survey's point queries along the lakeshore, at Aldershot, Downtown Burlington, Roseland and Shoreacres, all return coarse glaciolacustrine sand and gravel, unit 9 in the survey's mapping. Higher up the plain, at Tyandaga, Millcroft, Alton Village and the Orchard, the same layer returns clay-to-silt till, unit 5d. Regional literature names the till Halton Till and ties the sand to the old Lake Iroquois shoreline; the survey's data carries neither name, so we treat both as context. What the survey does establish is the boundary itself: a pile design for the till plain does not carry over to a lakeshore lot.",
+      "Bedrock is Queenston Formation red shale at every point we queried below the escarpment: eight sub-areas plus the city's reference coordinate. The survey describes it as red shale and siltstone with minor green shale and variable harder interbeds of calcareous siltstone, sandstone and limestone. How far down it lies was not retrieved; no drift-thickness dataset was queried, and none of the urban points returned a bedrock-at-surface polygon of the kind found in Oakville's creek valleys. Kilbride is the exception. Above the escarpment the survey returns bedrock-drift complex, meaning thin and patchy till, over Amabel Formation dolostone, the Silurian rock that forms the escarpment cap.",
+      "For the installer, the three zones ask for three approaches. In the till plain a standard pile is driven to the torque the engineer specified, and installation torque is recorded on every pile. In the lakeshore sand and gravel the helix is sized for coarse ground, and where a granular layer is thick, some pile systems' evaluation reports call for an on-site load test rather than torque alone. At Kilbride, shallow dolostone is a condition we confirm before the machine arrives, because a pile that meets rock early may need pre-drilling or a different configuration. The engineer's layout covers whichever zone your lot is in."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries, one coordinate per sub-area (OpenStreetMap centroids, approximate), retrieved 25 September 2026. They describe the area, not your lot; the engineer's layout is based on the site.",
+    "neighbourhoods": [
+      {
+        "name": "Aldershot",
+        "surface": "Sand and gravel (glaciolacustrine)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Downtown Burlington",
+        "surface": "Sand and gravel (glaciolacustrine)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Roseland",
+        "surface": "Sand and gravel (glaciolacustrine)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Shoreacres",
+        "surface": "Sand and gravel (glaciolacustrine)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Tyandaga",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Millcroft",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Alton Village",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Orchard",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Kilbride",
+        "surface": "Bedrock-drift complex, thin till over shallow rock",
+        "bedrock": "Amabel, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Burlington",
+    "authority_short": "the City of Burlington",
+    "paragraphs": [
+      "The City of Burlington Building Department (905-335-7731, buildingpermits@burlington.ca) handles deck permits. There is no online portal: the complete package is emailed to that address with the subject line 'Building Permit Application' followed by the project address, following the City's electronic submission standards, and files over 20 MB need a large-file transfer arranged first. A Pre-Building Approval Application for zoning clearance comes before the permit application, and lots inside Conservation Halton or Niagara Escarpment Commission boundaries need those approvals as well. Once the application is complete, the City conducts its plan review within 10 business days and either issues the permit or sends an application status report.",
+      "The fee is simple. Schedule A to the Building Permit By-law lists a deck, attached or detached, at the minimum permit fee, which Section 2.1 sets at $377, flat, with HST where applicable. The deck page still links the older Schedule A to By-law 18-2025 while the Applying page links By-law 30-2026; both print $377 for a deck. Fees are due within two days of the City's response email.",
+      "For helical piles, the Decks/Porches checklist (August 22, 2023) lists BMEC approvals or a Minister's Ruling for innovative systems, naming helical piles specifically, under additional documentation. It does not mention CCMC reports and states no separate engineer requirement for piles, though designer qualifications and BCIN numbers apply under the Building Code schedules unless you design your own project. We prepare the package with you: the product's authorization, the pile layout on the plan view with sizes and spacing noted, and the cross-section showing footings below grade. After the install the engineer-sealed certificate of conformity, built from the torque record, goes to the City. Ask the Building Department which inspections it will attach to your approved drawings, since no deck-specific sequence is published."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck connected to a house or structure, or detached and over 10 m², over 600 mm above grade, or covered",
+        "url": "https://www.burlington.ca/en/building-and-renovating/decks-porches-and-patios.aspx"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "BMEC approval or Minister's Ruling for the pile system; footing sizes and spacing noted on the plan",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Decks-Porches-Checklist.pdf"
+      },
+      {
+        "label": "Deck permit fee",
+        "value": "$377 flat (the minimum permit fee), HST where applicable",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-Fee-Schedule-A-to-Bylaw.pdf"
+      },
+      {
+        "label": "Plan review",
+        "value": "Within 10 business days of a complete application",
+        "url": "https://www.burlington.ca/en/building-and-renovating/decks-porches-and-patios.aspx"
+      },
+      {
+        "label": "Apply",
+        "value": "By email to buildingpermits@burlington.ca; no online portal",
+        "url": "https://www.burlington.ca/en/building-and-renovating/applying-for-a-building-permit.aspx"
+      },
+      {
+        "label": "Inspections",
+        "value": "48-hour notice, booked with the inspector named on the permit card; final inspection closes the permit",
+        "url": "https://www.burlington.ca/en/building-and-renovating/booking-an-inspection.aspx"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Burlington",
+    "paragraphs": [
+      "Burlington's own station, Burlington TS near the lakeshore, averages −4.4 °C in January with a daily minimum of −8.1 °C, and just under a metre of snow over the winter. Those normals come from 19 years of records, so Environment Canada marks them as lower confidence. The station publishes no usable frost-free period or cold-day counts, so for those we use Hamilton A, about 25 km to the south-west on the escarpment: 164 frost-free days on average, May 1 to October 12, and roughly 36 days a year below −10 °C. Higher and inland, Hamilton A runs about a degree colder than the Burlington lakeshore, so its counts likely overstate the winter in Aldershot or Shoreacres.",
+      "We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. What matters for a pile is not the air temperature on any one day but how deep the ground freezes, and Burlington prints no design frost depth on any deck document we could find. The checklist requires only that footings appear below grade on the cross-section. The engineer sets the pile depth for your lot so the helix bears below seasonal frost; confirm with the Building Department whether it expects a specific depth noted on the drawings before you submit."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−4.4 °C, Burlington TS, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=burlington&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6151064&dispBack=1"
+      },
+      {
+        "label": "January daily minimum and snowfall",
+        "value": "−8.1 °C; 99.9 cm of snow a year, Burlington TS",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=burlington&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6151064&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "164 days, May 1 to October 12, Hamilton A, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "35.7 a year, Hamilton A, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "Travel rarely moves the price in Burlington, though small jobs carry a minimum charge stated in the quote. What does move it: a lakeshore lot in sand and gravel may need a larger helix, a Kilbride lot may need pre-drilling through shallow dolostone, and a frozen crust in winter adds time. Access along a narrow side yard is checked at the site review.",
+  "faqs": [
+    {
+      "q": "Does my Burlington deck need a permit?",
+      "a": "Yes if it connects to the house or any other structure, at any size. A detached deck needs one when it is over 10 square metres, more than 600 mm above grade, or covered. A porch with footings needs one too. A zoning clearance (Pre-Building Approval Application) comes first, and the permit package is emailed to the Building Department rather than filed online."
+    },
+    {
+      "q": "What does the City of Burlington ask for with helical piles?",
+      "a": "The Decks/Porches checklist lists BMEC approvals or a Minister's Ruling for innovative systems and names helical piles as an example, so the pile product's authorization goes in with the drawings. The plan view must note footing sizes and spacing and the cross-section must show them below grade. We prepare the package with you, and after the install the engineer-sealed certificate of conformity goes to the City."
+    },
+    {
+      "q": "Is it sand or clay under my Burlington lot?",
+      "a": "Depends which side of the old shoreline you are on. The Ontario Geological Survey maps sand and gravel along the lake, at Aldershot, downtown, Roseland and Shoreacres, and clay-to-silt till on the plain above, at Tyandaga, Millcroft, Alton Village and the Orchard. Both sit on Queenston red shale at a depth the survey does not state. We confirm the material on site."
+    },
+    {
+      "q": "Can you install piles in Burlington in winter?",
+      "a": "We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. Burlington TS averages −4.4 °C in January, and Hamilton A, the nearest station with the full record, counts about 36 days a year below −10 °C. There is no concrete to cure, so the season does not set the schedule."
+    },
+    {
+      "q": "How much is a deck permit in Burlington?",
+      "a": "$377, flat. Schedule A to the Building Permit By-law charges a deck, attached or detached, at the minimum permit fee, and Section 2.1 sets that minimum at $377 plus HST where applicable. The City asks for payment within two days of its response email. Engineering for the pile layout is separate from the City's fee."
+    },
+    {
+      "q": "I am in Kilbride. Is the ground different up here?",
+      "a": "It is. Kilbride sits above the Niagara Escarpment, and the survey there returns thin, patchy till over Amabel dolostone rather than the Queenston shale under the rest of the city. Rock can be close to the surface, so a pile may reach refusal early; we confirm the depth to rock before the install and pre-drill or adjust the pile where needed. Escarpment lots may also need Niagara Escarpment Commission approval before the permit."
+    }
+  ],
+  "related_note": "Our neighbouring service areas are Oakville to the east, Hamilton to the west and Milton up the escarpment."
+}

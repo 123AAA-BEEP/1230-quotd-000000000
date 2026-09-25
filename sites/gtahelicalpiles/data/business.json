@@ -27,19 +27,19 @@
       "name": "Mississauga",
       "slug": "mississauga",
       "region": "Peel Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Brampton",
       "slug": "brampton",
       "region": "Peel Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Caledon",
       "slug": "caledon",
       "region": "Peel Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Oakville",
@@ -51,7 +51,7 @@
       "name": "Burlington",
       "slug": "burlington",
       "region": "Halton Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Milton",
@@ -89,7 +89,7 @@
       "name": "Lincoln",
       "slug": "lincoln",
       "region": "Niagara Region",
-      "live": false,
+      "live": true,
       "note": "Beamsville and Vineland"
     },
     {
