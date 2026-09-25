@@ -77,7 +77,7 @@
       "name": "Guelph",
       "slug": "guelph",
       "region": "Wellington County",
-      "live": false
+      "live": true
     },
     {
       "name": "Grimsby",
@@ -108,13 +108,13 @@
       "name": "Niagara Falls",
       "slug": "niagara-falls",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Niagara-on-the-Lake",
       "slug": "niagara-on-the-lake",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Welland",
