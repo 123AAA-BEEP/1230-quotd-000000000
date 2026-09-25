@@ -1,0 +1,209 @@
+{
+  "slug": "hamilton",
+  "title": "ICF foundations in Hamilton | GTA ICF",
+  "description": "ICF foundations in Hamilton: the ground on each side of the Escarpment, the City's permit fees and inspection stages, the footing depth and the pour season.",
+  "h1": "ICF foundations and walls in Hamilton",
+  "kicker": "City of Hamilton",
+  "answer": [
+    "An ICF foundation in Hamilton starts with which side of the Escarpment the lot is on. Below it, the lower city, Westdale and Dundas dig into Lake Iroquois sand and gravel or old valley alluvium over Queenston red shale. Above it, the Mountain and Glanbrook sit on laminated silt and clay, and Ancaster on sand and gravel, all over Silurian dolostone. Stoney Creek, the Red Hill valley and Waterdown sit on clay-silt till. None of the survey's sixteen Hamilton points returned bedrock at surface.",
+    "The permit is issued by the City of Hamilton's Building Division and applied for through my.hamilton.ca. The footing carries at least 1.2 m of soil cover: a geotechnical investigation filed with the City for an Ancaster site requires at least 1.2 metres of soil cover for frost protection, which matches the Building Code minimum for a heated basement on clay. The City inspects the footing formwork and reinforcing before the pour, and the drainage layer, weeping tile and stone cover before backfill."
+  ],
+  "tiles": [
+    {
+      "value": "1.2 m",
+      "label": "minimum soil cover for frost protection in a geotechnical report filed with the City (Ancaster)",
+      "source": {
+        "name": "Preliminary geotechnical investigation, 159 to 163 Sulphur Springs Road, Ancaster",
+        "url": "https://www.hamilton.ca/sites/default/files/2025-01/ube-application-159-163-sulphur-prelim-geotechnical-investigation.pdf"
+      }
+    },
+    {
+      "value": "164 days",
+      "label": "frost-free period at Hamilton A, May 1 to October 12, 1991 to 2020 normals",
+      "source": {
+        "name": "Environment Canada normals 1991 to 2020, Hamilton A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      }
+    },
+    {
+      "value": "2 bedrocks",
+      "label": "Queenston red shale under the lower city, Silurian dolostone above the Escarpment, at all 16 survey points",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, bedrock point queries",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.84963,43.25011&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "32.8%",
+      "label": "of Hamilton's occupied homes were built in 1960 or before, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Hamilton (City)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Hamilton&DGUIDlist=2021A00053525005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "The ground on each side of the Escarpment",
+    "paragraphs": [
+      "The Niagara Escarpment crosses the full width of Hamilton and divides the excavation question in two. Below it, the survey maps the nearshore sand and gravel laid down by glacial Lake Iroquois: the downtown, GO Centre, Dundurn and McMaster points all return that unit, over Queenston red shale. Water moves through it quickly, which suits the weeping tile, but the faces of the hole will not stand for long and are shored or laid back, and the footing bears only once undisturbed material is confirmed. Where the dig finds standing water, the Code requires waterproofing rather than dampproofing, because hydrostatic pressure is the trigger.",
+      "Above the Escarpment the ground changes twice. On the Mountain, the Lime Ridge and Mohawk College points return glaciolacustrine silt and clay, massive to well laminated, over Lockport dolostone, and the same silt and clay continues across Glanbrook, Binbrook and Mount Hope over Guelph dolostone. Laminated silt and clay holds a cut for the time the hole is open but sheds water slowly, so a wet excavation stays wet, and backfilling with the spoil traps water against the wall; the drainage layer and stone cover the City checks at the backfill inspection matter most here. Ancaster is the exception: sand and gravel over Lockport dolostone, which drains but runs.",
+      "East and north the survey turns to till. Stoney Creek, the Red Hill valley and Waterdown return clay-to-silt till derived from lake sediment or shale; it stands well in a cut and drains poorly. The Dundas valley floor is older alluvium, clay to gravel that may contain organic remains, which an engineer wants to see before a footing bears on it. No Hamilton point returned bedrock at surface, and the survey has no drift-thickness layer, so how far down the rock lies is a site question; where a dig does reach it, the Code sets no minimum footing depth on rock and that last lift is rock excavation."
+    ],
+    "table_note": "Each row is an Ontario Geological Survey point query, surficial map MRD 128-REV and bedrock map MRD 219, run at one or two coordinates in that area on 25 September 2026. A row describes an area, not your lot, and the survey has no drift-thickness layer, so depth to rock is not mapped. The footing is designed from the site, with a geotechnical report where the reviewer asks for one.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown Hamilton (lower city)",
+        "surface": "Sand and gravel, minor silt and clay (Lake Iroquois nearshore)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Westdale and McMaster",
+        "surface": "Sand and gravel, minor silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Dundas (valley floor)",
+        "surface": "Older alluvium: clay, silt, sand and gravel, may contain organic remains",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Stoney Creek",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Red Hill Valley",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Hamilton Mountain (Lime Ridge, Mohawk College)",
+        "surface": "Silt and clay, massive to well laminated",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Ancaster",
+        "surface": "Sand and gravel, minor silt and clay",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Glanbrook, Binbrook and Mount Hope",
+        "surface": "Silt and clay, massive to well laminated",
+        "bedrock": "Guelph, dolostone"
+      },
+      {
+        "name": "Waterdown",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Amabel, dolostone"
+      },
+      {
+        "name": "Carlisle",
+        "surface": "Ice-contact sand and gravel, minor silt, clay and till",
+        "bedrock": "Amabel, dolostone"
+      },
+      {
+        "name": "Rural Flamborough",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Guelph, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Hamilton's permit and its inspections",
+    "authority_short": "the City of Hamilton",
+    "paragraphs": [
+      "Hamilton issues one building permit for the house or for the addition, and the foundation is reviewed inside it; there is no separate ICF approval. The permit comes from the Building Division of the City's Planning and Economic Development Department, City Hall, 3rd floor, 71 Main Street West, and the application goes in online: a my.hamilton.ca account, the Building Permits category, then Permitting and Inspections in the Customer Portal. Drawings must be vector PDFs, unsecured, black and white and to scale, following the drawing requirements in Building By-law 15-058. Fees are due at submission, and the City publishes no review day count; staff contact you or your agent when the application is approved or incomplete.",
+      "Just under a third of Hamilton's occupied homes were built in 1960 or before, which is why the schedule's addition, new-basement and additional-dwelling-unit lines matter here as much as the new-house rate. Schedule A of the by-law, as posted on the City's fees page when this page was written, prices a detached, semi-detached or row house at $18.32 per square metre of floor area, a new basement or cold cellar on an existing house at $6.58 per square metre, a garage at the same rate and a detached additional dwelling unit in a rear yard at a flat $1,030, all subject to a $291 minimum permit fee, rounded to the dollar, plus HST where it applies. Two lines are specific to foundation work: a separate foundation permit, listed under subsurface works and charged in addition to the regular permit fee, is a flat $453 for residential work under Part 9, and where the work creates no new floor area, a replacement foundation under a house that stays for instance, the fee is 1% of the value the Chief Building Official sets, subject to the minimum. Nothing on hamilton.ca is labelled a 2026 schedule, so we confirm the figures with the Building Division at application.",
+      "The City publishes no ICF-specific checklist. The application carries the drawings, the documentation for the ICF system named on the quote, and the SB-12 energy compliance for the wall, for which a reviewer may ask the form maker's product literature or thermal test data; within the Part 9 limits a qualified designer can draw the wall, and beyond them, or when the reviewer asks, an engineer seals it. We prepare the package with you. Inspections track the concrete. After a pre-construction on-site meeting, the City inspects the footing before it is poured, formwork and reinforcing for footings, column pads and structural slabs-on-grade, then the excavation before backfill, drainage layer, weeping tile and the stone cover over the tile. Requests are completed within two business days under the Building Code, booked at 905-546-2424 ext. 7777 or, for permits issued after July 6, 2026, on my.hamilton.ca. A request made before the work is ready brings the inspector back at $248 a visit, so we call each stage in only when it is ready."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Hamilton Building Division (Planning and Economic Development), City Hall 3rd floor, 71 Main Street West; online through my.hamilton.ca, Building Permits category, then Permitting and Inspections",
+        "url": "https://my.hamilton.ca/"
+      },
+      {
+        "label": "House permit fee",
+        "value": "$18.32 per m² of floor area for a detached, semi-detached or row house; new basement or cold cellar $6.58 per m²; garage $6.58 per m²; detached additional dwelling unit in a rear yard $1,030 flat (Schedule A, Building By-law 15-058, as posted 25 September 2026)",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-permit-fees"
+      },
+      {
+        "label": "Minimum and foundation permit",
+        "value": "$291 minimum permit fee; separate residential Part 9 foundation permit $453 flat, in addition to the regular permit fee; work creating no new floor area priced at 1% of the value set by the Chief Building Official; premature inspection re-attendance $248",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-permit-fees"
+      },
+      {
+        "label": "Footing inspection",
+        "value": "Prior to pouring footings: formwork and reinforcing for footings, column pads and structural slabs-on-grade; a pre-construction on-site meeting comes first",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections"
+      },
+      {
+        "label": "Backfill inspection",
+        "value": "Prior to backfilling foundation excavations: drainage layer, weeping tile and stone cover for the weeping tile",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections"
+      },
+      {
+        "label": "Booking and review time",
+        "value": "Inspection requests completed within 2 business days per the Building Code; 905-546-2424 ext. 7777, or online through my.hamilton.ca for permits issued after July 6, 2026; no permit-review day count is published",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections"
+      }
+    ]
+  },
+  "season": {
+    "heading": "When we pour in Hamilton",
+    "paragraphs": [
+      "Hamilton's climate record is kept at Hamilton A, the airport station at Mount Hope, which stands on the Mountain at 237.7 m about 11 km south-southwest of downtown, so lower-city readings may differ. Its 1991 to 2020 normals put January's daily mean at −5.3 °C, the frost-free period at 164 days from May 1 to October 12, 35.7 days a year with a minimum below −10 °C and 54.8 days when the maximum never rises above 0 °C. CSA A23.1 treats a pour as cold-weather work when the forecast has the air below 5 °C within 24 hours of placing: the mix arrives no colder than 10 °C, the wall is held at 10 °C or above through curing, and the concrete reaches 7 MPa before frost reaches it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS form insulates the core while it cures and does part of the covering, but the wall's open top and the footing still need cover of their own, and the cavity is cleared of snow and ice before the pump starts. The footing depth does not follow the calendar: a geotechnical investigation filed with the City for 159 to 163 Sulphur Springs Road in Ancaster requires at least 1.2 metres of soil cover for frost protection on any foundation exposed to seasonal freezing, the same 1.2 m the Building Code sets as the minimum for a heated basement on clay. The City's own pages print no house footing depth; its sample deck drawing carries piers a minimum 48 inches below grade."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−5.3 °C, Hamilton A (Mount Hope airport, 237.7 m), 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "164 days, May 1 to October 12, Hamilton A, 1991 to 2020; 35.7 days a year below −10 °C and 54.8 days with a maximum at or below 0 °C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Frost cover for footings",
+        "value": "At least 1.2 m of soil cover for frost protection, preliminary geotechnical investigation filed with the City, 159 to 163 Sulphur Springs Road, Ancaster",
+        "url": "https://www.hamilton.ca/sites/default/files/2025-01/ube-application-159-163-sulphur-prelim-geotechnical-investigation.pdf"
+      },
+      {
+        "label": "City drawing depth",
+        "value": "Piers drawn to a minimum 48 in. (1.22 m) below grade on the City's sample residential deck drawing; the City prints no house footing depth",
+        "url": "https://www.hamilton.ca/sites/default/files/2022-06/buildingpermit-drawing-deck-porch-wood.pdf"
+      }
+    ]
+  },
+  "pricing_note": "In Hamilton the price turns on the side of the Escarpment: lower-city sand and gravel needs shoring and can bring water, Mountain and Glanbrook silt and clay needs a drainage layer and a dry hole, and the Dundas valley alluvium may need an engineer. Where a lower-city lot leaves no room for the truck, the pump reach adds a line. Rock is a site finding, not a neighbourhood rule.",
+  "faqs": [
+    {
+      "q": "What will the excavator meet under a Hamilton lot?",
+      "a": "It depends on the side of the Escarpment. Below it, downtown, Westdale and Dundurn sit on Lake Iroquois sand and gravel over Queenston red shale; Stoney Creek and the Red Hill valley on clay-silt till over the same shale; the Dundas valley floor on old alluvium. Above it, the Mountain and Glanbrook are laminated silt and clay, Ancaster sand and gravel, Waterdown till, all over dolostone. These are survey point queries by area, so we confirm on site before the footing is designed."
+    },
+    {
+      "q": "Does an ICF basement in the lower city need waterproofing or just dampproofing?",
+      "a": "The Code decides by water, not by wall type. Every below-grade foundation wall is dampproofed and drained at the footing; where hydrostatic pressure occurs it is waterproofed instead. An ICF wall is insulated to full depth, past the 900 mm below grade at which the Code calls for a drainage layer, so the layer is part of every ICF foundation we build, and it is what Hamilton's inspector checks before backfill along with the weeping tile and its stone cover. A hole that holds water gets the membrane."
+    },
+    {
+      "q": "What does the City of Hamilton ask for with an ICF foundation?",
+      "a": "It is the building permit for the house or for the addition, filed with the Building Division through my.hamilton.ca, and the City publishes no ICF-specific checklist. The package is the drawings, the documentation for the ICF system named on the quote, and the SB-12 energy compliance for the wall; within the Part 9 limits a qualified designer can draw it, and beyond them, or if the reviewer asks, an engineer seals it. Drawings go in as unsecured black and white vector PDFs to scale. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation on the Mountain in January?",
+      "a": "Yes. The airport station on the Mountain averages −5.3 °C in January and counts 54.8 days a year when the temperature stays at or below freezing. On those days CSA A23.1 runs the pour: the mix arrives no colder than 10 °C, the wall is held at 10 °C or above through the cure, and the concrete reaches 7 MPa before frost. Winter work takes more time and sometimes more money than a summer pour, and the quote shows where."
+    },
+    {
+      "q": "How deep does the footing go in Hamilton?",
+      "a": "Allow at least 1.2 m of soil over the footing. A geotechnical investigation filed with the City for 159 to 163 Sulphur Springs Road in Ancaster requires at least 1.2 metres of soil cover for frost protection on any foundation exposed to seasonal freezing, and the Building Code's Table 9.12.2.2 sets 1.2 m as the minimum for a heated basement on clay or undefined soils, with no limit on rock. Hamilton's permit pages print no house footing depth; the City's sample deck drawing shows piers a minimum 48 inches down."
+    },
+    {
+      "q": "We are in Ancaster. Is the ground the same as the Mountain?",
+      "a": "No. Ancaster sits above the Escarpment like the Mountain, but the survey point there returns sand and gravel, minor silt and clay, over Lockport dolostone, where Lime Ridge and Mohawk College return laminated silt and clay over the same rock. So an Ancaster dig behaves more like the lower city, draining but needing shoring, than like the clay of the Mountain. The geotechnical investigation we cite for the 1.2 m soil cover was filed for an Ancaster site on Sulphur Springs Road. Its findings speak for that property, not yours."
+    }
+  ],
+  "related_note": "We also build in Burlington, Grimsby and Milton."
+}

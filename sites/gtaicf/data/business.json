@@ -21,19 +21,19 @@
       "name": "Toronto",
       "slug": "toronto",
       "region": "City of Toronto",
-      "live": false
+      "live": true
     },
     {
       "name": "Mississauga",
       "slug": "mississauga",
       "region": "Peel Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Brampton",
       "slug": "brampton",
       "region": "Peel Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Caledon",
@@ -51,13 +51,13 @@
       "name": "Burlington",
       "slug": "burlington",
       "region": "Halton Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Milton",
       "slug": "milton",
       "region": "Halton Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Halton Hills",
@@ -70,14 +70,14 @@
       "name": "Hamilton",
       "slug": "hamilton",
       "region": "City of Hamilton",
-      "live": false,
+      "live": true,
       "note": "including Ancaster, Dundas and Stoney Creek"
     },
     {
       "name": "Guelph",
       "slug": "guelph",
       "region": "Wellington County",
-      "live": false
+      "live": true
     },
     {
       "name": "Grimsby",
@@ -96,7 +96,7 @@
       "name": "St. Catharines",
       "slug": "st-catharines",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Thorold",

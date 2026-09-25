@@ -1,0 +1,180 @@
+{
+  "slug": "winter-concrete-pouring-icf-ontario",
+  "title": "Pouring ICF walls in an Ontario winter | GTA ICF",
+  "description": "Winter ICF pours in the GTA, Hamilton, Guelph and Niagara: CSA A23.1 placing and curing rules, what the foam covers, footings, inspections and when to wait.",
+  "h1": "Pouring ICF walls in an Ontario winter",
+  "kicker": "Season guide",
+  "lede": "This guide is for homeowners and builders in the GTA, Hamilton, Guelph and the Niagara corridor. It settles whether an ICF foundation or full-height wall can be poured between November and March, and when it should wait. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Below we set out what CSA A23.1 and the Ontario Building Code require, what the foam form protects and what it leaves open, how much winter each city gets, and the three cases where we say wait for spring.",
+  "sections": [
+    {
+      "id": "what-counts-as-cold-weather",
+      "heading": "What counts as cold weather for a pour",
+      "paragraphs": [
+        "CSA A23.1 is the concrete standard the Ontario Building Code names for flat ICF walls in Sentence 9.3.1.1.(4), with a maximum aggregate size of 19 mm. Its definition of cold weather is a forecast, not a reading on the day: cold weather exists when there is a probability of the air temperature falling below 5 °C within 24 hours of placing, as forecast by the nearest official weather office. That definition triggers everything else in this guide: the placing temperature, the 10 °C protection period and the 7 MPa the concrete must reach before it sees frost. The next section shows how much of the year it covers in each city.",
+        "Table 14 of the standard sets the concrete temperature at placing by the thickness of the section. Sections under 0.3 m thick arrive between 10 and 32 °C; sections from 0.3 m to under 1 m arrive between 10 and 30 °C. Thicker sections may arrive cooler; the minimum drops to 5 °C at 1 m and over. An ICF wall with a 6 in (152 mm) or 8 in (203 mm) core, which most houses in the region use, sits in the first row. A 12 in (305 mm) core just crosses into the second. Either way the number that governs a wall is the same: the concrete arrives at no less than 10 °C.",
+        "The Building Code says much the same. Article 9.3.1.9, written for site-batched Part 9 concrete, applies whenever the air temperature is below 5 °C. The concrete is kept between 10 and 25 °C while it is mixed and placed, held at not less than 10 °C for 72 hours after placing, and no frozen material or ice goes into the mix. ICF wall concrete answers to CSA A23.1 through Sentence 9.3.1.1.(4), but the two documents agree on the threshold and on the 10 °C floor. We treat 5 °C in the 24-hour forecast as the switch. Our Code source is the 2024 Compendium's digital copy, which states it is not an official copy."
+      ],
+      "sources": [
+        { "name": "Concrete Ontario (RMCAO), Cold Weather Concreting technical specification, reproducing CSA A23.1:24 Tables 14 and 19 (PDF)", "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "2024 Building Code Compendium, Volume 1, digital copy (Sentence 9.3.1.1.(4) and Article 9.3.1.9; states it is not an official copy)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Ontario.ca, Ontario's Building Code (Compendium access page)", "url": "https://www.ontario.ca/page/ontarios-building-code", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "how-much-winter-each-city-gets",
+      "heading": "How much winter each city gets",
+      "paragraphs": [
+        "The table gives the Environment and Climate Change Canada normals our city pages use, with the station and the normals period named, because neither is the same everywhere. Hamilton's station sits on the Mountain at Mount Hope, 237.7 m up, and reads colder than the lower city. Toronto City is the downtown station and is markedly milder than Pearson, which is the better guide for Mississauga, Brampton and north Etobicoke. Oakville's station publishes no count of days below minus 10 °C and no frost-free period, so those two cells borrow Pearson. Niagara Falls has no 1991 to 2020 normals and its frost-free figure rests on four years of record, so Welland is shown as the cross-check.",
+        "Read across the rows and the working season is plain. Every station has 44 to 55 days a year when the daily high never rises above 0 °C, and 22 to 36 days when the low drops below minus 10 °C. Those are the days when hoarding and heat are not optional. The monthly means at the Toronto City, Oakville and Hamilton stations sit below 5 °C from December through March, with November close to it, so most pours in those months are cold-weather pours by definition. The frost-free period, 151 to 208 days, is the window with no overnight frost at all. We use the normals to plan and the 24-hour forecast on the day to decide."
+      ],
+      "table": {
+        "caption": "ECCC Canadian Climate Normals as recorded in our city data modules; day counts are per year, rounded to one decimal; station and normals period in the first column",
+        "columns": ["Station (normals period)", "January mean, °C", "Days with high at or below 0 °C", "Days with low below minus 10 °C", "Frost-free period, days"],
+        "rows": [
+          ["Toronto City, downtown (1991 to 2020)", "-3.5", "43.9", "22.0", "208 (19-year record)"],
+          ["Toronto Pearson, Mississauga border (1991 to 2020)", "-5.0", "49.5", "34.2", "174"],
+          ["Oakville Southeast WPCP (1981 to 2010)", "-4.7", "44.0", "34.2 (Pearson)", "174 (Pearson)"],
+          ["Hamilton A, Mount Hope (1991 to 2020)", "-5.3", "54.8", "35.7", "164"],
+          ["Niagara Falls NPCSH (1981 to 2010)", "-4.1", "45.9", "25.0", "188 (4-year record)"],
+          ["Welland (1981 to 2010)", "-4.3", "47.0", "30.5", "151"]
+        ]
+      },
+      "sources": [
+        { "name": "ECCC Canadian Climate Normals 1991-2020, Toronto City", "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1", "retrieved_at": "2026-09-25" },
+        { "name": "ECCC Canadian Climate Normals 1991-2020, Toronto Pearson International Airport", "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1", "retrieved_at": "2026-09-25" },
+        { "name": "ECCC Canadian Climate Normals 1981-2010, Oakville Southeast WPCP", "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=oakville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615N745&dispBack=1", "retrieved_at": "2026-09-25" },
+        { "name": "ECCC Canadian Climate Normals 1991-2020, Hamilton A", "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1", "retrieved_at": "2026-09-25" },
+        { "name": "ECCC Canadian Climate Normals 1981-2010, Niagara Falls NPCSH (GeoMet climate-normals API)", "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=NIAGARA%20FALLS%20NPCSH&f=json&limit=3000", "retrieved_at": "2026-09-25" },
+        { "name": "ECCC Canadian Climate Normals 1981-2010, Welland (GeoMet climate-normals API)", "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "the-concrete-warm-at-the-truck",
+      "heading": "The concrete: warm at the truck, warm through the cure",
+      "paragraphs": [
+        "The ready-mix supplier heats the mix so that it arrives inside the Table 14 band, and the order says so: winter mix, placing temperature 10 °C or more, delivery timed to the pump. The CSA clause on heating water and aggregate was not in the material we could retrieve, because the standard is paywalled and Concrete Ontario's sheet does not reproduce it, so we do not print a mix-water temperature here. What we can print is the check we make: the concrete temperature is read at discharge, and a load outside the band is not placed. Cold slows the set. The manufacturer's manual we cite gives a setting time of 3 to 7 hours and says it depends on temperature.",
+        "Once placed, the concrete is kept at 10 °C or more for the whole curing period. CSA A23.1's Table 19 defines basic curing as 3 days at 10 °C or above, or the time needed to reach 40 percent of the specified strength; additional curing is 7 days in total at 10 °C or above and 70 percent. Article 9.3.1.9 of the Code puts the same floor at 72 hours. Before that, the concrete must reach 7 MPa to resist early frost damage. In a foam form in January that means the top of the wall and every exposed edge stay covered for days, not hours, and we build that wait into the schedule."
+      ],
+      "sources": [
+        { "name": "Concrete Ontario (RMCAO), Cold Weather Concreting technical specification, reproducing CSA A23.1:24 Tables 14 and 19 (PDF)", "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "2024 Building Code Compendium, Volume 1, digital copy (Article 9.3.1.9)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Nudura installation manual, section 6, installation procedures (setting time, checklists) (PDF)", "url": "https://www.nudura.com/media/Nudura/Resources/Installation%20Manual/Sections/60-installation-procedures-to-nudura-installation-manual.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "what-the-foam-does-and-leaves-open",
+      "heading": "What the foam form does, and what it leaves open",
+      "paragraphs": [
+        "The form is two panels of expanded polystyrene, so the concrete cures between insulation on both faces. Nudura's installation manual says its EPS forms give 'excellent thermal protection in the cold weather and extreme heat' while the concrete cures, and that they control moisture loss inside the concrete, which the manual calls the major cause of cracking. Concrete Alberta, an industry association, goes further and says the technology lets a builder avoid cold weather delays or added costs for hoarding. We would put it more carefully. The foam looks after the two faces of the wall. It does nothing for the parts of the pour it does not touch.",
+        "Three things stay exposed. The top of the wall is open concrete, and the manufacturer's post-pour checklist asks whether it has been protected from freezing. The footing is bare concrete with no foam on it unless the footing forms are insulated. The window and door bucks, the brace lines and any beam pocket break the foam. The same manufacturer's pre-pour checklist asks whether the form cavity was protected against snow and ice the night before the pour, and whether all snow and ice was removed from the forms if it was not. The system on your job is named on the quote; whichever it is, CSA A23.1 asks the same of every form.",
+        "CSA's preparation rules are short. Remove all snow and ice from surfaces before placing concrete. Do not use calcium chloride or de-icing salts to de-ice the forms. Do not place concrete on surfaces that would lower its temperature below the Table 14 limits, which rules out a frozen footing under a wall pour. Protection is by heated enclosures, coverings, insulation or a suitable combination, and the sheet notes that corners, edges and thin sections are the most vulnerable and need extra protection. The table below sets out what the form covers on our pours and what we cover ourselves."
+      ],
+      "table": {
+        "caption": "What protects each part of a winter ICF pour; the form does the faces and we do the rest",
+        "columns": ["Part of the pour", "Covered by the foam form", "What we do in cold weather"],
+        "rows": [
+          ["Wall faces", "Yes, EPS on both sides (manufacturer statement)", "Keep the forms free of snow and ice before the pour; nothing extra after it"],
+          ["Top of the wall", "No, open concrete", "Insulated blankets or a covered, heated top after screeding, checked against the manufacturer's post-pour item"],
+          ["Footing", "No, bare concrete unless the footing forms are insulated", "Placed on an unfrozen base, then blankets or a heated enclosure until 7 MPa"],
+          ["Bucks, brace lines, beam pockets", "Partly; each one breaks the foam", "Blanketed with the top of the wall"],
+          ["Floor of the excavation", "No", "Kept from freezing through construction (Article 9.12.1.3), with blankets or heat as the site needs"],
+          ["The mix itself", "No", "Heated by the ready-mix supplier to arrive at 10 °C or more (Table 14)"]
+        ]
+      },
+      "sources": [
+        { "name": "Nudura installation manual, section 6, installation procedures and pre-pour and post-pour checklists (PDF)", "url": "https://www.nudura.com/media/Nudura/Resources/Installation%20Manual/Sections/60-installation-procedures-to-nudura-installation-manual.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Concrete Ontario (RMCAO), Cold Weather Concreting technical specification (preparation and protection)", "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Concrete Alberta, Insulating Concrete Forms (build any time of year)", "url": "https://www.concretealberta.ca/construction/icfs", "retrieved_at": "2026-09-25" },
+        { "name": "2024 Building Code Compendium, Volume 1, digital copy (Article 9.12.1.3)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "the-footing-and-the-frost-line",
+      "heading": "The footing still goes below the frost line",
+      "paragraphs": [
+        "Winter changes nothing about depth. The Code's Table 9.12.2.2 sets a minimum foundation depth of 1.2 m for a heated basement on clay or soils not clearly defined, and 1.2 m but not less than the depth of frost penetration where there is no heated space. Geotechnical reports filed with Hamilton for a site in Ancaster and with Burlington for a site on Brant Street both use 1.2 m as the design frost depth. Sentence 9.12.2.2.(5) allows less where local experience or a specific design supports it, and Article 9.12.2.1 requires the excavation to reach undisturbed soil. The footing is inspected at that depth before it is poured, so it has to be visible and unfrozen when the inspector arrives.",
+        "One sentence in that article matters more for ICF than for a bare concrete wall. Sentence 9.12.2.2.(2) says a foundation insulated in a way that reduces heat flow to the soil beneath the footings takes the depth for a foundation with no heated space. Whether a full-height foam wall on an uninsulated footing triggers it is the designer's call. On clay the two columns of the table both read 1.2 m, the second adding not less than the depth of frost penetration, and the filed reports put that depth at 1.2 m as well. So the answer in our area is 1.2 m either way, and the drawings say which column was used.",
+        "The excavation itself has two Code rules that bite in winter. Article 9.12.1.2 says excavations shall be kept free of standing water. Article 9.12.1.3 says the bottom of excavations shall be kept from freezing throughout the entire construction period. That second sentence is why a winter pour is a hoarding-and-heat exercise and not just a concrete order. Soil that freezes and thaws under a footing has moved, and Article 9.12.2.1 wants footings on undisturbed soil. Where a site cannot meet 9.12.1.3, because the hole will sit open for weeks or the lot has no power for heat, we do not pour."
+      ],
+      "sources": [
+        { "name": "2024 Building Code Compendium, Volume 1, digital copy (Articles 9.12.1.2, 9.12.1.3, 9.12.2.1 and Table 9.12.2.2)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Preliminary geotechnical investigation, 159 to 163 Sulphur Springs Road, Ancaster (PDF on hamilton.ca)", "url": "https://www.hamilton.ca/sites/default/files/2025-01/ube-application-159-163-sulphur-prelim-geotechnical-investigation.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Preliminary geotechnical investigation, 789 to 795 Brant Street, Burlington (PDF on burlington.ca)", "url": "https://www.burlington.ca/en/news/resources/Current-Development-Projects/Ward-2/Camarro-Developments-Inc.-%E2%80%93-789-795-Brant-Street/Supporting-Documents/Geotechnical%20Investigation.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "inspections-and-backfill-in-winter",
+      "heading": "Inspections and backfill in winter",
+      "paragraphs": [
+        "The inspection sequence does not change in winter, but the site has to be ready for it in worse conditions. Toronto, Hamilton, Mississauga and Oakville all inspect footing forms and rebar before concrete is placed and the foundation again before backfill; Hamilton checks the drainage layer, weeping tile and stone cover at that visit, and Oakville asks for a site survey with the top-of-foundation elevation before the pre-backfill visit on new construction. Inspections are booked one to two business days out depending on the municipality, and the base has to stay unfrozen and visible until the inspector has seen it. That is a day or two of cover and heat on the footing before a single truck arrives.",
+        "Backfill has its own Code articles. Article 9.12.3.1 says backfill is placed to avoid damaging the foundation wall, the drainage tile, the drainage layer, externally applied insulation, waterproofing and dampproofing, all of which an ICF wall has. Article 9.12.3.3 keeps deleterious debris and boulders larger than 250 mm out of the 600 mm nearest the wall. Article 9.12.3.4 says a wall that has not reached its required concrete strength is braced or laterally supported before backfilling, and in cold weather that strength comes later than the calendar suggests. None of these names frozen soil. Keeping frozen lumps out of the backfill against the wall is our practice, not a clause we can cite."
+      ],
+      "list": [
+        "Snow cleared from the footing forms and rebar the morning of the inspection",
+        "Footing base kept covered or heated until the inspector has seen it",
+        "Ramp and hole edge safe to walk in the cold",
+        "Drainage layer, weeping tile and stone cover visible at the pre-backfill visit",
+        "Top-of-foundation survey submitted first where the municipality asks for it"
+      ],
+      "sources": [
+        { "name": "City of Toronto, When to Call for Inspection of Small Buildings", "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/building-inspections/about-building-inspections/when-to-call-for-inspection-of-small-buildings/", "retrieved_at": "2026-09-25" },
+        { "name": "City of Hamilton, Building Inspections", "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections", "retrieved_at": "2026-09-25" },
+        { "name": "City of Mississauga, Book a building permit inspection", "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/book-a-building-permit-inspection/", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Oakville, Building Inspection Scheduling Process", "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/", "retrieved_at": "2026-09-25" },
+        { "name": "2024 Building Code Compendium, Volume 1, digital copy (Articles 9.12.3.1 to 9.12.3.4)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "what-winter-adds-and-when-to-wait",
+      "heading": "What winter adds, and when to wait for spring",
+      "paragraphs": [
+        "Winter adds time and it can add cost, and we say so before the quote rather than after. The added time is the cure: 10 °C for at least 3 days and 7 MPa before frost, under blankets or heat, before the next trade can touch the wall. The added cost is the hoarding, the heat, the winter mix and the labour of clearing snow. One Ontario ICF contractor, based in Simcoe County, publishes a 20 to 30 percent premium on concrete during the shoulder seasons; that is its figure, not ours. Our own prices are illustrative ranges from our price table, firm price after a site review, and they sit with the poured-concrete comparison rather than being repeated here.",
+        "A winter pour is the wrong call in three situations. First, when the excavation cannot be kept from freezing: Article 9.12.1.3 requires it, and if the hole will sit open for weeks between the dig, the inspection and the pour, the cost of keeping the base thawed climbs past what the schedule is worth. Second, when hoarding and heat cost more than the schedule gain; a foundation that is not holding up a spring framing date does not need to be poured in January. Third, when the site has no power or water for heating: heaters, heated water and a warm enclosure all need supply, and a rural lot without service is a spring job.",
+        "ICF is also not the better choice for every winter job. A short unheated garage or shed wall gains little from foam on both faces, and a conventional formed wall poured in April, with no hoarding and no heated mix, can cost less than an ICF wall hoarded and heated in January. Where the wall is outside the Part 9 limits, more than 2 storeys or a floor-to-floor height over 3 m, the engineer's design governs and may not favour ICF at all. We would rather tell you to wait, or to build something else, than pour a wall that fights the weather and the budget at the same time."
+      ],
+      "sources": [
+        { "name": "ICFpro.ca, ICF foundation cost vs poured concrete Ontario (winter pours and shoulder-season premium)", "url": "https://icfpro.ca/icf-foundation-cost-vs-poured-concrete-ontario/", "retrieved_at": "2026-09-25" },
+        { "name": "Concrete Ontario (RMCAO), Cold Weather Concreting technical specification (curing and 7 MPa)", "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "2024 Building Code Compendium, Volume 1, digital copy (Article 9.12.1.3 and Part 9 ICF limits)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "GTA ICF price table (data/prices.json), shown on the ICF vs poured concrete guide", "url": "/guides/icf-vs-poured-concrete-ontario/", "retrieved_at": "2026-09-25" }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can you pour ICF walls in winter in Ontario?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. CSA A23.1 treats any pour with a forecast below 5 °C in the next 24 hours as cold-weather work. The concrete arrives at 10 to 32 °C for a wall under 300 mm thick, is kept at 10 °C or more through curing, and reaches 7 MPa before it can see frost."
+    },
+    {
+      "q": "What temperature does the concrete have to be for an ICF pour?",
+      "a": "CSA A23.1 Table 14 sets it by section thickness. A section under 0.3 m thick, which covers a 6 in or 8 in ICF core, arrives between 10 and 32 °C; a section from 0.3 m to under 1 m arrives between 10 and 30 °C. The ready-mix supplier heats the mix to get there. The CSA clause on heating water and aggregate was not in the material we could retrieve, so we do not print a mix-water temperature."
+    },
+    {
+      "q": "Does the foam insulate the concrete enough on its own?",
+      "a": "It insulates the two faces of the wall. Nudura's installation manual says its EPS forms give thermal protection in cold weather and control moisture loss while the concrete cures. The top of the wall, the footing, the bucks and the floor of the excavation are not inside the foam, so they get blankets, cover or heat. The system on your job is named on the quote and its documentation goes in the permit package."
+    },
+    {
+      "q": "How long does a winter ICF wall need before backfill?",
+      "a": "Until it has the strength the drawings call for, or it is braced first. CSA A23.1 basic curing is 3 days at 10 °C or above, or 40 percent of specified strength, and the concrete needs 7 MPa before it sees frost. Article 9.12.3.4 of the Building Code says a wall that has not reached its required concrete strength is braced or laterally supported before backfilling. In cold weather that strength arrives later, so backfill waits or the bracing stays in."
+    },
+    {
+      "q": "Does the footing still need to be 1.2 m deep in winter?",
+      "a": "Yes. Table 9.12.2.2 of the Building Code sets 1.2 m as the minimum foundation depth for a heated basement on clay or soils not clearly defined, and geotechnical reports filed with Hamilton and Burlington use 1.2 m as the design frost depth. Winter adds a second rule: Article 9.12.1.3 says the bottom of the excavation is kept from freezing throughout the entire construction period, so the footing base is covered or heated until the concrete is in."
+    },
+    {
+      "q": "Does a winter ICF pour cost more?",
+      "a": "It can. The winter mix, the hoarding, the heat and the longer cure are real costs, and we list them in the quote rather than fold them into the price per square foot. One Ontario contractor publishes a 20 to 30 percent premium on concrete in the shoulder seasons; that is its figure, not ours. Our ranges are illustrative, from our price table, with the firm price after a site review; the poured-concrete comparison guide sets them out."
+    }
+  ],
+  "related": [
+    { "href": "/guides/icf-vs-poured-concrete-ontario/", "label": "ICF against poured concrete in Ontario: our illustrative ranges, the comparison and the wall calculator" },
+    { "href": "/foundations-and-basements/", "label": "ICF foundations and basements: how we build them" },
+    { "href": "/full-height-walls/", "label": "Full-height ICF walls for additions and garages" },
+    { "href": "/locations/oakville/", "label": "Building in Oakville: the ground, the Town's permit process and the season" }
+  ],
+  "cta": {
+    "heading": "Planning a pour between November and March",
+    "body": "Send us the drawings or a sketch, the lot address and the date you need the wall ready. We will tell you whether a winter pour makes sense on that site, what the protection involves, and give you a written quote after a site review, winter items listed separately."
+  },
+  "reviewed": "2026-09-25"
+}

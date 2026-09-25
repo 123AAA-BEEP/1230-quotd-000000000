@@ -1,0 +1,199 @@
+{
+  "slug": "brampton",
+  "title": "ICF foundations in Brampton | GTA ICF",
+  "description": "ICF foundations in Brampton: the clay till under most of the city, the City's 2026 permit fees and inspection stages, when we pour, and illustrative costs.",
+  "h1": "ICF foundations and walls in Brampton",
+  "kicker": "Peel Region",
+  "answer": [
+    "Most of Brampton sits on one sheet of clay-to-silt till. Eight of the eleven points sampled on the Ontario Geological Survey map, from downtown and Mount Pleasant to Heart Lake, Springdale and central Bramalea, fall in the same till polygon. The exceptions are silt and clay at Bramalea GO and Castlemore, and sand and gravel at Churchville on the Credit River. Shale underlies all of it, red Queenston in the west and centre and grey Georgian Bay in the east, and no sampled point shows it near the surface.",
+    "The permit for a new house or an addition, and the foundation with it, comes from the City of Brampton Building Division through the Brampton Building & Business Portal. The City's own permit drawings put concrete at least 4 ft 0 in (1.2 m) below grade on undisturbed soil, with the soil's bearing capacity established before construction, and its inspectors see the footing forms at the ready-to-pour stage and the foundation again, dampproofed and drained, before backfill."
+  ],
+  "tiles": [
+    {
+      "value": "1.2 m",
+      "label": "minimum below grade, printed as 4 ft 0 in, for concrete on the City of Brampton's own permit drawings",
+      "source": {
+        "name": "City of Brampton permit package drawings, revised February 2026",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homeowners/Deck%20Package.pdf"
+      }
+    },
+    {
+      "value": "8 of 11",
+      "label": "survey points across Brampton that sit on the same clay-to-silt till sheet",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, point queries",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json"
+      }
+    },
+    {
+      "value": "174 days",
+      "label": "frost-free period, April 27 to October 20, at Toronto Pearson, the nearest climate station",
+      "source": {
+        "name": "Environment Canada normals 1991 to 2020, Toronto Pearson",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      }
+    },
+    {
+      "value": "52.6%",
+      "label": "of Brampton's 182,472 occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, Census Profile 2021, Brampton",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Brampton&DGUIDlist=2021A00053521010&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What the excavator finds in Brampton",
+    "paragraphs": [
+      "The Ontario Geological Survey maps nearly all of Brampton as one body of clay-to-silt till, derived from shale and older lake sediments. Downtown around the Four Corners and Brampton GO, Mount Pleasant, Snelgrove, Heart Lake, Springdale and central Bramalea all return the same unit. For a full-depth dig that is predictable ground: the cut stands for the days the hole is open, and the City's own drawings rate till at 200 kPa for bearing. Its weakness is drainage. Water that reaches the bottom of the dig stays there, and the same drawings halve the allowable bearing pressure while water sits at or near the footing level.",
+      "The east side is different. At Bramalea GO, near Steeles Avenue East and Bramalea Road, and up in Castlemore, the map changes to fine-textured glaciolacustrine deposits: silt and clay with minor sand and gravel, with beds of gritty flow till. Silt and clay hold water, so the footing bears on material the engineer wants to see undisturbed and dry, and the pour follows the dig closely. Churchville, on the Credit River in the southwest, is the one coarse spot at any query point: sand and gravel of an old foreshore, which drains freely and runs when it is cut, so the excavation faces are laid back or shored.",
+      "Shale is the bedrock everywhere, in two formations, and no point query found it at the surface. West and centre, including downtown, Heart Lake, Springdale, Mount Pleasant, Churchville and Snelgrove, the rock is the Queenston Formation: red shale and siltstone with limestone and sandstone interbeds. East of a contact that runs north to south between downtown and Bramalea it is the Georgian Bay Formation: grey-green to dark grey shale with fossil-rich limestone bands. The point queries do not say how far down it lies, and the City's drawings list clay shale at 300 kPa without a depth, so we plan Brampton digs as soil excavations, with rock the exception."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries, one coordinate per area, retrieved 25 September 2026; Snelgrove is an extra sample point rather than a service area. A query describes the map unit at one coordinate, not your lot. The footing design comes from the site, and from a geotechnical report where the reviewer asks for one.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown Brampton (Four Corners)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Bramalea (City Centre)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Bramalea GO (Steeles and Bramalea Road)",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Heart Lake",
+        "surface": "Clay-to-silt till (conservation area point)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Springdale",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Castlemore",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Mount Pleasant",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Churchville",
+        "surface": "Sand and gravel (old foreshore, Credit River)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Snelgrove",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits and inspections in Brampton",
+    "authority_short": "the City of Brampton",
+    "paragraphs": [
+      "The foundation is permitted as part of the house or the addition it carries, by the City of Brampton Building Division, and the whole file lives on the Brampton Building & Business Portal: application, drawings, inspection bookings and document requests, with no separate paper Permit to Construct or Demolish form. The 2026 fee schedule, revised in February, prices a custom detached, semi-detached, town or row house at $17.80 per square metre of gross floor area with a $2,004.10 minimum; the City's custom home package takes a $1,500 deposit per dwelling unit at application, counts the floor area without the garage or an unfinished basement, and collects the balance at issuance. A heated addition is $12.03 per square metre and an unheated one $9.34, above a $326.21 residential minimum, and a detached garage is a $326.21 flat fee.",
+      "Brampton publishes no ICF checklist, but its custom home package says where an ICF wall shows up: a full wall section from foundation to roof for the standard, look-out and walk-out basement conditions, and floor plans that name the energy efficiency compliance option, an SB-12 prescriptive package or the performance path. The section is where the core width, the reinforcing and the foam thickness are drawn. The Building Code asks the ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC report; the system itself is named on the quote and its documentation goes in the package. Schedule 1 designer information, the applicable law checklist, a legible legal survey signed by the surveyor and, for a new house, a grading and drainage plan by an engineer or surveyor approved by Development Engineering complete the set. Where any part of the lot is regulated by Credit Valley Conservation or the Toronto and Region Conservation Authority, that approval comes before the City can issue the permit. We prepare the package with you.",
+      "Inspections start with the footing, at the ready stage for pouring concrete: excavation complete, forms in place on undisturbed soil free of standing water, mud and loose earth. Brampton lists no separate pre-pour wall inspection; it asks instead that final subgrade and wall reinforcement reports, where required, reach the inspector before the framing inspection, so for an ICF wall, whose steel is out of sight once the concrete is in, we have the reinforcing checked and recorded before the pour. Backfill is inspected with the dampproofing applied and the weeping tile under at least 6 inches of stone, and the weeping tile connection is checked at the same visit where the lot is pre-sewered. Additions run footings, then plumbing and duct rough-ins and backfill, then framing. Portal bookings for the next business day close at 3 pm, can be made up to five days ahead, and take place between 8 am and 4 pm on weekdays; we book every stage and are on site for it."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Brampton Building Division, through the Brampton Building & Business Portal (application, drawings, inspection bookings and document requests)",
+        "url": "https://bramptonbbp.brampton.ca/citizenportal/"
+      },
+      {
+        "label": "Fees, 2026 schedule",
+        "value": "Custom detached, semi-detached, town or row house $17.80 per m² of gross floor area, minimum $2,004.10; heated addition $12.03 per m², unheated $9.34 per m²; residential minimum and detached garage $326.21",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Fees/Permit%20Fee%20Schedule.pdf"
+      },
+      {
+        "label": "Deposit, floor area and drawings",
+        "value": "$1,500 deposit per dwelling unit at application, balance at issuance; the billed floor area excludes the garage and an unfinished basement; a full wall section from foundation to roof and the energy compliance option on the plans",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homebuilders/Custom%20Built%20Home%20Package.pdf"
+      },
+      {
+        "label": "Footing inspection",
+        "value": "Ready stage for pouring concrete: excavation complete, forms in place on undisturbed soil free of standing water, mud and loose earth",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Inspections/Pages/HomeBuilderInspections.aspx"
+      },
+      {
+        "label": "Backfill inspection",
+        "value": "Dampproofing applied and weeping tile covered with at least 6 inches of stone; weeping tile connection checked at the same visit where pre-sewered; wall reinforcement reports, where required, to the inspector before framing",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Inspections/Pages/HomeBuilderInspections.aspx"
+      },
+      {
+        "label": "Review time and outside approvals",
+        "value": "Home renovation applications reviewed within 10 business days under the Standard Permit Application Service; where the lot is regulated by Credit Valley Conservation or the TRCA, that authority's approval comes before the permit",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/homeowners/Pages/welcome.aspx"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Pour season and frost in Brampton",
+    "paragraphs": [
+      "Brampton has no climate normals station of its own, so the figures come from Toronto Pearson, about 11 km southeast of downtown and a little lower, which means Brampton's winters are unlikely to be milder than these. Pearson's 1991 to 2020 record gives a frost-free period of 174 days, April 27 to October 20, a January daily average of −5.0 °C with a daily minimum of −8.9 °C, 34 days a year below −10 °C and just under 50 days when the temperature never rises above freezing. Roughly 81 days a year cross 0 °C between night and day, and 114.5 cm of snow falls in an average year. From the first fall frost to the last spring one, a pour is planned as cold-weather work under CSA A23.1, which applies whenever the forecast dips below 5 °C within 24 hours of placing.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. What that means on site: the mix arrives at 10 °C or more, the wall is held at 10 °C or more through the curing period, the concrete reaches 7 MPa before it is allowed to freeze, and snow and ice are cleared from the form cavity before the pump starts. The foam form insulates the length of the wall, but the footing and the open top of the wall are covered separately. The season does not move the footing: the City's drawings put concrete a minimum of 4 ft 0 in below grade on undisturbed soil, and the Building Code's minimum for a heated basement on clay is the same 1.2 m."
+    ],
+    "facts": [
+      {
+        "label": "Frost-free period",
+        "value": "174 days, April 27 to October 20, Toronto Pearson, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Winter at Pearson",
+        "value": "January daily average −5.0 °C and daily minimum −8.9 °C; 34 days a year below −10 °C; 49.5 days that never rise above 0 °C; 114.5 cm of snow",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Footing depth on City drawings",
+        "value": "Concrete a minimum of 4 ft 0 in (1.2 m) below grade, bearing on undisturbed soil, City of Brampton permit drawings revised February 2026",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homeowners/Deck%20Package.pdf"
+      },
+      {
+        "label": "Cold-weather rule",
+        "value": "CSA A23.1 as reproduced by Concrete Ontario: a forecast below 5 °C within 24 hours, concrete placed at 10 °C or more, kept at 10 °C or more while curing, 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Rock rarely moves a Brampton quote; no survey point put shale near the surface. Water does: the till and the east-side silt and clay hold it, and the City halves the allowable bearing while water sits at footing level, so dewatering and the drainage layer are priced in. Shoring in Churchville's sand and gravel, pump reach on tight infill lots and a short travel line complete the list.",
+  "faqs": [
+    {
+      "q": "What is the ground like when you dig a full basement in Brampton?",
+      "a": "At eight of the eleven points sampled on the Ontario Geological Survey map, downtown, Mount Pleasant, Springdale, Heart Lake and central Bramalea among them, the excavator is in clay-to-silt till. It holds a vertical cut while the hole is open, the City's drawings rate it at 200 kPa, and it drains slowly. Near Bramalea GO and in Castlemore the map turns to finer silt and clay; Churchville on the Credit is sand and gravel. We confirm on site, because a point query describes the map, not your lot."
+    },
+    {
+      "q": "Does clay till mean a wet basement?",
+      "a": "It means water that gets into the excavation stays until it is pumped, and that clay backfill against the wall holds water against it. The Code requires the outside of every below-grade wall to be dampproofed, or waterproofed where there is hydrostatic pressure, and drained at the footing, with a drainage layer where the insulation runs more than 900 mm below grade, which every ICF wall does. Brampton's backfill inspection checks the dampproofing and the stone over the weeping tile before the trench closes."
+    },
+    {
+      "q": "What does the City of Brampton want in an ICF foundation permit?",
+      "a": "The usual house or addition permit, filed on the Brampton Building & Business Portal with Schedule 1 designer information, the applicable law checklist, a signed survey and, for a new house, an approved grading plan. The custom home package asks for a full wall section from foundation to roof and the energy compliance option on the plans; that is where the ICF wall is drawn, and the system's documentation goes in with it, named on the quote. Brampton has no ICF-specific checklist. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in a Brampton winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Pearson records 34 days a year below −10 °C and nearly 50 that never rise above freezing; on those the mix arrives at 10 °C or more, the wall is held at 10 °C or more through the cure, and the concrete reaches 7 MPa before frost. The foam insulates the wall; the footing and the open top are covered."
+    },
+    {
+      "q": "How deep does the footing go in Brampton?",
+      "a": "The City of Brampton's own permit drawings print a minimum of 4 ft 0 in below grade, about 1.2 m, for concrete bearing on undisturbed soil, with the bearing capacity determined before construction, and the Building Code's Table 9.12.2.2 sets the same 1.2 m for a heated basement on clay or soils not clearly defined. While water sits at the base of the dig the City halves the allowable bearing pressure, which is why the footing inspection wants the excavation free of standing water."
+    },
+    {
+      "q": "We are in Castlemore on a larger lot. Is anything different?",
+      "a": "The ground is. Castlemore's query point returns fine-textured glaciolacustrine silt and clay rather than the till under most of the city, over Georgian Bay grey shale, so the footing sits on material the engineer wants undisturbed and dry. The West Humber River runs through the west of the district; a lot inside an area regulated by a conservation authority needs that approval before the City can issue the permit. The estate lots, some around 2 acres, usually give the pump truck room."
+    }
+  ],
+  "related_note": "We also build in Mississauga, Caledon and Halton Hills."
+}
