@@ -18,7 +18,20 @@ Node 20 or newer.
 
 ## Deploy (Vercel)
 
-Create a Vercel project from this repository and set **Root Directory** to `sites/gtahelicalpiles`. Framework preset: Astro. The `@astrojs/vercel` adapter builds the static pages and the one serverless function (`/api/lead`).
+Two ways. Either works; the second needs no Git integration for the first deploy.
+
+**Dashboard.** Add New → Project → import this repository. Set **Root Directory** to `sites/gtahelicalpiles`, framework Astro (detected), add the environment variables below, Deploy. Then Settings → Domains: `gtahelicalpiles.ca` with `www` redirecting to it. Production branch: whichever branch you merge this folder into (`main` once merged; `claude/beautiful-newton-ofc7mi` until then).
+
+**Script.** With a token from vercel.com/account/tokens:
+
+```
+cd sites/gtahelicalpiles
+VERCEL_TOKEN=... LEAD_INBOX=you@example.com RESEND_API_KEY=... node scripts/vercel-setup.mjs
+```
+
+It creates the project with the right root directory, stores the env vars you pass, and ships the current build as a production deployment. Afterwards connect the repo under Settings → Git so pushes deploy automatically.
+
+The `@astrojs/vercel` adapter builds the static pages and the one serverless function (`/api/lead`). `vercel.json` pins trailing slashes and cache headers for fonts.
 
 Environment variables (Vercel project settings, never committed):
 
