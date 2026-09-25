@@ -39,7 +39,7 @@
       "name": "Caledon",
       "slug": "caledon",
       "region": "Peel Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Oakville",
@@ -63,7 +63,7 @@
       "name": "Halton Hills",
       "slug": "halton-hills",
       "region": "Halton Region",
-      "live": false,
+      "live": true,
       "note": "Georgetown and Acton"
     },
     {
@@ -83,13 +83,13 @@
       "name": "Grimsby",
       "slug": "grimsby",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Lincoln",
       "slug": "lincoln",
       "region": "Niagara Region",
-      "live": false,
+      "live": true,
       "note": "Beamsville and Vineland"
     },
     {
@@ -102,44 +102,44 @@
       "name": "Thorold",
       "slug": "thorold",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Niagara Falls",
       "slug": "niagara-falls",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Niagara-on-the-Lake",
       "slug": "niagara-on-the-lake",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Welland",
       "slug": "welland",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Pelham",
       "slug": "pelham",
       "region": "Niagara Region",
-      "live": false,
+      "live": true,
       "note": "Fonthill"
     },
     {
       "name": "Port Colborne",
       "slug": "port-colborne",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Fort Erie",
       "slug": "fort-erie",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "West Lincoln",
