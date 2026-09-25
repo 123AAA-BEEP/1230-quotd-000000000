@@ -1,0 +1,204 @@
+{
+  "slug": "guelph",
+  "title": "Helical pile installation in Guelph | GTA Helical Piles",
+  "description": "Helical piles in Guelph: the 0.6 m permit threshold, the 4 ft footing depth on the City's drawings, sand, till and dolostone under each area, winter work and costs.",
+  "h1": "Helical pile installation in Guelph",
+  "kicker": "Wellington County",
+  "answer": [
+    "Guelph requires a building permit for any deck whose walking surface is 24 inches (0.6 m) or higher above finished grade at any point. There is no area test and no separate rule for attached decks. The City's deck sample drawings show a concrete pier footing at least 4 ft (1.2 m) below grade on undisturbed, competent bearing soil, and the section drawing you submit has to state the type, depth and size of every footing, foundation or pier. A helical pile is submitted as that footing type.",
+    "The ground is not what the lakeshore cities have. Ontario Geological Survey point queries across Guelph return glacial meltwater sand and gravel under most of the built-up city, sandy silt till in the south-west and at Clairfields, and Silurian dolostone bedrock at every point, with none of the shale found under Oakville, Mississauga and Toronto. Granular ground and silty till take installation torque differently, so the layout is designed from the soil at the lot rather than from a city-wide assumption."
+  ],
+  "tiles": [
+    {
+      "value": "0.6 m",
+      "label": "deck height above grade that needs a permit in Guelph (24 in, no area test)",
+      "source": {
+        "name": "City of Guelph, Decks and Porches",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/decks-and-porches/"
+      }
+    },
+    {
+      "value": "$160",
+      "label": "City of Guelph deck permit flat fee from July 1, 2026",
+      "source": {
+        "name": "Building By-law (2015)-19985, Schedule A",
+        "url": "https://guelph.ca/wp-content/uploads/Building-By-law-2015-19985-as-amended-by-2026-21241-AODA.pdf"
+      }
+    },
+    {
+      "value": "149 days",
+      "label": "average frost-free period, Kitchener/Waterloo, May 8 to October 5, 1991 to 2020",
+      "source": {
+        "name": "Environment Canada normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0"
+      }
+    },
+    {
+      "value": "Dolostone",
+      "label": "Silurian Guelph Formation bedrock at ten of eleven survey points; Amabel Formation at Pineridge",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-80.25599,43.54594&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Guelph",
+    "paragraphs": [
+      "Guelph sits where the Speed and Eramosa rivers meet, on a city built over several drumlins and buried waterways. The Ontario Geological Survey's surficial map (MRD 128-REV) returns glaciofluvial deposits, the river and delta sand and gravel left by meltwater, at six of the eleven points we queried: Downtown at Wyndham and Macdonell, Old University, Exhibition Park, Westminster Woods, Pineridge and the Eramosa River at Victoria Road. A stone-poor sandy silt to silty sand till shows at the city's reference coordinate, Kortright Hills and Clairfields. Riverside Park on the Speed returns ice-contact stratified sand and gravel, and the Grange Hill East point, which falls in a creek corridor, returns modern alluvium.",
+      "Bedrock beneath all of it is Silurian dolostone. The OGS Paleozoic map (MRD 219) names the Guelph Formation, a tan to brown, fine to medium crystalline dolostone, at ten of the eleven points, and the Amabel Formation, thick-bedded and crinoidal, at Pineridge. There is no Queenston or Georgian Bay shale here, which sets Guelph apart from the lakeshore cities we serve. What we could not retrieve is how deep that rock lies. No query point returned bedrock at or near the surface and no drift-thickness dataset was checked, so we treat shallow rock as a possibility to test for on site rather than a fact to plan around.",
+      "In practice that gives us three ground conditions. In the sand and gravel that covers most of the older city, the helix is sized for coarse material, and the evaluation report for some pile systems asks for a load test on top of the torque record where a granular layer is thick. In the sandy silt till of Kortright Hills and Clairfields, a standard pile is driven to the torque the engineer specifies. In the alluvium of the creek corridors, and on lots with engineered fill in the newer subdivisions, the City's own drawings point to the beam and post detail, and the engineer confirms bearing before we drive. Installation torque is recorded on every pile."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one point per area, retrieved 25 September 2026. Several points were placed at well-known intersections rather than on official neighbourhood boundaries, and the Grange Hill East point falls in a creek corridor. They describe the area, not your lot; the engineer's layout comes from the site.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown (Wyndham and Macdonell)",
+        "surface": "Glaciofluvial sand and gravel (river and delta deposits)",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Old University",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Exhibition Park",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Kortright Hills",
+        "surface": "Sandy silt to silty sand till",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Westminster Woods",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Clairfields",
+        "surface": "Sandy silt to silty sand till",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Grange Hill East",
+        "surface": "Modern alluvium (query point in a creek corridor)",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Pineridge",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Amabel Formation dolostone"
+      },
+      {
+        "name": "Riverside Park (Speed River)",
+        "surface": "Ice-contact stratified sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Eramosa River at Victoria Road",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Guelph",
+    "authority_short": "the City of Guelph",
+    "paragraphs": [
+      "Guelph's permit office is Building Services at 1 Carden Street, with a Permit Services team that reviews applications and an Inspections Services team that inspects. Everything runs through the Guelph Permit and Application System (GPAS): you register, upload the drawings and forms as PDFs, pay, track status and book inspections there. The deck fee is a flat $160 under Schedule A of the Building By-law from July 1, 2026, rising to $165 on January 1, 2027; it covers plan review and the required inspections and is not subject to HST. The City's stated review target is 10 business days, counted from the day fees are paid.",
+      "The deck page asks the elevation and section drawing to show the height of the deck and the type, depth and size of footings, foundation or piers. That line is where a helical pile enters the application. Guelph's deck pages and sample drawings say nothing about helical piles, CCMC reports or an engineer's layout, which is a gap rather than a permission, so we prepare the package with you to the standard Oakville and Hamilton require: the manufacturer's CCMC evaluation report and an engineer's pile layout for the soil, then, after the install, the engineer-sealed certificate of conformity built from our per-pile torque record. Ask Building Services to confirm what they want to see before you submit.",
+      "Two notes from the City's post and beam drawing matter for piles. Footings within 4 ft of a house wall, and lots containing engineered fill, are referred to the beam and post connection detail, and the drawing shows a saddle connection so the deck can be raised later in case of settlement. The City lists mandatory inspections on the issued permit rather than publishing a deck sequence; book them through GPAS with 48 hours' notice. Once a permit is issued, construction must start within one year."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Any portion of the walking surface is 24 in (0.6 m) or higher above finished grade; also structural changes, guard replacement and concrete porches",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/decks-and-porches/"
+      },
+      {
+        "label": "Drawing must show",
+        "value": "Type, depth and size of footings, foundation or piers on the elevation/section drawing; no helical-specific text is published",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/decks-and-porches/"
+      },
+      {
+        "label": "Footing depth on the City's drawings",
+        "value": "Minimum 4 ft (1.2 m) below grade on undisturbed, competent bearing soil",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Plans-elevation-drawings-and-stair-detail.pdf"
+      },
+      {
+        "label": "Deck permit fee",
+        "value": "$160 flat from July 1, 2026; $165 from January 1, 2027; not subject to HST",
+        "url": "https://guelph.ca/wp-content/uploads/Building-By-law-2015-19985-as-amended-by-2026-21241-AODA.pdf"
+      },
+      {
+        "label": "Review time",
+        "value": "About 10 business days once fees are paid",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/"
+      },
+      {
+        "label": "Apply and book inspections",
+        "value": "Guelph Permit and Application System (GPAS); 48 hours' notice for inspections",
+        "url": "https://gpas.guelph.ca/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Guelph",
+    "paragraphs": [
+      "Environment Canada has no climate station named Guelph in either normals period, so the closest full record is the Kitchener/Waterloo composite about 15 km to the south-west. Its 1991 to 2020 normals give a January mean of −6.3 °C, 43.8 days a year below −10 °C and 61.4 days when the daily high stays at or below freezing. The frost-free period averages 149 days, May 8 to October 5. Guelph is inland and higher than the lakeshore GTA stations, and the record shows it: Toronto Pearson counts 34.2 days below −10 °C. Elora, 17 km to the north-west, is colder again at −6.9 °C in January.",
+      "None of that stops the work. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. What the cold does govern is how deep the helix has to go. The City's deck drawings set 4 ft (1.2 m) below grade for a conventional footing, and a pile's helix is placed below that and below the depth frost reaches, with the engineer setting the actual depth from the soil at your lot. We did not retrieve the Ontario Building Code clause itself, so on this page we cite the City's drawing and not a provincial figure."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−6.3 °C, Kitchener/Waterloo composite, 1991 to 2020 (no ECCC station in Guelph)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "43.8 a year, Kitchener/Waterloo; 47.1 at Elora RCS",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=elora&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6142286&dispBack=0"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "149 days, May 8 to October 5, Kitchener/Waterloo, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0"
+      },
+      {
+        "label": "Footing depth on the City's drawings",
+        "value": "4 ft (1.2 m) below grade; Ontario Building Code clause not retrieved",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Post-and-Beam-Connections.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Guelph is the far end of our western run, so travel and a mobilization minimum appear as their own line in the quote. The sand and gravel under the older city can call for a larger helix, and if the dolostone proves shallow at your lot, pre-drilling. Alluvium in the creek corridors and engineered fill in newer subdivisions can add depth. All of it is priced in the written quote before we start.",
+  "faqs": [
+    {
+      "q": "Does my Guelph deck need a permit?",
+      "a": "Yes if any part of the walking surface is 24 inches (0.6 m) or higher above finished grade at any point. Guelph applies no area test and does not treat attached decks differently on its deck page. Replacing guards on a deck that high, structural changes to it, and concrete porches also need a permit. Zoning rules apply either way. Applications go through GPAS."
+    },
+    {
+      "q": "What does the City of Guelph ask for with helical piles?",
+      "a": "Nothing specific. The deck page and the sample drawings never mention helical piles, CCMC reports or engineered pile layouts; they require the section drawing to show the type, depth and size of footings, foundation or piers. We prepare the package with you to the fuller standard Oakville and Hamilton use, the manufacturer's CCMC report and an engineer's layout, and the engineer-sealed certificate of conformity follows the install. Confirm with Building Services before submitting."
+    },
+    {
+      "q": "What is the ground like under Guelph?",
+      "a": "Mostly sand and gravel laid down by glacial meltwater, from Downtown and Exhibition Park through Old University to Westminster Woods and Pineridge, with sandy silt till in Kortright Hills and Clairfields and alluvium in the creek corridors. Bedrock at every survey point is Silurian dolostone, not shale. How deep the rock lies is not cited here, so we check for it on site."
+    },
+    {
+      "q": "Can you install in a Guelph winter?",
+      "a": "Yes. The nearest full climate record, Kitchener/Waterloo, shows 61.4 days a year when the high never passes freezing and 43.8 days below −10 °C, more than Toronto Pearson. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so the pile carries load as soon as it is driven."
+    },
+    {
+      "q": "What does a Guelph deck permit cost?",
+      "a": "A flat $160 under the Building By-law fee schedule that took effect July 1, 2026, rising to $165 on January 1, 2027. The fee covers plan review and the required inspections and is not subject to HST. Review is about 10 business days once it is paid. Engineering for the pile layout is a separate cost and is shown in our quote."
+    },
+    {
+      "q": "I am in Kortright Hills or Clairfields. Is the till different to build on?",
+      "a": "The survey points there return a stone-poor sandy silt to silty sand till over Guelph Formation dolostone, rather than the meltwater sand and gravel under most of the older city. Till of that texture usually takes a standard pile driven to the engineer's specified torque. Both points were placed at intersections, not on official boundaries, so we confirm the soil at your lot before the layout is drawn."
+    }
+  ],
+  "related_note": "We also serve Milton, Burlington and Hamilton on the same western run out of Guelph."
+}

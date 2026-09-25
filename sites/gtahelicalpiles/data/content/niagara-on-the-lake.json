@@ -1,0 +1,194 @@
+{
+  "slug": "niagara-on-the-lake",
+  "title": "Helical piles in Niagara-on-the-Lake | GTA Helical Piles",
+  "description": "Helical piles in Niagara-on-the-Lake: the Town's 24-inch deck rule, silt and clay over Queenston shale, the frost season and what moves the price.",
+  "h1": "Helical pile installation in Niagara-on-the-Lake",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Niagara-on-the-Lake requires a building permit for a deck more than 24 inches (about 600 mm) above grade, and applications are accepted only online through Cloudpermit. The Town publishes no deck guide or sample drawing, so there is no municipal footing depth to point to. Its Building Services page asks for scaled drawings, a site plan and, where the construction calls for it, engineered drawings. For a pile job the engineer's layout does the work a standard detail would do elsewhere.",
+    "The ground is mostly fine-grained. The Ontario Geological Survey maps glaciolacustrine silt and clay under the Old Town, St. Davids, Queenston and Glendale, clay-to-silt till under Virgil, and one sand and gravel band between the Old Town and the Niagara River. Bedrock across the lake plain is the red shale of the Queenston Formation, named for the village here, and it turns to Lockport dolostone on the escarpment brow south-east of Glendale. None of the survey points returned a depth to rock."
+  ],
+  "tiles": [
+    {
+      "value": "24 in",
+      "label": "deck height above grade at which the Town requires a permit",
+      "source": {
+        "name": "Town of Niagara-on-the-Lake Building Services",
+        "url": "https://www.notl.com/building-services"
+      }
+    },
+    {
+      "value": "$230",
+      "label": "uncovered deck permit under 300 sq ft, 2026 fee schedule",
+      "source": {
+        "name": "2026 Building User Fees & Service Charges",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf"
+      }
+    },
+    {
+      "value": "179 days",
+      "label": "average frost-free period, St. Catharines A, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      }
+    },
+    {
+      "value": "79.2%",
+      "label": "of occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, Census Profile 2021",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Niagara-on-the-Lake&DGUIDlist=2021A00053526047&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Niagara-on-the-Lake",
+    "paragraphs": [
+      "Thirteen point queries against the Ontario Geological Survey's surficial map came back with only three answers. Under the Old Town, St. Davids, Queenston and the Niagara College end of Glendale the surface unit is fine-textured glaciolacustrine deposits: silt and clay with minor sand and gravel. Under Virgil and the upland around Niagara Stone Road it is clay-to-silt till derived from those same lake sediments or from shale. Between the Old Town and the Niagara River one point returned coarse-textured glaciolacustrine sand and gravel. Texture can change within a few hundred metres of Queen Street, so one lot's reading does not transfer to the next.",
+      "Bedrock is the Queenston Formation at every lake-plain point the survey answered: red shale and siltstone with minor green shale and calcareous siltstone, sandstone and limestone interbeds. The formation takes its name from Queenston, where the Niagara River began cutting into the escarpment and the red rock is exposed in the gorge face. Two kilometres south-east of the Niagara College campus, on the escarpment brow, the map switches to the Silurian Lockport Formation, dolostone and limestone, so the Glendale area straddles two rock types. The two queries at the river mouth returned no bedrock polygon; the Queenston attribution for the Old Town rests on the point 500 metres south.",
+      "What that means for a pile. In silt and clay and in the Virgil till, the pile is turned to the torque the engineer set and installation torque is recorded on every pile. In the sand and gravel band between the Old Town and the river the helix is sized for coarse ground, and some pile systems' evaluation reports require a load test where granular material is thick. On the escarpment brow, dolostone may stop the pile early; because no query returned a depth to rock, early refusal is a site condition we check for rather than a mapped one."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one or two coordinates per sub-area, retrieved 25 September 2026. The survey gives no depth to rock and no bearing values; the engineer's layout is based on your lot, not the map.",
+    "neighbourhoods": [
+      {
+        "name": "Old Town (Queen Street)",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Not mapped at the query point"
+      },
+      {
+        "name": "Between the Old Town and the Niagara River",
+        "surface": "Glaciolacustrine sand and gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Virgil",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Niagara Stone Road upland",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "St. Davids",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Queenston",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glendale (Niagara College)",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Escarpment brow south-east of Glendale",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Lockport, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Niagara-on-the-Lake",
+    "authority_short": "the Town of Niagara-on-the-Lake",
+    "paragraphs": [
+      "Building Services at the Town of Niagara-on-the-Lake, which its own page also calls the Building Department, takes applications only through Cloudpermit. The 2026 fee schedule charges $230 for an uncovered deck under 300 square feet and $263 above that; a covered deck or porch is billed at $0.61 per square foot, the minimum permit fee is $230, and starting work before the permit is issued doubles the fee. There is no published review time. The page describes the sequence instead: zoning review, plans examination against the Ontario Building Code, a Building Inspector's review, then issue by the Chief Building Official. Incomplete drawings are not accepted.",
+      "Nothing the Town publishes mentions helical piles, CCMC reports or footing depth. What the page does require is drawings to scale by the owner or a designer with a BCIN number, a site plan, and engineered drawings where the construction calls for them. A pile layout is exactly that, so we prepare the package with you: the engineer's layout for the soil at your lot and the manufacturer's evaluation report, and after the install an engineer-sealed certificate of conformity built from the torque record. Inspection stages are only set out when the permit is issued, so confirm with Building Services at 905-468-3266 ext. 259 which stages apply to piles.",
+      "In the Old Town, a second permit can sit on top of the first. Properties inside the Queen-Picton Heritage Conservation District, the Town's only Part V district, approved in 1986, and individually designated Part IV properties need Council consent and a heritage permit for exterior alterations. Ask Heritage Planning whether your deck counts before the pile layout is drawn."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck greater than 24 inches (2 ft) above grade; any other structure of 108 sq ft (10 m²) or more",
+        "url": "https://www.notl.com/building-services"
+      },
+      {
+        "label": "Apply",
+        "value": "Online only, through the Town's Cloudpermit portal",
+        "url": "https://ca.cloudpermit.com/login"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$230 uncovered deck under 300 sq ft; $263 over 300 sq ft; covered deck or porch $0.61 per sq ft",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf"
+      },
+      {
+        "label": "Minimum and re-inspection",
+        "value": "$230 minimum permit fee; $145 re-inspection; fee doubles if work starts before the permit is issued",
+        "url": "https://www.notl.com/sites/default/files/2026-04/2026%20Building%20Fees.pdf"
+      },
+      {
+        "label": "Inspections",
+        "value": "Stages are outlined when the permit is issued; each inspection is requested before the next stage of work",
+        "url": "https://www.notl.com/building-services"
+      },
+      {
+        "label": "Heritage, Old Town",
+        "value": "Queen-Picton Heritage Conservation District (Part V, 1986) and Part IV properties: Council consent and a heritage permit for exterior alterations",
+        "url": "https://www.notl.com/heritage-planning"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Niagara-on-the-Lake",
+    "paragraphs": [
+      "No station inside Niagara-on-the-Lake publishes temperature normals; Port Weller, the closest, has only a few years of extremes. The nearest full record is St. Catharines A, about 10 km south-west, for 1981 to 2010. January averages −3.8 °C there, with a mean daily low of −7.4 °C. The air drops below −10 °C on about 27 days a year, and 46 days never rise above freezing. Set against 127 days with a low at or below zero, that leaves roughly 81 days a year when the surface thaws by day and refreezes at night. Vineland Station and Port Colborne, the two cross-check stations, show slightly milder figures.",
+      "The frost-free period at St. Catharines A averages 179 days, April 24 to October 21. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. What the pile needs is not a warm month but a helix seated below the depth frost reaches. The Town publishes no design frost depth for decks, so the engineer sets the pile depth for the site rather than to a municipal figure, and the layout states what that depth is."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−3.8 °C, St. Catharines A, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "26.7 a year, St. Catharines A, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Days never above 0 °C",
+        "value": "46 a year, St. Catharines A, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "179 days, April 24 to October 21, St. Catharines A, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "Niagara-on-the-Lake is among the farther points in our service area from the western GTA, so travel and a mobilization minimum appear as their own lines in the quote. Beyond that, the lake-plain silt and clay is routine; the sand and gravel band by the Niagara River can call for a larger helix, dolostone on the escarpment brow can mean pre-drilling, and narrow Old Town lots take longer to set up.",
+  "faqs": [
+    {
+      "q": "Does my deck in Niagara-on-the-Lake need a permit?",
+      "a": "Yes if it stands more than 24 inches, about 600 mm, above grade. The Town's Building Services page states the line two ways, greater than 24 inches and 2 feet or greater, so a deck right at that height should be checked with the department rather than assumed exempt. There is no separate area threshold for decks; the 108 square foot rule applies to other structures. Applications go through Cloudpermit only."
+    },
+    {
+      "q": "What does the Town ask for when the deck sits on helical piles?",
+      "a": "Nothing specific to piles is published. The general rule is drawings to scale by the owner or a BCIN designer, a site plan, and engineered drawings where the construction warrants them. We prepare the package with you: the engineer's pile layout for your soil, the manufacturer's evaluation report, and after installation the engineer-sealed certificate of conformity from the torque record. Inspection stages are given only when the permit is issued, so we confirm them with Building Services before the crew books."
+    },
+    {
+      "q": "What is the ground like under Niagara-on-the-Lake?",
+      "a": "Mostly fine-grained. Provincial mapping shows glaciolacustrine silt and clay under the Old Town, St. Davids, Queenston and Glendale, clay-to-silt till under Virgil, and a single sand and gravel band between the Old Town and the Niagara River. Beneath that sits red Queenston shale under the lake plain and Lockport dolostone on the escarpment brow. The survey gives no depth to rock, so we treat early refusal as something to check on site."
+    },
+    {
+      "q": "Can you install in a Niagara winter?",
+      "a": "Yes. St. Catharines A, the nearest station with a full record, counts about 46 days a year that stay below freezing and about 27 that drop under −10 °C. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. The frost-free window itself runs from late April to late October, and the pile does not wait for it."
+    },
+    {
+      "q": "What does the deck permit cost in 2026?",
+      "a": "$230 for an uncovered deck under 300 square feet and $263 for a larger one, from the Town's 2026 Building User Fees schedule. A covered deck or porch is $0.61 per square foot. The minimum fee for any permit is $230, a re-inspection is $145, and work started before the permit is issued doubles the fee. The Town's 2026 brochure still prints the 2024 figures; the schedule governs. Engineering for the pile layout is separate."
+    },
+    {
+      "q": "My house is in the Old Town. Is there anything extra?",
+      "a": "Possibly two things. If the property is inside the Queen-Picton Heritage Conservation District, the Town's only Part V district, approved in 1986, or is individually designated under Part IV, exterior alterations need Council consent and a heritage permit as well as the building permit. And the ground shifts quickly there: silt and clay on Queen Street, sand and gravel toward the river. Both are settled before the layout is drawn."
+    }
+  ],
+  "related_note": "We also serve St. Catharines, Niagara Falls and Lincoln along the same corridor."
+}
