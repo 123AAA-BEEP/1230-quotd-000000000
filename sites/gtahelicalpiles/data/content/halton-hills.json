@@ -1,0 +1,199 @@
+{
+  "slug": "halton-hills",
+  "title": "Helical pile installation in Halton Hills | GTA Helical Piles",
+  "description": "Helical piles in Halton Hills: the Town's deck permit rules, Georgetown till and shale against Acton dolostone, winter work and illustrative per-pile costs.",
+  "h1": "Helical pile installation in Halton Hills",
+  "kicker": "Halton Region",
+  "answer": [
+    "A deck in Halton Hills needs a building permit from the Town's Building Services when it is both more than 600 mm above grade and larger than 10 square metres; a deck at or below 600 mm is exempt at any size. The Town's Residential Deck Guide draws poured concrete piers a minimum of 1200 mm below grade on undisturbed soil and asks that the soil's bearing capacity be determined before construction. The guide says nothing about helical piles, so we confirm the submission with Building Services first.",
+    "The ground splits at the Niagara Escarpment, which crosses the middle of the town. On the Georgetown side the provincial survey maps clay-to-silt till and pockets of sand and gravel over red Queenston shale, with river alluvium at Glen Williams, Norval and Hornby. On the Acton side, including Limehouse and Ballinafad, it maps ice-contact sand and gravel and sandy till over Amabel dolostone, the rock that was once burned for lime at Limehouse."
+  ],
+  "tiles": [
+    {
+      "value": "600 mm",
+      "label": "height above grade at which a deck over 10 m² needs a Town permit",
+      "source": {
+        "name": "Halton Hills Residential Deck Guide",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf"
+      }
+    },
+    {
+      "value": "$288.45",
+      "label": "Town of Halton Hills flat-rate deck permit fee, 2026 schedule",
+      "source": {
+        "name": "Building Services Fees 2026",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en"
+      }
+    },
+    {
+      "value": "−6.3 °C",
+      "label": "January mean at the Georgetown climate station, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada normals, Georgetown WWTP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      }
+    },
+    {
+      "value": "Shale and dolostone",
+      "label": "red Queenston shale under Georgetown, Amabel dolostone under Acton and Limehouse",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Halton Hills",
+    "paragraphs": [
+      "East of the Escarpment, the plain that carries Georgetown is mapped by the Ontario Geological Survey as clay-to-silt till, which Wikipedia's account of the town's geology names as Halton Till and describes as generally more than 15 metres thick over the Queenston shale. The contact with coarser ground is close by: a query point 350 metres from our Georgetown reference returns gravelly glaciofluvial deposits instead of till, and south Georgetown and Stewarttown return sandy or gravelly river deposits. Along the Credit River, Glen Williams, Norval and Hornby sit on alluvium, which the survey notes may contain organic remains.",
+      "West of the Escarpment the picture changes. At Acton and Limehouse the survey maps ice-contact stratified sand and gravel, and towards Ballinafad a stone-poor sandy silt till, all of it over the Amabel Formation, a grey to blue-grey Silurian dolostone. Wikipedia describes this side as the hummocky ridges of the Horseshoe Moraines, records lime quarrying at Limehouse and Acton, and notes several areas of thin drift south of Georgetown. Depth to rock was not part of our survey queries, so where Escarpment rock may be close to the surface we treat early refusal as a condition to confirm on site.",
+      "For the pile layout that gives three cases. In the Georgetown till, a standard pile advanced to the torque the engineer specifies. In the sand and gravel of south Georgetown, Stewarttown, Acton and Limehouse, a helix sized for coarse ground, and where a granular layer is thick the engineer may call for a load test. On the Credit River flats, the Town's deck guide halves the allowable soil bearing where water sits at or near the bottom of a footing, so water table and organics set the depth there. The guide's bearing table runs from 40 kPa for loose sand or gravel to 500 kPa for sound rock."
+    ],
+    "table_note": "Surface unit and bedrock from Ontario Geological Survey point queries, one per community, retrieved 25 September 2026. The Stewarttown, Hornby, Ballinafad and south Georgetown points are approximate locations rather than surveyed centres. The engineer's layout comes from your lot, not from this table.",
+    "neighbourhoods": [
+      {
+        "name": "Georgetown, centre",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Georgetown, south",
+        "surface": "Gravelly glaciofluvial sand and gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glen Williams",
+        "surface": "Modern alluvium, Credit River valley",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Norval",
+        "surface": "Older alluvium, Credit River valley",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Stewarttown",
+        "surface": "Sandy glaciofluvial deposits",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Hornby",
+        "surface": "Modern alluvium",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Acton",
+        "surface": "Ice-contact stratified sand and gravel",
+        "bedrock": "Amabel, grey dolostone"
+      },
+      {
+        "name": "Limehouse",
+        "surface": "Ice-contact stratified sand and gravel",
+        "bedrock": "Amabel, grey dolostone"
+      },
+      {
+        "name": "Ballinafad",
+        "surface": "Stone-poor sandy silt till",
+        "bedrock": "Amabel, grey dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Halton Hills",
+    "authority_short": "the Town of Halton Hills",
+    "paragraphs": [
+      "Building Services issues the permit, and applications go in online through the Town's form portal with the fee paid at submission. On the 2026 schedule a deck, porch or roof over a deck is a flat $288.45, the minimum fee for a small residential permit is $263.37 and includes plans review and two inspections, and work started without a permit is charged 1.5 times the fee. For deck projects the Town also collects a residential damage deposit of $720.34 before the permit is issued; Engineering Services releases it once the permit is closed.",
+      "The Residential Deck Guide does not mention helical or screw piles, CCMC or BMEC. It requires the drawings to show the location, depth, size, spacing and type of foundations, and it accepts designs from the homeowner, a BCIN designer, a professional engineer or an architect. We prepare the package with you on the same basis the neighbouring Halton towns use, the manufacturer's evaluation report and an engineer-determined pile layout for the soil, and we confirm with Building Services at 905-873-2600 ext. 2925 that nothing more is wanted before the file goes in. Installation torque is recorded on every pile, and after the install the engineer issues an engineer-sealed certificate of conformity from that record.",
+      "The Town publishes no fixed review time. If anything is missing you get a review report, resubmit through a link, and then download the permit placard and stamped plans. Inspection requests made before 3 p.m. are booked for the next day; footings and foundations is the first stage on the Town's list, and we ask the inspector in advance how that stage is handled for piles rather than poured piers."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck is both more than 600 mm above grade and over 10 m²; no permit at or below 600 mm, whatever the size",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "The deck guide is silent on piles; drawings must show foundation type, depth, size and spacing. Confirm with Building Services, ext. 2925",
+        "url": "https://www.haltonhills.ca/work/building-engineering"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$288.45 flat rate; $263.37 minimum small-residential fee; 1.5 times the fee if work starts without a permit",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en"
+      },
+      {
+        "label": "Damage deposit",
+        "value": "$720.34 residential flat rate, collected before a deck permit issues and released after close-out",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en"
+      },
+      {
+        "label": "Inspection booking",
+        "value": "Requests before 3 p.m. are booked for the next day; footings and foundations is the first listed stage",
+        "url": "https://www.haltonhills.ca/town-hall/applications-forms-resources/building-services/inspectionbookingrequest"
+      },
+      {
+        "label": "Apply",
+        "value": "Online through Building Services; counter on the lower floor of Town Hall, 1 Halton Hills Drive, 8:30 a.m. to 4:30 p.m.",
+        "url": "https://forms.haltonhills.ca/Building-Services/Building-Permit-Application"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Halton Hills",
+    "paragraphs": [
+      "The Town has one Environment Canada station, at the Georgetown wastewater plant, and its 1981 to 2010 record is colder than the lakeshore towns: a January mean of −6.3 °C, a January daily minimum of −10.9 °C, 46 days a year below −10 °C, and 135.9 cm of snow. About 56 days a year never rise above freezing, while 169 nights drop to 0 °C or lower, so on roughly 113 days the ground surface freezes and thaws between night and day. Wikipedia places the town in two plant hardiness zones, 5a north of the Escarpment around Acton and 5b south of it. Georgetown is too short a record for a published frost-free average; its 12-year table gives a 50 percent chance of 121 frost-free days or fewer, May 19 to September 24, against 174 days at Toronto Pearson.",
+      "We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so the shorter Georgetown season is not a reason to wait. What matters is that the helix bears below the depth frost reaches. The Town's deck guide draws its piers 1.2 m below grade, and that is the depth a Halton Hills pile design is compared against. We did not find a local geotechnical report stating a design frost penetration for the town, so the engineer sets the pile depth from the site rather than from a published figure."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−6.3 °C, Georgetown WWTP, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "46 a year, Georgetown WWTP, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "174 days, April 27 to October 20, Toronto Pearson, 1991 to 2020; Georgetown's 12-year table gives a 50 percent chance of 121 days or fewer",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Pier depth on the Town's drawings",
+        "value": "1.2 m (1200 mm) below grade on undisturbed soil, Residential Deck Guide, OBC 2024 details",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Halton Hills is spread out. Acton, Ballinafad and the rural concessions are a longer drive than Georgetown, and travel appears on the quote as its own line. Above the Escarpment and in the thin-drift ground south of Georgetown, rock near the surface can mean pre-drilling. On the Credit River flats a high water table can push the design deeper. All of it is priced in writing before we start.",
+  "faqs": [
+    {
+      "q": "When does a deck in Halton Hills need a permit?",
+      "a": "When it is both more than 600 mm (24 in) above grade and more than 10 square metres. A deck at or below 600 mm does not need one at any size, according to the Town's Residential Deck Guide. Applications go in online through Building Services, the fee is paid at submission, and a residential damage deposit is collected before the permit is issued."
+    },
+    {
+      "q": "What will the Town want from us for helical piles?",
+      "a": "The honest answer is that the Halton Hills deck guide does not say. It asks for drawings showing the type, depth, size and spacing of the foundations and accepts designs from a homeowner, a BCIN designer, an engineer or an architect. We prepare the package with you the way Oakville and Hamilton require it, the manufacturer's evaluation report plus an engineer's pile layout, and confirm with Building Services before submitting. After the install the engineer issues an engineer-sealed certificate of conformity."
+    },
+    {
+      "q": "Is Halton Hills on shale or on rock?",
+      "a": "Both, depending on which side of the Escarpment you are on. Georgetown, Glen Williams, Norval, Stewarttown and Hornby sit over red Queenston shale, generally under a thick blanket of till. Acton, Limehouse and Ballinafad sit over Amabel dolostone, the hard grey rock of the Escarpment itself. The survey did not give depth to rock, so we confirm that on site before the layout is fixed."
+    },
+    {
+      "q": "Can you install in a Georgetown winter?",
+      "a": "Yes. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. Georgetown's station records about 56 days a year that never get above freezing and 46 nights below −10 °C, so the crust can be substantial in January and February. Once through it, the pile is driven to torque the same way as in June."
+    },
+    {
+      "q": "How much is the Halton Hills deck permit?",
+      "a": "The 2026 Building Services schedule lists a deck, porch or roof over a deck at a flat $288.45, and the minimum fee for a small residential permit at $263.37, which covers plans review and two inspections. The Town also holds a $720.34 residential damage deposit until the permit is closed. Starting without a permit costs 1.5 times the fee. Engineering for the pile layout is separate."
+    },
+    {
+      "q": "My house is in Acton. Is the ground different from Georgetown?",
+      "a": "Yes. Acton is above the Escarpment, and the provincial survey maps ice-contact sand and gravel there over Amabel dolostone, not the till over shale that Georgetown sits on. Coarse ground needs a helix sized for it, and Escarpment rock can be close enough to stop a pile early, in which case we pre-drill and the engineer confirms capacity from the torque record. It is also a longer drive, which the quote shows."
+    }
+  ],
+  "related_note": "We also work in Milton, Brampton and Guelph, the three service areas that border Halton Hills."
+}

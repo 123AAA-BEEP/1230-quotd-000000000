@@ -1,0 +1,214 @@
+{
+  "slug": "st-catharines",
+  "title": "Helical pile installation in St. Catharines | GTA Helical Piles",
+  "description": "Helical piles in St. Catharines: the 0.6 m deck permit threshold, per-square-foot fees, sand, till and Queenston shale by neighbourhood, and winter installs.",
+  "h1": "Helical pile installation in St. Catharines",
+  "kicker": "Niagara Region",
+  "answer": [
+    "St. Catharines asks for a building permit on any deck more than 0.6 m (24 in) above grade and on every covered deck or porch, whatever its area. Uncovered decks below that height need no permit but still have to meet the zoning by-law. The City's online deck guide does not print a footing depth; its Typical Wood Deck Cross Section drawing is handed out at the Planning and Building Services counter at 50 Church Street, so we confirm the depth there before the layout is drawn.",
+    "The ground is why a St. Catharines pile layout is its own job. The Ontario Geological Survey maps coarse sand and gravel under Downtown, Port Dalhousie and Grantham, clay-to-silt till under Merritton, Glenridge, Martindale and Vansickle, and fine silt and clay above the escarpment at Brock University. Red Queenston shale lies under all of it below the escarpment; the map returns Lockport dolostone only at the brow. The engineer sets pile depth and size from the site, not from a city-wide rule."
+  ],
+  "tiles": [
+    {
+      "value": "0.6 m",
+      "label": "deck height above grade at which the City requires a permit",
+      "source": {
+        "name": "City of St. Catharines, Do I need a Building Permit",
+        "url": "https://www.stcatharines.ca/applications-licences-and-permits/building-permits/do-i-need-a-building-permit/"
+      }
+    },
+    {
+      "value": "$1.64 / sq ft",
+      "label": "deck permit fee in 2026, minimum permit fee $185.80",
+      "source": {
+        "name": "Schedule of Rates and Fees, By-law 2023-137",
+        "url": "https://stcatharines-ca.govstack.com/media/bnqafmk2/rates-and-fees-by-law-2023-137.pdf"
+      }
+    },
+    {
+      "value": "Apr 24 to Oct 21",
+      "label": "average frost-free period, St. Catharines A, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      }
+    },
+    {
+      "value": "71%",
+      "label": "of St. Catharines homes were built before 1981, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, Census Profile 2021",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=St.%20Catharines&DGUIDlist=2021A00053526053&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under St. Catharines",
+    "paragraphs": [
+      "Below the Niagara Escarpment, St. Catharines is a lake plain, and the surficial map reads as a set of bands. The Ontario Geological Survey's point queries return coarse glaciolacustrine sand and gravel at the city's reference point, Downtown, Port Dalhousie and Grantham. South and west of the core, at Merritton, Glenridge on Cliff Road, Martindale and Vansickle, the same map returns clay-to-silt till, a denser and wetter material. Up on the escarpment at Brock University and the former Glenridge Quarry it returns fine glaciolacustrine silt and clay. That is three soils in one city, and each carries a helix differently.",
+      "Bedrock is simpler than the soils. Every query point below the escarpment, from Port Dalhousie down to Merritton and east to the Welland Canal, sits on the Queenston Formation, an Upper Ordovician red shale with siltstone and thin limestone interbeds. The exception is the escarpment brow, where Brock University and the Glenridge Quarry return Silurian Lockport dolostone, a much harder rock. None of the twelve points returned bedrock at or near the surface, so the map flags no thin cover anywhere we queried, but it also does not say how deep the shale lies. Depth to rock is confirmed on site, not assumed.",
+      "Two mapped deposits deserve mention. The Welland Canal corridor on the east side is mapped as man-made fill from canal building and urban development, and the Twelve Mile Creek valley floor is modern alluvium of mixed clay, silt, sand and gravel. Both are variable, and a pile there is driven to the engineer's torque target rather than to a depth borrowed from a nearby street. In the sand and gravel of the old lake plain the helix is sized for coarse ground; in the till belt a standard pile is screwed to torque. Installation torque is recorded on every pile so the engineer can confirm capacity from the record."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one coordinate per area, retrieved 25 September 2026. A point describes the area around it, not your lot. Western Hill has no query point of its own and is shown between its neighbours.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown",
+        "surface": "Coarse sand and gravel, littoral deposits",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Port Dalhousie",
+        "surface": "Coarse sand and gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Grantham",
+        "surface": "Coarse sand and gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Merritton",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glenridge (Cliff Road)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Martindale",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vansickle",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Western Hill",
+        "surface": "No query point; between till at Vansickle and alluvium in the creek valley",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Twelve Mile Creek valley",
+        "surface": "Modern alluvium: clay, silt, sand and gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Welland Canal corridor (east side)",
+        "surface": "Man-made fill and urban deposits",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glenridge Quarry (escarpment)",
+        "surface": "Fine silt and clay",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Brock University (escarpment brow)",
+        "surface": "Fine silt and clay",
+        "bedrock": "Lockport, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in St. Catharines",
+    "authority_short": "the City of St. Catharines",
+    "paragraphs": [
+      "Building permits in St. Catharines are issued by the City's Planning and Building Services, not by Niagara Region, which is the upper tier. The threshold is height alone: an uncovered deck less than 0.6 m above grade needs no permit, anything higher does, and a covered deck or porch needs one at any height. Detached decks and residential alterations can be filed through the City's online applications portal; other submissions go by mail, courier, the James Street drop box or in person at 50 Church Street, with two sets of drawings.",
+      "The deck and porch guide wants the drawings to show pier size, depth and spacing along with footing details. It has no helical pile wording, but it says manufacturer's drawings, specifications or engineering details may be required for systems not described in the Ontario Building Code, and that is the route a pile submission takes: the manufacturer's evaluation report and an engineer's pile layout. We prepare the package with you. After the install the engineer issues an engineer-sealed certificate of conformity from the torque record, and that goes to the City.",
+      "Fees are charged by area, not per deck. The 2024 to 2026 schedule under By-law 2023-137 sets decks, open porches and balconies at $1.64 per square foot in 2026, with a minimum building permit fee of $185.80. Inspections need 48 hours notice; the deck guide lists one before any concrete is poured for piers or footings, one at framing and a final. Ask Planning and Building Services which of those applies when there is no concrete to pour. The City publishes no review time for decks, only that the Building Code timelines start once the application has been reviewed."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck more than 0.6 m (24 in) above grade, or any covered deck or porch; no area threshold",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "Manufacturer's drawings, specifications or engineering details may be required for systems not described in the Building Code",
+        "url": "https://media-003-ca.cdn.govstack.com/stcatharines-ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$1.64 per square foot ($1.60 in 2025); minimum building permit fee $185.80",
+        "url": "https://stcatharines-ca.govstack.com/media/bnqafmk2/rates-and-fees-by-law-2023-137.pdf"
+      },
+      {
+        "label": "Inspections",
+        "value": "Before pouring concrete for piers or footings, framing, final; 48 hours notice, 905-688-5601 ext. 1667",
+        "url": "https://www.stcatharines.ca/building-and-renovating/inspections/building-inspections/"
+      },
+      {
+        "label": "Review time",
+        "value": "Not published; Building Code timelines start after the City has reviewed the application",
+        "url": "https://www.stcatharines.ca/building-and-renovating/applying-for-a-building-permit/"
+      },
+      {
+        "label": "Apply",
+        "value": "City of St. Catharines Online Applications portal (detached decks, residential alterations); 905-688-5601 ext. 1660",
+        "url": "https://build.stcatharines.ca/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in St. Catharines",
+    "paragraphs": [
+      "St. Catharines is the mildest place we work. The St. Catharines A station, about 7 km north-east of the city centre, averages −3.8 °C in January over the 1981 to 2010 normals, with 26.7 days a year below −10 °C and 46 days when the daily high stays at or below freezing. Hamilton A, 55 km west, runs −5.3 °C in January with 35.7 days below −10 °C. About 81 days a year the air here crosses 0 °C between night and day, the freeze-thaw cycling that works on a shallow concrete pier. Vineland Station, 13 km west, tells the same story in its 1991 to 2020 record: −3.3 °C in January.",
+      "The average frost-free period at St. Catharines A is 179 days, April 24 to October 21, two weeks longer than Hamilton's 164. That window is for gardens, not piles. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. Frost depth is what governs the design, and the City does not print one online, so the design frost depth for a St. Catharines lot comes from the engineer and from the counter drawing at Planning and Building Services rather than from a figure borrowed from Halton."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−3.8 °C, St. Catharines A, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "26.7 a year, St. Catharines A; 35.7 at Hamilton A, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "179 days, April 24 to October 21, St. Catharines A, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Annual snowfall",
+        "value": "137.1 cm, St. Catharines A, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "St. Catharines is the far end of our service area, so travel from the western GTA is a line in the quote and small jobs carry a minimum charge. Fill along the Welland Canal and alluvium in the Twelve Mile Creek valley can mean longer piles or extensions; the lake-plain sand and gravel usually calls for a bigger helix. Rear-yard access on an older lot is checked before we quote.",
+  "faqs": [
+    {
+      "q": "Does my St. Catharines deck need a permit?",
+      "a": "It depends on height, not size. An uncovered deck less than 0.6 m (24 in) above grade needs no building permit, though it still has to meet the zoning by-law. Anything higher needs one, and a covered deck or porch needs one at any height. Detached decks can be filed through the City's online applications portal; attached decks go in by mail, drop box or in person at 50 Church Street."
+    },
+    {
+      "q": "What does the City want from you for helical piles?",
+      "a": "The deck guide has no helical pile clause of its own. It asks the drawings to show pier size, depth and spacing and footing details, and it says manufacturer's drawings, specifications or engineering details may be required for systems the Building Code does not describe. So the file carries the pile manufacturer's evaluation report and an engineer's layout for the soil. We prepare the package with you, and after the install the engineer-sealed certificate of conformity goes to the City."
+    },
+    {
+      "q": "What is the ground like under my street?",
+      "a": "Red Queenston shale under all of the lake-plain city, with different soils on top. Downtown, Port Dalhousie and Grantham sit on coarse sand and gravel; Merritton, Glenridge, Martindale and Vansickle on clay-to-silt till; the escarpment brow at Brock on silt and clay over Lockport dolostone. The survey does not state depth to rock anywhere in the city, so we confirm it on site."
+    },
+    {
+      "q": "Can you install in a St. Catharines winter?",
+      "a": "Yes, and the winter here is shorter than in Halton or Hamilton: 26.7 days a year below −10 °C at St. Catharines A against 35.7 at Hamilton A, and 46 days when the high never clears freezing. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so cold weather does not stop the job."
+    },
+    {
+      "q": "What does a St. Catharines deck permit cost?",
+      "a": "The City charges by area rather than a flat deck fee. By-law 2023-137 sets decks, open porches and balconies at $1.64 per square foot in 2026, before surcharges, with a minimum building permit fee of $185.80. A 200 sq ft deck therefore works out to $328. The by-law also lists a road allowance damage deposit for accessory buildings requiring footings where a sidewalk exists; ask Planning and Building Services whether it applies to your deck."
+    },
+    {
+      "q": "I am in Port Dalhousie. Does the lakeshore change anything?",
+      "a": "It changes the helix size. The survey point at Port Dalhousie returns coarse glaciolacustrine sand and gravel over Queenston shale, the same band as Downtown and Grantham. Granular soil like this bears well when the helix is matched to it, and the engineer reads capacity off the torque record. Port Dalhousie also has a high share of older housing, so we look at how the existing deck and house foundation meet before the layout is drawn."
+    }
+  ],
+  "related_note": "Along the QEW we also serve Grimsby, Lincoln and Niagara Falls, and Thorold just up the escarpment."
+}

@@ -1,0 +1,194 @@
+{
+  "slug": "thorold",
+  "title": "Helical pile installation in Thorold | GTA Helical Piles",
+  "description": "Helical piles in Thorold: the City's 10 m² permit threshold and per-square-foot fee, silt and clay over Lockport dolostone, frost data and illustrative costs.",
+  "h1": "Helical pile installation in Thorold",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Thorold's building FAQ puts decks on the permit list under freestanding structures over 10 square metres, and lists detached accessory structures under 10 square metres as exempt. The City publishes no height rule and no deck drawing, so there is no local footing depth to quote; the engineer sets the pile depth and the Building Division reviews it. Applications are on paper, filed at 8 Carleton Street South, since the City runs no online permit portal.",
+    "The ground is the other half of the answer. Ontario Geological Survey mapping returns fine-textured glaciolacustrine silt and clay at ten of the thirteen points we queried across the city, with man-made fill in the canal-side core. Beneath that, most of Thorold sits on Lockport Formation dolostone, the escarpment caprock; Queenston red shale appears only below the brow on the north edge. Pile capacity here is governed by clay strength until the helix meets rock."
+  ],
+  "tiles": [
+    {
+      "value": "10 m²",
+      "label": "freestanding structure size above which the City lists decks as needing a permit",
+      "source": {
+        "name": "City of Thorold Building Division FAQ",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/"
+      }
+    },
+    {
+      "value": "$0.42 / sq ft",
+      "label": "uncovered deck permit fee, By-law 14-2026; $194.40 minimum",
+      "source": {
+        "name": "Fees and Charges By-law 14-2026, Schedule E",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf"
+      }
+    },
+    {
+      "value": "151 days",
+      "label": "mean frost-free period, Welland station, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada climate normals (GeoMet API)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      }
+    },
+    {
+      "value": "Dolostone",
+      "label": "Lockport Formation bedrock under most of the city, not shale",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.2,43.12&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Thorold",
+    "paragraphs": [
+      "Thorold is a plateau city. Wikipedia places it on the Niagara Escarpment, and the Ontario Geological Survey's surficial map (MRD 128-REV) returns the same unit almost everywhere we queried: fine-textured glaciolacustrine deposits, silt and clay with minor sand and gravel, laid down in a glacial lake and massive to well laminated. Downtown Front Street, the southern Rolling Meadows point, both Thorold South points, Allanburg, Port Robinson, Beaverdams and the DeCew area near Brock University all return it. For a helical pile that is a clay job: torque climbs with clay strength, and the engineer's layout is sized from the torque record rather than from any coarse layer.",
+      "Three built-up points break the pattern. At the Wikipedia city coordinate beside the canal, in Confederation Heights and at the northern Rolling Meadows point, the survey returns man-made deposits, which it describes as fill, sewage lagoon, landfill and urban development. The layer does not say whether the fill is canal spoil or grading from subdivision work, or how thick it is. A pile in those areas has to be advanced through the fill into native ground before its torque means anything, and the engineer cannot assume the silt-and-clay profile mapped around it. We treat any canal-side lot as unknown until the first pile tells us otherwise.",
+      "Bedrock is where Thorold differs most from the western GTA. The provincial bedrock map (MRD 219) puts Lockport Formation dolostone under downtown, Confederation Heights, Rolling Meadows, Beaverdams and northern Thorold South, with the Eramosa Member at Allanburg and southern Thorold South. At the Twin Flight Locks it is the Clinton-Cataract Group of thin shales, sandstones and dolostones. Queenston red shale appears only below the brow at the northern edge, and Port Robinson sits on Guelph dolostone. No point returned bedrock at surface and depth to rock was not retrieved, so early refusal near the brow and the canal cuts is confirmed on site, not assumed."
+    ],
+    "table_note": "Surface and bedrock units from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one or two points per area, retrieved 25 September 2026. Confederation Heights, Rolling Meadows and Thorold South have no published coordinates, so those points are approximations from street location. The table describes the area, not your lot.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown Thorold (Front Street)",
+        "surface": "Fine-textured glaciolacustrine silt and clay; man-made fill at the canal-side point",
+        "bedrock": "Lockport Formation dolostone (Goat Island, Gasport, Vinemount)"
+      },
+      {
+        "name": "Twin Flight Locks / Lock 7",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Clinton-Cataract Group, thin shales, sandstones and dolostones"
+      },
+      {
+        "name": "Confederation Heights",
+        "surface": "Man-made deposits (fill, urban development)",
+        "bedrock": "Lockport Formation dolostone"
+      },
+      {
+        "name": "Rolling Meadows",
+        "surface": "Silt and clay at the south point; man-made fill at the north point",
+        "bedrock": "Lockport dolostone; Queenston red shale below the brow at the north point"
+      },
+      {
+        "name": "Beaverdams / DeCew",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Lockport Formation dolostone"
+      },
+      {
+        "name": "Thorold South",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Lockport Formation; Eramosa Member at the south point"
+      },
+      {
+        "name": "Allanburg",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Lockport Formation, Eramosa Member (dark bituminous dolostone)"
+      },
+      {
+        "name": "Port Robinson",
+        "surface": "Fine-textured glaciolacustrine silt and clay",
+        "bedrock": "Guelph Formation dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Thorold",
+    "authority_short": "the City of Thorold",
+    "paragraphs": [
+      "Thorold's permits are handled by the City of Thorold Building Division, part of Development Services at 8 Carleton Street South, second floor. There is no online portal. You file the 2026 Application for a Permit to Construct or Demolish on paper with two sets of scaled drawings, in person or by Canada Post, and pay by cheque or at the City Hall cashier on Schmon Parkway. The Fees and Charges By-law (14-2026, Schedule E) prices a deck permit by area: $0.42 per square foot uncovered and $0.46 covered, with a minimum permit fee of $194.40 on any work. Accessory construction valued over $5,000 also carries a $500 refundable security deposit.",
+      "The City says nothing specific about helical piles, CCMC or BMEC. Its building FAQ notes that certification by a professional engineer is required for certain prefabricated structures or construction components, and points applicants to Building Customer Service. Read that as an expectation of engineer-signed pile information: the manufacturer's evaluation report and an engineer's layout for depth, spacing and size. We prepare the package with you. After the install, installation torque is recorded on every pile and the engineer issues an engineer-sealed certificate of conformity from that log for the City's file.",
+      "Two things to confirm with the Building Division before you book. First, which inspections apply: the FAQ says several inspections are required during construction, but the City's stage-by-stage list was not available when we checked, and its fee by-law shows only the surcharges for work begun before a permit, 25 percent at footings, 50 at framing and 100 at completion. Second, no published review time exists for building permits; the City states only that review starts once payment is confirmed and that construction must begin within six months of issuance."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Decks are listed under freestanding structures over 10 m² (108 sq ft); detached accessory structures under 10 m² are exempt; no height threshold is published",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "No pile-specific rule published; the FAQ requires a professional engineer's certification for certain prefabricated structures or components",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/"
+      },
+      {
+        "label": "Deck permit fee, 2026",
+        "value": "$0.42 per sq ft uncovered, $0.46 covered, HST exempt; $194.40 minimum permit fee",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf"
+      },
+      {
+        "label": "Security deposit",
+        "value": "$500 refundable, for accessory construction valued over $5,000",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/0fcoqgbq/by-law-14-2026-fees-and-charges-by-law-consolidated-april-14-2026.pdf"
+      },
+      {
+        "label": "Apply",
+        "value": "Paper application at 8 Carleton St. S., 2nd floor, or by mail; Building Division 905-227-6613 ext. 277",
+        "url": "https://www.thorold.ca/building-business-development/building-and-renovating/building-or-demolition-permits/"
+      },
+      {
+        "label": "Application form",
+        "value": "Application for a Permit to Construct or Demolish, effective February 16, 2026",
+        "url": "https://media-003-ca.cdn.govstack.com/thorold-ca/media/jo0fwlli/application-to-construct-or-demolish-2026.pdf"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Thorold",
+    "paragraphs": [
+      "No St. Catharines station publishes climate normals, including Brock University four kilometres away, so the closest full record is Welland, about 15 km south and at a similar elevation to Thorold's core. Its 1981 to 2010 normals give a January mean of −4.3 °C, 30.5 days a year with a minimum below −10 °C, about 47 days when the high never passes 0 °C, and a mean frost-free period of 151 days. Niagara Falls NPCSH, 12 km east, reads a little milder and shows 188 frost-free days, but on a shorter record with lower confidence codes. Subtracting Welland's days at or below freezing from its days that dip below zero leaves roughly 92 freeze-thaw cycles a year.",
+      "Frost-free days are a gardener's figure. What matters for a pile is how deep the ground freezes and whether the helix bears beneath it. Thorold publishes no deck drawing or footing checklist with a design frost depth, so we do not quote one here; the engineer sets pile depth for the site and the Building Division reviews it. As for timing, we install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so a January install in Rolling Meadows carries the same load the day it goes in."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−4.3 °C, Welland, 1981 to 2010 (ECCC quality code A)",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      },
+      {
+        "label": "Days never above 0 °C",
+        "value": "About 47 a year, Welland, 1981 to 2010",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "30.5 a year, Welland, 1981 to 2010",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=WELLAND&f=json&limit=3000"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "151 days, Welland; 188 days at Niagara Falls NPCSH on a shorter, lower-confidence record",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=NIAGARA%20FALLS%20NPCSH&f=json&limit=3000"
+      }
+    ]
+  },
+  "pricing_note": "Thorold is a drive from our western GTA base, so mobilization appears as its own line in the quote rather than being folded into the per-pile figure. On site, three things move it: fill of unknown depth in the canal-side core, stiff silt and clay that pushes torque up, and the chance of early refusal on dolostone near the escarpment brow, which means pre-drilling.",
+  "faqs": [
+    {
+      "q": "Does a deck in Thorold need a building permit?",
+      "a": "The City's building FAQ lists decks under the construction or alteration of any freestanding structure over 10 square metres (108 square feet), and exempts detached accessory structures under that size. Thorold publishes no height threshold, so a low deck over 10 square metres still needs the permit unless the Building Division tells you otherwise. Attached decks are best confirmed with the Division directly at 905-227-6613 ext. 277."
+    },
+    {
+      "q": "What does the City of Thorold want for helical piles?",
+      "a": "Nothing pile-specific is published. The FAQ says a professional engineer's certification is required for certain prefabricated structures or construction components and points you to Building Customer Service. In practice that means the pile manufacturer's evaluation report and an engineer's layout for depth, spacing and size, and after the install an engineer-sealed certificate of conformity based on our torque log. We prepare the package with you."
+    },
+    {
+      "q": "What is the ground like under Thorold?",
+      "a": "Fine-textured glaciolacustrine silt and clay at almost every point the Ontario Geological Survey maps in the city, with man-made fill in the canal-side core. Beneath it, Lockport Formation dolostone under most of Thorold, Clinton-Cataract shales and sandstones at the Twin Flight Locks, Queenston red shale only below the brow on the north edge, and Guelph dolostone at Port Robinson. Depth to rock is confirmed on site."
+    },
+    {
+      "q": "Can you install piles in a Thorold winter?",
+      "a": "Yes. Welland, the nearest station with a full record, averages −4.3 °C in January and has about 47 days a year when the temperature stays below freezing. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. The pile bears at the depth the engineer sets, so the season does not change the design."
+    },
+    {
+      "q": "What does a Thorold deck permit cost?",
+      "a": "The 2026 Fees and Charges By-law prices decks by area: $0.42 per square foot for an uncovered deck or porch and $0.46 covered, HST exempt, with a minimum permit fee of $194.40. A plans examination deposit is taken at application and applied to the fee, and accessory construction valued over $5,000 carries a $500 refundable security deposit. The engineer's fee for the pile layout is a separate item in our quote."
+    },
+    {
+      "q": "I am in Port Robinson or Allanburg. Anything different?",
+      "a": "The surface is the same silt and clay as the rest of the city, but the rock changes. At Port Robinson the bedrock map shows Guelph Formation dolostone, and at Allanburg the Eramosa Member of the Lockport, a dark bituminous dolostone. Wikipedia records that the canal between the two villages was dug as an open cut because the soil there was sandy, so we expect variable ground and confirm depth to rock with the first pile."
+    }
+  ],
+  "related_note": "We also serve St. Catharines, Niagara Falls and Welland along the canal corridor."
+}

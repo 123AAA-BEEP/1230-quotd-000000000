@@ -57,20 +57,20 @@
       "name": "Milton",
       "slug": "milton",
       "region": "Halton Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Halton Hills",
       "slug": "halton-hills",
       "region": "Halton Region",
-      "live": false,
+      "live": true,
       "note": "Georgetown and Acton"
     },
     {
       "name": "Hamilton",
       "slug": "hamilton",
       "region": "City of Hamilton",
-      "live": false,
+      "live": true,
       "note": "including Ancaster, Dundas and Stoney Creek"
     },
     {
@@ -83,7 +83,7 @@
       "name": "Grimsby",
       "slug": "grimsby",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Lincoln",
@@ -96,13 +96,13 @@
       "name": "St. Catharines",
       "slug": "st-catharines",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Thorold",
       "slug": "thorold",
       "region": "Niagara Region",
-      "live": false
+      "live": true
     },
     {
       "name": "Niagara Falls",

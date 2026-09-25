@@ -1,0 +1,214 @@
+{
+  "slug": "hamilton",
+  "title": "Helical pile installation in Hamilton | GTA Helical Piles",
+  "description": "Helical piles in Hamilton: the City's deck permit rules and fee, what lies under the lower city and the Mountain, winter installs, and what moves the price.",
+  "h1": "Helical pile installation in Hamilton",
+  "kicker": "City of Hamilton",
+  "answer": [
+    "Any deck attached to the house in Hamilton needs a building permit, whatever its size. A freestanding uncovered deck needs one once it passes 10 square metres and sits more than 200 mm above grade, and a covered one at any height past 10 square metres. The City's sample deck drawing prints a minimum pier depth of 48 inches, about 1.2 m, and its deck checklist asks for engineer-approved specifications when the piers are helical.",
+    "The escarpment decides what the pile goes into. Below it, the lower city from Westdale to the harbour sits on Lake Iroquois sand and gravel over red Queenston shale. On the Mountain and out through Glanbrook the survey maps laminated silt and clay over Silurian dolostone, and Stoney Creek, the Red Hill valley and Waterdown are on clay-silt till. An engineer's layout for one side of the brow does not carry to the other."
+  ],
+  "tiles": [
+    {
+      "value": "$291",
+      "label": "minimum building permit fee in Hamilton, By-law 15-058 Schedule A as posted",
+      "source": {
+        "name": "City of Hamilton building permit fees",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-permit-fees"
+      }
+    },
+    {
+      "value": "May 1 to Oct 12",
+      "label": "average frost-free period, Hamilton A at Mount Hope, 1991 to 2020",
+      "source": {
+        "name": "Environment Canada normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      }
+    },
+    {
+      "value": "Shale, then dolostone",
+      "label": "Queenston red shale below the escarpment, Silurian dolostone above it",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630"
+      }
+    },
+    {
+      "value": "32.8%",
+      "label": "of Hamilton's occupied dwellings were built in 1960 or earlier",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Hamilton&DGUIDlist=2021A00053525005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Hamilton",
+    "paragraphs": [
+      "Hamilton's lower city was the floor of glacial Lake Iroquois, and the Ontario Geological Survey maps it as coarse glaciolacustrine sand and gravel. The same unit comes back at the downtown reference point, the GO Centre, McMaster in Westdale and, above the brow, in Ancaster, with the littoral shoreline sub-unit at Dundurn Castle. Dundas, at the bottom of its valley, is on older alluvium, a mix of clay, silt, sand and gravel that can hold organic remains. Coarse ground carries a pile well once the helix is chosen for it, and the torque record has to be read with that ground in mind.",
+      "Up on the Mountain the picture flips. Lime Ridge, the Mohawk College area, Binbrook, the Glanbrook coordinate and the airport at Mount Hope all return fine glaciolacustrine silt and clay, massive to well laminated. Stoney Creek, the Red Hill valley and Waterdown sit on clay-to-silt till, and rural Flamborough varies between stone-poor sandy till and, at Carlisle, ice-contact sand and gravel. In laminated silt and clay the question is depth: the helix has to reach ground that stays put through freeze and thaw, and the torque climbs slowly until it does, so the engineer's depth for a Mountain lot is set for that soil and no other.",
+      "Bedrock changes at the escarpment as well. Every point we queried below it, from downtown and Dundurn through McMaster, Dundas, Stoney Creek and Red Hill, returns Queenston Formation red shale. Above it the rock is Silurian dolostone: Lockport at Ancaster and both Mountain points, Amabel at Waterdown and Carlisle, Guelph across Glanbrook, the airport and rural Flamborough. None of the sixteen surficial queries returned bedrock at surface, and depth to rock was not retrieved, so where a pile meets refusal it may be on shale or on harder dolostone. That is a site question settled from the torque record, not a neighbourhood one."
+    ],
+    "table_note": "Surface unit and bedrock formation from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one coordinate per area, retrieved 25 September 2026. Depth to bedrock was not queried. The table describes the area around the point, not your lot; the engineer's layout is based on the site.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown (lower city)",
+        "surface": "Sand and gravel (Lake Iroquois)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Dundurn",
+        "surface": "Sand and gravel, shoreline sub-unit",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Westdale / McMaster",
+        "surface": "Sand and gravel (Lake Iroquois)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Dundas",
+        "surface": "Older alluvium: clay, silt, sand, gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Stoney Creek",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Red Hill Valley",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Hamilton Mountain (Lime Ridge)",
+        "surface": "Laminated silt and clay",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Mohawk College area",
+        "surface": "Laminated silt and clay",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Ancaster",
+        "surface": "Sand and gravel",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Waterdown",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Amabel, dolostone"
+      },
+      {
+        "name": "Binbrook",
+        "surface": "Laminated silt and clay",
+        "bedrock": "Guelph, dolostone"
+      },
+      {
+        "name": "Mount Hope (airport)",
+        "surface": "Laminated silt and clay",
+        "bedrock": "Guelph, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Hamilton",
+    "authority_short": "the City of Hamilton",
+    "paragraphs": [
+      "Deck permits in Hamilton are issued by the Building Division, part of Planning and Economic Development, on the third floor of City Hall at 71 Main Street West. Applications go in online through my.hamilton.ca: you create an account, pick the Building Permits category, then open Permitting and Inspections. Drawings must be vector PDFs, unsecured, black and white and to scale. The City publishes no review time; staff contact you or your agent when the application is approved or when something is missing.",
+      "The Residential Decks and Porches checklist names two extra items for a helical pile deck: engineer-approved helical pier specifications, and the Minister's Ruling or BMEC approval for the pile system. The sample drawing adds that any material other than lumber needs engineered specifications. We prepare the package with you. Installation torque is recorded on every pile, and after the install the engineer issues an engineer-sealed certificate of conformity from that record for the City's file. Inspection requests are completed within 2 business days, and for permits issued after July 6, 2026 they can be booked online.",
+      "Two drawing notes matter for piles. The City's elevation views draw piers to a minimum of 48 inches below grade, and no attachment is allowed to or through brick veneer, so on a brick-veneer house the deck is carried on piers at the wall as well. Hamilton's published inspection stages are generic (footing, backfill, structural), so confirm with the Building Division which it wants for a pile install; the footing stage is written for poured concrete. Fees come from Schedule A of Building By-law 15-058: $5.36 per square metre for a deck, against a $291 minimum, HST where applicable, paid at submission. A 20 square metre deck computes to $107, so the minimum applies."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Any attached deck; detached uncovered over 10 m² and more than 200 mm above grade; detached covered over 10 m² at any height; detached 10 m² or less by a door and more than 600 mm above grade; new or replacement guards",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/porches-and-decks"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "Engineer-approved helical pier specifications; Minister's Ruling or BMEC approval for the pile system",
+        "url": "https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf"
+      },
+      {
+        "label": "Pier depth on the City drawing",
+        "value": "Minimum 48 in (about 1.2 m) below grade; engineered specifications for any material other than lumber; no attachment through brick veneer",
+        "url": "https://www.hamilton.ca/sites/default/files/2022-06/buildingpermit-drawing-deck-porch-wood.pdf"
+      },
+      {
+        "label": "Deck permit fee",
+        "value": "$5.36 per m², $291 minimum, HST where applicable, paid at submission (By-law 15-058 Schedule A, as posted 25 September 2026)",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-permit-fees"
+      },
+      {
+        "label": "Inspections",
+        "value": "Requests completed within 2 business days; 905-546-2424 ext. 7777, or online for permits issued after July 6, 2026",
+        "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections"
+      },
+      {
+        "label": "Apply",
+        "value": "my.hamilton.ca, Building Permits category, then Permitting and Inspections",
+        "url": "https://my.hamilton.ca/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Hamilton",
+    "paragraphs": [
+      "The station with a full 1991 to 2020 record is Hamilton A at the airport in Mount Hope, 237.7 m up on the Mountain and about 11 km south-southwest of downtown, so the lower city, nearer the lake, may read a little differently. January there averages −5.3 °C with a daily low of −9.1 °C. The minimum drops below −10 °C on about 36 days a year, and about 55 days stay at or below freezing all day. Set that against 139 days when the overnight low reaches 0 °C, and roughly 84 days a year cross freezing between night and day, which is the cycle that works on a shallow footing.",
+      "The average frost-free period is 164 days, from the last spring frost around May 1 to the first fall frost around October 12. That window is for concrete and for gardens, not for piles. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. What a pile needs is for the helix to bear below the depth frost reaches. Hamilton's own deck drawing puts conventional piers at least 48 inches down, and the engineer sets the pile depth from the soil at your address."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−5.3 °C, Hamilton A (Mount Hope), 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "35.7 a year, Hamilton A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Days never above 0 °C",
+        "value": "54.8 a year, Hamilton A; 138.6 days with a minimum at or below 0 °C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "164 days, May 1 to October 12, Hamilton A, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "In Hamilton the first thing that moves the price is which side of the escarpment you are on. Mountain and Glanbrook silt and clay can mean a longer pile to reach torque; lower-city sand and gravel can mean a larger helix; on rural Flamborough and Binbrook lots travel enters the quote. Narrow lower-city side yards decide which drive unit we bring. Each item appears in the written quote.",
+  "faqs": [
+    {
+      "q": "When does a deck in Hamilton need a permit?",
+      "a": "Always, if it is attached to the house. A detached uncovered deck needs one when it is over 10 square metres and more than 200 mm above grade; a detached covered deck over 10 square metres needs one at any height. A small detached deck of 10 square metres or less still needs a permit if it serves a door and stands more than 600 mm above grade. New or replacement guards need one too."
+    },
+    {
+      "q": "What does the City of Hamilton want with helical piles?",
+      "a": "Its deck checklist lists engineer-approved helical pier specifications and the Minister's Ruling or BMEC approval for the pile system as additional documentation, and the sample drawing says any material other than lumber needs engineered specifications. We prepare the package with you. Installation torque is recorded on every pile, and the engineer issues an engineer-sealed certificate of conformity from that record after the install."
+    },
+    {
+      "q": "Is it shale or rock under my house?",
+      "a": "It depends on the escarpment. Below it, at downtown, Dundurn, McMaster, Dundas, Stoney Creek and Red Hill, the survey returns Queenston red shale. Above it, on the Mountain, in Ancaster, Waterdown, Binbrook and Mount Hope, it returns Silurian dolostone, a harder rock. No query point showed rock at the surface, and depth to rock was not retrieved, so what a pile refuses on is confirmed on site from the torque record."
+    },
+    {
+      "q": "Can you install piles in a Hamilton winter?",
+      "a": "Yes. The Mount Hope station records about 55 days a year that never rise above freezing and about 36 with a low under −10 °C. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. There is no concrete to cure, so there is no season to wait for. That station sits on the Mountain at 237.7 m; no lower-city station with a full record was checked."
+    },
+    {
+      "q": "What does a Hamilton deck permit cost?",
+      "a": "Schedule A of Building By-law 15-058 charges $5.36 per square metre for a deck, balcony, open porch or stairs, against a minimum permit fee of $291, plus HST where applicable, paid when you submit. The minimum governs small decks: a 20 square metre deck works out to $107, so $291 applies. Those are the figures as posted on 25 September 2026; the City's page carries no effective date, and engineering for the pile layout is separate."
+    },
+    {
+      "q": "I am in Ancaster or on the Mountain. Is the job different from the lower city?",
+      "a": "Yes, in two ways. Ancaster's query point returns sand and gravel like the lower city, but over Lockport dolostone rather than shale. The Mountain points at Lime Ridge and Mohawk College return laminated silt and clay over the same dolostone, so a Mountain pile is usually about reaching depth in soft ground, while a lower-city pile is about sizing the helix for coarse ground. Permits for both go through the same Building Division."
+    }
+  ],
+  "related_note": "We also work in Burlington, Grimsby and Guelph. Call for those until their pages are up."
+}
