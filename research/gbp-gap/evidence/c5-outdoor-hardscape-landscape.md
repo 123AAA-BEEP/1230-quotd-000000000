@@ -29,17 +29,17 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - status: NEW
 - level: USE
 - tier: T3
-- gta_price_cad: interlock C$20–35/sq ft (snippet) — https://countryreno.com/interlock-driveway-installation-toronto/ ; 2026 City fees: application C$514.41+HST, renewal C$331.13+HST/yr, inspection C$896.62+HST — https://www.toronto.ca/services-payments/streets-parking-transportation/applying-for-a-parking-permit/residential-front-yard-boulevard-parking/
+- gta_price_cad: interlock C$20–35/sq ft (snippet) — https://countryreno.com/interlock-driveway-installation-toronto/ ; 2026 City fees: application C$514.41+HST, renewal C$331.13+HST/yr — https://www.toronto.ca/services-payments/streets-parking-transportation/applying-for-a-parking-permit/residential-front-yard-boulevard-parking/
 - gbp_belief: PARTIAL — nearest: "Paving contractor" (permit side: NONE)
-- gta_drivers: Zoning bars front-yard parking except on Ch. 918 licensed pads, which must be permeable and 2.2–2.6 m wide; some areas have moratoriums or neighbour polls. Driveways max 2.6 m on lots under 6 m, 6.0 m on 6–23 m lots — https://www.toronto.ca/zoning/bylaw_amendments/ZBL_NewProvision_Chapter10.htm ; https://www.toronto.ca/legdocs/municode/1184_918.pdf ; https://wtfto.ca/stories/the-parking-electric-future-investigation-part-5-torontos-front-yard-parking-double-standard/
-- data_hooks: moratorium/poll status by address; fees; widths by frontage; 75% soft landscaping; lane-access priority
+- gta_drivers: Zoning bars front-yard parking except licensed Ch. 918 pads (permeable, 2.2–2.6 m wide; moratoriums, neighbour polls). Driveways max 2.6 m on lots under 6 m, 6.0 m on 6–23 m lots — https://www.toronto.ca/zoning/bylaw_amendments/ZBL_NewProvision_Chapter10.htm ; https://www.toronto.ca/legdocs/municode/1184_918.pdf ; https://wtfto.ca/stories/the-parking-electric-future-investigation-part-5-torontos-front-yard-parking-double-standard/
+- data_hooks: moratorium/poll status by address; fees; widths by frontage; 75% soft landscaping
 - season: applications year-round; builds Apr–Nov
-- web: permeable pavers, herringbone driveway, curb cut, EV charger, no parking on my street
+- web: permeable pavers, herringbone driveway, EV charger, no parking on my street
 - queries: "front yard parking pad toronto", "parking pad permit toronto cost", "can I widen my driveway toronto"
 - verdict: STRONG — the law is the content; no category owns permit plus build. Own page.
 
 ### heated-driveways
-- name: "heated driveway installation" (service-form; P0 found the person-form weak)
+- name: "heated driveway installation" (service-form)
 - status: EXISTING(heated-driveways)
 - level: SERVICE
 - tier: T2
@@ -71,7 +71,7 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - status: NEW
 - level: SERVICE
 - tier: T3
-- gta_price_cad: relevel C$8–15/sq ft; full relay C$15–25/sq ft; 100–200 sq ft relevel C$800–1,800; relay section C$1,500–3,500 — https://khanscapes.ca/interlocking-stone-repair-cost-gta/ ; whole 400 sq ft relay about C$6,000–10,000 (EST from those rates)
+- gta_price_cad: relevel C$8–15/sq ft; full relay C$15–25/sq ft; 100–200 sq ft relevel C$800–1,800; relay section C$1,500–3,500 — https://khanscapes.ca/interlocking-stone-repair-cost-gta/ ; 400 sq ft relay ≈ C$6,000–10,000 (EST)
 - gbp_belief: PARTIAL — nearest: "Paving contractor" / "Landscaper"
 - gta_drivers: Pavers sink when the base was poorly compacted (settling over 2–5 years), when edge restraint is missing or when bedding sand washes out. GTA clay soils and freeze-thaw make it worse — https://khanscapes.ca/interlocking-stone-repair-cost-gta/
 - data_hooks: freeze-thaw days (repo climate module); soil type; Toronto downspout-disconnection condition; ICPI/CMHA installer roster
@@ -85,13 +85,13 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - status: EXISTING(retaining-walls)
 - level: SERVICE
 - tier: T2
-- gta_price_cad: armour stone C$25–55/sq ft of face; a 4 ft wall C$150–300/linear ft; engineering over 1 m C$1,500–3,500 — https://project-landscaping.ca/cost-of-retaining-wall-ontario/ ; C$60–90/sq ft of face, a 20 ft × 3 ft wall C$4,000–5,500 (Simcoe) — https://www.fortyfivescapes.com/blog-posts/armour-stone-landscaping-costs ; GTA block walls C$50–90/sq ft — https://www.conscapecanada.ca/blog/retaining-walls-toronto
+- gta_price_cad: armour stone C$25–55/sq ft of face; 4 ft wall C$150–300/linear ft; engineering over 1 m C$1,500–3,500 — https://project-landscaping.ca/cost-of-retaining-wall-ontario/ ; 20 ft × 3 ft wall C$4,000–5,500 (Simcoe) — https://www.fortyfivescapes.com/blog-posts/armour-stone-landscaping-costs
 - gbp_belief: PARTIAL — nearest: "Landscaper" / "Retaining wall supplier" (belief)
-- gta_drivers: Under the OBC, a wall over 1,000 mm exposed height next to public property or a building access is a designated structure that needs engineering and a permit (snippet) — https://www.get.on.ca/uploads/userfiles/files/Designated%20Structures_Retaining%20Walls(1).pdf . Ravine lots add TRCA review and a C$632.51 grade-alteration permit — https://www.toronto.ca/services-payments/water-environment/trees/tree-bylaw-review/
+- gta_drivers: OBC: walls over 1,000 mm exposed height beside public property or a building access are designated structures needing engineering and a permit (snippet) — https://www.get.on.ca/uploads/userfiles/files/Designated%20Structures_Retaining%20Walls(1).pdf ; ravine lots add TRCA review and a C$632.51 grade-alteration permit — https://www.toronto.ca/services-payments/water-environment/trees/tree-bylaw-review/
 - data_hooks: 1 m trigger; permit fees by city; TRCA regulated areas; ravine map
 - season: Apr–Nov
-- web: armour stone steps, flagstone, french drains, grading, ravine restoration, pool removal
-- queries: "armour stone wall cost", "retaining wall permit ontario 1 metre", "armour stone steps toronto", "leaning retaining wall repair"
+- web: armour stone steps, flagstone, french drains, grading, ravine restoration
+- queries: "armour stone wall cost", "retaining wall permit ontario 1 metre", "armour stone steps toronto"
 - verdict: STRONG — an Ontario-specific term, a 1 m engineering trigger and ravine data.
 
 ### flagstone-natural-stone-patios
@@ -115,10 +115,10 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - tier: T1
 - gta_price_cad: basic C$15,000–25,000; mid C$30,000–60,000; premium C$65,000–100,000 — https://www.landcon.ca/outdoor-kitchen-cost-toronto-gta/ ; modular C$18–24K; custom island C$32–45K; premium C$65–95K — https://renohouse.ca/services/exterior/outdoor-kitchen-build
 - gbp_belief: PARTIAL — nearest: "Landscape designer" / "Kitchen remodeler"
-- gta_drivers: A gas line needs a TSSA-registered fitter (C$20–35/linear ft), and circuits need an ESA permit. Footings go 42–48 inches deep. A sink draining to Toronto's combined sewer needs a backwater valve and a Toronto Water permit, and a roof or pergola attached to the house needs a building permit — landcon; renohouse.
-- data_hooks: TSSA and ESA rules; frost depth; combined-sewer areas; open-air burning rules (wood ovens); gas availability
+- gta_drivers: Gas lines need a TSSA-registered fitter (C$20–35/linear ft) and circuits an ESA permit; footings go 42–48 in deep. A sink draining to Toronto's combined sewer needs a backwater valve and Toronto Water permit; an attached roof needs a building permit — landcon; renohouse.
+- data_hooks: TSSA/ESA rules; frost depth; combined-sewer areas; open-air burning rules
 - season: design Jan–Apr; build May–Sept
-- web: louvered pergola, outdoor fireplace/pizza oven, flagstone/porcelain patio, landscape lighting, gas fire table, patio heaters
+- web: louvered pergola, outdoor fireplace/pizza oven, flagstone patio, landscape lighting, gas fire table
 - queries: "outdoor kitchen cost toronto", "outdoor kitchen gas line permit ontario", "built-in bbq island toronto", "outdoor kitchen contractor gta"
 - verdict: GOOD — a T1 Track-2 slice; the data is real but landscapers and Houzz crowd it.
 
@@ -129,11 +129,11 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - tier: T3
 - gta_price_cad: pizza oven add-on C$4,000–8,000 — https://www.landcon.ca/outdoor-kitchen-cost-toronto-gta/ ; US fallback: custom outdoor fireplace US$6,000–20,000 (snippet) — https://homeguide.com/costs/outdoor-fireplace-cost
 - gbp_belief: PARTIAL — nearest: "Masonry contractor" / "Fireplace store"
-- gta_drivers: Toronto Fire classes outdoor fireplaces and chimineas as open-air burning, says "solid fuel burning appliances are unacceptable", and allows certified gas fire pits. The Fire Code exempts small cooking fires, so in Toronto the advice is gas for fireplaces; whether wood ovens qualify as cooking is unverified — https://www.toronto.ca/community-people/public-safety-alerts/safety-tips-prevention/for-residents/open-air-burning/
-- data_hooks: open-air burning bylaw by municipality (varies across the GTA); TSSA gas; masonry frost footings
+- gta_drivers: Toronto Fire classes outdoor fireplaces and chimineas as open-air burning ("solid fuel burning appliances are unacceptable") and allows certified gas fire pits; small cooking fires are exempt. Toronto advice: gas fireplaces; whether wood ovens count as cooking is unverified — https://www.toronto.ca/community-people/public-safety-alerts/safety-tips-prevention/for-residents/open-air-burning/
+- data_hooks: open-air burning bylaw by municipality (varies across the GTA); TSSA gas; frost footings
 - season: Apr–Oct
-- web: outdoor kitchen, gas fire table, pergola, flagstone, chimney repair (other cluster)
-- queries: "outdoor wood burning fireplace toronto legal", "outdoor fireplace cost gta", "pizza oven builder toronto", "gas fire pit bylaw toronto"
+- web: outdoor kitchen, gas fire table, pergola, flagstone
+- queries: "outdoor wood burning fireplace toronto legal", "outdoor fireplace cost gta", "pizza oven builder toronto"
 - verdict: GOOD — burning rules change the advice city by city, a clean survival-rule fit.
 
 ### pergolas-louvered-roofs
@@ -157,10 +157,10 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - tier: T1
 - gta_price_cad: GTA average C$52,800; C$312–408/sq ft — https://www.renoassistance.ca/en/residential/resources-inspirations/article/sunroom-addition-price-toronto-montreal ; three-season C$15,000–50,000 (snippet) — https://renoquotes.com/en/blog/sunroom-cost-in-canada-in-2026-budget-permits-and-key-tips
 - gbp_belief: PARTIAL (low confidence; a sunroom-specific category may exist) — nearest: "Patio enclosure supplier" / "Conservatory construction contractor"
-- gta_drivers: In Ontario a sunroom is an addition that needs a building permit. Four-season rooms need insulated glazing and HVAC for GTA winters. Supply runs through manufacturer dealers (Scandia, Deomax surfaced) — renoassistance.
+- gta_drivers: In Ontario a sunroom is an addition needing a building permit; four-season rooms need insulated glazing and HVAC. Supply is dealer-led (Scandia, Deomax surfaced) — renoassistance.
 - data_hooks: permit fees and rear-yard zoning by city; heating degree days (repo climate module); dealer rosters
 - season: sell Jan–Apr; build May–Oct
-- web: screened porch, pergola, deck enclosure, patio doors, heat pump (other cluster)
+- web: screened porch, pergola, deck enclosure, heat pump (other cluster)
 - queries: "sunroom cost toronto", "3 season vs 4 season room ontario", "enclose deck into sunroom", "screened porch builders gta"
 - verdict: BORDERLINE — T1, but dealers dominate and RenoAssistance already ranks.
 
@@ -171,12 +171,12 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - tier: T1
 - gta_price_cad: C$20,000–35,000 simple; C$60,000–100,000+ with reinforcement, membrane, bulkhead and glass guard — https://therooftechnician.ca/rooftop-deck-flat-roof-toronto/ ; C$25,000–90,000 for 500 sq ft — https://flatroofstoronto.ca/rooftop-patio-flat-roof-toronto-costs-permits/
 - gbp_belief: PARTIAL — nearest: "Deck builder" (roof side: "Roofing contractor")
-- gta_drivers: The targets are old Toronto's flat-roofed semis and rear additions. Every project needs a permit with stamped structural drawings. The roof must carry about 40 psf (1.9 kPa) live load against roughly 20 psf for a normal roof, guards must be 1,070 mm, and some decks that overlook a yard need privacy screens — same two sources.
-- data_hooks: permit fee schedule (minimum C$214.79 in 2026, snippet — https://permitindex.ca/blog/building-permit-cost-toronto); OBC guard rules; Committee of Adjustment records; green-roof incentive C$100/m²
+- gta_drivers: Old Toronto's flat-roofed semis and rear additions. A permit with stamped structural drawings is needed; ~40 psf (1.9 kPa) live load vs ~20 psf for roofs; 1,070 mm guards; privacy screens where decks overlook — same sources.
+- data_hooks: permit fees (min C$214.79 in 2026, snippet — https://permitindex.ca/blog/building-permit-cost-toronto); OBC guards; Committee of Adjustment records
 - season: permits 4–8 weeks; build Apr–Oct
-- web: glass railings, flat roof replacement, louvered pergola, outdoor kitchen, landscape lighting, roof hatch
-- queries: "rooftop deck toronto cost", "can I put a deck on my flat roof", "rooftop patio permit toronto", "roof deck on a semi"
-- verdict: STRONG — T1 and code-dense; the work falls between roofers and deck builders.
+- web: glass railings, flat roof replacement, louvered pergola, outdoor kitchen
+- queries: "rooftop deck toronto cost", "rooftop patio permit toronto", "roof deck on a semi"
+- verdict: STRONG — T1, code-dense, falls between roofers and deck builders.
 
 ### ipe-hardwood-decks
 - name: "ipe deck builders"
@@ -202,8 +202,8 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - gta_drivers: In most Ontario towns, water deeper than 60 cm counts as a pool. Barrie exempts planted ponds but Toronto does not, which means a pool-enclosure permit, a 1.2 m fence and self-closing gates — clearwatercreations; https://www.toronto.ca/city-government/public-notices-bylaws/bylaw-enforcement/fences/
 - data_hooks: pool definition and fencing rules by municipality; enclosure permits; TRCA review near ravines; winter normals
 - season: sells in winter; builds May–Sept
-- web: ponds/water features, pool conversion, native planting, armour stone, pool nobody uses
-- queries: "natural swimming pool ontario cost", "swim pond toronto", "convert pool to natural pool", "chlorine free pool ontario"
+- web: ponds, pool conversion, native planting, pool nobody uses
+- queries: "natural swimming pool ontario cost", "swim pond toronto", "convert pool to natural pool"
 - verdict: GOOD — a T1 scarcity play (a handful of Ontario builders surfaced) whose fencing rule varies by city.
 
 ### pond-water-feature-builders
@@ -227,12 +227,12 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - tier: T2
 - gta_price_cad: C$5,000–20,000+; engineered fill for building over it C$30,000+ — https://www.torontopoolremoval.ca/pool-removal-cost-toronto/ ; partial C$5,000–12,000, full C$12,000–20,000, deck removal +C$2,000–5,000, permit C$200–500 — https://www.swimpool360.ca/services/pool-renovation/pool-fill-in-closure/
 - gbp_belief: PARTIAL — nearest: "Swimming pool contractor" / "Demolition contractor"
-- gta_drivers: A contractor says Toronto and most GTA cities require a building permit to close an inground pool (swimpool360; verify city by city). Building over the site needs engineered fill with compaction tests (torontopoolremoval), which matters where a garden suite will follow.
-- data_hooks: pool-closure permits and fees by city; Toronto pool-enclosure permits (Ch. 447); garden-suite eligibility (other cluster); clay soils
+- gta_drivers: A contractor says Toronto and most GTA cities require a permit to close an inground pool (swimpool360; verify per city). Building over it needs engineered, compaction-tested fill (torontopoolremoval), which matters where a garden suite follows.
+- data_hooks: pool-closure permits by city; pool-enclosure permits (Ch. 447); garden-suite link (other cluster); clay soils
 - season: May–Oct
-- web: pool nobody uses, natural-pool conversion, garden suite, sod/patio restoration, sport court
-- queries: "pool removal cost toronto", "fill in inground pool permit ontario", "remove pool to build garden suite", "partial vs full pool removal"
-- verdict: STRONG — T2 with permit and engineering data; the search results showed only local contractors and exact-match-domain sites.
+- web: pool nobody uses, natural-pool conversion, garden suite, sport court
+- queries: "pool removal cost toronto", "fill in pool permit ontario", "remove pool to build garden suite"
+- verdict: STRONG — T2 with permit and engineering data; search showed only local contractors and exact-match-domain sites.
 
 ### sport-courts-pickleball
 - name: "backyard pickleball court builders" / "sport court contractors"
@@ -297,10 +297,10 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - tier: T2
 - gta_price_cad: 100–160 sq ft C$25,000–45,000; 160–250 sq ft C$50,000–85,000 — https://redstonecontracting.com/backyard-shed-studio-build-toronto/ ; demand signal: https://torontolife.com/life/this-company-will-build-you-an-all-weather-private-office-studio-in-your-backyard/
 - gbp_belief: PARTIAL — nearest: "Shed builder" / "Modular home builder"
-- gta_drivers: The Ontario exemption covers sheds up to 15 m² only if they are storage-only and have no plumbing (buttonhouse). A wired or insulated studio usually needs a permit. Exempt sizes are 10 m² in Toronto, Mississauga and Burlington and 15 m² in Vaughan, per redstone. These are not dwellings; suites belong to another cluster.
+- gta_drivers: Ontario's exemption covers sheds up to 15 m² only if storage-only and unplumbed (buttonhouse); wired or insulated studios usually need permits. Exempt sizes: 10 m² in Toronto, Mississauga and Burlington; 15 m² in Vaughan (redstone). Not dwellings; suites are another cluster.
 - data_hooks: permit thresholds by city; ESA; zoning setbacks and heights
 - season: design over winter; build Apr–Nov
-- web: garden suite (other cluster), outdoor sauna, greenhouse, landscape lighting, electrical sub-panel
+- web: garden suite (other cluster), outdoor sauna, greenhouse, electrical sub-panel
 - queries: "backyard office toronto", "permit for backyard office ontario", "garden studio cost gta", "10m2 office pod"
 - verdict: GOOD — the permit threshold drives the design and there is no business category.
 
@@ -390,22 +390,17 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 
 ### tree-permits-arborist-reports
 - name: "arborist report for tree permit" / "tree protection plan"
-- status: NEW (covers tree preservation during construction and large tree removal with a permit)
+- status: NEW (includes construction tree protection and permitted large removals)
 - level: SERVICE
-- tier: T3 (a single report alone is DEFER)
-- gta_price_cad: single-tree report C$300–800; construction tree protection plan C$550+; multi-tree C$800–1,500+ — https://loyaltree.ca/arborist-report-cost-toronto/ ; large removal C$2,000–6,000 (snippet) — https://torontotreeservices.ca/guides/toronto-large-tree-removal-cost-climbing-crew/ ; replanting guarantee or cash-in-lieu C$583 per tree — https://www.toronto.ca/services-payments/building-construction/tree-ravine-protection-permits/how-to-apply-for-a-tree-or-ravine-permit/
+- tier: T3 (report alone: DEFER)
+- gta_price_cad: report C$300–800; construction tree-protection plan C$550+ — https://loyaltree.ca/arborist-report-cost-toronto/ ; replanting guarantee or cash-in-lieu C$583/tree — https://www.toronto.ca/services-payments/building-construction/tree-ravine-protection-permits/how-to-apply-for-a-tree-or-ravine-permit/
 - gbp_belief: EXACT — "Arborist service" / "Tree service"
-- gta_drivers: Private trees 30 cm or wider at 1.4 m need permits. From 1 Sept 2026 Toronto added:
-  - a Distinctive Tree tier for trees over 61 cm;
-  - a 40 cm stump rule;
-  - protection for newly planted trees;
-  - new ravine fees of C$87.57–549.08 per tree.
-  Sources: https://www.toronto.ca/services-payments/water-environment/trees/tree-bylaw-review/ ; https://treedoctors.ca/toronto-tree-bylaw-changes-september-2026
-- data_hooks: fee schedule; quarterly permit and contravention reports (City, 2026); canopy; ravine map
+- gta_drivers: Private trees 30 cm or wider at 1.4 m need permits. From 1 Sept 2026: Distinctive Trees over 61 cm, a 40 cm stump rule, protection for newly planted trees, ravine fees C$87.57–549.08/tree — https://www.toronto.ca/services-payments/water-environment/trees/tree-bylaw-review/ ; https://treedoctors.ca/toronto-tree-bylaw-changes-september-2026
+- data_hooks: fee schedule; quarterly permit reports (2026); canopy; ravine map
 - season: year-round; construction-driven in spring
-- web: large tree removal, construction hoarding, neighbour's tree, roots lifting driveway, additions/suites, ravine lots
-- queries: "tree removal permit toronto", "arborist report cost toronto", "distinctive tree toronto", "tree protection zone hoarding"
-- verdict: GOOD — an exact GBP category, but the new bylaw makes it strong material for guides and a hub.
+- web: large tree removal, construction hoarding, neighbour's tree, roots lifting driveway
+- queries: "tree removal permit toronto", "arborist report cost toronto", "distinctive tree toronto"
+- verdict: GOOD — exact GBP category, but the new bylaw makes strong guide/hub material.
 
 ### ravine-restoration-native-planting
 - name: "ravine lot restoration" / "ravine planting"
@@ -482,14 +477,14 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - status: NEW
 - level: OUTCOME
 - tier: T3
-- gta_price_cad: rain garden C$4,500–7,500 per 500 sq ft — https://lotusscape.ca/native-plant-garden-ideas-canada/ ; Toronto's subsidy of up to C$6,650 covers valves and pumps only — https://www.toronto.ca/services-payments/water-environment/managing-rain-melted-snow/basement-flooding/basement-flooding-protection-subsidy-program/
+- gta_price_cad: rain garden C$4,500–7,500 per 500 sq ft — https://lotusscape.ca/native-plant-garden-ideas-canada/ ; Toronto subsidy up to C$6,650 covers valves and pumps only — https://www.toronto.ca/services-payments/water-environment/managing-rain-melted-snow/basement-flooding/basement-flooding-protection-subsidy-program/
 - gbp_belief: NONE — nearest: "Drainage service" / "Landscaper"
-- gta_drivers: Toronto requires disconnected downspouts to qualify for its subsidy, and downspout work itself is ineligible, so roof water goes onto lawns. Grading and yard fixes are not covered either. Clay soils add to the problem, and Kitchener and Waterloo credit infiltration (same sources).
-- data_hooks: subsidy eligibility (C$6,650, work after 12 Nov 2025); rainfall normals (repo climate module); sewer type; stormwater credits
+- gta_drivers: Toronto's subsidy requires disconnected downspouts (roof water onto lawns) yet excludes downspout, grading and yard work; clay soils worsen pooling; Kitchener and Waterloo credit infiltration (same sources).
+- data_hooks: subsidy rules; rainfall normals (repo climate module); sewer type; stormwater credits
 - season: spring melt; summer storms
-- web: french drains (launch-10), yard drainage, rain gardens, permeable pavers, grading, sump pump (other cluster)
+- web: french drains (launch-10), yard drainage, rain gardens, permeable pavers, grading
 - queries: "backyard floods when it rains toronto", "water pooling in backyard after rain", "downspout disconnection flooding yard"
-- verdict: STRONG — the top feeder to the launch-10 french-drain pages, and subsidy confusion adds demand; guide page.
+- verdict: STRONG — top feeder to launch-10 french drains; subsidy confusion adds demand. Guide page.
 
 ### grass-wont-grow-in-shade
 - name: "grass won't grow under trees"
@@ -506,7 +501,7 @@ retrieved_at: 2026-09-28 · cluster owner: research agent c5 · scope: high-tick
 - verdict: BORDERLINE — guide content with several paths and no single strong lead buyer.
 
 ### no-parking-toronto-street
-- name: "no parking on my street toronto" / "no driveway"
+- name: "no parking on my street toronto"
 - status: NEW
 - level: OUTCOME
 - tier: T3
