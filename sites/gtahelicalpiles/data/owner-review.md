@@ -6,7 +6,7 @@ Generated from the research and writing runs of 2026-09-25. Each item is somethi
 
 - * Business identity: legal name, phone, email, hours, service-area address policy (data/business.json).
 - * Pile system and its CCMC evaluation report number; manufacturer installer certification; engineer or firm who seals the certificates of conformity; written warranty; insurance and WSIB (data/business.json fields, then the wording upgrades in data/claims-register.md).
-- * Price table confirmation (data/prices.json): are the three ranges your installed prices; what the per-pile figure includes; volume policy; minimum charge by area.
+- Prices: decided 2026-09-28. The three ranges stay as illustrative benchmark bands, labelled illustrative everywhere with the firm price after a site review; no owner confirmation needed before launch. Still open, and only if you want them stated on the site: volume policy and minimum charge by area (today the pages say "volume pricing on larger pile counts" and "a minimum charge stated in the quote").
 - * Real photographs per the discovery pack shot list; the pages ship with a line diagram until then.
 
 ## Per city

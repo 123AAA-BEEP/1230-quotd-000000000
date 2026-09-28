@@ -1,6 +1,6 @@
 {
   "currency": "CAD",
-  "status": "BENCHMARK - illustrative ranges from public sources; owner to confirm before publish",
+  "status": "ILLUSTRATIVE - public Ontario benchmark bands, kept as illustrative ranges by owner decision 2026-09-28; the firm price is the written quote after a site review",
   "last_reviewed": "2026-09-25",
   "unit_basis": "per square foot of finished wall area (both faces of form, concrete core, rebar, bracing, pour and stripping of bracing; excludes excavation, footings, waterproofing, backfill, interior finishes unless stated)",
   "rows": [
@@ -8,7 +8,7 @@
       "key": "foundation",
       "label": "Foundation and basement walls",
       "application": "ICF foundation walls, 8 to 10 ft, 6 or 8 in core",
-      "core_options": "6 in or 8 in concrete core; owner to confirm",
+      "core_options": "6 in or 8 in concrete core",
       "low": 38,
       "high": 55,
       "unit": "per sq ft of wall installed",
@@ -24,11 +24,11 @@
       "key": "above_grade",
       "label": "Full-height above-grade walls",
       "application": "ICF main-floor and second-storey walls to 3 m floor-to-floor (Part 9 limit), 6 in core typical",
-      "core_options": "6 in core typical above grade; 8 in where the wall below is 8 in (OBC 9.15.4.2.(2) makes the foundation core at least the core above); owner to confirm",
+      "core_options": "6 in core typical above grade; 8 in where the wall below is 8 in",
       "low": 42,
       "high": 55,
       "unit": "per sq ft of wall installed",
-      "basis": "ICFpro.ca above-grade wall $42-$52 per sq ft (mid-point $47) with tall (10 ft+) or complex walls $45-$58; BuildersOntario.com generic wall assembly $42-$55. Low is the ICFpro above-grade floor; high is capped at the BuildersOntario ceiling, leaving the $58 tall-wall figure to the additions row. Owner to confirm whether above-grade pricing exceeds basement pricing on their jobs.",
+      "basis": "ICFpro.ca above-grade wall $42-$52 per sq ft (mid-point $47) with tall (10 ft+) or complex walls $45-$58; BuildersOntario.com generic wall assembly $42-$55. Low is the ICFpro above-grade floor; high is capped at the BuildersOntario ceiling, leaving the $58 tall-wall figure to the additions row. Kept as an illustrative band by owner decision 2026-09-28.",
       "sources": [
         "https://icfpro.ca/icf-cost-analysis/",
         "https://buildersontario.com/icf-foundation-cost-2/"
@@ -38,11 +38,11 @@
       "key": "addition",
       "label": "Additions and garage walls",
       "application": "ICF foundation or full-height walls for house additions and detached or attached garages; short perimeters, 8 to 9 ft walls",
-      "core_options": "6 in core typical; 8 in where the engineer or the wall above requires it; owner to confirm",
+      "core_options": "6 in core typical; 8 in where the engineer or the wall above requires it",
       "low": 42,
       "high": 58,
       "unit": "per sq ft of wall installed",
-      "basis": "LEAST-SUPPORTED ROW. No Ontario public source prices additions or garages separately. Range uses the ICFpro.ca above-grade floor ($42) and its tall/complex-wall ceiling ($58) because short perimeters carry the same mobilization, pump truck and bracing set-up as a full house. Owner to replace with their own figures before publish.",
+      "basis": "LEAST-SUPPORTED ROW. No Ontario public source prices additions or garages separately. Range uses the ICFpro.ca above-grade floor ($42) and its tall/complex-wall ceiling ($58) because short perimeters carry the same mobilization, pump truck and bracing set-up as a full house. Kept as an illustrative band by owner decision 2026-09-28.",
       "sources": [
         "https://icfpro.ca/icf-cost-analysis/"
       ]
@@ -71,7 +71,7 @@
   "poured_comparison_note": "Illustrative only. ICFpro.ca (Ontario contractor, 2026) puts a bare poured concrete wall at $15-$25 per sq ft of wall, a poured wall plus the interior framing, insulation and vapour control needed to meet the 2024 OBC at $28-$38, and the resulting ICF premium at $7-$15 per sq ft of wall ($13,000-$28,000 on 1,840 sq ft of basement wall). BuildersOntario.com (2026) puts the typical ICF premium over a bare poured wall at $8K-$18K per house. Whole-house percentage premiums quoted publicly (3-7% ICFpro; 3-5% Concrete Alberta and BuildBlock (USD); 5-10% Carbondale Construction) describe finished houses versus wood frame, not wall-for-wall, and must not be presented as the wall premium. Fox Blocks (USD) lists poured basement walls at $15-$35 per sq ft against installed ICF basement walls at $22-$45; US figures are shown for context only and were not used in the CAD bands.",
   "excluded_note": "Typically outside the per-sq-ft wall figure: excavation and shoring; footings (formwork, rebar, concrete); dampproofing or waterproofing membrane and protection board; weeping tile, drainage layer and stone (required by OBC 9.13 and 9.14 and inspected before backfill); backfill and grading; window and door bucks and lintels beyond standard openings; structural engineering and the Toronto Assumption of Responsibility form where an engineer seals the drawings; permit fees; concrete pump truck; winter heating, hoarding and cold-weather admixtures (ICFpro cites a 20-30% concrete premium in shoulder seasons); brick ledge or taper-top forms; interior finishes and thermal-barrier drywall.",
   "illustrative_note": "Illustrative ranges only. Each site carries its own conditions: soil, water table, wall height, openings, access and season all move the number. The firm price is the written quote after a site review.",
-  "included_note": "Owner to confirm what the per-sq-ft price includes.",
+  "included_note": "Illustrative ranges; the written quote states what the per-sq-ft price includes.",
   "wall_height_default_ft": 9,
   "public_price_points": [
     {

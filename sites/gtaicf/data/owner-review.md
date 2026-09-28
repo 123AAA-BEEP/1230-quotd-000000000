@@ -16,11 +16,9 @@ What the owner has to supply, confirm or strike before the ICF site leaves previ
 7. **Warranty, insurance, WSIB, licence** (`warranty_text`, `insurance`, `wsib`, `licence`): each unlocks one gated word (guaranteed, insured, licensed). Empty means the word never renders.
 8. **Walls built** (`walls_built_note`): a countable claim ("X foundations poured since Y") only with a source you can stand behind.
 
-## Prices (`data/prices.json`, status BENCHMARK)
+## Prices (`data/prices.json`, status ILLUSTRATIVE)
 
-9. All three rows are illustrative bands from public Ontario pages (ICFpro, BuildersOntario, ICFhome titles). Replace low/high with your own per-square-foot figures or confirm the bands: foundation and basement walls $38 to $55; full-height above-grade walls $42 to $55; additions and garage walls $42 to $58 (least supported; no Ontario source prices additions separately).
-10. `included_note` says "owner to confirm what the per-sq-ft price includes"; write the inclusion list (forms, rebar, bracing, concrete, pump?) so the excluded list on the pages stays true.
-11. Confirm whether above-grade pricing exceeds basement pricing on your jobs; the sources disagree.
+Decided 2026-09-28: the three rows stay as illustrative bands from public Ontario pages (foundation and basement walls $38 to $55; full-height above-grade walls $42 to $55; additions and garage walls $42 to $58), labelled illustrative everywhere, with the firm price after a site review. No owner price confirmation is required before launch. Revisit `last_reviewed` once a year or when the public bands move.
 
 ## Practice statements written as "we" that need a yes or a reword
 

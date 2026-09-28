@@ -15,7 +15,7 @@ Fill `sites/<site>/data/business.json`, or send the values and have them entered
 
 ## 2. Prices
 
-`sites/<site>/data/prices.json`: replace the illustrative bands with yours or confirm them, write the `included_note` (what the per-pile or per-square-foot price covers), set `status` and `last_reviewed`. Everything on the sites reads from this file.
+Decided 2026-09-28: both sites keep the illustrative benchmark bands in `sites/<site>/data/prices.json` as they are, labelled illustrative everywhere with the firm price after a site review. Nothing to do before launch; bump `last_reviewed` when the bands are next checked.
 
 ## 3. Owner review
 

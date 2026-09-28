@@ -1,6 +1,6 @@
 {
   "currency": "CAD",
-  "status": "BENCHMARK - owner to confirm before publish",
+  "status": "ILLUSTRATIVE - benchmark bands kept as illustrative ranges by owner decision 2026-09-28; the firm price is the written quote after a site review",
   "last_reviewed": "2026-09-25",
   "method": "PDF ranges are the owner's draft numbers. Public price points were retrieved 2026-09-25 from Ontario installer, contractor, manufacturer and aggregator pages; where they disagree with the PDF, low/high keep the PDF values and suggested_low/suggested_high carry the corroborated band. See claims-register.md, claim 10.",
   "rows": [
@@ -146,7 +146,7 @@
     "Postech Halton / Postech Hamilton / Xtreme Post Hamilton dealer pages: no figures published"
   ],
   "illustrative_note": "Illustrative ranges only. Each site carries its own conditions: soil, access, loads and travel all move the number. The firm price is the written quote after a site review.",
-  "included_note": "Owner to confirm what the per-pile price includes (bracket, mobilization, torque log, engineer's certificate). Until then the ranges are shown as installed price per pile with engineering and permit fees listed separately.",
+  "included_note": "Illustrative ranges shown as installed price per pile with engineering and permit fees listed separately; the written quote states what the per-pile price includes (bracket, mobilization, torque log, engineer's certificate).",
   "deck_post_spacing_ft": 8,
   "deck_post_spacing_basis": "Illustrative layout rule for the estimator only: posts about every 8 ft along each beam, beam lines about every 8 ft across the depth; a ledger-attached deck carries one side on the house. Owner or engineer to confirm; the drawings govern every real layout."
 }
