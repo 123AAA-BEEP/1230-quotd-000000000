@@ -1,0 +1,199 @@
+{
+  "slug": "guelph",
+  "title": "ICF foundations in Guelph | GTA ICF",
+  "description": "ICF foundations in Guelph: sand, gravel and till under each neighbourhood, dolostone beneath, the City's 2026 permit fees, when to pour and illustrative costs.",
+  "h1": "ICF foundations and walls in Guelph",
+  "kicker": "Wellington County",
+  "answer": [
+    "An ICF foundation in Guelph starts with a building permit from the City of Guelph's Building Services, applied for through the Guelph Permit and Application System, and a footing on undisturbed, competent bearing soil at least 4 ft (1.2 m) below grade, the depth printed on the City's own sample drawings. The ground is glacial: sand and gravel laid down by meltwater under Downtown, Old University, Exhibition Park, Westminster Woods and Pineridge, sandy silt till in Kortright Hills and Clairfields, and Silurian dolostone under all of it.",
+    "None of the eleven survey points in Guelph returned bedrock at the surface, so the dig is planned as a soil excavation: shored where the gravel runs, drained everywhere. The City reviews most residential applications in about 10 business days once fees are paid, prices a new house at $1.97 per square foot of floor area from July 1, 2026, and asks for a surveyor's or engineer's certificate of the foundation elevation once the foundation is complete."
+  ],
+  "tiles": [
+    {
+      "value": "1.2 m",
+      "label": "minimum footing depth, 4 ft below grade, printed on the City of Guelph's sample drawings",
+      "source": {
+        "name": "City of Guelph sample drawings, sheet A2",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Plans-elevation-drawings-and-stair-detail.pdf"
+      }
+    },
+    {
+      "value": "$1.97/ft²",
+      "label": "City of Guelph permit fee for a new house from July 1, 2026, per square foot of floor area",
+      "source": {
+        "name": "Building By-law (2015)-19985, Schedule A",
+        "url": "https://guelph.ca/wp-content/uploads/Building-By-law-2015-19985-as-amended-by-2026-21241-AODA.pdf"
+      }
+    },
+    {
+      "value": "11 of 11",
+      "label": "survey points in Guelph on Silurian dolostone, none with rock at the surface",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-80.25599,43.54594&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "48.6%",
+      "label": "of Guelph's 56,480 occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Guelph",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Guelph&DGUIDlist=2021A00053523008&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Digging a foundation in Guelph",
+    "paragraphs": [
+      "Guelph is a meltwater city. Six of the eleven points we queried on the Ontario Geological Survey's surficial map, Downtown at Wyndham and Macdonell, Old University, Exhibition Park, Westminster Woods, Pineridge and the Eramosa River at Victoria Road, return glaciofluvial deposits: sand and gravel dropped by rivers and deltas running off the ice. For a foundation that is easy and awkward ground at once. Water leaves it, so the weeping tile drains rather than sits and the backfill does not hold a bath against the wall. But loose gravel runs, so the cut faces are laid back or shored, and the footing has to bear on material nobody has disturbed.",
+      "Three other grounds show up. Kortright Hills and Clairfields return a stone-poor till, sandy silt to silty sand, which holds a vertical cut while the hole is open but drains more slowly than the gravel, so the drainage layer and weeping tile earn their place. At Riverside Park on the Speed River the map shows ice-contact deposits, sand and gravel with pockets of silt, clay and till: mixed ground that can change across one footprint. The Grange Hill East point, in a creek corridor, returns modern alluvium, clay, silt, sand and gravel that may contain organic remains, which an engineer looks at before a footing bears on it.",
+      "Under every point is Silurian dolostone: the Guelph Formation at ten of eleven, and the Amabel Formation at Pineridge. It is not the shale under Oakville, Mississauga and Toronto, and no point returned it at or near the surface; the survey layers carry no depth-to-rock figure, so we plan a Guelph dig as a soil excavation unless a borehole says otherwise. Water is the likelier surprise. The city is built on drumlins and buried waterways, one a creek running under the Albion Hotel, and draws its drinking water almost entirely from groundwater, which says the ground is permeable without saying where the water table sits on your lot."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries, one per neighbourhood, retrieved 25 September 2026. Guelph's neighbourhoods have no published boundaries in the sources we used, so each point sits at a well-known intersection within the area; a row describes the area, not your lot, and the Grange Hill East point falls in a creek corridor. The footing itself is designed from what the site shows and, when the reviewer asks for one, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown",
+        "surface": "Glaciofluvial sand and gravel (river and delta deposits)",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Old University",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Exhibition Park",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Kortright Hills",
+        "surface": "Sandy silt to silty sand till, stone-poor",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Westminster Woods",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Clairfields",
+        "surface": "Sandy silt to silty sand till, stone-poor",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Grange Hill East",
+        "surface": "Modern alluvium at the query point (creek corridor); not every lot",
+        "bedrock": "Guelph Formation dolostone"
+      },
+      {
+        "name": "Pineridge",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Amabel Formation dolostone"
+      },
+      {
+        "name": "Speed River corridor (Riverside Park)",
+        "surface": "Ice-contact sand and gravel with minor silt, clay and till",
+        "bedrock": "Guelph Formation dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "What the City of Guelph asks for",
+    "authority_short": "the City of Guelph",
+    "paragraphs": [
+      "A foundation is permitted as part of the building permit for the house or addition above it, issued by the City of Guelph's Building Services: the Permit Services team reviews the drawings, Inspections Services visits the site. Applications go through the Guelph Permit and Application System, GPAS, where the drawings and forms are uploaded as PDFs and the same account pays the fee, tracks the review and books inspections. From July 1, 2026 the Building By-law prices low-rise residential, houses and row townhouses, at $1.97 per square foot of floor area measured to the outer face of the exterior walls, rising to $2.03 on January 1, 2027. An unfinished basement is not counted in that area; the attached garage, deck and porch are included in the fee, and the minimum for low-rise residential work is $160. The fee is due on submission and covers plans review and the required inspections, without HST. The by-law also lists a conditional permit for the foundation stage at $0.23 per square foot, which the Chief Building Official may issue so the foundation can start before the full permit; whether your project gets one is the City's call.",
+      "The by-law's Schedule B lists what an application may need according to the scope of work: a site plan or survey, a lot grading plan, a foundation plan, sections and details, structural drawings, air barrier and soil gas control details, the City's Ontario Building Code Analysis form, the Energy Efficiency form where the SB-12 path for the wall is declared, a Radon Mitigation Certification Form, and the Commitment to General Reviews by Architects and Engineers where the design is sealed. The City publishes no ICF-specific checklist. The ICF system is named on the quote and its documentation goes in with the drawings; the Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report. A flat ICF wall drawn within the Code's Part 9 limits is built under the Code's own prescriptive rules rather than as an alternative solution, so the by-law's $640 administration fee for alternative solutions should not arise; beyond those limits the wall is engineered. We prepare the package with you.",
+      "Guelph publishes no inspection-stage list on the pages we could reach. The mandatory inspections are printed on the issued permit, booked through GPAS with 48 hours' notice, and the by-law asks for notice at least one business day before each stage. Expect what the other municipalities we work in ask for, a look at the footing forms and reinforcing before concrete and at the wall before backfill, and confirm Guelph's own list with Inspections Services at 519-837-5614 once the permit is issued. Two things the by-law does spell out for a foundation: on completion of the foundation of a residential project of up to ten units, an Ontario Land Surveyor, professional engineer or architect confirms in a certificate that its elevation conforms to the Building Code and the approved lot grading plan, and a new building gets a surveyor's confirmation that it sits where the Zoning By-law allows. Review takes about 10 business days for most residential applications, counted from when the fee is paid, and 15 to 30 for larger ones; construction must start within a year of issue."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Guelph Building Services, 1 Carden Street, through the Guelph Permit and Application System (GPAS); drawings and forms uploaded as PDFs",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/"
+      },
+      {
+        "label": "New house fee, from July 1, 2026",
+        "value": "$1.97 per ft² of floor area for low-rise residential (houses and row townhouses), measured to the outer face of the exterior walls; unfinished basement excluded, attached garage, deck and porch included; $2.03 from January 1, 2027",
+        "url": "https://guelph.ca/wp-content/uploads/Building-By-law-2015-19985-as-amended-by-2026-21241-AODA.pdf"
+      },
+      {
+        "label": "Foundation-stage conditional permit",
+        "value": "$0.23 per ft² from July 1, 2026 ($0.24 from January 1, 2027), issued at the Chief Building Official's discretion to let a stage start before the full permit",
+        "url": "https://guelph.ca/wp-content/uploads/Building-By-law-2015-19985-as-amended-by-2026-21241-AODA.pdf"
+      },
+      {
+        "label": "Minimum fee and what it covers",
+        "value": "$160 minimum for low-rise residential work ($165 from January 1, 2027), due on submission; the fee includes plans review and the required inspections and is not subject to HST",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/frequently-asked-questions/"
+      },
+      {
+        "label": "Foundation elevation certificate",
+        "value": "On completion of the foundation of a residential project of up to 10 units, and of any townhouse project, a certificate from an Ontario Land Surveyor, professional engineer or architect that the foundation elevation conforms to the Building Code and the approved lot grading plan (By-law s. 8.2)",
+        "url": "https://guelph.ca/wp-content/uploads/Building-By-law-2015-19985-as-amended-by-2026-21241-AODA.pdf"
+      },
+      {
+        "label": "Inspections and review time",
+        "value": "Mandatory inspections listed on the issued permit and booked through GPAS with 48 hours' notice; no stage list published; most residential applications reviewed in about 10 business days once fees are paid",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "When to pour in Guelph",
+    "paragraphs": [
+      "Environment Canada publishes no normals for a station named Guelph, so the nearest full record is the Kitchener/Waterloo composite at the Region of Waterloo airport, about 15 km south-west and, like Guelph, inland and higher than the lakeshore. For 1991 to 2020 it gives a January mean of −6.3 °C, a last spring frost on May 8 and a first fall frost on October 5 for a 149-day frost-free period, 61.4 days a year when the temperature never rises above 0 °C, and 43.8 days below −10 °C, against 34.2 at Toronto Pearson. On those days a pour is cold-weather work under CSA A23.1, which begins at a forecast below 5 °C in the next 24 hours: concrete placed at 10 °C or warmer, held at 10 °C or warmer through curing, and at 7 MPa before frost reaches it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam does part of the job by insulating the core while it cures, but the open top of the wall and the footing are covered separately, and snow and ice come out of the cavity before the pump starts. The station also counts roughly 95 days a year that cross 0 °C between night and day, so a winter pour here is planned around the forecast rather than the calendar. The footing depth does not move with the season. The City's sample drawings print a minimum of 4 ft, 1.2 m, below grade on undisturbed, competent bearing soil, and that is the figure we set out to; the Building Code's table gives the same 1.2 m for a heated basement on clay or soils not clearly defined, 1.2 m but not less than the frost penetration where those soils carry no heated space, and no minimum on rock or, under a heated basement, on coarse-grained soil."
+    ],
+    "facts": [
+      {
+        "label": "Frost-free period",
+        "value": "149 days, May 8 to October 5, Kitchener/Waterloo composite, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0"
+      },
+      {
+        "label": "Cold days",
+        "value": "43.8 a year below −10 °C (Toronto Pearson 34.2) and 61.4 that never rise above 0 °C; January mean −6.3 °C, Kitchener/Waterloo, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0"
+      },
+      {
+        "label": "Footing depth on City drawings",
+        "value": "Minimum 4 ft (1.2 m) below grade on undisturbed, competent bearing soil, City of Guelph sample drawings, sheet A2 dated 03/01/2023",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Plans-elevation-drawings-and-stair-detail.pdf"
+      },
+      {
+        "label": "Code minimum",
+        "value": "Table 9.12.2.2: 1.2 m for a heated basement on clay or soils not clearly defined; no minimum on rock or, under a heated basement, on coarse-grained soil; 2024 Building Code Compendium, Volume 1",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Guelph is the north-west corner of our area, so travel is a line on the quote. Otherwise the price follows the ground: shoring where the sand and gravel runs under most of the city, a longer pump reach on the older streets around Exhibition Park, an engineered footing where a river-corridor lot meets alluvium, and cover and heated concrete on cold days. Rock excavation is rarely a Guelph line.",
+  "faqs": [
+    {
+      "q": "What is a Guelph excavation like in the sand and gravel?",
+      "a": "Quick to dig and quick to move. Under Downtown, Old University, Exhibition Park, Westminster Woods and Pineridge the survey maps glaciofluvial sand and gravel, which comes out easily and drains as soon as it is opened but will not stand vertical for long. We lay the faces back or shore them, keep the footing base undisturbed, and pour the footing soon after its inspection so the base is not left open to rain and wheel traffic. Any edge that has been disturbed is cut back, never used as bearing."
+    },
+    {
+      "q": "Do Guelph basements have water problems?",
+      "a": "The ground says yes in the river corridors and nothing elsewhere. Downtown sits above the confluence of the Speed and Eramosa, Riverside Park returns ice-contact gravel, the Grange Hill East point returns creek alluvium, and the city is built over buried waterways, one under the Albion Hotel. Whatever the lot, the Code requires the outside of the wall to be dampproofed, or waterproofed where hydrostatic pressure occurs, with weeping tile at the footing, and an ICF wall insulated more than 900 mm below grade needs a drainage layer too."
+    },
+    {
+      "q": "What does the City of Guelph want with an ICF foundation application?",
+      "a": "The ordinary building permit, through GPAS. The by-law's Schedule B lists what may be asked for: site and grading plans, foundation plan, sections, structural drawings, soil gas control details, the City's Building Code Analysis form, the Energy Efficiency form and, for a sealed design, the Commitment to General Reviews form. The ICF system is named on the quote and its documentation goes in with the drawings; the Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC report. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF wall in Guelph in January?",
+      "a": "Yes, and Guelph is colder than the lakeshore: the Kitchener/Waterloo station counts 43.8 days a year below −10 °C against 34.2 at Toronto Pearson, and 61.4 days that never get above freezing. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam insulates the core, the top of the wall and the footing get their own cover, and the wall reaches 7 MPa before it is left to the frost."
+    },
+    {
+      "q": "How deep does the footing go in Guelph?",
+      "a": "At least 4 ft, 1.2 m, below grade on undisturbed, competent bearing soil. That is the minimum the City of Guelph prints on its sample deck drawings, and the Building Code's table gives the same 1.2 m for a heated basement on clay or soils not clearly defined. The Code sets no minimum on rock, or on coarse-grained soil under a heated basement, but we set out to the City's figure. Lots with engineered fill, which the City's drawings single out, are dug through to undisturbed ground."
+    },
+    {
+      "q": "The table says alluvium for Grange Hill East. Is that my lot?",
+      "a": "Probably not the whole neighbourhood. The point we queried falls in a creek corridor, and modern alluvium is what creek corridors are made of: clay, silt, sand and gravel that may hold organic remains, which an engineer wants to see before any footing bears on it. The other east-end points, at Pineridge and at the Eramosa River by Victoria Road, return the same glaciofluvial sand and gravel as Downtown. A lot away from the creek is likelier on that; the site visit and, where asked, a borehole settle it."
+    }
+  ],
+  "related_note": "We also build in Halton Hills, Milton and Hamilton."
+}

@@ -1,0 +1,163 @@
+{
+  "slug": "r-value-thermal-savings-icf-basements",
+  "title": "R-value, SB-12 and what an ICF basement actually saves | GTA ICF",
+  "description": "Nominal against effective R-value, SB-12 Zone 1 package values, the R10-each-face ICF rule, sound, moisture and the foam cover the Code requires, with sources.",
+  "h1": "R-value, SB-12 and what an ICF basement actually saves",
+  "kicker": "Energy guide",
+  "lede": "ICF marketing leans on big R-values and bigger savings claims. This guide is for homeowners, designers and builders in the GTA, Hamilton, Guelph and Niagara who want to know what an ICF basement or full-height wall is worth in the terms the Ontario Building Code uses. It sets out nominal against effective R-value as SB-12 defines them, the Zone 1 package values, the R10-each-face rule that deems an ICF wall to comply, and what the manufacturer figures do and do not tell you. It also covers sound, moisture and the drywall the Code requires over foam, and says where ICF is not the better choice.",
+  "sections": [
+    {
+      "id": "nominal-and-effective-r-value",
+      "heading": "Nominal and effective R-value are two different numbers",
+      "paragraphs": [
+        "SB-12, the supplementary standard that carries Ontario's energy efficiency rules for houses, uses two R-values, and they are not interchangeable. The notes to its Table 3.1.1.2.A say the nominal value is for the thermal insulation component only, while the effective value includes the entire wall assembly and the interior air film. Nominal is the number on the bag or the block. Effective is what the finished wall does once concrete, framing, air films and finishes are counted. The table is written in metric RSI. Multiply RSI by 5.678 for the imperial R-value: RSI 3.52 is about R-20, and SB-12 itself writes RSI 1.76 as R10.",
+        "SB-12 sorts Ontario by heating degree-days. Zone 1 is under 5,000 degree-days, which covers the GTA, Hamilton, Guelph and Niagara. Within Zone 1, Article 3.1.1.2 sends a house with a furnace of 92 per cent AFUE or better to Table 3.1.1.2.A, furnaces between 84 and 92 per cent to Table B, and electric heat to Table C. Compliance package A1 in Table A lists a minimum nominal RSI 3.52 continuous, about R-20, for basement walls, with a minimum effective RSI 3.72. For walls above grade it lists a nominal RSI 3.87, about R-22, with an effective RSI 3.00. We quote the package and the zone every time, because the other packages differ.",
+        "Above grade, package A1's effective RSI 3.00 sits below its nominal 3.87: once framing and the rest of the assembly are counted, a batt wall delivers less than the batt's label. In the basement the order flips, and the effective RSI 3.72 is above the nominal 3.52, because the whole wall and the interior air film are counted. Packages A2 to A6 mix batt and continuous insulation differently; A5 allows RSI 2.11 plus 0.88 continuous in the basement with an effective RSI 2.81. Note 6 to the table lets RSI 3.52 continuous and RSI 2.11 plus 1.76 continuous stand in for each other. A package is chosen as a set; the wall rows are only part of it."
+      ],
+      "sources": [
+        { "name": "2024 Building Code Compendium, Volume 2: Supplementary Standard SB-12, Article 3.1.1.2 and Table 3.1.1.2.A (MMAH digital copy, not an official copy)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Ontario Association of Architects, Practice Tip PT.36.3, OBC SB-12 prescriptive compliance (Zone 1 definition)", "url": "https://www.oaa.on.ca/Assets/Common/Shared_Documents/Practice%20Tips/PT.36.3_V03.0_OBC-SB12_PrescriptiveCompliance.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Ontario.ca, Ontario's Building Code (links to the Compendium and to e-Laws)", "url": "https://www.ontario.ca/page/ontarios-building-code", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "the-icf-rule-in-sb-12",
+      "heading": "The R10-each-face rule that deems an ICF wall to comply",
+      "paragraphs": [
+        "SB-12 has a sentence written for ICF. Sentence 3.1.1.2.(5) covers an ICF wall with at least RSI 1.76 (R10) of insulation on the interior surface of the concrete and at least RSI 1.76 (R10) on the exterior surface. That wall is deemed to comply with the thermal values set out for walls in the Table 3.1.1.2.A packages. Sentence (6) then permits that wall in place of basement walls that require RSI 3.52 continuous (R20) or less. The rule is not new; the 2017 SB-12 carries the same sentence. Package A1's basement row is exactly RSI 3.52 continuous, so an ICF wall with R10 of foam on each face is permitted in its place without a further calculation.",
+        "Two things follow. First, SB-12 does not print an effective R-value for the ICF wall in that rule; it deems the wall to comply and moves on, which is why the table below shows no effective figure in that row. Second, the rule covers walls only. The ceiling, the windows, the slab, the heating equipment and the rest of the chosen package still have to be met, and a reviewer may ask for the form manufacturer's product literature or thermal test data with the SB-12 submission. We prepare that package with you, with the system named on the quote and its documentation attached."
+      ],
+      "table": {
+        "caption": "SB-12 Zone 1 package A1 wall values against the ICF deemed-to-comply rule. R-values are RSI multiplied by 5.678 and rounded; other packages differ.",
+        "columns": ["Wall", "Minimum nominal RSI (about R)", "Minimum effective RSI (about R)", "Where SB-12 says it"],
+        "rows": [
+          ["Basement wall, package A1", "3.52 continuous (about R-20)", "3.72 (about R-21)", "Table 3.1.1.2.A, Zone 1"],
+          ["Wall above grade, package A1", "3.87 (about R-22)", "3.00 (about R-17)", "Table 3.1.1.2.A, Zone 1"],
+          ["ICF wall, any package", "1.76 (R10) on each face of the concrete, 3.52 (R20) of foam in total", "None printed; deemed to comply with the wall values in the packages", "Sentence 3.1.1.2.(5)"],
+          ["ICF wall in place of a basement wall", "Same R10 on each face", "None printed; permitted where the basement row asks for RSI 3.52 continuous (R20) or less", "Sentence 3.1.1.2.(6)"]
+        ]
+      },
+      "sources": [
+        { "name": "2024 Building Code Compendium, Volume 2: Supplementary Standard SB-12, Sentences 3.1.1.2.(5) and (6) (MMAH digital copy, not an official copy)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "MMAH Supplementary Standard SB-12, 2017 replacement pages (same ICF sentence)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/510155.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Ontario Association of Architects, Practice Tip PT.36.3 (documentation reviewers may request for ICF)", "url": "https://www.oaa.on.ca/Assets/Common/Shared_Documents/Practice%20Tips/PT.36.3_V03.0_OBC-SB12_PrescriptiveCompliance.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "manufacturer-r-values",
+      "heading": "What the manufacturer R-values do and do not tell you",
+      "paragraphs": [
+        "Manufacturers rate their standard forms at nominal R-22 to R-30. Amvic sells R22 and R30 blocks, Fox Blocks quotes an R-value of 23.5 plus, Quad-Lock describes two continuous layers of insulation rated at R-22 and higher, and the Logix material data sheet gives its EPS an R-value of 4.13 per inch by ASTM C518. Every one of those is a nominal figure: the foam alone, both faces added together, with the concrete core, the air films and the drywall left out. A per-inch figure multiplied by the total foam thickness gives the same kind of number. None of them is the effective value that the SB-12 tables are written in.",
+        "The effective value for the whole wall comes from the manufacturer's third-party thermal report for the chosen block and core width, and that report is what goes to the reviewer when one is requested. We install whichever system the local supplier stocks, so we do not print one system's figure as ours. The Building Code asks flat-wall ICF units to conform to CAN/ULC-S717.1 (Article 9.15.4.1). The NRC registry lists two systems under that standard and carries a code compliance report for a third; the others hold S717.1 listings from other accredited bodies. The system is named on the quote, and its thermal report and S717.1 documentation go in the permit package we prepare with you.",
+        "Thicker-foam blocks raise the nominal number, and the marketing follows. Under the prescriptive path the Code question is settled at R10 on each face; anything above that is a decision about comfort, heating load and the rest of the envelope rather than a permit requirement. We have not found a primary measurement of what the extra foam is worth in a southern Ontario house, so we do not put a number on it. Ask for the thermal report by block name and core width before the SB-12 form is filled in, and read the nominal and effective lines separately."
+      ],
+      "list": [
+        "Nominal R-value: the foam on both faces added together, nothing else counted",
+        "Per-inch value, such as R 4.13 per inch by ASTM C518 on the Logix sheet: multiply by the total foam thickness for the nominal figure",
+        "Effective or assembly R-value: the whole wall, from the third-party thermal report, in the terms the SB-12 tables use",
+        "CAN/ULC-S717.1: the unit standard the Code names in Article 9.15.4.1; a CCMC listing or report is additional, and not every system has one",
+        "Core width: the Code sets a 150 mm (6 in) minimum for an ICF foundation wall, and the thermal report should match the core you are buying"
+      ],
+      "sources": [
+        { "name": "Amvic (Alleguard), R22 and R30 insulated concrete forms", "url": "https://www.amvicsystem.com/", "retrieved_at": "2026-09-25" },
+        { "name": "Fox Blocks, ICF product page (R-value of 23.5+)", "url": "https://www.foxblocks.com/", "retrieved_at": "2026-09-25" },
+        { "name": "Quad-Lock, ICF energy performance (R-22 and higher)", "url": "https://www.quadlock.com/insulated-concrete-forms/ICF_energy_performance.php", "retrieved_at": "2026-09-25" },
+        { "name": "Logix ICF material property data sheet, 2019, distributor copy (R 4.13 per inch by ASTM C518)", "url": "https://bvrthermal.com/?mdocs-file=4811", "retrieved_at": "2026-09-25" },
+        { "name": "NRC Canadian Construction Materials Centre registry, listings under CAN/ULC-S717.1", "url": "https://www.nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/registry/extranet/list.html?s=L&c=30&mfg=0&mf=0&a=3&tg=CAN_ULC-S717.1&y=0&t=0&crpa=0&co=0&o=0", "retrieved_at": "2026-09-25" },
+        { "name": "2024 Building Code Compendium, Volume 1, Articles 9.15.4.1 and 9.15.4.2 (MMAH digital copy, not an official copy)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "thermal-mass-air-leakage-and-savings",
+      "heading": "Thermal mass, air leakage and the savings figure we do not print",
+      "paragraphs": [
+        "Three mechanisms explain why an ICF wall can do better in use than a framed wall with the same nominal number: continuous foam on both sides, no studs bridging the insulation, and a solid concrete core that stops air leakage through the wall itself. Quad-Lock's energy page makes the first two arguments against a framed wall, where studs it rates at R-5 or R-7 interrupt the batt, and describes thermal mass separately as the concrete's capacity to store heat. Those are manufacturer explanations, and they are mechanisms, not measurements. What any of them is worth in a given house depends on the rest of the envelope, the mechanical system and how the basement is used.",
+        "We have not retrieved a primary NRC, CMHC or RDH measurement of ICF energy savings, so this guide prints no savings percentage. Contractor sites quote ranges and attribute them to RDH testing without a link; Fox Blocks lists an RDH Laboratories energy code review for Canada that we have not read. Until a primary report is in hand, we describe the mechanism and stop there. If a salesperson gives you a percentage, ask which house it was measured in, against what baseline, and by whom. A figure without those three answers is marketing, not a measurement.",
+        "The foam works during the pour too. Nudura's installation manual says its EPS forms give excellent thermal protection in the cold weather and extreme heat as the concrete cures. CSA A23.1 treats any pour with a forecast below 5 °C in the next 24 hours as cold-weather work: concrete for walls under 300 mm must arrive at 10 to 32 °C, be kept at 10 °C or more through curing, and reach 7 MPa before it can see frost. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The top of the wall and the footing still need cover."
+      ],
+      "sources": [
+        { "name": "Quad-Lock, ICF energy performance (thermal bridging and thermal mass, manufacturer explanation)", "url": "https://www.quadlock.com/insulated-concrete-forms/ICF_energy_performance.php", "retrieved_at": "2026-09-25" },
+        { "name": "Fox Blocks, codes and standards resource listing (RDH Laboratories energy code review, title only)", "url": "https://www.foxblocks.com/resources?category=codes-and-standards", "retrieved_at": "2026-09-25" },
+        { "name": "Nudura installation manual, section 6, installation procedures (PDF)", "url": "https://www.nudura.com/media/Nudura/Resources/Installation%20Manual/Sections/60-installation-procedures-to-nudura-installation-manual.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Concrete Ontario, Cold Weather Concreting technical specification, reproducing CSA A23.1:24 Tables 14 and 19 (PDF)", "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "sound",
+      "heading": "Sound: the STC figures and where the Code uses them",
+      "paragraphs": [
+        "The sound figures are manufacturer-tested laboratory values, and each comes with an assembly. Nudura's pre-design criteria put a 6 in (152 mm) core wall with half-inch gypsum board on both sides at STC 50. Amvic's technical bulletin reports ASTC 47 by ASTM E336 and an equivalent STC 50 by ASTM E413 for its 6 in R22 form with half-inch gypsum on both sides. The Logix data sheet reports STC 56 by ASTM E90 for a 6.25 in wall with two layers of 5/8 in drywall on wood strapping on one side and half-inch drywall on the other, and STC 50 for its 4 in wall. Field results depend on the windows, doors and penetrations.",
+        "Where the Code uses those numbers is narrower than the marketing suggests. Article 9.11.1.1 asks that a dwelling unit be separated from other spaces in the building where noise may be generated. The separating assembly and adjoining construction must give an ASTC of at least 47, or the assembly must reach STC 50 with adjoining construction to Article 9.11.1.4; the Amvic bulletin quotes the same clause. That is a rule for the wall or floor between two units, such as a basement suite or a semi-detached party wall. An exterior wall facing the street carries no STC requirement, so there the ICF figure is a comfort benefit, not a Code item."
+      ],
+      "sources": [
+        { "name": "Nudura, pre-design criteria (STC 50 wall assembly)", "url": "https://www.nudura.com/icf-education/pre-design-criteria", "retrieved_at": "2026-09-25" },
+        { "name": "Alleguard (Amvic) technical bulletin, ICF STC rating, 2 February 2023 (PDF)", "url": "https://alleguard.com/wp-content/uploads/2023/02/Alleguard-ICF-STC-Rating.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Logix ICF material property data sheet, 2019, distributor copy (STC 56 and STC 50 by ASTM E90)", "url": "https://bvrthermal.com/?mdocs-file=4811", "retrieved_at": "2026-09-25" },
+        { "name": "2024 Building Code Compendium, Volume 1, Articles 9.11.1.1 and 9.11.1.2 (MMAH digital copy, not an official copy)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "moisture-drainage-and-the-foam-cover",
+      "heading": "Moisture, drainage and the drywall the Code requires over foam",
+      "paragraphs": [
+        "The foam is insulation, not waterproofing, and the Code treats an ICF foundation like any other. Article 9.13.2.1 requires the exterior surfaces of foundation walls below ground level to be dampproofed where the outside grade is higher than the floor inside, and waives that only where the wall is waterproofed. Article 9.13.3.1 requires waterproofing where hydrostatic pressure occurs. Sentence 9.14.2.1.(1) requires drainage at the bottom of every foundation wall that contains the building interior unless it can be shown to be unnecessary. None of this changes because the form is foam; the membrane and the weeping tile are in every ICF quote we write.",
+        "Because ICF is insulated full height, one more sentence applies. Where the insulation on a foundation wall extends more than 900 mm below the outside grade, Sentence 9.14.2.1.(1.1) requires a drainage layer against the exterior face. That layer is at least 19 mm of mineral fibre insulation of 57 kg per cubic metre or denser, at least 100 mm of free-draining granular material, or a system shown to perform as well. The form makers sell peel-and-stick membranes for their blocks; Nudura's manual describes a 1.0 mm (40 mil) SBS membrane for below-grade dampproofing and waterproofing. Hamilton's backfill inspection checks the drainage layer, weeping tile and stone cover before the excavation is closed.",
+        "Inside the house the foam has to be covered. Article 9.10.17.10, Protection of Foamed Plastics, requires foamed plastics that form part of a wall or ceiling assembly to be protected from adjacent space in the building. The cover must be one of the interior finishes in Subsections 9.29.4 to 9.29.9, taped gypsum board among them, or a thermal barrier that meets Sentence 3.1.5.15.(2). The sheet metal option is not open to a building with a Group C major occupancy, which is what a house is. A basement you leave unfinished still gets drywall or an equivalent barrier over the interior foam, and we price it that way."
+      ],
+      "sources": [
+        { "name": "2024 Building Code Compendium, Volume 1, Articles 9.13.2.1, 9.13.3.1, 9.14.2.1, 9.10.17.10 and Subsection 9.29.5 (MMAH digital copy, not an official copy)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Nudura installation manual, section 7, dampproofing and waterproofing (PDF)", "url": "https://www.nudura.com/media/Nudura/Resources/Installation%20Manual/Sections/70-damproofing-and-waterproofing-to-nudura-installation-manual.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "City of Hamilton, Building Inspections (backfill inspection: drainage layer, weeping tile, stone cover)", "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "where-icf-is-not-the-better-choice",
+      "heading": "Where ICF is not the better choice",
+      "paragraphs": [
+        "A basement that will stay unfinished and unheated does not need a wall built around insulation. If the space under a cottage, a workshop or a detached garage will never be heated, the foam has no heat to keep in, and the Code still asks for the interior face to be covered. A poured or block wall with whatever insulation the design actually calls for is usually the cheaper answer there, and a poured wall can be insulated from inside later if the plan changes. We would rather say so at the site review than sell foam the building cannot use.",
+        "A retrofit of an existing poured or block foundation is the other case. ICF is a stay-in-place form; it is built around wet concrete and cannot be wrapped onto a wall that already stands. When an older basement in Toronto, Hamilton or Guelph needs insulating for a renovation, interior insulation is the sensible route: continuous foam board or an insulated stud wall inside the existing concrete, with the drainage and dampproofing questions answered first. That is a job for a basement renovator, and we say so. Where a failing wall comes out, the replacement can be ICF, and the comparison guide sets out the illustrative price ranges from our price table, with the firm price after a site review."
+      ],
+      "sources": [
+        { "name": "2024 Building Code Compendium, Volume 1, Article 9.10.17.10 (MMAH digital copy, not an official copy)", "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "ICF vs poured concrete in Ontario: our illustrative price ranges (data/prices.json, reviewed 2026-09-25)", "url": "/guides/icf-vs-poured-concrete-ontario/", "retrieved_at": "2026-09-25" }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is an ICF basement wall R-20 or R-22?",
+      "a": "Both numbers are nominal, the foam alone. SB-12 Zone 1 package A1 asks for a nominal RSI 3.52 continuous, about R-20, in the basement and RSI 3.87, about R-22, above grade, with effective values of RSI 3.72 and 3.00. An ICF wall with at least RSI 1.76 (R10) of foam on each face of the concrete is deemed to comply with those wall values, and the effective figure for a specific block comes from its manufacturer's third-party thermal report."
+    },
+    {
+      "q": "Does an ICF wall meet SB-12 in Toronto, Hamilton or Niagara?",
+      "a": "Those cities sit in SB-12 Zone 1, under 5,000 heating degree-days. Sentence 3.1.1.2.(5) deems an ICF wall with at least RSI 1.76 (R10) of insulation on each face of the concrete to comply with the wall values in the Table 3.1.1.2.A packages, and Sentence (6) permits it in place of basement walls that require RSI 3.52 continuous (R20) or less. The rest of the chosen package, from the windows to the furnace, still has to be met."
+    },
+    {
+      "q": "How much does an ICF basement save on heating?",
+      "a": "We do not print a percentage, because we have not found a primary NRC, CMHC or RDH measurement to support one; the figures that circulate online are contractor or manufacturer claims without a linked study. What we can say is how the wall works: continuous foam on both faces, no studs bridging the insulation, and a concrete core that stops air leakage through the wall. The saving in a given house depends on the rest of the envelope and the mechanical system."
+    },
+    {
+      "q": "Are ICF walls soundproof?",
+      "a": "No wall is, but the tested figures are good. Manufacturer laboratory tests put a 6 in core ICF wall with half-inch drywall on both sides at STC 50 (Nudura; Amvic ASTC 47 and STC 50), and a 6.25 in Logix wall with extra drywall at STC 56. The Code's ASTC 47 or STC 50 rule in Article 9.11.1.1 applies to assemblies separating a dwelling unit from other spaces in the building, not to an exterior wall, and windows and doors set the field result."
+    },
+    {
+      "q": "Does the foam inside an ICF basement have to be covered?",
+      "a": "Yes. Article 9.10.17.10 of the Building Code requires foamed plastics in a wall or ceiling assembly to be protected from the adjacent space by one of the interior finishes in Subsections 9.29.4 to 9.29.9, such as taped gypsum board, or by a thermal barrier meeting Sentence 3.1.5.15.(2). Concealed spaces such as attics and crawl spaces are the exception. That applies whether or not you finish the basement, so an unfinished ICF basement still gets drywall or an equivalent barrier over the interior foam."
+    },
+    {
+      "q": "Is an ICF foundation waterproof on its own?",
+      "a": "No. The foam is insulation. Article 9.13.2.1 requires the outside of a foundation wall below grade to be dampproofed, or waterproofed where hydrostatic pressure occurs under Article 9.13.3.1, and Sentence 9.14.2.1.(1) requires drainage at the bottom of the wall. Because ICF insulation runs more than 900 mm below grade, Sentence 9.14.2.1.(1.1) also requires a drainage layer against the wall. The form makers sell peel-and-stick membranes for their blocks, and Hamilton checks the drainage layer and weeping tile at its backfill inspection."
+    }
+  ],
+  "related": [
+    { "href": "/foundations-and-basements/", "label": "ICF foundations and basements: what we build and how the job runs" },
+    { "href": "/full-height-walls/", "label": "Full-height ICF walls for additions, garages and whole houses" },
+    { "href": "/guides/icf-vs-poured-concrete-ontario/", "label": "ICF against poured concrete in Ontario: illustrative price ranges and a wall calculator" },
+    { "href": "/locations/oakville/", "label": "Building an ICF foundation in Oakville: soils, permits and the pouring season" }
+  ],
+  "cta": {
+    "heading": "Ask for the effective value before the permit goes in",
+    "body": "Send us drawings or a sketch with the wall heights and how the basement will be used. We name the ICF system on the quote, attach its thermal report and CAN/ULC-S717.1 documentation to the permit package we prepare with you, and give a firm price after a site review."
+  },
+  "reviewed": "2026-09-25"
+}

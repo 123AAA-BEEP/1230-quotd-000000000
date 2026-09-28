@@ -1,0 +1,199 @@
+{
+  "slug": "grimsby",
+  "title": "ICF foundations in Grimsby | GTA ICF",
+  "description": "ICF foundations in Grimsby: shale at the surface in the west end, lake sand in the centre, the Town's 2026 permit fee and footing checklist, and when we pour.",
+  "h1": "ICF foundations and walls in Grimsby",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Grimsby is a strip of town between the Escarpment brow and Lake Ontario, and a foundation dig on the plain meets one of three grounds: the sand and gravel of the old Lake Iroquois shore through the centre and the east end at Bartlett Avenue, older creek alluvium downtown along Forty Mile Creek, and red Queenston shale at or near the surface at Casablanca, the Winona border and the creek mouth. Up on the Mountain the survey turns to silt and clay over Lockport dolostone.",
+    "The permit is a building permit from the Town of Grimsby's Building Division, filed through Cloudpermit since 2026; Niagara Region issues none. The Town's own Footing Inspection Checklist sets the footing a minimum of 1.2 m below finished grade on solid, clean, unfrozen, undisturbed ground, suggests a geotechnical engineer confirm the design bearing pressure, and requires an engineer's report where high groundwater is suspected. Its inspection list opens with footings, then the foundation, then framing."
+  ],
+  "tiles": [
+    {
+      "value": "1.2 m",
+      "label": "minimum footing elevation below finished grade on the Town of Grimsby's Footing Inspection Checklist",
+      "source": {
+        "name": "Town of Grimsby, Footing Inspection Checklist",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/5c4pakmt/footing-inspections.pdf"
+      }
+    },
+    {
+      "value": "3 of 7",
+      "label": "lake-plain survey points with bedrock at or near the surface: Casablanca, the Winona border and the Forty Mile Creek mouth, all on Queenston red shale",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, point query at Casablanca",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.6215,43.1955&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "174 days",
+      "label": "average frost-free period at Vineland Rittenhouse, about April 26 to October 18, the nearest station with published normals",
+      "source": {
+        "name": "Environment Canada climate normals 1981 to 2010, Vineland Rittenhouse",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=VINELAND%20RITTENHOUSE&f=json&limit=3000"
+      }
+    },
+    {
+      "value": "35.1%",
+      "label": "of Grimsby's 11,395 occupied dwellings were built between 2001 and 2021; 64.4% are single-detached houses",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Grimsby",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Grimsby&DGUIDlist=2021A00053526065&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What a Grimsby excavation opens into",
+    "paragraphs": [
+      "On the plain below the brow, the Ontario Geological Survey's point queries at the town centre and at Bartlett Avenue in the east end both return coarse-textured glaciolacustrine deposits: the sand and gravel glacial Lake Iroquois left along its nearshore. A basement cut in it will not stand for long, so the faces are benched or boxed and the footing sits on ground no bucket has loosened. In return the ground passes water, which is what a weeping tile wants. The Grimsby Beach query fell on the shoreline itself and returned no surface unit; at the Beach the lake, not the soil, sets the water question.",
+      "West of the centre the soil thins to nothing. At the Casablanca interchange, at the Winona border near Fifty Road and at the mouth of Forty Mile Creek, the survey maps bedrock at or near the surface, and the rock is the Queenston Formation: red shale and siltstone. A full-depth excavation is partly a rock excavation, and the footing may end up on shale, which the Building Code permits at any depth. Downtown along the creek the map flips to older alluvium, clay through gravel that can carry organic remains, and there the checklist's suggestion that a geotechnical engineer confirm the bearing pressure is one we take up.",
+      "Up Mountain Street the ground changes twice. On the Escarpment face the survey returns clay-to-silt till, which holds a vertical cut but sheds water slowly, so an open hole keeps its rain until it is pumped. On top, at Ridge Road, it returns fine-textured glaciolacustrine silt and clay, massive to well laminated, no quicker to drain. Both sit on the Lockport Formation rather than Queenston: the Vinemount shale beds, Goat Island light brown dolostone and Gasport blue-grey dolostone. The survey has no drift-thickness layer, so how far down that rock lies is a site question, and a soil finding from the plain does not carry up the hill."
+    ],
+    "table_note": "Each row is an Ontario Geological Survey point query, surficial map MRD 128-REV and bedrock map MRD 219, at one coordinate placed inside the area and run 25 September 2026; only the town centre and the Winona coordinate come from a published source, and the rest were set from the Town's and Wikipedia's descriptions of each area. A row speaks for the ground around its point, not for your lot, and neither layer reports depth to rock. The footing design comes from the excavation and, where the Town asks for one, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Town centre (reference point)",
+        "surface": "Sand and gravel, minor silt and clay (Lake Iroquois nearshore)",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Downtown Grimsby (Main Street)",
+        "surface": "Older alluvium: clay, silt, sand and gravel, may contain organic remains",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Grimsby Beach",
+        "surface": "No surface unit returned at the query point (shoreline)",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "East Grimsby (Bartlett Avenue)",
+        "surface": "Sand and gravel, minor silt and clay",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Forty Mile Creek mouth (harbour)",
+        "surface": "Bedrock at or near surface, drift too thin to map",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Casablanca (west end, QEW interchange)",
+        "surface": "Bedrock at or near surface, drift too thin to map",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Winona border (Fifty Road)",
+        "surface": "Bedrock at or near surface, drift too thin to map",
+        "bedrock": "Queenston, red shale and siltstone"
+      },
+      {
+        "name": "Escarpment face (Mountain Street)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Lockport, dolostone with shale beds"
+      },
+      {
+        "name": "Grimsby Mountain (Ridge Road)",
+        "surface": "Silt and clay, massive to well laminated",
+        "bedrock": "Lockport, dolostone with shale beds"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "The Town of Grimsby's permit, fee and inspections",
+    "authority_short": "the Town of Grimsby",
+    "paragraphs": [
+      "Building permits in Grimsby come from the Town of Grimsby's Building Division at Town Hall, 160 Livingston Avenue; Niagara Region is the upper tier and issues none. For 2026 the Town moved submission, payment and inspection requests onto Cloudpermit. The foundation is permitted with the house or the addition it carries, and Schedule C of the Town's 2026 Consolidated Fees and Charges prices detached, semi-detached and row houses, additions and secondary suites at $1.76 per square foot of floor area, with no HST, measured to the outer face of the exterior walls. An unfinished basement under a new house is left out of that area and a later basement finish is a permit of its own; the minimum for any permit is $232, and fees are due when the application goes in unless the Chief Building Official lets them wait for issuance. The schedule prints no line for a foundation on its own, so a replacement foundation under a standing house is a fee we confirm with the Division before quoting it. A complete residential application gets its first review in 10 business days; the Town's published averages are 13 weeks to a new house permit and 7 weeks to a residential alteration permit, and each resubmission can add two weeks or more.",
+      "The Town's residential page shows how it handles a foundation system it does not see every day: where helical piers are used, it asks for supporting engineering and, in its words, CCMC approval with the application. The Building Code treats a flat-wall ICF foundation as its own case, with prescriptive rules in Subsection 9.15.4 and CAN/ULC-S717.1 as the standard the form units conform to; a few systems also hold a CCMC evaluation report. The package is therefore the drawings, the documentation for the system named on the quote, and the SB-12 energy summary for the wall, with an engineer's seal where the wall falls outside the Part 9 limits of two storeys, 3 m floor to floor and 75 kPa soil, or where the plans examiner asks for one. What the Division expects to see for the wall is a question we put to it before submission, and we prepare the package with you.",
+      "The Town's inspection list for a permit opens with footings, and the items it names for that visit are undisturbed soil, the minimum footing depth, the form layout, the footings, waterproofing and the precautions around the hole. Its Footing Inspection Checklist sets the footing elevation at a minimum of 1.2 m below finished grade on solid, clean, unfrozen, undisturbed ground, suggests a geotechnical engineer confirm the design bearing pressure, and requires an engineer's report where high groundwater is suspected. A foundation inspection follows, then framing, building drains and sewers, plumbing, air barrier, insulation and heating. The list does not say where the foundation visit falls relative to backfill, so we settle that with the Division when the permit issues, and we request each stage through Cloudpermit only once it is ready, since the schedule charges a re-inspection fee for a stage found unready and the Town warns that missed inspections bring work stoppages."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Grimsby Building Division, Town Hall, 160 Livingston Avenue; submission, payment and inspection requests through Cloudpermit from 2026; building@grimsby.ca, 905-309-2022. Niagara Region issues no building permits",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/applying-for-a-building-permit/"
+      },
+      {
+        "label": "New house or addition fee, 2026",
+        "value": "$1.76 per ft² of floor area for detached, semi-detached and row houses, additions and secondary suites (Schedule C, Group C line 7), no HST; area measured to the outer face of the exterior walls; an unfinished basement under a new house is not counted; interior alterations and renovations $1.12 per ft²; no separate foundation line",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/fc3n3qnw/schedule-c-building-permit-fees-2026.pdf"
+      },
+      {
+        "label": "Minimum fee, payment and re-inspection",
+        "value": "$232 minimum for any permit; fees due at submission, payable at issuance only at the Chief Building Official's discretion; a conditional building permit costs the normal fee plus the schedule's conditional-permit fee, $232 minimum and $15,000 maximum, with the agreement registered on title by the applicant; a re-inspection fee where a stage is found not ready",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/fc3n3qnw/schedule-c-building-permit-fees-2026.pdf"
+      },
+      {
+        "label": "Footing Inspection Checklist",
+        "value": "Footing elevation a minimum of 1.2 m below finished grade; footings on solid, clean, unfrozen, undisturbed ground; a geotechnical engineer's confirmation of design bearing pressure suggested; an engineer's report required where high groundwater is suspected",
+        "url": "https://media-001-ca.cdn.govstack.com/grimsbylibrary-005-ca/media/5c4pakmt/footing-inspections.pdf"
+      },
+      {
+        "label": "Inspection stages",
+        "value": "Footings (undisturbed soil, minimum footing depth, form layout, footings, waterproofing, surrounding precautions), foundation, framing, building drains and sewers, rough-in plumbing, plumbing final, air barrier, insulation, rough-in heating, heating final, occupancy; scheduled with the Building Division; missed inspections can stop work",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/building-inspections/"
+      },
+      {
+        "label": "Review time",
+        "value": "Initial review of a complete residential application in 10 business days; published averages of 13 weeks for new residential and 7 weeks for residential alterations; incomplete applications sit outside those timelines and each resubmission may add two weeks or more",
+        "url": "https://www.grimsby.ca/build-and-invest/building-division/applying-for-a-building-permit/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Frost and the pour season in Grimsby",
+    "paragraphs": [
+      "Grimsby's own Environment Canada station, on the Mountain, has no published normals, so the nearest record is Vineland Rittenhouse, about 11 km east-south-east, whose 1981 to 2010 normals are built from 21 years of readings. They put January's daily mean at −3.7 °C and its mean daily minimum at −7.1 °C, and count 23.4 days a year below −10 °C and 46.3 days when the maximum never clears 0 °C against 121 days when the minimum reaches it, so about 75 days a year swing across freezing between night and day. The frost-free period averages 174 days, roughly April 26 to October 18, and 112 cm of snow falls. Hamilton A, about 31 km west-south-west and a full 30-year record, runs colder: January −5.5 °C, 37.7 days below −10 °C, 56.1 days that stay at or below freezing, 167 frost-free days and 156.5 cm of snow. Whatever the count, CSA A23.1 treats any pour with a forecast below 5 °C within 24 hours as cold-weather work: concrete for a wall under 300 mm arrives at 10 to 32 °C, is held at 10 °C or more while it cures, and reaches 7 MPa before frost reaches it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam faces shelter the core, which the form makers' manuals describe as thermal protection in cold weather, but the top of the wall and the footing get cover of their own, the cavity is cleared of snow and ice before the pump arrives, no de-icing salt goes into the forms, and the ready-mix supplier heats the mix. Grimsby's footing checklist adds a winter rule of its own: footings bear on unfrozen ground, so in January the base of the dig is protected overnight before it is poured. The depth does not move with the season: 1.2 m below finished grade on the Town's checklist, the same figure the Building Code's Table 9.12.2.2 sets as the minimum for a heated basement on clay or on soils not clearly defined, with no minimum on rock, which is what the west end offers."
+    ],
+    "facts": [
+      {
+        "label": "Winter at Vineland Rittenhouse",
+        "value": "January daily mean −3.7 °C, mean daily minimum −7.1 °C; 23.4 days a year below −10 °C; 46.3 days with a maximum at or below 0 °C against 121 with a minimum at or below 0 °C; frost-free period 174 days, about April 26 to October 18; 112 cm of snow; 1981 to 2010 normals from 21 years of record, about 11 km east-south-east of Grimsby",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=VINELAND%20RITTENHOUSE&f=json&limit=3000"
+      },
+      {
+        "label": "Hamilton A, for comparison",
+        "value": "January mean −5.5 °C; 37.7 days below −10 °C; 56.1 days with a maximum at or below 0 °C; 167 frost-free days; 156.5 cm of snow; 1981 to 2010, a 30-year record, about 31 km west-south-west",
+        "url": "https://api.weather.gc.ca/collections/climate-normals/items?STATION_NAME=HAMILTON%20A&f=json&limit=3000"
+      },
+      {
+        "label": "Cold-weather concreting",
+        "value": "CSA A23.1 as reproduced by Concrete Ontario: a forecast below 5 °C within 24 hours of placing; concrete for sections under 300 mm placed at 10 to 32 °C; 10 °C or more through curing; 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Code minimum",
+        "value": "Table 9.12.2.2: 1.2 m for a heated basement on clay or soils not clearly defined; no minimum on rock; the Town's Footing Inspection Checklist prints the same 1.2 m and adds unfrozen ground",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "In Grimsby the price follows the address: rock excavation where Queenston shale sits at the surface in the west end and at the creek mouth, shoring in the sand and gravel of the centre and east, the water table and pump reach on the narrow cul-de-sacs of Grimsby Beach, an engineer's look at the creek alluvium downtown, and the climb to a Mountain lot. Each is its own line.",
+  "faqs": [
+    {
+      "q": "What does a basement excavation meet in Grimsby?",
+      "a": "It depends on the address. The survey's points at the town centre and at Bartlett Avenue return the sand and gravel of the old Lake Iroquois shore; downtown along Forty Mile Creek it returns older alluvium; at Casablanca, the Winona border and the creek mouth the Queenston shale is at or near the surface, so the last of the dig is rock. The Escarpment face is clay-to-silt till and the Mountain is silt and clay, both over Lockport dolostone. These are point queries, so the first bucket confirms them."
+    },
+    {
+      "q": "We are at Grimsby Beach. Waterproofing or dampproofing?",
+      "a": "The Code decides by water pressure, not by neighbourhood. Every below-grade wall is dampproofed and drained at the footing; where hydrostatic pressure occurs it is waterproofed instead, and because an ICF wall is insulated more than 900 mm below grade it gets a drainage layer against the membrane as well. The Beach sits on the shoreline, so close that our survey point returned no soil unit at all, and the Town's footing checklist requires an engineer's report where high groundwater is suspected. A test pit settles it before we quote."
+    },
+    {
+      "q": "What does the Town of Grimsby ask for with an ICF foundation?",
+      "a": "The building permit for the house or the addition, through Cloudpermit. The Town's residential page asks for supporting engineering and CCMC approval when helical piers are used; a flat ICF wall has the Code's own rules in Subsection 9.15.4, its form units conform to CAN/ULC-S717.1, and some systems also hold a CCMC report. We confirm with the Division what it wants for the wall, then file the drawings, the system's documentation and the energy summary. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Grimsby in winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Vineland Rittenhouse counts 46.3 days that never rise above freezing and 23.4 below −10 °C, fewer than Hamilton A's 56.1 and 37.7. Then CSA A23.1 applies: concrete placed at 10 °C or more, held there while it cures, 7 MPa before frost. The Town's checklist adds that the footing bears on unfrozen ground, so the base is covered before the pour."
+    },
+    {
+      "q": "How deep does the footing go in Grimsby?",
+      "a": "A minimum of 1.2 m below finished grade, the figure on the Town of Grimsby's Footing Inspection Checklist, on solid, clean, unfrozen, undisturbed ground. That matches the Building Code's Table 9.12.2.2 minimum for a heated basement on clay or on soils not clearly defined. On rock the table sets no minimum, which matters at Casablanca, the Winona border and the creek mouth, where the survey maps Queenston shale at or near the surface and the footing may bear on it after a rock cut."
+    },
+    {
+      "q": "We are on Grimsby Mountain, above the Escarpment. What changes?",
+      "a": "The soil, the rock and the weather record. The Ridge Road point returns fine laminated silt and clay, slow to drain, so the drainage layer and weeping tile matter more than shoring, and the bedrock is Lockport dolostone rather than the Queenston shale of the plain; the survey does not say how deep it lies. A soil finding from a lot below the brow does not transfer up here. Environment Canada's Grimsby Mountain station is too young for published normals, so no figure on this page describes the top separately."
+    }
+  ],
+  "related_note": "We also build in Hamilton, including Stoney Creek next door, in Lincoln through Beamsville and Vineland, and in West Lincoln."
+}

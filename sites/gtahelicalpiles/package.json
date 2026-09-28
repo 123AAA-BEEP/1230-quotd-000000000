@@ -1,0 +1,24 @@
+{
+  "name": "gtahelicalpiles",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "gtahelicalpiles.ca: first-party lead-generation site for helical pile installation across Halton, Peel, Hamilton and Guelph. Standalone Astro project; see README.md.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "node scripts/check.mjs",
+    "shots": "node scripts/screenshot.mjs"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^8.0.0",
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}

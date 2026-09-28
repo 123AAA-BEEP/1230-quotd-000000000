@@ -1,0 +1,164 @@
+---
+// Guide template. One page per data/guides/<slug>.json. The comparison guide
+// is a hand-built page (icf-vs-poured-concrete-ontario.astro) because it
+// carries the price table logic; every other guide renders from JSON here.
+import Base from '../../layouts/Base.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import Estimator from '../../components/Estimator.astro';
+import Faq from '../../components/Faq.astro';
+import { getBusiness, getGuideData, getGuideSlugs, safeJson } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return getGuideSlugs().map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const biz = getBusiness();
+const guide = getGuideData(slug);
+if (!guide) throw new Error(`No guide data for ${slug}`);
+
+const allSources = [];
+const seen = new Set();
+for (const s of guide.sections) {
+  for (const src of s.sources ?? []) {
+    if (!src.url || seen.has(src.url)) continue;
+    seen.add(src.url);
+    allSources.push(src);
+  }
+}
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'Technical resources', item: `${Astro.site}#resources` },
+    { '@type': 'ListItem', position: 3, name: guide.h1, item: `${Astro.site}guides/${slug}/` },
+  ],
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: guide.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: guide.h1,
+  datePublished: guide.reviewed,
+  dateModified: guide.reviewed,
+  author: { '@type': 'Organization', name: biz.trading_name },
+  publisher: { '@id': `${Astro.site}#business` },
+};
+---
+
+<Base title={guide.title} description={guide.description} schema={[breadcrumb, faqSchema, article]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <a href="/#resources">Technical resources</a>
+    <span aria-hidden="true">/</span> <span aria-current="page">{guide.kicker}</span>
+  </nav>
+
+  <div class="page guide">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">{guide.kicker} · reviewed {guide.reviewed}</p>
+      <h1>{guide.h1}</h1>
+      <p class="lede">{guide.lede}</p>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm compact />
+    </aside>
+
+    <div class="rest">
+      {guide.sections.map((s) => (
+        <section class="block" id={s.id}>
+          <h2>{s.heading}</h2>
+          <div class="prose">{s.paragraphs.map((p) => <p>{p}</p>)}</div>
+          {s.list?.length > 0 && (
+            <ul class="bullets">{s.list.map((li) => <li>{li}</li>)}</ul>
+          )}
+          {s.table && (
+            <div class="table-wrap">
+              <table class="table">
+                {s.table.caption && <caption class="small muted">{s.table.caption}</caption>}
+                <thead><tr>{s.table.columns.map((c) => <th scope="col">{c}</th>)}</tr></thead>
+                <tbody>
+                  {s.table.rows.map((r) => (
+                    <tr>{r.map((cell, i) => (i === 0 ? <td><strong>{cell}</strong></td> : <td>{cell}</td>))}</tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+          {s.sources?.length > 0 && (
+            <p class="sources">Sources: {s.sources.map((src, i) => (
+              <span>{i > 0 ? ' · ' : ''}<a href={src.url} rel="noopener" target="_blank">{src.name}</a></span>
+            ))}</p>
+          )}
+        </section>
+      ))}
+
+      <Estimator />
+
+      <Faq items={guide.faqs} />
+
+      <section class="block cta-block">
+        <h2>{guide.cta.heading}</h2>
+        <p class="muted">{guide.cta.body}</p>
+        <div class="actions">
+          <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+          <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="guide-cta">Call {biz.phone_display}</a>
+        </div>
+      </section>
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          {guide.related.map((r) => <li><a href={r.href}>{r.label}</a></li>)}
+          <li><a href="/#areas">Where we work</a></li>
+        </ul>
+      </section>
+
+      <section class="block sources-block">
+        <h2>Sources</h2>
+        <ul class="sources source-list">
+          {allSources.map((s) => <li><a href={s.url} rel="noopener" target="_blank">{s.name}</a>{s.retrieved_at ? `, retrieved ${s.retrieved_at}` : ''}</li>)}
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); display: flex; gap: var(--s2); flex-wrap: wrap; }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .guide { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .guide { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s3) var(--s4); max-width: 18ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: var(--read); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s8); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+  .bullets { margin: var(--s4) 0 0; padding-left: 1.25rem; color: var(--text-muted); display: grid; gap: var(--s2); max-width: 40rem; }
+  .table-wrap { margin-top: var(--s5); }
+  .table caption { text-align: left; caption-side: bottom; padding-top: var(--s2); }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .cta-block { padding-top: var(--s8); border-top: 1px solid var(--border-strong); }
+  .cta-block p { max-width: 40rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s5); }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
+  .source-list { list-style: none; padding: 0; margin-top: var(--s3); display: grid; gap: var(--s2); }
+  .source-list a { display: inline-block; padding-block: var(--s1); }
+</style>

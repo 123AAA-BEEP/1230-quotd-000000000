@@ -1,0 +1,332 @@
+{
+  "slug": "mississauga",
+  "name": "Mississauga",
+  "region": "Peel Region",
+  "province": "ON",
+  "lat": 43.5789,
+  "lon": -79.6583,
+  "sub_areas": [
+    {
+      "name": "Port Credit",
+      "note": "Lakeshore village at the mouth of the Credit River (Wikipedia article coordinate 43.55194, -79.58444). OGS point query returns unit 9c, coarse-textured glaciolacustrine sand and gravel (foreshore and basinal deposits), over Georgian Bay Formation shale."
+    },
+    {
+      "name": "Lakeview",
+      "note": "Southeast lakeshore neighbourhood toward the Toronto border (Wikipedia coordinate 43.57083, -79.56806). OGS point query returns unit 9c sand and gravel over Georgian Bay Formation."
+    },
+    {
+      "name": "Clarkson",
+      "note": "Southwest Mississauga on the lakeshore toward the Oakville border (Wikipedia coordinate 43.51917, -79.63389). OGS point query returns unit 9c sand and gravel over Georgian Bay Formation."
+    },
+    {
+      "name": "Lorne Park",
+      "note": "South Mississauga between Clarkson and Port Credit (Wikipedia coordinate 43.53528, -79.61861). OGS point query returns unit 9c sand and gravel over Georgian Bay Formation."
+    },
+    {
+      "name": "Erin Mills",
+      "note": "West-central Mississauga (Wikipedia coordinate 43.54778, -79.70722). OGS point query returns unit 5d clay-to-silt till over Queenston Formation red shale."
+    },
+    {
+      "name": "Streetsville",
+      "note": "Former village on the Credit River in the northwest of the city; historic core on the west bank (Wikipedia; coordinate 43.58667, -79.72139). OGS point query returns unit 5d clay-to-silt till over Georgian Bay Formation."
+    },
+    {
+      "name": "Meadowvale",
+      "note": "Northwest Mississauga (Wikipedia coordinate 43.58472, -79.75556). OGS point query returns unit 5d clay-to-silt till over Queenston Formation red shale."
+    },
+    {
+      "name": "Cooksville",
+      "note": "Centred on Dundas Street and Hurontario Street near Cooksville Creek (Wikipedia). Queried at Cooksville GO Station, 3210 Hurontario St (Wikipedia coordinate 43.58306, -79.62361): OGS returns unit 3, Paleozoic bedrock at or near surface, over Georgian Bay Formation."
+    },
+    {
+      "name": "Malton",
+      "note": "Northeast corner of the city around Toronto Pearson airport (Wikipedia coordinate 43.7, -79.63333). OGS point query returns unit 5d clay-to-silt till over Georgian Bay Formation."
+    }
+  ],
+  "census": {
+    "population_2021": 717961,
+    "private_dwellings_occupied": 244575,
+    "single_detached_pct": 37.1,
+    "period_of_construction": {
+      "pre_1960_pct": 7.2,
+      "1961_1980_pct": 30.7,
+      "1981_2000_pct": 38.7,
+      "2001_2021_pct": 23.4
+    },
+    "derivation_note": "Percentages computed from Census Profile counts (DGUID 2021A00053521005, Mississauga, City (CY)): single-detached 90,660 of 244,575 occupied private dwellings (structural type, 100% data) = 37.1%; period of construction (25% sample data, total 244,575): 1960 or before 17,730 (7.2%); 1961-1980 75,015 (30.7%); 1981-1990 47,955 + 1991-2000 46,745 = 94,700 (38.7%); 2001-2005 23,530 + 2006-2010 15,745 + 2011-2015 9,550 + 2016-2021 8,300 = 57,125 (23.4%). Population 2016 was 721,599, so the city recorded a 0.5% decline.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Mississauga, City (CY), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Mississauga&DGUIDlist=2021A00053521005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 717,961; Private dwellings occupied by usual residents: 244,575"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Mississauga (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Mississauga&DGUIDlist=2021A00053521005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data: 244,575; Single-detached house: 90,660 (37.1)"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Mississauga (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Mississauga&DGUIDlist=2021A00053521005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 17,730; 1961 to 1980 75,015; 1981 to 1990 47,955; 1991 to 2000 46,745"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results for 'Mississauga' (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Mississauga",
+        "retrieved_at": "2026-09-25",
+        "quote": "2021A00053521005 Mississauga"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Regional literature calls this the Halton Till, but that name is not carried in the OGS layer attributes and was not verified here.",
+        "where": "The inland plain north of the old Lake Iroquois shoreline: query points at the reference coordinate (43.5789, -79.6583), the Wikipedia city coordinate (43.6, -79.65), Erin Mills, Streetsville, Meadowvale and Malton all return unit 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9c - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay; foreshore and basinal deposits of glacial Lake Iroquois.",
+        "where": "The lakeshore band south of the Dundas Street alignment: query points at Port Credit, Lakeview, Clarkson and Lorne Park all return unit 9c. Wikipedia records that the former Glacial Lake Iroquois shoreline roughly follows the Dundas Street alignment, most prominent at the former brickyard on Shoreline Drive near Mavis Road."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 3 - Paleozoic bedrock",
+        "description": "Bedrock at or near surface (drift too thin to map).",
+        "where": "Cooksville Creek corridor: the query point at Cooksville GO Station (43.58306, -79.62361) returns unit 3. Wikipedia notes the only other noticeable relief is the Credit River valley embankments and the Lake Iroquois shoreline."
+      }
+    ],
+    "bedrock": {
+      "formation": "Georgian Bay Formation across most of the city, with Queenston Formation in the west (Erin Mills, Meadowvale); both Upper Ordovician shale-dominated units (OGS MRD219).",
+      "description": "Georgian Bay: interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone; returned at the reference coordinate, the Wikipedia city coordinate, Port Credit, Lakeview, Clarkson, Lorne Park, Streetsville, Cooksville and Malton. Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds; returned at Erin Mills and Meadowvale. The contact therefore runs through the west of the city, west of the Credit River at Streetsville but east of Erin Mills.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). OGS surficial mapping shows bedrock at or near surface (unit 3) at the Cooksville GO Station query point; elsewhere bedrock lies beneath till or glaciolacustrine sand of unstated thickness."
+    },
+    "implications_for_piles": [
+      "The City-hosted deck sample drawing (LMCBO Standard Details D01a-D01d, 2012) sets the conventional baseline: poured concrete piers a minimum of 1200 mm below grade on undisturbed soil, with bearing capacity determined prior to construction and the allowable pressure reduced by 50% where water is at or near the bottom of the footing excavation. The drawing does not mention helical piles, CCMC or BMEC; the City's deck drawing checklist requires the floor plan to state soil bearing capacity and the size, thickness and material of the foundation.",
+      "The same drawing's soil-bearing table spans 40 kPa (soft clay) to 200 kPa (till), 300 kPa (clay shale) and 500 kPa (sound rock), and general note 11 says to contact the local building department for local soil bearing capacities; no Mississauga-specific bearing values were retrieved.",
+      "Soil texture divides on the old Lake Iroquois shoreline along the Dundas Street alignment: OGS maps coarse sand and gravel (unit 9c) at Port Credit, Lakeview, Clarkson and Lorne Park, and clay-to-silt till (unit 5d) at Erin Mills, Streetsville, Meadowvale, Malton and the city centre, so any soil-specific design is not transferable between the lakeshore and the inland plain.",
+      "OGS maps bedrock at or near surface (unit 3) at the Cooksville GO Station query point over Georgian Bay shale; shallow shale is a site condition to confirm before installation along Cooksville Creek and the Credit River valley. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.5789, -79.6583)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.6583,43.5789&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5d, Deposit: Till, Material: Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Port Credit, 43.55194, -79.58444)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.58444,43.55194&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9c, Coarse-textured glaciolacustrine deposits, sand, gravel, minor silt and clay, Foreshore and basinal deposits"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Cooksville GO Station, 43.58306, -79.62361)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.62361,43.58306&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 3, Deposit: Paleozoic bedrock"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.5789, -79.6583)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.6583,43.5789&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Georgian Bay; interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at Erin Mills, 43.54778, -79.70722)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.70722,43.54778&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Mississauga (geography)",
+        "url": "https://en.wikipedia.org/wiki/Mississauga",
+        "retrieved_at": "2026-09-25",
+        "quote": "The shoreline of former Glacial Lake Iroquois roughly follows the Dundas Street alignment"
+      },
+      {
+        "name": "Wikipedia - Cooksville, Mississauga",
+        "url": "https://en.wikipedia.org/wiki/Cooksville,_Mississauga",
+        "retrieved_at": "2026-09-25",
+        "quote": "centred around the intersection of Dundas Street and Hurontario Street near the eponymous Cooksville Creek"
+      },
+      {
+        "name": "Wikipedia - Streetsville, Mississauga",
+        "url": "https://en.wikipedia.org/wiki/Streetsville,_Mississauga",
+        "retrieved_at": "2026-09-25",
+        "quote": "located in the northwestern corner of the city of Mississauga, Ontario, Canada, on the Credit River"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Mississauga Building Division (the City's fee schedule is titled 'Abbreviated Building Division Fees'; the web pages say 'the City' and 'City inspectors'; Building By-law 0236-2024 vests authority in the Chief Building Official)",
+    "deck_permit_required_when": "The City's 'When a building permit is required' page lists 'Deck greater than 0.61 metres (2 feet) high' under projects that need a permit and 'Deck less than 600 mm (2 feet) in height' under projects that don't. No separate area threshold is printed for decks; the same page lists 'Building or structure (other than a shed) greater than 10 square metres, or any size that contains plumbing' and 'Porch that's covered' as requiring a permit.",
+    "footing_depth_requirement": "City-hosted 'Deck Sample Drawing' (LMCBO Standard Details D01a-D01d, dated 2012): 'POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL'; 89x89 minimum wood post anchored to the concrete pier with a metal shoe and 12.7 mm bolt embedded 100 mm minimum; pier top 150 mm minimum above grade; pier sizes 200-600 mm diameter chosen from the supported deck area divided by the soil bearing capacity (table: soft clay 40 kPa, loose sand or gravel 50, firm clay 75, dense or compact silt 100, stiff clay 150, dense compact sand or gravel 150, till 200, clay shale 300, sound rock 500). General notes: piers shall bear on undisturbed soil with bearing capacity determined prior to construction; allowable bearing reduced by 50% with water at or near the bottom of the excavation; a deck is not permitted to be supported on brick veneer; free-standing decks over 600 mm above grade must resist lateral loading. The drawing says nothing about helical piles, CCMC, BMEC or an engineer's design; the deck checklist page requires the floor plan to show 'Soil bearing capacity' and 'Size, thickness and material specifications of foundation' and lists 'Schedule 1 Designer Information' as a required form.",
+    "inspections": [
+      "Initial site inspection (City page: book before starting any construction work; it identifies which inspections apply and their order)",
+      "Footing - readiness to construct footings (Building By-law Schedule D)",
+      "Backfill - substantial completion of footings and foundations prior to commencement of backfilling (Schedule D)",
+      "Framing - substantial completion of structural framing (Schedule D)",
+      "Final (Schedule D lists Final (Plumbing), Final (HVAC) and Final (Completion of Occupied Building); the deck-specific final is assigned at the initial inspection)"
+    ],
+    "fee_note": "Abbreviated Building Division Fees, Building By-law 0236-2024, effective February 1, 2026 to January 31, 2027, Schedule B 'Other Miscellaneous Work': 'Decks, porches, basement stairwell, etc. to houses $244.00 each'. Residential minimum permit fee $244; non-residential minimum $386; a $50 non-refundable electronic pre-screening fee is paid at online submission and credited toward the permit; revisions to reviewed plans $160/hour.",
+    "timeline_note": "City page: pre-screening usually takes about 7 to 10 business days; a complete residential application gets a first review in 10 business days; resubmissions have no guaranteed time and each cycle could add two or more weeks; average time to issue a residential alteration (detached, semi) permit is 7 weeks. Inspections run Monday to Friday, 8:30 a.m. to 4:30 p.m.",
+    "portal_url": "https://www.mississauga.ca/eplans/",
+    "portal_note": "All building permit applications must be submitted online through the City's ePlans portal; drawings are uploaded as individual greyscale landscape PDFs named to match the title block (for example 'A01 SITE PLAN').",
+    "sources": [
+      {
+        "name": "City of Mississauga - When a building permit is required",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/when-a-building-permit-is-required/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Deck greater than 0.61 metres (2 feet) high"
+      },
+      {
+        "name": "City of Mississauga - When a building permit is required (exemptions)",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/when-a-building-permit-is-required/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Projects that don't need a permit ... Deck less than 600 mm (2 feet) in height"
+      },
+      {
+        "name": "City of Mississauga - Deck, porch or balcony (drawings and documents)",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/drawings-and-documents-you-need-for-a-building-permit/deck-porch-or-balcony/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Soil bearing capacity; Size, thickness and material specifications of foundation"
+      },
+      {
+        "name": "City of Mississauga - Deck Sample Drawing (PDF, LMCBO Standard Details D01a-D01d, 2012; image-only PDF read visually)",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/19124113/Deck-Sample-Drawing.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL, FOR SIZES SEE SHEET D01d"
+      },
+      {
+        "name": "City of Mississauga - Deck Sample Drawing (PDF), sheet D01d general notes",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/19124113/Deck-Sample-Drawing.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "CONCRETE PIERS SHALL BEAR ON UNDISTURBED SOIL. THE BEARING CAPACITY OF THE SOIL SHALL BE DETERMINED PRIOR TO CONSTRUCTION."
+      },
+      {
+        "name": "City of Mississauga - Deck Sample Drawing publication page",
+        "url": "https://www.mississauga.ca/publication/deck-sample-drawing/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Deck-Sample-Drawing.pdf"
+      },
+      {
+        "name": "City of Mississauga - Building permit cost and time frames",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/building-permit-cost-and-time-frames/",
+        "retrieved_at": "2026-09-25",
+        "quote": "For a residential property, a permit will cost a minimum of $244. It usually takes about 7 to 10 business days to prescreen your request."
+      },
+      {
+        "name": "City of Mississauga - Abbreviated Building Division Fees, effective February 1, 2026 (PDF)",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/27095505/ABBREVIATED-BUILDING-DIVISION-FEES-FEB-01-2026-1.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Decks, porches, basement stairwell, etc. to houses $ 244.00 each"
+      },
+      {
+        "name": "City of Mississauga - Building Permit Fee Schedule (publication page)",
+        "url": "https://www.mississauga.ca/publication/building-permit-fee-schedule/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Feb 1, 2026"
+      },
+      {
+        "name": "City of Mississauga - Building By-law 0236-2024, Schedule D Prescribed Notices / Inspections (PDF)",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2025/01/02115103/Schedule-D-Prescribed-Notices-Inspections.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Footing: Readiness to construct footings. Backfill: Substantial completion of footings and foundations prior to commencement of backfilling."
+      },
+      {
+        "name": "City of Mississauga - Book a building permit inspection",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/book-a-building-permit-inspection/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Before starting any construction work, book an initial site inspection to learn what types of inspections you'll need and when."
+      },
+      {
+        "name": "City of Mississauga - Building permit application process",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/building-permit-application-process/",
+        "retrieved_at": "2026-09-25",
+        "quote": "All building permit applications must be submitted online through our ePlans portal."
+      },
+      {
+        "name": "City of Mississauga - Building By-Law publication page (By-law 0236-2024 and schedules)",
+        "url": "https://www.mississauga.ca/publication/building-by-law/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Building-By-law-0236-2024.pdf"
+      },
+      {
+        "name": "Wikipedia - Regional Municipality of Peel",
+        "url": "https://en.wikipedia.org/wiki/Regional_Municipality_of_Peel",
+        "retrieved_at": "2026-09-25",
+        "quote": "It consists of three municipalities ... the cities of Mississauga and Brampton, and the town of Caledon"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Toronto Pearson International Airport (Climate ID 6158731; 43 40'36\" N, 79 37'50\" W; 173.4 m), about 11 km north-northeast of the reference coordinate and inside the city's Malton area (the Wikipedia Malton coordinate is 2.6 km north of the station)",
+    "normals_period": "1991-2020",
+    "frost_free_days": 174,
+    "jan_mean_temp_c": -5.0,
+    "days_below_minus_10c": 34.2,
+    "freeze_thaw_note": "Toronto Pearson 1991-2020: January daily minimum -8.9 C; average last spring frost Apr 27, first fall frost Oct 20; 130.6 days/yr with daily minimum <= 0 C versus 49.5 days/yr with daily maximum <= 0 C, so roughly 81 days a year cross 0 C between night and day (derived by subtraction); 114.5 cm annual snowfall. No ECCC 1981-2010 or 1991-2020 normals station named Mississauga or Port Credit was returned by the station-name search.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport), temperature",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -5.0 -4.4 0.6 7.0 13.7 19.2 22.1 21.1 16.9 10.0 4.1 -1.6 8.6 B"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport), days with minimum temperature",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 13.4 10.8 4.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.40 5.7 34.2 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport), frost-free period",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Date of Last Spring Frost Apr 27; Average Date of First Fall Frost Oct 20; Average Length of Frost-Free Period 174 Days"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport), days with maximum <= 0 C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "<= 0 C 16.9 13.7 6.3 0.44 0.0 0.0 0.0 0.0 0.0 0.0 1.5 10.7 49.5 C"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 'MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL' pier depth printed on the City of Mississauga's hosted Deck Sample Drawing (LMCBO Standard Details D01a/D01b, 2012). The Ontario Building Code clause itself was not retrieved: ontario.ca/laws renders the regulation as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario. Do not cite a clause number until the primary text is retrieved. The drawing is a province-wide LMCBO standard detail republished by the City, not a Mississauga-specific figure.",
+    "sources": [
+      {
+        "name": "City of Mississauga - Deck Sample Drawing (PDF, LMCBO Standard Details D01a, 2012)",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/19124113/Deck-Sample-Drawing.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "City of Mississauga - Deck, porch or balcony (drawings and documents page linking the sample drawing)",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/drawings-and-documents-you-need-for-a-building-permit/deck-porch-or-balcony/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Sample drawings: Deck Sample Drawing; Porch Sample Drawing"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

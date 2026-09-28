@@ -1,0 +1,214 @@
+{
+  "slug": "toronto",
+  "title": "ICF foundations in Toronto | GTA ICF",
+  "description": "ICF foundations in Toronto: the till, sand and shale under each district, Toronto Building's 2026 fees and inspections, the pour season and illustrative costs.",
+  "h1": "ICF foundations and walls in Toronto",
+  "kicker": "City of Toronto",
+  "answer": [
+    "Toronto Building issues the permit, and the excavation meets one of four grounds the Ontario Geological Survey maps across Toronto: stone-poor sandy silt till on the plateau at midtown, North York Centre and Scarborough Centre; older tills, possibly layered, downtown, at Leaside and along the Scarborough Bluffs; Lake Iroquois shore sand and gravel through East York, The Junction, York and south Etobicoke; and clay-to-silt till at Rexdale. Under all of it is Georgian Bay shale, at none of the queried points close to the surface.",
+    "The City prints no footing depth of its own. The depth on the drawings comes from the Building Code's Table 9.12.2.2: 1.2 m below grade for a heated basement on clay or on soils not clearly defined, and always on undisturbed soil. Toronto Building inspects the footing forms before concrete is placed and the foundation at completion, before backfill. Its schedule effective January 1, 2026 prices a new house at $18.56 per square metre of floor area, and leaves an unfinished basement out of that area."
+  ],
+  "tiles": [
+    {
+      "value": "208 days",
+      "label": "frost-free period at the downtown Toronto City station, April 11 to November 6",
+      "source": {
+        "name": "Environment Canada normals 1991 to 2020, Toronto City",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1"
+      }
+    },
+    {
+      "value": "Georgian Bay shale",
+      "label": "bedrock at all 12 Ontario Geological Survey points queried across the city, none of them at or near the surface",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, bedrock point query",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.39864,43.70643&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "23.3%",
+      "label": "of Toronto's 1,160,892 occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Toronto",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Toronto&DGUIDlist=2021A00053520005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "Toronto Building",
+      "label": "issues the permit and inspects the footing forms before the pour, then the foundation at completion",
+      "source": {
+        "name": "City of Toronto, when to call for inspection of small buildings",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/building-inspections/about-building-inspections/when-to-call-for-inspection-of-small-buildings/"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Till, sand and shale under Toronto",
+    "paragraphs": [
+      "Most Toronto basements go into till. On the plateau above the Lake Iroquois shoreline, at midtown, North York Centre and Scarborough Centre, the Ontario Geological Survey maps a stone-poor, sandy silt to silty sand till. Downtown near Front and Yonge, at Leaside and along the Scarborough Bluffs it maps older, undifferentiated tills that may include stratified deposits: beds of sand, silt or clay inside the till, where water can perch. Rexdale returns the clay-to-silt till of neighbouring Mississauga. Clay till holds a vertical cut for the days a hole is open but drains slowly; the sandier tills drain better and hold a face less surely.",
+      "Below that shoreline, which crosses the west end roughly at Davenport Road, the ground is the beach and nearshore sand and gravel of Lake Iroquois; the survey returns it at East York, The Junction, York around Weston Road and Eglinton, and south Etobicoke. It drains freely, which suits the weeping tile, and it runs, so the cut is laid back or shored, a cost on a narrow lot with a neighbour's wall close by, and the footing must bear on material the inspector can see is undisturbed. Nearer the lake the water table decides whether the wall gets waterproofing, which the Code requires wherever hydrostatic pressure occurs, or dampproofing.",
+      "Rock is what a Toronto excavator is unlikely to hit. All 12 bedrock queries returned the Georgian Bay Formation, grey-green shale with limestone bands, and no surface query returned rock at or near grade; the red Queenston shale of Halton's creek valleys is not mapped here. The layers queried give the formation, not its depth, and the only depth figure says the ravines were cut through nearly 100 m of soil, sand, gravel and till. A ravine lot along the Don or the Humber, or one at the Bluffs edge, is a slope question rather than a rock question, and one for an engineer, not a point query."
+    ],
+    "table_note": "One Ontario Geological Survey point query per district, run 25 September 2026; the Scarborough Centre and York points are map estimates rather than published coordinates, and the Humber mouth returned no surface polygon. A district code is not a lot condition: the footing is designed from what the excavation exposes and, where Toronto Building's examiner asks for it, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Old Toronto (Front and Yonge)",
+        "surface": "Older undifferentiated tills, may include stratified deposits",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "Midtown (Yonge and Eglinton)",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "North York Centre",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "Scarborough Centre",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "Scarborough Bluffs",
+        "surface": "Older undifferentiated tills; the bluff edge is a slope question",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "East York",
+        "surface": "Lake Iroquois beach sand and gravel",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "Leaside",
+        "surface": "Older undifferentiated tills, may include stratified deposits",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "The Junction",
+        "surface": "Lake Iroquois foreshore sand and gravel",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "York (Weston Road and Eglinton West)",
+        "surface": "Lake Iroquois foreshore sand and gravel",
+        "bedrock": "Georgian Bay, green shale with limestone"
+      },
+      {
+        "name": "South Etobicoke",
+        "surface": "Lake Iroquois foreshore and basinal sand and gravel",
+        "bedrock": "Georgian Bay, grey-green shale, siltstone, limestone"
+      },
+      {
+        "name": "Rexdale",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey-green shale, siltstone, limestone"
+      },
+      {
+        "name": "Swansea and Humber Bay (river mouth)",
+        "surface": "No surface polygon at the query point, open water or unmapped",
+        "bedrock": "Georgian Bay Formation"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits and inspections with Toronto Building",
+    "authority_short": "Toronto Building",
+    "paragraphs": [
+      "The permit comes from Toronto Building, the City of Toronto's building division. A new house is a House Stream application, which the City aims to review within 10 business days of a complete submission; Express Services, the three-day stream, covers small residential projects such as decks. On the schedule effective January 1, 2026, the service index for single family dwellings, semis, townhouses and duplexes is $18.56 per square metre of floor area, measured to the outer face of the exterior walls and including an attached garage, and the City's own notes leave the unfinished basement of a new house out of that area. Each new residential unit adds $56.33, the minimum fee for any work is $214.79, examination and inspection time is $92.79 an hour, a detached garage or accessory structure is $214.79 each, and a Zoning Applicable Law Certificate review for a new house or an addition is $644.38, non-refundable.",
+      "Toronto Building publishes nothing specific to ICF, so the package is the one any concrete foundation carries. The Small Residential Additions guide asks the sections to show footing and foundation wall details, including the height of the exterior grade above the basement floor, and where a professional engineer seals the drawings the City's Assumption of Responsibility for Engineering Content Form goes in with them. Within the Building Code's Part 9 limits for flat ICF walls, up to two storeys with floor-to-floor heights of 3 m or less on soil bearing 75 kPa or more, a qualified designer can draw the wall; beyond them, or when the examiner asks, an engineer seals it. Reviewers may also ask for the form maker's product literature or thermal test data with the SB-12 submission. The ICF system is named on the quote and its documentation goes in the package, and we prepare the package with you.",
+      "Toronto Building Inspections lists footings at completion of formwork, before pouring concrete, and foundations at completion, which the City's homeowner guide words as prior to backfill; structural framing follows, with the plumbing and HVAC rough-in. A request is booked from the next business day up to four weeks ahead, the inspector comes within two business days, Monday to Friday between 8:30 a.m. and 4:30 p.m., and a full-scale coloured print of the permit drawings has to be on site for the visit. The mandatory inspections are inside the permit fee, and the owner books the final one to close the permit. The footing and foundation visits are ours to book, and we are there for them."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Toronto Building, City of Toronto; a new house is reviewed in the House Stream, complete applications within 10 business days",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-review-streams/"
+      },
+      {
+        "label": "New house fee, 2026",
+        "value": "$18.56 per m² of floor area for single family dwellings, semis, townhouses and duplexes, measured to the outer face of the exterior walls; the unfinished basement of a new house is not counted; $56.33 per new residential unit",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-fees/"
+      },
+      {
+        "label": "Minimum and hourly",
+        "value": "$214.79 minimum for any work; $92.79 per hour of examination and inspection; detached garage or accessory structure $214.79 each; shoring as stand-alone work $12.37 per linear metre",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-fees/"
+      },
+      {
+        "label": "Engineer's seal",
+        "value": "Sealed drawings travel with the City's Assumption of Responsibility for Engineering Content Form; sections show footing and foundation wall details with the height of exterior grade above the basement floor",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/building-permit-application-guides/renovation-and-new-house-guides/small-residential-additions/"
+      },
+      {
+        "label": "Footing inspection",
+        "value": "At completion of formwork, before pouring concrete; booked from the next business day up to four weeks ahead, visit within two business days, Monday to Friday 8:30 a.m. to 4:30 p.m.",
+        "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/building-inspections/about-building-inspections/when-to-call-for-inspection-of-small-buildings/"
+      },
+      {
+        "label": "Foundation inspection",
+        "value": "At completion of footings and foundations and prior to backfill, in the wording of the City's homeowner guide; a full-scale coloured print of the permit drawings must be on site",
+        "url": "https://www.toronto.ca/wp-content/uploads/2017/11/9273-Building-Permit-Guide-WEB.pdf"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Pouring through a Toronto winter",
+    "paragraphs": [
+      "Toronto's downtown station, Toronto City, is markedly milder than Pearson on the 1991 to 2020 normals, and the inland districts sit between the two. Downtown, January averages −3.5 °C, 22 days a year drop below −10 °C and 43.9 days never rise above 0 °C, against 101.1 mornings at or below freezing, so most of the city's cold arrives overnight. The frost-free period there runs 208 days, April 11 to November 6. At Pearson, 19 km west, January averages −5.0 °C, 34.2 days fall below −10 °C, 49.5 days stay below freezing, the frost-free period is 174 days and 114.5 cm of snow falls in a year.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The line is CSA A23.1's: a forecast below 5 °C within 24 hours of placing makes it cold-weather work, concrete for a wall under 300 mm thick arrives between 10 and 32 °C, the wall is held at 10 °C or more through the curing period and reaches 7 MPa before frost touches it. Between the first fall frost in early November and the last spring frost in mid April that means the top of the wall and the footing get covered even after a mild afternoon, snow and ice come out of the form cavity before the pour, and no de-icing salt goes into the forms. What the season does not change is the footing depth: the City prints none, and the Building Code's Table 9.12.2.2 sets 1.2 m for a heated basement on clay or on soils not clearly defined."
+    ],
+    "facts": [
+      {
+        "label": "Winter at Toronto City",
+        "value": "January mean −3.5 °C; 22 days a year below −10 °C; 43.9 days never above 0 °C; 101.1 days with a minimum at or below 0 °C, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158355&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "208 days, April 11 to November 6, Toronto City, from 19 years of frost records within the 1991 to 2020 normals; Toronto Pearson 174 days, April 27 to October 20",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Cold-weather rule",
+        "value": "CSA A23.1, as reproduced by Concrete Ontario: a forecast below 5 °C within 24 hours; walls under 300 mm placed at 10 to 32 °C; 10 °C or more through curing; 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Minimum footing depth",
+        "value": "1.2 m for a heated basement on clay or on soils not clearly defined, Building Code Table 9.12.2.2, 2024 Compendium; no limit on rock; the City prints no figure of its own",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Rock does not move a Toronto quote; no queried point has shale near the surface. The lot does. Shoring beside a neighbour's foundation on a narrow downtown, York or East York lot, the pump reach down a laneway, the water table in the lakeshore sands and a slope engineer on a ravine or Bluffs-edge lot each show up as their own line on the quote.",
+  "faqs": [
+    {
+      "q": "What does a basement excavation hit in Toronto?",
+      "a": "Till on most of the city: a stone-poor sandy silt till on the plateau at midtown, North York and Scarborough, older tills that may hold layers of sand, silt and clay downtown, at Leaside and along the Bluffs, and clay-to-silt till at Rexdale. Below the old Lake Iroquois shoreline, at East York, The Junction, York and south Etobicoke, it is beach and nearshore sand and gravel. No queried point returned rock near the surface. Those are district-scale point queries, so the first metre of the dig confirms them."
+    },
+    {
+      "q": "Does an ICF basement in Toronto need waterproofing or dampproofing?",
+      "a": "The Building Code asks for dampproofing on the outside of every below-grade foundation wall, weeping tile at the footing, and waterproofing instead where hydrostatic pressure occurs. Because the insulation on an ICF form runs more than 900 mm below grade, the Code also asks for a drainage layer against it. In Toronto the hydrostatic question is likeliest in the lakeshore sands of south Etobicoke and Humber Bay, while in the clay till at Rexdale, which holds water against the wall, the drainage layer earns its keep."
+    },
+    {
+      "q": "What does an ICF foundation permit application in Toronto include?",
+      "a": "Nothing written for ICF in particular, because the City publishes nothing specific to it: drawings with footing and foundation wall details and the height of exterior grade above the basement floor, the SB-12 energy path for the wall, and the Assumption of Responsibility for Engineering Content Form where an engineer has sealed the drawings. A reviewer may ask for the form maker's product literature or thermal test data. The ICF system is named on the quote and its documentation goes in the package, which we prepare with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in a Toronto winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Downtown Toronto has 43.9 days a year that stay below freezing and 101.1 mornings at or below 0 °C, so the cover on the top of the wall and on the footing matters on days that feel mild. CSA A23.1 sets the thresholds: placing at 10 °C or more, 10 °C through curing, 7 MPa before frost."
+    },
+    {
+      "q": "How deep does a footing go in Toronto?",
+      "a": "The City prints no footing depth; its project guides ask the drawings to show the footing depth and frost protection details. The Building Code's Table 9.12.2.2 sets 1.2 m below grade for a heated basement on clay or on soils not clearly defined, which is how we treat Toronto's mixed tills unless a geotechnical report says otherwise, and every excavation goes to undisturbed soil. On rock, and on coarse-grained soils under a heated basement, the table sets no minimum, but the footing still sits where the engineer draws it."
+    },
+    {
+      "q": "My house is in East York or The Junction. What do the old lake sands mean for an addition?",
+      "a": "Good drainage and a running excavation. Both districts, with York around Weston Road and Eglinton and south Etobicoke, return the sand and gravel of the glacial Lake Iroquois beach and foreshore. Water leaves it readily, so the weeping tile drains, but the faces of the cut want shoring on a lot where the neighbour's foundation is close, and the new footing must reach undisturbed material beside the existing one. The engineer details the tie between the new ICF wall and the foundation it joins."
+    }
+  ],
+  "related_note": "We also build in Mississauga, Brampton and Oakville."
+}

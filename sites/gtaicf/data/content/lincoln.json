@@ -1,0 +1,209 @@
+{
+  "slug": "lincoln",
+  "title": "ICF foundations in Lincoln, Beamsville and Vineland | GTA ICF",
+  "description": "ICF foundations in the Town of Lincoln: till on the lake plain, sand around the Twenty, dolostone above the Escarpment, the footing depth and when we pour.",
+  "h1": "ICF foundations and walls in Lincoln",
+  "kicker": "Niagara Region",
+  "answer": [
+    "An ICF foundation in the Town of Lincoln meets one of three grounds. On the lake plain at Beamsville, Vineland Station and Jordan the Ontario Geological Survey maps clay-to-silt till over Queenston red shale. Around the mouth of Twenty Mile Creek, at Jordan Station and in the centre of Vineland, it maps sand and gravel. On and above the Escarpment, at Campden and at the brow between Beamsville and Vineland, the bedrock is Lockport dolostone, and at the brow it lies at or near the surface.",
+    "The building permit is the Town of Lincoln's; West Lincoln, around Smithville, is a separate municipality. The Town's building pages could not be reached when this page was written, so its fee for a new house or an addition, its review time and its inspection stages are confirmed with the Town before we apply. Ontario's Building Code sets the footing at least 1.2 m below grade for a heated basement on clay or on soils not clearly defined, always on undisturbed soil."
+  ],
+  "tiles": [
+    {
+      "value": "179 days",
+      "label": "frost-free period at the Vineland station in half of years, last spring frost April 25, first fall frost October 20",
+      "source": {
+        "name": "Environment Canada normals 1991 to 2020, Vineland (Vineland Station RCS)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      }
+    },
+    {
+      "value": "Shale and dolostone",
+      "label": "Queenston red shale under Beamsville, Vineland and Jordan; Lockport dolostone at Campden, the Escarpment brow and the plateau",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, point query at Beamsville",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.48,43.16&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "69.8%",
+      "label": "of Lincoln's 9,555 occupied homes are single-detached; 30% of them were built between 2001 and 2021",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Lincoln (Town)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Lincoln&DGUIDlist=2021A00053526057&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "−3.3 °C",
+      "label": "January daily mean at the Vineland station, with 42.6 days a year that never rise above 0 °C",
+      "source": {
+        "name": "Environment Canada normals 1991 to 2020, Vineland",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Three grounds between the lake and the Escarpment",
+    "paragraphs": [
+      "Most of the built-up town sits on the plain between the lake and the Escarpment, and there the survey's answer repeats: clay-to-silt till at both Beamsville coordinates, on the west side of Vineland, at Vineland Station and at two points in Jordan, all over Queenston red shale. Till stands in a cut for the days the excavation is open, but it lets water through slowly. Seepage sits in the hole until it is pumped, and till pushed back against the wall keeps water at the membrane, so on these lots the drainage layer, the weeping tile and a backfill that drains matter more than shoring does.",
+      "Twenty Mile Creek changes the ground. At its harbour at Jordan Station, at a second point nearer the lake and in the centre of Vineland along King Street, the survey maps coarse glaciolacustrine sand and gravel, the nearshore and beach deposits of glacial Lake Iroquois. It drains freely, which suits the weeping tile, and it runs, so the excavation faces are laid back or boxed and the footing bears only on material the bucket has not loosened. Near the lake and the creek the water table is the open question, and where the wall will see hydrostatic pressure the Code asks for waterproofing, not dampproofing.",
+      "Bedrock is two rocks here, and the Escarpment is the line between them. Every point on the plain returns the Queenston Formation, red shale and siltstone; Campden, the brow and the plateau return the Lockport Formation, Silurian dolostone. The survey does not map depth to rock, but two points put it at or near the surface: the brow between Beamsville and Vineland, over dolostone, and a lakeshore point north of the QEW at Beamsville, over shale. Where a dig reaches rock the Code sets no minimum footing depth, the footing may bear on it, and that last lift is rock excavation, harder in dolostone than in shale."
+    ],
+    "table_note": "Each row is an Ontario Geological Survey point query, surficial map MRD 128-REV and bedrock map MRD 219, run at one coordinate for the place named on 25 September 2026; where a community has no mapped centre the point was placed by eye inside it. A row speaks for its area, not for your lot, the survey carries no depth to rock, and Rockway and Tintern were not queried. The footing is designed from the excavation and, where the reviewer asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Beamsville",
+        "surface": "Clay-to-silt till (two query points)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Beamsville lakeshore, north of the QEW",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vineland, village centre",
+        "surface": "Sand and gravel, old Lake Iroquois shore",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vineland, west side",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vineland Station",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Jordan",
+        "surface": "Clay-to-silt till (two query points)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Jordan Station, Twenty Mile Creek harbour",
+        "surface": "Sand and gravel (two query points)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Campden",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Escarpment brow, between Beamsville and Vineland",
+        "surface": "Bedrock at or near surface",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Plateau south of Campden",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Plateau south of Vineland, toward Rockway",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Lockport, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "The permit from the Town of Lincoln",
+    "authority_short": "the Town of Lincoln",
+    "paragraphs": [
+      "A new house, an addition or a new foundation under a standing house in Beamsville, Vineland, Jordan or Campden is a building permit from the Town of Lincoln, and the Town's building permit page is where the application starts. That page and the rest of the Town's building pages could not be reached when this page was written, so we do not print a fee for a new dwelling or an addition, a review time or the Town's own list of inspection stages; we confirm all three with the Town before the package goes in, and the figures land on the written quote. West Lincoln, around Smithville, is a separate municipality. The housing stock shapes the work: seven in ten of Lincoln's 9,555 occupied homes are single-detached, three in ten were built between 2001 and 2021, and two in five date from before 1981, which is where the additions and the replacement foundations come from.",
+      "The Building Code's side does not change by town. Ontario's 2024 Code carries prescriptive rules for flat insulating concrete form foundation walls in Subsection 9.15.4, for houses of up to two storeys with floor-to-floor heights of up to 3 m on soils bearing 75 kPa or more, and Article 9.15.4.1 asks the form units to conform to CAN/ULC-S717.1; some systems also carry a CCMC evaluation report. Outside those limits, or when the reviewer asks, a professional engineer designs the wall under Part 4 and seals it. The wall's energy path is SB-12: in Zone 1, which takes in Niagara, an ICF wall with at least RSI 1.76 (R10) of insulation on each face of the concrete is deemed to comply with the wall values in Table 3.1.1.2.A and may stand in for basement walls that need RSI 3.52 ci (R20) or less. The system we install is named on the quote, its documentation goes in the permit package with the drawings and the SB-12 compliance, and we prepare the package with you.",
+      "Inspections follow the concrete. We call the footing forms and reinforcing in for inspection before any concrete is placed, and the wall, its membrane and the weeping tile before backfill; framing comes later. Lincoln's own stage list, notice period and booking route could not be read when this page was written, so we confirm them with the inspector named on the permit as soon as it is issued and book every visit ourselves. Nothing is backfilled until the pre-backfill visit has passed, and the approved drawings stay on site for the inspector."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Lincoln, starting from the Town's building permit page; the page could not be reached when this page was written, so the application route, the fee for a new house or an addition and the inspection stages are confirmed with the Town before we submit",
+        "url": "https://www.lincoln.ca/buildingpermit"
+      },
+      {
+        "label": "ICF in the Building Code",
+        "value": "Subsection 9.15.4 of the 2024 Code: prescriptive rules for flat ICF foundation walls in houses of up to 2 storeys, floor to floor up to 3 m, on soils bearing 75 kPa or more; form units conform to CAN/ULC-S717.1 (Article 9.15.4.1); concrete core at least 150 mm",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      },
+      {
+        "label": "Who designs the wall",
+        "value": "Within those limits, a qualified designer under Part 9; more than 2 storeys, over 3 m floor to floor, soils under 75 kPa or a surcharge sends the wall to a professional engineer under Part 4",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      },
+      {
+        "label": "Dampproofing and drainage",
+        "value": "Every below-grade foundation wall dampproofed outside, waterproofed where hydrostatic pressure occurs, drained at the footing; a drainage layer where the wall insulation runs more than 900 mm below grade, which a full-height ICF wall does (Articles 9.13.2.1, 9.13.3.1 and 9.14.2.1)",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      },
+      {
+        "label": "Energy path",
+        "value": "SB-12, Zone 1: an ICF wall with at least RSI 1.76 (R10) of insulation on each face of the concrete is deemed to comply with the wall values in Table 3.1.1.2.A and may replace basement walls needing RSI 3.52 ci (R20) or less (Sentences 3.1.1.2.(5) and (6))",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf"
+      },
+      {
+        "label": "The Code text",
+        "value": "Ontario's Building Code, O. Reg. 163/24, in force January 1, 2025; the free digital Compendium is linked from this page and the official copy is on e-Laws",
+        "url": "https://www.ontario.ca/page/ontarios-building-code"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Pour season on the Lincoln lake plain",
+    "paragraphs": [
+      "Lincoln's climate record comes from the Vineland station, 5 to 7 km east-northeast of Beamsville on the lake plain, where the 1991 to 2020 normals put January's daily mean at −3.3 °C and count 42.6 days a year when the temperature never rises above 0 °C, 21.1 days below −10 °C and about half a day below −20 °C. The daily minimum reaches freezing on 116.5 days, so roughly 74 days a year cross 0 °C between night and day. The station gives its frost-free period as a probability: in half of years it is 179 days or less, with the last spring frost around April 25 and the first fall frost around October 20 at the same mark, and St. Catharines A, 26 km east, averages the same 179 days, April 24 to October 21. Under CSA A23.1 any pour with a forecast below 5 °C within 24 hours is cold-weather work: concrete for a wall under 300 mm thick arrives at 10 to 32 °C, is held at 10 °C or more while it cures, and reaches 7 MPa before it meets frost.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam on both faces of the form holds warmth in the core while it cures, which one form maker's installation manual describes as thermal protection in cold weather; the open top of the wall and the footing are covered, the cavity is cleared of snow and ice before the pump arrives, and the ready-mix supplier heats the mix. What the season does not change is the footing depth. No Town of Lincoln drawing printing one could be read when this page was written, so the Building Code's Table 9.12.2.2 is the figure we hold: 1.2 m below grade for a heated basement on clay or on soils not clearly defined, which covers the till of the lake plain, no limit on rock, and no limit for a heated basement on the coarse-grained sand and gravel around the Twenty, always on undisturbed soil."
+    ],
+    "facts": [
+      {
+        "label": "Winter at the Vineland station",
+        "value": "January daily mean −3.3 °C; 42.6 days a year with a maximum at or below 0 °C; 21.1 days below −10 °C; 0.56 days below −20 °C; 1991 to 2020 normals, Vineland Rittenhouse threaded to Vineland Station RCS",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139148&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "179 days or less in half of years at the Vineland station, last spring frost April 25 and first fall frost October 20 at the same 50% mark; St. Catharines A, 26 km east, averages 179 days, April 24 to October 21, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=vineland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1, as reproduced by Concrete Ontario: a forecast below 5 °C within 24 hours of placing; concrete for sections under 300 mm placed at 10 to 32 °C, kept at 10 °C or more while curing, 7 MPa before frost; snow and ice removed from the forms first",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Minimum footing depth",
+        "value": "1.2 m for a heated basement on clay or soils not clearly defined, Building Code Table 9.12.2.2; no limit on rock; no Town of Lincoln drawing printing a depth could be read when this page was written",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Lincoln adds travel to a quote, and then the ground sets the rest: rock excavation where dolostone or shale sits at or near the surface, at the brow between Beamsville and Vineland and along the lakeshore north of the QEW; shoring and a pumped hole in the sand and gravel around Jordan Station and Vineland; and pump reach on a tight village lot. Each is its own line.",
+  "faqs": [
+    {
+      "q": "What will the excavator meet under a Beamsville lot?",
+      "a": "Clay-to-silt till, at both survey points we queried in Beamsville, over Queenston red shale. Till holds a vertical cut for the days the hole is open, but it sheds water slowly, so seepage sits in the excavation until it is pumped, and clay put back against the wall holds water at the membrane, so we backfill with material that drains. One lakeshore point north of the QEW returned bedrock at or near the surface, so a lot near the lake is checked for shallow rock before the quote."
+    },
+    {
+      "q": "Do we need waterproofing near the lake or along Twenty Mile Creek?",
+      "a": "Water decides, not the wall system. Every below-grade wall is dampproofed on the outside and drained at the footing; where hydrostatic pressure occurs it is waterproofed instead, and an ICF wall, insulated more than 900 mm below grade, carries a drainage layer as well. Around Jordan Station and the centre of Vineland the survey maps sand and gravel that lets groundwater move, so on those lots the water table settles the question, and a test pit before the quote is how we find out."
+    },
+    {
+      "q": "What does the Town of Lincoln ask for with an ICF foundation?",
+      "a": "The Town's permit pages could not be reached when this page was written, so we confirm the application route, the fee for a house or addition and the inspection stages before we submit. The Building Code's part does not change by town: Subsection 9.15.4 covers flat ICF foundation walls within the Part 9 limits, and form units conform to CAN/ULC-S717.1, with some systems also carrying a CCMC evaluation report. The system is named on the quote, its documentation goes in the package, and we prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Vineland or Beamsville in winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The Vineland station counts 42.6 days a year that never rise above freezing and 21.1 below −10 °C; St. Catharines A, 26 km east, counts 46 and 26.7. Then CSA A23.1 governs: concrete placed at 10 °C or more, held at 10 °C or more while it cures, 7 MPa before frost, and snow and ice out of the cavity first."
+    },
+    {
+      "q": "How deep does the footing go in Lincoln?",
+      "a": "No Town of Lincoln drawing printing a footing depth could be read when this page was written, so we do not quote one. The Building Code's Table 9.12.2.2 is the floor: 1.2 m below grade for a heated basement on clay or on soils not clearly defined, which covers the till of the lake plain; no limit on rock; and no limit for a heated basement on coarse-grained soil, so on the sand and gravel around the Twenty the depth comes from the design. Every footing sits on undisturbed soil."
+    },
+    {
+      "q": "We are in Campden, above the Escarpment. What changes?",
+      "a": "The rock. At Campden the survey maps clay-to-silt till, and on the plateau south of it and south of Vineland toward Rockway laminated silt and clay, all over Lockport dolostone, not the Queenston shale of the plain. Dolostone is far harder than shale, and at the brow between Beamsville and Vineland it is at or near the surface, so a dig up here can reach rock before footing depth; the footing may bear on it, and that lift is rock excavation. Rockway and Tintern were not queried."
+    }
+  ],
+  "related_note": "We also build in St. Catharines, Grimsby and Pelham."
+}

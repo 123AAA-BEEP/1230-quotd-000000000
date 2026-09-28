@@ -1,0 +1,199 @@
+{
+  "slug": "welland",
+  "title": "ICF foundations in Welland | GTA ICF",
+  "description": "ICF foundations in Welland: lake-bed clay at every survey point, fill along both canals, the City's permit fees and radon form, footing depth and pour season.",
+  "h1": "ICF foundations and walls in Welland",
+  "kicker": "Niagara Region",
+  "answer": [
+    "Almost every lot in Welland digs into the same ground: fine lake-bed silt and clay, which the Ontario Geological Survey returns at every point we queried in the built-up city except along the two canal channels, where it maps fill. The footing goes at least 1200 mm below finished grade on natural undisturbed soil, the line printed on the specification sheet the City of Welland hosts with its standard drawings, and the permit is a building permit from the City's Building Division, applied for through its CityView Portal.",
+    "Clay changes the job in two ways. It holds a cut while the hole is open but drains slowly, so the drainage layer, the weeping tile and what goes back against the wall decide whether the basement stays dry, and its bearing depends on how stiff it is, which sets whether the wall is drawn under the Code's ICF rules or engineered. Along the old channel and the By-Pass the survey maps fill instead, and no point returned rock, so rock excavation is not a Welland line."
+  ],
+  "tiles": [
+    {
+      "value": "1200 mm",
+      "label": "minimum footing depth below finished grade, on natural undisturbed soil, rock or compacted granular fill, on the specification sheet the City hosts",
+      "source": {
+        "name": "City of Welland, specification S01a: excavation, concrete and masonry",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/pvnnrz5u/specification-s01a-excavation-concrete-and-masonry.pdf"
+      }
+    },
+    {
+      "value": "182 days",
+      "label": "frost-free period at Port Colborne, the nearest station with full normals, April 25 to October 26",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, Port Colborne",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      }
+    },
+    {
+      "value": "Silt and clay",
+      "label": "at every survey point in built-up Welland away from the canals; man-made fill along both canal channels; no point returned rock at the surface",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, point query at Welland",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.25,42.99&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "64.5%",
+      "label": "of Welland's 23,660 occupied homes are single-detached, and two thirds of the stock was built before 1981",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Welland",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Welland&DGUIDlist=2021A00053526032&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Clay plain, canal fill and the bedrock below",
+    "paragraphs": [
+      "Welland sits on a lake plain. The Ontario Geological Survey's surficial map returns one unit at every point we queried away from the canals, downtown, Dain City, Cooks Mills, east Welland north of the By-Pass and the Fonthill border: fine-textured glaciolacustrine deposits, silt and clay laid down on the bed of a glacial lake, the flat ground known regionally as the Haldimand clay plain, a name the survey's own attributes do not carry. For an excavation that means a face that stands for the days the hole is open, water that arrives and stays, and a footing whose bearing depends on how stiff the clay is.",
+      "Stiffness sets the design. The pier table on the City's sheet D01d rates soft clay at 40 kPa, firm clay at 75 and stiff clay at 150, and the Building Code's prescriptive rules for flat ICF foundation walls apply on stable soils of 75 kPa or more; softer ground sends the wall to a Part 4 design by an engineer. Rock is not the concern. Every point sits on Silurian bedrock, Salina Formation dolostone and shale under the centre and south, Guelph Formation dolostone at the north and east edge, but none returned it at or near the surface, and the survey has no depth-to-rock layer.",
+      "The canals are the exception. Three points along them, on the old channel through the centre and on the By-Pass east of the city, return the survey's man-made deposits unit, fill and urban development, consistent with canal spoil. Fill is not undisturbed soil: the specification sheet the City hosts founds footings on natural undisturbed soil, rock or compacted granular fill, so a canal-side dig continues through the fill to native clay, whatever the depth. The ground changes at the northwest boundary. Inside Welland the Fonthill-border point is silt and clay over Guelph dolostone; the Fonthill village point in Pelham, across the line, returns coarse sand and gravel over Lockport dolostone."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries, surficial map MRD 128-REV and bedrock map MRD 219, run at one or two coordinates in each area on 25 September 2026. A row describes the ground around its point, not your lot; the canal rows show where the map turns to fill, and the Pelham row is outside Welland, there to show where the ground changes. The footing is designed from what the excavation shows and, where the reviewer asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown Welland (old canal alignment, east and west sides)",
+        "surface": "Silt and clay, lake-bed deposits",
+        "bedrock": "Salina, dolostone and shale"
+      },
+      {
+        "name": "Dain City",
+        "surface": "Silt and clay",
+        "bedrock": "Salina, dolostone and shale"
+      },
+      {
+        "name": "Cooks Mills (Lyons Creek, east of the By-Pass)",
+        "surface": "Silt and clay",
+        "bedrock": "Salina, dolostone and shale"
+      },
+      {
+        "name": "Southeast Welland",
+        "surface": "Silt and clay",
+        "bedrock": "Salina, dolostone and shale"
+      },
+      {
+        "name": "East Welland, north of the By-Pass",
+        "surface": "Silt and clay",
+        "bedrock": "Guelph, dolostone"
+      },
+      {
+        "name": "Northwest Welland, at the Fonthill border",
+        "surface": "Silt and clay",
+        "bedrock": "Guelph, dolostone"
+      },
+      {
+        "name": "Old canal channel (recreational waterway)",
+        "surface": "Man-made fill and reworked ground",
+        "bedrock": "Salina, dolostone and shale"
+      },
+      {
+        "name": "By-Pass channel, east side",
+        "surface": "Man-made fill and reworked ground",
+        "bedrock": "Salina, dolostone and shale"
+      },
+      {
+        "name": "Fonthill village, Pelham (outside Welland)",
+        "surface": "Coarse sand and gravel",
+        "bedrock": "Lockport, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Welland's building permit for a foundation",
+    "authority_short": "the City of Welland",
+    "paragraphs": [
+      "The foundation is reviewed inside the building permit for the house or the addition; there is no separate ICF approval. The permit comes from the Building Division of the City of Welland's Planning and Development Services, at Civic Square, 60 East Main Street, and the application, its status and the inspection record run through the City's CityView Portal. Two notices on the City's permit page apply to foundation work: every application for new construction, including an addition with a full basement, must be accompanied by the soil gas mitigation (radon) form and detailed drawings, and the applicable law checklist goes in with the application. The City's residential checklist, dated January 2025 and headed '10 day permit/decision' for Part 9 housing, lists what is accepted at the counter: the provincial application form, a designer schedule with the designer's BCIN, the Energy Efficiency Design Summary where the SB-12 path for the wall is declared, two sets of scaled floor plans, elevations and cross sections, HVAC drawings with heat-loss calculations, a site plan with the approved lot grading plan, and engineered drawings for trusses or engineered lumber. It also carries a line for geotechnical or soils issues to be addressed where known, naming four subdivision plans among others, which on a clay plain is worth asking about before the footing is sized.",
+      "Fees follow By-law 2020-140 as posted on the City's fees page when this page was written: a new detached, semi-detached, townhouse or rowhouse, and an addition to one, at $1.74 per square foot, alterations at $0.76, an accessory dwelling unit at $0.55, and a $199 minimum permit fee. The page does not say how the square footage is measured, and the January 2025 checklist printed $1.71 for singles, so the rate is indexed and we confirm it at application. Three lines speak directly to foundation work: a partial permit for staged construction at the foundation stage, including underground site services, at $411 plus 25 per cent of the applicable fee; shoring or building excavation at $12.57 per linear foot; and underpinning an existing foundation at the same $12.57 per linear foot, a job the checklist also lists for architect or engineer design. A new house carries development charges before the permit issues: the checklist listed $11,120.86 City and $30,833.00 Regional for a single-detached house to December 31, 2025, plus $391 per unit for the Catholic school board, and the City states the 2026 rates are indexed, so the Building Division gives the current figure. Infill lots, which the City describes as older properties and severances rather than a subdivision under development, add a refundable $3,000 permit deposit and, where the street is used, a road occupancy permit. Approval from the Niagara Peninsula Conservation Authority, among other agencies, is required before issuance where it applies.",
+      "The City publishes no ICF-specific checklist and no inspection-stage list on welland.ca; the stages for a permit are set out on the permit itself and tracked through the portal, and the City says processing time depends on the division's workload but must meet the maximum the Building Code allows. The system we install is named on the quote and its documentation goes in the permit package with the drawings and the energy summary; the Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report. A flat ICF wall within the limits of the Code's Subsection 9.15.4 is drawn under the Code's own rules, so the alternative solution line on the fees page, $578 plus $143 an hour beyond four hours, is not something the wall type triggers; a wall outside those limits, or on clay under 75 kPa, is engineered under Part 4, and the City lists a professional review commitment form among the forms a permit may need. We prepare the package with you. On site we book the two concrete-stage visits that Toronto, Hamilton, Mississauga and Oakville all make, the footing forms and steel before the pour and the foundation before backfill, and confirm Welland's own stage list with the Building Division at 905-735-1700, extension 2251 or 2257, once the permit issues."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Welland Building Division, Planning and Development Services, Civic Square, 60 East Main Street; applications, status and inspections through the CityView Portal; 905-735-1700 ext. 2251 or 2257, devserv@welland.ca",
+        "url": "https://cviewportal.welland.ca/cityviewportal"
+      },
+      {
+        "label": "New house or addition fee",
+        "value": "$1.74 per ft² for a new detached, semi-detached, townhouse or rowhouse and for additions to them; alterations $0.76 per ft²; accessory dwelling unit $0.55 per ft²; $199 minimum permit fee; By-law 2020-140 as posted 25 September 2026, and the January 2025 checklist printed $1.71, so confirm the current rate",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/building-fees/"
+      },
+      {
+        "label": "Foundation-stage and excavation lines",
+        "value": "Partial permit for staged construction, foundation stage including underground site services, $411 plus 25 per cent of the applicable fee; shoring and/or building excavation $12.57 per linear ft; underpinning an existing foundation $12.57 per linear ft; alternative solution application $578 plus $143 per hour beyond four hours",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/building-fees/"
+      },
+      {
+        "label": "Radon form and drawings",
+        "value": "Every application for new construction, including an addition with a full basement, must be accompanied by the soil gas mitigation (radon) form and detailed drawings; the applicable law checklist goes in with every application; a professional review commitment form is listed among the forms a permit may need",
+        "url": "https://www.welland.ca/for-wellanders/permits-and-licences/building-permits/"
+      },
+      {
+        "label": "Residential checklist and development charges",
+        "value": "Headed '10 day permit/decision' for Part 9 housing; designer schedule with BCIN, Energy Efficiency Design Summary, two sets of scaled plans, elevations and sections, HVAC drawings with heat-loss calculations, site plan with approved lot grading plan; geotechnical or soils issues addressed where known; refundable $3,000 deposit for infill housing; development charges for a single-detached house $11,120.86 City and $30,833.00 Regional to December 31, 2025, plus $391 Catholic school board, indexed from January 1, 2026",
+        "url": "https://www.welland.ca/media/xo4pa5rv/permit-application-checklist-residential-housing.pdf"
+      },
+      {
+        "label": "Inspections and review time",
+        "value": "No inspection-stage list is published on welland.ca; stages are tracked through the CityView Portal and confirmed with the Building Division; processing time depends on the division's workload but must meet the maximum timeframe allowed in the Ontario Building Code; no day count is printed on the fees page",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/building-fees/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Frost, snow and the pour season in Welland",
+    "paragraphs": [
+      "Welland has no climate station with published normals, so the record we use is Port Colborne, about 12 km due south, whose 1981 to 2010 normals are the most recent available and whose temperature series runs to 2006. It puts the January daily mean at −3.7 °C and the January daily minimum at −6.9 °C, counts 45.5 days a year when the temperature never rises above 0 °C and 23.2 days below −10 °C, and gives a frost-free period of 182 days, April 25 to October 26. The minimum reaches freezing on 120.7 days against 45.5 for the maximum, so roughly 75 days a year cross 0 °C between night and day, and 137.7 cm of snow falls in an average year. St. Catharines A, 24 km north, reads within a fraction of a degree of it. Under CSA A23.1 a pour becomes cold-weather work once the forecast puts the air below 5 °C within 24 hours of placing: concrete for a wall under 300 mm thick arrives at 10 to 32 °C, is held at 10 °C or more while it cures, and reaches 7 MPa before it meets frost.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS forms hold heat in the core while it cures, which the form makers describe as thermal protection in cold weather, but the open top of the wall and the footing get cover of their own, snow and ice come out of the form cavity before the pump arrives, and concrete is not placed on a base cold enough to pull it below its placing temperature, which on clay means the footing base is not left open to the weather between inspection and pour. The footing depth is the same in every month. The specification sheet the City hosts founds footings at least 1200 mm below finished grade on natural undisturbed soil, rock or compacted granular fill, its standard deck drawing prints the same 1200 mm for piers, and the Building Code's Table 9.12.2.2 gives 1.2 m for a heated basement on clay or soils not clearly defined, which in Welland is nearly every basement."
+    ],
+    "facts": [
+      {
+        "label": "Frost-free period",
+        "value": "182 days on average, April 25 to October 26, Port Colborne (Climate ID 6136606), about 12 km south of Welland; 1981 to 2010 normals, temperature series 1981 to 2006",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Winter at Port Colborne",
+        "value": "January mean −3.7 °C, January daily minimum −6.9 °C; 45.5 days a year with a maximum at or below 0 °C and 120.7 with a minimum at or below 0 °C; 23.2 days below −10 °C; 137.7 cm of snow; St. Catharines A, 24 km north, reads −3.8 °C and 26.7 days below −10 °C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1, as reproduced by Concrete Ontario: forecast below 5 °C within 24 hours of placing; concrete for sections under 300 mm placed at 10 to 32 °C, kept at 10 °C or more while curing, 7 MPa before frost; snow and ice removed from surfaces before placing",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Footing depth on City-hosted drawings",
+        "value": "Poured concrete pier minimum 1200 mm below grade on undisturbed soil, drawing D01b; footings minimum 1200 mm below finished grade on natural undisturbed soil, rock or compacted granular fill, specification S01a; the Building Code's Table 9.12.2.2 gives the same 1.2 m for a heated basement on clay",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/f0ynccvk/wood-deck-d01b-fixed-to-brick-veneer-and-wood-framing.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Rock is not a Welland line; water and fill are. A Welland quote moves on keeping a hole dry in clay that will not drain, waterproofing and a drainage layer where the water table sits high, a deeper dig or an engineered footing where a canal-side lot is on fill, pump reach on the older streets near the old channel, and travel to the south end of the Niagara corridor.",
+  "faqs": [
+    {
+      "q": "What does the excavator meet under a Welland lot?",
+      "a": "Silt and clay, almost everywhere. The Ontario Geological Survey returns the same fine lake-bed unit at every point we queried away from the canals, from Dain City to Cooks Mills and the Fonthill border. It stands in a cut for the days the hole is open, drains slowly, and bears according to how stiff it is: the pier table the City hosts rates soft clay at 40 kPa, firm at 75 and stiff at 150. Only along the two canal channels does the map switch to fill."
+    },
+    {
+      "q": "Will a basement in Welland clay need waterproofing?",
+      "a": "The Code decides by water, and clay makes standing water likelier. Every below-grade wall is dampproofed on the outside and drained at the footing; where hydrostatic pressure occurs the Code requires waterproofing instead, and an ICF wall, insulated more than 900 mm below grade, needs a drainage layer against the membrane. In ground that sheds water this slowly, that layer and the weeping tile do the work, and clay spoil is not pushed back against the membrane. A test pit before the quote tells us which membrane the lot gets."
+    },
+    {
+      "q": "What does the City of Welland ask for with an ICF foundation?",
+      "a": "The building permit for the house or addition, through the CityView Portal. New construction, including an addition with a full basement, must include the soil gas mitigation (radon) form and detailed drawings; the residential checklist adds the designer schedule, Energy Efficiency Design Summary and lot grading plan. The ICF system is named on the quote and its documentation goes in the package; the Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC report. No ICF-specific checklist exists. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in a Welland winter?",
+      "a": "Yes. Port Colborne, the nearest station with full normals, counts 45.5 days a year that never rise above freezing and 23.2 days below −10 °C, with 137.7 cm of snow. On those days CSA A23.1 governs the pour: concrete placed at 10 °C or more, a covered wall held at that temperature through the cure, and 7 MPa before frost reaches it. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost."
+    },
+    {
+      "q": "How deep does the footing go in Welland?",
+      "a": "At least 1200 mm below finished grade, on natural undisturbed soil, rock or compacted granular fill. That is the footing line on the specification sheet the City of Welland hosts, and the deck drawing beside it prints the same 1200 mm for piers. The Building Code sets the same 1.2 m minimum for a heated basement on clay or soils not clearly defined, and Welland is clay at every point queried. On a canal-side lot mapped as fill, the dig continues through the fill to native ground, whatever the depth."
+    },
+    {
+      "q": "We are in Dain City, where the two channels meet. Is our lot on fill?",
+      "a": "Not necessarily. The survey point at Dain City returns the same lake-bed silt and clay as downtown, over Salina Formation bedrock; the fill unit shows up at the points on the old channel and on the By-Pass, which join at the south end of the city. A lot beside either channel may sit on canal spoil, and fill is not undisturbed soil, so the excavation continues until native clay is reached and an engineer may be asked to design the footing. A point query describes an area, not a lot."
+    }
+  ],
+  "related_note": "We also build in Port Colborne, Pelham, including Fonthill, and Niagara Falls."
+}

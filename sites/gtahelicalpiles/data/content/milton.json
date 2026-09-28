@@ -1,0 +1,209 @@
+{
+  "slug": "milton",
+  "title": "Helical pile installation in Milton | GTA Helical Piles",
+  "description": "Helical piles in Milton: the Town's deck permit trigger and fee, the silt and clay under the newer subdivisions, winter installs and illustrative costs.",
+  "h1": "Helical pile installation in Milton",
+  "kicker": "Halton Region",
+  "answer": [
+    "Milton's Building Division requires a permit for a freestanding deck larger than 10 square metres and for any deck attached to a building, with no height trigger printed on the Town's page. Its deck sample drawings set conventional footings a minimum of 4 ft (1.2 m) below grade, and where a helical pile replaces a footing they ask for the manufacturer's information with CCMC approval and a professional engineer's determination of depth, spacing and size from the soil condition.",
+    "The soil condition is the Milton-specific part. Nearly three quarters of the town's homes went up after 2000, and the Ontario Geological Survey maps most of those subdivisions, Beaty, Clarke, Scott, Willmott and Ford, as fine-textured glaciolacustrine silt and clay over red Queenston shale. Dempsey and the streets around Town Hall sit on clay-to-silt till, Old Milton on creek alluvium, and west of Tremaine Road the escarpment brings different rock entirely."
+  ],
+  "tiles": [
+    {
+      "value": "$163.11",
+      "label": "Town of Milton fee for a new unenclosed deck, flat rate",
+      "source": {
+        "name": "Town of Milton Building Permits",
+        "url": "https://www.milton.ca/en/business-and-development/building-permits.aspx"
+      }
+    },
+    {
+      "value": "10 m²",
+      "label": "freestanding deck size that needs a permit in Milton; no height trigger printed",
+      "source": {
+        "name": "Town of Milton Building Decks",
+        "url": "https://www.milton.ca/en/business-and-development/decks.aspx"
+      }
+    },
+    {
+      "value": "73%",
+      "label": "of Milton's occupied dwellings built 2001 to 2021, the youngest stock we serve",
+      "source": {
+        "name": "Statistics Canada Census Profile 2021",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Milton&DGUIDlist=2021A00053524009&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "3 bedrocks",
+      "label": "Queenston shale under the town, Clinton-Cataract rock at the escarpment, Amabel dolostone at Campbellville",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Milton",
+    "paragraphs": [
+      "Milton has the youngest housing stock in our service area: 73 per cent of its occupied dwellings were built between 2001 and 2021, according to the 2021 Census. Most of that growth sits on one deposit. Ontario Geological Survey point queries at Beaty, Clarke, Scott, Willmott and Ford all return fine-textured glaciolacustrine silt and clay, minor sand and gravel, the bed of a glacial lake. Fine-grained ground like this is exactly why the Town asks a professional engineer to set the depth, spacing and size of the piles from the soil condition instead of from a standard footing table.",
+      "The older parts of town are on different ground. The query point at Town Hall on Mary Street and the one in Dempsey return clay-to-silt till, and so do the escarpment brow west of Tremaine Road and the rural south-west near the Kilbride border. Along Sixteen Mile Creek through Old Milton the surface is modern alluvium: clay, silt, sand and gravel laid down by the creek, which may carry organic remains. Alluvium changes from one metre to the next, so a pile there is driven until it reaches the torque the engineer specified, and installation torque is recorded on every pile.",
+      "Bedrock under the whole urban area is the red Queenston shale, returned at every town point from Old Milton to Ford. None of the eleven Milton query points returned bedrock at or near the surface, but the survey does not give depth to rock, so we do not assume the shale is deep either. West of Tremaine Road the Niagara Escarpment changes everything: the point near Kelso returns Clinton-Cataract Group sandstone, shale and dolostone, and Campbellville on the plateau returns ice-contact sand and gravel over Amabel dolostone. An escarpment site is a separate ground condition from a subdivision site and is quoted that way."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one hand-placed point inside each neighbourhood's road boundaries, retrieved 25 September 2026. They describe the area, not your lot; the engineer's layout comes from the site.",
+    "neighbourhoods": [
+      {
+        "name": "Old Milton (Main St)",
+        "surface": "Modern alluvium of Sixteen Mile Creek",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Town Hall area (Mary St)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Beaty",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Clarke",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Dempsey",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Scott",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Willmott",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Ford (Boyne Survey)",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Campbellville",
+        "surface": "Ice-contact sand and gravel",
+        "bedrock": "Amabel, dolostone"
+      },
+      {
+        "name": "Kilbride border (rural south-west)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Clinton-Cataract Group, shale, sandstone and dolostone"
+      },
+      {
+        "name": "Escarpment west of Tremaine Rd (Kelso)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Clinton-Cataract Group, shale, sandstone and dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Milton",
+    "authority_short": "the Town of Milton",
+    "paragraphs": [
+      "Applications go to the Town of Milton Building Division at 150 Mary Street through the Town's online service portal, and the Town wants PDF drawings generated from design software, not scans. The fee table on the Building Permits page lists a new unenclosed deck or porch at $163.11 flat rate, states a $264.20 minimum for any permit type unless noted otherwise, and charges $436.51 for a revision; confirm with the Building Division whether the minimum applies to a deck. The page carries no effective date for those fees. There is no published day-count for residential review either: the Town does a completeness check, emails an accept or refuse, invoices the fee, and starts the full review once it is paid.",
+      "The footing-options sheet of the Town's deck sample drawings addresses steel helical piers directly: the manufacturer's information goes in with the application along with CCMC approval, and a professional engineer determines the depth, spacing and size of the piles based on soil condition. We prepare the package with you. Once the piles are in, the engineer issues an engineer-sealed certificate of conformity from the torque record, and installation torque is recorded on every pile for that purpose. The Town's typical deck inspections are footing, framing and final building; ask the Building Division how the footing inspection is handled for piles, since the sequence is written around poured concrete.",
+      "Two more items from the drawings and the decks page. Any footing, deck blocks excepted, within 4 ft of the house must go to the depth of the existing house footings, so piles along the wall are set to match. And if your subdivision has not yet been assumed by the Town, the deck permit also needs a clearance letter from the builder."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Freestanding deck over 10 m², or any deck attached to a building or structure; no height threshold printed",
+        "url": "https://www.milton.ca/en/business-and-development/decks.aspx"
+      },
+      {
+        "label": "Helical piles, with the application",
+        "value": "Manufacturer's information and CCMC approval; a professional engineer sets depth, spacing and size from soil condition",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf"
+      },
+      {
+        "label": "Deck permit fee",
+        "value": "$163.11 flat rate; $264.20 minimum for any permit type unless noted; revisions $436.51; no effective date printed",
+        "url": "https://www.milton.ca/en/business-and-development/building-permits.aspx"
+      },
+      {
+        "label": "Inspections",
+        "value": "Footing, framing, final building; booked in the online portal for permits issued after October 10, 2023, or at 905-878-7252 x2396",
+        "url": "https://www.milton.ca/en/business-and-development/building-inspections.aspx"
+      },
+      {
+        "label": "Unassumed subdivisions",
+        "value": "Developer's clearance letter from the builder required with the deck permit",
+        "url": "https://www.milton.ca/en/business-and-development/decks.aspx"
+      },
+      {
+        "label": "Apply",
+        "value": "Town of Milton online service portal (PDF drawings from design software only)",
+        "url": "https://permits.milton.ca/citizenportal/app/login"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Milton",
+    "paragraphs": [
+      "Milton has no climate station of its own in either normals set, so we use Georgetown WWTP, about 14 km due north. Its 1981 to 2010 record gives a January mean of −6.3 °C, 46 days a year with a minimum below −10 °C, about 56 days when the high never gets above freezing, and 135.9 cm of snow. That is colder and snowier than Toronto Pearson or Hamilton, both nearer the lake. Georgetown does not publish an average frost-free length, so the 174-day figure, April 27 to October 20, comes from Pearson, about 27 km to the east-north-east, and is a lakeshore-influenced number; expect Milton's own window to run a little shorter.",
+      "We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. With roughly 56 days a year at Georgetown that stay below freezing all day, a January or February install in Milton usually includes that step. The depth that matters is the one the Town's drawings print for footings, 4 ft (1.2 m) below grade, and the engineer sets the helix below the frost zone for the specific soil. Milton's decks page names the Ontario Building Code (O. Reg. 332/12) as the governing regulation; the Town's own drawings are where the 4 ft figure is printed, and we cite that rather than a clause number."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−6.3 °C, Georgetown WWTP, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      },
+      {
+        "label": "Days below −10 °C",
+        "value": "46 a year, Georgetown WWTP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      },
+      {
+        "label": "Days never above 0 °C; snowfall",
+        "value": "55.8 a year; 135.9 cm, Georgetown WWTP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "174 days, April 27 to October 20, Toronto Pearson, 1991 to 2020 (nearest station publishing it)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      }
+    ]
+  },
+  "pricing_note": "In urban Milton the price movers are the engineer's depth for silt and clay ground, which fixes the pile length, and side-yard access between closely spaced newer houses. Escarpment addresses such as Campbellville and the Kelso side of Tremaine Road are sand and gravel over dolostone or Clinton-Cataract rock, which can change the pile and the equipment. Each of these appears as a line in the written quote.",
+  "faqs": [
+    {
+      "q": "Does my Milton deck need a permit?",
+      "a": "A freestanding deck larger than 10 square metres needs one, and so does any deck attached to a building or structure, whatever its size. Milton's decks page prints no height trigger, so a low attached deck still needs a permit here. If your street is in a subdivision the Town has not assumed yet, the application also needs a clearance letter from the builder. Applications go through the Town's online service portal."
+    },
+    {
+      "q": "What does the Town of Milton want with helical piles?",
+      "a": "The Building Division's deck sample drawings say it directly: submit the manufacturer's information and CCMC approval with the application, and have a professional engineer determine the depth, spacing and size of the piles from the soil condition. We prepare the package with you. After the install the engineer issues an engineer-sealed certificate of conformity from the torque record, because installation torque is recorded on every pile."
+    },
+    {
+      "q": "What is under the newer subdivisions like Beaty, Clarke and Ford?",
+      "a": "Fine-textured glaciolacustrine silt and clay, according to Ontario Geological Survey point queries, with red Queenston shale as bedrock. Willmott and Scott return the same. Dempsey and the blocks around Town Hall are clay-to-silt till instead. The survey does not give depth to the shale, and none of the Milton points returned rock at the surface, so the engineer's depth for your lot comes from the soil, not from a town-wide number."
+    },
+    {
+      "q": "Can you install in a Milton winter?",
+      "a": "Yes. We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. The nearest station with a full record, Georgetown WWTP, logs about 56 days a year when the temperature never rises above freezing and 46 with a low below −10 °C, so a mid-winter Milton job usually includes that step. Nothing has to cure, so there is no season to wait for."
+    },
+    {
+      "q": "What does a Milton deck permit cost?",
+      "a": "The Town's Building Permits page lists a new unenclosed deck or porch at $163.11, flat rate. The same page sets a $264.20 minimum for any permit type unless noted otherwise, and a revision at $436.51, so confirm with the Building Division which figure applies before you budget. No effective date is printed with the fees. Engineering for the pile layout is separate from the Town's fee."
+    },
+    {
+      "q": "I am in Campbellville. Is it different from town?",
+      "a": "Yes, in both layers. The survey point at Campbellville returns ice-contact sand and gravel at the surface over Amabel dolostone, the only queried point in Milton that is not on shale, and the escarpment brow west of Tremaine Road returns Clinton-Cataract Group rock under till. Coarse ground and hard rock can change the helix, the pile and the equipment we bring, so escarpment addresses get a site look before the quote is final."
+    }
+  ],
+  "related_note": "Our neighbouring service areas are Oakville, Burlington and Halton Hills, all within the same Halton permit landscape."
+}

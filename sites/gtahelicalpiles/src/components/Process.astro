@@ -1,0 +1,50 @@
+---
+interface Props {
+  heading?: string;
+  steps: { title: string; body: string }[];
+}
+const { heading = 'How it works', steps } = Astro.props;
+---
+
+<section class="process-section" aria-labelledby="process-heading">
+  <h2 id="process-heading">{heading}</h2>
+  <ol class="process">
+    {steps.map((s) => (
+      <li>
+        <h3>{s.title}</h3>
+        <p>{s.body}</p>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  .process-section h2 { font-size: var(--text-2xl); margin-bottom: var(--s5); }
+  .process { list-style: none; padding: 0; counter-reset: step; display: grid; gap: var(--s5); }
+
+  .process li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 3rem;
+  }
+
+  .process li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    background: var(--ink);
+    color: var(--on-dark);
+    border-radius: var(--r-pill);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .process h3 { font-size: var(--text-lg); margin-bottom: var(--s1); }
+  .process p { color: var(--text-muted); max-width: 40rem; }
+</style>

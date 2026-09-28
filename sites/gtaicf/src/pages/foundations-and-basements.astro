@@ -1,0 +1,192 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Estimator from '../components/Estimator.astro';
+import Diagram from '../components/Diagram.astro';
+import Process from '../components/Process.astro';
+import Faq from '../components/Faq.astro';
+import { getBusiness, getPrices, getLiveCities, getLiveGuides, formatCadPerSqft } from '../lib/data.js';
+
+const biz = getBusiness();
+const prices = getPrices();
+const cities = getLiveCities();
+const guides = getLiveGuides();
+const foundation = prices.rows.find((r) => r.key === 'foundation');
+const addition = prices.rows.find((r) => r.key === 'addition');
+const costGuide = guides.find((g) => g.slug === 'icf-vs-poured-concrete-ontario');
+const codeGuide = guides.find((g) => g.slug === 'ontario-building-code-icf-requirements');
+const energyGuide = guides.find((g) => g.slug === 'r-value-thermal-savings-icf-basements');
+
+const title = 'ICF foundations and basements, western GTA | GTA ICF';
+const description = 'ICF foundation and basement walls formed, reinforced and poured by our own crew across Toronto, Peel, Halton, Hamilton, Guelph and Niagara. Insulated from the pour.';
+
+const steps = [
+  { title: 'Send the drawings', body: 'Architectural drawings with wall heights and the perimeter are enough to quote a foundation. A survey and any geotechnical report you have help; a photo of the lot access helps more than you would think.' },
+  { title: 'Engineering and permit package', body: 'Within the Building Code\'s Part 9 limits an ICF foundation can be drawn by a qualified designer; taller walls, deeper backfill or soft ground take an engineer\'s design. The drawings, the ICF system\'s documentation and the SB-12 energy summary go in with the application. We prepare the package with you.' },
+  { title: 'Footings, forms, steel, pour', body: 'Footings in undisturbed soil below the frost zone, inspected before the concrete. Forms stacked and braced, reinforcing placed to the drawings, then one continuous pour after the pre-pour check.' },
+  { title: 'Waterproof, backfill, hand over', body: 'Membrane on the outside face, weeping tile and stone at the footing, the pre-backfill inspection, then backfill. The framers take over a basement wall that already carries its insulation.' },
+];
+
+const faqs = [
+  { q: 'Is an ICF basement wall as strong as a poured wall?', a: 'It is a poured wall. The concrete core is reinforced and continuous; the foam stays on as insulation and as the surface the drywall screws to. The Building Code sets a minimum core of 150 mm for an ICF foundation wall, the same order as a conventional wall, and the engineer sizes it up from there for the backfill height and the loads.' },
+  { q: 'How thick is the concrete core?', a: 'Usually 6 or 8 inches. The Code\'s Part 9 tables allow a 150 mm core for a basement wall with limited backfill and step up to 200 mm or more as the height of finished ground above the basement floor increases, and the core below can never be thinner than the wall above. The drawings and the engineer settle it for your house, not a rule of thumb.' },
+  { q: 'Do I still need waterproofing and weeping tile?', a: 'Yes. The Code requires the outside of every below-grade foundation wall to be dampproofed, waterproofed where there is hydrostatic pressure, and drained at the footing. Because an ICF wall is insulated to its full depth, a drainage layer is required as well. The membrane goes on the foam to the manufacturer\'s detail, and the weeping tile is inspected before backfill.' },
+  { q: 'Which municipalities inspect what?', a: 'Toronto, Hamilton, Mississauga and Oakville all inspect the footing forms and reinforcing before concrete is placed, and the foundation again before backfill; Hamilton checks the drainage layer, weeping tile and stone cover at that visit. Other municipalities in our area run similar stages. We book each inspection and tell you when the inspector is coming.' },
+  { q: 'Can you pour a foundation in January?', a: 'Yes. We pour year-round. In cold weather the concrete arrives warm from the supplier, the top of the wall and the footing are covered, and the cure is allowed for, which adds time and can add cost. CSA A23.1 treats any pour with a forecast below 5 °C in the next 24 hours as cold-weather work, and the winter measures are priced into the quote rather than discovered on site.' },
+  { q: 'Does an ICF basement meet the energy code by itself?', a: 'SB-12, the energy supplement to the Building Code, deems an ICF wall with at least RSI 1.76 (R10) of insulation on each face of the concrete to comply with the wall values in its Zone 1 compliance tables, which cover our whole service area. That is the wall as poured, with nothing added inside. The R-value guide explains the nominal and effective figures.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: biz.trading_name, item: `${Astro.site}` },
+    { '@type': 'ListItem', position: 2, name: 'ICF foundations and basements', item: `${Astro.site}foundations-and-basements/` },
+  ],
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'ICF foundation and basement wall construction',
+  provider: { '@id': `${Astro.site}#business` },
+  areaServed: biz.service_area.map((c) => ({ '@type': 'City', name: `${c.name}, ON` })),
+};
+---
+
+<Base title={title} description={description} schema={[breadcrumb, faqSchema, serviceSchema]}>
+  <nav class="page crumbs" aria-label="Breadcrumb">
+    <a href="/">{biz.trading_name}</a> <span aria-hidden="true">/</span> <span aria-current="page">Foundations and basements</span>
+  </nav>
+
+  <div class="page svc">
+    <div class="head">
+      <p class="eyebrow eyebrow-brand">Service</p>
+      <h1>ICF foundations and basements</h1>
+      <p class="lede">Footings, insulated concrete form walls poured in one lift, membrane and weeping tile, ready for the framers. A basement that is insulated on both faces the day it is poured, with no furring, batts or vapour barrier to add later. Built by our own crew, with whichever ICF system your local supplier stocks.</p>
+      <div class="actions">
+        <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+        <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="service-hero">Call {biz.phone_display}</a>
+      </div>
+    </div>
+
+    <aside class="rail">
+      <QuoteForm />
+    </aside>
+
+    <div class="rest">
+      <section class="block" id="what-you-get">
+        <h2>What an ICF foundation is</h2>
+        <div class="prose">
+          <p>Two panels of expanded polystyrene foam, held apart by plastic webs, stack into a hollow wall on the footing. Reinforcing steel goes in the cavity, the wall is braced, and concrete is pumped in. When the concrete has cured the foam stays: it is the insulation on both faces, and the recessed web flanges every 8 inches take the screws for drywall inside and cladding outside. The result is a reinforced concrete foundation wall with continuous insulation on both sides and no studs bridging it.</p>
+          <p>Ontario's 2024 Building Code carries its own prescriptive rules for flat ICF foundation walls, Subsection 9.15.4, for houses up to two storeys with floor-to-floor heights up to 3 m on stable soil. Within those limits the wall is drawn like any other Part 9 foundation; beyond them, or where the reviewer asks, an engineer seals the design. The Code sets the core at not less than 150 mm and never thinner than the wall above, and its tables step the core up with the height of backfill.</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf" rel="noopener" target="_blank">2024 Building Code Compendium, Volume 1 (Subsection 9.15.4)</a> · <a href="https://www.nudura.com/resource/download/nudura_10_part_specification.pdf" rel="noopener" target="_blank">manufacturer specification (form geometry and web spacing)</a></p>
+      </section>
+
+      <section class="block" id="section">
+        <h2>The wall in section</h2>
+        <Diagram frostDepthLabel="to 1.2 m" caption="Not to scale. 1.2 m is the Building Code's minimum footing depth for a heated basement on clay or undefined soils (Table 9.12.2.2) and the design frost depth in geotechnical reports filed with the Town of Oakville." />
+      </section>
+
+      <section class="block" id="water">
+        <h2>Water, membrane and drainage</h2>
+        <div class="prose">
+          <p>Foam is insulation, not waterproofing. The Code requires the outside of every below-grade foundation wall to be dampproofed, waterproofed where hydrostatic pressure occurs, and drained at the bottom of the wall. Where the wall insulation runs more than 900 mm below grade, which every ICF wall does, a drainage layer is required as well. The form makers sell peel-and-stick membranes made for the foam face, and the membrane runs down to the weeping tile and stone at the footing.</p>
+          <p>What changes from city to city is the ground the drain has to cope with. Clay till across most of Halton and Peel holds a cut but drains slowly; the sand and gravel of the old Lake Iroquois shoreline drains well and runs; shale close to the surface in Oakville's creek valleys means rock excavation and a footing on rock. The city pages describe what the Ontario Geological Survey maps under each neighbourhood, and the site review confirms it for your lot.</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf" rel="noopener" target="_blank">2024 Building Code Compendium, Volume 1 (9.13.2.1, 9.13.3.1, 9.14.2.1)</a> · <a href="https://www.nudura.com/media/Nudura/Resources/Installation%20Manual/Sections/70-damproofing-and-waterproofing-to-nudura-installation-manual.pdf" rel="noopener" target="_blank">manufacturer dampproofing and waterproofing detail</a></p>
+      </section>
+
+      <section class="block" id="inspections">
+        <h2>Permits and inspections</h2>
+        <div class="prose">
+          <p>A new foundation is part of a building permit for the house or the addition, issued by the municipality where the lot is. None of the municipalities in our area publishes an ICF-specific checklist; the application carries the same drawings any foundation does, the ICF system's documentation, and the SB-12 energy summary. Toronto asks for its Assumption of Responsibility for Engineering Content form when an engineer seals the drawings, and reviewers may ask for the form manufacturer's product literature or thermal test data with the energy submission.</p>
+          <p>The inspections follow the concrete. Toronto, Hamilton, Mississauga and Oakville all inspect the footing forms and reinforcing before any concrete is placed, and the foundation again before backfill. Mississauga's inspector checks the soil bearing against the design value, 75 kPa for a typical residential design, and that the reinforcement matches the approved drawings. Hamilton checks the drainage layer, weeping tile and stone cover at the backfill visit. We book each one and are on site when the inspector is.</p>
+        </div>
+        <p class="sources">Sources: <a href="https://www.toronto.ca/?page_id=57492" rel="noopener" target="_blank">City of Toronto, when to call for inspection</a> · <a href="https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections" rel="noopener" target="_blank">City of Hamilton, building inspections</a> · <a href="https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/book-a-building-permit-inspection/" rel="noopener" target="_blank">City of Mississauga, book a building permit inspection</a> · <a href="https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/" rel="noopener" target="_blank">Town of Oakville, inspection scheduling</a> · <a href="https://www.oaa.on.ca/Assets/Common/Shared_Documents/Practice%20Tips/PT.36.3_V03.0_OBC-SB12_PrescriptiveCompliance.pdf" rel="noopener" target="_blank">OAA practice tip on SB-12 prescriptive compliance</a></p>
+      </section>
+
+      <section class="block" id="builders">
+        <h2>For builders and designers</h2>
+        <div class="prose">
+          <p>Send the foundation plan and the wall heights and you get a per-square-foot quote back with the core, the reinforcing assumption and the exclusions written out. We schedule the pour around your framing date, stay brand-agnostic so the forms come from whichever local yard has stock, and hand the framers a wall that is already insulated and furred. If you build several houses a year, ask about pricing the season rather than the job.</p>
+        </div>
+        <p><a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-md num" data-track="call_click" data-place="builders">Call {biz.phone_display}</a></p>
+      </section>
+
+      <section class="block" id="pricing">
+        <h2>What it costs, illustratively</h2>
+        <p class="muted">{prices.illustrative_note}</p>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Wall</th><th scope="col">Typical core</th><th scope="col">Illustrative range</th></tr></thead>
+            <tbody>
+              {[foundation, addition].filter(Boolean).map((r) => (
+                <tr>
+                  <td><strong>{r.label}</strong></td>
+                  <td>{r.core_options}</td>
+                  <td class="num">{formatCadPerSqft(r.low)} to {formatCadPerSqft(r.high)} <span class="muted">{r.unit}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">Last reviewed {prices.last_reviewed}. {prices.excluded_note}
+          {costGuide && <span> The comparison against a poured and insulated wall, with what other Ontario builders publish: <a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a>.</span>}
+        </p>
+      </section>
+
+      <Estimator heading="Estimate a foundation from your drawings" />
+
+      <Process steps={steps} />
+
+      <Faq items={faqs} heading="Foundation and basement questions" />
+
+      <section class="block related">
+        <h2>Related</h2>
+        <ul class="related-list">
+          <li><a href="/full-height-walls/">Full-height ICF walls and additions</a></li>
+          {costGuide && <li><a href={`/guides/${costGuide.slug}/`}>{costGuide.title}</a></li>}
+          {codeGuide && <li><a href={`/guides/${codeGuide.slug}/`}>{codeGuide.title}</a></li>}
+          {energyGuide && <li><a href={`/guides/${energyGuide.slug}/`}>{energyGuide.title}</a></li>}
+          {cities.map((c) => <li><a href={`/locations/${c.slug}/`}>ICF foundations in {c.name}</a></li>)}
+          <li><a href="/#areas">All service areas and how we work</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .crumbs { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--s6); display: flex; gap: var(--s2); flex-wrap: wrap; }
+  .crumbs a:hover { color: var(--brand-700); }
+
+  .svc { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s8); align-items: start; }
+  @media (min-width: 64rem) {
+    .svc { grid-template-columns: minmax(0, 1fr) 23rem; column-gap: var(--s16); row-gap: 0; }
+    .head { grid-column: 1; grid-row: 1; }
+    .rest { grid-column: 1; grid-row: 2; }
+    .rail { grid-column: 2; grid-row: 1 / span 2; }
+  }
+
+  h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s3) var(--s4); max-width: 16ch; }
+  .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: var(--read); }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s6); }
+
+  .rest { display: grid; gap: var(--s16); max-width: var(--read); margin-top: var(--s8); }
+  .block h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .block > p { max-width: 40rem; }
+  .prose p { color: var(--text-muted); max-width: 40rem; }
+  .prose p + p { margin-top: var(--s4); }
+  .prose + p { margin-top: var(--s5); }
+  .table-wrap { margin-top: var(--s5); }
+  .sources { margin-top: var(--s4); max-width: 40rem; }
+
+  .related-list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+  .related-list a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 0.15em; display: inline-block; padding-block: var(--s1); }
+</style>

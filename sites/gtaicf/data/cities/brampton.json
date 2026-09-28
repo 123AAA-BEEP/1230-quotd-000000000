@@ -1,0 +1,314 @@
+{
+  "slug": "brampton",
+  "name": "Brampton",
+  "region": "Peel Region",
+  "province": "ON",
+  "lat": 43.68341,
+  "lon": -79.76633,
+  "sub_areas": [
+    {
+      "name": "Downtown Brampton (Four Corners)",
+      "note": "Historic city centre at Queen and Main Streets in the southwest part of the city (Wikipedia). OGS point queries at the reference coordinate and at Brampton GO Station (43.68694, -79.76472) both return clay-to-silt till (unit 5d) over Queenston Formation shale."
+    },
+    {
+      "name": "Bramalea",
+      "note": "Large planned 'new town' district east of the original town, in former Chinguacousy Township, developed from the 1960s by Bramalea Limited (Wikipedia). OGS point queries at the Wikipedia article coordinate (43.725, -79.7175) and at Bramalea City Centre (43.716589, -79.723921) return unit 5d till over Georgian Bay Formation; at Bramalea GO Station (43.70194, -79.69111) the surficial unit changes to fine-textured glaciolacustrine silt and clay (unit 8b)."
+    },
+    {
+      "name": "Heart Lake",
+      "note": "North-central Brampton around Heart Lake Conservation Area (169 ha, Etobicoke Creek watershed, TRCA-managed; the TRCA describes its surficial geology as glacial till and river deposits, per Wikipedia). OGS point query at the conservation area (43.742, -79.795) returns unit 5d till over Queenston Formation. The residential neighbourhood south of the park was not separately queried."
+    },
+    {
+      "name": "Springdale",
+      "note": "Suburban district of about 1,600 ha in the north of the city, bounded by Countryside Drive, Bovaird Drive, Heart Lake Road and Airport Road (Wikipedia). OGS point query at the OpenStreetMap neighbourhood node (43.7539, -79.7695) returns unit 5d till over Queenston Formation."
+    },
+    {
+      "name": "Castlemore",
+      "note": "Northeast Brampton, about 14 km from downtown, developed since the early 1990s with some 2-acre estate lots; the West Humber River flows through its western portion (Wikipedia). OGS point query at the Wikipedia coordinate (43.79095, -79.6897) returns fine-textured glaciolacustrine silt and clay (unit 8b) over Georgian Bay Formation."
+    },
+    {
+      "name": "Mount Pleasant",
+      "note": "Northwest Brampton, a former rural hamlet that has grown rapidly since Mount Pleasant GO Station opened in 2005 (Wikipedia). OGS point query at the Wikipedia coordinate (43.67667, -79.81861) returns unit 5d till over Queenston Formation."
+    },
+    {
+      "name": "Churchville",
+      "note": "Preserved hamlet in southwest Brampton on the Credit River, designated a heritage conservation district in 1990, the city's only one (Wikipedia). OGS point query at the Wikipedia coordinate (43.63, -79.75556) returns coarse-textured glaciolacustrine sand and gravel (unit 9c, foreshore and basinal deposits) over Queenston Formation, the only coarse-textured surficial unit found at any Brampton query point."
+    },
+    {
+      "name": "Snelgrove",
+      "note": "Former hamlet in the northwest of the city (Wikipedia coordinate 43.73389, -79.82444). OGS point query returns unit 5d till over Queenston Formation. Included only as an additional geology sample point."
+    }
+  ],
+  "census": {
+    "population_2021": 656480,
+    "private_dwellings_occupied": 182472,
+    "single_detached_pct": 52.6,
+    "period_of_construction": {
+      "pre_1960_pct": 4.2,
+      "1961_1980_pct": 19.3,
+      "1981_2000_pct": 28.2,
+      "2001_2021_pct": 48.3
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 96,020 of 182,475 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 182,475): 1960 or before 7,600; 1961-1980 35,165; 1981-1990 25,285; 1991-2000 26,260 (1981-2000 = 51,545); 2001-2005 28,550; 2006-2010 21,420; 2011-2015 20,910; 2016-2021 17,285 (2001-2021 = 88,165). Population density 2,469.0 per km2. Nearly half of Brampton's housing stock post-dates 2000 and only 4.2% pre-dates 1960.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Brampton, City (CY) [Census subdivision], Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Brampton&DGUIDlist=2021A00053521010&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 656,480; Private dwellings occupied by usual residents: 182,472"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Brampton (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Brampton&DGUIDlist=2021A00053521010&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data 182,475; Single-detached house 96,020 (52.6)"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Brampton (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Brampton&DGUIDlist=2021A00053521010&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 7,600; 1961 to 1980 35,165; 1981 to 1990 25,285; 1991 to 2000 26,260; 2001 to 2005 28,550"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). This is the unit regional literature calls Halton Till / the Peel Plain, but those names are not carried in the OGS layer attributes and were not verified here.",
+        "where": "Nearly all of Brampton: query points at the reference coordinate, Brampton GO Station (downtown), Bramalea (Wikipedia coordinate and Bramalea City Centre), Heart Lake Conservation Area, Springdale, Mount Pleasant and Snelgrove all return unit 5d (one continuous polygon, OBJECTID 89680)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8b - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; interbedded silt and clay and gritty, pebbly flow till and rainout deposits.",
+        "where": "East and northeast Brampton: query points at Bramalea GO Station (Steeles Ave E and Bramalea Rd, 43.70194, -79.69111) and Castlemore (43.79095, -79.6897) return unit 8b."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9c - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay; foreshore and basinal deposits.",
+        "where": "Churchville, on the Credit River in southwest Brampton (query point 43.63, -79.75556)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (west and central Brampton, including downtown) and Georgian Bay Formation (east Brampton, Bramalea and Castlemore); both Upper Ordovician shale-dominated units (OGS MRD219, source map m2337).",
+      "description": "Queenston (OGS unit 16): red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds. Georgian Bay (OGS unit 14): interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone. OGS point queries return Queenston at the reference coordinate, Brampton GO, Heart Lake, Springdale, Mount Pleasant, Churchville and Snelgrove, and Georgian Bay at Bramalea (both points), Bramalea GO and Castlemore; the contact runs roughly north-south between downtown and Bramalea.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). No Brampton query point returned OGS unit 3 (bedrock at or near surface), so shallow shale was not indicated at any of the eleven points sampled; the City's own deck drawings list 'clay shale' (300 kPa) and 'till' (200 kPa) among the soil types a builder may encounter, but give no depths."
+    },
+    "implications_for_piles": [
+      "The City of Brampton's deck permit package sets the baseline any pile design is compared against: concrete piers 8, 10 or 12 inches in diameter a minimum of 4'-0\" below grade, bearing on undisturbed soil, with the soil bearing capacity to be determined prior to construction (General Note 7). The package does not mention helical piles, CCMC or BMEC evaluations, or an engineer requirement for alternative foundations; the drawings simply ask the applicant to provide the location, depth, size and spacing of piers.",
+      "The same drawings print a soil bearing table (soft clay 40 kPa, loose sand or gravel 50, firm clay 75, dense or compact silt 100, stiff clay 150, dense compact sand or gravel 150, till 200, clay shale 300, sound rock 500 kPa) and require the allowable bearing pressure to be reduced by 50% where water is at or near the bottom of the footing excavation (General Note 10).",
+      "OGS surficial mapping is unusually uniform across Brampton: eight of eleven query points fall in one clay-to-silt till polygon (unit 5d). The exceptions are the east side (Bramalea GO, Castlemore), where fine-textured glaciolacustrine silt and clay (unit 8b) is mapped, and Churchville on the Credit River, where coarse sand and gravel (unit 9c) is mapped; pile depth and torque expectations from the till plain are therefore not transferable to those areas.",
+      "Bedrock is Queenston red shale under the west and centre and Georgian Bay grey shale under the east; no query point showed bedrock at or near surface, and depth to bedrock is not known from the sources retrieved. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.68341, -79.76633)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.76633,43.68341&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5d, Deposit: Till, Material: Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service, layer 3 query at Castlemore (43.79095, -79.6897)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.6897,43.79095&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8b, Fine-textured glaciolacustrine deposits, silt and clay, minor sand and gravel"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service, layer 3 query at Churchville (43.63, -79.75556)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.75556,43.63&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9c, Coarse-textured glaciolacustrine deposits, sand, gravel, minor silt and clay, Foreshore and basinal deposits"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.68341, -79.76633)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.76633,43.68341&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "OGS MRD 219 feature service, layer 4 query at Bramalea City Centre (43.716589, -79.723921)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.723921,43.716589&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Georgian Bay; interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "City of Brampton - Building Permit Requirements: Deck (PDF), Tables & Notes sheet",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homeowners/Deck%20Package.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "SOIL BEARING CAPACITIES (kPa): ... STIFF CLAY 150; TILL 200; CLAY SHALE 300; SOUND ROCK 500"
+      },
+      {
+        "name": "Wikipedia - Heart Lake Conservation Area",
+        "url": "https://en.wikipedia.org/wiki/Heart_Lake_Conservation_Area",
+        "retrieved_at": "2026-09-25",
+        "quote": "occupies 169 hectares (418 acres) in the Etobicoke Creek watershed ... surficial geology of glacial till and river deposits"
+      },
+      {
+        "name": "Wikipedia - Brampton (city and neighbourhood articles, via the MediaWiki API)",
+        "url": "https://en.wikipedia.org/wiki/Brampton",
+        "retrieved_at": "2026-09-25",
+        "quote": "a lower-tier municipality within the Peel Region ... bordered by Vaughan to the east, Halton Hills to the west, Caledon to the north"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Brampton Building Division (the City's pages refer to 'the Building Division's Permits Section' and to 'Building Services' for inspection booking; located at Flower City Community Campus, 8850 McLaughlin Road South, Unit 1)",
+    "deck_permit_required_when": "A building permit is required for any deck or porch that is physically attached or anchored to the house, and for any deck or porch that is 0.6 metres or more above the ground. A deck, porch or patio less than 0.6 metres (2 feet) above the ground and not attached to the house is permitted by the Zoning By-law and does not require a building permit. The deck must also meet Zoning By-law setbacks and permitted encroachments; if the property is in an area regulated by Credit Valley Conservation or the Toronto and Region Conservation Authority, that authority's approval is needed before the City can issue the permit.",
+    "footing_depth_requirement": "City deck package drawings (Deck Foundation Plan and Deck Sections, revised Feb 2026): concrete piers 8\", 10\" or 12\" diameter 'MINIMUM 4'-0\" BELOW GRADE'; General Note 7: 'CONCRETE PIERS SHALL BEAR ON UNDISTURBED SOIL. THE BEARING CAPACITY OF THE SOIL SHALL BE DETERMINED PRIOR TO CONSTRUCTION'; General Note 10: allowable soil bearing pressure reduced by 50% while water is at or near the bottom of the footing excavation. The application checklist asks for 'location, depth, size and spacing of piers'. The package makes no mention of helical piles, CCMC or BMEC evaluations, or engineer requirements for alternative foundations.",
+    "inspections": [
+      "Footing",
+      "Structural Framing",
+      "Final"
+    ],
+    "fee_note": "2026 Fee Schedule (revised February 2026): Deck, flat fee $326.21, the same as the minimum fee for detached, semi-detached, townhouse, rowhouse, duplex or live/work residential projects; the deck package states 'Permit fee of $326.21 applies to our Standard 10 Day Permit Application Service'.",
+    "timeline_note": "The City's Standard Permit Application Service covers all home renovation projects and 'the Building Division will provide a review of your application within 10 business days'. Inspections run 8 am to 4 pm Monday to Friday, can be booked up to 5 days in advance, and the next business day closes for booking at 3 pm each day; the mandatory inspections for decks are to be requested in the order Footing, Structural Framing, Final.",
+    "portal_url": "https://bramptonbbp.brampton.ca/citizenportal/",
+    "portal_note": "Applications, inspection bookings and document requests go through the Brampton Building & Business Portal (registered user, or guest with permit number and authorization key for inspections); the paper 'Permit to Construct or Demolish' form is no longer required because it is part of the portal submission.",
+    "sources": [
+      {
+        "name": "City of Brampton - Decks, Porches and Patios (Zoning)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Zoning/Pages/DecksandPorchesandPatios.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "A building permit is also required for any deck or porch that is 0.6 metres or more above the ground."
+      },
+      {
+        "name": "City of Brampton - Decks, Porches and Patios (contact)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Zoning/Pages/DecksandPorchesandPatios.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "contact the Building Division's Permits Section at 905.874.2401"
+      },
+      {
+        "name": "City of Brampton - Building Permit Requirements: Deck (PDF, revised Feb 2026)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homeowners/Deck%20Package.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Foundation - provide location, depth, size and spacing of piers ... Permit fee of $326.21 applies to our Standard 10 Day Permit Application Service"
+      },
+      {
+        "name": "City of Brampton - Deck package sample drawings (PDF), Deck Foundation Plan",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homeowners/Deck%20Package.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "8\" DIA. CONCRETE PIER / 10\" DIA. / 12\" DIA. CONCRETE PIER MINIMUM 4'-0\" BELOW GRADE"
+      },
+      {
+        "name": "City of Brampton - Deck package sample drawings (PDF), General Notes",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homeowners/Deck%20Package.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "CONCRETE PIERS SHALL BEAR ON UNDISTURBED SOIL. THE BEARING CAPACITY OF THE SOIL SHALL BE DETERMINED PRIOR TO CONSTRUCTION."
+      },
+      {
+        "name": "City of Brampton - Homeowners and Residential Contractors (building permits)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/homeowners/Pages/welcome.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Through this service the Building Division will provide a review of your application within 10 business days."
+      },
+      {
+        "name": "City of Brampton - Mandatory Inspections for Decks (PDF)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Inspections/Mandatory%20Inspections%20for%20Decks.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MANDATORY INSPECTIONS for DECKS ... a) Footing b) Structural Framing c) Final"
+      },
+      {
+        "name": "City of Brampton - Inspections",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Inspections/Pages/welcome.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Inspections take place between 8am and 4pm daily ... Inspections are available to book for 5 days in advance."
+      },
+      {
+        "name": "City of Brampton - 2026 Permit Fee Schedule (PDF, revised February 2026)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Fees/Permit%20Fee%20Schedule.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MINIMUM FEE Detached, semi-detached, townhouse, rowhouse, duplex or live/work residential projects $326.21 ... Deck Flat fee $326.21"
+      },
+      {
+        "name": "City of Brampton - Building Permits (landing page linking the portal)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Pages/Welcome.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Building Permit Application (https://bramptonbbp.brampton.ca/citizenportal/)"
+      },
+      {
+        "name": "Brampton Building & Business Portal",
+        "url": "https://bramptonbbp.brampton.ca/citizenportal/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Brampton Building & Business Portal"
+      },
+      {
+        "name": "City of Brampton - When a Permit is Not Required",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/homeowners/Pages/WhenaPermitisNotRequired.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "work that the City of Brampton Building Division does not require a building permit to be issued for"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Toronto Pearson International Airport (Climate ID 6158731, WMO 71624; 43 40'36\" N, 79 37'50\" W; 173.4 m), about 11 km southeast of the Brampton reference coordinate. No ECCC normals station named Brampton exists in the 1981-2010 or 1991-2020 search.",
+    "normals_period": "1991-2020 (temperature code B, 30 years; day-count and frost tables code C; record combines 6158733 to 2013/06/13 and 6158731 thereafter)",
+    "frost_free_days": 174,
+    "jan_mean_temp_c": -5.0,
+    "days_below_minus_10c": 34.2,
+    "freeze_thaw_note": "Toronto Pearson 1991-2020: January daily minimum -8.9 C; average last spring frost Apr 27, first fall frost Oct 20; 130.6 days/yr with minimum <= 0 C versus 49.5 days/yr with maximum <= 0 C, so roughly 81 days a year cross 0 C between night and day (derived by subtraction); 101.0 days/yr below -2 C; 2.7 days/yr below -20 C; 114.5 cm annual snowfall. Brampton's reference point is 11 km northwest of and slightly higher than the airport, so winters are unlikely to be milder than these figures.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson International Airport (temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -5.0 -4.4 0.6 7.0 13.7 19.2 22.1 21.1 16.9 10.0 4.1 -1.6 8.6 B"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (days with minimum temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 13.4 10.8 4.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.40 5.7 34.2 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (frost-free period and days max <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Length of Frost-Free Period 174 Days C; Days with maximum <= 0 C ... 49.5 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 station search for 'brampton' (no station returned)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=brampton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Station Name Enter the name of the location. For example: \"Toronto\" or \"Tor\""
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 4'-0\" (1.22 m) minimum depth below grade printed for concrete piers on the City of Brampton's official deck permit package drawings (Deck Foundation Plan, Deck Section for Foundation Walls and Deck Section for Wood Framed Walls, all revised Feb 2026). The Ontario Building Code clause itself was NOT retrieved: ontario.ca/laws renders the Building Code regulation only as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario rather than as open web text. Do not cite a clause number until the primary text is retrieved.",
+    "sources": [
+      {
+        "name": "City of Brampton - Deck package sample drawings (PDF), Deck Section for Foundation Walls",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/Documents/Homeowners/Deck%20Package.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "CONCRETE PIER MINIMUM 4'-0\" BELOW GRADE"
+      },
+      {
+        "name": "City of Brampton - Homeowners and Residential Contractors (OBC review statement)",
+        "url": "https://www.brampton.ca/EN/residents/Building-Permits/homeowners/Pages/welcome.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Staff must review your permit plans to make sure that they follow Ontario Building Code (OBC) standards, zoning by-laws and any other regulations."
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

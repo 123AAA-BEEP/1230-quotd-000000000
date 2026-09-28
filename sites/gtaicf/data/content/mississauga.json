@@ -1,0 +1,204 @@
+{
+  "slug": "mississauga",
+  "title": "ICF foundations in Mississauga | GTA ICF",
+  "description": "ICF foundations in Mississauga: sand south of Dundas, till north of it, the City's 2026 permit fees, footing and backfill inspections, and winter pours.",
+  "h1": "ICF foundations and walls in Mississauga",
+  "kicker": "Peel Region",
+  "answer": [
+    "Mississauga divides at Dundas Street, the line of the old Lake Iroquois shore. South of it, in Port Credit, Lakeview, Lorne Park and Clarkson, a foundation excavation opens in sand and gravel that drains but runs. North of it, from the city centre to Erin Mills, Streetsville, Meadowvale and Malton, it opens in clay-to-silt till that holds a cut and drains slowly. Beside Cooksville Creek the survey shows shale at or near the surface, and shale of two kinds, grey Georgian Bay and red Queenston, lies under everything.",
+    "The permit is a building permit from the City of Mississauga's Building Division, and the footing sits at least 1,200 mm below grade on undisturbed soil, the depth printed on the standard detail the City hosts. A City inspector checks the footing before any concrete is placed, for soil bearing, with 75 kPa cited as the typical residential figure, and for steel to the approved drawings, then checks the foundation again before backfill. The City's average to issue a new detached or semi-detached house permit is 13 weeks."
+  ],
+  "tiles": [
+    {
+      "value": "$18.99/m²",
+      "label": "City of Mississauga 2026 permit fee for a new detached or semi-detached house, by floor area",
+      "source": {
+        "name": "Abbreviated Building Division Fees, February 1, 2026",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/27095505/ABBREVIATED-BUILDING-DIVISION-FEES-FEB-01-2026-1.pdf"
+      }
+    },
+    {
+      "value": "2 shales",
+      "label": "grey Georgian Bay shale under most of the city, red Queenston shale in the west at Erin Mills and Meadowvale",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, Paleozoic geology",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.70722,43.54778&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "37.1%",
+      "label": "of Mississauga's 244,575 occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Mississauga",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Mississauga&DGUIDlist=2021A00053521005&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "49.5 days",
+      "label": "a year when the daily high stays at or below 0 °C at Toronto Pearson, the normals station inside the city at Malton",
+      "source": {
+        "name": "Environment Canada normals 1991 to 2020, Toronto Pearson",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What a Mississauga excavation goes into",
+    "paragraphs": [
+      "North of Dundas Street the Ontario Geological Survey maps clay-to-silt till at the city centre, Erin Mills, Streetsville, Meadowvale and Malton. Till stands in a vertical cut while the hole is open and carries a footing well; the bearing table on the City-hosted detail lists till at 200 kPa, well above the 75 kPa the City's footing inspector cites for typical residential design and the floor for a Part 9 ICF foundation wall. Its weakness is water. Rain that gets into the excavation stays, and clay pushed back against the wall keeps it wet, so the drainage layer and weeping tile do more work here than the membrane.",
+      "South of Dundas the ground is the sand and gravel of the Lake Iroquois foreshore, at Port Credit, Lakeview, Lorne Park and Clarkson. It drains, which suits the weeping tile, and it runs, so the cut is benched back or shored and the footing must sit on undisturbed material. Density decides the design: the City-hosted table gives 50 kPa for loose sand or gravel and 150 kPa for dense, and the Code's Part 9 ICF path starts at 75 kPa, so loose material means an engineered wall. Water at footing level halves the allowable bearing on that table, and where hydrostatic pressure occurs the Code wants waterproofing, not dampproofing.",
+      "Shale is under the whole city: grey Georgian Bay shale at nine of eleven survey points, including the lakeshore, Streetsville and Malton, and red Queenston shale at Erin Mills and Meadowvale, so the contact runs through the west end between Streetsville and Erin Mills. Its depth under the till is not mapped by the survey. Only at the Cooksville GO Station point, beside Cooksville Creek, does the map put it at the surface, a warning for that corridor rather than the whole neighbourhood. A footing on rock has no minimum depth under the Code, but the last metre of that dig is rock excavation, priced as such."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries at one coordinate per neighbourhood, retrieved 25 September 2026; Cooksville was queried at the GO station because the neighbourhood has no published coordinate. They describe the area around the point, not your lot. The footing design comes from the site, and the City's footing inspector asks for a soil engineer's report where one is required.",
+    "neighbourhoods": [
+      {
+        "name": "Port Credit",
+        "surface": "Sand and gravel (Lake Iroquois foreshore)",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Lakeview",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Lorne Park",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Clarkson",
+        "surface": "Sand and gravel",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Cooksville (GO Station point)",
+        "surface": "Shale at or near the surface",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "City Centre (reference point)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Erin Mills",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Streetsville",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Meadowvale",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Malton",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits, drawings and inspections in Mississauga",
+    "authority_short": "the City of Mississauga",
+    "paragraphs": [
+      "The City of Mississauga's Building Division issues the permit under Building By-law 0236-2024, and every application goes in through ePlans as individual greyscale, landscape PDFs named to the title block; the City's own example of a sheet name is S01 FOUNDATION/BASEMENT. The fee schedule in force from February 1, 2026 to January 31, 2027 prices a new detached house, semi or townhouse at $18.99 per square metre of floor area, measured to the outer face of the exterior walls on every level, with no extra charge for an unfinished basement or attached garage built with the house. A residential addition is $13.96 per square metre, an unheated addition $12.25 and a detached garage $6.43. The residential minimum is $244, the $50 pre-screening fee paid at submission is credited to the permit, and revisions to reviewed drawings run $160 an hour. Where the permit fee falls between $5,000 and $40,000, half can be paid at application and the balance at issuance. With 37.1% of the city's 244,575 occupied dwellings single-detached and roughly seven in ten of them built between 1961 and 2000, much of our Mississauga work is additions and rebuilt basements beside houses that are staying.",
+      "The City's own lists for a new house and for an addition say what the foundation drawing must carry: the soil bearing capacity, the size, thickness and material of the foundation walls and footings, step-down footing locations, the slab and granular fill, and the size and grade of steel beams and columns. The forms include the SB-12 Energy Efficiency Design Summary, where the wall's compliance path is declared, and Schedule 1 Designer Information; a new house adds a grading plan and heat loss calculations. The City strongly recommends a design professional and publishes no ICF-specific checklist. Within the Code's Part 9 limits a qualified designer can draw the wall; beyond them, or when the plans examiner asks, an engineer seals it. The ICF system is named on the quote and its documentation goes in with the energy summary. We prepare the package with you. Expect 7 to 10 business days of pre-screening, 10 business days for the first review of a complete residential application, and a City average of 13 weeks to issue a new detached or semi-detached permit; each resubmission can add two weeks or more.",
+      "Inspections start with an initial site inspection before any work, which fixes the list and the order. The footing inspection is booked before any concrete is placed, and the inspector checks that the excavation has not gone below the depth of neighbouring existing footings, that the soil carries the load, with 75 kPa given as the typical residential figure, that a soil engineer's report is on hand where one is required, and that reinforcing, including dowels between old and new footings, and formwork match the approved drawings. The City's notes then read: strip the formwork, install dampproofing, the drainage layer, weeping tile and stone, and book the backfill inspection before any material goes in. An ICF form is never stripped, because it is the insulation, so on our jobs the membrane and drainage layer go onto the foam face and are visible at that visit along with the tile and stone at the footing; we say so at the initial inspection. Insulation on a foundation wall is also checked against the drawings and the energy requirements, which for ICF happens at the footing visit because the foam is in place before the pour. Inspections run Monday to Friday, 8:30 a.m. to 4:30 p.m., booked with the permit number and WEB ID on the permit notice."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Mississauga Building Division, online through ePlans; each drawing an individual greyscale landscape PDF named to its title block",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/building-permit-application-process/"
+      },
+      {
+        "label": "New house or addition fee, 2026",
+        "value": "$18.99 per m² of floor area for a detached house, semi or townhouse; residential addition $13.96 per m²; unheated addition $12.25; detached garage $6.43; no extra fee for an unfinished basement or attached garage built with the house",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/27095505/ABBREVIATED-BUILDING-DIVISION-FEES-FEB-01-2026-1.pdf"
+      },
+      {
+        "label": "Minimum, pre-screening, time",
+        "value": "$244 residential minimum; $50 pre-screening fee credited to the permit; pre-screen 7 to 10 business days, first review 10 business days, average 13 weeks to issue a new detached or semi-detached permit",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/building-permit-cost-and-time-frames/"
+      },
+      {
+        "label": "Foundation plan must show",
+        "value": "Soil bearing capacity; size, thickness and material of foundation walls and footings; step-down footing locations; slab and granular fill; plus the SB-12 EEDS and Schedule 1 Designer Information forms",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/drawings-and-documents-you-need-for-a-building-permit/new-house/"
+      },
+      {
+        "label": "Footing inspection",
+        "value": "Before any concrete is placed: soil bearing such as 75 kPa for typical residential design, a soil engineer's report where required, reinforcement and formwork to the approved drawings",
+        "url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/building-permits/book-a-building-permit-inspection/"
+      },
+      {
+        "label": "Backfill inspection",
+        "value": "Substantial completion of footings and foundations prior to commencement of backfilling (Building By-law Schedule D); framing follows",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2025/01/02115103/Schedule-D-Prescribed-Notices-Inspections.pdf"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Frost, winter and the pour calendar in Mississauga",
+    "paragraphs": [
+      "Mississauga has no normals station of its own, but Toronto Pearson sits inside the city at Malton, about 11 km north-northeast of the city centre, so its 1991 to 2020 record is the local one. January averages −5.0 °C with a daily minimum of −8.9 °C. In a year 49.5 days keep a high at or below freezing, 34.2 days fall below −10 °C, and 130.6 nights reach 0 °C or lower, so roughly 81 days cross freezing between night and day, the pattern that punishes a fresh footing left uncovered. The frost-free period runs 174 days, April 27 to October 20, and 114.5 cm of snow falls. CSA A23.1 calls any pour with a forecast below 5 °C in the next 24 hours cold-weather work: concrete for a wall under 300 mm thick arrives at 10 to 32 °C, stays at 10 °C or more through curing, and reaches 7 MPa before it meets frost.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS form insulates the curing core, as the form makers' installation manuals point out, but the top of the wall and the footing still need cover, snow and ice come out of the cavity before the pump starts, and the ready-mix supplier heats the mix. The frost figure does not move with the season. The standard detail the City hosts prints 1,200 mm below grade on undisturbed soil, and the Code's Table 9.12.2.2 sets the same 1.2 m for a heated basement on clay or on soils not clearly defined; on rock, and on coarse-grained soils under a heated basement, the table sets no limit, though the depth still comes from the site and the engineer. Water and sanitary services go in below frost depth as well, which the City checks."
+    ],
+    "facts": [
+      {
+        "label": "Cold days, Toronto Pearson",
+        "value": "−5.0 °C January mean and −8.9 °C January daily minimum; 49.5 days a year with a high at or below 0 °C; 34.2 days below −10 °C; 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "174 days, April 27 to October 20, Toronto Pearson, inside the city at Malton",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Footing depth on the City-hosted detail",
+        "value": "Minimum 1,200 mm below grade on undisturbed soil (LMCBO standard detail republished by the City)",
+        "url": "https://www.mississauga.ca/wp-content/uploads/2018/11/19124113/Deck-Sample-Drawing.pdf"
+      },
+      {
+        "label": "Cold-weather concreting",
+        "value": "Forecast below 5 °C within 24 hours: concrete for walls under 300 mm placed at 10 to 32 °C, kept at 10 °C or more while curing, 7 MPa before frost (CSA A23.1 as reproduced by Concrete Ontario)",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Mississauga is inside our everyday range, so travel rarely matters. What does is the ground: benching or shoring in the lakeshore sand and gravel south of Dundas Street, water at footing level, rock excavation where the shale is near the surface along Cooksville Creek and the Credit River valley, and a pump on infill lots the truck cannot get beside. Each is a separate line in the written quote.",
+  "faqs": [
+    {
+      "q": "What will the excavator hit under my Mississauga lot?",
+      "a": "It depends which side of Dundas Street you are on. South of it, in Port Credit, Lakeview, Lorne Park and Clarkson, the survey maps the sand and gravel of the old Lake Iroquois foreshore. North of it, at the city centre, Erin Mills, Streetsville, Meadowvale and Malton, it maps clay-to-silt till. Beside Cooksville Creek, at the GO station point, the shale is at or near the surface. Those are point queries, so the test pit and the footing inspection settle it for your lot."
+    },
+    {
+      "q": "Does an ICF basement in Mississauga still need weeping tile and a membrane?",
+      "a": "Yes. The Code requires the outside of every below-grade foundation wall to be dampproofed, or waterproofed where hydrostatic pressure occurs, and drained at the footing, and because ICF insulation runs more than 900 mm below grade a drainage layer is required too. Mississauga's backfill inspection looks for the dampproofing, drainage layer, weeping tile and stone before any fill goes in. On the lakeshore sand the tile has an easy job; in the till north of Dundas it is what keeps water off the wall."
+    },
+    {
+      "q": "What does the City of Mississauga want in the permit package for an ICF foundation?",
+      "a": "The same package as any new house or addition, through ePlans: a foundation plan stating the soil bearing capacity and the size, thickness and material of walls and footings, with the SB-12 Energy Efficiency Design Summary and Schedule 1 Designer Information among the forms. There is no ICF-specific checklist. The Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC report; the system is named on the quote and its documentation goes in with the energy summary. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Mississauga in January?",
+      "a": "Yes. Toronto Pearson, inside the city at Malton, records about 50 days a year when the high stays at or below freezing and 34 that fall below −10 °C. On those days CSA A23.1 governs: the concrete arrives at 10 °C or more, the wall stays at 10 °C or more while it cures, and it reaches 7 MPa before frost touches it. The foam form does part of that work; the cover, the heated mix and the longer cure are what the winter line in the quote pays for."
+    },
+    {
+      "q": "How deep does a house footing go in Mississauga?",
+      "a": "At least 1,200 mm below grade on undisturbed soil, the depth on the standard detail the City hosts, and the same 1.2 m the Code's Table 9.12.2.2 sets for a heated basement on clay or on soils not clearly defined. On rock the table sets no minimum, and on coarse-grained soil under a heated basement none either, but the depth still comes from the engineer and the site. Next to an existing house the inspector also checks that the new excavation has not gone below the neighbouring footings."
+    },
+    {
+      "q": "We are in Lorne Park. What does the lakeshore sand change?",
+      "a": "The shape of the hole, and sometimes who designs the wall. Lorne Park, Port Credit, Lakeview and Clarkson sit on the coarse sand and gravel of the old foreshore. It drains well and it will not stand vertical, so the cut is benched back or shored and the footing bears on ground nobody has disturbed. Loose sand or gravel is 50 kPa on the City-hosted table and dense is 150 kPa; the Code's Part 9 ICF path begins at 75 kPa, so a loose test pit means an engineered wall."
+    }
+  ],
+  "related_note": "We also build in Oakville, Brampton and Toronto."
+}

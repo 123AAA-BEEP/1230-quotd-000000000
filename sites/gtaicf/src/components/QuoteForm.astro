@@ -1,0 +1,461 @@
+---
+// Two-step quote form. Step 1 is three tap-to-select questions (commitment
+// free). Step 2 is contact details. Phone is required because a foundation is
+// quoted from drawings and a conversation, not from an email address. Anti-spam: honeypot field plus
+// time-to-complete stamp. No OTP. No CAPTCHA.
+//
+// Consent: the text shown here comes from data/business.json and the server
+// stores that same text by version, so the record is what the visitor saw.
+import { getBusiness } from '../lib/data.js';
+
+interface Props {
+  city?: string; // preselect the city on a city page
+  compact?: boolean;
+}
+
+const { city = '', compact = false } = Astro.props;
+const biz = getBusiness();
+
+const APPLICATIONS = [
+  { key: 'foundation', label: 'New house foundation' },
+  { key: 'basement', label: 'Basement or foundation walls' },
+  { key: 'full-height', label: 'Full-height walls' },
+  { key: 'addition', label: 'Addition or garage' },
+  { key: 'other', label: 'Something else' },
+];
+
+const TIMELINES = [
+  { key: 'asap', label: 'As soon as possible' },
+  { key: '1-3mo', label: 'In the next 1 to 3 months' },
+  { key: '3mo+', label: '3 months or more' },
+  { key: 'planning', label: 'Still planning' },
+];
+
+const ROLES = [
+  { key: 'homeowner', label: 'Homeowner' },
+  { key: 'builder', label: 'Deck builder or contractor' },
+  { key: 'engineer', label: 'Engineer or architect' },
+  { key: 'other', label: 'Other' },
+];
+---
+
+<div class:list={['card', 'quote-card', { compact }]} id="quote">
+  <p class="eyebrow eyebrow-brand">Free quote</p>
+  <h2 class="quote-title">Tell us about the project</h2>
+  <p class="quote-sub">Three quick questions, then your contact details. {biz.callback_promise}</p>
+
+  <form
+    id="quote-form"
+    method="post"
+    action="/api/lead/"
+    data-form-version={biz.form_version}
+    data-consent-version={biz.consent_version}
+    novalidate
+  >
+    <p class="step-indicator small muted" data-step-indicator>Step 1 of 2</p>
+
+    <div class="step" data-step="1">
+      <fieldset class="choice">
+        <legend>What is it for?</legend>
+        <div class="choice-grid">
+          {APPLICATIONS.map((a) => (
+            <label class="chip">
+              <input type="radio" name="application" value={a.key} required />
+              <span>{a.label}</span>
+            </label>
+          ))}
+        </div>
+        <p class="field-error small" data-error hidden>Please pick one.</p>
+      </fieldset>
+
+      <fieldset class="choice">
+        <legend>Where is the property?</legend>
+        <div class="two-col">
+          <label class="field">
+            <span>City or town</span>
+            <select name="city" autocomplete="address-level2" required>
+              <option value="" disabled selected={!city}>Choose</option>
+              {biz.service_area.map((c) => (
+                <option value={c.slug} selected={c.slug === city}>{c.name}</option>
+              ))}
+              <option value="other">Somewhere else</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Postal code</span>
+            <input type="text" name="postal_code" inputmode="text" autocomplete="postal-code" pattern="^[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]$" title="Canadian postal code, for example L6J 1A1" placeholder="L6J 1A1" required />
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="choice">
+        <legend>When do you want it done?</legend>
+        <div class="choice-grid">
+          {TIMELINES.map((t) => (
+            <label class="chip">
+              <input type="radio" name="timeline" value={t.key} required />
+              <span>{t.label}</span>
+            </label>
+          ))}
+        </div>
+        <p class="field-error small" data-error hidden>Please pick one.</p>
+      </fieldset>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block" data-next>Continue</button>
+      <p class="hint">Free, and no obligation.</p>
+    </div>
+
+    <div class="step" data-step="2" hidden>
+      <label class="field">
+        <span>Your name</span>
+        <input type="text" name="name" autocomplete="name" required minlength="2" />
+      </label>
+      <label class="field">
+        <span>Mobile number</span>
+        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required pattern="([^0-9]*[0-9]){10,}[^0-9]*" title="A phone number with at least 10 digits" />
+      </label>
+      <label class="field">
+        <span>Email</span>
+        <input type="email" name="email" autocomplete="email" required pattern="[^@ ]+@[^@ ]+[.][^@ ]{2,}" title="An email address such as name@example.ca" />
+      </label>
+      <fieldset class="choice">
+        <legend>I am a</legend>
+        <div class="choice-grid">
+          {ROLES.map((r) => (
+            <label class="chip">
+              <input type="radio" name="role" value={r.key} required />
+              <span>{r.label}</span>
+            </label>
+          ))}
+        </div>
+        <p class="field-error small" data-error hidden>Please pick one.</p>
+      </fieldset>
+      <label class="field">
+        <span>Anything we should know? <em class="muted">(optional)</em></span>
+        <textarea name="notes" rows="3" placeholder="Wall height and perimeter or square footage from your drawings, timeline, access"></textarea>
+      </label>
+
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp" />
+      <input type="hidden" name="estimate" value="" />
+      <input type="hidden" name="page" value="" />
+      <input type="hidden" name="utm" value="" />
+
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Get my free quote</button>
+      <p class="consent small muted">{biz.consent_text}</p>
+      <button type="button" class="back" data-back>Back</button>
+      <p class="status" data-status role="status" aria-live="polite"></p>
+    </div>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('quote-form');
+  if (form instanceof HTMLFormElement) {
+    const startedAt = Date.now();
+    const step1 = form.querySelector('[data-step="1"]') as HTMLElement | null;
+    const step2 = form.querySelector('[data-step="2"]') as HTMLElement | null;
+    const indicator = form.querySelector('[data-step-indicator]');
+    const status = form.querySelector('[data-status]') as HTMLElement | null;
+    const track = (name: string, props: Record<string, string>, opts?: { callback?: () => void }) => (window as any).track(name, props, opts);
+    const setHidden = (name: string, value: string) => {
+      const el = form.querySelector(`input[name="${name}"]`) as HTMLInputElement | null;
+      if (el) el.value = value;
+    };
+
+    setHidden('page', location.pathname);
+    const utm: Record<string, string> = {};
+    new URLSearchParams(location.search).forEach((v, k) => {
+      if (k.startsWith('utm_') || k === 'gclid') utm[k] = v;
+    });
+    setHidden('utm', JSON.stringify(utm));
+
+    let started = false;
+    form.addEventListener('change', (e) => {
+      if (!started) {
+        started = true;
+        track('form_start', { page: location.pathname });
+      }
+      // Clear a radio-group error as soon as the user picks one.
+      const fs = (e.target as HTMLElement).closest('fieldset');
+      if (fs) {
+        fs.removeAttribute('aria-invalid');
+        fs.querySelector('[data-error]')?.setAttribute('hidden', '');
+      }
+    });
+
+    const show = (n: number) => {
+      step1?.toggleAttribute('hidden', n !== 1);
+      step2?.toggleAttribute('hidden', n !== 2);
+      if (indicator) indicator.textContent = `Step ${n} of 2`;
+    };
+
+    const validStep = (root: HTMLElement | null) => {
+      const fields = root?.querySelectorAll('input[required], select[required]') ?? [];
+      const seenRadio = new Set<string>();
+      for (const f of Array.from(fields)) {
+        if (!(f instanceof HTMLInputElement || f instanceof HTMLSelectElement)) continue;
+        if (f instanceof HTMLInputElement && f.type === 'radio') {
+          if (seenRadio.has(f.name)) continue;
+          seenRadio.add(f.name);
+          const fs = f.closest('fieldset');
+          if (!form.querySelector(`input[name="${f.name}"]:checked`)) {
+            fs?.setAttribute('aria-invalid', 'true');
+            fs?.querySelector('[data-error]')?.removeAttribute('hidden');
+            if (status) status.textContent = `Please pick one: ${fs?.querySelector('legend')?.textContent ?? ''}`;
+            f.focus();
+            return false;
+          }
+          continue;
+        }
+        if (!f.checkValidity()) {
+          f.reportValidity();
+          return false;
+        }
+      }
+      if (status) status.textContent = '';
+      return true;
+    };
+
+    const advance = () => {
+      if (!validStep(step1)) return;
+      show(2);
+      track('form_step2', { page: location.pathname });
+      (step2?.querySelector('input[name="name"]') as HTMLInputElement | null)?.focus();
+    };
+
+    form.querySelector('[data-next]')?.addEventListener('click', advance);
+    form.querySelector('[data-back]')?.addEventListener('click', () => show(1));
+
+    // Estimator hand-off: prefill application and notes, jump to the form.
+    document.addEventListener('estimator:prefill', (e: Event) => {
+      const d = (e as CustomEvent).detail || {};
+      const radio = form.querySelector(`input[name="application"][value="${d.application}"]`) as HTMLInputElement | null;
+      if (radio) radio.checked = true;
+      const notes = form.querySelector('textarea[name="notes"]') as HTMLTextAreaElement | null;
+      if (notes && d.summary) notes.value = d.summary;
+      setHidden('estimate', JSON.stringify(d));
+      show(1);
+      document.getElementById('quote')?.scrollIntoView({ block: 'start' });
+      (form.querySelector('select[name="city"]') as HTMLSelectElement | null)?.focus();
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // Enter inside step 1 submits the form: treat it as Continue.
+      if (!step2 || step2.hidden) {
+        advance();
+        return;
+      }
+      if (!validStep(step2)) return;
+      const submit = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+      if (submit) submit.disabled = true;
+      if (status) status.textContent = 'Sending…';
+
+      const fields = Object.fromEntries(new FormData(form).entries());
+      const payload = {
+        form_version: form.dataset.formVersion,
+        consent_version: form.dataset.consentVersion,
+        time_to_complete_ms: Date.now() - startedAt,
+        fields,
+      };
+
+      let res: Response | null = null;
+      let data: any = {};
+      try {
+        res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        data = await res.json().catch(() => ({}));
+      } catch {
+        res = null;
+      }
+
+      if (res && res.ok && data.ok) {
+        let gone = false;
+        const go = () => {
+          if (gone) return;
+          gone = true;
+          location.href = '/thanks/';
+        };
+        // Let the conversion event leave before the page unloads.
+        track('form_submit', { page: location.pathname, application: String(fields.application || '') }, { callback: go });
+        setTimeout(go, 600);
+        return;
+      }
+
+      if (status) {
+        status.textContent =
+          res && res.status === 422 && data && data.error
+            ? `Please check: ${String(data.error).replace(/^Check: /, '')}.`
+            : 'That did not send. Please try again, or call us on the number above.';
+      }
+      if (submit) submit.disabled = false;
+    });
+  }
+</script>
+
+<style>
+  .quote-card { padding: var(--s6); }
+  .quote-card.compact { padding: var(--s5); }
+
+  .quote-title {
+    font-size: var(--text-xl);
+    margin-top: var(--s2);
+  }
+
+  .quote-sub {
+    margin-top: var(--s2);
+    margin-bottom: var(--s5);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+
+  .step-indicator { margin-bottom: var(--s3); }
+
+  fieldset { border: 0; padding: 0; margin: 0 0 var(--s5); min-width: 0; }
+
+  legend {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: var(--s2);
+    padding: 0;
+  }
+
+  .field-error { margin-top: var(--s2); color: var(--warn); }
+
+  .choice-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s2);
+  }
+
+  @media (min-width: 30rem) {
+    .choice-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* Tap-to-select chip. The radio stays in the DOM for keyboard and a11y. */
+  .chip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-control);
+    border-radius: var(--r-control);
+    background: var(--bg);
+    font-size: var(--text-sm);
+    line-height: 1.3;
+    color: var(--text);
+    cursor: pointer;
+  }
+
+  .chip input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Selected and focused states without :has(), for older browsers. */
+  .chip input:checked + span::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border: 2px solid var(--ink);
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .chip input:focus-visible + span::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 2px solid var(--brand-600);
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s3);
+  }
+
+  @media (min-width: 30rem) {
+    .two-col { grid-template-columns: 1.4fr 1fr; }
+  }
+
+  .field { display: block; margin-bottom: var(--s4); }
+
+  .field span {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.375rem;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    /* 16px so iOS Safari does not zoom on focus. */
+    font-size: var(--text-base);
+    font-family: var(--sans);
+    line-height: 1.5;
+    padding: 0.625rem 0.75rem;
+    border: 1px solid var(--border-control);
+    border-radius: var(--r-control);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 2.75rem;
+  }
+
+  .field textarea { resize: vertical; }
+  .field input::placeholder, .field textarea::placeholder { color: var(--grey-text); opacity: 0.8; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--brand-600); }
+
+  .hint {
+    margin-top: var(--s3);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    text-align: center;
+  }
+
+  .consent {
+    margin-top: var(--s3);
+    font-size: var(--text-xs);
+    line-height: 1.6;
+  }
+
+  .hp { position: absolute; left: -9999px; height: 0; width: 0; opacity: 0; }
+
+  .back {
+    display: block;
+    margin: var(--s2) auto 0;
+    padding: var(--s3) var(--s4);
+    min-height: 2.75rem;
+    background: none;
+    border: 0;
+    font-family: var(--sans);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+
+  .back:hover { color: var(--brand-700); }
+
+  .status {
+    margin-top: var(--s3);
+    font-size: var(--text-sm);
+    color: var(--brand-700);
+    min-height: 1.5em;
+  }
+</style>

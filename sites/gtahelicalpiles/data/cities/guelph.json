@@ -1,0 +1,326 @@
+{
+  "slug": "guelph",
+  "name": "Guelph",
+  "region": "Wellington County (single-tier city; Wikipedia places Guelph within Wellington County)",
+  "province": "ON",
+  "lat": 43.54594,
+  "lon": -80.25599,
+  "sub_areas": [
+    {
+      "name": "Downtown",
+      "note": "Sits above the confluence of the Speed and Eramosa rivers (Wikipedia). OGS point query at Wyndham/Macdonell (43.5448, -80.2482) returns unit 7b glaciofluvial river/delta topset deposits over Guelph Formation dolostone."
+    },
+    {
+      "name": "Old University",
+      "note": "Area around Gordon Street and College Avenue west of the University of Guelph campus (researcher placement; no Wikipedia neighbourhood article). OGS point query at 43.5330, -80.2380 returns unit 7b glaciofluvial deposits over Guelph Formation dolostone."
+    },
+    {
+      "name": "Exhibition Park",
+      "note": "Contains the oldest park in Guelph; settled in the 1870s with many Victorian heritage homes (Wikipedia). OGS point query at 43.5560, -80.2600 returns unit 7b glaciofluvial deposits over Guelph Formation dolostone."
+    },
+    {
+      "name": "Kortright Hills",
+      "note": "South-west Guelph off Kortright Road West and the Hanlon Expressway (researcher placement). OGS point query at 43.5180, -80.2700 returns unit 5b sandy silt to silty sand till over Guelph Formation dolostone."
+    },
+    {
+      "name": "Westminster Woods",
+      "note": "South Guelph east of Gordon Street toward Victoria Road South (researcher placement). OGS point query at 43.5130, -80.2000 returns unit 7b glaciofluvial deposits over Guelph Formation dolostone."
+    },
+    {
+      "name": "Clairfields",
+      "note": "South Guelph at Clair Road and Gordon Street (researcher placement). OGS point query at 43.5140, -80.2150 returns unit 5b sandy silt to silty sand till over Guelph Formation dolostone."
+    },
+    {
+      "name": "Grange Hill East",
+      "note": "East Guelph north of the Eramosa River toward Watson Parkway (researcher placement; Wikipedia notes the old elite hill running up Grange Street is in St. George's Park, not this newer east-end area). OGS point query at 43.5640, -80.2100 returns unit 19 modern alluvial deposits over Guelph Formation dolostone; the query point falls in a creek corridor and is not representative of every lot."
+    },
+    {
+      "name": "Pineridge",
+      "note": "East Guelph south of the Eramosa River near Victoria Road North and Elizabeth Street (researcher placement). OGS point query at 43.5400, -80.1900 returns unit 7b glaciofluvial deposits; this is the only query point in Guelph where the OGS bedrock layer returns the Amabel Formation rather than the Guelph Formation."
+    },
+    {
+      "name": "Speed River corridor (Riverside Park)",
+      "note": "North Guelph along the Speed River. OGS point query at 43.5720, -80.2650 returns unit 6 ice-contact stratified sand and gravel over Guelph Formation dolostone."
+    }
+  ],
+  "census": {
+    "population_2021": 143740,
+    "private_dwellings_occupied": 56480,
+    "single_detached_pct": 48.6,
+    "period_of_construction": {
+      "pre_1960_pct": 19.7,
+      "1961_1980_pct": 24.0,
+      "1981_2000_pct": 26.1,
+      "2001_2021_pct": 30.2
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 27,445 of 56,480 occupied dwellings (structural type, 100% data). Period of construction (25% sample data, total 56,480): 1960 or before 11,120; 1961-1980 13,565; 1981-1990 7,140; 1991-2000 7,620; 2001-2005 5,010; 2006-2010 4,240; 2011-2015 3,700; 2016-2021 4,085. Grouped: 1981-2000 = 14,760; 2001-2021 = 17,035. Total private dwellings 59,746.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Guelph, City (CY) [Census subdivision], Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Guelph&DGUIDlist=2021A00053523008&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 143,740; Private dwellings occupied by usual residents: 56,480"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Guelph (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Guelph&DGUIDlist=2021A00053523008&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data 56,480; Single-detached house 27,445"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Guelph (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Guelph&DGUIDlist=2021A00053523008&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 11,120; 1961 to 1980 13,565; 1981 to 1990 7,140; 1991 to 2000 7,620"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results for 'Guelph' (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Guelph",
+        "retrieved_at": "2026-09-25",
+        "quote": "Guelph (City) [Census subdivision], Ontario ... DGUIDlist=2021A00053523008"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 7b - Glaciofluvial deposits",
+        "description": "River deposits and delta topset facies (sand and gravel laid down by glacial meltwater).",
+        "where": "Most query points in the built-up city: Downtown (Wyndham/Macdonell), Old University, Exhibition Park, Westminster Woods, Pineridge and the Eramosa River at Victoria Road all return unit 7b."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5b - Till",
+        "description": "Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain. Regional literature names Wentworth and Port Stanley tills in the Guelph drumlin field; those names are not carried in the OGS layer attributes and were not verified here.",
+        "where": "The city reference coordinate (43.54594, -80.25599), Kortright Hills and Clairfields return unit 5b."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 6 - Ice-contact stratified deposits",
+        "description": "Sand and gravel, minor silt, clay and till (kame and esker-type deposits).",
+        "where": "Speed River corridor at Riverside Park in north Guelph (query point 43.5720, -80.2650)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 19 - Modern alluvial deposits",
+        "description": "Clay, silt, sand, gravel, may contain organic remains.",
+        "where": "Creek and river floodplains; the Grange Hill East query point (43.5640, -80.2100) returns unit 19."
+      },
+      {
+        "unit": "Drumlins and buried waterways (Wikipedia)",
+        "description": "The city is built on several drumlins and buried waterways, including an underground creek below the Albion Hotel (Wikipedia). The 'Guelph drumlin field' and 'Paris moraine' names from the task brief were not verified: Wikipedia has no Paris Moraine article and the OGS surficial layer does not carry landform names.",
+        "where": "City-wide (Wikipedia statement); no polygon-level verification."
+      }
+    ],
+    "bedrock": {
+      "formation": "Guelph Formation (Silurian dolostone) at every query point except Pineridge, which returns the Amabel Formation (Silurian dolostone) (OGS MRD219).",
+      "description": "Guelph Formation: tan to brown, fine- to medium-crystalline, sucrosic dolostone; fossiliferous, locally biohermal; original map lithology 'brown or tan dolostone'. Amabel Formation: dolostone, thick-bedded, crinoidal, locally biohermal; locally bituminous (Eramosa Member). OGS returns Guelph Formation at the reference coordinate, Downtown, Old University, Exhibition Park, Kortright Hills, Westminster Woods, Clairfields, Grange Hill East and Riverside Park.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried) and no query point returned OGS unit 3 (bedrock at or near surface). The 'often shallow' bedrock hint in the task brief is therefore unverified for specific neighbourhoods; Wikipedia records limestone-built heritage structures (Goldie Mill) and that Guelph draws its drinking water almost entirely from groundwater aquifers, which is consistent with permeable dolostone but is not a depth figure."
+    },
+    "implications_for_piles": [
+      "The City of Guelph's own deck sample drawings require the elevation/section drawing to state the type, depth and size of footings/foundation/piers, and set the conventional baseline of a concrete pier footing a minimum 4'-0\" below grade on undisturbed, competent bearing soil; the City pages retrieved say nothing specific about helical piles, CCMC or BMEC, so any helical design is submitted as the 'type of footing/foundation/piers' with supporting documentation.",
+      "OGS surficial mapping puts most of the built-up city on unit 7b glaciofluvial sand and gravel (Downtown, Old University, Exhibition Park, Westminster Woods, Pineridge) with unit 5b sandy silt till at the reference coordinate, Kortright Hills and Clairfields; granular deposits and silty till respond differently to helical installation torque, so the soil type at the lot, not a city-wide assumption, governs the design.",
+      "Bedrock under every query point is Silurian dolostone (Guelph Formation; Amabel Formation at Pineridge), not the Queenston or Georgian Bay shale found in Oakville, Mississauga and Toronto. Whether it is shallow enough to be met by a helical pile was not retrieved; the OGS surficial layer returned no bedrock-at-surface polygon at any Guelph query point.",
+      "The City's post-and-beam connection drawing notes footings within 4'-0\" of house walls and lots containing engineered fill need the beam-and-post detail, and shows a saddle connection 'to allow for future raising of deck in case of settlement'; unit 19 alluvial soils in creek corridors (Grange Hill East query point) and engineered fill in newer subdivisions are the site conditions to confirm before installation. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.54594, -80.25599)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-80.25599,43.54594&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5b, Deposit: Till, Material: Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Downtown, 43.5448, -80.2482)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-80.2482,43.5448&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 7b, Deposit: Glaciofluvial deposits, Material: river deposits and delta topset facies"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.54594, -80.25599)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-80.25599,43.54594&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Guelph; tan to brown, fine- to medium-crystalline, sucrosic dolostone; fossiliferous, locally biohermal"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at Pineridge, 43.5400, -80.1900)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-80.19,43.54&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Amabel; dolostone; thick-bedded, crinoidal, locally biohermal; locally bituminous (Eramosa Mb)"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Guelph (topography, drumlins, groundwater)",
+        "url": "https://en.wikipedia.org/wiki/Guelph",
+        "retrieved_at": "2026-09-25",
+        "quote": "The city is built on several drumlins and buried waterways"
+      },
+      {
+        "name": "Wikipedia - Guelph (Speed and Eramosa rivers)",
+        "url": "https://en.wikipedia.org/wiki/Guelph",
+        "retrieved_at": "2026-09-25",
+        "quote": "Downtown Guelph is situated above the confluence of the Speed River and the Eramosa River"
+      },
+      {
+        "name": "Wikipedia - Guelph Formation",
+        "url": "https://en.wikipedia.org/wiki/Guelph_Formation",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Guelph Formation is a geologic formation in New York and in Ontario, Canada ... Silurian period"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Guelph Building Services (Permit Services team reviews applications; Inspections Services carries out inspections; pages sit under 'Building Permits and Inspections')",
+    "deck_permit_required_when": "A building permit is required for decks where any portion of the walking surface (floor) is 24 inches (0.6 metres) or higher above finished grade at any point; for structural changes to an existing deck or porch 24 inches (0.6 metres) or higher above finished grade; for replacing guards (railings) on an existing deck or porch; and for concrete porches. The sample elevation drawing adds: 'No permit required if top of deck is less than 2'-0\" above grade at highest point.' Zoning regulations apply whether or not a permit is required.",
+    "footing_depth_requirement": "City deck sample drawings (A2 Elevation/Section, dated 03/01/2023): 'Minimum 4'-0\" below grade' on 'Undisturbed, competent bearing soil'; minimum 6\" thick and minimum 18\" diameter concrete footing; concrete piers minimum 8\" diameter for 4x4 posts and 10\" diameter for 6x6 posts, pier footings belled out to a minimum 18\" diameter and 6\" depth. Lots containing engineered fill and footings within 4'-0\" of house walls must refer to the beam and post connection detail. The deck permit page requires the elevation/section drawing to show 'Type, depth and size of footings/foundation/piers'. No mention of helical piles, CCMC, BMEC or a stamped engineer requirement for piles was found on the City deck pages or drawings; the drawings do require a structural engineer for any deck supporting a hot tub, swim spa or pool and for all non-wood guards.",
+    "inspections": [
+      "The City states mandatory inspections are listed on the issued permit and must be booked by the homeowner through the Guelph Permit and Application System with 48 hours' notice; no deck-specific inspection list (e.g. footing inspection) is published on the pages retrieved."
+    ],
+    "fee_note": "Building By-law (2015)-19985 Schedule 'A', Building Permit fees effective July 1, 2026 (Table 3, Group C residential): 'Garage/carport (per bay), shed, deck, porch, exterior stairs, exterior ramps' flat fee $160.00. The schedule effective January 1, 2027 (Table 19) raises this line to $165.00. Note 7 of the schedule: decks are included in the permit fee for new single detached, semi-detached, duplex and townhouse dwellings. Permit fees include plans review and required inspections and are not subject to HST (City FAQ).",
+    "timeline_note": "The City states the approximate time to review a building permit application is 10 business days, beginning once permit fees are paid; the GPAS FAQ says most residential applications are reviewed within 10 business days and larger residential or non-residential applications 15 to 30 business days. Once issued, construction must start within one year. Inspections require 48 hours' notice.",
+    "portal_url": "https://gpas.guelph.ca/",
+    "portal_note": "Applications are submitted online through the Guelph Permit and Application System (GPAS): register an account, upload all drawings and forms as PDFs, then use GPAS to check status, pay fees and book inspections. Building Services office: 1 Carden Street, 519-837-5615; Inspections 519-837-5614.",
+    "sources": [
+      {
+        "name": "City of Guelph - Decks and Porches (residential building permits)",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Decks where any portion of the walking surface (floor) is 24 inches (0.6 metres) or higher above finished grade at any point"
+      },
+      {
+        "name": "City of Guelph - Decks and Porches (submission requirements)",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/decks-and-porches/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Elevation/section drawing illustrating the following: Height of deck (at highest point); Type, depth and size of footings/foundation/piers"
+      },
+      {
+        "name": "City of Guelph - Deck sample drawings: plans, elevation drawings and stair detail (PDF, sheet A2 dated 03/01/2023)",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Plans-elevation-drawings-and-stair-detail.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Undisturbed, competent bearing soil. Backfilled soil. Minimum 4'-0\" below grade."
+      },
+      {
+        "name": "City of Guelph - Deck sample drawings (PDF), pier note",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Plans-elevation-drawings-and-stair-detail.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Pier footings shall bell out to a minimum 18\" diameter and 6\" depth."
+      },
+      {
+        "name": "City of Guelph - Deck post and beam connections sample drawing (PDF, PBC-1, March 2026)",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Post-and-Beam-Connections.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Minimum 8\" diameter concrete pier ... Minimum 4' - 0\" ... (to allow for future raising of deck in case of settlement)"
+      },
+      {
+        "name": "City of Guelph - Residential Building Permits and Inspections",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The approximate time to review your building permit application is 10 business days, which begins once permit fees are paid."
+      },
+      {
+        "name": "City of Guelph - Residential Building Permits and Inspections (inspections and contacts)",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Please book an inspection through the Guelph Permit and Application System. Please allow 48 hours' notice for inspections."
+      },
+      {
+        "name": "City of Guelph - Building By-law (2015)-19985 as amended by (2026)-21241, Schedule A fees (PDF)",
+        "url": "https://guelph.ca/wp-content/uploads/Building-By-law-2015-19985-as-amended-by-2026-21241-AODA.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Building Permit fees effective July 1, 2026 ... Garage/carport (per bay), shed, deck, porch, exterior stairs, exterior ramps N/A 160.00"
+      },
+      {
+        "name": "City of Guelph - Building applications, forms and fees",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/building-applications-and-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Fees: Building permit fees (effective July 1, 2026)"
+      },
+      {
+        "name": "City of Guelph - Residential building permits and inspections: frequently asked questions",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/residential-building-permits/frequently-asked-questions/",
+        "retrieved_at": "2026-09-25",
+        "quote": "This fee includes plans review and required inspections and is not subject to HST."
+      },
+      {
+        "name": "City of Guelph - Guelph Permit and Application System: frequently asked questions",
+        "url": "https://guelph.ca/city-government/building-permits-inspections/building-services-online-faq/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Most residential applications are reviewed within 10 business days."
+      }
+    ]
+  },
+  "climate": {
+    "station": "Kitchener/Waterloo composite normals (Waterloo Wellington A, Climate ID 6149387, 43 27' N 80 23' W, 317 m, records to 2002; continued by Region of Waterloo Int'l Airport, Climate ID 6149388), about 15 km south-west of the Guelph reference coordinate. ECCC lists no station named Guelph in either the 1991-2020 or 1981-2010 normals.",
+    "normals_period": "1991-2020",
+    "frost_free_days": 149,
+    "jan_mean_temp_c": -6.3,
+    "days_below_minus_10c": 43.8,
+    "freeze_thaw_note": "Kitchener/Waterloo 1991-2020: January daily minimum -10.3 C; 61.4 days/yr with daily maximum <= 0 C (code C) versus 156.1 days/yr with daily minimum <= 0 C (code A), so roughly 95 days a year cross 0 C between night and day (derived by subtraction); average last spring frost May 08, first fall frost Oct 05, frost-free period 149 days (code D, 17 years). Elora RCS (Climate ID 6142286, about 17 km north-west, 376 m) 1991-2020 for comparison: January mean -6.9 C, 47.1 days/yr below -10 C, 70.1 days/yr with maximum <= 0 C. Guelph is inland and higher than the lakeshore GTA stations: Toronto Pearson's 34.2 days/yr below -10 C compares with 43.8 here.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Kitchener/Waterloo (Waterloo Wellington A / Region of Waterloo Int'l Airport)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -6.3 -5.9 -0.8 5.9 12.6 17.8 20.2 19.1 15.2 8.8 2.6 -2.8 7.2 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Kitchener/Waterloo (days with minimum below -10 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 14.6 13.3 6.8 0.15 0.0 0.0 0.0 0.0 0.0 0.0 1.3 7.7 43.8 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Kitchener/Waterloo (frost-free period and days with maximum <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=waterloo&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6144239&dispBack=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Length of Frost-Free Period 149 Days D; <= 0 C 19.3 15.9 8.5 0.83 ... 61.4 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Elora RCS",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=elora&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6142286&dispBack=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -6.9 ...; < -10 C 16.0 15.3 7.3 ... 47.1 C; <= 0 C ... 70.1 C"
+      },
+      {
+        "name": "ECCC 1981-2010 station search for 'guelph' (no station)",
+        "url": "https://climate.weather.gc.ca/climate_normals/station_select_1981_2010_e.html?searchType=stnName&txtStationName=guelph&searchMethod=contains",
+        "retrieved_at": "2026-09-25",
+        "quote": "No station names contain 'guelph'."
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 'Minimum 4'-0\" below grade' (1.22 m) footing depth printed on the City of Guelph's official deck sample drawings (sheet A2 Elevation/Section, 03/01/2023, and PBC-1 Post and Beam Connections, March 2026). The Ontario Building Code clause itself was NOT retrieved: ontario.ca/laws renders the regulation as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario. Do not cite a clause number until the primary text is retrieved.",
+    "sources": [
+      {
+        "name": "City of Guelph - Deck sample drawings: plans, elevation drawings and stair detail (PDF)",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Plans-elevation-drawings-and-stair-detail.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Undisturbed, competent bearing soil. Backfilled soil. Minimum 4'-0\" below grade."
+      },
+      {
+        "name": "City of Guelph - Deck post and beam connections sample drawing (PDF)",
+        "url": "https://guelph.ca/wp-content/uploads/Deck-Post-and-Beam-Connections.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Minimum 8\" diameter concrete pier ... Minimum 4' - 0\""
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

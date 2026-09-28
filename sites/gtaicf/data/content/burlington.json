@@ -1,0 +1,199 @@
+{
+  "slug": "burlington",
+  "title": "ICF foundations in Burlington | GTA ICF",
+  "description": "ICF foundations in Burlington: lakeshore sand and gravel or clay till, the City's 2026 permit fee per square metre, the 1.2 m frost depth and when we pour.",
+  "h1": "ICF foundations and walls in Burlington",
+  "kicker": "Halton Region",
+  "answer": [
+    "Burlington splits into two grounds for a basement excavation. South of roughly the QEW, in Aldershot, Downtown, Roseland and Shoreacres, the Ontario Geological Survey maps coarse sand and gravel that runs when cut and drains once the wall is in. North of it, across Tyandaga, Millcroft, Alton Village and the Orchard, the survey maps clay-to-silt till that stands up in the hole but holds water. Red Queenston shale sits under both, and no point we queried shows it at the surface.",
+    "The permit comes from the City of Burlington's Building Department, which takes applications only by email, and the City's 2026 fee schedule charges a new detached house or an addition at $23.18 per square metre of floor area up to 300 square metres, with a $377 minimum. Footings go at least 1.2 m below grade on undisturbed soil, the design frost penetration that a geotechnical investigation filed with the City for 789 to 795 Brant Street takes from OPSD 3090.101."
+  ],
+  "tiles": [
+    {
+      "value": "1.2 m",
+      "label": "design frost penetration depth, per OPSD 3090.101, in a geotechnical investigation filed with the City for 789 to 795 Brant Street",
+      "source": {
+        "name": "Geotechnical investigation, 789 to 795 Brant Street (City of Burlington development file)",
+        "url": "https://www.burlington.ca/en/news/resources/Current-Development-Projects/Ward-2/Camarro-Developments-Inc.-%E2%80%93-789-795-Brant-Street/Supporting-Documents/Geotechnical%20Investigation.pdf"
+      }
+    },
+    {
+      "value": "$23.18/m²",
+      "label": "City of Burlington 2026 permit fee for a detached house, semi, townhouse or addition up to 300 m² of floor area (By-law 30-2026)",
+      "source": {
+        "name": "Building Permit Fee Schedule A to By-law 30-2026",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-Fee-Schedule-A-to-Bylaw.pdf"
+      }
+    },
+    {
+      "value": "2 soil bands",
+      "label": "sand and gravel along the lake, clay-to-silt till on the plain above it, and thin till over dolostone only above the escarpment at Kilbride",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json"
+      }
+    },
+    {
+      "value": "33.5%",
+      "label": "of Burlington's homes were built between 1961 and 1980, and 50.3% are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Burlington",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Burlington&DGUIDlist=2021A00053524002&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "The ground under a Burlington basement",
+    "paragraphs": [
+      "South of roughly the QEW the city sits on sand and gravel that regional geology ties to the glacial Lake Iroquois shore; every point we queried in Aldershot, Downtown, Roseland and Shoreacres returned it. The cut will not stand vertical, so the faces are laid back or a trench box goes in, and the footing must bear on material the excavator has not loosened. In return the ground drains, the weeping tile works, and the spoil can go back against the wall. Near the lake and the creek mouths the water table comes first, and where the wall sees hydrostatic pressure the Code asks for waterproofing, not dampproofing.",
+      "North of the QEW the plain that climbs toward the escarpment is clay-to-silt till at every point we queried: Tyandaga, Millcroft, Alton Village and the Orchard. Till behaves the other way round. The excavation faces hold while the forms are stacked and braced, but the ground sheds water slowly, so rain and seepage sit in the excavation until they are pumped, and clay pushed back against the wall keeps it wet. The drainage layer, the membrane and the weeping tile matter more here than the shoring does, and the backfill is chosen for drainage rather than taken straight from the pile.",
+      "Under the city below the escarpment is the Queenston Formation, red shale and siltstone. Unlike Oakville's creek valleys, no Burlington point we queried returned bedrock at the surface; the survey shows till or sand of unstated thickness and does not map depth to rock, so a city basement is planned as a soil dig. At Kilbride, above the escarpment, the survey maps a bedrock-drift complex, thin till over rock at shallow, variable depth, and the rock is Amabel dolostone, not shale. There the excavator is likely to meet rock before footing depth, the footing may bear on it, and the Code sets no minimum depth for a footing on rock."
+    ],
+    "table_note": "Each row is an Ontario Geological Survey point query at one map centroid for the neighbourhood (two for Aldershot), retrieved 25 September 2026. A point describes the area around it, not a specific lot, and the survey layer carries no depth to rock; the footing design comes from what the excavation shows and, where the plan reviewer asks, from a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Aldershot",
+        "surface": "Sand and gravel, lakeshore band (two query points)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Downtown Burlington",
+        "surface": "Sand and gravel, lakeshore band",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Roseland",
+        "surface": "Sand and gravel, lakeshore band",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Shoreacres",
+        "surface": "Sand and gravel, lakeshore band",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Tyandaga",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Millcroft",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Alton Village",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Orchard",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Kilbride",
+        "surface": "Thin till over shallow rock (bedrock-drift complex)",
+        "bedrock": "Amabel, dolostone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Getting the permit from the City of Burlington",
+    "authority_short": "the City of Burlington",
+    "paragraphs": [
+      "A new house, an addition or a replacement foundation is a building permit from the City of Burlington's Building Department, and Burlington has no online portal: the package is emailed to buildingpermits@burlington.ca with the subject line 'Building Permit Application' and the project address, laid out to the City's electronic submission standards, and a complete application gets its plan review within 10 business days. Fees follow Schedule A to Building Permit By-law 30-2026: a detached house, semi, townhouse or addition is $23.18 per square metre of floor area up to a total of 300 square metres and $29.90 per square metre beyond that, measured to the outer face of the exterior walls with the unfinished basement and the garage left out, $377 minimum, HST where applicable; excavating a basement under an existing house is charged the flat minimum on its own. That last line matters here, because half of Burlington's homes are single-detached and a third date from 1961 to 1980, so much of the ICF work is additions and new foundations under standing houses.",
+      "Before that email can go, Community Planning issues the Pre-Building Approval, which is the zoning clearance certificate, a new house on municipal services needs a Region of Halton service connection permit, and a lot inside Conservation Halton or Niagara Escarpment Commission boundaries, in Burlington typically the escarpment lands and the creek valleys, needs that agency's approval first. The City's checklist for a new dwelling or addition then asks for the provincial application form, designer schedules with BCIN numbers, the Energy Efficiency Design Summary that declares the wall's SB-12 path, a site plan on the survey, sections showing the footing and foundation construction, and a grading and drainage clearance. It also lists BMEC authorizations or Minister's Rulings with CCMC listings for innovative systems. The Building Code names CAN/ULC-S717.1 as the standard for flat-wall ICF units and has its own rules for ICF walls within the Part 9 limits; some systems also carry a CCMC evaluation report, and what the reviewer wants to see for the wall is confirmed with the Building Department before we submit. The system is named on the quote, its documentation goes in the permit package, and we prepare the package with you.",
+      "The City's Building Permits page says a qualified or registered designer with a BCIN can prepare house drawings, and that certain projects, most industrial, commercial and institutional work among them, need drawings stamped by an architect or professional engineer under Division C, Section 1.2 of the Code. For an ICF wall the practical line is the Part 9 limit of two storeys and 3 m floor to floor on sound soil; beyond it, or when the reviewer asks, a professional engineer seals the wall design and the letter goes in the package. On inspections the City publishes no stage list: the inspections checklist arrives attached to the approved drawings, and each stage has to be completed at its point in time before the permit can close. Before the footing forms go in we confirm with the inspector named on the permit card whether the footing forms and reinforcing are inspected before concrete and whether the wall, membrane and weeping tile are inspected before backfill, and we book each visit with 48 hours' notice. The approved drawings and the permit card stay on site, nothing is covered until its stage is reviewed, and a final inspection closes the permit."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of Burlington Building Department, 905-335-7731; the package is emailed to buildingpermits@burlington.ca with the subject line 'Building Permit Application' and the address; no online portal; files over 20 MB by requested transfer",
+        "url": "https://www.burlington.ca/en/building-and-renovating/applying-for-a-building-permit.aspx"
+      },
+      {
+        "label": "New house or addition fee, 2026",
+        "value": "$23.18 per m² of floor area up to 300 m² total, $29.90 per m² above that; unfinished basement and garage excluded; $377 minimum permit fee; excavating a basement or crawl space on its own, or a basement walkout, at the flat $377; HST where applicable (Schedule A to By-law 30-2026)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Building-Permit-Fee-Schedule-A-to-Bylaw.pdf"
+      },
+      {
+        "label": "Application checklist",
+        "value": "Provincial application form, designer schedules with BCIN numbers, Energy Efficiency Design Summary, site plan on the survey, sections showing footing and foundation construction, grading and drainage clearance; Pre-Building Approval and a Region of Halton service connection permit first (Addition/New Dwelling checklist, February 12, 2025)",
+        "url": "https://www.burlington.ca/en/building-and-renovating/resources/Applying-for-a-Building-Permit/Dwelling-Unit-Checklist.pdf"
+      },
+      {
+        "label": "Who may draw it",
+        "value": "A qualified or registered designer with a BCIN for most house work; certain projects need drawings stamped by an architect, professional engineer or both, per Division C, Section 1.2 of the Building Code",
+        "url": "https://www.burlington.ca/en/building-and-renovating/building-permits.aspx"
+      },
+      {
+        "label": "Review time and other approvals",
+        "value": "Plan review within 10 business days of a complete application, then the permit or a status report; zoning clearance certificate from Community Planning first; Conservation Halton or Niagara Escarpment Commission approval where the lot is inside their boundaries",
+        "url": "https://www.burlington.ca/en/building-and-renovating/renovations-and-additions.aspx"
+      },
+      {
+        "label": "Inspections",
+        "value": "Inspections checklist attached to the approved drawings; no published stage list; 48 hours' notice, booked with the inspector named on the permit card, quoting permit number, address, inspection type and preferred date; final inspection closes the permit",
+        "url": "https://www.burlington.ca/en/building-and-renovating/booking-an-inspection.aspx"
+      }
+    ]
+  },
+  "season": {
+    "heading": "When we pour in Burlington",
+    "paragraphs": [
+      "Burlington has a climate station of its own, Burlington TS near the lake, and its 1981 to 2010 normals put January at a mean of −4.4 °C and a daily minimum of −8.1 °C, with 99.9 cm of snow a year and a third of it in January. The station does not publish a frost-free period or cold-day counts, so those come from Hamilton A, 25 km south-west on the escarpment: 164 frost-free days from May 1 to October 12, 35.7 days a year below −10 °C and 54.8 days that never climb above freezing. The lakeshore runs about a degree milder than the airport, so those counts likely overstate the cold in Aldershot or Shoreacres. Whatever the count, CSA A23.1 makes any pour with a forecast below 5 °C in the next 24 hours cold-weather work: concrete for a wall under 300 mm thick arrives between 10 and 32 °C, the wall is held at 10 °C or more through curing, and it reaches 7 MPa before frost can touch it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam on both faces shelters the core while it cures, so the exposed work is the top of the wall and the footing, which get covered, and the cavity, which is cleared of snow and ice before the truck arrives; no de-icing salt goes into the forms. The frost line does not move with the calendar. A geotechnical investigation filed with the City for 789 to 795 Brant Street sets the design frost penetration at 1.2 m per OPSD 3090.101, which is also the depth the Building Code's Table 9.12.2.2 asks for under a heated basement on clay, and we set footings at 1.2 m or deeper across the city unless a report for the lot says otherwise."
+    ],
+    "facts": [
+      {
+        "label": "Burlington TS, 1981 to 2010",
+        "value": "January mean −4.4 °C, January daily minimum −8.1 °C, 99.9 cm of snow a year with 34.2 cm in January; 19 years of temperature record",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=burlington&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6151064&dispBack=1"
+      },
+      {
+        "label": "Frost-free period and cold days",
+        "value": "164 days, May 1 to October 12; 35.7 days a year below −10 °C; 54.8 days with a maximum at or below 0 °C. Hamilton A, 1991 to 2020, about 25 km south-west on the escarpment and about 1 °C colder than the lakeshore; the Burlington station does not publish these elements",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1"
+      },
+      {
+        "label": "Cold-weather concreting",
+        "value": "A forecast below 5 °C within 24 hours of placing; concrete for sections under 300 mm placed at 10 to 32 °C, held at 10 °C or more through curing, 7 MPa before frost (CSA A23.1, reproduced by Concrete Ontario)",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Design frost depth",
+        "value": "1.2 m per OPSD 3090.101, in a geotechnical investigation filed with the City for 789 to 795 Brant Street",
+        "url": "https://www.burlington.ca/en/news/resources/Current-Development-Projects/Ward-2/Camarro-Developments-Inc.-%E2%80%93-789-795-Brant-Street/Supporting-Documents/Geotechnical%20Investigation.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Travel does not move a Burlington quote. The band the lot sits in does: shoring in the lakeshore sand and gravel of Aldershot, Downtown, Roseland and Shoreacres, pumping where the water table is high near the lake, infill lots that decide where the pump truck can stand, and rock excavation above the escarpment at Kilbride, where dolostone lies close under thin till. Each is a line on the quote.",
+  "faqs": [
+    {
+      "q": "How do you excavate a foundation in Burlington's ground?",
+      "a": "It depends on the band. On the lakeshore sand and gravel of Aldershot, Downtown, Roseland and Shoreacres the faces slump, so the dig is laid back or boxed, the footing bears on ground the bucket has not disturbed, and the spoil can go back against the wall. On the till of Tyandaga, Millcroft, Alton Village and the Orchard the faces stand, the hole holds water until it is pumped, and we bring in drainable backfill. Either way it is a soil dig; rock is an escarpment question."
+    },
+    {
+      "q": "Will an ICF basement in Burlington need waterproofing or just dampproofing?",
+      "a": "The Code asks for dampproofing on every below-grade foundation wall, waterproofing where hydrostatic pressure occurs, weeping tile at the footing, and a drainage layer where the wall insulation runs more than 900 mm below grade, which a full-height ICF wall does. In Burlington the pressure question is local: near the lake and the creek mouths on the sand and gravel band it is the water table; on the till band it is surface water that cannot get away and clay backfill that holds it against the wall."
+    },
+    {
+      "q": "What does the City of Burlington want in the permit package for an ICF foundation?",
+      "a": "The new-dwelling and addition checklist, emailed to the Building Department: the provincial application form, designer schedules with BCIN numbers, the Energy Efficiency Design Summary, and sections that show the footing and foundation construction. The checklist also lists BMEC authorizations or Minister's Rulings with CCMC listings for innovative systems; the Code names CAN/ULC-S717.1 for flat-wall ICF units and some systems also carry a CCMC report. The system is named on the quote, its documentation goes in the package, and we prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Burlington in winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. Hamilton A counts 54.8 days a year that stay at or below freezing and 35.7 below −10 °C, the lakeshore about a degree milder. Then CSA A23.1 applies: concrete placed at 10 °C or more, held at 10 °C through curing, 7 MPa before frost, with the top of the wall and the footing covered and the cavity cleared of snow."
+    },
+    {
+      "q": "How deep do footings go in Burlington?",
+      "a": "At least 1.2 m below finished grade, on undisturbed soil. The City's checklist asks the sections to show the footing but prints no depth; a geotechnical investigation filed with the City for 789 to 795 Brant Street sets the design frost penetration at 1.2 m per OPSD 3090.101, and the Building Code's Table 9.12.2.2 asks the same 1.2 m under a heated basement on clay or undefined soil. We hold 1.2 m across both soil bands unless a report for the lot says otherwise."
+    },
+    {
+      "q": "We are in Kilbride, above the escarpment. What changes?",
+      "a": "The rock, and the approvals. At Kilbride the survey maps a bedrock-drift complex, thin till over rock at shallow, variable depth, and the rock is Amabel dolostone, not the Queenston shale under the rest of the city, so the excavation is likely to reach rock before footing depth and the footing may bear on it, which the Code allows at any depth. The lot may sit inside Niagara Escarpment Commission or Conservation Halton boundaries, whose approvals come before the building permit, and a septic system needs its own permit."
+    }
+  ],
+  "related_note": "We also build in Oakville, Hamilton and Milton, Burlington's neighbours to the east, west and north."
+}

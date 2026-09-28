@@ -1,0 +1,204 @@
+{
+  "slug": "caledon",
+  "title": "ICF foundations in Caledon | GTA ICF",
+  "description": "ICF foundations in Caledon: sand and gravel, till and clay from Bolton to Belfountain, the Town's 2026 permit fees, upland frost and illustrative costs.",
+  "h1": "ICF foundations and walls in Caledon",
+  "kicker": "Peel Region",
+  "answer": [
+    "Caledon is one town with several grounds. The Ontario Geological Survey returns sand and gravel outwash at Caledon East, Alton and Belfountain, clay-to-silt till at Bolton, Inglewood and Mayfield West, ice-contact sand and gravel at Palgrave, silt and clay at Cheltenham, and sandy till over dolostone at Caledon Village. Whichever you are on, the footing sits at least 1.2 m below grade on undisturbed soil, the depth printed on the standard details the Town hosts, and the permit comes from the Town of Caledon Building Services.",
+    "The Town inspects the footing with the excavation complete and before any concrete is poured, asking for an engineer's site report where the footing is on fill, and returns for the weeping tile and foundation walls before backfill. On the 2026 fees by-law a detached house is $18.12 per square metre of floor area and a heated addition $15.21, above a $193 minimum that is non-refundable and is collected once the application passes the Town's completeness check."
+  ],
+  "tiles": [
+    {
+      "value": "1.2 m",
+      "label": "minimum below grade on undisturbed soil on the standard details the Town of Caledon hosts for applicants",
+      "source": {
+        "name": "Town of Caledon, LMCBO-TACBOC standard details (Revision 01, April 2025)",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/LMCBO.pdf"
+      }
+    },
+    {
+      "value": "$18.12/m²",
+      "label": "Town of Caledon 2026 permit fee for a detached house; a heated addition is $15.21/m²",
+      "source": {
+        "name": "By-law 2025-105, 2026 Fees and Charges, Schedule B",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/2026-Fees-By-law.pdf"
+      }
+    },
+    {
+      "value": "132 days",
+      "label": "frost-free period at Orangeville MOE, May 20 to September 30, the station on Caledon's Escarpment upland",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, Orangeville MOE",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1"
+      }
+    },
+    {
+      "value": "80.7%",
+      "label": "of Caledon's 23,699 occupied dwellings are single-detached houses, 2021 Census",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Caledon",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Caledon&DGUIDlist=2021A00053521024&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "Which Caledon ground you are digging in",
+    "paragraphs": [
+      "The middle of the town is sand and gravel. At Caledon East, Alton and Belfountain the Ontario Geological Survey returns glaciofluvial deposits, the river and delta outwash of the Credit headwaters, and Palgrave returns ice-contact stratified sand and gravel, ground the Town's checklists treat as Oak Ridges Moraine land although the survey layer does not carry the name. An excavation in either drains, so the weeping tile has an easy job, but the faces will not stand for long: they are laid back or shored, and the footing bears on material nobody has disturbed. Here the water table, not the soil, decides between dampproofing and waterproofing.",
+      "South and east it is clay-to-silt till: the village point at Bolton, Inglewood and Mayfield West all return it. Caledon Village, on the Escarpment upland, returns a stone-poor sandy silt till, and Cheltenham fine glaciolacustrine silt and clay. All of these hold a cut and pass water slowly, so rain on the footing base stays until it is pumped, and the same clay pushed back against the wall keeps it wet; the drainage layer and weeping tile earn their keep. The Humber valley floor at Bolton is modern alluvium that may carry organic remains, and an engineer sees it before a footing goes on it.",
+      "Bedrock changes with the district, and no survey point found it at or near the surface. Central and south Caledon sits on red Queenston shale; Bolton and Palgrave on grey Georgian Bay shale with limestone bands; Caledon Village on Amabel dolostone, the Escarpment cap; Alton and Belfountain on the thin Silurian shales, sandstones and dolostones of the Escarpment slope. The survey does not say how deep any of it lies, and the Cheltenham Badlands, where the Queenston is bare, were not point-queried. We plan Caledon digs as soil excavations; on the Escarpment lots rock excavation is a priced possibility, and the Code sets no minimum footing depth on rock."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries (surficial MRD 128-REV, bedrock MRD 219) at one published coordinate per village, with a second point on the Humber valley floor at Bolton, retrieved 25 September 2026. Neither layer gives the depth to rock, and a point describes the map around it, not your lot. The footing design is settled on the site, with a geotechnical report when the plans examiner asks for one.",
+    "neighbourhoods": [
+      {
+        "name": "Bolton (village)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Bolton (Humber valley floor)",
+        "surface": "Modern alluvium: clay, silt, sand and gravel, possibly organic",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Caledon East",
+        "surface": "Glaciofluvial sand and gravel (Credit headwaters outwash)",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Caledon Village",
+        "surface": "Stone-poor sandy silt till",
+        "bedrock": "Amabel dolostone (Escarpment cap)"
+      },
+      {
+        "name": "Inglewood",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Palgrave",
+        "surface": "Ice-contact sand and gravel, minor silt, clay and till",
+        "bedrock": "Georgian Bay, grey shale"
+      },
+      {
+        "name": "Alton",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Thin Silurian units: shale, sandstone, dolostone (Escarpment slope)"
+      },
+      {
+        "name": "Cheltenham",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale (bare at the Badlands nearby)"
+      },
+      {
+        "name": "Belfountain",
+        "surface": "Glaciofluvial sand and gravel",
+        "bedrock": "Thin Silurian units: shale, sandstone, dolostone"
+      },
+      {
+        "name": "Mayfield West",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits, fees and inspections in Caledon",
+    "authority_short": "the Town of Caledon",
+    "paragraphs": [
+      "A house foundation in Caledon is permitted with the house or the addition it carries, by the Town of Caledon Building Services at 6311 Old Church Road, and the application goes in online only, as PDF files through the Town's Building Services web form, after zoning clearance for the project. Schedule B of the 2026 fees by-law, in force from January 1, 2026, prices a detached, semi-detached, town or duplex house at $18.12 per square metre of floor area, a heated addition at $15.21, an unheated one at $14.40, a detached garage or accessory building at $6.72 and a finished basement at $5.93. Floor area is measured to the outer face of the exterior walls on every level, leaving out an unfinished basement and a garage that serves only the house. The $193 minimum is non-refundable and is collected once the Town has checked the application for completeness; if it is unpaid after ten business days the whole application is resubmitted, and where the fee is over $5,150 half can be paid at application and half at issuance. A complete, paid residential dwelling application carries the Building Code's ten business day review, and each resubmission can add two weeks or more. With 80.7% of Caledon's 23,699 occupied dwellings single-detached and three in ten of them built before 1981, additions and rebuilt basements beside houses that stay are a large part of our work here.",
+      "Caledon publishes no ICF checklist. Its New House and Residential Addition guides ask for the same set: a site plan, floor plans with the foundation and exterior wall information, elevations and sections that specify every floor, wall and roof assembly and give the footing and foundation wall details, heat loss and heat gain calculations, and a complete septic design with the bed and tank located where the lot has no sewer. The forms are the Application to Construct or Demolish, Schedule 1 for the designer, Schedule 2 for the sewage system installer, the Energy Efficiency Design Summary by the prescriptive or performance path, the Plumbing Data Form and the Applicable Law Declaration. The wall section is where an ICF wall lives on paper: core width, reinforcing and foam thickness. Within the Code's Part 9 limits a qualified designer can draw it, with the BCIN and declaration the Town asks for on the drawings; beyond them, or when the plans examiner asks, an engineer seals it. The Building Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC report; the system is named on the quote and its documentation goes in the permit package. The Town names four outside agencies to check before applying, Toronto and Region Conservation, Credit Valley Conservation, the Niagara Escarpment Commission and Oak Ridges Moraine site-plan control, and its checklists carry them as applicable-law items; where a lot falls under one, that clearance comes before the permit. We prepare the package with you.",
+      "The Town's inspection list starts with the footing or structural slab, which it spells out as foundations, piers, posts, sonotubes, helical anchors and rebar: the excavation is complete, no concrete has been poured, and an engineer's site report is on hand if the footing is on fill. The second visit is backfill, for the weeping tile and the foundation walls; framing follows once the structure is weather-tight, then insulation and vapour barrier, the plumbing and HVAC finals, and the building final with grading done and the ESA certificate in. Caledon lists no separate visit for wall steel, and an ICF wall hides its reinforcing at the pour, so we record the steel in the forms before the concrete arrives and leave the membrane, drainage layer and tile in view for the backfill visit. Inspections are booked with 24 hours' notice, before 1 pm for the next day, and run Monday to Friday from 9 am to 4:30 pm; a repeat visit because the site was not ready is $192 on the fees by-law."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Caledon Building Services, 6311 Old Church Road; applications online only, as PDF files through the Building Services web form (the Town's ePlan platform, launched June 2026, takes builders' repeat-housing files only so far)",
+        "url": "https://forms.caledon.ca/do.aspx?interviewID=E000024_BuildingServicesForm&lang=en&AppName=E000024_BuildingServicesForm"
+      },
+      {
+        "label": "Fees, 2026 by-law",
+        "value": "$18.12 per m² of floor area for a detached, semi, town or duplex house; heated addition $15.21, unheated $14.40; detached garage or accessory building $6.72; finished basement $5.93; floor area to the outer face of the exterior walls, unfinished basement and attached garage excluded; $193 minimum, non-refundable; fees over $5,150 payable half at application, half at issuance",
+        "url": "https://www.caledon.ca/en/town-services/resources/Building-Services/2026-Fees-By-law.pdf"
+      },
+      {
+        "label": "New House and Addition guides",
+        "value": "Site plan; floor plans with foundation and exterior wall information; elevations and sections with every assembly specified and footing and foundation wall details; heat loss and gain calculations; septic design where there is no sewer; Schedule 1, Schedule 2, Energy Efficiency Design Summary, Plumbing Data Form and Applicable Law Declaration",
+        "url": "https://www.caledon.ca/en/living-here/building-permits.aspx"
+      },
+      {
+        "label": "Footing inspection",
+        "value": "Footing or structural slab (foundations, piers, posts, sonotubes, helical anchors, rebar): excavation complete, before any concrete is poured; engineer's site report if on fill",
+        "url": "https://www.caledon.ca/en/living-here/inspections.aspx"
+      },
+      {
+        "label": "Backfill inspection and booking",
+        "value": "Weeping tile and foundation walls before backfill; framing once weather-tight; book with 24 hours' notice before 1 pm for next-day service, Monday to Friday 9 am to 4:30 pm",
+        "url": "https://www.caledon.ca/en/living-here/inspections.aspx"
+      },
+      {
+        "label": "Review time and outside agencies",
+        "value": "10 business days for a residential dwelling once a complete application is paid; minimum fee unpaid after ten business days means a full resubmission; each resubmission can add two weeks or more; TRCA, Credit Valley Conservation, Niagara Escarpment Commission or Oak Ridges Moraine approval first where the lot is regulated",
+        "url": "https://www.caledon.ca/en/living-here/building-permits.aspx"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Frost, snow and the pour season in Caledon",
+    "paragraphs": [
+      "Caledon has no climate station of its own and about 200 m of relief, so we read two. Orangeville MOE, at 411.5 m on the same Escarpment upland as Caledon Village and Alton and about 19 km from Caledon East, averaged −7.5 °C in January over 1981 to 2010 with a daily minimum of −11.6 °C, 50.4 days a year below −10 °C, 76.8 days when the high never passed 0 °C and 170.6 nights at or below it, so roughly 94 days a year cross freezing; its last spring frost is May 20, its first fall frost September 30, its frost-free period 132 days, and it takes 151.5 cm of snow. Toronto Pearson, at 173 m about 28 km to the southeast, is the better guide for Bolton and Mayfield West: −5.0 °C in January, 34.2 days below −10 °C, 49.5 days with the high at or below freezing, 174 frost-free days from April 27 to October 20, and 114.5 cm of snow. A given site sits somewhere between the two.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. CSA A23.1 makes any pour with a forecast below 5 °C in the next 24 hours cold-weather work, and with the upland's first fall frost at the end of September and its last spring frost near the end of May, a large part of the Caledon calendar meets that rule: concrete for a wall under 300 mm arrives at 10 to 32 °C, is held at 10 °C or more while it cures, and reaches 7 MPa before frost is allowed near it. The foam form keeps the core warm; the footing and the open top of the wall are covered separately, and snow and ice come out of the cavity before the pump starts. Freeze and thaw matters most for the hole itself: the till at Bolton and Inglewood and the silt and clay at Cheltenham soften at the base when they sit open through it, so we dig close to the footing pour, while the outwash sand at Caledon East drains and is less troubled. The footing depth does not move with the season. The standard details the Town hosts print 1.2 m below grade on undisturbed soil, the Code's minimum for a heated basement on clay or undefined soil; on coarse-grained soil under a heated basement the Code's table sets no limit, and for an unheated garage or barn addition it is 1.2 m but not less than the frost penetration, so the depth still comes from the site and the engineer."
+    ],
+    "facts": [
+      {
+        "label": "Orangeville MOE, 1981 to 2010",
+        "value": "January mean −7.5 °C, daily minimum −11.6 °C; 50.4 days a year below −10 °C; 76.8 days with the high at or below 0 °C; frost-free 132 days, May 20 to September 30; 151.5 cm of snow",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=orangeville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6155790&dispBack=1"
+      },
+      {
+        "label": "Toronto Pearson, 1991 to 2020, for Bolton and Mayfield West",
+        "value": "January mean −5.0 °C; 34.2 days below −10 °C; 49.5 days with the high at or below 0 °C; 174 frost-free days, April 27 to October 20; 114.5 cm of snow",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Cold-weather concreting",
+        "value": "CSA A23.1 as reproduced by Concrete Ontario: forecast below 5 °C within 24 hours; walls under 300 mm placed at 10 to 32 °C, kept at 10 °C or more while curing, 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Footing depth in the Code",
+        "value": "Table 9.12.2.2: 1.2 m for a heated basement on clay or soils not clearly defined; no limit on rock or on coarse-grained soil under a heated basement; 1.2 m but not less than the frost penetration where there is no heated space; the Town-hosted standard details print the same 1.2 m",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Caledon is a large rural town, so travel is its own line, and so is water: the till at Bolton, Inglewood and Mayfield West and the clay at Cheltenham hold it at footing level, which means pumping and a drainage layer. Shoring in the outwash sand and gravel, rock excavation on the Escarpment lots, and any conservation, Escarpment or moraine approval each appear separately in the written quote.",
+  "faqs": [
+    {
+      "q": "What does a foundation excavation meet in Caledon?",
+      "a": "It depends on the village. The Ontario Geological Survey returns sand and gravel outwash at Caledon East, Alton and Belfountain and ice-contact sand and gravel at Palgrave, which drain but will not stand vertical; clay-to-silt till at Bolton, Inglewood and Mayfield West and silt and clay at Cheltenham, which stand but hold water; and a sandy silt till over dolostone at Caledon Village. On the Humber valley floor at Bolton it is alluvium. A test pit on the lot, not the map, settles which one you have."
+    },
+    {
+      "q": "We are on a well and septic outside the villages. Does an ICF basement still need waterproofing?",
+      "a": "The Code requires the outside of every below-grade foundation wall to be dampproofed and drained at the footing, waterproofed where hydrostatic pressure occurs, and given a drainage layer where the insulation runs more than 900 mm below grade, as every ICF wall does. On the outwash sand the water table decides; on the till and clay the wall sees water whatever the table does. The septic design goes in the same permit package with the Schedule 2 installer form, so bed and excavation are laid out together."
+    },
+    {
+      "q": "What does the Town of Caledon ask for with an ICF foundation permit?",
+      "a": "The same package as any new house or addition: site plan, floor plans with foundation information, elevations and sections with footing and foundation wall details, the Energy Efficiency Design Summary, Schedule 1 and the Applicable Law Declaration, plus a septic design where there is no sewer. There is no ICF-specific checklist. The Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC report; the system is named on the quote and its documentation goes in the package. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in a Caledon winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. On the upland, Orangeville MOE counts 50.4 days below −10 °C and 76.8 when the high stays at or below freezing. On those days concrete is placed at 10 °C or more, held at 10 °C or more while it cures, and reaches 7 MPa before frost. The foam keeps the core warm; the footing and wall top are covered."
+    },
+    {
+      "q": "How deep does a footing go in Caledon?",
+      "a": "At least 1.2 m below grade on undisturbed soil, the figure printed on the standard details the Town hosts, and the Building Code's Table 9.12.2.2 sets the same 1.2 m for a heated basement on clay or soils not clearly defined. On rock, and on the outwash sand and gravel under a heated basement, the table sets no limit, but the depth still comes from the engineer and the site. For an unheated garage or barn it is 1.2 m and not less than the frost penetration."
+    },
+    {
+      "q": "We are in Palgrave, on the moraine. What changes?",
+      "a": "Two things. The survey's Palgrave point returns ice-contact stratified sand and gravel over Georgian Bay shale: ground that drains and runs, so the cut is laid back or shored, the footing bears on undisturbed material, and the water table decides the membrane. And the Town's checklists flag Oak Ridges Moraine site-plan control for this part of Caledon, one of the four outside approvals the Town names; where the lot is under it, that clearance comes before the building permit. The survey layer does not carry the moraine's name."
+    }
+  ],
+  "related_note": "We also build in Brampton, Halton Hills and Mississauga."
+}

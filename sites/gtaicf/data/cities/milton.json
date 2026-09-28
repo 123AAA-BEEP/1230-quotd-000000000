@@ -1,0 +1,344 @@
+{
+  "slug": "milton",
+  "name": "Milton",
+  "region": "Halton Region",
+  "province": "ON",
+  "lat": 43.51681,
+  "lon": -79.88294,
+  "sub_areas": [
+    {
+      "name": "Old Milton",
+      "note": "Built mainly between 1850 and 1890; bounded by Bronte St S, the CP tracks, Thompson Rd and Robert St/Nipissing Rd (Wikipedia). OGS point query at Main St returns modern alluvial deposits of Sixteen Mile Creek (unit 19) over Queenston Formation; the Town Hall point two blocks west (150 Mary St) returns clay-to-silt till (unit 5d) over Queenston."
+    },
+    {
+      "name": "Beaty",
+      "note": "First 'New Milton' subdivision, started 2001; bounded by Derry Rd, Louis St. Laurent Ave, James Snow Pkwy and Thompson Rd (Wikipedia). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8b) over Queenston Formation."
+    },
+    {
+      "name": "Clarke",
+      "note": "Building since 2003; bounded by Derry Rd, the CP tracks, Thompson Rd and James Snow Pkwy (Wikipedia). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8b) over Queenston Formation."
+    },
+    {
+      "name": "Dempsey",
+      "note": "Construction from 2002; bounded by Steeles Ave, the CP tracks, Thompson Rd and James Snow Pkwy (Wikipedia). OGS point query returns clay-to-silt till (unit 5d) over Queenston Formation."
+    },
+    {
+      "name": "Scott",
+      "note": "Bounded by Tremaine Rd, Derry Rd, the CN tracks and Main St (Wikipedia). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8b) over Queenston Formation."
+    },
+    {
+      "name": "Willmott",
+      "note": "Construction 2010 onward; bounded by Louis St. Laurent Ave, Derry Rd, Ontario St and the railway (Wikipedia). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8b) over Queenston Formation."
+    },
+    {
+      "name": "Ford",
+      "note": "South Milton in the Boyne Survey, construction from 2015; bounded by Bronte St S, Britannia Rd, Regional Road 25 and Louis St Laurent Ave (Wikipedia). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8b) over Queenston Formation."
+    },
+    {
+      "name": "Campbellville",
+      "note": "Compact rural community in the former Nassagaweya Township, on the Niagara Escarpment (Wikipedia). OGS point query returns ice-contact stratified sand and gravel (unit 6) over Amabel Formation dolostone; the only queried point in Milton not on shale."
+    },
+    {
+      "name": "Kilbride border (south-west rural Milton)",
+      "note": "Kilbride itself is a Burlington neighbourhood (Wikipedia category); the query point is on the Milton side of the boundary. OGS point query returns clay-to-silt till (unit 5d) over Clinton-Cataract Group (Whirlpool, Manitoulin, Cabot Head, Grimsby, Thorold, Reynales, Irondequoit, Rochester formations: shale, sandstone, dolostone, limestone)."
+    },
+    {
+      "name": "Escarpment west of town (Kelso / Tremaine Rd)",
+      "note": "Milton is situated on the Niagara Escarpment (Wikipedia). OGS point query west of Tremaine Rd returns clay-to-silt till (unit 5d) over Clinton-Cataract Group (Whirlpool, Manitoulin, Cabot Head, Reynales, Fossil Hill formations)."
+    }
+  ],
+  "census": {
+    "population_2021": 132979,
+    "private_dwellings_occupied": 40038,
+    "single_detached_pct": 56.7,
+    "period_of_construction": {
+      "pre_1960_pct": 5.4,
+      "1961_1980_pct": 13.5,
+      "1981_2000_pct": 8.2,
+      "2001_2021_pct": 73.0
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 22,720 of 40,040 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 40,035): 1960 or before 2,165; 1961-1980 5,385; 1981-1990 1,895; 1991-2000 1,375; 2001-2005 6,660; 2006-2010 8,770; 2011-2015 7,330; 2016-2021 6,455. So 1981-2000 = 3,270 (8.2%) and 2001-2021 = 29,215 (73.0%). Population grew from 110,128 (2016) to 132,979 (2021), +20.7%.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Milton, Town (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Milton&DGUIDlist=2021A00053524009&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 132,979; Private dwellings occupied by usual residents: 40,038"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Milton (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Milton&DGUIDlist=2021A00053524009&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data 40,040; Single-detached house 22,720"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Milton (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Milton&DGUIDlist=2021A00053524009&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 2,165; 1961 to 1980 5,385; 1981 to 1990 1,895; 1991 to 2000 1,375; 2001 to 2005 6,660"
+      },
+      {
+        "name": "Statistics Canada, Census Profile search results - Milton",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Milton",
+        "retrieved_at": "2026-09-25",
+        "quote": "2021A00053524009 Milton"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 8b - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel.",
+        "where": "The post-2001 subdivisions east and south of the old town: query points at Beaty, Clarke, Scott, Willmott and Ford all return unit 8b."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Commonly called Halton Till in regional literature, but that name is not carried in the OGS layer attributes and was not verified here.",
+        "where": "Query points at Dempsey (north-east), Town Hall at 150 Mary St, the escarpment brow west of Tremaine Rd and the rural south-west near the Kilbride border return unit 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 19 - Modern alluvial deposits",
+        "description": "Clay, silt, sand, gravel, may contain organic remains.",
+        "where": "Sixteen Mile Creek corridor through the old town: the reference coordinate (43.51681, -79.88294) and the Old Milton/Main St query point both return unit 19."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 6 - Ice-contact stratified deposits",
+        "description": "Sand and gravel, minor silt, clay and till.",
+        "where": "Campbellville, on the escarpment plateau (query point 43.4881, -79.9822)."
+      },
+      {
+        "unit": "Trafalgar Moraine (south-east Milton)",
+        "description": "End moraine formed primarily of silty, clay-rich sand, underpinned by shale bedrock; hinders water absorption (Wikipedia). Not distinguished as a separate unit in the OGS MRD128-REV attributes returned at the Milton query points.",
+        "where": "Straddles Oakville and Milton, with a small portion in Burlington at Milton's southern border; about 20 km long, 30 m high and 4 km wide, from the Niagara Escarpment north of Nelson to Streetsville; has affected the flow of the eastern branch of Sixteen Mile Creek (Wikipedia)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (Upper Ordovician red shale) under the urban area; Clinton-Cataract Group (Silurian shale, sandstone, dolostone, limestone) at the escarpment face west of Tremaine Rd and in the rural south-west; Amabel Formation dolostone on the escarpment plateau at Campbellville (OGS MRD219).",
+      "description": "Queenston: red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds; returned at Old Milton, Town Hall, Beaty, Clarke, Dempsey, Scott, Willmott and Ford. Clinton-Cataract Group: shales, sandstones, dolostones and limestones (Whirlpool, Manitoulin, Cabot Head, Grimsby, Thorold, Reynales, Irondequoit, Rochester / Fossil Hill formations); returned at the escarpment point west of Tremaine Rd and at the Kilbride-border point. Amabel: massive blue-grey to buff dolostone, thick-bedded, crinoidal, locally biohermal; returned at Campbellville.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). None of the eleven Milton query points returned the OGS 'Paleozoic bedrock at/near surface' unit; every point returned a surficial deposit (till, glaciolacustrine silt and clay, alluvium or ice-contact sand and gravel) of unstated thickness over the bedrock named above."
+    },
+    "implications_for_piles": [
+      "The Town of Milton's own deck permit sample drawings (Building Division, June 2018) require, for a steel helical pier/pile, that the manufacturer's information be submitted with the permit application along with CCMC approval, and that a professional engineer determine the depth, spacing and size of the helical piers/piles based on soil condition.",
+      "The same drawings set the conventional baseline: footings a minimum of 4'-0\" below grade; any deck footing (excluding deck blocks) within 4'-0\" of the house must go to the same depth as the existing house footings; the footing/pier sizing table assumes a soil bearing capacity of 2,000 lbs/ft2.",
+      "Most of the housing stock (73% of occupied dwellings built 2001-2021, Census) sits on the fine-textured glaciolacustrine silt and clay that OGS maps across Beaty, Clarke, Scott, Willmott and Ford, with clay-to-silt till at Dempsey and around the old town, and modern alluvium in the Sixteen Mile Creek corridor through Old Milton; the engineer's soil-specific determination the Town requires is not transferable between these deposits.",
+      "West of Tremaine Rd and at Campbellville the bedrock changes from Queenston shale to Clinton-Cataract sandstone/dolostone and Amabel dolostone with ice-contact sand and gravel at surface; escarpment-area sites are a different ground condition from the urban subdivisions. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.51681, -79.88294)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.88294,43.51681&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 19, Deposit: Modern alluvial deposits; clay, silt, sand, gravel, may contain organic remains"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Beaty, 43.5050, -79.8550)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.8550,43.5050&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8b, Deposit: Fine-textured glaciolacustrine deposits; silt and clay, minor sand and gravel"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Campbellville, 43.4881, -79.9822)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.9822,43.4881&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 6, Deposit: Ice-contact stratified deposits; sand and gravel, minor silt, clay and till"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.51681, -79.88294)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.88294,43.51681&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; red shale and siltstone, minor green shale and siltstone, and variable calcareous siltstone to sandstone and limestone interbeds"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at Campbellville, 43.4881, -79.9822)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.9822,43.4881&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Amabel; dolostone; thick-bedded, crinoidal, locally biohermal; locally bituminous (Eramosa Mb)"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at escarpment west of Tremaine Rd, 43.5180, -79.9550)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.9550,43.5180&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "GROUP_: Clinton-Cataract Group; FORMATION: Whirlpool, Manitoulin, Cabot Head, Reynales, Fossil Hill"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Trafalgar Moraine",
+        "url": "https://en.wikipedia.org/wiki/Trafalgar_Moraine",
+        "retrieved_at": "2026-09-25",
+        "quote": "formed primarily of silty, clay-rich sand, and underpinned by shale bedrock, all of which hinder water absorption"
+      },
+      {
+        "name": "Wikipedia - Milton, Ontario (neighbourhoods and setting)",
+        "url": "https://en.wikipedia.org/wiki/Milton,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Milton is situated on the Niagara Escarpment, a UNESCO world biosphere reserve and the Bruce Trail."
+      },
+      {
+        "name": "Wikipedia - Campbellville, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Campbellville,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "compact rural community in the geographic township of Nassagaweya in the Town of Milton"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Milton Building Division (title block on the deck sample drawings and the inspections page; 150 Mary St, Milton ON L9T 6Z5)",
+    "deck_permit_required_when": "The Town's Building Decks page: a building permit is required for 'a freestanding deck greater than 10 m² in area' or a deck 'attached to a building or structure'. No height threshold is stated on the Milton page. Decks in unassumed subdivisions also need a developer's clearance letter from the builder.",
+    "footing_depth_requirement": "Town deck sample drawings (June 2018): 'MIN 4'-0\" BELOW GRADE' on the deck section; any deck footing (excluding deck blocks) within 4'-0\" of the house must be the same depth as the existing house footings; footing/pier sizing table assumes a soil bearing capacity of 2,000 lbs/ft2; guards required when the finished deck floor is 24\" or more above grade. Steel helical pier/pile: manufacturer's information must be submitted with the permit application along with CCMC approval, and a professional engineer must determine the depth, spacing and size of helical piers/piles based on soil condition.",
+    "inspections": [
+      "Footing",
+      "Framing",
+      "Final building"
+    ],
+    "fee_note": "Building Permits page fee table: 'New unenclosed deck or porch, or alteration to existing deck' $163.11 (flat rate); minimum fee for any permit type $264.20 unless noted otherwise; elective changes (revisions) $436.51. Fee schedule page carries no effective date; the Application for a Permit to Construct or Demolish form linked on the page is dated Feb 16, 2026.",
+    "timeline_note": "Residential: the Town publishes no day-count. Process stated: an initial cursory completeness review with acceptance or refusal by email, then an invoice for permit fees, and full review begins once fees are paid; issuance is notified by email. For ICI permits the page says staff will contact the applicant within two business days of the ShareFile upload.",
+    "portal_url": "https://permits.milton.ca/citizenportal/app/login",
+    "portal_note": "Residential deck permits are applied for and inspections booked through the Town's online service portal (citizenportal); the Town's public entry page is https://www.milton.ca/en/living-in-milton/permit-application.aspx. Permits submitted before October 10, 2023 use a web form for inspection requests; inspections can also be booked at 905-878-7252 x2396. Submissions must be PDF generated from design software (no scans).",
+    "sources": [
+      {
+        "name": "Town of Milton - Building Decks",
+        "url": "https://www.milton.ca/en/business-and-development/decks.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "A freestanding deck greater than 10 m² in area; Attached to a building or structure"
+      },
+      {
+        "name": "Town of Milton - Building Decks (inspections)",
+        "url": "https://www.milton.ca/en/business-and-development/decks.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Typical deck inspections include: Footing, Framing, Final building"
+      },
+      {
+        "name": "Town of Milton - Deck permit sample drawings (PDF, Building Division, June 2018)",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MIN 4'-0\" BELOW GRADE"
+      },
+      {
+        "name": "Town of Milton - Deck permit sample drawings (PDF), helical note",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "PROFESSIONAL ENGINEER MUST DETERMINE THE DEPTH, SPACING AND SIZE OF HELICAL PIERS/PILES BASED ON SOIL CONDITION"
+      },
+      {
+        "name": "Town of Milton - Deck permit sample drawings (PDF), CCMC note",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MANUFACTURERS' INFORMATION MUST BE SUBMITTED WITH PERMIT APPLICATION ALONG WITH CCMC APPROVAL"
+      },
+      {
+        "name": "Town of Milton - Building Permits (fees, process)",
+        "url": "https://www.milton.ca/en/business-and-development/building-permits.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "New unenclosed deck or porch, or alteration to existing deck $163.11 (flat rate)"
+      },
+      {
+        "name": "Town of Milton - Building Permits (minimum fee)",
+        "url": "https://www.milton.ca/en/business-and-development/building-permits.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Minimum fee for any permit type is $264.20 (unless noted otherwise)."
+      },
+      {
+        "name": "Town of Milton - Building Inspections",
+        "url": "https://www.milton.ca/en/business-and-development/building-inspections.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Schedule an inspection using our online service portal for residential permits submitted and issued after October 10, 2023."
+      },
+      {
+        "name": "Town of Milton - Building Permit Applications and Portal Login",
+        "url": "https://www.milton.ca/en/living-in-milton/permit-application.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "You can use our online services tool to apply for: Residential building permits: Decks"
+      },
+      {
+        "name": "Halton Region - About Halton Region",
+        "url": "https://www.halton.ca/The-Region/About-Halton-Region",
+        "retrieved_at": "2026-09-25",
+        "quote": "home to four distinct municipalities: the City of Burlington, the Town of Halton Hills, the Town of Milton, the Town of Oakville"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Georgetown WWTP (Climate ID 6152695; 43.64 N, 79.88 W; 221 m; about 14 km north of the reference coordinate) for January mean and cold-day count; Toronto Pearson (Climate ID 6158731, about 27 km east-north-east) for frost-free period, which the Georgetown station does not publish as an average length",
+    "normals_period": "1981-2010 for Georgetown WWTP (temperature computed from 1981-2006, 26 years, code A; day-count elements code C); 1991-2020 for Toronto Pearson and Hamilton",
+    "frost_free_days": 174,
+    "jan_mean_temp_c": -6.3,
+    "days_below_minus_10c": 46.0,
+    "freeze_thaw_note": "Georgetown WWTP 1981-2010: January daily minimum -10.9 C; 55.8 days/yr with daily maximum <= 0 C; 135.9 cm annual snowfall; December-February daily means all below -2.9 C. Toronto Pearson 1991-2020: January mean -5.0 C, 34.2 days/yr below -10 C, last spring frost Apr 27, first fall frost Oct 20, 174 frost-free days; 130.6 days/yr with minimum <= 0 C versus 49.5 with maximum <= 0 C, so roughly 81 days a year cross 0 C (derived by subtraction). Hamilton 1991-2020 (about 38 km south-west): January mean -5.3 C, 35.7 days/yr below -10 C, 164 frost-free days. Milton's inland, higher position is reflected in the Georgetown record being colder and snowier than both lakeshore-influenced airports.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Georgetown WWTP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -6.3 -5.2 -0.9 6.0 12.3 17.4 20.0 19.0 14.8 8.4 2.8 -2.9 7.1 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Georgetown WWTP (days with minimum < -10 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 15.3 14.0 7.5 0.30 0.0 0.0 0.0 0.0 0.0 0.0 0.96 7.9 46.0 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Georgetown WWTP (days with maximum <= 0 C; snowfall)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "<= 0 C 18.2 14.9 7.6 0.67 ... 55.8 C; Snowfall (cm) ... 135.9 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Length of Frost-Free Period 174 Days; < -10 C 13.4 10.8 4.0 ... 34.2 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Hamilton",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=hamilton&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6153193&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -5.3 ...; < -10 C ... 35.7 C; Average Length of Frost-Free Period 164 Days"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 station list (no Milton or Georgetown station in the 1991-2020 set)",
+        "url": "https://climate.weather.gc.ca/climate_normals/station_select_1991_2020_e.html?searchType=stnName&txtStationName=milton&searchMethod=contains",
+        "retrieved_at": "2026-09-25",
+        "quote": "6153193 HAMILTON ... 6158731 TORONTO PEARSON (AIRPORT)"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 4'-0\" (1.22 m) minimum footing depth below grade printed on the Town of Milton Building Division's deck permit sample drawings (June 2018). The Ontario Building Code clause itself was NOT retrieved: ontario.ca/laws renders O. Reg. 332/12 as a JavaScript shell with no document API found, and the 2024 Building Code Compendium is distributed through Publications Ontario rather than as open web text. Do not cite a clause number until the primary text is retrieved. Milton's decks page links to O. Reg. 332/12 as the governing Building Code.",
+    "sources": [
+      {
+        "name": "Town of Milton - Deck permit sample drawings (PDF, Building Division, June 2018)",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "MIN 4'-0\" BELOW GRADE"
+      },
+      {
+        "name": "Town of Milton - Building Decks (link to Building Code regulation)",
+        "url": "https://www.milton.ca/en/business-and-development/decks.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "to ensure your deck meets all Building Code and zoning regulations"
+      },
+      {
+        "name": "Ontario e-Laws - O. Reg. 332/12 Building Code (page renders as JS shell; text not retrievable)",
+        "url": "https://www.ontario.ca/laws/regulation/120332",
+        "retrieved_at": "2026-09-25",
+        "quote": "e-Laws | Ontario.ca"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

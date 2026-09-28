@@ -1,0 +1,351 @@
+{
+  "slug": "halton-hills",
+  "name": "Halton Hills",
+  "region": "Halton Region",
+  "province": "ON",
+  "lat": 43.63,
+  "lon": -79.95,
+  "sub_areas": [
+    {
+      "name": "Georgetown",
+      "note": "The town's largest population centre (44,058 in 2021), on the Credit River about 40 km west of Toronto (Wikipedia). OGS point query at the Wikipedia coordinate (43.65028, -79.90361) returns clay-to-silt till (unit 5d) over Queenston Formation red shale; a second point in south Georgetown (43.635, -79.895) returns gravelly glaciofluvial deposits (unit 7b) over Queenston."
+    },
+    {
+      "name": "Acton",
+      "note": "The town's second population centre (9,376 in 2021) at the northern end of Halton Region, above the Niagara Escarpment near the Credit/Grand watershed divide (Wikipedia). OGS point query (43.63139, -80.03889) returns ice-contact stratified sand and gravel (unit 6) over Amabel Formation dolostone."
+    },
+    {
+      "name": "Glen Williams",
+      "note": "Hamlet of about 2,700 people on the Credit River between Georgetown and Terra Cotta (Wikipedia). OGS point query (43.66444, -79.925) returns modern alluvial deposits (unit 19) over Queenston Formation."
+    },
+    {
+      "name": "Limehouse",
+      "note": "Community of about 800 people between Georgetown and Acton, 'many hills' (Wikipedia); a 19th-century lime-kiln village where Clinton-formation rock was quarried (Wikipedia, Halton Hills). OGS point query (43.63639, -79.97944) returns ice-contact stratified sand and gravel (unit 6) over Amabel Formation dolostone."
+    },
+    {
+      "name": "Norval",
+      "note": "On the Credit River at Highway 7 and Winston Churchill Boulevard, immediately east of Georgetown and about 3 km west of Brampton's urban boundary (Wikipedia). OGS point query (43.64667, -79.85889) returns older alluvial deposits (unit 12) over Queenston Formation."
+    },
+    {
+      "name": "Stewarttown",
+      "note": "Hamlet listed among the town's rural clusters (Wikipedia, Halton Hills); no Wikipedia coordinate is published, so the query point (43.6167, -79.9333) is an approximation south-west of Georgetown. OGS point query returns sandy glaciofluvial deposits (unit 7a) over Queenston Formation."
+    },
+    {
+      "name": "Hornby / south rural area",
+      "note": "Hornby is a rural cluster in the south of the town (Wikipedia); the rural area below the Escarpment is mainly agricultural with an industrial area developing between Highway 401 and Steeles Avenue (Wikipedia). OGS point query at an approximate Hornby point (43.58, -79.83) returns modern alluvial deposits (unit 19) over Queenston Formation."
+    },
+    {
+      "name": "Ballinafad / north-west rural area",
+      "note": "Ballinafad straddles the boundary with Erin (Wikipedia). OGS point query at an approximate point (43.70, -80.05) returns stone-poor sandy silt to silty sand till (unit 5b) over Amabel Formation dolostone, i.e. the above-Escarpment terrain Wikipedia describes as hummocky morainic ridges of the Horseshoe Moraines."
+    }
+  ],
+  "census": {
+    "population_2021": 62951,
+    "private_dwellings_occupied": 21825,
+    "single_detached_pct": 73.0,
+    "period_of_construction": {
+      "pre_1960_pct": 20.0,
+      "1961_1980_pct": 26.3,
+      "1981_2000_pct": 25.8,
+      "2001_2021_pct": 27.9
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 15,940 of 21,825 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 21,825): 1960 or before 4,365; 1961-1980 5,745; 1981-1990 1,815; 1991-2000 3,815; 2001-2005 2,575; 2006-2010 1,435; 2011-2015 1,175; 2016-2021 895. Grouped: 1981-2000 = 5,630; 2001-2021 = 6,080. Grouped counts sum to 21,820 because of StatCan random rounding.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Halton Hills, Town (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Halton%20Hills&DGUIDlist=2021A00053524015&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 62,951; Private dwellings occupied by usual residents: 21,825"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Halton Hills (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Halton%20Hills&DGUIDlist=2021A00053524015&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling: 21,825; Single-detached house: 15,940 (73.0%)"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Halton Hills (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Halton%20Hills&DGUIDlist=2021A00053524015&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 4,365; 1961 to 1980 5,745; 1981 to 1990 1,815; 1991 to 2000 3,815"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results - Halton Hills (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Halton%20Hills",
+        "retrieved_at": "2026-09-25",
+        "quote": "DGUIDlist=2021A00053524015 Halton Hills"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Wikipedia's Halton Hills geology section names the till plain east of the Escarpment as predominantly Halton Till, generally more than 15 m thick; the OGS layer attributes do not carry the Halton Till name.",
+        "where": "Below-Escarpment till plain around Georgetown: query points at the reference coordinate (43.63, -79.95) and at the Georgetown Wikipedia coordinate (43.65028, -79.90361) return unit 5d."
+      },
+      {
+        "unit": "OGS MRD128-REV units 7a and 7b - Glaciofluvial deposits",
+        "description": "River deposits and delta topset facies; 7a sandy deposits, 7b gravelly deposits.",
+        "where": "Query points in south Georgetown (43.635, -79.895) and at the Wikipedia town coordinate (43.62694, -79.95139) return 7b (gravelly); the approximate Stewarttown point (43.6167, -79.9333) returns 7a (sandy). The Wikipedia town coordinate lies about 350 m from the reference coordinate yet returns a different unit, so the till/glaciofluvial contact runs through the Georgetown area."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 6 - Ice-contact stratified deposits",
+        "description": "Sand and gravel, minor silt, clay and till.",
+        "where": "Above and along the Escarpment: query points at Acton (43.63139, -80.03889) and Limehouse (43.63639, -79.97944) return unit 6."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5b - Till",
+        "description": "Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain.",
+        "where": "North-west rural area above the Escarpment: approximate Ballinafad point (43.70, -80.05) returns unit 5b."
+      },
+      {
+        "unit": "OGS MRD128-REV units 19 and 12 - Modern and older alluvial deposits",
+        "description": "Clay, silt, sand, gravel, may contain organic remains.",
+        "where": "Credit River valley floor: Glen Williams (43.66444, -79.925) returns unit 19 (modern alluvium), Norval (43.64667, -79.85889) returns unit 12 (older alluvium); the approximate Hornby point (43.58, -79.83) also returns unit 19."
+      },
+      {
+        "unit": "Niagara Escarpment and Horseshoe Moraines (physiography)",
+        "description": "Wikipedia (Halton Hills, Geology): the Escarpment is a high-relief bedrock scarp trending north through the central part of the town; to the west, hummocky morainic ridges form part of the Horseshoe Moraines region; to the south-east lies a smooth glacial till plain partially bevelled by lacustrine action (South Slope and Peel Plain). Several areas of thin drift cover lie south of Georgetown. The Paris/Galt moraine names from the task hint were not confirmed by any retrieved source.",
+        "where": "Town-wide; the Escarpment bisects the town from south-west to north-east (Wikipedia)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Queenston Formation (Upper Ordovician red shale) east of the Niagara Escarpment; Amabel Formation (Silurian dolostone) west of and above the Escarpment (OGS MRD219; Wikipedia, Halton Hills).",
+      "description": "OGS MRD219 point queries return Queenston (ORIG_LITHOLOGY 'red shale', PRIMARY_LITHO shale, Ordovician) at the reference coordinate, Georgetown, south Georgetown, Glen Williams, Norval, Stewarttown and Hornby, and Amabel (ORIG_LITHOLOGY 'unsubdivided: grey or blue-grey dolostone', Silurian) at Acton, Limehouse and Ballinafad. Wikipedia adds that the Escarpment face exposes shales, sandstones, limestones and dolomites of the Clinton and Cataract Groups between the two.",
+      "depth_note": "No drift-thickness dataset was queried. Wikipedia (Halton Hills, Geology) states the Queenston red shales of the eastern half are generally covered by more than 15 m of glacial sediments, predominantly Halton Till, with several areas of thin drift cover south of Georgetown. Above the Escarpment (Acton, Limehouse) the OGS surficial layer maps ice-contact sand and gravel over Amabel dolostone with no thickness given. Site-specific depth to bedrock was not retrieved."
+    },
+    "implications_for_piles": [
+      "The Town of Halton Hills Residential Deck Guide sets the conventional baseline any pile design is compared against: poured concrete piers a minimum of 1200 mm below grade on undisturbed soil, with pier size computed from supported deck area x 1.9 kPa live load divided by soil bearing capacity; the guide's own table lists bearing pressures from 40 kPa (loose sand or gravel) to 500 kPa (sound rock), with till at 300 kPa and clay shale at 400 kPa, and says the bearing capacity of the soil shall be determined prior to construction.",
+      "The same guide's structural note 10 halves the allowable soil bearing pressure where water is at or near the bottom of the footing excavation; the Credit River valley floors at Glen Williams, Norval and Hornby are mapped by OGS as alluvium that may contain organic remains, so water table and organics are the site conditions to confirm there.",
+      "Soil texture differs sharply across the Escarpment: OGS maps clay-to-silt till and glaciofluvial sand/gravel over Queenston shale around Georgetown, but ice-contact sand and gravel and sandy till over Amabel dolostone at Acton, Limehouse and Ballinafad. Wikipedia records thin drift south of Georgetown and quarrying of Escarpment rock at Limehouse and Acton, so shallow rock is a condition to confirm in the Escarpment communities.",
+      "The Halton Hills deck guide does not mention helical piles, screw piles, CCMC or BMEC evaluations; it requires plans to show the location, depth, size, spacing and type of foundations, and accepts designs by a homeowner, a BCIN-qualified designer, a professional engineer or an architect. Unlike Oakville's drawings, there is no printed Town instruction on helical pier submissions; confirm requirements with Building Services before applying. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.63, -79.95)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.95,43.63&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 5d, Till, Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (ArcGIS feature service, layer 3 query at Acton 43.63139, -80.03889)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-80.03889,43.63139&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 6, Ice-contact stratified deposits, sand and gravel, minor silt, clay and till"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.63, -79.95)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.95,43.63&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Queenston; ORIG_LITHOLOGY: red shale; AGE: Ordovician"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (ArcGIS feature service, layer 4 query at Acton 43.63139, -80.03889)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-80.03889,43.63139&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Amabel; ORIG_LITHOLOGY: unsubdivided: grey or blue-grey dolostone; AGE: Silurian"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Halton Hills (Geology section)",
+        "url": "https://en.wikipedia.org/wiki/Halton_Hills",
+        "retrieved_at": "2026-09-25",
+        "quote": "underlain by Ordovician shales of the Queenston Formation east of the Niagara Escarpment, and by Silurian dolomites of the Amabel Formation west"
+      },
+      {
+        "name": "Wikipedia - Halton Hills (Geology section, drift thickness)",
+        "url": "https://en.wikipedia.org/wiki/Halton_Hills",
+        "retrieved_at": "2026-09-25",
+        "quote": "generally covered by more than 15 m of glacial sediments, predominantly the Halton Till. There are several areas of thin drift cover"
+      },
+      {
+        "name": "Wikipedia - Georgetown, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Georgetown,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "In 2021, the population of Georgetown was 44,058. It sits on the banks of the Credit River, approximately 40 km west of Toronto"
+      },
+      {
+        "name": "Wikipedia - Acton, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Acton,_Ontario",
+        "quote": "It is also near the watershed between the Credit River and the Grand River which is just west of the urban area",
+        "retrieved_at": "2026-09-25"
+      },
+      {
+        "name": "Wikipedia - Niagara Escarpment",
+        "url": "https://en.wikipedia.org/wiki/Niagara_Escarpment",
+        "retrieved_at": "2026-09-25",
+        "quote": "The cliff-forming rock exposed along the escarpment is a belt of limestone and dolomite of the Lockport Formation of Silurian age."
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Halton Hills Building Services (the 2026 fee schedule is headed 'Transportation & Public Works - Building Services'; the website section is 'Building & Engineering')",
+    "deck_permit_required_when": "Residential Deck Guide: a building permit is required for a residential deck that serves a dwelling where the deck is both greater than 600 mm (24 in) above grade and 10 m2 (108 ft2) in area; a permit is not required for decks not more than 600 mm above grade regardless of size where it serves a residential dwelling unit. The Town's Building Permits page lists 'Deck - Review our Deck Permit Application Guide' among projects requiring a permit.",
+    "footing_depth_requirement": "Residential Deck Guide sample details D01a/D01b (OBC 2024): 'POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL'; elevation sheet: '1.2m DEEP CONCRETE PIERS ... BEARING ON UNDISTURBED SOIL'; piers extend a minimum 150 mm above ground level; pier size = supported deck area x min. 1.9 kPa live load / soil bearing capacity, with bearing capacity to be determined prior to construction and halved where water is at or near the bottom of the excavation. The guide does not mention helical or screw piles, CCMC or BMEC; it requires plans to show foundation type, depth, size and spacing, and accepts designs by the homeowner, a BCIN designer, a professional engineer or an architect. Non-wood guard systems need a P.Eng. specification package or CCMC approval.",
+    "inspections": [
+      "Footings and foundations",
+      "Framing",
+      "Plumbing and HVAC (where applicable)",
+      "Insulation (where applicable)",
+      "Occupancy (where applicable)",
+      "Final inspection",
+      "Deck guide: the permit placard lists the prescribed inspection stages; requests before 3 p.m. are booked for next-day inspection; minimum permit fee includes plans review and 2 inspections"
+    ],
+    "fee_note": "2026 Building Services Fees (BLDG-2026), Part C Group C: 'Deck, Porch, Roof Over Deck or Porch (Flat Rate)' $288.45 (read from the PDF's row/value order; Balcony flat rate is the same $288.45). Minimum Building Permit Fee - Small Residential $263.37. Damage Deposit - Residential (flat rate) $720.34, which the deck guide says is collected for deck projects before permit issuance and released by Engineering Services after the permit is closed. Construction commenced without a permit: 1.5 times the full permit fee. Fee is payable at the time of online submission.",
+    "timeline_note": "No fixed review day-count is published. The guide describes an online application, a review report if anything is missing or non-compliant, resubmission through a SharePoint link, then download of the permit placard and stamped plans. Inspection requests submitted before 3 p.m. are booked for the next day.",
+    "portal_url": "https://forms.haltonhills.ca/Building-Services/Building-Permit-Application",
+    "portal_note": "The deck guide directs applicants to 'Apply Online through the Town of Halton Hills Building Services webpage' at forms.haltonhills.ca; the Town's Building Permits information page is https://www.haltonhills.ca/building-permits. Building Services counter: lower floor of Town Hall, 1 Halton Hills Drive, 8:30 a.m. to 4:30 p.m.; intake 905-873-2600 ext. 2925, general ext. 2300, inspections ext. 2922.",
+    "sources": [
+      {
+        "name": "Town of Halton Hills - Residential Deck Permit Application Guide (PDF)",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "A building permit is required for a residential deck ... where the deck is both greater than 600mm (24\") above grade and 10m2"
+      },
+      {
+        "name": "Town of Halton Hills - Residential Deck Permit Application Guide (PDF), detail D01a",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL, FOR SIZES SEE SHEET D01d"
+      },
+      {
+        "name": "Town of Halton Hills - Residential Deck Permit Application Guide (PDF), sizing notes D01d",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "CONCRETE PIERS SHALL BEAR ON UNDISTURBED SOIL. THE BEARING CAPACITY OF THE SOIL SHALL BE DETERMINED PRIOR TO CONSTRUCTION."
+      },
+      {
+        "name": "Town of Halton Hills - Residential Deck Permit Application Guide (PDF), process and damage deposit",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Damage Deposit ... is required to be paid for deck projects and will be collected before permit issuance."
+      },
+      {
+        "name": "Town of Halton Hills - Residential Deck Permit Application Guide (PDF), same document at the Town's current website path",
+        "url": "https://www.haltonhills.ca/getContentAsset/5d0e8f70-bfc0-4bfc-a054-08bb4078e359/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/DeckPermitApplicationGuide.pdf?language=en",
+        "retrieved_at": "2026-09-25",
+        "quote": "DeckPermitApplicationGuide.pdf (linked from the Building & Engineering page)"
+      },
+      {
+        "name": "Town of Halton Hills - Building Services Fees 2026 (BLDG-2026) (PDF)",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en",
+        "retrieved_at": "2026-09-25",
+        "quote": "Deck, Porch, Roof Over Deck or Porch (Flat Rate) ... $288.45; Minimum Building Permit Fee - Small Residential $263.37"
+      },
+      {
+        "name": "Town of Halton Hills - Building Services Fees 2026 (PDF), damage deposit and department header",
+        "url": "https://www.haltonhills.ca/getContentAsset/6d4d9b6b-19b6-48b5-8c48-78dc967f5fba/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/Halton-Hills-Building-Permit-Fees.pdf?language=en",
+        "retrieved_at": "2026-09-25",
+        "quote": "Transportation & Public Works - Building Services; Damage Deposit- Residential (Flat Rate) $720.34"
+      },
+      {
+        "name": "Town of Halton Hills - Building Permits",
+        "url": "https://www.haltonhills.ca/building-permits",
+        "retrieved_at": "2026-09-25",
+        "quote": "Building permits are required for ... Deck - Review our Deck Permit Application Guide"
+      },
+      {
+        "name": "Town of Halton Hills - Building & Engineering",
+        "url": "https://www.haltonhills.ca/work/building-engineering",
+        "retrieved_at": "2026-09-25",
+        "quote": "Our counter is located on the lower floor of Town Hall ... from 8:30 a.m. to 4:30 p.m."
+      },
+      {
+        "name": "Town of Halton Hills - Inspection Booking Request",
+        "url": "https://www.haltonhills.ca/town-hall/applications-forms-resources/building-services/inspectionbookingrequest",
+        "retrieved_at": "2026-09-25",
+        "quote": "Inspections are required at various stages, which may include: Footings and foundations, Framing, Plumbing and HVAC, Insulation, Occupancy, Final inspection"
+      },
+      {
+        "name": "Town of Halton Hills - Building Permit Application (online form entry)",
+        "url": "https://forms.haltonhills.ca/Building-Services/Building-Permit-Application",
+        "retrieved_at": "2026-09-25",
+        "quote": "To apply online: https://forms.haltonhills.ca/Building-Services/Building-Permit-Application (deck guide, page 17)"
+      },
+      {
+        "name": "Halton Region - About Halton Region",
+        "url": "https://www.halton.ca/The-Region/About-Halton-Region",
+        "retrieved_at": "2026-09-25",
+        "quote": "home to four distinct municipalities: the City of Burlington, the Town of Halton Hills, the Town of Milton, the Town of Oakville"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Georgetown WWTP (Climate ID 6152695; 43.64 N, 79.88 W; 221 m; about 5.7 km east of the reference coordinate) for temperature and cold-day counts; Toronto Pearson (Climate ID 6158731, about 26 km east) for the frost-free period average, which Georgetown publishes only as probability percentiles from 12 years",
+    "normals_period": "1981-2010 for Georgetown WWTP (temperature elements computed from 1981-2006, 26 years, codes A/C); 1991-2020 for Toronto Pearson",
+    "frost_free_days": 174,
+    "jan_mean_temp_c": -6.3,
+    "days_below_minus_10c": 46.0,
+    "freeze_thaw_note": "Georgetown WWTP 1981-2010: January daily minimum -10.9 C; 46.0 days/yr with minimum < -10 C; 169.0 days/yr with minimum <= 0 C versus 55.8 days/yr with maximum <= 0 C, so roughly 113 days a year cross 0 C between night and day (derived by subtraction); 135.9 cm annual snowfall. Georgetown frost-free percentiles (12 years, 50% probability): last spring frost May 19, first fall frost Sep 24, frost-free period 121 days or less; the Town's 1981-2010 record is too short for a published average, so the 174-day figure is Toronto Pearson 1991-2020 (last spring frost Apr 27, first fall frost Oct 20) and is likely longer than Georgetown's. Wikipedia (Halton Hills) notes two climate zones, 5a north of the Escarpment and 5b south of it.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Georgetown WWTP",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -6.3 -5.2 -0.9 6.0 12.3 17.4 20.0 19.0 14.8 8.4 2.8 -2.9 7.1 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Georgetown WWTP (days with minimum temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 15.3 14.0 7.5 0.30 0.0 0.0 0.0 0.0 0.0 0.0 0.96 7.9 46.0 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Georgetown WWTP (days with maximum <= 0 C and frost-free percentiles)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "<= 0 C 18.2 14.9 7.6 ... 55.8 C; frost-free period equal to or less than (Days) 109 116 117 121 128 132 150"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Date of Last Spring Frost Apr 27; Average Date of First Fall Frost Oct 20; Average Length of Frost-Free Period 174 Days"
+      },
+      {
+        "name": "Wikipedia - Halton Hills (climate zones and ECCC station)",
+        "url": "https://en.wikipedia.org/wiki/Halton_Hills",
+        "retrieved_at": "2026-09-25",
+        "quote": "Zone 5a - north of the Niagara Escarpment; Zone 5b - south of the Escarpment. ECCC operates one climate monitoring station at Georgetown."
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 'MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL' / '1.2m DEEP CONCRETE PIERS' printed on the Town of Halton Hills Residential Deck Permit Application Guide sample details (sheets D01a, D01b, marked OBC 2024). The Ontario Building Code clause itself was NOT retrieved: ontario.ca/laws renders the regulation as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario. The Town's Building & Engineering page links to ontario.ca/page/2024-ontario-building-code. Do not cite a clause number until the primary text is retrieved.",
+    "sources": [
+      {
+        "name": "Town of Halton Hills - Residential Deck Permit Application Guide (PDF), detail D01a",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "Town of Halton Hills - Residential Deck Permit Application Guide (PDF), sample rear elevation",
+        "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "1.2m DEEP CONCRETE PIERS __\" TYP. DIAMETER BEARING ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "Town of Halton Hills - Building & Engineering (links to the 2024 Ontario Building Code page)",
+        "url": "https://www.haltonhills.ca/work/building-engineering",
+        "retrieved_at": "2026-09-25",
+        "quote": "https://www.ontario.ca/page/2024-ontario-building-code"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

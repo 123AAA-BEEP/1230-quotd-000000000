@@ -1,0 +1,60 @@
+---
+// FAQ list. The page emits FAQPage schema from the same array.
+interface Props {
+  items: { q: string; a: string }[];
+  heading?: string;
+}
+const { items, heading = 'Questions people ask' } = Astro.props;
+---
+
+<section class="faq-section" aria-labelledby="faq-heading">
+  <h2 id="faq-heading">{heading}</h2>
+  <div class="faq-list">
+    {items.map((f) => (
+      <details class="faq">
+        <summary>{f.q}</summary>
+        <p>{f.a}</p>
+      </details>
+    ))}
+  </div>
+</section>
+
+<style>
+  .faq-section h2 { font-size: var(--text-2xl); margin-bottom: var(--s4); }
+  .faq { border-bottom: 1px solid var(--border); }
+  .faq:first-child { border-top: 1px solid var(--border); }
+
+  .faq summary {
+    cursor: pointer;
+    list-style: none;
+    font-weight: 500;
+    color: var(--text);
+    padding-block: var(--s4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s4);
+  }
+
+  .faq summary::-webkit-details-marker { display: none; }
+
+  .faq summary::after {
+    content: '';
+    width: 0.45rem;
+    height: 0.45rem;
+    border-right: 1.5px solid var(--grey-text);
+    border-bottom: 1.5px solid var(--grey-text);
+    transform: rotate(45deg) translate(-2px, -2px);
+    flex: none;
+  }
+
+  .faq[open] summary::after { transform: rotate(-135deg) translate(-2px, -2px); }
+
+  .faq p {
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    padding-bottom: var(--s5);
+    max-width: 40rem;
+  }
+</style>

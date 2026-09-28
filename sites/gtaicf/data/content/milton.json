@@ -1,0 +1,209 @@
+{
+  "slug": "milton",
+  "title": "ICF foundations in Milton | GTA ICF",
+  "description": "ICF foundations in Milton: silt, clay and till over Queenston shale, the Town's $25.13/m² permit fee and checklist, the pour season, and illustrative costs.",
+  "h1": "ICF foundations and walls in Milton",
+  "kicker": "Halton Region",
+  "answer": [
+    "Most of Milton's housing dates from 2001 on, and those subdivisions sit on fine glaciolacustrine silt and clay: the Ontario Geological Survey returns it at Beaty, Clarke, Scott, Willmott and Ford, with clay-to-silt till at Dempsey and around Town Hall, creek alluvium along Sixteen Mile Creek through the old town, and red Queenston shale under all of it. The Town of Milton Building Division issues the permit through its online service portal, and the Town's own drawings put footings a minimum of 4 ft (1.2 m) below grade.",
+    "On the Town's fee table a new house or an addition is $25.13 per square metre, with a $264.20 minimum. The Part 9 residential checklist asks for a grading plan that shows the top of the foundation wall and the underside of the footing, an energy efficiency design summary for every new dwelling and addition, and Part 4 engineering for structure outside Part 9. The Town's inspections page prints no stage list for a house, so we confirm the stages with the Building Division when the permit is issued."
+  ],
+  "tiles": [
+    {
+      "value": "4 ft (1.2 m)",
+      "label": "minimum footing depth below grade on the Town of Milton Building Division's sample drawings",
+      "source": {
+        "name": "Town of Milton Building Division, deck permit sample drawings (June 2018)",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf"
+      }
+    },
+    {
+      "value": "$25.13/m²",
+      "label": "Town of Milton permit fee for a new house or an addition, $264.20 minimum",
+      "source": {
+        "name": "Town of Milton, Building Permits: rates and fees",
+        "url": "https://www.milton.ca/en/business-and-development/building-permits.aspx"
+      }
+    },
+    {
+      "value": "Silt and clay",
+      "label": "glaciolacustrine, under the post-2001 subdivisions at Beaty, Clarke, Scott, Willmott and Ford, over Queenston shale",
+      "source": {
+        "name": "Ontario Geological Survey MRD 128-REV, point query at Beaty",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.8550,43.5050&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "73%",
+      "label": "of Milton's occupied dwellings were built between 2001 and 2021; 56.7% are single-detached",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, Milton",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Milton&DGUIDlist=2021A00053524009&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under a Milton foundation",
+    "paragraphs": [
+      "Nearly three-quarters of Milton's homes date from 2001 or later, so the ground under the new subdivisions is the ground that matters most. At Beaty, Clarke, Scott, Willmott and Ford the Ontario Geological Survey returns fine-textured glaciolacustrine deposits: silt and clay left in a glacial lake. Silt and clay stand in a fresh cut but pass water slowly, so an open excavation collects rain and keeps it, the footing base must be protected from softening before the pour, and the drainage layer and weeping tile work for the life of the house. Dempsey and the blocks around Town Hall sit on clay-to-silt till, denser but no quicker to drain.",
+      "The old town is different ground. Along Sixteen Mile Creek, at Main Street, the survey maps modern alluvium: clay, silt, sand and gravel the creek has moved. Two blocks west, at Town Hall on Mary Street, the same query returns till, so the ground changes within a couple of blocks of the creek. A footing on alluvium needs an engineer's look, and we plan a basement near the creek for a high water table until the site shows otherwise. South-east Milton carries the Trafalgar Moraine, silty, clay-rich sand over shale that hinders water absorption; the survey's point attributes do not mark it, so it is a lot-by-lot question.",
+      "Red Queenston shale is the bedrock under every urban point the survey returned, but none of its Milton points came back as rock at or near the surface, and neither survey layer reports how deep the shale lies. West of Tremaine Road the picture changes with the Niagara Escarpment. Both the Tremaine point and the Kilbride-border point return clay-to-silt till over the Clinton-Cataract Group, a stack of shale, sandstone, dolostone and limestone. At Campbellville, on the plateau, it is ice-contact sand and gravel over Amabel dolostone: ground that drains and runs, so the cut is shored or laid back, and a footing that reaches rock is priced as rock excavation."
+    ],
+    "table_note": "Surface and bedrock are Ontario Geological Survey point queries (surficial MRD 128-REV, bedrock MRD 219) at one approximate location inside each neighbourhood's road boundaries, retrieved 25 September 2026; they are not surveyed centroids, and neither layer gives the depth to rock. They describe the area, not your lot. The footing design comes from the site and, where the reviewer asks, a geotechnical report.",
+    "neighbourhoods": [
+      {
+        "name": "Old Milton (Main Street)",
+        "surface": "Modern alluvium of Sixteen Mile Creek: clay, silt, sand, gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Old Milton (Town Hall, Mary Street)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Beaty",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Clarke",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Dempsey",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Scott",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Willmott",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Ford (Boyne Survey)",
+        "surface": "Glaciolacustrine silt and clay",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Campbellville",
+        "surface": "Ice-contact sand and gravel",
+        "bedrock": "Amabel dolostone"
+      },
+      {
+        "name": "Kilbride border (rural south-west)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Clinton-Cataract Group: shale, sandstone, dolostone, limestone"
+      },
+      {
+        "name": "Escarpment west of Tremaine Road (Kelso)",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Clinton-Cataract Group: shale, sandstone, dolostone, limestone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits, fees and inspections in Milton",
+    "authority_short": "the Town of Milton",
+    "paragraphs": [
+      "In Milton the foundation is permitted with the house or the addition it carries, and the permit comes from the Town of Milton Building Division at 150 Mary Street, applied for through the Town's online service portal, which takes new builds and additions as well as smaller residential work. Drawings go in as PDF files generated from the design software, never scans, with printing and markups left enabled so the examiner can redline them. The Town's posted fee table prices a new house or an addition to a house at $25.13 per square metre with a $264.20 minimum; a basement walkout or exterior stair on its own is a flat $264.20, an elective change to the drawings $436.51, and the occupancy permit for a new house $68.91. The table prints no effective date, so we confirm the figure when we apply.",
+      "Milton publishes no residential review time. What it does publish is the order of events: a cursory completeness review, an emailed acceptance or refusal with the reasons, an invoice, full review once the fee is paid, and issuance by email with the supporting documents. The Part 9 residential checklist (last updated February 2019) sets out the package: a site plan; a grading plan with existing and proposed grades, top of foundation wall, underside of footing and finished floor elevations; architectural drawings with wall sections; an Energy Efficiency Design Summary by the prescriptive or performance method, the SB-12 compliance summary for the wall; Schedule 1 for any design not prepared by an architect or engineer; and engineered design to Part 4 for any structural element outside Part 9, which is where an ICF wall lands when it is outside the Part 9 limits on storeys, height and soil bearing. The ICF system is named on the quote and its documentation goes in with the drawings. Milton has no ICF-specific checklist, and we prepare the package with you.",
+      "Approvals from outside the Building Division go in with the application where they apply: Niagara Escarpment Commission approval for any construction within the Escarpment, Conservation Halton or the Grand River Conservation Authority on regulated land, a Halton Region service permit for new water or sanitary connections, and the developer's clearance letter for exterior work in a subdivision the Town has not yet assumed. Inspections are booked through the same portal for residential permits submitted and issued after October 10, 2023, by web form for older permits, or by phone at 905-878-7252 extension 2396, with the permit number and address, a contact and the inspection type. The Town states that getting every required inspection is the permit holder's responsibility, and its page prints no stage list for a house. For an ICF wall the visits that matter are the footing before concrete and the wall before backfill, because the foam hides the concrete and the membrane once the ground goes back; we confirm Milton's stages with the Building Division at issuance and book each one."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Town of Milton Building Division, 150 Mary Street; residential permits for new builds, additions and alterations go through the Town's online service portal as PDF files generated from design software, no scans",
+        "url": "https://www.milton.ca/en/living-in-milton/permit-application.aspx"
+      },
+      {
+        "label": "New house or addition fee",
+        "value": "$25.13 per m², $264.20 minimum; basement walkout or exterior stairs $264.20 flat; elective changes (revisions) $436.51; occupancy permit for a new house $68.91; no effective date printed on the table",
+        "url": "https://www.milton.ca/en/business-and-development/building-permits.aspx"
+      },
+      {
+        "label": "Checklist for a new dwelling or addition",
+        "value": "Site plan; grading plan with top of foundation wall, underside of footing and finished floor elevations; wall sections; Energy Efficiency Design Summary; Schedule 1 unless an architect or engineer designs; Part 4 engineering for structure outside Part 9 (Part 9 residential checklist, February 2019)",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Residential-permit-application-checklist.pdf"
+      },
+      {
+        "label": "Other approvals the checklist names",
+        "value": "Niagara Escarpment Commission within the Escarpment; Conservation Halton or Grand River Conservation Authority on regulated land; Halton Region service permit for new water or sanitary connections; developer's clearance letter in an unassumed subdivision",
+        "url": "https://www.milton.ca/en/business-and-development/resources/Residential-permit-application-checklist.pdf"
+      },
+      {
+        "label": "Inspections",
+        "value": "Booked through the online service portal for residential permits submitted and issued after October 10, 2023, or at 905-878-7252 x2396; the Town prints no stage list for a house, so the footing and pre-backfill visits are confirmed at issuance",
+        "url": "https://www.milton.ca/en/business-and-development/building-inspections.aspx"
+      },
+      {
+        "label": "Review time",
+        "value": "No residential day count published; completeness review, emailed acceptance or refusal, invoice, then full review once fees are paid, issuance by email",
+        "url": "https://www.milton.ca/en/business-and-development/building-permits.aspx"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Winter, frost and the pour season in Milton",
+    "paragraphs": [
+      "Milton has no climate station of its own in either normals set, so the nearest record is Georgetown WWTP, about 14 km north at 221 m, and it runs colder than the lakeshore: a January mean of −6.3 °C, a January daily minimum of −10.9 °C, 46 days a year below −10 °C, 56 days when the temperature never gets above freezing, and 136 cm of snow. Toronto Pearson, 27 km east-north-east and the nearest station that publishes the figure, puts the frost-free period at 174 days, April 27 to October 20. Under CSA A23.1 a pour becomes cold-weather work when the forecast drops below 5 °C within 24 hours: concrete for a wall under 300 mm arrives at 10 °C or more, stays at 10 °C or more through curing, and reaches 7 MPa before frost touches it.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The foam faces of the form hold heat in the core, but the top of the wall and the footing are exposed and get covered, and snow and ice come out of the cavity before the pump starts. Milton's snow and the roughly 81 days a year that cross 0 °C in the Pearson record also matter for the hole itself: silt and clay left open through freeze and thaw soften at the base, so we dig close to the footing pour rather than weeks ahead. The footing depth does not move with the season: the Town's own drawings print 4 ft (1.2 m) below grade, the same figure as the Building Code's 1.2 m minimum for a heated basement on clay or undefined soils."
+    ],
+    "facts": [
+      {
+        "label": "Georgetown WWTP, 1981 to 2010",
+        "value": "January mean −6.3 °C; January daily minimum −10.9 °C; 46.0 days a year below −10 °C; 55.8 days with the maximum at or below 0 °C; 135.9 cm of snow",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=georgetown&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6152695&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "174 days, April 27 to October 20, Toronto Pearson, 1991 to 2020; Georgetown publishes no average length. Pearson counts 130.6 days with a minimum at or below 0 °C against 49.5 with a maximum at or below 0 °C",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Cold-weather concreting",
+        "value": "CSA A23.1: cold weather when the forecast falls below 5 °C within 24 hours; walls under 300 mm placed at 10 to 32 °C, held at 10 °C or more while curing, 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Footing depth",
+        "value": "1.2 m minimum for a heated basement on clay or soils not clearly defined, Building Code Table 9.12.2.2; the Town of Milton's drawings print the same 4 ft (1.2 m) below grade",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "In Milton the price moves with water and access more than rock. Silt and clay hold water in the excavation, so pumping, a drainage layer and the waterproofing choice are their own lines; creek-side lots in the old town can add an engineer's review. Escarpment sites west of Tremaine Road and at Campbellville add travel, possible Niagara Escarpment Commission approval, and rock excavation if the footing reaches it.",
+  "faqs": [
+    {
+      "q": "What does an excavation meet in Milton's newer subdivisions?",
+      "a": "Fine silt and clay. The Ontario Geological Survey returns fine-textured glaciolacustrine deposits at Beaty, Clarke, Scott, Willmott and Ford, and clay-to-silt till at Dempsey. Both hold a vertical face for the days the hole is open and both drain slowly, so rain collects on the footing base and has to be pumped and kept off the bearing surface before the footing is poured. Put that clay back against the wall and it holds water there, which is why the drainage layer and weeping tile matter as much as the membrane."
+    },
+    {
+      "q": "Will an ICF basement in Milton need waterproofing, or is dampproofing enough?",
+      "a": "The Building Code requires the outside of every below-grade foundation wall to be dampproofed and drained at the footing, and waterproofed where hydrostatic pressure occurs; an ICF wall is no exception. In Milton we assume water will sit against the wall: silt, clay and till pass it slowly, the Trafalgar Moraine's clay-rich sand hinders absorption, and lots near Sixteen Mile Creek sit on alluvium. We price the membrane, the drainage layer and the weeping tile as separate lines, and the site and the engineer decide between dampproofing and waterproofing."
+    },
+    {
+      "q": "What goes in the Town of Milton's permit package for an ICF foundation?",
+      "a": "The package for any new house or addition. Milton's Part 9 residential checklist asks for a grading plan showing top of foundation wall and underside of footing, an Energy Efficiency Design Summary, Schedule 1 unless an architect or engineer designed it, and Part 4 engineering for structure outside Part 9. The ICF system is named on the quote and its documentation goes in with the drawings; the Code asks ICF units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in Milton in the middle of winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The Georgetown record, the nearest, shows a January mean of −6.3 °C and 46 days a year below −10 °C, and on those days CSA A23.1 governs: concrete placed at 10 °C or more, held at 10 °C or more while it cures, 7 MPa before frost. The foam holds heat in the core; the wall top and footing get covered."
+    },
+    {
+      "q": "How deep does a Milton footing have to go?",
+      "a": "The Town of Milton Building Division's own drawings print a minimum of 4 ft (1.2 m) below grade, and the Building Code's Table 9.12.2.2 sets the same 1.2 m for a heated basement on clay or soils not clearly defined. The engineer can call for more where bearing is poor, such as the creek alluvium in the old town. On rock the Code sets no minimum depth, but the survey did not return rock at the surface at any Milton point, so we do not plan on it."
+    },
+    {
+      "q": "We are in Campbellville. What changes on the Escarpment?",
+      "a": "The ground and the paperwork. The survey's Campbellville point returns ice-contact sand and gravel over Amabel dolostone, the only queried point in Milton not on shale. Sand and gravel drain well but run, so the cut is shored or laid back, the footing sits on undisturbed material, and a footing that reaches the dolostone is rock excavation. The Town's checklist adds Niagara Escarpment Commission approval for construction within the Escarpment, a Halton Region well approval where a well supplies the house, and a septic design where there is no sewer."
+    }
+  ],
+  "related_note": "We also build in Oakville, Burlington and Halton Hills."
+}

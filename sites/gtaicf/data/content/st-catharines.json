@@ -1,0 +1,214 @@
+{
+  "slug": "st-catharines",
+  "title": "ICF foundations in St. Catharines | GTA ICF",
+  "description": "ICF foundations in St. Catharines: sand and gravel downtown, till to the south, shale beneath, the City's 2026 permit fees and inspections, and when we pour.",
+  "h1": "ICF foundations and walls in St. Catharines",
+  "kicker": "Niagara Region",
+  "answer": [
+    "An ICF foundation in St. Catharines starts with a building permit from the City's Planning and Building Services and a dig whose ground depends on the address: coarse sand and gravel on the lake plain under Downtown, Port Dalhousie and Grantham, clay-to-silt till through Merritton, Glenridge, Martindale and Vansickle, and laminated silt and clay above the Escarpment around Brock University. Red Queenston shale is the bedrock under every survey point below the brow, and no point returned rock at the surface.",
+    "The City prints no footing depth of its own. Ontario's Building Code sets 1.2 m as the minimum for a heated basement on clay or on soils not clearly defined, and every footing bears on undisturbed ground. The City inspects footings before concrete is poured and the foundation before backfill, on at least 48 hours' notice, and its 2026 schedule prices a new house at $1.78 per square foot before surcharges, with a $185.80 minimum."
+  ],
+  "tiles": [
+    {
+      "value": "179 days",
+      "label": "average frost-free period at St. Catharines A, April 24 to October 21",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      }
+    },
+    {
+      "value": "Queenston shale",
+      "label": "the bedrock at every survey point below the Escarpment; dolostone only at the brow",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, point query",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.24,43.16&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "55.6%",
+      "label": "of the city's 58,900 occupied homes are single-detached; 71% of the stock predates 1981",
+      "source": {
+        "name": "Statistics Canada, 2021 Census Profile, St. Catharines",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=St.%20Catharines&DGUIDlist=2021A00053526053&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0"
+      }
+    },
+    {
+      "value": "48 hours",
+      "label": "minimum notice the City asks for before a footing or pre-backfill inspection",
+      "source": {
+        "name": "City of St. Catharines, Building Inspections",
+        "url": "https://www.stcatharines.ca/building-and-renovating/inspections/building-inspections/"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What the ground is under St. Catharines",
+    "paragraphs": [
+      "From Downtown north to the lakeshore, St. Catharines is coarse ground. Ontario Geological Survey point queries at Downtown, Port Dalhousie and Grantham return coarse-textured glaciolacustrine sand and gravel, which the survey labels littoral: laid down along an old shoreline. For a basement dig that cuts two ways. The material drains freely, so the weeping tile at the footing works as intended, and it runs, so the cut faces are laid back or shored and the footing sits on undisturbed material, not on sand the machine loosened. Near the lake and Martindale Pond the water table is the open question.",
+      "South and west of the centre the ground changes. Point queries at Merritton, lower Glenridge, and in the 1980s subdivisions of Martindale and Vansickle all return clay-to-silt till, which the survey describes as derived from glaciolacustrine deposits or shale. Till is the reverse of the lakeshore sand: it holds a vertical cut for the days the hole is open, but it drains slowly, so rain that reaches the excavation stays there, and till pushed back against the wall holds water at the membrane instead of letting it fall to the weeping tile. On this ground the Code's 1.2 m minimum footing depth for a heated basement applies.",
+      "Below the Escarpment the bedrock is the Queenston Formation, red shale and siltstone; every lake-plain point sits on it. Only at the brow, at Brock University and the Glenridge Quarry, does it switch to Lockport dolostone under fine laminated silt and clay. How deep the shale lies is not mapped by the survey, but no point returned bedrock at the surface, so rock excavation is not the expectation anywhere queried. Two mapped deposits are variable ground: fill along the Welland Canal corridor near Lock 3, and modern alluvium on the Twelve Mile Creek valley floor, where the dig depth is unknown until the hole is open."
+    ],
+    "table_note": "Surface unit and bedrock formation from Ontario Geological Survey point queries (MRD 128-REV and MRD 219), one coordinate per neighbourhood, run 25 September 2026. A query point speaks for the neighbourhood, not for your lot; the footing is designed from what the excavation and, where the reviewer asks, a geotechnical report show.",
+    "neighbourhoods": [
+      {
+        "name": "Downtown",
+        "surface": "Sand and gravel, old shoreline deposits",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Port Dalhousie",
+        "surface": "Sand and gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Grantham",
+        "surface": "Sand and gravel",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Merritton",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glenridge, Cliff Road",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Glenridge Quarry, above the brow",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Martindale",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Vansickle",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Brock University",
+        "surface": "Silt and clay, laminated",
+        "bedrock": "Lockport, dolostone"
+      },
+      {
+        "name": "Twelve Mile Creek valley floor",
+        "surface": "Modern alluvium",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Welland Canal corridor, east side",
+        "surface": "Man-made fill",
+        "bedrock": "Queenston, red shale"
+      },
+      {
+        "name": "Western Hill",
+        "surface": "Not queried; between valley alluvium and till",
+        "bedrock": "Queenston, red shale"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits, fees and inspections in St. Catharines",
+    "authority_short": "the City of St. Catharines",
+    "paragraphs": [
+      "Building permits in St. Catharines are issued by the City's Planning and Building Services, not by Niagara Region. The City's online applications portal takes residential alteration permits and accessory structures among other types; an application it does not list goes in by mail, courier, the James Street drop box at City Hall or over the counter at 50 Church Street, with two sets of drawings. A foundation is permitted as part of the house or addition above it, and the 2024 to 2026 schedule of rates and fees prices that permit by area: $1.78 per square foot for a single, semi, duplex, triplex or row house in 2026, $1.59 for an addition to an existing house and $1.59 for a finished basement, all before surcharges and subject to a $185.80 minimum. Where a sidewalk exists the City also takes a road allowance damage deposit, $727.30 for a residential building of up to four units and $355.25 for an addition requiring footings.",
+      "What goes in for an ICF wall is the same set as for any foundation, plus the wall system's own documentation. Ontario's Building Code carries prescriptive rules for flat insulating concrete form foundation walls in Subsection 9.15.4 and asks the form units to conform to CAN/ULC-S717.1; some systems also carry a CCMC evaluation report. The system we install is named on the quote, and its documentation goes in the permit package with the drawings. A house within the Subsection's limits can be drawn under Part 9; a taller wall, a weaker soil or a surcharge sends the design to an engineer under Part 4. The City's residential permit guides describe drawings for houses, additions and decks rather than for any one wall system, and the schedule's alternative solutions line, $500 per application for up to four hours of staff time, is for designs outside the Code's own rules, which a flat-wall ICF foundation within Subsection 9.15.4 is not. We prepare the package with you.",
+      "The City's inspection list for every permit begins with footings, piers and slabs on grade before pouring concrete, then the foundation prior to backfilling, then framing and structural, with insulation and vapour barrier later. Inspections are requested at least 48 hours ahead, by phone at 905-688-5601 extension 1667, by email to bldginspections@stcatharines.ca, or through the portal for permits issued online, and a failed visit costs a $183.95 re-inspection fee in 2026. We request both concrete-stage inspections and stand them with the inspector. The schedule also carries a separate 'Foundation' line at $0.55 per square foot and an underpinning permit at $390.10; which projects those apply to is not printed, so we confirm them with the City for a foundation-only job or a basement lowering. No review time is published; the City states that the Building Code's mandated timelines start after it has reviewed the application and its documentation."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "City of St. Catharines Planning and Building Services; the online applications portal for the permit types it lists, otherwise mail, courier, the City Hall drop box or the counter at 50 Church Street, with two sets of drawings",
+        "url": "https://www.stcatharines.ca/building-and-renovating/applying-for-a-building-permit/"
+      },
+      {
+        "label": "New house fee, 2026",
+        "value": "$1.78 per square foot for a single, semi, duplex, triplex, row house or multiple dwelling (Group C), before surcharges; the schedule does not print how the area is measured",
+        "url": "https://stcatharines-ca.govstack.com/media/bnqafmk2/rates-and-fees-by-law-2023-137.pdf"
+      },
+      {
+        "label": "Addition and basement fees, 2026",
+        "value": "$1.59 per square foot for an addition to an existing house and $1.59 for a finished basement; a separate 'Foundation' line at $0.55 per square foot and an underpinning permit at $390.10, scope not printed; $185.80 minimum per permit; re-inspection $183.95",
+        "url": "https://stcatharines-ca.govstack.com/media/bnqafmk2/rates-and-fees-by-law-2023-137.pdf"
+      },
+      {
+        "label": "Road allowance deposit",
+        "value": "Where a sidewalk exists: $727.30 per application for residential up to four units, $355.25 for an addition requiring footings, 2026",
+        "url": "https://stcatharines-ca.govstack.com/media/bnqafmk2/rates-and-fees-by-law-2023-137.pdf"
+      },
+      {
+        "label": "Concrete-stage inspections",
+        "value": "Footings, piers and slabs on grade before pouring concrete; foundation prior to backfilling; at least 48 hours' notice by phone (905-688-5601 ext. 1667), email or the online portal",
+        "url": "https://www.stcatharines.ca/building-and-renovating/inspections/building-inspections/"
+      },
+      {
+        "label": "Review time",
+        "value": "No day count published; Building Code mandated timelines start after the City has reviewed the application and documentation",
+        "url": "https://www.stcatharines.ca/building-and-renovating/applying-for-a-building-permit/"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Pour season and frost in St. Catharines",
+    "paragraphs": [
+      "St. Catharines A, the Environment Canada station about 7 km north-east of the city centre, records a milder winter than our Halton and Hamilton service areas: a January mean of −3.8 °C, 46 days a year when the temperature never rises above freezing, and 26.7 days below −10 °C. The frost-free period averages 179 days, April 24 to October 21, and because the daily minimum reaches freezing on far more days than the maximum does, about 81 days a year cross 0 °C between night and day. Under CSA A23.1 a pour is cold-weather work when the forecast puts the air below 5 °C within 24 hours: concrete for a wall under 300 mm thick is placed at 10 °C or more, held at 10 °C or more while it cures, and reaches 7 MPa before it meets frost.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The EPS panels of the form hold heat in the concrete core while it cures, which the form makers' manuals describe as thermal protection in cold weather, but the open top of the wall and the footing still need cover, snow and ice come out of the cavity before the pump arrives, and the ready-mix supplier heats the mix. The footing depth does not move with the season. The City prints no depth of its own and keeps its sample section drawings at the Planning and Building Services counter; Ontario's Building Code sets 1.2 m as the minimum for a heated basement on clay or on soils not clearly defined, and no limit on rock or, for a heated basement, on coarse-grained soils, with undisturbed soil the rule in every case."
+    ],
+    "facts": [
+      {
+        "label": "Winter at St. Catharines A",
+        "value": "January mean −3.8 °C; 46 days a year with a maximum at or below 0 °C; 26.7 days below −10 °C; 1981 to 2010 normals",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "179 days on average, April 24 to October 21, St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1"
+      },
+      {
+        "label": "Cold-weather pour rule",
+        "value": "CSA A23.1, as reproduced by Concrete Ontario: forecast below 5 °C within 24 hours; concrete for sections under 300 mm placed at 10 to 32 °C, kept at 10 °C or more while curing, 7 MPa before frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Minimum footing depth",
+        "value": "1.2 m for a heated basement on clay or soils not clearly defined, Building Code Table 9.12.2.2; no St. Catharines drawing prints a depth",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Rock is rarely a line on a St. Catharines quote; water and ground type are. Shoring in the lakeshore sand and gravel, waterproofing where the water table is high near the lake, an engineer's call in the fill along the canal or the alluvium of the Twelve Mile Creek valley, pump reach on the tight lots of the older core, and travel to Niagara each show as their own line.",
+  "faqs": [
+    {
+      "q": "What will the excavator meet under a St. Catharines lot?",
+      "a": "It depends which part of the city you are in. On the lake plain through Downtown, Port Dalhousie and Grantham the survey maps coarse sand and gravel, which drains but runs, so the faces are shored or laid back. South and west, through Merritton, lower Glenridge, Martindale and Vansickle, it maps clay-to-silt till, which stands up but holds water. Above the Escarpment at Brock it is laminated silt and clay. Queenston shale is under all of it, and no query point put it at the surface."
+    },
+    {
+      "q": "Do we need waterproofing or just dampproofing in Port Dalhousie?",
+      "a": "Every below-grade wall is dampproofed on the outside and drained at the footing; where hydrostatic pressure occurs the Code requires waterproofing instead, and near the lake and Martindale Pond, in sand and gravel that lets groundwater move, the water table decides which you get. An ICF wall is insulated its full height, which under the Code brings a drainage layer against the membrane as well. A test pit before the quote is how we settle it, not the dig."
+    },
+    {
+      "q": "What does the City ask for with an ICF foundation?",
+      "a": "The same building permit as any house or addition, from Planning and Building Services, with the drawings and the wall system's documentation in the package. The Code asks ICF form units to conform to CAN/ULC-S717.1, and some systems also carry a CCMC evaluation report; the system we install is named on the quote, so the reviewer sees its papers rather than a generic sheet. The City publishes no ICF-specific checklist among its residential guides. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in a St. Catharines winter?",
+      "a": "Yes. The city has 46 days a year with no thaw at all and 26.7 days below −10 °C, fewer than Hamilton; on those days the pour is cold-weather work under CSA A23.1, which means concrete placed at 10 °C or more, a covered wall held at that temperature while it cures, and 7 MPa before frost reaches it. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost."
+    },
+    {
+      "q": "How deep does the footing go in Merritton or Martindale?",
+      "a": "The City does not print a footing depth; its sample drawings sit at the Planning and Building Services counter. Ontario's Building Code sets the minimum: 1.2 m below grade for a heated basement on clay or on soils not clearly defined, which covers the till under Merritton, lower Glenridge, Martindale and Vansickle, and always on undisturbed soil. On the lakeshore sand and gravel the Code table sets no depth limit for a heated basement, so there the depth comes from the design rather than the frost line."
+    },
+    {
+      "q": "We are beside the Welland Canal on the east side. Is the ground fill?",
+      "a": "The survey's point near Lock 3 returns man-made deposits, the map's category for fill, over Queenston shale. Fill is not undisturbed soil, and the Code requires an excavation to extend to undisturbed soil, so on a canal-corridor lot the dig depth is unknown until the hole is open, and an engineer decides what the footing bears on and whether the wall needs a Part 4 design. One point query is not a survey of your lot; the alluvium in the Twelve Mile Creek valley raises the same question."
+    }
+  ],
+  "related_note": "We also build in Thorold, Niagara-on-the-Lake and Lincoln, including Beamsville and Vineland."
+}

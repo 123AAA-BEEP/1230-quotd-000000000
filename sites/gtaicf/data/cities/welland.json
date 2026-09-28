@@ -1,0 +1,290 @@
+{
+  "slug": "welland",
+  "name": "Welland",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 42.99,
+  "lon": -79.25,
+  "sub_areas": [
+    {
+      "name": "Downtown Welland",
+      "note": "Centre of the city on the old (pre-By-Pass) Welland Canal alignment; the canal originally cut through the centre of Welland, creating the east side / west side split residents still use (Wikipedia). OGS point queries at the Wikipedia city coordinate (42.983, -79.233) and the reference coordinate (42.99, -79.25) return fine-textured glaciolacustrine silt and clay (unit 8a) over Salina Formation."
+    },
+    {
+      "name": "Dain City",
+      "note": "Southernmost part of Welland, where the two canal channels meet; a former company town (Marshall Dain / John Deere) annexed to Welland in the mid-1950s (Wikipedia, 42.94583, -79.24333). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8a) over Salina Formation."
+    },
+    {
+      "name": "Cooks Mills",
+      "note": "Small community in the easternmost part of the city, on Lyons Creek, on the far side of the By-Pass channel from the rest of Welland (Wikipedia, 42.99639, -79.17889). OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8a) over Salina Formation."
+    },
+    {
+      "name": "Fonthill border (northwest Welland)",
+      "note": "Urban growth has all but united the northwest part of Welland with the community of Fonthill in Pelham (Wikipedia). OGS point query inside Welland at 43.020, -79.270 returns unit 8a silt and clay over Guelph Formation dolostone; the Fonthill village coordinate itself (43.04389, -79.28750, outside Welland) returns coarse glaciolacustrine sand and gravel (unit 9) over Lockport Formation, so soils change across this border."
+    },
+    {
+      "name": "Welland Canal corridor (By-Pass channel and Recreational Waterway)",
+      "note": "The Welland By-Pass moved the shipping channel east of the city; the old channel through the centre remains as a waterway (Wikipedia). OGS point queries along the corridor (43.010, -79.243; 42.970, -79.260; 42.990, -79.215) return unit 21 man-made deposits (fill, urban development), consistent with canal excavation spoil and reworked ground."
+    },
+    {
+      "name": "East Welland (north of the By-Pass)",
+      "note": "Query point 43.029, -79.210 returns unit 8a silt and clay over Guelph Formation dolostone; bedrock formation changes from Salina (central and south Welland) to Guelph toward the north and east edge of the city."
+    }
+  ],
+  "census": {
+    "population_2021": 55750,
+    "private_dwellings_occupied": 23656,
+    "single_detached_pct": 64.5,
+    "period_of_construction": {
+      "pre_1960_pct": 36.4,
+      "1961_1980_pct": 29.1,
+      "1981_2000_pct": 19.0,
+      "2001_2021_pct": 15.4
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 15,265 of 23,660 occupied dwellings (structural type, 100% data). Period of construction (25% sample, total 23,655): 1960 or before 8,615; 1961-1980 6,895; 1981-1990 2,385; 1991-2000 2,105; 2001-2005 935; 2006-2010 715; 2011-2015 885; 2016-2021 1,115. 1981-2000 = 4,490; 2001-2021 = 3,650.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Welland, City (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Welland&DGUIDlist=2021A00053526032&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 55,750; Private dwellings occupied by usual residents: 23,656"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Welland (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Welland&DGUIDlist=2021A00053526032&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling: 23,660; Single-detached house: 15,265"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Welland (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Welland&DGUIDlist=2021A00053526032&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 8,615; 1961 to 1980 6,895; 1981 to 1990 2,385; 1991 to 2000 2,105"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated. This is the heavy lake-bed clay of the former glacial lake plain; the regional name 'Haldimand clay plain' is not carried in the OGS layer attributes and was not verified here.",
+        "where": "Nearly all of built-up Welland: query points at the reference coordinate (42.99, -79.25), the Wikipedia city coordinate (42.983, -79.233), Dain City, Cooks Mills, the Fonthill-border point (43.020, -79.270), east Welland (43.029, -79.210) and 42.987, -79.234 all return unit 8a."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 21 - Man-made deposits",
+        "description": "Fill, sewage lagoon, landfill, urban development.",
+        "where": "The Welland Canal corridor: query points at 43.010, -79.243; 42.970, -79.260 and 42.990, -79.215 return unit 21, consistent with canal excavation spoil and reworked ground along both the old channel and the By-Pass."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay.",
+        "where": "Not returned inside Welland at any query point; returned at the Fonthill village coordinate in Pelham (43.04389, -79.28750) just beyond the northwest border, on the Fonthill kame (name not verified)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Salina Formation (central, south and east Welland) with Guelph Formation at the north and northeast edge; both Silurian (OGS MRD219). Lockport Formation is returned at Fonthill in Pelham, outside the city.",
+      "description": "Salina: thin-bedded, argillaceous dolostone and shale, with beds and nodules of gypsum; thick salt beds in the deep subsurface. Guelph: tan to brown, fine- to medium-crystalline, sucrosic dolostone, fossiliferous, locally biohermal. OGS point queries return Salina at the reference coordinate, downtown, Dain City, Cooks Mills and the canal-corridor points, and Guelph at 43.020, -79.270 and 43.029, -79.210.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). No OGS query point in Welland returned bedrock at or near surface (unit 3); the clay plain (unit 8a) covers the whole city at the map scale. The 'Bertie/Onondaga at depth' hint was not confirmed by the MRD219 query, which returns Salina and Guelph, not Bertie or Onondaga."
+    },
+    "implications_for_piles": [
+      "OGS maps fine-textured glaciolacustrine silt and clay (unit 8a) under essentially all of Welland's built-up area; the City-hosted GTA standard deck sizing sheet D01d rates 'soft clay' at 40 kPa and 'firm clay' at 75 kPa allowable bearing versus 150 kPa for stiff clay, so pier or pile sizing here depends on which clay consistency a site actually has.",
+      "The Welland Canal corridor (old channel and By-Pass) is mapped as unit 21 man-made deposits (fill, urban development); fill depth and quality vary and the standard drawings require footings on 'natural undisturbed soil, rock or compacted granular fill', so a site check is needed before assuming standard footing depths apply.",
+      "The City-hosted standard deck drawing D01b sets the conventional baseline any pile design is compared against: poured concrete pier minimum 1200 mm below grade on undisturbed soil, with pier diameter from sheet D01d by soil bearing capacity and supported deck area.",
+      "No Welland deck drawing or guide retrieved says anything about helical piles, CCMC, BMEC or engineer requirements; the City's standard-drawings page says construction significantly different from a standard drawing must be submitted on the applicant's own drawings. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 42.99, -79.25)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.25,42.99&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a, Fine-textured glaciolacustrine deposits, silt and clay, minor sand and gravel, Massive to well laminated"
+      },
+      {
+        "name": "OGS MRD 128-REV surficial query at the Welland Canal corridor (43.010, -79.243)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2430,43.0100&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 21, Man-made deposits, fill, sewage lagoon, landfill, urban development"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 42.99, -79.25)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.25,42.99&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Salina; thin-bedded, argillaceous dolostone and shale, with beds and nodules of gypsum; thick salt beds in the deep subsurface"
+      },
+      {
+        "name": "OGS MRD 219 bedrock query at north Welland (43.029, -79.210)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.2100,43.0290&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Guelph; tan to brown, fine- to medium-crystalline, sucrosic dolostone; fossiliferous, locally biohermal"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "City of Welland - Wood deck (D01d) structural sizing tables (GTA standard drawing hosted by the City)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/hzldxzx0/wood-deck-d01d-structural-sizing-tables.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "SOIL BEARING CAPACITIES (kPa): SOFT CLAY 40; FIRM CLAY 75; STIFF CLAY 150; TILL 200; CLAY SHALE 500"
+      },
+      {
+        "name": "Wikipedia - Welland",
+        "url": "https://en.wikipedia.org/wiki/Welland",
+        "retrieved_at": "2026-09-25",
+        "quote": "Prior to the Welland By-Pass project, the Welland Canal cut through the centre of Welland."
+      },
+      {
+        "name": "Wikipedia - Dain City, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Dain_City,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Dain City is a small suburb at the southernmost part of Welland, Ontario, Canada."
+      },
+      {
+        "name": "Wikipedia - Cooks Mills, Niagara Region, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Cooks_Mills,_Niagara_Region,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Cooks Mills is a small community in the easternmost part of the city of Welland"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Welland Building Division, Planning and Development Services (the City's pages say 'the building division of the planning and development services department'; a City notice PDF also uses 'Building and Inspections Division' and 'Infrastructure and Development Services Building Division')",
+    "deck_permit_required_when": "The City-hosted guide 'A guide to building permits (A01) - building permit Q and A' lists 'Raised porches or decks' under projects for which permits are normally required and 'Decks which are 600mm or less from grade' under projects for which permits are not normally required; the same sheet says to contact the local municipal office for specific permit requirements. The City publishes no Welland-specific deck height/area threshold page; the A01 sheet is labelled 'for general information only'.",
+    "footing_depth_requirement": "City-hosted GTA standard uncovered wood deck drawing D01b: 'POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL, FOR SIZES SEE SHEET D01d'. Standard specification S01a: footings minimum 1200 mm below finished grade, founded on natural undisturbed soil, rock or compacted granular fill. Pier sizes on D01d are tabulated by soil bearing capacity (soft clay 40 kPa to sound rock 500 kPa) and supported deck area. No helical pile, CCMC, BMEC or engineer wording appears on any Welland deck sheet retrieved.",
+    "inspections": [],
+    "fee_note": "City Building Fees page (current as retrieved 2026-09-25): 'Garage, deck, shed, and sunroom - Flat $199'; flat-rate minimum permit fee $199. Other fees or deposits (water meter, development charges, NPCA) may apply after review.",
+    "timeline_note": "City states the permit will not be processed until a complete application is submitted, and that processing time depends on the division's workload but must meet the maximum timeframe allowed in the Ontario Building Code; no day-count is printed on the page. The City's residential permit checklist header reads '10 day permit/decision' for Part 9 housing.",
+    "portal_url": "https://cviewportal.welland.ca/cityviewportal",
+    "portal_note": "CityView Portal: 'Apply for permits, check the status of applications and inspections' online; the Building Division is at Civic Square, 60 East Main St., Welland, 905-735-1700 x2251 or x2257, devserv@welland.ca. No deck-specific inspection list is published on welland.ca; inspections are tracked through the portal.",
+    "sources": [
+      {
+        "name": "City of Welland - Building or renovating",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The building division of the planning and development services department reviews, plans, and conducts inspections for building permits"
+      },
+      {
+        "name": "City of Welland - Building Fees",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/building-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Garage, deck, shed, and sunroom Flat $199"
+      },
+      {
+        "name": "City of Welland - Building Fees (minimum fee and timeline)",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/building-fees/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Flat-rate minimum permit fee is $199."
+      },
+      {
+        "name": "City of Welland - Standard Drawings and Samples",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/standard-drawings-and-samples/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Applicants proposing construction significantly different from a standard drawing must provide their drawings."
+      },
+      {
+        "name": "City of Welland - Wood deck (D01b) fixed to brick veneer and wood framing (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/f0ynccvk/wood-deck-d01b-fixed-to-brick-veneer-and-wood-framing.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL, FOR SIZES SEE SHEET D01d"
+      },
+      {
+        "name": "City of Welland - Specification (S01a) excavation, concrete and masonry (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/pvnnrz5u/specification-s01a-excavation-concrete-and-masonry.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Footings: minimum 15MPa poured concrete; minimum 1200mm below finished grade"
+      },
+      {
+        "name": "City of Welland - A guide to building permits (A01) building permit Q and A (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/nx3fvzu3/a-guide-to-building-permits-a01-building-permit-q-and-a.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Permits are not normally required for: Decks which are 600mm or less from grade"
+      },
+      {
+        "name": "City of Welland - Permit Application Checklist, Residential Housing (PDF, January 1, 2025)",
+        "url": "https://www.welland.ca/media/xo4pa5rv/permit-application-checklist-residential-housing.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "City of Welland Planning and Development Services Building Division 60 East Main Street, Welland, ON L3B 3X4"
+      },
+      {
+        "name": "City of Welland - CityView Portal",
+        "url": "https://cviewportal.welland.ca/cityviewportal",
+        "retrieved_at": "2026-09-25",
+        "quote": "Apply for permits, check the status of applications and inspections, submit complaints"
+      },
+      {
+        "name": "City of Welland - Building permits (application forms page)",
+        "url": "https://www.welland.ca/for-wellanders/permits-and-licences/building-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "APPLY OR SEARCH FOR PERMITS; Application for a permit to construct or demolish"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Port Colborne (Climate ID 6136606; 42.88 N, 79.25 W; 175.3 m), about 12 km due south of the Welland reference coordinate; St. Catharines A (Climate ID 6137287; 43.2 N, 79.17 W; 97.8 m, about 24 km north) used as a check",
+    "normals_period": "1981-2010 (Port Colborne temperature computed from 1981-2006 records, 26 years, code A; frost and cold-day counts code C). No 1991-2020 normals were retrievable for Port Colborne, St. Catharines A or any Welland-named station: the 1991-2020 station pages returned no data tables and the station-name search returned only the empty search form.",
+    "frost_free_days": 182,
+    "jan_mean_temp_c": -3.7,
+    "days_below_minus_10c": 23.2,
+    "freeze_thaw_note": "Port Colborne 1981-2010: January daily minimum -6.9 C; 45.5 days/yr with daily maximum <= 0 C; 120.7 days/yr with daily minimum <= 0 C, so roughly 75 days a year cross 0 C between night and day (derived by subtraction); last spring frost Apr 25, first fall frost Oct 26; 137.7 cm annual snowfall. St. Catharines A 1981-2010 check: January mean -3.8 C, 26.7 days/yr below -10 C, 46.0 days/yr with maximum <= 0 C, 179 frost-free days (Apr 24 - Oct 21).",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.7 -2.9 0.8 7.0 13.2 18.7 21.9 21.3 17.4 11.0 5.5 -0.4 9.2 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (days with minimum < -10 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 8.8 7.3 3.0 0.04 0.0 0.0 0.0 0.0 0.0 0.0 0.12 4.0 23.2 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (frost-free period and days with maximum <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Length of Frost-Free Period 182 Days C; <= 0 C 15.7 13.0 6.6 0.27 ... 45.5 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=port&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.8 ...; < -10 C 10.5 8.3 3.5 ... 26.7 D; Average Length of Frost-Free Period 179 Days D"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": null,
+    "note": "The 1.2 m figure is sourced as the 'MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL' pier depth printed on the GTA standard wood deck drawing D01b that the City of Welland hosts and accepts for submission, and the 'minimum 1200mm below finished grade' footing line in the City-hosted specification S01a. The Ontario Building Code clause itself was NOT retrieved (ontario.ca/laws renders the regulation as a JavaScript shell and the 2024 Building Code Compendium is sold through Publications Ontario). Do not cite a clause number until the primary text is retrieved.",
+    "sources": [
+      {
+        "name": "City of Welland - Wood deck (D01b) fixed to brick veneer and wood framing (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/f0ynccvk/wood-deck-d01b-fixed-to-brick-veneer-and-wood-framing.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "POURED CONCRETE PIER MIN. 1200mm BELOW GRADE ON UNDISTURBED SOIL"
+      },
+      {
+        "name": "City of Welland - Specification (S01a) excavation, concrete and masonry (PDF)",
+        "url": "https://media-003-ca.cdn.govstack.com/welland-ca/media/pvnnrz5u/specification-s01a-excavation-concrete-and-masonry.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "minimum 1200mm below finished grade; Footings shall be founded on natural undisturbed soil, rock or compacted granular fill"
+      },
+      {
+        "name": "City of Welland - Standard Drawings and Samples",
+        "url": "https://www.welland.ca/for-wellanders/property-information/building-or-renovating/standard-drawings-and-samples/",
+        "retrieved_at": "2026-09-25",
+        "quote": "Greater Toronto Area (GTA) standard uncovered wood deck drawings. Note: Drawings may be used or modified for submission."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

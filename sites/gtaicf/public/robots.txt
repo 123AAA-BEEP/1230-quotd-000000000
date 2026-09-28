@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /thanks/
+
+Sitemap: https://gtaicf.ca/sitemap.xml

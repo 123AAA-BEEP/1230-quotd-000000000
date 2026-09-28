@@ -1,0 +1,323 @@
+{
+  "slug": "port-colborne",
+  "name": "Port Colborne",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 42.89,
+  "lon": -79.25,
+  "sub_areas": [
+    {
+      "name": "Downtown (West Street / canal)",
+      "note": "City centre on the west bank of the Welland Canal at Lake Erie (Wikipedia geo 42.883, -79.250). OGS surficial point query at 42.883, -79.250 and at the reference coordinate 42.89, -79.25 returns unit 21 man-made deposits (fill, urban development) over Onondaga Formation limestone (Bois Blanc Formation at the reference coordinate)."
+    },
+    {
+      "name": "Sugarloaf",
+      "note": "West of the canal around Sugarloaf Street, Sugar Loaf Point and Sugarloaf Harbour Marina on Gravelly Bay (Wikipedia community list). OGS point query at 42.8806, -79.2626 returns unit 17 eolian fine sand and silt over Onondaga Formation limestone."
+    },
+    {
+      "name": "Lakeshore (Lakeshore Road West / Tennessee Avenue)",
+      "note": "Lake Erie frontage west of downtown; Tennessee Avenue holds the surviving Humberstone Club summer homes built from 1888 (Wikipedia). OGS point query at Lakeshore Road West (42.8778, -79.2706) returns unit 21 man-made deposits over Onondaga Formation; at Tennessee Avenue (42.8797, -79.2619) the Sugarloaf eolian sand polygon applies."
+    },
+    {
+      "name": "Humberstone",
+      "note": "Former Village of Humberstone (merged 1952) around Killaly Street and Highway 3, north of the old town (Wikipedia). OGS point queries at Killaly Street East / Highway 3 (42.896, -79.230) and Killaly Street West (42.8916, -79.2740) both return unit 3 Paleozoic bedrock at or near surface over Onondaga Formation limestone."
+    },
+    {
+      "name": "Sherkston",
+      "note": "Rural lakeshore community east of the city, with Sherkston Beaches and the flooded Sherkston Quarry (Wikipedia list; OSM place 'Sherkston Quarry'). OGS point query at 42.8708, -79.1335 returns unit 3 Paleozoic bedrock at or near surface over Onondaga Formation; nearby Pleasant Beach (42.8642, -79.1266) returns unit 17 eolian sand."
+    },
+    {
+      "name": "Nickel Beach / Lake Road",
+      "note": "Beach at the foot of Lake Road east of the canal, next to the former Inco refinery lands (Wikipedia). OGS point query at 42.8783, -79.2435 returns unit 17 eolian fine sand and silt over Onondaga Formation limestone."
+    },
+    {
+      "name": "Gasline / Cedar Bay",
+      "note": "East-side lakeshore communities at Pinecrest Road and Vimy Road and at Cedar Bay Road (Wikipedia list). OGS point queries return unit 8a fine-textured glaciolacustrine silt and clay at Pinecrest Road (42.8858, -79.1846) and unit 3 bedrock at surface at Cedar Bay Road (42.8915, -79.1746), both over Onondaga Formation."
+    },
+    {
+      "name": "Lorraine",
+      "note": "Weaver Road and Firelane 1, east of the canal (Wikipedia list). OGS point query at 42.8765, -79.2044 returns unit 8a fine-textured glaciolacustrine silt and clay over Onondaga Formation limestone."
+    },
+    {
+      "name": "Humberstone Marsh (rural north)",
+      "note": "Wetland north of Highway 3 (OSM place). OGS point query at 42.9201, -79.1647 returns unit 8a glaciolacustrine silt and clay over Bertie Formation dolostone (Silurian), showing the Onondaga-to-Bertie bedrock contact runs through the north of the city."
+    }
+  ],
+  "census": {
+    "population_2021": 20033,
+    "private_dwellings_occupied": 8710,
+    "single_detached_pct": 70.6,
+    "period_of_construction": {
+      "pre_1960_pct": 54.9,
+      "1961_1980_pct": 25.5,
+      "1981_2000_pct": 11.7,
+      "2001_2021_pct": 7.8
+    },
+    "derivation_note": "Percentages computed from Census Profile counts: single-detached 6,145 of 8,710 occupied dwellings (structural type, 100% data); period of construction (25% sample, total 8,710): 1960 or before 4,785; 1961-1980 2,225; 1981-1990 610; 1991-2000 405; 2001-2005 220; 2006-2010 180; 2011-2015 70; 2016-2021 210.",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Port Colborne, City (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Port%20Colborne&DGUIDlist=2021A00053526011&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 20,033; Private dwellings occupied by usual residents: 8,710"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Port Colborne (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Port%20Colborne&DGUIDlist=2021A00053526011&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling: 8,710; Single-detached house: 6,145"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Port Colborne (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Port%20Colborne&DGUIDlist=2021A00053526011&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 4,785; 1961 to 1980 2,225; 1981 to 1990 610; 1991 to 2000 405"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results - Port Colborne",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Port%20Colborne",
+        "retrieved_at": "2026-09-25",
+        "quote": "Port Colborne (City) [Census subdivision], Ontario"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 3 - Paleozoic bedrock",
+        "description": "Bedrock at or near surface (drift too thin to map).",
+        "where": "Humberstone (Killaly Street East / Highway 3 and Killaly Street West), Cedar Bay Road and the Sherkston Quarry area all return unit 3; consistent with the Wikipedia note that chert was quarried from outcroppings on the Onondaga Escarpment here."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 17 - Eolian deposits",
+        "description": "Fine to very fine sand and silt (wind-blown, lakeshore dunes).",
+        "where": "Lake Erie shoreline: Sugarloaf (Sugarloaf Street), Nickel Beach (Lake Road) and Pleasant Beach query points return unit 17."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated. This is the OGS unit underlying what regional literature calls the Haldimand clay plain; that name is not carried in the layer attributes and was not verified here.",
+        "where": "East side and rural north: Lorraine (Weaver Road), Gasline (Pinecrest Road) and Humberstone Marsh query points return unit 8a."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 21 - Man-made deposits",
+        "description": "Fill, sewage lagoon, landfill, urban development.",
+        "where": "The urban core along the Welland Canal: the reference coordinate (42.89, -79.25), the Wikipedia city coordinate (42.883, -79.250) and Lakeshore Road West all return unit 21."
+      }
+    ],
+    "bedrock": {
+      "formation": "Onondaga Formation (Devonian limestone) under almost all of the city; Bois Blanc Formation (Devonian) at the reference coordinate near the canal; Bertie Formation (Silurian dolostone) in the rural north (OGS MRD219).",
+      "description": "Onondaga: variably cherty, fossiliferous or argillaceous limestone, with locally developed bioherms and minor shale; three members mapped (Edgecliffe, Clarence, Moorehouse). Bois Blanc: grey to brown, very cherty, fossiliferous, argillaceous limestone and dolostone; thin beds of glauconitic quartz sandstone locally near base (Springvale Member). Bertie: variety of brown to grey, argillaceous, laminated, bituminous and burrowed dolostones. OGS point queries return Onondaga at Downtown, Sugarloaf, Lakeshore Road West, Humberstone, Sherkston, Nickel Beach, Gasline, Cedar Bay and Lorraine; Bois Blanc at 42.89, -79.25; Bertie at Humberstone Marsh (42.9201, -79.1647).",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). OGS surficial mapping shows bedrock at or near surface (unit 3) at the Humberstone, Cedar Bay and Sherkston Quarry query points, and Wikipedia records chert outcrops on the Onondaga Escarpment in the area. Elsewhere bedrock lies beneath eolian sand, glaciolacustrine silt and clay or urban fill of unstated thickness."
+    },
+    "implications_for_piles": [
+      "Port Colborne's deck permit guide requires 'Foundation system details' on the construction drawings and its sample deck plan labels sonotube and footing sizes; it prints no footing depth and does not mention helical piles, CCMC or BMEC, so any helical foundation is submitted as an engineered foundation system with manufacturer details (the City's application list asks for manufacturer specifications where engineered material is used).",
+      "OGS maps bedrock at or near surface (unit 3) over Onondaga limestone at the Humberstone, Cedar Bay and Sherkston Quarry query points; shallow, hard, cherty limestone is a site condition that can stop or damage a helical pile before design depth and must be confirmed before installation in those areas.",
+      "Along the Lake Erie shore (Sugarloaf, Nickel Beach, Pleasant Beach) OGS maps wind-blown fine sand and silt (unit 17); on the east side and rural north (Lorraine, Gasline, Humberstone Marsh) it maps glaciolacustrine silt and clay (unit 8a). Torque and capacity behaviour differ between these soils, so a soil-specific determination is not transferable between neighbourhoods.",
+      "The urban core along the canal (downtown, Lakeshore Road West) is mapped as man-made fill (unit 21); fill depth and quality are unknown from the OGS layer and need site confirmation. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 42.89, -79.25)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.25,42.89&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 21, Deposit: Man-made deposits, Material: fill, sewage lagoon, landfill, urban development"
+      },
+      {
+        "name": "OGS MRD 128-REV layer 3 query at Humberstone, Killaly Street East / Highway 3 (42.896, -79.230)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2300,42.8960&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 3, Deposit: Paleozoic bedrock"
+      },
+      {
+        "name": "OGS MRD 128-REV layer 3 query at Sugarloaf Street (42.8806, -79.2626)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2626,42.8806&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 17, Deposit: Eolian deposits, Material: fine to very fine sand and silt"
+      },
+      {
+        "name": "OGS MRD 128-REV layer 3 query at Lorraine, Weaver Road (42.8765, -79.2044)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.2044,42.8765&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a, Deposit: Fine-textured glaciolacustrine deposits, Material: silt and clay, minor sand and gravel"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 42.89, -79.25)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.25,42.89&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Bois Blanc; grey to brown, very cherty, fossiliferous, argillaceous limestone and dolostone"
+      },
+      {
+        "name": "OGS MRD 219 layer 4 query at Sugarloaf Street (42.8806, -79.2626)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.2626,42.8806&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Onondaga; variably cherty, fossiliferous or argillaceous limestone, with locally developed bioherms and minor shale"
+      },
+      {
+        "name": "OGS MRD 219 layer 4 query at Humberstone Marsh (42.9201, -79.1647)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.1647,42.9201&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Bertie; variety of brown to grey, argillaceous, laminated, bituminous and burrowed dolostones"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Port Colborne (history and communities)",
+        "url": "https://en.wikipedia.org/wiki/Port_Colborne",
+        "retrieved_at": "2026-09-25",
+        "quote": "ready availability of flint and chert from outcroppings on the Onondaga Escarpment"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Port Colborne Building Division (the City's Citizen's Guide also says 'Building Department'; contact buildingadmin@portcolborne.ca, 905-228-8113)",
+    "deck_permit_required_when": "City deck permit page: a permit is required to build a deck that exceeds 23 5/8 in (600 mm) in height from the ground, is larger than 10 square metres (approximately 108 square feet) or is attached to an existing structure. The 'Guidelines for Deck Permits' PDF uses the same three tests: more than 600 mm (23 5/8 in) above ground level, greater than 10 m2 (108 ft2) in area, or attached to a building. (The same web page elsewhere prints '23-5/8 in (500mm)' for decks beside accessory structures; the 600 mm figure is the one in the deck section and the PDF.)",
+    "footing_depth_requirement": "Not printed. The City's Sample Deck Plan labels 'Sonotubes size', 'Posts size' and 'Footing size' on the foundation plan and says 'Sample drawing for information only, please refer to Ontario Building Code, Division B Section 9'; no depth below grade or frost depth appears. The deck guide requires 'Foundation system details' on the section drawing. Neither document mentions helical piles, CCMC or BMEC; the City's general application list says to include manufacturer specifications if engineered material is used.",
+    "inspections": [
+      "Deck-specific inspection stages are not published; the City says 'refer to your permit package for instructions on what inspections are required for your project'",
+      "A minimum of two (2) working days' notice is required to book an inspection (Citizen's Guide; the web page says two days)",
+      "Fee Schedule note 4: $145.00 paid at application plus $57.00 for each additional inspection in excess of one where the building is not ready for occupancy"
+    ],
+    "fee_note": "Fee By-law Schedule/Appendix O (columns '2024 Fee' and '2025 Proposed Fee'): Uncovered deck/porch per square foot $0.60 (2024) / $0.64 (2025 proposed); Covered deck/porch the same; Minimum Fee for all Building Permits $145.00 (2024) / $155.00 (2025 proposed). A non-refundable minimum application fee is due at submission. No 2026 schedule was found on the City site.",
+    "timeline_note": "Citizen's Guide to Building Permits (updated July 2024): a complete application allows review 'in a timely manner (10 business days for most single-family dwelling projects)'; incomplete applications may delay issuance. Inspections need two working days' notice.",
+    "portal_url": "https://citywideportal.com/auth/login",
+    "portal_note": "The City's Building and Construction page says 'Apply online and gain access to the Citywide Customer Portal' and links a Citywide Portal Quick Reference Guide; applications may also be submitted to the Building Division at City Hall.",
+    "sources": [
+      {
+        "name": "City of Port Colborne - Building and Construction (deck permits, applying, inspections)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/building-and-construction.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "A permit is required to build a deck, that exceeds 23 5/8\" (600mm) in height from the ground, is larger than 10 square metres"
+      },
+      {
+        "name": "City of Port Colborne - Building and Construction (Building Division, portal)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/building-and-construction.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "Apply online and gain access to the Citywide Customer Portal."
+      },
+      {
+        "name": "City of Port Colborne - Guidelines for Deck Permits (PDF)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Deck%20Permit%20Guidelines.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "It will be more than 600 mm (23 5/8 in) above ground level; It will be greater than 10 m2 (108 ft2) in area"
+      },
+      {
+        "name": "City of Port Colborne - Sample Deck Plan (PDF)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Sample%20Deck%20Plan.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Sonotubes size; Posts size; Footing size; Foundation Plan Scale: 1:50"
+      },
+      {
+        "name": "City of Port Colborne - Citizen's Guide to Building Permits, updated July 2024 (PDF)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Building%20Permit%20Guide%202024.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "review in a timely manner (10 business days for most single-family dwelling projects)"
+      },
+      {
+        "name": "City of Port Colborne - Citizen's Guide to Building Permits (inspections)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Building%20Permit%20Guide%202024.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "A minimum of two (2) working days notice is required to book an inspection."
+      },
+      {
+        "name": "City of Port Colborne - Fee By-law Schedule O: Permits for Construction, Demolition, Occupancy... (PDF)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Forms%20and%20Documents/Schedule%20O%20-%20Permits%20for%20Construction,%20Demolition,%20Occupancy%20and%20Change%20of%20Use,%20Transfer%20of%20Permits%20and%20Inspections.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Uncovered deck/porch Per square foot $0.60 $0.64; Minimum Fee for all Building Permits $145.00 $155.00"
+      },
+      {
+        "name": "City of Port Colborne - Building Permit Fees and Development Charges",
+        "url": "https://www.portcolborne.ca/en/business-and-development/Building_Permit_Fees_and_Development_Charges.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "A minimum application fee is due upon submitting a building permit application."
+      },
+      {
+        "name": "Wikipedia - Port Colborne (municipal status within Niagara Region)",
+        "url": "https://en.wikipedia.org/wiki/Port_Colborne",
+        "retrieved_at": "2026-09-25",
+        "quote": "In 1970, Niagara Region municipal restructuring added Humberstone Township, further expanding the city."
+      }
+    ]
+  },
+  "climate": {
+    "station": "Port Colborne (Climate ID 6136606; 42 53' N, 79 15' W; 175.3 m), about 1 km south of the reference coordinate, 1981-2010 normals (no 1991-2020 composite exists for this station). Nearest 1991-2020 composite: Welland-Pelham (Climate ID 6139449; 42.97 N, 79.33 W), about 11 km north-northwest.",
+    "normals_period": "1981-2010 for Port Colborne (temperature code A, day-count and frost codes C); 1991-2020 for Welland-Pelham and Fort Erie comparison values",
+    "frost_free_days": 182,
+    "jan_mean_temp_c": -3.7,
+    "days_below_minus_10c": 23.2,
+    "freeze_thaw_note": "Port Colborne 1981-2010: January daily minimum -6.9 C; last spring frost Apr 25, first fall frost Oct 26; 120.7 days/yr with minimum <= 0 C versus 45.5 days/yr with maximum <= 0 C, so roughly 75 days a year cross 0 C between night and day (derived by subtraction); 137.7 cm annual snowfall. Welland-Pelham 1991-2020 (about 11 km NNW): January mean -4.1 C, 29.9 days/yr below -10 C, 160 frost-free days (May 6 - Oct 14), 134.1 days min <= 0 C, 46.1 days max <= 0 C. Fort Erie 1991-2020 (about 23 km E): January mean -3.8 C; annual day counts incomplete. St. Catharines A 1981-2010 (about 35 km N): January mean -3.8 C, 26.7 days below -10 C, 179 frost-free days.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.7 -2.9 0.8 7.0 13.2 18.7 21.9 21.3 17.4 11.0 5.5 -0.4 9.2 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (days with minimum < -10 C and <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 8.8 7.3 3.0 0.04 ... 4.0 23.2 C; <= 0 C ... 120.7 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Port Colborne (frost-free period, days max <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6136606&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Average Length of Frost-Free Period 182 Days C; Apr 25; Oct 26; <= 0 C ... 45.5 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Welland-Pelham",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139449&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -4.1 ...; < -10 C ... 29.9 A; Average Length of Frost-Free Period 160 Days D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Fort Erie",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=fort%20erie&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6132470&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.8 -3.3 0.5 6.5 13.2 18.6 21.1 20.8 17.1 10.8 5.3 -0.6 8.8 D"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=colborne&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.8 ...; < -10 C ... 26.7 D; Average Length of Frost-Free Period 179 Days D"
+      },
+      {
+        "name": "ECCC Climate Normals 1991-2020 composite station inventory",
+        "url": "https://climate.weather.gc.ca/climate_normals/station_inventory_e.html?yr=1991",
+        "retrieved_at": "2026-09-25",
+        "quote": "\"WELLAND-PELHAM\",\"C\",\"WELLAND-PELHAM\",\"6139449\",\"71752\",\"TWL\",\"ONTARIO\",\"42.97\",\"-79.33\",\"178.0\""
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Null because no City of Port Colborne deck document prints a minimum footing depth: the Sample Deck Plan labels only sonotube, post and footing sizes and defers to 'Ontario Building Code, Division B Section 9', and the Guidelines for Deck Permits asks for 'Foundation system details' without a depth. The 4 ft / 1.2 m figure printed on Oakville and Milton drawings is therefore not sourced for this municipality. The Ontario Building Code clause text itself was not retrieved (e-Laws renders O. Reg. 332/12 as a JavaScript shell; the 2024 Compendium is sold through Publications Ontario). Do not cite a clause number.",
+    "sources": [
+      {
+        "name": "City of Port Colborne - Sample Deck Plan (PDF)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Sample%20Deck%20Plan.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Sample drawing for information only, please refer to Ontario Building Code, Division B Section 9"
+      },
+      {
+        "name": "City of Port Colborne - Guidelines for Deck Permits (PDF)",
+        "url": "https://www.portcolborne.ca/en/business-and-development/resources/Building%20Division/Building%20Reference%20Guides%20Drawings/Deck%20Permit%20Guidelines.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Floor Plan, Section/Details Plan showing: Foundation system details"
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

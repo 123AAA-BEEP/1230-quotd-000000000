@@ -1,0 +1,287 @@
+{
+  "slug": "pelham",
+  "name": "Pelham",
+  "region": "Niagara Region",
+  "province": "ON",
+  "lat": 43.04,
+  "lon": -79.28,
+  "sub_areas": [
+    {
+      "name": "Fonthill",
+      "note": "The Town's main centre; Town Hall is at 20 Pelham Town Square, Fonthill (pelham.ca). Wikipedia coordinate 43.04389, -79.2875. OGS point queries at the reference coordinate and at the Wikipedia coordinate both return unit 9 coarse-textured glaciolacustrine sand and gravel over Lockport Formation dolostone. Wikipedia (Fonthill Kame) records a large aggregate quarry at the top of the kame."
+    },
+    {
+      "name": "Fenwick",
+      "note": "Western Pelham; Wikipedia coordinate 43.02472, -79.36111. OGS point query at that coordinate and at 43.02, -79.36 returns unit 9 coarse-textured glaciolacustrine sand and gravel over Guelph Formation dolostone."
+    },
+    {
+      "name": "Ridgeville",
+      "note": "Between Fonthill and Fenwick; Wikipedia coordinate 43.0375, -79.31111. OGS point query at the Wikipedia coordinate returns unit 9 sand and gravel over Guelph Formation; a second point 1.9 km south (43.02, -79.305) returns unit 8a fine-textured glaciolacustrine silt and clay over Guelph Formation, so the sand/clay boundary runs through this area."
+    },
+    {
+      "name": "North Pelham",
+      "note": "Rural northern Pelham toward the Short Hills; no Wikipedia coordinate retrieved, hand-placed query point 43.08, -79.32. OGS point query returns unit 8a fine-textured glaciolacustrine silt and clay over Lockport Formation."
+    },
+    {
+      "name": "Short Hills (north edge)",
+      "note": "Short Hills Provincial Park (Wikipedia coordinate 43.112012, -79.265606) is on the southern edge of the Niagara Escarpment, a jumble of small steep hills and valleys created by the last ice age (Wikipedia). Hand-placed query point 43.085, -79.275 inside Pelham returns unit 8a silt and clay over Lockport Formation."
+    },
+    {
+      "name": "South Pelham (toward Welland / Wainfleet)",
+      "note": "Hand-placed query point 42.99, -79.30. OGS point query returns unit 8a fine-textured glaciolacustrine silt and clay (massive to well laminated) over Salina Formation (argillaceous dolostone, shale, gypsum). The regional name 'Haldimand clay' was not found in any retrieved source and is not used here."
+    }
+  ],
+  "census": {
+    "population_2021": 18192,
+    "private_dwellings_occupied": 6959,
+    "single_detached_pct": 82.8,
+    "period_of_construction": {
+      "pre_1960_pct": 24.0,
+      "1961_1980_pct": 23.3,
+      "1981_2000_pct": 29.2,
+      "2001_2021_pct": 23.3
+    },
+    "derivation_note": "Percentages computed from Census Profile counts (Pelham, Town CSD 3526028): single-detached 5,760 of 6,960 occupied dwellings by structural type (100% data) = 82.8%; period of construction (25% sample, total 6,960): 1960 or before 1,670 (24.0%); 1961-1980 1,625 (23.3%); 1981-1990 1,050 + 1991-2000 985 = 2,035 (29.2%); 2001-2005 395 + 2006-2010 350 + 2011-2015 250 + 2016-2021 630 = 1,625 (23.3%).",
+    "sources": [
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Pelham, Town (CSD), Ontario",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Pelham&DGUIDlist=2021A00053526028&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Population, 2021: 18,192; Private dwellings occupied by usual residents: 6,959"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Pelham (structural type)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Pelham&DGUIDlist=2021A00053526028&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "Total - Occupied private dwellings by structural type of dwelling - 100% data 6,960; Single-detached house 5,760; 82.8"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Pelham (period of construction)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Pelham&DGUIDlist=2021A00053526028&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-09-25",
+        "quote": "1960 or before 1,670; 1961 to 1980 1,625; 1981 to 1990 1,050; 1991 to 2000 985; 2001 to 2005 395"
+      },
+      {
+        "name": "Statistics Canada, 2021 Census Profile search results for 'Pelham' (DGUID lookup)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/search-recherche/results-resultats.cfm?Lang=E&SearchText=Pelham",
+        "retrieved_at": "2026-09-25",
+        "quote": "Pelham (Town) [Census subdivision], Ontario ... DGUIDlist=2021A00053526028"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 9 - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay. This polygon is the Fonthill Kame: Wikipedia describes it as a moraine in the form of a large isolated hill of sand and gravel deposited by retreating glaciers, rising about 75 m above the surrounding land to 259 m above sea level, the highest natural feature in Niagara, about 6 km east-west by 3 km north-south.",
+        "where": "Fonthill, Ridgeville (village centre) and Fenwick: query points 43.04,-79.28; 43.033,-79.283; 43.04389,-79.2875; 43.06,-79.29; 43.0375,-79.31111; 43.02,-79.36; 43.02472,-79.36111 all return unit 9 (same polygon, OBJECTID 97752)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated (glacial-lake bottom sediment).",
+        "where": "The lower ground around the kame on all sides: query points at south Ridgeville (43.02,-79.305), North Pelham (43.08,-79.32), the Short Hills edge (43.085,-79.275), east of Fonthill (43.04,-79.25) and south Pelham (42.99,-79.30) all return unit 8a."
+      },
+      {
+        "unit": "Short Hills glacial silts and sands (north-west Pelham)",
+        "description": "Wikipedia (Fonthill) says Effingham Creek, a cold-water stream, originates in the glacial silts and sands of the Short Hills area of the moraine, north-west of Fonthill; Wikipedia (Short Hills Provincial Park) describes small but steep hills and valleys on the southern edge of the Niagara Escarpment. The OGS layer maps the Pelham-side query point in this area as unit 8a; no separate OGS unit for the Short Hills was returned.",
+        "where": "North-west of Fonthill toward Short Hills Provincial Park (43.112012, -79.265606)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Lockport Formation (Goat Island, Gasport and Vinemount members) under Fonthill, North Pelham and the Short Hills edge; Guelph Formation under Fenwick, Ridgeville and east of Fonthill; Salina Formation in the south (OGS MRD 219). All Silurian dolostone-dominated units.",
+      "description": "Lockport: thick-bedded blue-grey crinoidal limestone to dolostone (Gasport Mb), light brown locally cherty dolostone (Goat Island Mb), argillaceous dolostone and shale (Vinemount shale beds). Guelph: tan to brown, fine- to medium-crystalline, sucrosic dolostone, fossiliferous, locally biohermal. Salina: thin-bedded argillaceous dolostone and shale with beds and nodules of gypsum; thick salt beds in the deep subsurface.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). The Fonthill Kame is described by Wikipedia as rising about 75 m above the surrounding land, so bedrock beneath Fonthill lies under tens of metres of sand and gravel; the OGS surficial layer returned no bedrock-at-surface (unit 3) polygon at any Pelham query point. The task hint 'Lockport dolostone at depth' is consistent with the OGS bedrock query for Fonthill but the depth itself is unsourced."
+    },
+    "implications_for_piles": [
+      "The Town of Pelham's 2026 Building Permit Guide requires a permit for wood decks greater than 24 inches (600 mm) above ground level, but it publishes no deck sample drawings, no footing-depth figure and no mention of helical piles, CCMC, BMEC or engineer requirements; a footing/pile design must therefore be shown on the applicant's own drawings and is reviewed by the Plans Examiner against the Ontario Building Code.",
+      "Two very different soils sit side by side: OGS maps coarse sand and gravel (unit 9, the Fonthill Kame) under Fonthill, Ridgeville village and Fenwick, and fine glaciolacustrine silt and clay (unit 8a) on the lower ground around it (south Ridgeville, North Pelham, east of Fonthill, south Pelham). Torque, depth and capacity findings from a kame-sand site are not transferable to a clay site a kilometre away.",
+      "Bedrock under Pelham is Silurian dolostone (Lockport, Guelph, Salina), not shale; OGS returned no bedrock-at-surface polygon at any query point, and Wikipedia puts the kame about 75 m above the surrounding land, so shallow rock refusal is not indicated on the kame. No site-specific depth, torque or capacity figures were retrieved.",
+      "The composite Welland-Pelham climate normal (1991-2020) records 29.9 days a year with a minimum below -10 C, 134.1 days with a minimum at or below 0 C and 46.1 days with a maximum at or below 0 C, so roughly 88 days a year cross 0 C between night and day (derived by subtraction); frost action on the clay unit is the condition to design for, subject to the engineer's review."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at 43.04, -79.28)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.28,43.04&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 9, Deposit: Coarse-textured glaciolacustrine deposits, Material: sand, gravel, minor silt and clay"
+      },
+      {
+        "name": "Ontario Geological Survey, Surficial geology MRD 128-REV (layer 3 query at 42.99, -79.30, south Pelham)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.30,42.99&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "UNIT 8a, Deposit: Fine-textured glaciolacustrine deposits, Material: silt and clay, minor sand and gravel, Massive to well laminated"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at 43.04, -79.28)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.28,43.04&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Lockport; MEMBER: Goat Island, Gasport, Vinemount; AGE: Silurian; PRIMARY_LITHO: shale, dolostone, limestone"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at 43.02472, -79.36111, Fenwick)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.36111,43.02472&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Guelph; tan to brown, fine- to medium-crystalline, sucrosic dolostone; fossiliferous, locally biohermal"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at 42.99, -79.30, south Pelham)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.30,42.99&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-09-25",
+        "quote": "FORMATION: Salina; thin-bedded, argillaceous dolostone and shale, with beds and nodules of gypsum"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-09-25",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Fonthill Kame",
+        "url": "https://en.wikipedia.org/wiki/Fonthill_Kame",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Fonthill Kame rises about 75 m (246 ft) above the surrounding land (259 m above sea level) and is the highest elevation in the region."
+      },
+      {
+        "name": "Wikipedia - Fonthill, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Fonthill,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Effingham Creek, a cold-water stream, originates in the glacial silts and sands of Short Hills area of the moraine, northwest of Fonthill."
+      },
+      {
+        "name": "Wikipedia - Short Hills Provincial Park",
+        "url": "https://en.wikipedia.org/wiki/Short_Hills_Provincial_Park",
+        "retrieved_at": "2026-09-25",
+        "quote": "Located on the southern edge of the Niagara Escarpment, the park is a jumble of small but steep hills and valleys created by the last ice age."
+      },
+      {
+        "name": "Wikipedia - Pelham, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Pelham,_Ontario",
+        "retrieved_at": "2026-09-25",
+        "quote": "Two important creeks have their headwaters within Pelham; Coyle Creek, which flows south into the Welland River, and Twelve Mile"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "Town of Pelham Building Department (the name used in the Town's 2026 Building Permit Guide; the website menu labels the section 'Construction & Building Services' and the contact is the Building Intake/Zoning Technician, building-info@pelham.ca)",
+    "deck_permit_required_when": "The 2026 Building Permit Guide lists 'WOOD DECKS: greater than 24 inches (600 mm) above ground level' among projects requiring a permit; additions/extensions to an existing building require a permit even if under 108 square feet (10 m2). No area threshold for decks is printed.",
+    "footing_depth_requirement": null,
+    "inspections": [
+      "Readiness to construct footings - prior to pouring",
+      "Completion of footings and foundations prior to backfilling",
+      "Part 9 buildings - completion of framing, and of ductwork and piping for the HVAC system",
+      "Completion of insulation, vapour barriers and air barriers",
+      "Readiness for inspection/testing of building sewers and drains, water service pipes, drainage and venting systems, water distribution systems, plumbing fixtures",
+      "Completion of construction and installation of components required to permit occupancy",
+      "Final inspection",
+      "Notice: the permit holder or agent must notify the Building Department at least 2 regular business days in advance of readiness for each stage"
+    ],
+    "fee_note": "2026 Building Permit Guide, fees effective January 1 to December 31, 2026: Accessory Buildings/Structures - Garage/Carport, Deck/Porch/Patio, Sunroom/Solarium, shed or other accessory building $299.00, plus $0.99 per square foot over 300 ft2; minimum permit fee $299.00; a non-refundable $299.00 Permit Application Fee is collected after the zoning review and before plans examination, with remaining fees due before issuance; re-inspection $90.00; fees adjusted by CPI each January 1. The Town began a building fee and by-law study in 2026 (public meeting notice dated June 17, 2026), so these figures may change.",
+    "timeline_note": "No day-count is published. The Guide describes the sequence: prescreen for complete documents, zoning review, collection of the $299 application fee, queue for a Plans Examiner, plans examination report if deficient or recommendation for issuance, then a statement of remaining fees and issuance. Inspections require at least 2 regular business days' notice.",
+    "portal_url": "https://app.cityreporter.ca/cityreporter/portalLogin?portalid=2896230ebb7529b",
+    "portal_note": "The Town of Pelham uses the City Reporter building permit system; applicants apply, check status and request inspections online. The public entry page is https://www.pelham.ca/pelham-government/permits-applications-licenses/building-permits/ . Properties on private septic must obtain a Niagara Region septic permit first.",
+    "sources": [
+      {
+        "name": "Town of Pelham - Building Permits",
+        "url": "https://www.pelham.ca/pelham-government/permits-applications-licenses/building-permits/",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Town of Pelham uses the City Reporter building permit system. This system allows you to apply for a building permit"
+      },
+      {
+        "name": "Town of Pelham - 2026 Building Permit Guide and Fees (PDF, revised Feb 2, 2026)",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "WOOD DECKS: greater than 24 inches (600 mm) above ground level"
+      },
+      {
+        "name": "Town of Pelham - 2026 Building Permit Guide and Fees (PDF), fee table",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "Garage/Carport, Deck/Porch/Patio, Sunroom/Solarium, shed or other accessory building $299.00 $0.99> 300/ft2"
+      },
+      {
+        "name": "Town of Pelham - 2026 Building Permit Guide and Fees (PDF), inspections",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "notify the Building Department (building-info@pelham.ca) ... at least 2 regular business days in advance, of readiness to inspect"
+      },
+      {
+        "name": "Town of Pelham - 2026 Building Permit Guide and Fees (PDF), application fee",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "a statement will be sent to collect the Permit Application Fee of $299.00. The fee is non-refundable"
+      },
+      {
+        "name": "Town of Pelham - Building Fee and By-law Study",
+        "url": "https://www.pelham.ca/business-building-development/planning-applications/building-fee-and-by-law-study/",
+        "retrieved_at": "2026-09-25",
+        "quote": "This building fee and by-law review is part of a regular 5-year cycle to ensure the Town adheres to the Building Code Act"
+      },
+      {
+        "name": "Niagara Region - Local Municipalities",
+        "url": "https://www.niagararegion.ca/government/municipalities/default.aspx",
+        "retrieved_at": "2026-09-25",
+        "quote": "12 local municipalities are in Niagara. Fort Erie Grimsby Lincoln Niagara Falls Niagara-on-the-Lake Pelham Port Colborne"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Welland-Pelham composite (ECCC 1991-2020 normals; threaded from Welland, Climate ID 6139445, 42 59'33 N 79 15'40 W, 175.3 m, 1991-2006, then Welland-Pelham, Climate ID 6139449, 42 58'00 N 79 20'00 W, 178 m). Both sites are about 5 to 9 km south/south-west of the Fonthill reference coordinate. St. Catharines A (6137287, about 22 km NE) 1981-2010 used as a second bracket.",
+    "normals_period": "1991-2020 (temperature elements code A, 30 years; frost-free period code D, 15 years 1991-2008)",
+    "frost_free_days": 160,
+    "jan_mean_temp_c": -4.1,
+    "days_below_minus_10c": 29.9,
+    "freeze_thaw_note": "Welland-Pelham 1991-2020: January daily minimum -8.0 C; last spring frost May 6, first fall frost Oct 14 (160-day frost-free period, code D); 134.1 days/yr with minimum <= 0 C versus 46.1 days/yr with maximum <= 0 C, so roughly 88 days a year cross 0 C between night and day (derived by subtraction); 3.4 days/yr below -20 C; 141.0 cm annual snowfall. St. Catharines A 1981-2010 (computed from 1981-2000 records, code D): January mean -3.8 C, 26.7 days/yr below -10 C, 46.0 days/yr with maximum <= 0 C, 179-day frost-free period (Apr 24 - Oct 21). Pelham sits on higher ground between the two lakes and the Welland-Pelham record is the closer and colder of the two.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Welland-Pelham (composite)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -4.1 -3.8 0.7 7.1 13.7 19.0 21.5 20.7 17.0 10.6 4.5 -0.7 8.9 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Welland-Pelham (days with minimum temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "< -10 C 11.4 10.0 3.9 0.07 0.0 0.0 0.0 0.0 0.0 0.0 0.52 4.0 29.9 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Welland-Pelham (frost-free and days with maximum <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=welland&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6139445&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Last Spring Frost May 06 D; First Fall Frost Oct 14 D; Frost-Free Period 160 Days D; <= 0 C ... 46.1 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - St. Catharines A",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=st.%20catharines&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6137287&dispBack=1",
+        "retrieved_at": "2026-09-25",
+        "quote": "Daily Average (C) -3.8 ...; < -10 C ... 26.7 D; Average Length of Frost-Free Period 179 Days D"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": null,
+    "clause": null,
+    "note": "Null because the Town of Pelham publishes no deck sample drawings or deck guide, and its 2026 Building Permit Guide prints no footing-depth figure (no '4 ft', '1200 mm' or 'frost' text in the PDF). Neighbouring Halton municipalities' drawings print 4'-0\" (Oakville, Milton) but those documents are not Pelham's and are not cited as Pelham's requirement. The Ontario Building Code clause text was not retrieved: ontario.ca/laws renders the regulation as a JavaScript shell and the 2024 Building Code Compendium is distributed through Publications Ontario. Do not cite a clause number or a depth figure for Pelham until a Pelham document or the Code text is retrieved.",
+    "sources": [
+      {
+        "name": "Town of Pelham - 2026 Building Permit Guide and Fees (PDF; no footing depth printed)",
+        "url": "https://media-001-ca.cdn.govstack.com/pelham-007-ca/media/iurboxe3/revised-feb-2-2026-building-permit-guide-for-website.pdf",
+        "retrieved_at": "2026-09-25",
+        "quote": "The Plans Examiner will review the submitted documents to ensure compliance with the Ontario Building Code."
+      },
+      {
+        "name": "Ontario.ca - Ontario's Building Code (compendium access page)",
+        "url": "https://www.ontario.ca/page/ontarios-building-code",
+        "retrieved_at": "2026-09-25",
+        "quote": "The print and digital versions of the 2024 Building Code Compendium are available through Publications Ontario."
+      }
+    ]
+  },
+  "retrieved_at": "2026-09-25"
+}

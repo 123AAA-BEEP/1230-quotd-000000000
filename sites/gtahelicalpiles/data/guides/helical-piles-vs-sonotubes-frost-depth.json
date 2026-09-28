@@ -1,0 +1,185 @@
+{
+  "slug": "helical-piles-vs-sonotubes-frost-depth",
+  "title": "Helical piles vs sonotubes in Ontario | GTA Helical Piles",
+  "description": "Helical piles against poured sonotube piers for Ontario decks and additions: frost depth, adfreeze, cure time, permits, inspections and cost, with sources.",
+  "h1": "Helical piles vs concrete sonotubes",
+  "kicker": "Comparison guide",
+  "lede": "A deck or addition in Southern Ontario stands on one of two things: a poured concrete pier in a cardboard form (a sonotube) or a steel helical pile screwed into the ground. This guide sets the two side by side for deck builders, addition contractors and homeowners deciding which to specify. Every row is traced to a municipal drawing, an evaluation report or a manufacturer document, and we say plainly where a sonotube is still the better choice.",
+  "sections": [
+    {
+      "id": "what-each-one-is",
+      "heading": "What each one is",
+      "paragraphs": [
+        "A sonotube pier is a hole dug or augered to below frost depth, a cardboard form set in it, and concrete placed and left to cure. Halton municipalities draw it on their deck permit sample drawings as a poured concrete pier a minimum of 1.2 m (4 ft) below grade on undisturbed soil, with the diameter taken from a footing table. It is the default detail on those drawings, and inspectors know exactly how to check it.",
+        "A helical pile is a galvanized steel shaft with one or more helix plates near the tip. It is screwed in with a hydraulic torque head until the installation torque reaches the value the engineer specified, and the load is carried by the helix bearing in soil below the frost line. The Oakville and Milton drawings show it as an alternative to the concrete pier with two conditions: the manufacturer's information and CCMC evaluation report go in with the permit application, and a professional engineer determines the depth, spacing and size of the piles from soil conditions. Both details are legitimate; the differences show up on site, at inspection and in winter."
+      ],
+      "sources": [
+        { "name": "Town of Oakville, deck building permit sample drawings (PDF)", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Milton, deck permit sample drawings (PDF)", "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Halton Hills, Residential Deck Guide (PDF)", "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13675-R (GoliathTech)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "side-by-side",
+      "heading": "Side by side",
+      "paragraphs": [
+        "Each row below is worded only as far as a retrievable source supports it. Where a figure is commonly quoted but we could not find a primary source, the row describes the mechanism instead of giving a number. The installation time is Techno Metal Post's published figure for its own equipment at a 6 ft depth; the time on a given site depends on the ground, the pile and the depth to design torque."
+      ],
+      "table": {
+        "caption": "Helical pile against poured sonotube pier; sources for each row are listed under this section",
+        "columns": ["Question", "Helical pile", "Sonotube pier"],
+        "rows": [
+          ["Installation time", "About 30 minutes per pile to 6 ft with Techno Metal Post equipment; no digging, no concrete", "Dig or auger, set the form, place concrete, then wait for it to cure before framing"],
+          ["Ready for load", "CCMC reports: immediately ready for loading after installation", "Strength builds over days; Quikrete lists 7-day and 28-day strengths and a 5 to 7 day curing period"],
+          ["Site impact", "No excavation, minimal impact to the landscape (manufacturer FAQ); no spoil", "Excavated soil to handle and concrete to bring in"],
+          ["Frost heave", "Smooth shaft anchored by the helix below frost depth; about 5 mm of heave in a one-winter field comparison", "Rough concrete bonds to frozen soil; the drilled pier in the same comparison heaved about 36 mm"],
+          ["Permit documents", "CCMC report with the application; engineer sets depth, spacing and size; engineer-sealed certificate of conformity from the torque log", "Municipal pier detail; drawings show depth and size of piers below grade"],
+          ["Inspection", "Footing-stage review of installed piles and the engineer's documents; Niagara Falls names helical piles at this stage", "Footing inspection of the open hole and form before concrete is poured"],
+          ["Winter", "Year-round; frozen crust pre-drilled or thawed first, which adds time and can add cost", "Concrete must be protected from freezing for the first 48 hours (Quikrete); frozen hole to dig and inspect"],
+          ["Removal", "Removable and reusable (manufacturer FAQ)", "Permanent; breaking out a pier is demolition work"]
+        ]
+      },
+      "sources": [
+        { "name": "Techno Metal Post FAQ (installation time, winter)", "url": "https://www.technometalpost.com/en-CA/faq/", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13675-R (GoliathTech)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13608-R (Pro Post)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13608-R", "retrieved_at": "2026-09-25" },
+        { "name": "GoliathTech FAQ (no excavation, build immediately, removable and reusable)", "url": "https://www.goliathtechpiles.com/faq", "retrieved_at": "2026-09-25" },
+        { "name": "Quikrete Concrete Mix product data sheet (curing, strength gain, freezing)", "url": "https://www.quikrete.com/pdfs/data_sheet-concrete%20mix%201101.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Hubbell/CHANCE, Using Helical Piles to Resist Frost Heave (Lutenegger, 2026)", "url": "https://blog.hubbell.com/en/chancefoundationsolutions/using-helical-piles-to-resist-frost-heave", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Oakville, deck building permit sample drawings (PDF)", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "City of Niagara Falls, Decks and Porches (required inspections)", "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/decks-and-porches/", "retrieved_at": "2026-09-25" },
+        { "name": "City of Hamilton, Building Inspections (footing inspection prior to pouring)", "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "frost-depth-and-adfreeze",
+      "heading": "Frost depth and adfreeze in Southern Ontario",
+      "paragraphs": [
+        "The number that governs both details is 1.2 m, the minimum pier depth on Halton municipalities' deck drawings and the design frost depth in geotechnical reports filed with the Town of Oakville. Oakville and Milton draw the concrete pier at a minimum of 4 ft below grade on undisturbed soil; Halton Hills draws it at 1,200 mm. A 2022 preliminary geotechnical investigation for an Oakville site states that the design frost penetration depth for the general site area is 1.2 m. Hamilton's checklist asks only that the depth of piers below grade be shown, so we attribute the figure to the Halton documents, not to a provincial rule.",
+        "Depth is not the whole story. When soil freezes, the ice bonds to whatever is in it. Engineers call that bond adfreeze, and it is how a heaving frost layer lifts a foundation founded below it. The Hubbell/CHANCE article in our register states that adfreeze stress is higher on drilled concrete piers because of the surface roughness along the shaft. In the one-winter field comparison it reports, a drilled cast-in-place concrete pier heaved about 1.4 in (36 mm) while a helical pile at the same site heaved about 0.2 in (5 mm). Both were unloaded; a structure's weight adds resistance.",
+        "A helical pile resists frost jacking two ways: a smooth galvanized shaft gives the ice less to grip, and the helix below frost depth anchors it against uplift. Manufacturers differ on details. Techno Metal Post's CCMC report describes a ribbed polyethylene sleeve that isolates the pile from annual frost heave; GoliathTech's FAQ says its smooth shaft below the frost line needs no sleeve. The same article notes that frost jacking is countered only when resistance below the frost zone exceeds the adfreeze uplift. That is a check the engineer makes for each project. Frost movement is designed against, not eliminated."
+      ],
+      "sources": [
+        { "name": "Town of Oakville, deck building permit sample drawings (PDF)", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Milton, deck permit sample drawings (PDF)", "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Halton Hills, Residential Deck Guide (PDF)", "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "B.I.G. Consulting, preliminary geotechnical investigation, 581-587 Argus Road, Oakville (PDF on oakville.ca)", "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "City of Hamilton, deck and porch building permit checklist (PDF)", "url": "https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Hubbell/CHANCE, Using Helical Piles to Resist Frost Heave (Lutenegger, 2026)", "url": "https://blog.hubbell.com/en/chancefoundationsolutions/using-helical-piles-to-resist-frost-heave", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13059-R (Techno Metal Post)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13059-R", "retrieved_at": "2026-09-25" },
+        { "name": "GoliathTech FAQ (frost line, sleeve)", "url": "https://www.goliathtechpiles.com/faq", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "time-on-site-and-load-readiness",
+      "heading": "Time on site and when you can build",
+      "paragraphs": [
+        "A helical pile is installed and loaded in one operation. Techno Metal Post publishes about 30 minutes per pile to a 6 ft depth with its equipment, and the CCMC evaluation reports for GoliathTech, Pro Post and Techno Metal Post all carry the same sentence: the piles are immediately ready for loading after installation. GoliathTech's FAQ adds that unlike concrete, no drying time is required. On a deck the framing crew can start on the pile caps as soon as the last pile is torqued; the engineer's certificate follows from the torque log and does not hold up the framing.",
+        "A sonotube pier is a sequence with waiting built in: dig to depth, set the form, have the inspector see the open hole, then place the concrete. Concrete gains strength on its own schedule. Quikrete's Concrete Mix data sheet lists 2,500 psi at 7 days and 4,000 psi at 28 days, says curing should continue for 5 days in warm weather or 7 days between 10 °C and 21 °C, and for a set post says to wait 24 hours before any strain. We have not found a code or CSA source that fixes the wait before framing at a day count, so we do not print one. The practical difference is calendar days and a second site visit."
+      ],
+      "sources": [
+        { "name": "Techno Metal Post FAQ (installation time)", "url": "https://www.technometalpost.com/en-CA/faq/", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13675-R (GoliathTech)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13608-R (Pro Post)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13608-R", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13059-R (Techno Metal Post)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13059-R", "retrieved_at": "2026-09-25" },
+        { "name": "GoliathTech FAQ (build immediately, no drying time)", "url": "https://www.goliathtechpiles.com/faq", "retrieved_at": "2026-09-25" },
+        { "name": "Quikrete Concrete Mix product data sheet (strength at 7 and 28 days, curing period)", "url": "https://www.quikrete.com/pdfs/data_sheet-concrete%20mix%201101.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "permits-and-inspections",
+      "heading": "Permits and inspections: what changes when there is no hole",
+      "paragraphs": [
+        "Both foundations need the same deck permit. What changes is the paperwork and what the inspector looks at. With a sonotube, the building department's sample drawing is the design, and the footing inspection happens with the hole open. Hamilton's inspection list calls it the footing inspection, prior to pouring footings; Oakville's is the excavation and footing forms inspection, prior to pouring concrete; St. Catharines lists an inspection prior to pouring any concrete for piers or footings. The inspector sees depth, soil and form, and then the concrete covers it.",
+        "With a helical pile there is no hole to look into, so verification moves onto paper and instruments. Oakville's and Milton's drawings require the manufacturer's information and CCMC evaluation report with the permit application, and a professional engineer to determine the depth, spacing and size of the piles based on soil condition. Hamilton's checklist asks for the engineer-approved helical pier specifications and, for innovative systems, a Minister's Ruling or BMEC approval. Niagara Falls names the stage directly: footing or excavation (helical pile), prior to pouring of concrete.",
+        "During installation, torque is recorded on every pile and correlated to capacity using the torque tables in the pile's CCMC evaluation report, the same principle as ICC-ES AC358. The CCMC technical bulletin on auger-installed steel piles requires a signed and sealed certificate attesting to the conformity of the installation and the allowable loads, provided by the engineer to the authority for every project. That engineer-sealed certificate of conformity, built on our per-pile torque log, is what closes the foundation stage of a helical permit."
+      ],
+      "sources": [
+        { "name": "City of Hamilton, Building Inspections (what we inspect)", "url": "https://www.hamilton.ca/build-invest-grow/construction-renovation/residential-building-renovation/building-inspections", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Oakville, Building Inspection Scheduling Process", "url": "https://www.oakville.ca/town-hall/online-services/planning-construction/building-inspection-scheduling-process/", "retrieved_at": "2026-09-25" },
+        { "name": "City of St. Catharines, Deck and Porch Guide (PDF)", "url": "https://www.stcatharines.ca/media/2ljjlhij/pbs-deck-and-porch-guide.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Oakville, deck building permit sample drawings (PDF)", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Milton, deck permit sample drawings (PDF)", "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "City of Hamilton, deck and porch building permit checklist (PDF)", "url": "https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "City of Niagara Falls, Decks and Porches (required inspections)", "url": "https://niagarafalls.ca/building-planning-and-business/building-and-renovating/decks-and-porches/", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC technical bulletin, auger-installed steel pile foundations", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-technical-bulletin-auger-installed-steel-pile-foundations", "retrieved_at": "2026-09-25" },
+        { "name": "ICC-ES AC358 (June 2012 public copy), torque correlation", "url": "https://www.helicalpileworld.com/ac358%20-%20revised%20June%202012.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "winter-installation",
+      "heading": "Winter installation",
+      "paragraphs": [
+        "We install year-round; in frozen ground the frost crust is pre-drilled or thawed first, which adds time and can add cost. That is the manufacturers' method as well as ours. Techno Metal Post's FAQ says piles can be installed year-round, with the area pre-drilled with an auger or thawed with a heated rod first; its winter article describes augering through the crust as the usual approach and thawing as the less common one, about half an hour for a 12 in radius. The same article puts the easiest window at April to the end of December.",
+        "Concrete in winter is a different problem. Quikrete's data sheet says concrete must be protected from freezing during the first 48 hours, with plastic sheeting and insulation blankets if temperatures are expected to fall below 0 °C, and it sets a longer curing period in cool weather. A pier poured into a frozen hole also has to pass the footing inspection with that hole open in frozen ground. Builders do pour piers in winter, with enclosures and heat, but schedule and cost both move against it in a way they do not for steel."
+      ],
+      "sources": [
+        { "name": "Techno Metal Post FAQ (winter installation)", "url": "https://www.technometalpost.com/en-CA/faq/", "retrieved_at": "2026-09-25" },
+        { "name": "Techno Metal Post, Installing Helical Piles in Winter", "url": "https://www.technometalpost.com/en-CA/installing-helical-piles-in-winter/", "retrieved_at": "2026-09-25" },
+        { "name": "Quikrete Concrete Mix product data sheet (protect from freezing 48 hours)", "url": "https://www.quikrete.com/pdfs/data_sheet-concrete%20mix%201101.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "cost",
+      "heading": "What each one costs",
+      "paragraphs": [
+        "Our illustrative range for a deck or porch pile is $325 to $475 per pile installed, and for an addition or sunroom pile $575 to $875, in CAD. These are illustrative figures from our current price table; every site carries its own conditions, and the firm price is the written quote after a site review. Engineering and permit fees are listed separately. The cost guide linked below shows what other Ontario installers publish, what moves the number, and a calculator that turns deck size into a pile count.",
+        "We do not publish a sonotube price because we have not found a retrievable source for one. What the sources above do show is where the sonotube's cost sits: in labour and time rather than in the form and the concrete. Digging to 1.2 m, handling the spoil, an inspection visit with the hole open, the concrete delivery and the cure before framing are all in the sonotube total, and none of them appear on a helical pile invoice. On a small deck with easy access and no deadline the two totals can land close. Where access is tight, the ground is wet or the framing crew is booked, the pile is usually the cheaper route once everything is counted."
+      ],
+      "sources": [
+        { "name": "GTA Helical Piles price table (data/prices.json, reviewed 2026-09-25), shown on the cost guide", "url": "/guides/helical-pile-cost-per-pile-ontario/", "retrieved_at": "2026-09-25" },
+        { "name": "Town of Halton Hills, Residential Deck Guide (1,200 mm pier depth)", "url": "https://haltonhills.ic12.esolg.ca/en/residents/resources/Documents/DeckPermitApplicationGuide.pdf", "retrieved_at": "2026-09-25" }
+      ]
+    },
+    {
+      "id": "when-a-sonotube-is-the-right-call",
+      "heading": "When a sonotube is still the right call",
+      "paragraphs": [
+        "A sonotube is the right call more often than an installer's website would suggest. If a deck is small, close to grade, and you are digging the holes yourself with a rented auger and bagged mix, the municipal sample drawing is your design, the inspector knows it by heart, and there is no engineer to pay. Oakville's drawings even allow precast deck blocks with no footing on a freestanding deck no more than 23.5 in from grade to the joists and under 592 sq ft, so a low platform may need neither detail.",
+        "Ground matters too. The CCMC reports say the torque-to-capacity relationship holds in granular soil and silt, and that where the pile meets granular material larger than 200 mm, cobbles and boulders, the relationship is less predictable and capacity has to be confirmed by on-site load tests. GoliathTech's FAQ says a pile that hits rock can be moved to another location if the project allows. In rubble fill, or where shallow bedrock will stop a pile before design torque, a dug pier bearing on what the inspector can see can be the simpler foundation.",
+        "Finally, there are jobs where the pier is already there. If a deck is being rebuilt on sound existing concrete piers of the right depth and size, reusing them is usually the sensible answer, and we will say so at the site review. We would rather say where piles are not the best choice than have you find out after the quote."
+      ],
+      "sources": [
+        { "name": "Town of Oakville, deck building permit sample drawings (deck block conditions)", "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf", "retrieved_at": "2026-09-25" },
+        { "name": "NRC CCMC evaluation report 13675-R (granular material over 200 mm)", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R", "retrieved_at": "2026-09-25" },
+        { "name": "GoliathTech FAQ (rock and relocation)", "url": "https://www.goliathtechpiles.com/faq", "retrieved_at": "2026-09-25" }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How deep does a helical pile go compared with a sonotube?",
+      "a": "A sonotube pier is drawn on Halton municipalities' deck drawings at a minimum of 1.2 m (4 ft) below grade on undisturbed soil, matching the 1.2 m design frost depth in geotechnical reports filed with the Town of Oakville. A helical pile also goes below the frost line, but its final depth is set by torque, so it is often deeper than 1.2 m."
+    },
+    {
+      "q": "Can I build on helical piles the same day they go in?",
+      "a": "The CCMC evaluation reports for GoliathTech, Pro Post and Techno Metal Post all state that the piles are immediately ready for loading after installation, and GoliathTech's FAQ says no drying time is required. Framing can start once the piles are torqued and capped. The engineer's sealed certificate of conformity follows from the torque log and does not hold up the framing."
+    },
+    {
+      "q": "How long does concrete in a sonotube need to cure?",
+      "a": "We have not found a code or CSA source that fixes a day count, so we do not print one. Quikrete's data sheet for bagged concrete lists 2,500 psi at 7 days and 4,000 psi at 28 days, sets a curing period of 5 to 7 days depending on temperature, and for a set post says to wait 24 hours before any strain. When to frame on a pier is the builder's judgement."
+    },
+    {
+      "q": "Does the inspector still come out for helical piles?",
+      "a": "Yes. The footing-stage inspection still happens; Niagara Falls lists it as footing or excavation (helical pile), prior to pouring of concrete. What the inspector reviews is different: the installed piles, the manufacturer's CCMC report, the engineer's layout, and after installation the engineer-sealed certificate of conformity based on our per-pile torque log."
+    },
+    {
+      "q": "Do helical piles ever heave?",
+      "a": "They can if they are badly designed, which is why we do not say never. The Hubbell/CHANCE field comparison in our register measured about 5 mm of heave on a helical pile against about 36 mm on a drilled concrete pier at the same site over one winter. Frost jacking is resisted when the anchorage below the frost zone exceeds the adfreeze uplift on the shaft, a check the engineer makes for each project."
+    },
+    {
+      "q": "Is a helical pile always cheaper than a sonotube?",
+      "a": "No. Our illustrative deck pile range is $325 to $475 per pile installed, with the firm price after a site review. A self-built pier on a small low deck can cost less in cash. The pile usually wins on total cost where access is tight, the ground is wet, the schedule is short, or the spoil and the extra inspection visit would otherwise be paid for in labour."
+    }
+  ],
+  "related": [
+    { "href": "/guides/helical-pile-cost-per-pile-ontario/", "label": "What a helical pile costs in Ontario: our ranges, what other installers publish, and a deck calculator" },
+    { "href": "/locations/oakville/", "label": "Building in Oakville: permit fee, what the Town asks for, and what is under each neighbourhood" }
+  ],
+  "cta": {
+    "heading": "Not sure which one your deck needs?",
+    "body": "Send us the drawings or a sketch with the deck size and where it sits on the lot. We will tell you whether piles make sense for the job and give you a written quote after a site review, with engineering and permit fees listed separately."
+  },
+  "reviewed": "2026-09-25"
+}

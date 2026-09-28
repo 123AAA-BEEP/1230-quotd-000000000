@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { getBusiness } from '../lib/data.js';
+
+const biz = getBusiness();
+const updated = '25 September 2026';
+---
+
+<Base title={`Privacy policy | ${biz.trading_name}`} description={`How ${biz.trading_name} collects, uses and keeps the information you send us when you request a quote.`} stickyBar={false} quoteHref="/#quote">
+  <article class="page legal prose">
+    <p class="eyebrow">Privacy policy</p>
+    <h1>What we collect, and why</h1>
+    <p class="small muted">Last updated {updated}. Template wording pending legal review; the operating entity is {biz.legal_name}.</p>
+
+    <h2>What we collect</h2>
+    <p>When you request a quote we collect your name, phone number, email address, the city and postal code of the property, and what you tell us about the job. If you use the budget calculator and then request a quote, the numbers you entered come with the request. We also record the page you were on, the time the form took to complete, and your consent to be contacted, with the wording you saw and when you agreed to it.</p>
+
+    <h2>Why we collect it</h2>
+    <p>To call you back, quote the work, and schedule it. That is the only purpose. We do not sell or rent your information, we do not add you to marketing lists, and we do not share it with third parties except the services that carry it to us (our email provider and hosting provider).</p>
+
+    <h2>How long we keep it</h2>
+    <p>Quote requests are kept for 24 months so we can honour a quote and follow up on work we discussed, then deleted. If the job goes ahead, the records that belong to the job are kept as long as the warranty and our accounting obligations require.</p>
+
+    <h2>Analytics</h2>
+    <p>This site uses privacy-respecting analytics that count page views and events without cookies and without identifying you. That is why there is no cookie banner.</p>
+
+    <h2>Your rights</h2>
+    <p>Under Canadian privacy law you can ask what we hold about you, ask us to correct it, or ask us to delete it. Email <a href={`mailto:${biz.email}`}>{biz.email}</a> and we will do it.</p>
+
+    <h2>Contact</h2>
+    <p>{biz.legal_name}, {biz.address.locality}, {biz.address.region}. <a href={`mailto:${biz.email}`}>{biz.email}</a>, <a href={`tel:${biz.phone_e164}`} class="num">{biz.phone_display}</a>.</p>
+  </article>
+</Base>
+
+<style>
+  .legal { max-width: var(--read); padding-block: var(--s4); }
+  .legal h1 { font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl)); margin-block: var(--s3) var(--s3); }
+  .legal h2 { font-size: var(--text-xl); margin-block: var(--s8) var(--s3); }
+  .legal p { color: var(--text-muted); }
+</style>
