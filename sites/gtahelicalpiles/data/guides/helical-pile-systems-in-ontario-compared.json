@@ -1,0 +1,761 @@
+{
+  "slug": "helical-pile-systems-in-ontario-compared",
+  "title": "Helical pile systems in Ontario compared | GTA Helical Piles",
+  "description": "Techno Metal Post, GoliathTech, Pro Post, Postech, CHANCE and other helical piles sold in Ontario: shaft sizes, CCMC and ICC-ES reports, galvanizing, networks.",
+  "h1": "Helical pile systems sold in Ontario, compared",
+  "kicker": "Buyer's guide",
+  "lede": "Ask three installers in Halton or Hamilton for a deck or addition quote and you may be offered three different pile systems, each described as the best. This guide puts the published facts for the helical pile systems sold in southern Ontario side by side: shaft sizes, CCMC and ICC-ES evaluation reports, galvanizing, frost detail, torque method, equipment and the network that stands behind each one. We rank nothing and recommend nothing. Every figure is traced to the manufacturer's own page or its evaluation report, and where a manufacturer has not published a figure the cell says so.",
+  "sections": [
+    {
+      "id": "what-every-system-shares",
+      "heading": "What every system shares, and what the municipality checks",
+      "paragraphs": [
+        "Every system here is a steel shaft with one or more helical plates welded near the tip, screwed in with a hydraulic drive head until the installation torque reaches the engineer's specified value, then capped with a bracket that carries the structure. The Canadian CCMC evaluation reports share a core set of conditions. The pile is installed with mechanized equipment, in several reports explicitly to below the frost line. Torque is recorded and read against the report's own load table. A professional engineer sets the number and spacing of piles. The installer carries the manufacturer's installer card, and a certificate attesting to the conformity of the installation and the allowable loads is issued for the project.",
+        "No municipal document we have read names a brand. Oakville's and Milton's deck drawings require the manufacturer's information and the CCMC evaluation report with the permit application, and a professional engineer to determine the depth, spacing and size of the piles from soil conditions. Hamilton's deck and porch checklist asks for engineer-approved helical pier specifications and, for innovative systems, a Minister's Ruling or BMEC approval. The CCMC bulletin on auger-installed steel piles requires the engineer's signed and sealed certificate for every project. GoliathTech's compliance page makes a point worth repeating: a stamped technical drawing is not that certificate. On our jobs the certificate is built from the per-pile torque log we hand the engineer.",
+        "A CCMC report has limits. Each one covers single-storey residential buildings and accessory buildings such as decks and sunrooms within Part 9. Anything else, including underpinning in the two Ontario reports, is outside the pre-engineered scope and needs a project engineer whatever the brand. The reports require every pile to carry a label with the manufacturer's name and the report number, and, where corrosion has not been assessed, hot-dip galvanizing to CAN/CSA-G164 (ASTM A123) at 610 g/m² minimum. An ICC-ES report evaluates the same product against the US building code under AC358. It is useful evidence but not the document Oakville's drawing asks for, so a system holding only an ICC-ES report is submitted on the engineer's design."
+      ],
+      "sources": [
+        {
+          "name": "NRC CCMC evaluation report 13059-R (Techno Metal Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13059-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13675-R (GoliathTech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13608-R (Pro Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13608-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14791-R (Nortek N3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14791-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Town of Oakville, deck building permit sample drawings (PDF)",
+          "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Town of Milton, deck permit sample drawings (PDF)",
+          "url": "https://www.milton.ca/en/business-and-development/resources/Building/deck-permit-sample-drawings_FINAL-s.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "City of Hamilton, deck and porch building permit checklist (PDF)",
+          "url": "https://www.hamilton.ca/sites/default/files/2022-10/buildingpermit-checklist-deck-porch-fillable.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "NRC CCMC technical bulletin, auger-installed steel pile foundations",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-technical-bulletin-auger-installed-steel-pile-foundations",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "GoliathTech, Certifications and Compliance",
+          "url": "https://www.goliathtechpiles.com/compliance/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES AC358 (June 2012 public copy), torque correlation defaults",
+          "url": "https://www.helicalpileworld.com/ac358%20-%20revised%20June%202012.pdf",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "side-by-side",
+      "heading": "The systems side by side",
+      "paragraphs": [
+        "Shaft sizes come from each system's CCMC report where one exists and from its ICC-ES report otherwise. Status is as the NRC registry showed it on 2026-09-28; CCMC lists an assessment as Active only while it is published there, so a permit reviewer will check the same page. Galvanizing is worded as the report words it. Frost detail is given only where the manufacturer publishes one; every system relies first on the helix anchored below frost depth. The Ontario network column reflects the manufacturer's own finder pages. A cell reading not published means we could not find the fact on the pages and reports we checked, not that it does not exist.",
+        "Three groups appear. Five Quebec manufacturers hold CCMC reports first issued between 2002 and 2014, publish allowable-load tables against torque, and sell through franchise or dealer territories. Two Ontario manufacturers, Nortek in Ayr and Mascore in St Jacobs, hold newer reports written to the current CCMC guide, which publish a torque factor in m⁻¹ with resistance factors instead of an allowable-load table, and sell piles and equipment more openly. Three US manufacturers rely on ICC-ES reports and we found no CCMC report for them in the registry listing. Almita, Roterra and Twist also hold Active CCMC reports but are Alberta companies for which we have not verified an Ontario installer network, so they are left out of the table."
+      ],
+      "table": {
+        "caption": "Published facts per system, one row each; not published means the manufacturer's pages and reports we checked do not state it",
+        "columns": [
+          "System (manufacturer, plant)",
+          "Shaft sizes (outside diameter and wall)",
+          "CCMC or ICC-ES standing",
+          "Galvanizing",
+          "Frost detail",
+          "Ontario network"
+        ],
+        "rows": [
+          [
+            "Techno Metal Post (Techno Pieux Inc., Thetford Mines QC)",
+            "47.6, 60.3 and 88.9 mm; walls 3.7, 3.9, 5.5 or 7.6 mm; helix 150 to 600 mm (CCMC)",
+            "CCMC 13059-R, Active (issued 2002, modified 2026-02-06); ICC-ES ESR-3418; Ontario Minister's Ruling MR 03-06-95 listed",
+            "Hot-dip to CAN/CSA-G164 (ASTM A123), 610 g/m² minimum where corrosion is not assessed (CCMC condition); its FAQ calls galvanizing an option",
+            "Ribbed polyethylene sleeve over the shaft, described in its CCMC report as a frost sleeve",
+            "Dealer network; find-a-dealer map with no text list"
+          ],
+          [
+            "GoliathTech (GoliathTech Inc., Magog QC)",
+            "48, 60, 73 and 89 mm; walls 3.9, 3.9, 6.3 and 6.3 mm; helix 228 to 787 mm (CCMC)",
+            "CCMC 13675-R, Active (issued 2014, modified 2026-02-06); ICC-ES ESR-3726; Ontario Minister's Ruling listed",
+            "Hot-dip to ASTM A123M (FAQ); same 610 g/m² CCMC condition",
+            "Smooth shaft, no sleeve; tube filled with polyurethane (manufacturer)",
+            "Franchise network of about 150 units worldwide; Ontario franchises listed include West GTA, Hamilton/St. Catharines, Brantford and Tri-Cities"
+          ],
+          [
+            "Pro Post Foundations (Pro Post Canada Inc., Ascot Corner QC)",
+            "48, 60, 73 and 89 mm; walls 3.7, 3.9, 4.8 and 5.5 mm; helix 200 to 900 mm (CCMC)",
+            "CCMC 13608-R, Active (issued 2013, modified 2025-10-22); ICC-ES not published",
+            "Hot-dip to CAN/CSA-G164, 610 g/m² (CCMC)",
+            "Screwed to below the frost line (CCMC); sleeve not published",
+            "Franchise; Ontario territories listed include Chatham-Kent and Lambton, Essex, Middlesex, Durham to Peterborough, Muskoka and Kawartha Lakes, Ottawa and Cornwall"
+          ],
+          [
+            "Postech Screw Piles (Pieux Vistech - Postech Screw Piles Inc., Sherbrooke QC)",
+            "P178 48 × 3.7 mm; P238 60 × 3.9 mm; P312 89 × 5.5 mm; helix 200 to 455 mm (CCMC); P278 HD and P412 on its spec-sheet list",
+            "CCMC 13102-R, Active (issued 2003, modified 2025-10-21); ICC-ES ESR-4735 (reissued October 2024)",
+            "Hot-dip to ASTM A123, 610 g/m² (CCMC)",
+            "Anchored below the frost line with a clearance kept between soil and structure (FAQ); sleeve not published",
+            "Franchise; installer finder listed 144 locations in Canada, the US and Europe, including Ontario"
+          ],
+          [
+            "Xtreme Post (Pieux Xtreme Inc., Danville QC)",
+            "48 or 60 mm × 4.8 mm wall; single helix 175 to 300 mm (CCMC)",
+            "CCMC 13353-R, Active (issued 2010, modified 2025-10-23); ICC-ES not published",
+            "Hot-dip to CAN/CSA-G164, 610 g/m² (CCMC)",
+            "not published",
+            "Franchise; Ontario territories mapped for Hamilton, Western Ontario (London, Sarnia, Windsor, Chatham), Kingston, Cornwall and Ottawa"
+          ],
+          [
+            "Nortek N3 (Nortek Helical Piles, Ayr ON)",
+            "88.9 × 6.35 mm with one 365 mm helix; the only pile in its report",
+            "CCMC 14791-R, Active (issued 2025-04-24), NBC 2015 and 2020; ICC-ES not published",
+            "Galvanized or black steel; capacities deduct 0.32 mm (galvanized) or 1.5 mm (bare) over 50 years; coating standard not published",
+            "not published",
+            "Ontario manufacturer; sells and rents drive heads and torque monitoring; CCMC requires Nortek-trained installers and machinery"
+          ],
+          [
+            "Mascore M1, M2, M3 (Mascore Inc., St Jacobs ON)",
+            "M1 60.3 × 3.91 mm; M2 76.2 × 4.76 mm; M3 88.9 × 5.5 mm; helix 203 to 356 mm (CCMC)",
+            "CCMC 14122-R, Active (issued 2019, modified 2025-10-21); ICC-ES not published",
+            "Galvanized or black steel; same 0.32 mm and 1.5 mm sacrificial-thickness method; coating standard not published",
+            "not published",
+            "Ontario manufacturer; sells piles and equipment to contractors and owners with no franchise rights; serves Toronto, Hamilton and Kitchener-Waterloo; CCMC requires Mascore-trained installers and machinery"
+          ],
+          [
+            "CHANCE (Hubbell Power Systems, Centralia MO)",
+            "SS5 1.5 in and SS175 1.75 in solid square; RS2875 73 mm × 0.203 or 0.276 in; RS3500 88.9 mm × 0.300 in; RS4500; helix 8 to 14 in",
+            "No CCMC report in the helical pile listing we checked; ICC-ES ESR-2794 (reissued May 2026)",
+            "Hot-dip as welded assemblies to ASTM A153 (square shafts, also offered bare) and ASTM A153 and A123 (round shafts)",
+            "not published",
+            "Sold through Hubbell distributors; installer program with re-training every two years; Ontario list not published"
+          ],
+          [
+            "IDEAL Group (Webster NY)",
+            "1.5, 1.75 and 2.0 in solid square; round 2.875 to 8.625 in and larger, walls 0.203 to 0.500 in (selection guide)",
+            "No CCMC report seen; ICC-ES report number not published on the pages we checked",
+            "Hot-dip galvanizing described as common on small-diameter piles; standard not published",
+            "not published",
+            "not published"
+          ],
+          [
+            "MAGNUM Piering (USA)",
+            "MH325 3.0 in × 0.25 in round; MS150 1.5 in square (ESR-2997); product page cites 3 to 18 in",
+            "No CCMC report seen; ICC-ES ESR-2997 (reissued May 2026)",
+            "Hot-dip to ASTM A123 (ESR-2997)",
+            "not published",
+            "not published"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "name": "NRC CCMC registry of product assessments, helical pile listing (CCMC-TG-316615.13)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/registry/extranet/list.html?s=R&c=0&mfg=0&mf=0&a=7&tg=CCMC-TG-316615.13&y=2015&t=706&o=2",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13059-R (Techno Metal Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13059-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13675-R (GoliathTech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13608-R (Pro Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13608-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13102-R (Pieux Vistech / Postech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13102-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13353-R (Pieux Xtreme)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13353-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14791-R (Nortek N3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14791-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14122-R (Mascore M1, M2, M3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14122-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13691-R (Almita)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13691-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14027-R (Roterra)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14027-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14098-R (Twist)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14098-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post, Certifications and Evaluations",
+          "url": "https://www.technometalpost.com/en-CA/certifications/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post FAQ",
+          "url": "https://www.technometalpost.com/en-CA/faq/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post, Find Your Dealer",
+          "url": "https://www.technometalpost.com/en-CA/find-your-dealer/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GoliathTech FAQ (galvanizing, sleeve, warranty, equipment, torque)",
+          "url": "https://www.goliathtechpiles.com/faq",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GoliathTech, Our Helical / Screw Piles (product page)",
+          "url": "https://www.goliathtechpiles.com/our-helical-screw-piles",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GoliathTech, Find a Helical (Screw) Pile Installer (franchise list)",
+          "url": "https://www.goliathtechpiles.com/find-a-certified-installer",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GoliathTech, Certifications and Compliance",
+          "url": "https://www.goliathtechpiles.com/compliance/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Pro Post Foundations, home page (Ontario, Maritimes, Quebec; warranty)",
+          "url": "https://propostfoundations.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Pro Post Foundations, installer list",
+          "url": "https://propostfoundations.com/installer/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Postech Screw Piles, Technical Documentation",
+          "url": "https://www.postechpiles.com/en/engineering/docs",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Postech Screw Piles FAQ",
+          "url": "https://postechpiles.com/faq/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Postech Screw Piles, Find an Installer",
+          "url": "https://www.postechpiles.com/en/find-installer",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-4735 (Postech screw piles)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4735.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Pieux Xtreme, Trouver un expert (installer finder with Ontario territories)",
+          "url": "https://www.pieuxxtreme.com/trouver-un-expert/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nortek Helical Piles, home page",
+          "url": "https://www.nortekhelicalpiles.ca/home",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Mascore, home page",
+          "url": "https://www.mascore.ca/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-2794 (CHANCE helical foundation systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-2794.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "CHANCE Foundation Solutions, installer program",
+          "url": "https://www.hubbell.com/chancefoundationsolutions/en/about-us/chance-certified-installers",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "CHANCE Foundation Solutions, building code reports",
+          "url": "https://www.hubbell.com/chancefoundationsolutions/en/resources/technical-literature/building-code-reports",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "IDEAL Group, Helical Piles and Anchors",
+          "url": "https://www.idealfoundationsystems.com/helical-piles/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "IDEAL Group, Helical Pile Selection Guide (PDF)",
+          "url": "https://www.idealfoundationsystems.com/hubfs/PRODUCT%20LC/HELICAL/HELICAL%20PILE%20SELECTION%20GUIDE.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "IDEAL Group, Product Documentation",
+          "url": "https://www.idealfoundationsystems.com/product-documentation/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "MAGNUM Piering, ICC-ES evaluation page",
+          "url": "https://magnumpiering.com/icc-es-evaluation/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "MAGNUM Piering, High Capacity Helical Piles",
+          "url": "https://magnumpiering.com/high-capacity-helical-piles/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-2997 (MAGNUM helical foundation systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-2997.pdf",
+          "retrieved_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "what-differs-on-site",
+      "heading": "What actually differs on site",
+      "paragraphs": [
+        "Shaft range comes first. The five Quebec systems start at a 48 mm tube and top out at 89 mm; Techno Metal Post's FAQ says its 2 in pile is the minimum under a deck and carries over 6,000 lb. The Ontario reports start heavier: Mascore's smallest pile is 60.3 mm and Nortek's only evaluated pile is 88.9 mm. The US systems add solid square bars of 1.5 to 2 in, absent from the Quebec catalogues. Helix options vary more than shafts: Xtreme Post's single helix runs 175 to 300 mm, Techno Metal Post 150 to 600 mm, GoliathTech up to 787 mm, Pro Post up to 900 mm, and Mascore's M3 pairs 305 mm and 356 mm plates.",
+        "Section lengths and machinery decide whether a crew fits through your gate. Techno Metal Post's ICC-ES report lists leads of 7, 10.5 and 14 ft; GoliathTech's a 7 ft lead with 3 and 7 ft extensions; Postech's 3 to 10 ft; Mascore's 5 to 10 ft; Nortek's lead is 2.13 m. Techno Metal Post uses its own machines, the smallest 760 mm (29 in) wide and the mid-size units 1,219 to 1,245 mm. GoliathTech's FAQ says its piles go in with a mini excavator. Hubbell puts mini excavators below 15,000 ft-lb of torque, portable heads where access is limited and full excavators above 20,000 ft-lb. Ask for the width of the machine that will actually come.",
+        "Soil sets when a torque reading is not enough. GoliathTech's, Pro Post's and Postech's reports require on-site load tests under a geotechnical engineer where granular material exceeds 200 mm, because the torque relationship becomes less predictable. Pieux Xtreme's report goes further: in cohesive soil such as clay its correlation is not predictable, so loads are confirmed by load tests. All the Quebec reports exclude recently backfilled sites from their tables. The Ontario reports add operating limits: no more than 20 revolutions per minute, stop and investigate on refusal or when the pile spins without advancing, and no tilting the pile to steer around boulders. Techno Metal Post's FAQ, by contrast, describes steering around rock with its telescopic mast."
+      ],
+      "sources": [
+        {
+          "name": "NRC CCMC evaluation report 13059-R (Techno Metal Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13059-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13675-R (GoliathTech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13608-R (Pro Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13608-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13102-R (Pieux Vistech / Postech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13102-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13353-R (Pieux Xtreme)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13353-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14791-R (Nortek N3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14791-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14122-R (Mascore M1, M2, M3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14122-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post FAQ",
+          "url": "https://www.technometalpost.com/en-CA/faq/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post, Installation Equipment",
+          "url": "https://www.technometalpost.com/en-CA/installation-equipment/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-3418 (Techno Metal Post helical foundation systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-3418.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GoliathTech FAQ (galvanizing, sleeve, warranty, equipment, torque)",
+          "url": "https://www.goliathtechpiles.com/faq",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-3726 (GoliathTech helical pile systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-3726.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-4735 (Postech screw piles)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4735.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Hubbell/CHANCE, 4 machines used to install helical piles",
+          "url": "https://blog.hubbell.com/en/chancefoundationsolutions/4-machines-used-to-install-helical-piles",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "IDEAL Group, Helical Pile Selection Guide (PDF)",
+          "url": "https://www.idealfoundationsystems.com/hubfs/PRODUCT%20LC/HELICAL/HELICAL%20PILE%20SELECTION%20GUIDE.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-2794 (CHANCE helical foundation systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-2794.pdf",
+          "retrieved_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "comparing-quotes",
+      "heading": "How to compare two installers' quotes",
+      "paragraphs": [
+        "A per-pile figure hides most of the difference, so line up what each quote includes first. The head or bracket is a separate part in every catalogue: Postech's spec-sheet list runs to fixed, adjustable and U-shaped heads and an underpinning bracket, Mascore's CCMC report recognizes a cap plate, a fixed saddle and an adjustable saddle, and GoliathTech's ICC-ES report describes side-load, new-construction and threaded-rod brackets. Extensions beyond the standard lead are often priced per length. Engineering may mean a layout letter only, or the layout plus the sealed certificate of conformity. Some Toronto installers carry a mobilization minimum. Our own illustrative ranges and what other Ontario installers publish are on the cost guide linked below; this page carries no prices.",
+        "Then ask for the documents rather than the adjectives. Which report number will be on the pile labels, and whether it is Active in the NRC registry. Which torque table or Kt the engineer will use, and the target torque per pile. What happens at refusal, and the shaft's torque limit: Nortek's report puts N3 weld failure beyond 11 kN·m and Mascore's puts M1 shaft failure beyond 3.82 kN·m. How the final torque is read, since GoliathTech's ICC-ES report averages the last three readings at one-foot intervals while the CCMC tables average the last 500 or 600 mm. Whether the torque log and the engineer's certificate are included. And whose warranty covers the labour, because the manufacturer's usually does not."
+      ],
+      "sources": [
+        {
+          "name": "Postech Screw Piles, Technical Documentation",
+          "url": "https://www.postechpiles.com/en/engineering/docs",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14122-R (Mascore M1, M2, M3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14122-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14791-R (Nortek N3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14791-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-3726 (GoliathTech helical pile systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-3726.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13059-R (Techno Metal Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13059-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13675-R (GoliathTech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13102-R (Pieux Vistech / Postech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13102-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GoliathTech, Legal Warranty",
+          "url": "https://www.goliathtechpiles.com/warranty/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "CHANCE Foundation Solutions, 30-year warranty page",
+          "url": "https://www.hubbell.com/chancefoundationsolutions/en/resources/warranty",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post, 25-Year Limited Warranty",
+          "url": "https://www.technometalpost.com/en-CA/25-year-limited-warranty/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GAMCON, helical pile installation cost in Toronto (extensions priced per foot, mobilization minimum)",
+          "url": "https://www.gamcon.ca/helical-piles-installation-cost-toronto/",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "The Post Hole Diggers, pricing (minimum charges by area)",
+          "url": "https://www.thepostholediggers.ca/pricing/",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "GTA Helical Piles cost guide (illustrative ranges, what other installers publish)",
+          "url": "/guides/helical-pile-cost-per-pile-ontario/",
+          "retrieved_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "light-versus-heavy",
+      "heading": "Where a light system is the wrong choice, and where a heavy one is overkill",
+      "paragraphs": [
+        "Additions and underpinning sit outside every CCMC report's pre-engineered scope, which covers single-storey houses and accessory buildings. An addition on a two-storey house or a bracket under an existing footing is engineer-designed whatever the brand, and the Nortek and Mascore reports say outright that underpinning and tie-backs are beyond their scope. The ICC-ES reports for Techno Metal Post, GoliathTech, Postech and CHANCE include underpinning brackets evaluated under AC358, giving the engineer published capacities. Load decides: the lowest row of Techno Metal Post's CCMC table gives 10 kN allowable at 678 N·m, the top row 100 kN at 6,779 N·m, and Nortek's N3 is capped at 214 kN factored compression, while Hubbell quotes up to 220,000 lb per pile.",
+        "A low deck is the opposite case. Oakville's drawings allow a freestanding deck no more than 23.5 in from grade to the joists and under 592 sq ft to sit on deck blocks with no footing, and the Ontario Building Code excerpt GoliathTech publishes shows that a platform no more than 600 mm above grade, one storey, under 55 m², unroofed and unattached needs no uplift anchorage. For a deck like that, a 48 mm pile from any CCMC-listed system is already more foundation than the code demands. An 89 mm shaft with a machine that needs a 1.7 m gap in the fence adds cost, ruts and a bigger torque head for a load the light pile carries.",
+        "Between those ends, soil decides more than brand. Oakville's filed geotechnical reports use a 1.2 m design frost depth and say whether a site is clay, silt or sand. In clay, Xtreme Post's report requires load tests because its correlation covers granular soil only; GoliathTech, Pro Post and Postech publish a separate cohesive-soil table; Techno Metal Post publishes one table for granular, cohesive soil and silt. Frost is a design check, not a brand feature: Hubbell's field comparison measured about 5 mm of heave on a helical pile against 36 mm on a concrete pier, and frost jacking is resisted only when anchorage below the frost zone beats the adfreeze grip. The engineer runs that check for each project."
+      ],
+      "sources": [
+        {
+          "name": "NRC CCMC evaluation report 13059-R (Techno Metal Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13059-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13675-R (GoliathTech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13608-R (Pro Post)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13608-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13102-R (Pieux Vistech / Postech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13102-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13353-R (Pieux Xtreme)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13353-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14791-R (Nortek N3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14791-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14122-R (Mascore M1, M2, M3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14122-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-3418 (Techno Metal Post helical foundation systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-3418.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-3726 (GoliathTech helical pile systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-3726.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-4735 (Postech screw piles)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4735.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "ICC-ES ESR-2794 (CHANCE helical foundation systems)",
+          "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-2794.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "CHANCE Foundation Solutions, home page",
+          "url": "https://www.hubbell.com/chancefoundationsolutions/en",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post, Installation Equipment",
+          "url": "https://www.technometalpost.com/en-CA/installation-equipment/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Town of Oakville, deck building permit sample drawings (PDF)",
+          "url": "https://www.oakville.ca/getmedia/536ee2de-432a-4916-9283-4489be99789e/building-deck-sample-drawings.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "GoliathTech, Ontario Building Code uplift resistance requirements (PDF)",
+          "url": "https://www.goliathtechpiles.com/wp-content/uploads/2022/05/ontario-code-requirement-rev1-.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "B.I.G. Consulting, preliminary geotechnical investigation, Argus Road, Oakville (PDF on oakville.ca)",
+          "url": "https://www.oakville.ca/getmedia/7b079e9f-1ef4-4bf0-9534-5f5a240b1f77/da-161478-prelim_geotechnical.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Hubbell/CHANCE, Using Helical Piles to Resist Frost Heave",
+          "url": "https://blog.hubbell.com/en/chancefoundationsolutions/using-helical-piles-to-resist-frost-heave",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "dealer-networks-versus-open-market",
+      "heading": "Dealer networks against open-market piles",
+      "paragraphs": [
+        "Two models sell them. Techno Metal Post, GoliathTech, Pro Post, Postech and Pieux Xtreme sell through dealers or franchisees who hold a territory, in Techno Metal Post's case using the manufacturer's own machines; GoliathTech's finder lists about 150 units worldwide and Postech's listed 144. Mascore sells piles and equipment to contractors and owners and says no franchise rights are needed; Nortek sells and rents drive heads; CHANCE, Ideal and Magnum move through distributors. The CCMC condition does not change with the model. In every report the installer must hold the manufacturer's installer card and use approved equipment, and the Nortek and Mascore reports go further, requiring the manufacturer to keep a record of every pile each installer places.",
+        "Warranty follows the model. Manufacturer warranties cover the steel: Techno Metal Post's is 25 years against manufacturing, material and helix-assembly defects, replacing the pile but not the removal cost; GoliathTech's is a limited lifetime warranty against defects, transferable within 90 days of a sale, with installation covered only by the installer; Hubbell's is 30 years, transferable, registered within 180 days, one year only if the installer is outside its program, labour excluded. Postech advertises a limited lifetime warranty against frost heave through its dealers, Pieux Xtreme a lifetime warranty against frost movement, and Pro Post a warranty on product and labour, term in a downloadable document. Nortek, Mascore, Ideal and Magnum publish no warranty on the pages we checked.",
+        "The practical question is who answers the phone in year eight. In a franchise the territory holder does, and if that business changes hands the manufacturer's warranty continues but the installation warranty may not. With open-market piles the installer is the only party you contracted with, and the pile maker owes you the steel at most. Either way, four documents outlast any company: the installer's own written warranty, the engineer's sealed certificate, the torque log, and the labels on the piles carrying the report number, which every CCMC report requires. Keep them with the permit. On our jobs the torque log and the engineer's certificate are handed over at close-out for that reason."
+      ],
+      "sources": [
+        {
+          "name": "GoliathTech, Find a Helical (Screw) Pile Installer (franchise list)",
+          "url": "https://www.goliathtechpiles.com/find-a-certified-installer",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Postech Screw Piles, Find an Installer",
+          "url": "https://www.postechpiles.com/en/find-installer",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Pro Post Foundations, installer list",
+          "url": "https://propostfoundations.com/installer/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Pieux Xtreme, Trouver un expert (installer finder with Ontario territories)",
+          "url": "https://www.pieuxxtreme.com/trouver-un-expert/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Mascore, home page",
+          "url": "https://www.mascore.ca/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nortek Helical Piles, home page",
+          "url": "https://www.nortekhelicalpiles.ca/home",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "CHANCE Foundation Solutions, installer program",
+          "url": "https://www.hubbell.com/chancefoundationsolutions/en/about-us/chance-certified-installers",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "CHANCE Foundation Solutions, 30-year warranty page",
+          "url": "https://www.hubbell.com/chancefoundationsolutions/en/resources/warranty",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "GoliathTech, Legal Warranty",
+          "url": "https://www.goliathtechpiles.com/warranty/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Techno Metal Post, 25-Year Limited Warranty",
+          "url": "https://www.technometalpost.com/en-CA/25-year-limited-warranty/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Postech Screw Piles FAQ",
+          "url": "https://postechpiles.com/faq/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Pieux Xtreme, home page",
+          "url": "https://www.xtremepost.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Pro Post Foundations, Warranty",
+          "url": "https://propostfoundations.com/warranty/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14791-R (Nortek N3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14791-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 14122-R (Mascore M1, M2, M3)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=14122-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC evaluation report 13675-R (GoliathTech)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13675-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC technical bulletin, auger-installed steel pile foundations",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-technical-bulletin-auger-installed-steel-pile-foundations",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which helical pile is best?",
+      "a": "No system wins on paper. The Canadian CCMC reports are all written to the same technical guide and carry the same conditions, and the differences that matter, the engineer's design, the installer's card and equipment, the torque log and the certificate, are about the job rather than the brand. Choose by scope (a deck reads differently from an addition), by access width, by soil, and by who will still answer for the installation in ten years."
+    },
+    {
+      "q": "Techno Metal Post vs GoliathTech vs Postech: what is the difference?",
+      "a": "All three are Quebec manufacturers holding Active CCMC reports (13059-R, 13675-R and 13102-R) and ICC-ES reports, with shafts from about 48 to 89 mm. Techno Metal Post uses a ribbed polyethylene frost sleeve, its own machines and a dealer network, with a 25-year limited pile warranty. GoliathTech uses a smooth polyurethane-filled shaft with no sleeve, a franchise network of about 150 units and a limited lifetime pile warranty. Postech sells through franchises and advertises a limited lifetime warranty against frost heave through its dealers."
+    },
+    {
+      "q": "Does the pile brand matter for the permit?",
+      "a": "Only in one way: the building department wants evidence for the product, not a name. Oakville's and Milton's drawings ask for the manufacturer's information and the CCMC evaluation report with the application, and for an engineer to set depth, spacing and size. Hamilton's checklist asks for engineer-approved helical pier specifications and a Minister's Ruling or BMEC approval for innovative systems. A brand without a CCMC report is submitted on the engineer's design and test data, and the building official decides whether that is enough."
+    },
+    {
+      "q": "Are all helical piles CCMC approved?",
+      "a": "No, and CCMC calls them evaluations rather than approvals. On 2026-09-28 the NRC registry showed Active reports for Techno Metal Post (13059-R), Pieux Vistech/Postech (13102-R), Pieux Xtreme (13353-R), Pro Post (13608-R), GoliathTech (13675-R), Almita (13691-R), Roterra (14027-R), Twist (14098-R), Mascore (14122-R) and Nortek (14791-R). We found no CCMC report for CHANCE, IDEAL or MAGNUM; CHANCE and MAGNUM publish ICC-ES reports ESR-2794 and ESR-2997 instead, and IDEAL publishes no report number on the pages we checked."
+    },
+    {
+      "q": "What should I ask an installer before signing?",
+      "a": "Which report number will be on the pile labels and whether it is Active in the NRC registry. Which torque table or Kt the engineer will use and the target torque per pile. Whether the quote includes brackets, extensions, the engineer's layout, the sealed certificate of conformity and the torque log. How wide the machine is and what happens at refusal or in fill. To see the installer card the CCMC report requires. And whose warranty covers labour, in writing."
+    },
+    {
+      "q": "Is a heavier pile always safer?",
+      "a": "Not for a low deck. Every CCMC-listed system's smallest pile already exceeds what a platform under 600 mm high, unroofed and unattached needs, and a heavier shaft brings a wider machine and more disturbance for no gain. Heavier shafts earn their cost on additions and underpinning, which sit outside the CCMC pre-engineered scope and are designed by the project engineer from the shaft, bracket and torque capacities the manufacturer publishes. The engineer's sizing, not the brochure, sets the shaft."
+    }
+  ],
+  "related": [
+    {
+      "href": "/decks-and-additions/",
+      "label": "Deck, porch and addition foundations on helical piles, and what each one needs from the pile"
+    },
+    {
+      "href": "/underpinning/",
+      "label": "Underpinning and foundation repair: brackets, engineering and the load test question"
+    },
+    {
+      "href": "/guides/helical-pile-cost-per-pile-ontario/",
+      "label": "What a helical pile costs in Ontario, with our illustrative ranges and what other installers publish"
+    },
+    {
+      "href": "/guides/helical-piles-vs-sonotubes-frost-depth/",
+      "label": "Helical piles against poured sonotube piers: frost depth, cure time, permits and inspections"
+    }
+  ],
+  "cta": {
+    "heading": "Bring us the other quote",
+    "body": "If you already hold a quote naming one of these systems, send it with your drawings or a sketch. We will tell you what it includes, what the engineer will need for your municipality, and give you a written quote after a site review, with engineering and permit fees listed separately."
+  },
+  "reviewed": "2026-09-28"
+}
