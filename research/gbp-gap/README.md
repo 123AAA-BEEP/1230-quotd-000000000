@@ -3,6 +3,7 @@
 date: 2026-09-28 · status: **for owner review; research only, no build decisions changed** · method note: all agent research ran on Opus; orchestration and synthesis on Fable
 
 Companion files:
+- `limewash-likes.md` — the owner's sharper test (rank without a map pack in the way): the mechanism, a one-minute Maps check per term, and the 36-term shortlist ranked by how limewash-like each is.
 - `gbp-home-service-categories.md` — the Google Business Profile (GBP) category ground truth this pass checks against (349 home-service categories out of 4,044; 165-term spot check).
 - `gbp-classification.csv` — the verified GBP class and nearest category for every one of the 211 candidate rows.
 - `platform-coverage-gta.md` — Local Services Ads (Canada), HomeStars, Houzz and Yelp coverage for 32 representative terms.
