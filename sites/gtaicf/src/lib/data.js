@@ -67,6 +67,13 @@ export const GUIDES = [
     description: 'What CSA A23.1 asks for in cold weather, what the EPS form does for the cure, and what still has to be heated, covered or waited for.',
     live: false,
   },
+  {
+    slug: 'icf-systems-sold-in-ontario-compared',
+    title: 'ICF systems sold in Ontario, compared',
+    nav: 'ICF systems compared',
+    description: 'The ICF systems an Ontario homeowner or builder will be offered, side by side on the manufacturers\' own published facts: core widths, foam per face, listings, distribution.',
+    live: false,
+  },
 ];
 
 const guideFiles = import.meta.glob('../../data/guides/*.json', { eager: true });
