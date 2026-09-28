@@ -357,3 +357,8 @@ Generated from the research and writing runs of 2026-09-25. Each item is somethi
 - Unresolved: ICC-ES AC358 section 3.10 was verified from the public June 2012 copy on helicalpileworld.com; the current paywalled AC358 was not checked.
 - Unresolved: Push-pier characterisation rests on the Hubbell/CHANCE manufacturer article (not an independent engineering body); ICC-ES AC406 turned out to cover belled segmented pipe systems, not push piers, so no acceptance-criteria number is cited for push piers.
 - Unresolved: The guide is data only; the JSON guide template (src/pages/guides/[slug].astro) and GUIDES list in src/lib/data.js may need an entry for the new slug to appear in navigation. npm run build && npm run check were not run.
+
+## Systems comparison guide (added 2026-09-28)
+
+- The guide says we hand the per-pile torque log and the engineer's certificate of conformity over on every job; confirm that is standard practice.
+- Ten systems are compared with the NRC registry as the source of truth for CCMC standing; IDEAL, MAGNUM and CHANCE rows carry "not published" cells for Ontario network and frost detail. If you install one of them, its literature fills the gaps.

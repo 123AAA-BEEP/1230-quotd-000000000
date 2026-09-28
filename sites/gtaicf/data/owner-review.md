@@ -78,3 +78,9 @@ These appear across the service pages, guides and city pages. Each was written b
 ## Photos (when you have them)
 
 The site runs without imagery by design. When you have your own job photos (forms stacked and braced, the pour, membrane going on, a finished wall before backfill), send 6 to 10 at 2,000 px or wider with the city and month; the design system has a place for a real photo on the homepage, each service page and each guide. No stock or AI imagery.
+
+## Systems comparison guide (added 2026-09-28)
+
+- Plasti-Fab Advantage ICF: the manufacturer's site no longer lists an ICF product although CCMC 13101-L is still active; the guide prints the listing and plants only and tells readers to ask the yard. Worth one phone call before launch to confirm whether it is still stocked in Ontario.
+- Logix now trades as Logix Brands / Element ICF (QAI listing B1031-1 covers both names); its own site blocks retrieval, so no Logix assembly R-value is printed.
+- Polycrete, BuildBlock and Nexcem rows carry "not retrieved" cells where the manufacturer's pages could not be read; fill them from supplier literature when a rep sends it.

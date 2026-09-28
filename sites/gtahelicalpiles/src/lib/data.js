@@ -66,6 +66,13 @@ export const GUIDES = [
     description: 'When a settling footing can be stabilised with helical brackets, and what it costs.',
     live: false,
   },
+  {
+    slug: 'helical-pile-systems-in-ontario-compared',
+    title: 'Helical pile systems sold in Ontario, compared',
+    nav: 'Pile systems compared',
+    description: 'The helical pile systems an Ontario homeowner, builder or engineer will be offered, side by side on the manufacturers\' own facts: shafts, CCMC standing, galvanizing, frost detail, dealer network.',
+    live: false,
+  },
 ];
 
 // Guides rendered from JSON (data/guides/<slug>.json). The cost guide is a

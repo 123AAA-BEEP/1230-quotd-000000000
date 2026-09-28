@@ -1,0 +1,594 @@
+{
+  "slug": "icf-systems-sold-in-ontario-compared",
+  "title": "ICF systems sold in Ontario, compared | GTA ICF",
+  "description": "Nudura, Amvic, Logix, Fox Blocks, BuildBlock, Quad-Lock, Plasti-Fab, Polycrete and Nexcem side by side on the makers' own published figures, with sources.",
+  "h1": "ICF systems sold in Ontario, compared",
+  "kicker": "Buyer's comparison",
+  "lede": "A homeowner or builder in southern Ontario will be offered one of about nine insulated concrete form systems, usually whichever one the nearest yard stocks. This guide is for anyone holding two quotes that name different forms. It ranks nothing and recommends nothing: we install whichever system the local supplier carries, so we have no favourite. What it does is put the manufacturers' own published figures side by side, core widths, foam per face, the R-value each maker prints and on what basis, the listing behind it and where it is made, so you can see where two quotes actually differ.",
+  "sections": [
+    {
+      "id": "why-the-brand-matters-less",
+      "heading": "Why the brand matters less than people think",
+      "paragraphs": [
+        "Ontario's Building Code does not name an ICF brand. Article 9.15.4.1 asks every flat wall ICF unit to conform to CAN/ULC-S717.1, the material standard for the forms, and that is the only product requirement it makes. The structural rules are about the concrete inside the foam. Sentence 9.15.4.2.(2) sets a foundation core of not less than 150 mm (6 in), and never thinner than the concrete in the wall above. Article 9.20.17.1 sets an above-ground core of not less than 140 mm, constant for the full height. Every system whose sizes we could retrieve offers a 6 in core or larger, so the Code's minimum is met by all of them.",
+        "Energy works the same way. SB-12 deems an ICF wall with at least RSI 1.76 (R10) of insulation on each face of the concrete to comply with the wall values in Table 3.1.1.2.A, and allows it in place of basement walls that need RSI 3.52 ci (R20) or less. That test is about the foam on each face of the chosen form, not the name on the pallet. Nominal means the foam alone; the effective value for the whole wall is what the SB-12 tables use, and it comes from the manufacturer's thermal report for the block on your quote. Reviewers may ask for that product literature with the SB-12 submission.",
+        "Then there is the paperwork. The Code asks for S717.1 conformance, not a CCMC number. The NRC's registry lists two ICF systems under CAN/ULC-S717.1, Amvic (13043-L) and Plasti-Fab's Advantage (13101-L), plus one code-compliance report, for Polycrete (13354-R). Nudura, Logix, Fox Blocks, BuildBlock and Quad-Lock do not appear there; they hold S717.1 listings or certifications from Intertek or QAI, which are also accredited bodies. Quad-Lock's compliance page says plainly that no CCMC report is required for an acceptable solution referenced in the codes. Whichever system is on your quote, its listing document goes in the permit package, and we prepare that package with you."
+      ],
+      "sources": [
+        {
+          "name": "2024 Building Code Compendium, Volume 1, Division B Part 9 (ministry digital copy, PDF)",
+          "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "2024 Building Code Compendium, Volume 2, Supplementary Standard SB-12 (ministry digital copy, PDF)",
+          "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "NRC Canadian Construction Materials Centre registry, listings under CAN/ULC-S717.1",
+          "url": "https://www.nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/registry/extranet/list.html?s=L&c=30&mfg=0&mf=0&a=3&tg=CAN_ULC-S717.1&y=0&t=0&crpa=0&co=0&o=0",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Quad-Lock, evaluations and code compliance page (manufacturer statement on S717.1 listing and CCMC)",
+          "url": "https://www.quadlock.com/technical_library/evaluations/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "OAA Practice Tip PT.36.3, OBC SB-12 prescriptive compliance (v3.0, 2025-09-19, PDF)",
+          "url": "https://www.oaa.on.ca/Assets/Common/Shared_Documents/Practice%20Tips/PT.36.3_V03.0_OBC-SB12_PrescriptiveCompliance.pdf",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "the-systems-side-by-side",
+      "heading": "The systems side by side",
+      "paragraphs": [
+        "Every cell below comes from the manufacturer's own website, data sheet or listing document, or from the NRC registry, and the source list under the table names each one. Where a manufacturer does not print a figure on the pages we read, the cell says so rather than guessing. Two suppliers' sites would not load for our tools: Polycrete's returned an access error or an empty page, so its row is built from its CCMC report, and Plasti-Fab's current site no longer lists the Advantage ICF System at all, so its row carries the listing and the plants and nothing else. Logix Brands now also sells under the Element ICF name, and its QAI listing covers both.",
+        "Read the R column with care. Amvic prints R22 and R30 for completed walls with 2.5 in and 3.25 in panels. Quad-Lock's figures include R-2.66 for air films, drywall, concrete and a wood finish, so they are closer to a whole-assembly number. Nudura and Logix print the foam's resistance per inch and leave the wall figure to their design documents. Fox Blocks prints 23.5 plus. None of these is the effective value the SB-12 tables use; that comes from the third-party thermal report for the block. Core widths are nominal, and Logix's 6.25 in is its own standard size rather than a misprint."
+      ],
+      "table": {
+        "caption": "Nine ICF systems on their manufacturers' own published figures. Not printed means the manufacturer's page or data sheet we read does not give the figure; not retrieved means the page that would carry it did not load for our tools. Sources for every row are listed under this section.",
+        "columns": [
+          "System (manufacturer)",
+          "Core widths",
+          "EPS per face",
+          "Nominal R, as published",
+          "Listing or CCMC",
+          "Made or distributed for Ontario"
+        ],
+        "rows": [
+          [
+            "Nudura (Tremco Canada Division, RPM Canada)",
+            "4, 6, 8, 10 and 12 in (102 to 305 mm); form 96 in long by 18 in high",
+            "2 5/8 in (67 mm)",
+            "Foam only: minimum R4 per inch (RSI 0.70); no wall figure printed on the pages we read",
+            "Intertek certification to CAN/ULC-S717.1 (number not printed); ULC fire listing WO12; not on the NRC registry",
+            "Manufacturer address in Toronto, ON; licensee plants in Granby, QC, Alberta and Columbus, GA; sold through distributors only"
+          ],
+          [
+            "Amvic R22 and R30 (Amvic Corporation, trading as Alleguard)",
+            "R22: 4, 6 and 8 in at 16 in high, 10 and 12 in at 24 in high; R30: 6 and 8 in; all 48 in long",
+            "R22: 2.5 in (63.5 mm); R30: 3.25 in (83 mm)",
+            "Completed wall R22 or R30 per the data sheets; EPS 4.0 per inch by ASTM C518",
+            "CCMC 13043-L to S717.1:2017 via QAI listing B1061-2; ICC-ES ESR-1269",
+            "Data sheet address in Brentwood, TN; plant not printed; dealer locator; Ontario projects shown on the site"
+          ],
+          [
+            "Logix ICF and Element ICF (Logix Brands Ltd.)",
+            "Logix: 4, 6.25, 8, 10 and 12 in, 48 in long, 12 or 16 in high; Element Chrome: 6, 8, 10 and 12 in",
+            "2 3/4 in (70 mm) minimum, both lines",
+            "Foam only: Logix EPS minimum RSI 0.70 per 25 mm on the QAI listing, R 4.13 per inch on the 2019 data sheet; Element Chrome graphite EPS R4.7 per inch; no wall figure in the documents we read",
+            "QAI listing B1031-1 to CAN/ULC-S717.1; QAI evaluation report CERus-1005; not on the NRC registry",
+            "Plants in Cobourg, ON, Chilliwack, BC, Acheson, AB, Headingly, MB and two US sites, per the QAI report"
+          ],
+          [
+            "Fox Blocks (Airlite Plastics)",
+            "4, 6, 8, 10 and 12 in blocks on the product page, 48 in long",
+            "Not printed as a figure; form widths of 9.25, 11.25, 13.25, 15.25 and 17.25 in over the 4 to 12 in cores leave 2 5/8 in per face",
+            "\"An R-value of 23.5+\" on the home page",
+            "Intertek certification listing (March 2016) and code compliance research report CCRR-1010 in its resource library; S717.1 listing number not printed; not on the NRC registry",
+            "Omaha, NE; dealer network; Ontario yards not named on the pages we read; an SB-12 Ontario compliance document is listed"
+          ],
+          [
+            "BuildBlock (BuildBlock Building Systems)",
+            "Not retrieved; the page we read gives the 16 in by 48 in block but no core list",
+            "Not retrieved",
+            "Not retrieved",
+            "Intertek CCRR-1003; CAN/ULC-S717.1:2017 named on its code page, listing number not printed; not on the NRC registry",
+            "14 plants across North America, Wakefield, QC the Canadian one; distributors, dealers and direct sales"
+          ],
+          [
+            "Quad-Lock (Quad-Lock Building Systems)",
+            "Set by tie length: six standard ties span total nominal wall widths of 8 to 18 in, plus 12 in per extender tie; the 4 in tie is the smallest; panels 48 by 12 in",
+            "Regular 2 1/4 in (57 mm), Ultra 3 1/8 in (79 mm), Plus 4 1/4 in (108 mm); 4 in add-on layers",
+            "\"True R-values\" of 22, 28, 30, 38, 43, 45, 53 and 59 by panel combination, each including R-2.66 for air films, drywall, concrete and finish",
+            "Meets CAN/ULC-S717.1 per an Intertek listing, number not printed on the page; Intertek fire design QBS/ICF 240-01; not on the NRC registry",
+            "Head office not printed on the pages we read; dealers and distributors; Ontario yards not named"
+          ],
+          [
+            "Plasti-Fab Advantage ICF System (Plasti-Fab Ltd.)",
+            "Not retrieved",
+            "Not retrieved",
+            "Not retrieved",
+            "CCMC 13101-L to CAN/ULC-S717.1:2017 via Intertek certification 81216; active, modified 2025-04-02",
+            "Plasti-Fab plants in Ajax and Kitchener, ON; the current site does not list the ICF product, so ask the yard whether it is still stocked"
+          ],
+          [
+            "Polycrete Big Block 1600 (Polycrete International Inc.)",
+            "CCMC report tables cover 150, 200 and 250 mm walls; forms 2 440 mm long and 305, 460 or 610 mm high, overall thickness 270 to 420 mm",
+            "64 mm, with steel wire mesh embedded in the EPS",
+            "Not published on the CCMC page; the manufacturer's site did not load for our tools",
+            "CCMC 13354-R, a code-compliance report to NBC 2015 under CCMC-TG-031119.01-15C",
+            "Holder in Montréal, QC; report valid only for the Trois-Rivières, QC plant; Ontario distribution not retrieved"
+          ],
+          [
+            "Nexcem (cement-bonded wood fibre, not EPS)",
+            "3.2 to 12.5 in depending on unit thickness and insert; 6.5 in typical minimum for basement walls",
+            "No EPS; units are 6 to 16 in thick overall, with optional insulation inserts of 1.5 to 7 in",
+            "R-8 base unit (R-8 to R-12 for the material alone) up to R-36 with the thickest insert, per the maker's summary table",
+            "Not retrieved; the approvals page did not load; CAN/ULC-S717.1 is written for EPS units, see the Nexcem section",
+            "Ontario company (647 number, Ontario projects); plant address not printed on the pages we read"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "name": "Nudura 10-part specification (manufacturer document: form sizes, webs, EPS, listings, plants, warranty, PDF)",
+          "url": "https://www.nudura.com/resource/download/nudura_10_part_specification.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nudura pre-design criteria (manufacturer page: 2 5/8 in panels, 18 in form height)",
+          "url": "https://www.nudura.com/icf-education/pre-design-criteria",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Alleguard, Amvic ICF R22 product data sheet (28 June 2024, PDF)",
+          "url": "http://alleguard.com/wp-content/uploads/2023/01/Alleguard-ICF-R22-Product-Data-Sheet.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Alleguard, Amvic ICF R30 product data sheet (PDF)",
+          "url": "http://alleguard.com/wp-content/uploads/2023/01/Alleguard-ICF-R30-Product-Data-Sheet.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC 13043-L, Amvic insulated concrete forms (standard compliance listing)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13043-L",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Element ICF Code and Compliance Guide, with QAI listing B1031-1 and evaluation report CERus-1005 (Logix Brands, June 2024, PDF)",
+          "url": "https://elementicf.com/wp-content/uploads/2024/07/Element-ICF-Code-And-Compliance-061824-WEB.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Element Chrome ICF material and product data sheet (Logix Brands, April 2025, PDF)",
+          "url": "https://elementicf.com/wp-content/uploads/2025/03/Element_Chrome_MPDS_04162025.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "QAI Laboratories listing directory, Logix Brands Ltd. (listing B1031-1)",
+          "url": "https://qai.org/directory/logix-insulated-concrete-forms-ltd/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Logix material property data sheet (2019, distributor-hosted PDF)",
+          "url": "https://bvrthermal.com/?mdocs-file=4811",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Fox Blocks Series product page (block table with core and form widths)",
+          "url": "https://www.foxblocks.com/products/series",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Fox Blocks home page (R-value statement)",
+          "url": "https://www.foxblocks.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Fox Blocks resource library, codes and standards",
+          "url": "https://www.foxblocks.com/resources?category=codes-and-standards",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Fox Blocks about page (Omaha, Airlite Plastics)",
+          "url": "https://www.foxblocks.com/about-us",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "BuildBlock ICF product page (block size, web spacing, furring strips)",
+          "url": "https://buildblock.com/buildblock-icfs/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "BuildBlock code approvals page",
+          "url": "https://buildblock.com/technical-support/code-approvals/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "BuildBlock manufacturing locations",
+          "url": "https://buildblock.com/about-buildblock-icfs/buildblock-manufacturing-locations/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Quad-Lock panels (sizes, thicknesses, R-value basis)",
+          "url": "https://www.quadlock.com/insulated-concrete-forms/panels.htm",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Quad-Lock ties (spacing and lengths)",
+          "url": "https://www.quadlock.com/insulated-concrete-forms/ties.htm",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Quad-Lock, evaluations and code compliance page (S717.1 listing, fire design)",
+          "url": "https://www.quadlock.com/technical_library/evaluations/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC 13101-L, Plasti-Fab Advantage ICF System (standard compliance listing)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13101-L",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Plasti-Fab locations page (Ajax and Kitchener plants)",
+          "url": "https://www.plastifab.com/support/locations/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Plasti-Fab home page (current product menu)",
+          "url": "https://www.plastifab.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC 13354-R, Polycrete Big Block 1600 (code compliance evaluation)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13354-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nexcem insulated concrete forms page (wall system summary table)",
+          "url": "https://nexcembuild.com/insulated-concrete-forms-2/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nexcem home page (contact number, Ontario projects)",
+          "url": "https://nexcembuild.com/",
+          "retrieved_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "what-differs-on-site",
+      "heading": "What actually differs between systems on site",
+      "paragraphs": [
+        "The differences a crew feels are not in the R column. The first is web spacing, because the web flanges are what drywall and cladding screw into. Amvic's R22 block and BuildBlock put webs at 6 in on centre; Nudura, Logix and Amvic's R30 use 8 in; Quad-Lock ties sit on a 12 in grid; Element Chrome has side webs at 16 in with loose Flexties between them. Nudura's flange is 1 1/2 in (38 mm) wide and recessed 1/2 in below the foam, and BuildBlock and Element Chrome print the same width and recess. Tighter spacing gives the finisher more to hit and, BuildBlock argues, less bulging of the foam under concrete pressure.",
+        "The second is the unit itself. A Nudura form is 96 in long and 18 in high; most others are 48 by 16 in; Quad-Lock is a 48 by 12 in panel assembled with ties; Polycrete's Big Block is 2 440 mm long and up to 610 mm high; Nexcem units are 12 in high and 24 or 36 in long. Height sets the coursing, so a wall height that stacks cleanly in 16 in courses may need a cut course in 18 in, and the reverse. Nudura's own design page says to put any partial course at the footing or the top, not mid-wall, and to cut panels at 9 in or less so the offcut is reusable.",
+        "The third is the accessory catalogue. Every EPS system here sells 90 degree corners; Amvic, Nudura, Logix and BuildBlock also sell 45s, and BuildBlock's corner legs are 6 in longer than what it calls the industry standard. Taper-top forms, which widen the core at the top of a wall for a floor or roof bearing, come from Amvic, Fox Blocks, Logix and Polycrete; brick-ledge forms from those four plus Nudura, with Quad-Lock using a brick-ledge tie instead. Bracing is a separate purchase or rental for all of them: Amvic's site lists Plumwall, BuildBlock sells BuildBrace and lists Zont and Zuckle, and Quad-Lock's corner brackets are meant to remove the bracing at corners."
+      ],
+      "table": {
+        "caption": "What each manufacturer publishes about the unit and its fastening surface. Not printed means the page or data sheet we read does not give it.",
+        "columns": [
+          "System",
+          "Unit size",
+          "Web or tie spacing",
+          "Flange or furring width",
+          "Special forms named"
+        ],
+        "rows": [
+          [
+            "Nudura",
+            "96 by 18 in (2 438 by 457 mm)",
+            "8 in (203 mm)",
+            "1 1/2 in (38 mm), recessed 1/2 in",
+            "90 and 45 degree corners, brick ledge forms and extensions, height adjusters"
+          ],
+          [
+            "Amvic R22 and R30",
+            "48 by 16 in; 48 by 24 in for 10 and 12 in cores",
+            "6 in (R22); 8 in (R30)",
+            "Not printed on the data sheets we read",
+            "90 and 45 degree corners, taper top, brick ledge; T-block drawings on the site"
+          ],
+          [
+            "Logix and Element Chrome",
+            "48 by 16 or 12 in (Logix)",
+            "8 in (Logix); side webs at 16 in with Flexties between (Element Chrome)",
+            "1.5 in (38 mm), recessed 1/2 in, 14.95 in tall (Element Chrome)",
+            "Brick ledge, taper top, double taper top, 90 degree (32 in) and 45 degree (30 in) blocks, half height, T-series, end caps"
+          ],
+          [
+            "Fox Blocks",
+            "48 in long, 5.33 sq ft of face per straight block",
+            "Six full-length ties per straight block; spacing not printed",
+            "Not printed",
+            "Corner, half corner, taper top, brick ledge, T-block, radius, curb, 4 in height extender"
+          ],
+          [
+            "BuildBlock",
+            "48 by 16 in",
+            "6 in, with hard points at 8 in vertically",
+            "1.5 in, 15 in tall per course, recessed 1/2 in",
+            "90 and 45 degree corners with legs 6 in longer; cut lines every 1 in vertically and 2 in horizontally"
+          ],
+          [
+            "Quad-Lock",
+            "48 by 12 in panels; two panels and four ties per unit",
+            "12 in grid, at every panel joint and between",
+            "Tie flanges; width not printed on the pages we read",
+            "Corner, angle, straight and endcap brackets; metal tracks; brick ledge and slab ties; panels scored every 2 in"
+          ],
+          [
+            "Polycrete Big Block 1600",
+            "2 440 mm long; 305, 460 or 610 mm high; foldable",
+            "Steel wire mesh and metal ties embedded in the panels; spacing not stated",
+            "Not stated in the CCMC report",
+            "Straight, tapered top and brick ledge"
+          ],
+          [
+            "Nexcem",
+            "24 or 36 in long by 12 in high",
+            "No plastic webs; the manufacturer describes a foam-free, plastic-free unit",
+            "Not retrieved",
+            "Not retrieved"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "name": "Nudura 10-part specification (manufacturer document: webs, flange, form size, accessories, PDF)",
+          "url": "https://www.nudura.com/resource/download/nudura_10_part_specification.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nudura pre-design criteria (manufacturer page: stack heights and partial courses)",
+          "url": "https://www.nudura.com/icf-education/pre-design-criteria",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Alleguard, Amvic ICF R22 product data sheet (28 June 2024, PDF)",
+          "url": "http://alleguard.com/wp-content/uploads/2023/01/Alleguard-ICF-R22-Product-Data-Sheet.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Amvic ICF (Alleguard) product site: forms, accessories and bracing",
+          "url": "https://www.amvicsystem.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Element ICF Code and Compliance Guide, QAI evaluation report table of Logix products (PDF)",
+          "url": "https://elementicf.com/wp-content/uploads/2024/07/Element-ICF-Code-And-Compliance-061824-WEB.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Element Chrome ICF material and product data sheet (side webs, furring strips, PDF)",
+          "url": "https://elementicf.com/wp-content/uploads/2025/03/Element_Chrome_MPDS_04162025.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Fox Blocks Series product page (block types and ties)",
+          "url": "https://www.foxblocks.com/products/series",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "BuildBlock ICF product page (web spacing, furring strips, corners, cut lines)",
+          "url": "https://buildblock.com/buildblock-icfs/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Quad-Lock insulated concrete forms overview (brackets, tracks, bracing)",
+          "url": "https://www.quadlock.com/insulated-concrete-forms/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Quad-Lock ties (grid, extender, brick ledge and slab ties)",
+          "url": "https://www.quadlock.com/insulated-concrete-forms/ties.htm",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Quad-Lock panels (size, scoring)",
+          "url": "https://www.quadlock.com/insulated-concrete-forms/panels.htm",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC 13354-R, Polycrete Big Block 1600 (product description)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13354-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nexcem insulated concrete forms page (unit sizes)",
+          "url": "https://nexcembuild.com/insulated-concrete-forms-2/",
+          "retrieved_at": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "how-to-compare-two-quotes",
+      "heading": "How to compare quotes from two suppliers",
+      "paragraphs": [
+        "Start by making the two quotes describe the same wall. Both should name the system and the model, the core width, the EPS thickness per face, the block count, and which special forms are included. If one quote is priced on a 6 in core and the other on 8 in, or one includes corners, taper tops and bracing rental and the other does not, the totals are not comparable. Check the core against the drawings, not against habit: the Code minimum is 150 mm below grade and 140 mm above, and an engineer's or designer's specification can ask for more.",
+        "Then ask each supplier for two documents: the listing to CAN/ULC-S717.1 or the CCMC evaluation for that exact product, and the thermal report that gives the effective value SB-12 uses. Compare the per-face insulation with SB-12's RSI 1.76 (R10) each side. Ask what the yard has in stock in your core width, its lead time, and whether the corners and taper tops ship from the same place. Ask about the warranty in writing: Nudura publishes a 30-year limited warranty on minimum thermal resistance and acoustic performance from the date of delivery; the others we checked either point to a warranty document or print nothing, so ask.",
+        "Price last. Our own figures are illustrative ranges per square foot of wall from our price table, firm price after a site review, and they sit in the ICF against poured guide rather than here. What a comparison between two forms will show is small: block cost is one line inside a wall price that is mostly concrete, steel, labour, pump time and waterproofing. A cheaper block that needs a cut course every lift, or that arrives a week late, costs more than the difference. We say which system a quote is priced on, and we will re-price on the other if you ask."
+      ],
+      "list": [
+        "Which system and model, which core width and which EPS thickness per face, in writing on the quote.",
+        "The S717.1 listing number or CCMC number for that product, and the thermal report behind the printed R-value.",
+        "Block height, so the wall stacks without a cut course, and the offcut plan if it cannot.",
+        "Which special forms are included: corners, taper tops, brick ledges, bucks, and who provides the bracing.",
+        "Stock in your core width at the local yard, the lead time, and the delivery date in the contract.",
+        "The manufacturer's warranty terms and how a claim is made."
+      ],
+      "sources": [
+        {
+          "name": "2024 Building Code Compendium, Volume 1, Division B Part 9 (ministry digital copy, PDF)",
+          "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "2024 Building Code Compendium, Volume 2, Supplementary Standard SB-12 (ministry digital copy, PDF)",
+          "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Nudura 10-part specification (manufacturer document: warranty clause, PDF)",
+          "url": "https://www.nudura.com/resource/download/nudura_10_part_specification.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "OAA Practice Tip PT.36.3, OBC SB-12 prescriptive compliance (product literature and thermal test data, PDF)",
+          "url": "https://www.oaa.on.ca/Assets/Common/Shared_Documents/Practice%20Tips/PT.36.3_V03.0_OBC-SB12_PrescriptiveCompliance.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "GTA ICF guide: ICF vs poured concrete foundations in Ontario (our illustrative price table)",
+          "url": "/guides/icf-vs-poured-concrete-ontario/",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "nexcem-cement-bonded-wood-fibre",
+      "heading": "Nexcem: a cement-bonded wood-fibre form",
+      "paragraphs": [
+        "Nexcem belongs in its own section because it is a different material. Its units are cement-bonded wood fibre, with no polystyrene and no plastic webs; the manufacturer calls them ICCF, insulated composite concrete forms, and says the base unit's material alone gives R-8 to R-12. The catalogue runs from a 6 in unit with a 3.2 in core to 16 in units with a 12.5 in core, all 12 in high and 24 or 36 in long. Insulation inserts of 1.5 to 7 in raise the published total to R-14, R-22, R-28 or R-36 while narrowing the core. Basement walls, it says, typically need at least a 6.5 in core.",
+        "The compliance route is different too. CAN/ULC-S717.1, as Quad-Lock's technical page quotes its scope, is written for modular expanded polystyrene units connected by cross ties, and the Code's Part 9 ICF articles hang on that standard. A wood-fibre unit is not that product, so expect the wall to be designed rather than read from the Part 9 tables; Nexcem itself points designers to reinforced concrete design to CSA A23.3 based on the core. We could not load Nexcem's approvals page, so we print no listing for it: ask the company what document it provides for an Ontario permit. Its own cost page puts the block above polystyrene ICF on a materials-only basis."
+      ],
+      "sources": [
+        {
+          "name": "Nexcem insulated concrete forms page (material, wall system summary table, design note)",
+          "url": "https://nexcembuild.com/insulated-concrete-forms-2/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nexcem home page (manufacturer description)",
+          "url": "https://nexcembuild.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Nexcem, The Cost of Insulated Concrete Forms, update 2025 (manufacturer page)",
+          "url": "https://nexcembuild.com/what-do-insulated-concrete-forms-cost-2/",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "Quad-Lock, evaluations and code compliance page (scope of CAN/ULC-S717.1 as quoted)",
+          "url": "https://www.quadlock.com/technical_library/evaluations/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "2024 Building Code Compendium, Volume 1, Division B Part 9 (ministry digital copy, PDF)",
+          "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": "where-a-system-is-the-wrong-choice",
+      "heading": "Where a particular system is the wrong choice",
+      "paragraphs": [
+        "The wrong system is usually the right system in the wrong place. If the engineer has specified a 10 in core for a tall walk-out wall, Amvic's R30 line stops at 8 in and Element Chrome starts at 6 in, so the quote has to move to a line that carries the size. Logix's 6.25 in standard is fine against a 150 mm minimum, but the concrete order and the footing width should be figured on 159 mm, not 152. If the yard nearest the site cannot deliver corners and taper tops with the straights, a system with a better form on paper becomes a stalled wall on the day.",
+        "Thin panels need a second look under SB-12. Quad-Lock's 2 1/4 in Regular panel is one the manufacturer itself recommends only for experienced installers, and its published R-values are built from panel combinations rather than a fixed per-face thickness. Before the SB-12 form is filled in, the per-face value has to be read from the manufacturer's sheet against the RSI 1.76 (R10) each side that the deemed-to-comply sentence asks for. Plasti-Fab's Advantage system still holds an active CCMC listing, but the company's current site does not list it among its products, so confirm it is stocked before a quote is written on it.",
+        "And there are jobs where no ICF system is the better choice. A wall over 3 m floor to floor, soil under 75 kPa, or a plan with many jogs and wide openings leaves the Part 9 tables and goes to Part 4 whatever the brand. There, a poured and insulated wall or a simpler plan is often quicker to review, and we say so at the site review, not after the permit is in. Polycrete's CCMC report is a narrower case: it is tied to the Trois-Rivières plant, to NBC 2015 and to the company's own installation manual, and those conditions travel with it into an Ontario permit package."
+      ],
+      "sources": [
+        {
+          "name": "Amvic ICF (Alleguard) product site: R22 and R30 core sizes",
+          "url": "https://www.amvicsystem.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Element Chrome ICF material and product data sheet (core sizes, PDF)",
+          "url": "https://elementicf.com/wp-content/uploads/2025/03/Element_Chrome_MPDS_04162025.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Element ICF Code and Compliance Guide (Logix 6.25 in core, PDF)",
+          "url": "https://elementicf.com/wp-content/uploads/2024/07/Element-ICF-Code-And-Compliance-061824-WEB.pdf",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Quad-Lock panels (Regular panel note, R-value basis)",
+          "url": "https://www.quadlock.com/insulated-concrete-forms/panels.htm",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "Plasti-Fab home page (current product menu)",
+          "url": "https://www.plastifab.com/",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC 13101-L, Plasti-Fab Advantage ICF System",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13101-L",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "NRC CCMC 13354-R, Polycrete Big Block 1600 (conditions and limitations)",
+          "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/canadian-construction-materials-centre/ccmc-publications/document.html?type=cert&id=13354-R",
+          "retrieved_at": "2026-09-28"
+        },
+        {
+          "name": "2024 Building Code Compendium, Volume 1, Division B Part 9 (ministry digital copy, PDF)",
+          "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+          "retrieved_at": "2026-09-25"
+        },
+        {
+          "name": "2024 Building Code Compendium, Volume 2, Supplementary Standard SB-12 (ministry digital copy, PDF)",
+          "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301881.pdf",
+          "retrieved_at": "2026-09-25"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which ICF block is best?",
+      "a": "None of them, in the sense the question means. Ontario's Building Code asks for a flat wall form that conforms to CAN/ULC-S717.1 and a concrete core of at least 150 mm below grade, and every system in our table whose sizes we could retrieve meets both. What differs is web spacing, block height, the special forms in the catalogue, the panel thickness, and which yard near you stocks it. We install whichever system the local supplier carries, and the quote names it."
+    },
+    {
+      "q": "Nudura vs Amvic vs Logix: what is the actual difference?",
+      "a": "Nudura is a 96 by 18 in form with 2 5/8 in panels and webs at 8 in, with a Toronto manufacturer address and licensee plants. Amvic's R22 is 48 by 16 in with 2.5 in panels and webs at 6 in, its R30 has 3.25 in panels, and it holds CCMC 13043-L. Logix, now also sold as Element ICF, is 48 by 16 in with 2 3/4 in panels, webs at 8 in, a 6.25 in standard core and a plant in Cobourg. All three list to S717.1."
+    },
+    {
+      "q": "Does the ICF brand matter for the building permit?",
+      "a": "Not in the Code. Article 9.15.4.1 asks for conformance to CAN/ULC-S717.1, and none of the municipal websites we checked publishes an ICF-specific checklist. What matters is that the system on the drawings is the system on site, and that its listing or CCMC document and its thermal data are in the package if the reviewer asks. Only Amvic, Plasti-Fab's Advantage and Polycrete appear on the NRC's registry; the others hold Intertek or QAI listings."
+    },
+    {
+      "q": "Can two ICF brands be mixed on one job?",
+      "a": "Mixing accessories is normal; mixing forms in one wall is not. Bucks, bracing and connectors are sold as brand-neutral: Amvic's AmBuck is described as compatible with 6 and 8 in core ICF systems, and both Amvic and BuildBlock list third-party bracing. The forms themselves have different heights and interlocks, 18 in against 16 in against 12 in panels, and each listing and installation manual covers its own product. One system per wall, named on the quote, keeps the permit package clean."
+    },
+    {
+      "q": "What should I ask an ICF supplier before I sign?",
+      "a": "Six things. The system and model, core width and EPS thickness per face, in writing. The S717.1 listing number or CCMC number for that product. The thermal report behind the printed R-value, since SB-12 wants RSI 1.76 (R10) on each face. Stock in your core width at the local yard and the lead time. Which corners, taper tops, brick ledges and bracing are included. And the warranty terms, because they range from Nudura's published 30 years to nothing printed at all."
+    },
+    {
+      "q": "Which ICF systems are made in Ontario?",
+      "a": "By the manufacturers' own documents: Nudura's specification gives a Toronto manufacturer address, with licensee plants in Quebec, Alberta and Georgia. The QAI evaluation report for Logix and Element ICF lists a plant in Cobourg, Ontario among six. Plasti-Fab has plants in Ajax and Kitchener, though its site no longer lists the Advantage ICF. Nexcem gives a 647 number and Ontario projects but prints no plant address on the pages we read. Amvic, Fox Blocks, BuildBlock and Quad-Lock do not print an Ontario plant."
+    }
+  ],
+  "related": [
+    {
+      "href": "/foundations-and-basements/",
+      "label": "ICF foundations and basements: what we build and how the job runs"
+    },
+    {
+      "href": "/full-height-walls/",
+      "label": "Full-height ICF walls for additions, garages and whole storeys"
+    },
+    {
+      "href": "/guides/icf-vs-poured-concrete-ontario/",
+      "label": "ICF against a poured wall: our illustrative ranges and a calculator"
+    },
+    {
+      "href": "/guides/ontario-building-code-icf-requirements/",
+      "label": "What Ontario's Building Code asks of an ICF wall, clause by clause"
+    }
+  ],
+  "cta": {
+    "heading": "Send us both quotes and the drawings",
+    "body": "Email the two quotes, the plans and any engineer's notes. We will tell you whether the two forms are priced on the same wall, which core and EPS thickness the drawings need, and what to ask each yard, then give you a written quote after a site review."
+  },
+  "reviewed": "2026-09-28"
+}
