@@ -1,0 +1,212 @@
+slug,gbp_class,gbp_nearest,gbp_note
+basement-lowering-underpinning,PARTIAL,Excavating contractor; Waterproofing service; Concrete contractor,"no underpinning category; ""Foundation"" is the nonprofit category"
+low-basement-ceiling,PARTIAL,Excavating contractor; Waterproofing service; Concrete contractor,outcome: solved by underpinning/basement lowering; agent NONE
+rooftop-decks-terraces,PARTIAL,Deck builder; Roofing contractor; Carpenter,Track-2 slice of EXACT trade Deck builder
+bench-footing,PARTIAL,Excavating contractor; Concrete contractor; Waterproofing service,
+exterior-insulation-retrofit,PARTIAL,Insulation contractor; Siding contractor; Energy advisory service,Track-2 slice of EXACT trade Insulation contractor
+wine-cellars,PARTIAL,Cabinet maker; Carpenter; HVAC contractor,"trap: ""Wine cellar"" is a food-and-drink venue/shop, not a builder"
+deep-energy-retrofit,PARTIAL,Energy advisory service; Insulation contractor; General contractor,agent NONE; specific adjacent categories exist
+geothermal-heat-pump,PARTIAL,HVAC contractor; Heating contractor; Drilling contractor,
+natural-swimming-pools,PARTIAL,Pond contractor; Swimming pool contractor; Landscape designer,
+outdoor-kitchens,PARTIAL,Landscaper; Landscape designer; Grill store,
+sport-courts-pickleball,EXACT,Tennis court construction company; Basketball court contractor,agent PARTIAL; the court builders' own categories (they build pickleball)
+house-lifting,NONE,Structural engineer; Excavating contractor; General contractor,"no structural-moving category; ""Manufactured home transporter"" covers manufactured homes only"
+condo-unit-renovation,PARTIAL,Remodeler; Interior construction contractor; Kitchen remodeler,Track-2 slice of EXACT trade Remodeler
+home-theatre-construction,EXACT,Home cinema installation; Home theater store; Audio visual consultant,
+sunrooms-three-season-rooms,EXACT,Sunroom contractor; Patio enclosure supplier,"agent UNKNOWN; ""Sunroom contractor"" exists"
+separate-entrance-walkout,PARTIAL,Excavating contractor; Concrete contractor; General contractor,
+drafty-windows-heritage-district,PARTIAL,Glass repair service; Window installation service; Carpenter,outcome: window restoration or storm windows; agent NONE
+heritage-permit-required-exterior,PARTIAL,Heritage preservation; Architect; Building consultant,outcome: heritage consultant; mostly informational; agent NONE
+historic-window-restoration,PARTIAL,Glazier; Glass repair service; Carpenter,
+lime-mortar-repointing,PARTIAL,Masonry contractor; Bricklayer; Building restoration service,craft slice of EXACT trade Masonry contractor
+porch-restoration,PARTIAL,Carpenter; Deck builder; Building restoration service,
+sauna-builders,PARTIAL,Sauna store; Carpenter,"trap: ""Sauna"" is a public-sauna venue"
+knob-and-tube-rewiring,PARTIAL,Electrician; Electrical installation service,
+outcome-knob-and-tube-insurance,PARTIAL,Electrician; Electrical installation service,outcome: knob-and-tube rewiring; agent NONE
+vermiculite-attic-removal,PARTIAL,Asbestos testing service; Insulation contractor; Environmental consultant,
+armour-stone-retaining-walls,PARTIAL,Landscaper; Retaining wall supplier; Excavating contractor,
+heated-driveways,PARTIAL,Paving contractor; Concrete contractor; Heating contractor,
+pool-removal-fill-in,PARTIAL,Swimming pool contractor; Demolition contractor; Excavating contractor,
+load-bearing-wall-removal,PARTIAL,Remodeler; Structural engineer; General contractor,"agent NONE; Remodeler is a renovation trade, not a catch-all"
+permeable-driveway,PARTIAL,Paving contractor; Landscaper; Paving materials supplier,Track-2 slice of EXACT trade Paving contractor
+ravine-slope-stabilization,PARTIAL,Geotechnical engineer; Excavating contractor; Landscaper,
+retaining-walls-armour-stone,PARTIAL,Landscaper; Masonry contractor; Retaining wall supplier,only a supplier-type category names retaining walls
+weeping-tile-replacement,PARTIAL,Waterproofing service; Drainage service; Plumber,
+wet-basement-efflorescence,EXACT,Waterproofing service,outcome: basement waterproofing
+copper-zinc-standing-seam-roofing,PARTIAL,Sheet metal contractor; Roofing contractor,Track-2 slice of EXACT trade Roofing contractor
+rotting-porch,PARTIAL,Carpenter; Deck builder,outcome: porch rebuild; agent NONE
+curbless-showers-wet-rooms,PARTIAL,Bathroom remodeler; Tile contractor; Plumber,Track-2 slice of EXACT trade Bathroom remodeler
+radiant-floor-heating,PARTIAL,Heating contractor; Plumber; HVAC contractor,
+staircase-rebuild,EXACT,Stair contractor; Railing contractor; Carpenter,
+steam-showers,PARTIAL,Bathroom remodeler; Plumber; Sauna store,
+home-battery-backup,PARTIAL,Solar energy company; Electrician; Solar energy system service,no battery or storage category
+outcome-frequent-power-outages,PARTIAL,Electric generator shop; Electrician; Solar energy company,outcome: generator or battery install; agent NONE
+outcome-vermiculite-found,PARTIAL,Asbestos testing service; Environmental consultant; Insulation contractor,outcome: vermiculite removal (testing alone is EXACT); agent NONE
+standby-generator,PARTIAL,Electric generator shop; Electrician,agent EXACT; only a store-type category (no installer category)
+flagstone-natural-stone-patios,PARTIAL,Landscaper; Masonry contractor; Natural stone supplier,
+garden-studios-backyard-offices,PARTIAL,Shed builder; Garden building supplier; Portable building manufacturer,
+herringbone-clay-paver-driveways,PARTIAL,Paving contractor; Landscaper; Paving materials supplier,Track-2 slice of EXACT trade Paving contractor
+pergolas-louvered-roofs,PARTIAL,Carport and pergola builder; Awning supplier; Patio enclosure supplier,slice of EXACT trade Carport and pergola builder
+pool-nobody-uses,PARTIAL,Swimming pool contractor; Demolition contractor; Excavating contractor,outcome: pool removal; agent NONE
+exterior-foundation-waterproofing,EXACT,Waterproofing service; Excavating contractor,
+foundation-settlement-helical-piers,PARTIAL,Pile driving service; Waterproofing service; Structural engineer,"""Foundation"" is the nonprofit category"
+interior-waterproofing,EXACT,Waterproofing service,
+sewer-lateral-trenchless,PARTIAL,Plumber; Drainage service; Excavating contractor,
+cedar-shake-roofing,PARTIAL,Roofing contractor,Track-2 slice of EXACT trade Roofing contractor
+stucco-eifs-remediation,EXACT,Stucco contractor; Siding contractor,EIFS on its own is PARTIAL
+wood-siding-restoration,PARTIAL,Siding contractor; Carpenter; Painter,Track-2 slice of EXACT trade Siding contractor
+home-gym-build-out,PARTIAL,Remodeler; Flooring contractor; Exercise equipment store,agent NONE; Remodeler covers room build-outs
+luxury-closets,PARTIAL,Fitted furniture supplier; Cabinet maker; Shelving store,
+specialty-hardwood-floors,PARTIAL,Wood floor installation service; Flooring contractor; Carpenter,craft slice of EXACT trade Wood floor installation service
+terrazzo,PARTIAL,Tile contractor; Marble contractor; Flooring contractor,
+uffi-removal,PARTIAL,Insulation contractor; Environmental consultant,
+automatic-driveway-gates,PARTIAL,Fence contractor; Iron works; Garage door supplier,
+ipe-hardwood-decks,PARTIAL,Deck builder; Carpenter,agent UNKNOWN; Track-2 slice of EXACT trade Deck builder
+japanese-garden-design,PARTIAL,Landscape designer; Landscaper; Landscape architect,Track-2 slice of EXACT trade Landscape designer
+pond-water-feature-builders,EXACT,Pond contractor; Fountain contractor; Pond supply store,agent UNKNOWN
+solar-plus-battery,EXACT,Solar energy company; Solar energy system service; Electrician,battery part alone has no category
+backwater-valve-installation,PARTIAL,Plumber; Waterproofing service; Drainage service,
+basement-flooding,EXACT,Waterproofing service; Plumber,"outcome: basement waterproofing/flood protection; agent PARTIAL (Water damage restoration is cleanup, not prevention)"
+egress-windows,PARTIAL,Window installation service; Excavating contractor; Waterproofing service,
+french-drain,PARTIAL,Drainage service; Landscaper; Waterproofing service,"verbatim is ""Drainage service""; it is shared with drain-cleaning firms"
+radon-mitigation,NONE,Environmental consultant; Home inspector; Contractor,
+exterior-limewash-heritage-brick,PARTIAL,Painter; Masonry contractor,
+slate-roof-repair,PARTIAL,Roofing contractor,
+limewash-painting,PARTIAL,Painter; Painting,
+noisy-condo-neighbour,PARTIAL,Acoustical consultant; Insulation contractor; Dry wall contractor,outcome: soundproofing
+popcorn-ceiling-asbestos,PARTIAL,Asbestos testing service; Dry wall contractor; Environmental consultant,outcome: abatement then removal (testing alone is EXACT)
+soundproofing,PARTIAL,Acoustical consultant; Insulation contractor; Dry wall contractor,
+venetian-plaster,PARTIAL,Plasterer; Painter,
+asbestos-abatement,PARTIAL,Asbestos testing service; Demolition contractor; Environmental consultant,
+high-velocity-ac,PARTIAL,Air conditioning contractor; HVAC contractor,Track-2 slice of EXACT trade Air conditioning contractor
+kitec-replacement,PARTIAL,Plumber,Track-2 slice of EXACT trade Plumber
+oil-tank-removal,PARTIAL,Excavating contractor; Environmental consultant; Heating oil supplier,agent NONE; weak partial
+outcome-kitec-in-condo,PARTIAL,Plumber,outcome: Kitec replacement; agent NONE
+outcome-no-ductwork-for-ac,PARTIAL,Air conditioning contractor; HVAC contractor,outcome: ductless or high-velocity AC; agent NONE
+backyard-floods-after-rain,PARTIAL,Drainage service; Landscaper; Excavating contractor,outcome: yard drainage; agent NONE
+front-yard-parking-pads-driveway-widening,EXACT,Paving contractor; Landscaper,"agent PARTIAL; the paving itself is core work, the permit is the Track-2 angle"
+no-parking-toronto-street,EXACT,Paving contractor,outcome: parking pad (mostly an informational permit query); agent NONE
+foundation-cracks-settling,PARTIAL,Waterproofing service; Concrete contractor; Structural engineer,outcome: crack or settlement repair
+lead-water-service-replacement,PARTIAL,Plumber; Excavating contractor,Track-2 slice of EXACT trade Plumber
+parging-stone-foundation,PARTIAL,Masonry contractor; Stucco contractor; Waterproofing service,
+sewer-backup,PARTIAL,Plumber; Drainage service; Waterproofing service,outcome: backwater valve or sewer repair
+sump-pump-weeping-disconnection,PARTIAL,Plumber; Waterproofing service; Drainage service,
+yard-drainage-catch-basins,PARTIAL,Drainage service; Landscaper; Excavating contractor,"agent EXACT; ""Drainage service"" is shared with drain-cleaning firms"
+brick-staining,PARTIAL,Painter; Masonry contractor,
+chimney-rebuild,EXACT,Chimney services; Masonry contractor,
+chimney-removal,EXACT,Chimney services; Masonry contractor; Demolition contractor,agent PARTIAL; removal is core Chimney services work
+copper-eavestroughs,PARTIAL,Gutter service; Sheet metal contractor,Track-2 slice of EXACT trade Gutter service
+cracked-lintel-above-window,PARTIAL,Masonry contractor; Bricklayer,outcome: lintel or arch repair
+crumbling-spalling-brick,PARTIAL,Masonry contractor; Bricklayer; Building restoration service,outcome: brick restoration
+flat-roof-replacement-toronto,PARTIAL,Roofing contractor; Waterproofing service,Track-2 slice of EXACT trade Roofing contractor
+heritage-permit-consulting,PARTIAL,Heritage preservation; Architect; Building consultant,"""Heritage preservation"" reads as an organisation type (EST)"
+ice-dam-prevention-retrofit,PARTIAL,Insulation contractor; Roofing contractor; Energy advisory service,
+ice-dams-every-winter,PARTIAL,Insulation contractor; Roofing contractor,outcome: ice-dam prevention or removal
+leaking-flat-roof,PARTIAL,Roofing contractor; Waterproofing service,outcome: flat-roof repair
+leaning-chimney,EXACT,Chimney services; Masonry contractor,outcome: chimney rebuild; agent PARTIAL
+lintel-and-arch-repair,PARTIAL,Masonry contractor; Bricklayer; Building restoration service,
+masonry-paint-removal,PARTIAL,Paint stripping service; Sandblasting service; Masonry contractor,"""Paint stripping service"" is mostly furniture/metal stripping (EST)"
+spalled-brick-restoration,PARTIAL,Masonry contractor; Building restoration service; Bricklayer,
+stone-restoration,PARTIAL,Masonry contractor; Building restoration service; Stone cutter,
+cold-basement-floor,PARTIAL,Flooring contractor; Heating contractor; Insulation contractor,outcome: insulated subfloor or radiant heat; agent NONE
+cold-plunge,PARTIAL,Hot tub store; Swimming pool contractor; Sauna store,
+cracked-plaster-century-home,EXACT,Plasterer,outcome: plaster repair; agent PARTIAL
+dated-oak-stairs,EXACT,Stair contractor; Railing contractor; Wood floor refinishing service,outcome: stair refacing; agent PARTIAL
+lime-plaster,PARTIAL,Plasterer,
+microcement,PARTIAL,Plasterer; Flooring contractor; Tile contractor,
+plasterers-plaster-repair,EXACT,Plasterer; Dry wall contractor,
+popcorn-ceiling-removal,PARTIAL,Dry wall contractor; Painter; Plasterer,
+pre-1980-asbestos-lead-check,EXACT,Asbestos testing service; Environmental consultant,lead testing has no category
+stretch-ceilings,PARTIAL,Ceiling supplier; Dry wall contractor,
+tadelakt,PARTIAL,Plasterer; Tile contractor,
+aluminum-wiring-remediation,PARTIAL,Electrician,
+boiler-hydronic-replacement,PARTIAL,Heating contractor; Plumber; Boiler supplier,
+fireplace-conversion,PARTIAL,Fireplace store; Gas installation service; Chimney services,
+flat-roof-cathedral-insulation,PARTIAL,Insulation contractor; Roofing contractor,agent EXACT; Track-2 slice of EXACT trade Insulation contractor
+mould-remediation,PARTIAL,Water damage restoration service; Environmental consultant,no mold/mould category exists
+outcome-cold-rooms-century-home,PARTIAL,HVAC contractor; Heating contractor; Insulation contractor,outcome: specialty heating or insulation fix; agent NONE
+outcome-high-radon-test,NONE,Environmental consultant; Home inspector; Contractor,outcome: radon mitigation
+outcome-musty-smell-after-flood,EXACT,Water damage restoration service; Environmental consultant,outcome: post-flood restoration; agent NONE
+outcome-oil-tank-found,PARTIAL,Excavating contractor; Environmental consultant; Heating oil supplier,outcome: oil tank removal; agent NONE
+spray-foam-century-home,PARTIAL,Insulation contractor,agent EXACT; Track-2 slice of EXACT trade Insulation contractor
+whole-house-repiping,PARTIAL,Plumber,Track-2 slice of EXACT trade Plumber
+interlock-relevelling,EXACT,Paving contractor; Landscaper,agent PARTIAL; interlock repair is core Paving contractor work
+neighbours-tree-overhanging,EXACT,Tree service; Arborist service,outcome: pruning by an arborist; agent NONE
+outdoor-fireplaces-pizza-ovens,PARTIAL,Masonry contractor; Landscaper; Fireplace store,
+outdoor-saunas,PARTIAL,Sauna store; Carpenter,"trap: ""Sauna"" is a public-sauna venue"
+permanent-holiday-lighting,PARTIAL,Lighting contractor; Landscape lighting designer,
+ravine-restoration-native-planting,PARTIAL,Landscaper; Landscape designer; Environmental consultant,agent NONE; landscaping specialty
+sinking-heaving-interlock,EXACT,Paving contractor; Landscaper,outcome: interlock repair; agent NONE
+tree-permits-arborist-reports,EXACT,Arborist service; Tree service,
+tree-roots-lifting-driveway,EXACT,Paving contractor; Arborist service,outcome: driveway repair plus root work; agent NONE
+crawlspace-encapsulation,PARTIAL,Waterproofing service; Insulation contractor,
+porch-pier-repair,PARTIAL,Deck builder; Concrete contractor; Carpenter,
+rain-garden-cistern,PARTIAL,Landscape designer; Landscaper; Rainwater tank supplier,
+sagging-floor-joist-repair,PARTIAL,Carpenter; Structural engineer; General contractor,agent NONE; framing carpentry
+sinking-front-steps,PARTIAL,Concrete contractor; Masonry contractor,outcome: front-steps rebuild
+sump-running-constantly,PARTIAL,Plumber; Waterproofing service,outcome: sump or weeping-tile repair
+bargeboard-trim-restoration,PARTIAL,Millwork shop; Carpenter; Painter,
+built-in-gutter-restoration,PARTIAL,Sheet metal contractor; Gutter service; Roofing contractor,
+front-steps-rebuild,PARTIAL,Concrete contractor; Masonry contractor; Stair contractor,
+heritage-exterior-painting,PARTIAL,Painter,Track-2 slice of EXACT trade Painter
+interior-storm-windows,PARTIAL,Window supplier; Window installation service; Glazier,
+ceiling-beams,PARTIAL,Carpenter; Woodworker; Structural engineer,
+coffered-ceilings-wall-panelling,PARTIAL,Carpenter; Millwork shop; Joiner,
+custom-built-ins-libraries,PARTIAL,Cabinet maker; Fitted furniture supplier; Millwork shop,
+echoey-open-plan-room,PARTIAL,Acoustical consultant; Interior designer,outcome: acoustic treatment
+hidden-doors-secret-rooms,PARTIAL,Carpenter; Cabinet maker; Millwork shop,agent NONE; carpentry/millwork specialty
+ornamental-plaster-restoration,PARTIAL,Plasterer; Building restoration service,
+polished-concrete-floors,PARTIAL,Floor sanding and polishing service; Concrete contractor; Flooring contractor,
+chimney-relining,EXACT,Chimney services; Chimney sweep,agent PARTIAL; relining is core Chimney services work
+ductless-multi-split,PARTIAL,Air conditioning contractor; HVAC contractor; Heating contractor,
+electrical-service-upgrade,EXACT,Electrician; Electrical installation service,agent PARTIAL; routine Electrician job
+heat-pump-conversion,PARTIAL,HVAC contractor; Heating contractor; Air conditioning contractor,
+hrv-erv-installation,PARTIAL,HVAC contractor; Mechanical contractor,
+lead-paint-abatement,PARTIAL,Paint stripping service; Painter; Environmental consultant,agent NONE
+artificial-turf,PARTIAL,Landscaper; Turf supplier,"agent UNKNOWN; only the supplier-type ""Turf supplier"" names turf"
+grass-wont-grow-in-shade,EXACT,Lawn care service; Landscaper,outcome: lawn care or replanting; agent NONE
+greenhouses,PARTIAL,Garden building supplier; Sunroom contractor,"trap: ""Greenhouse"" is a plant-growing operation"
+horizontal-cedar-fencing,EXACT,Fence contractor,agent UNKNOWN; style slice that most Fence contractors offer
+landscape-lighting,EXACT,Landscape lighting designer; Lighting contractor,agent UNKNOWN
+native-woodland-gardens,PARTIAL,Landscape designer; Landscaper,Track-2 slice of EXACT trade Landscape designer
+putting-greens,PARTIAL,Landscaper; Turf supplier; Golf course builder,
+rain-gardens,PARTIAL,Landscape designer; Landscaper,
+garage-foundation-repair,PARTIAL,Concrete contractor; Garage builder; Structural engineer,
+christmas-light-installation,PARTIAL,Lighting contractor; Landscape lighting designer,
+negative-grading,PARTIAL,Landscaper; Drainage service; Excavating contractor,"outcome: regrading; ""Landscape Gardener"" is not a category"
+water-in-window-well,PARTIAL,Waterproofing service; Drainage service; Window installation service,outcome: window-well drain or cover
+white-stains-on-brick,PARTIAL,Masonry contractor; Pressure washing service; Waterproofing service,outcome: masonry cleaning plus fixing the moisture source; agent NONE
+basement-apartment-conversion,PARTIAL,Remodeler; General contractor,agent NONE; Remodeler anchors suites (spot-check convention)
+basement-suite-legalization,PARTIAL,Remodeler; Building designer; Building consultant,agent NONE; permit side maps to Building designer
+garden-suites,PARTIAL,Custom home builder; Home builder; Modular home builder,
+laneway-suites,PARTIAL,Custom home builder; Home builder; General contractor,
+multiplex-conversions,PARTIAL,Remodeler; Home builder; General contractor,agent NONE; renovation and builder categories cover it
+outcome-add-rental-income,PARTIAL,Remodeler; Custom home builder; General contractor,outcome: basement or garden suite; agent NONE
+outcome-unpermitted-basement-apartment,PARTIAL,Remodeler; Building designer; Building consultant,outcome: suite legalization; agent NONE
+era-specific-renovation,PARTIAL,Remodeler; Building restoration service; General contractor,slice of EXACT trade Remodeler
+garage-conversions,PARTIAL,Remodeler; Garage builder; General contractor,agent NONE; Remodeler anchor
+home-elevators,PARTIAL,Elevator service; Mobility equipment supplier; Elevator manufacturer,
+in-law-suites,PARTIAL,Remodeler; Custom home builder; General contractor,agent NONE; secondary-suite convention
+outcome-downsizing-in-place,PARTIAL,Custom home builder; Home builder; Remodeler,outcome: garden or laneway suite; agent NONE
+outcome-house-too-small,PARTIAL,Remodeler; Custom home builder; General contractor,outcome: addition or basement finish; agent NONE
+outcome-insurance-rebuild-after-fire,EXACT,Fire damage restoration service; General contractor,outcome: fire damage restoration and rebuild
+outcome-parents-moving-in,PARTIAL,Remodeler; Custom home builder; Mobility equipment supplier,outcome: in-law suite or accessibility renovation; agent NONE
+rear-and-heritage-additions,PARTIAL,Remodeler; Custom home builder; General contractor,agent NONE; additions map to Remodeler (spot-check convention)
+second-storey-additions,PARTIAL,Remodeler; Custom home builder; General contractor,agent NONE; matches spot check
+attic-dormer-conversions,PARTIAL,Remodeler; Carpenter; General contractor,agent NONE; matches spot check
+condo-renovation,PARTIAL,Remodeler; Interior construction contractor; Kitchen remodeler,agent NONE; same as condo-unit-renovation (slice of Remodeler)
+prefab-modular-and-tiny-suites,PARTIAL,Modular home builder; Modular home dealer; Portable building manufacturer,slice of EXACT trade Modular home builder
+fire-damage-restoration,EXACT,Fire damage restoration service,
+aging-in-place-renovations,PARTIAL,Remodeler; Bathroom remodeler; Mobility equipment supplier,
+basement-suite-fire-separation-egress,PARTIAL,Dry wall contractor; Window installation service; Fire protection service,agent NONE; specific trades cover the parts
+porch-enclosures-mudrooms,PARTIAL,Sunroom contractor; Patio enclosure supplier; Remodeler,
+house-demolition,EXACT,Demolition contractor,
+public-adjusters,PARTIAL,Loss adjuster; Insurance broker,"""Loss adjuster"" is shared with insurer-side adjusters"
+bathroom-additions,EXACT,Bathroom remodeler; Plumber,agent PARTIAL; new bathrooms are core Bathroom remodeler work
+outcome-legal-basement-bedroom,PARTIAL,Window installation service; Excavating contractor; Waterproofing service,outcome: egress window
+suite-fire-access-sprinklers,PARTIAL,Fire protection service; Fire protection consultant; Plumber,
+smoke-odour-contents-restoration,PARTIAL,Fire damage restoration service; House cleaning service; Upholstery cleaning service,
+stair-lifts,PARTIAL,Mobility equipment supplier; Medical equipment supplier; Elevator service,
+hoarding-biohazard-cleanup,PARTIAL,House clearance service; Junk removal service; House cleaning service,"agent NONE; no hoarding or biohazard category, only adjacent ones"
+pre-listing-renovation,PARTIAL,Remodeler; Home staging service; Handyman/Handywoman/Handyperson,
+water-damage-restoration,EXACT,Water damage restoration service,
