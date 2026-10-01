@@ -1,4 +1,4 @@
-# gtahelicalpiles.ca
+# gtahelicalpiles.com
 
 First-party lead-generation site for a helical (screw) pile installation contractor serving Halton, Peel, Hamilton and Guelph, Ontario. Static Astro site, one server route for lead intake, no client JavaScript beyond the quote form, the budget calculator and analytics.
 
@@ -20,7 +20,7 @@ Node 20 or newer.
 
 Two ways. Either works; the second needs no Git integration for the first deploy.
 
-**Dashboard.** Add New → Project → import this repository. Set **Root Directory** to `sites/gtahelicalpiles`, framework Astro (detected), add the environment variables below, Deploy. Then Settings → Domains: `gtahelicalpiles.ca` with `www` redirecting to it. Production branch: whichever branch you merge this folder into (`main` once merged; `claude/beautiful-newton-ofc7mi` until then).
+**Dashboard.** Add New → Project → import this repository. Set **Root Directory** to `sites/gtahelicalpiles`, framework Astro (detected), add the environment variables below, Deploy. Then Settings → Domains: `gtahelicalpiles.com` with `www` redirecting to it. Production branch: whichever branch you merge this folder into (`main` once merged; `claude/beautiful-newton-ofc7mi` until then).
 
 **Script.** With a token from vercel.com/account/tokens:
 
@@ -40,12 +40,12 @@ Environment variables (Vercel project settings, never committed):
 | `LEAD_WEBHOOK_URL` | Optional. Every lead is POSTed here as JSON (CRM, Zapier, a future getquotd.com intake). |
 | `RESEND_API_KEY` | Optional. With `LEAD_INBOX`, every lead is emailed via Resend. |
 | `LEAD_INBOX` | The address that receives lead emails. |
-| `LEAD_FROM` | Optional sender, default `leads@gtahelicalpiles.ca` (domain must be verified in Resend). |
-| `PUBLIC_PLAUSIBLE_DOMAIN` | Set to `gtahelicalpiles.ca` to load Plausible. Unset = no analytics script. |
+| `LEAD_FROM` | Optional sender, default `leads@gtahelicalpiles.com` (domain must be verified in Resend). |
+| `PUBLIC_PLAUSIBLE_DOMAIN` | Set to `gtahelicalpiles.com` to load Plausible. Unset = no analytics script. |
 
 With neither webhook nor Resend configured, the intake endpoint logs the lead and still returns success. That is the local preview mode; do not launch that way.
 
-Domain: apex `gtahelicalpiles.ca` canonical, `www` redirected to apex (Vercel domain settings).
+Domain: apex `gtahelicalpiles.com` canonical, `www` redirected to apex (Vercel domain settings). If `gtahelicalpiles.ca` is owned, add it to the same project as a redirect to the .com apex; never serve the site on both.
 
 ## Content and data
 

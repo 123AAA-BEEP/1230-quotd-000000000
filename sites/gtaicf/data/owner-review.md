@@ -2,7 +2,7 @@
 
 What the owner has to supply, confirm or strike before the ICF site leaves preview. Items marked **blocks launch** keep every page `noindex` until resolved. Everything else is copy the writers could not source to a document and wrote as our practice; confirm it or tell us to reword.
 
-## Blocks launch (same items as gtahelicalpiles.ca; one company, one answer)
+## Blocks launch (same items as gtahelicalpiles.com; one company, one answer)
 
 1. **Identity** in `data/business.json`: legal name, phone, email, hours, service address type, Google Business Profile URL, founded year. The status field stays `PLACEHOLDER` until these are real, and the build renders `noindex` and the preview strip on every page while it does.
 2. **Consent text** (`consent_text`, `consent_version`): approve the draft wording or supply yours; the version string is stored with every lead.

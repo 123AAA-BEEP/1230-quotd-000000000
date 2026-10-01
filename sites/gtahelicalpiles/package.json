@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "gtahelicalpiles.ca: first-party lead-generation site for helical pile installation across Halton, Peel, Hamilton and Guelph. Standalone Astro project; see README.md.",
+  "description": "gtahelicalpiles.com: first-party lead-generation site for helical pile installation across Halton, Peel, Hamilton and Guelph. Standalone Astro project; see README.md.",
   "engines": {
     "node": ">=20"
   },

@@ -4,7 +4,7 @@ import { getLiveCities, getLiveGuides, getPrices, getCity, isPlaceholderBusiness
 // Empty while the business is a placeholder: every page is noindex then, and
 // a sitemap that lists noindex pages is a contradictory signal.
 export const GET: APIRoute = () => {
-  const site = (import.meta.env.SITE || 'https://gtahelicalpiles.ca').replace(/\/$/, '');
+  const site = (import.meta.env.SITE || 'https://gtahelicalpiles.com').replace(/\/$/, '');
   const prices = getPrices();
   const entries: { path: string; lastmod?: string }[] = isPlaceholderBusiness()
     ? []
