@@ -130,7 +130,7 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
   const now = new Date().toISOString();
   const lead = {
     received_at: now,
-    site: 'gtahelicalpiles.ca',
+    site: 'gtahelicalpiles.com',
     business: business.trading_name,
     title: `${f.application} — ${f.city}`,
     contact: { name: f.name, phone: f.phone, email: f.email, role: f.role || null },

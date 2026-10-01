@@ -1,4 +1,4 @@
-# gtahelicalpiles.ca — Claims Register
+# gtahelicalpiles.com — Claims Register
 
 Status key: VERIFIED = retrievable source supports the claim as worded below. REWORDED = the PDF wording is inaccurate or unsupported; the "publishable wording" column is what may go live. NEEDS-OWNER-DOCUMENT = true only if the owner supplies the named document (warranty, certificate, calibration record, machine spec). CUT = do not publish in any form.
 

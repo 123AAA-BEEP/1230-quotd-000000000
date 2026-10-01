@@ -1,4 +1,4 @@
-# gtahelicalpiles.ca — project context for AI-assisted sessions
+# gtahelicalpiles.com — project context for AI-assisted sessions
 
 This folder is a standalone site: the owner's own helical pile installation business in the western GTA (Halton, Peel, Hamilton, Guelph). It is **not** a Quotd page family. The repository-root `CLAUDE.md` and `spec/` describe Quotd (a quotes marketplace) and do not apply here: there is no provider layer, no "Get quoted" brand verb, no marketplace routing rules. Read `README.md` in this folder first.
 

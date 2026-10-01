@@ -68,4 +68,4 @@ if (!existsSync(`${ROOT}/.vercel/output`)) {
 const scope = team ? `--scope ${team}` : '';
 execSync(`npx --yes vercel@latest link --yes --project ${name} --token ${token} ${scope}`, { cwd: ROOT, stdio: 'inherit' });
 execSync(`npx --yes vercel@latest deploy --prebuilt --prod --yes --token ${token} ${scope}`, { cwd: ROOT, stdio: 'inherit' });
-console.log('\nDone. Next: Project → Settings → Git (connect the repo, root directory sites/gtahelicalpiles) and Settings → Domains (gtahelicalpiles.ca, www redirect).');
+console.log('\nDone. Next: Project → Settings → Git (connect the repo, root directory sites/gtahelicalpiles) and Settings → Domains (gtahelicalpiles.com, www redirect).');
