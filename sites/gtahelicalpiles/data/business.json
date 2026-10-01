@@ -1,9 +1,9 @@
 {
-  "status": "PLACEHOLDER: owner to supply legal name, phone, email, hours, Google Business Profile, credentials (discovery pack items A1 and A2). Nothing publishes with placeholder contact details.",
+  "status": "LIVE 2026-10-01: identity supplied by the owner (GTA Helical Piles, Oakville base, Mon-Fri 7-6, no credentials shown yet). Prices illustrative by owner decision 2026-09-28.",
   "trading_name": "GTA Helical Piles",
-  "legal_name": "GTA Helical Piles (legal entity to be confirmed)",
-  "phone_display": "(905) 000-0000",
-  "phone_e164": "+19050000000",
+  "legal_name": "GTA Helical Piles",
+  "phone_display": "(289) 814-2323",
+  "phone_e164": "+12898142323",
   "email": "quotes@gtahelicalpiles.ca",
   "address": {
     "type": "service-area",
@@ -169,8 +169,8 @@
   "warranty_text": null,
   "insurance": null,
   "wsib": null,
-  "consent_version": "consent-v1-draft-2026-09-25",
-  "form_version": "review-set-v1",
+  "consent_version": "consent-v1-2026-10-01",
+  "form_version": "launch-v1",
   "consent_text": "By requesting a quote you agree that GTA Helical Piles may contact you by phone, text or email about this request. No marketing lists, no sharing with third parties.",
   "licence": null,
   "equipment": null
