@@ -24,6 +24,24 @@
       "live": true
     },
     {
+      "name": "Vaughan",
+      "slug": "vaughan",
+      "region": "York Region",
+      "live": true
+    },
+    {
+      "name": "Markham",
+      "slug": "markham",
+      "region": "York Region",
+      "live": true
+    },
+    {
+      "name": "Richmond Hill",
+      "slug": "richmond-hill",
+      "region": "York Region",
+      "live": true
+    },
+    {
       "name": "Mississauga",
       "slug": "mississauga",
       "region": "Peel Region",
@@ -155,7 +173,7 @@
       "live": false
     }
   ],
-  "service_radius_line": "We work across Toronto, Peel, Halton, Hamilton, Guelph and the Niagara corridor down to Fort Erie.",
+  "service_radius_line": "We work across Toronto, York Region, Peel, Halton, Hamilton, Guelph and the Niagara corridor down to Fort Erie.",
   "founded_year": null,
   "piles_installed_note": null,
   "gbp_url": null,

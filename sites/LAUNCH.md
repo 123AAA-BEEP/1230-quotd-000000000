@@ -80,7 +80,7 @@ In each Vercel project, Settings → Domains: add the apex (`gtaicf.ca`) and `ww
 
 ## 10. Release the cities in batches
 
-Both sites ship with all twenty city pages live. For a new domain, release in three batches so indexation can be read cleanly: keep Halton and Peel live at launch, set `live: false` in `business.json` for Toronto, Hamilton, Guelph and Niagara, then flip each batch when Search Console's Pages report shows at least half the previous batch indexed. Non-live cities still appear in the "Where we work" list without a link.
+Both sites ship with all twenty-three city pages live. For a new domain, release in three batches so indexation can be read cleanly: keep Halton and Peel live at launch, set `live: false` in `business.json` for Toronto, York Region, Hamilton, Guelph and Niagara, then flip each batch when Search Console's Pages report shows at least half the previous batch indexed. Non-live cities still appear in the "Where we work" list without a link.
 
 ## 11. First month
 
