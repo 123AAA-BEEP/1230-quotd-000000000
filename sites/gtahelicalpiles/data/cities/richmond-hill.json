@@ -1,0 +1,428 @@
+{
+  "slug": "richmond-hill",
+  "name": "Richmond Hill",
+  "region": "York Region",
+  "province": "ON",
+  "lat": 43.87472,
+  "lon": -79.43944,
+  "sub_areas": [
+    {
+      "name": "Downtown / Old Richmond Hill village (Yonge St)",
+      "note": "The village was incorporated by a York County by-law of June 18, 1872, effective January 1, 1873; the original village was a strip along Yonge Street from about Crosby Avenue to Major Mackenzie Drive, east to Church Street and slightly west of Mill Pond (Wikipedia). Town 1957, City March 25, 2019. OGS point queries at the reference coordinate (43.87472, -79.43944, the Wikipedia infobox coordinate) and at Yonge/Major Mackenzie (43.8780, -79.4380) both return stone-poor sandy silt to silty sand-textured till (unit 5b, polygon OBJECTID 88109) over Blue Mountain Formation shale."
+    },
+    {
+      "name": "Mill Pond",
+      "note": "Park in the middle of the city surrounded by heritage homes; the pond once powered a sawmill in the 1800s (Wikipedia). OGS point query (43.8820, -79.4470) returns sandy silt till (unit 5b) over Blue Mountain Formation."
+    },
+    {
+      "name": "Yonge Street south of Crosby Avenue",
+      "note": "Extra query point in the older housing between Major Mackenzie Drive and 16th Avenue (43.8667, -79.4333). OGS returns clay to silt-textured till (unit 5d, OBJECTID 88951) over Blue Mountain Formation; the till changes texture within a few blocks of the village core."
+    },
+    {
+      "name": "Elgin Mills",
+      "note": "Area around Yonge Street from Gamble Road to Elgin Mills Road; business park to the south-east; the historic community had a steam grist mill, toll booth and inn at Elgin Mills Road and Yonge (Wikipedia). OGS point query (43.9000, -79.4300) returns sandy silt till (unit 5b) over Blue Mountain Formation."
+    },
+    {
+      "name": "Headford",
+      "note": "Postal village from 1856, once with saw and grist mills along Beaver Creek; now mainly a business park bounded by Major Mackenzie Drive, Leslie Street, Highway 404 and 16th Avenue (Wikipedia). OGS point query (43.8840, -79.3890) returns sandy silt till (unit 5b) over Blue Mountain Formation."
+    },
+    {
+      "name": "Gormley",
+      "note": "Hamlet in the north-east at 257 m elevation (Wikipedia infobox 43°56′27″N 79°22′55″W). OGS point query at the Wikipedia coordinate (43.94083, -79.38194) returns sandy silt till (unit 5b, OBJECTID 87533) over Blue Mountain Formation; a second point 1.8 km north (43.9570, -79.3850) returns clay to silt-textured till (unit 5d, OBJECTID 84470)."
+    },
+    {
+      "name": "Jefferson",
+      "note": "Newer neighbourhood, occupied from 2007, roughly bounded by Gamble Road to the south, Bathurst Street to the west and Bayview Avenue to the east; includes Jefferson Forest and Tower Hill (Wikipedia). OGS point query (43.9230, -79.4500) returns clay to silt-textured till (unit 5d) over Lindsay Formation limestone (Simcoe Group), not shale."
+    },
+    {
+      "name": "Oak Ridges",
+      "note": "Annexed 1971; wholly on the Oak Ridges Moraine, hilly, with most of the area above 300 m; kettle lakes include Lake Wilcox, Bond Lake, Philips Lake, Swan Lake and Lake St. George (Wikipedia). OGS point query at the Wikipedia coordinate (43.94451, -79.45493) returns glaciofluvial deposits, river deposits and delta topset facies (unit 7) over Lindsay Formation limestone."
+    },
+    {
+      "name": "Lake Wilcox",
+      "note": "Kettle lake in Oak Ridges, 55.6 ha and 17.4 m deep, the largest kettle lake on the Oak Ridges Moraine; drains to the East Humber River (Wikipedia). The north shore has been a Special Policy Area since 1995; OPA 22 (approved September 28, 2021) was based on the TRCA's revised floodplain mapping (City page). OGS point query at the Wikipedia coordinate (43.94908, -79.43596) returns glaciofluvial river and delta deposits (unit 7) over Blue Mountain Formation shale."
+    },
+    {
+      "name": "Bond Lake",
+      "note": "Kettle lake west of Yonge Street in Oak Ridges (Wikipedia, Oak Ridges). OGS point query (43.9500, -79.4650) returns fine-textured glaciolacustrine deposits, interbedded silt and clay with gritty, pebbly flow till (unit 8b), over Lindsay Formation limestone."
+    },
+    {
+      "name": "Bayview Hill",
+      "note": "Subdivision on the north-east side of Bayview Avenue and 16th Avenue, built in the early 1990s with large homes (Wikipedia). OGS point query (43.8580, -79.4050) returns massive to well-laminated glaciolacustrine silt and clay (unit 8a, OBJECTID 88780) over Blue Mountain Formation."
+    },
+    {
+      "name": "Richvale (North Richvale-Yongehurst and South Richvale)",
+      "note": "Two residential areas in the south-west between Yonge Street and Bathurst Street, divided by Carrville Road; the area once had sawmills beside ponds along the Don, since filled in (Wikipedia). OGS point query (43.8560, -79.4330) returns glaciolacustrine silt and clay (unit 8a) over Blue Mountain Formation."
+    },
+    {
+      "name": "Doncrest",
+      "note": "Small residential area along and east of Yonge Street just north of Highway 7, on the crest above German Mills Creek, a Don River tributary (Wikipedia). OGS point query (43.8390, -79.4010) returns glaciolacustrine silt and clay (unit 8a) over Georgian Bay Formation shale."
+    },
+    {
+      "name": "Langstaff (Yonge St and Highway 7)",
+      "note": "Southern edge of the city at the Markham and Vaughan limits. OGS point queries return clay to silt-textured till (unit 5d, OBJECTID 89413) at 43.8400, -79.4200 and glaciolacustrine silt and clay (unit 8a) at Yonge and Highway 7 (43.8420, -79.4280); both over Georgian Bay Formation shale."
+    }
+  ],
+  "census": {
+    "population_2021": 202022,
+    "private_dwellings_occupied": 69314,
+    "single_detached_pct": 56.7,
+    "period_of_construction": {
+      "pre_1960_pct": null,
+      "1961_1980_pct": null,
+      "1981_2000_pct": null,
+      "2001_2021_pct": null
+    },
+    "derivation_note": "The Statistics Canada Census Profile page for Richmond Hill (CSD 3519038, DGUID 2021A00053519038) and its JSON API both returned an HTTP 403 'Security Check' page from this environment, so the figures are taken from secondary publications that cite the 2021 Census Profile: the City of Richmond Hill's 2021 ward profiles (city-wide columns) and Wikipedia. Single-detached 39,295 of 69,315 occupied private dwellings = 56.7% (ward profile, city-wide; the York Region 2021 Census Release Report prints 39,350 of 69,320 = 57%, a rounding difference). Other types (ward profile): semi-detached 2,665 (3.8%), row house 10,505 (15.2%), apartment 14,655 (21.1%), apartment or flat in a duplex 2,135 (3.1%). Wikipedia, citing the Census Profile: 202,022 people in 69,314 of 72,017 total private dwellings; 2016 population 195,022, so +3.6% (ward profile prints the same 3.6%). Land area 100.79 km2. Period of construction was NOT retrieved: no accessible secondary source publishes the 25% sample breakdown for Richmond Hill, so all four fields are null.",
+    "sources": [
+      {
+        "name": "City of Richmond Hill - Ward 1 Profile 2021 (city-wide columns; source stated as Statistics Canada 2021 Census Profile)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/WARD-1--Profile-2021-AODA.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Population 39,860 people 202,022 people; Population Growth 4.5% 3.6% (2016-2021)"
+      },
+      {
+        "name": "City of Richmond Hill - Ward 1 Profile 2021 (dwellings by structural type)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/WARD-1--Profile-2021-AODA.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Occupied private dwellings by structural type of dwelling (2021) ... Total 12,365 100% 69,315 100%; Single-detached house 8,495 68.7% 39,295 56.7%; Semi-detached house 925 7.5% 2,665 3.8%; Row House 2,570 20.8% 10,505 15.2%; Apartment 120 1.0% 14,655 21.1%"
+      },
+      {
+        "name": "York Region - 2021 Census Release Report: Age, Sex, Gender and Dwelling Types (2021 Housing Mix By Local Municipality)",
+        "url": "https://york.ca/media/104971/download",
+        "retrieved_at": "2026-11-03",
+        "quote": "Richmond Hill 69,320 39,350 57% 2,665 4% 10,510 15% 14,660 21% 2,135 3%"
+      },
+      {
+        "name": "Wikipedia - Richmond Hill, Ontario (Demographics; cites Statistics Canada 2021 Census Profile)",
+        "url": "https://en.wikipedia.org/wiki/Richmond_Hill,_Ontario",
+        "retrieved_at": "2026-11-03",
+        "quote": "Richmond Hill had a population of 202,022 living in 69,314 of its 72,017 total private dwellings ... from its 2016 population of 195,022. With a land area of 100.79 km2"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Richmond Hill, City (CSD), Ontario (NOT READ: returned HTTP 403 security-check page)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Richmond%20Hill&DGUIDlist=2021A00053519038&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-11-03",
+        "quote": "Vérification de sécurité / Security Check"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 5b - Till",
+        "description": "Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain.",
+        "where": "The old town and the centre: the reference coordinate, Yonge/Major Mackenzie, Mill Pond, Elgin Mills and Headford all return one polygon (OBJECTID 88109); Gormley returns a second 5b polygon (OBJECTID 87533)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale).",
+        "where": "Three separate polygons: Yonge Street south of Crosby Avenue (OBJECTID 88951), Jefferson and the point north of Gormley (OBJECTID 84470), and Langstaff (OBJECTID 89413)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 7 - Glaciofluvial deposits",
+        "description": "River deposits and delta topset facies (sand and gravel laid down by glacial meltwater).",
+        "where": "The Oak Ridges Moraine in the north: Oak Ridges and Lake Wilcox query points (one polygon, OBJECTID 86789)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated.",
+        "where": "The south: Bayview Hill, Richvale, Doncrest and Yonge/Highway 7 all return one polygon (OBJECTID 88780)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8b - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; interbedded silt and clay and gritty, pebbly flow till and rainout deposits.",
+        "where": "Bond Lake, west of Yonge Street in Oak Ridges (OBJECTID 87118)."
+      },
+      {
+        "unit": "Oak Ridges Moraine (regional, from Wikipedia and the LSRCA)",
+        "description": "An elevated region of loose, porous soil making up roughly the northern third of the city's land area; it feeds aquifers and gives Richmond Hill a very high water table despite its elevation, 'which poses some problems to construction' (Wikipedia). The LSRCA calls the moraine the southern watershed divide: lands drain north off it to Lake Simcoe. The OGS attributes at the moraine points do not name the moraine; they return unit 7 (Oak Ridges, Lake Wilcox) and unit 8b (Bond Lake).",
+        "where": "Oak Ridges, Lake Wilcox, Bond Lake and Jefferson, north of about Gamble Road / Jefferson Side Road."
+      }
+    ],
+    "bedrock": {
+      "formation": "Blue Mountain Formation (Upper Ordovician shale) under the centre and most of the city; Georgian Bay Formation (shale with limestone) under the south at Doncrest, Langstaff and Yonge/Highway 7; Lindsay Formation of the Simcoe Group (limestone) under the north-west at Oak Ridges, Bond Lake and Jefferson (OGS MRD219, source map m2544).",
+      "description": "Blue Mountain (OGS unit 12, legend key m1228a_Ow, original formation name Whitby): dark blue-grey to brown to black shale, with thin interbeds of limestone or calcareous siltstone; returned at the reference coordinate, Yonge/Major Mackenzie, Mill Pond, Yonge south of Crosby, Elgin Mills, Headford, Gormley (both points), Lake Wilcox, Bayview Hill and Richvale. Georgian Bay (unit 14): interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone; returned at Doncrest, Langstaff and Yonge/Highway 7. Lindsay (unit 11, Simcoe Group): fine- to coarse-grained, fossiliferous, commonly nodular, argillaceous limestone; upper member (Collingwood) is black, organic-rich, fissile, very fine-grained limestone; returned at Oak Ridges, Bond Lake and Jefferson. The three formations meet under the city: Georgian Bay in the south gives way to Blue Mountain around 16th Avenue, and Blue Mountain to Lindsay limestone on the moraine in the north-west.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). None of the sixteen Richmond Hill query points returned the OGS 'Paleozoic bedrock at/near surface' unit; every point returned a surficial deposit (till, glaciofluvial sand and gravel or glaciolacustrine silt and clay) of unstated thickness. Wikipedia describes the Oak Ridges Moraine as thick, porous soil, which points to deep overburden in the north."
+    },
+    "implications_for_piles": [
+      "The City of Richmond Hill's deck permit checklist (R6) prints the municipal baseline for any pile design: 'Foundation - size, spacing (minimum depth 1200 mm / 4 ft. below grade & to undisturbed soil)'. The checklist does not mention helical piles, screw piles, alternative foundations or an engineer requirement for them; its only CCMC reference is to plastic guards. Schedule 1 (BCIN or professional engineer stamp 'where applicable') is required with the drawings.",
+      "The City's new-house and addition checklists (R1, R2) list a 'Soils Report by a Professional Engineer (dependent on location of site)' and, for additions, 'Underpinning details' among the submissions, so an engineer's pile layout fits the City's existing drawing list without a special category.",
+      "The ground changes along Yonge Street from south to north: glaciolacustrine silt and clay (unit 8a) at Doncrest, Richvale and Bayview Hill; sandy silt till (5b) through the old village, Mill Pond, Elgin Mills and Headford, with clay-silt till (5d) pockets south of Crosby and at Langstaff and Jefferson; then glaciofluvial sand and gravel (unit 7) on the Oak Ridges Moraine at Oak Ridges and Lake Wilcox and interbedded silt, clay and flow till (8b) at Bond Lake. Depth and torque from a job in the silt and clay of the south are not a guide to a moraine lot, where coarse sand and gravel and a high water table (Wikipedia) are the design conditions.",
+      "Bedrock is three formations rather than one, Georgian Bay shale in the south, Blue Mountain shale in the centre and Lindsay limestone under the moraine in the north-west, but no query point returned rock at or near surface, so pre-drilling for rock is not the default. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at the reference coordinate 43.87472, -79.43944)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.43944,43.87472&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 5b, Deposit: Till, Material: Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Oak Ridges, 43.94451, -79.45493)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.45493,43.94451&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 7, Deposit: Glaciofluvial deposits, Material: river deposits and delta topset facies"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Bayview Hill, 43.8580, -79.4050)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.4050,43.8580&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 8a, Deposit: Fine-textured glaciolacustrine deposits, Material: silt and clay, minor sand and gravel, Description: Massive to well laminated"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Bond Lake, 43.9500, -79.4650)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.4650,43.9500&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 8b, Deposit: Fine-textured glaciolacustrine deposits, Description: Interbedded silt and clay and gritty, pebbly flow till and rainout deposits"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 128-REV (layer 3 query at Jefferson, 43.9230, -79.4500)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.4500,43.9230&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 5d, Deposit: Till, Material: Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Ontario Geological Survey, Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at the reference coordinate 43.87472, -79.43944)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.43944,43.87472&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "FORMATION: Blue Mountain; DESCRIPT_FULL: dark blue-grey to brown to black shale, with thin interbeds of limestone or calcareous siltstone"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at Oak Ridges, 43.94451, -79.45493)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.45493,43.94451&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "GROUP_: Simcoe Group; FORMATION: Lindsay; DESCRIPT_FULL: fine- to coarse-grained, fossiliferous, commonly nodular, argillaceous limestone; upper member (Collingwood) is black, organic-rich, fissile, very fine-grained limestone"
+      },
+      {
+        "name": "Ontario Geological Survey, MRD 219 (layer 4 query at Doncrest, 43.8390, -79.4010)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.4010,43.8390&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "FORMATION: Georgian Bay; DESCRIPT_FULL: interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-11-03",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Richmond Hill, Ontario (Geography and climate; neighbourhoods)",
+        "url": "https://en.wikipedia.org/wiki/Richmond_Hill,_Ontario",
+        "retrieved_at": "2026-11-03",
+        "quote": "Richmond Hill is located on the Oak Ridges Moraine, an elevated region of loose soil which comprises a roughly the northern third of the land area of the city ... The ability of the soil to hold so much water means that, despite Richmond Hill's comparatively high elevation, it has a very high water table, which poses some problems to construction."
+      },
+      {
+        "name": "Wikipedia - Oak Ridges, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Oak_Ridges,_Ontario",
+        "retrieved_at": "2026-11-03",
+        "quote": "Wholly situated on the Oak Ridges Moraine, much of its terrain is hilly ... with most of the area sitting above 300 metres or 1000 feet above sea level. A number of small kettle lakes are located in Oak Ridges; the largest of these is Lake Wilcox"
+      },
+      {
+        "name": "Wikipedia - Lake Wilcox",
+        "url": "https://en.wikipedia.org/wiki/Lake_Wilcox",
+        "retrieved_at": "2026-11-03",
+        "quote": "covers 55.6 hectares or 0.55 square kilometres, making it the largest kettle lake on the Oak Ridges Moraine ... draining into the East Humber River ... The maximum depth of the lake is 17.4 meters."
+      },
+      {
+        "name": "Lake Simcoe Region Conservation Authority - Lake Simcoe Watershed",
+        "url": "https://lsrca.on.ca/index.php/home/our-watershed/",
+        "retrieved_at": "2026-11-03",
+        "quote": "The Oak Ridges Moraine is the southern watershed divide – lands drain north off the moraine to Lake Simcoe"
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Richmond Hill, Planning and Building Services, Building Division (FAQ page: 'The Planning and Building Services, Building Division receives applications for and issues building permits'; 225 East Beaver Creek Road, 3rd Floor, Richmond Hill ON L4B 3P4; 905-771-8810; building@richmondhill.ca). Inspections are run by the Building Inspection Section (buildinginspections@richmondhill.ca).",
+    "deck_permit_required_when": "R6 Deck Permit Application Process checklist: 'A Building Permit is required for all decks where one or more of the following applies: The deck is attached to a building (i.e. the house); The deck is more than 600 mm (2 ft.) above average grade, or; The deck is greater than 10 m2 (108 ft2) in area'. Decks are subject to Zoning By-law setbacks. The Ontario Building Code does not allow decks to be attached to brick veneer; the load must be transferred to the foundation wall. Pre-approvals where applicable: executed Site Plan Agreement, Heritage Richmond Hill (designated properties), and T.R.C.A. for properties within its regulated area.",
+    "footing_depth_requirement": "R6 checklist, required drawings: 'Foundation - size, spacing (minimum depth 1200 mm / 4 ft. below grade & to undisturbed soil)'. The checklist also asks for height of deck above average grade, joists, beams, columns, connection to the house, guards ('Plastic guards are not permitted unless approved by CCMC'), and stairs. No helical pile, screw pile or alternative-foundation wording appears on the checklist or on the City's building permit pages retrieved. Drawings at a scale no smaller than 3/16 in = 1 ft 0 in, two copies or one copy for a digital online submission; Schedule 1 designer information with BCIN or an architect's or professional engineer's stamp where applicable; drawings may be prepared by the homeowner.",
+    "inspections": [],
+    "inspections_note": "The City's Building Inspections page says there are different inspection stages for 'Housing projects' and for 'Commercial, industrial, institutional, assembly and large residential projects', but the stage list sits in a collapsed section whose text was not in the HTML retrieved, so the stage names are not recorded here. What the page does print: an issued permit is required to book; requests received after 3 p.m. count as received the next business day; the Service Charter commitment is that a request for mandatory permit inspections 'will be reviewed and you will hear from us within 2 business days'; the permit holder must call for each stage and keep the permit documents on site; no occupancy until a final inspection; inspection records confirm areas that can no longer be seen once construction is complete. The R1 new-house checklist requires a foundation survey certified with a surveyor's seal for the completion-stage permit.",
+    "fee_note": "Deck: '$218.46 FLAT FEE' (R6 checklist and the Residential Permits page). Residential building permit fees (R1, R2 and the Residential Permits page): detached, semi-detached, townhouse, duplex and additions $27.37 per m2; residential alteration $10.40 per m2; finished basement $6.56 per m2; minimum residential permit fee $210.12 flat; basement walkout $210.12 flat. Plumbing: $158.40 minimum, $47.97 water service, $196.61 sanitary and storm drains, $28.40 per fixture for additions or alterations. Demolition of a single family dwelling $546.14 flat. Deposits before issuance for a new house, and for additions over 400 ft2 in footprint that need a Site Alteration Permit: grading deposit $7,000 and road damage/frontage deposit $3,000, cheque or letter of credit. Fees are 'as per By-law 19-24' (Schedule A, Section 3); the by-law itself was not retrieved and the checklists print no effective date. The City's 2026 Tariff of Fees By-law 61-25 (effective January 1, 2026) covers development applications; its retrieved text does not include building permit fees.",
+    "timeline_note": "No residential review day-count is published. Process (Building Permits page): online pre-screening assigns a reference number; the Building Division pre-screens for completeness and emails the requirements and fee for the formal application; the formal submission and full fee must be received within two weeks of that email or the reference number lapses; eligible applications are reviewed and processed electronically and the permit holder prints the permit card and drawings in colour for the site. Applications inactive for six months are considered abandoned (FAQ). When fees exceed $20,000, 50% may be paid at application and the balance at issuance.",
+    "portal_url": "https://permits.richmondhill.ca/Energov_Prod/SelfService",
+    "portal_note": "All residential permit types, decks included, are applied for and paid online ('Building Permit - Apply and Pay Online', an EnerGov self-service portal at permits.richmondhill.ca linked from the City's Building Permits page); payment by Visa or Mastercard. Submissions must be unprotected, flattened, black-and-white PDFs with electronic signatures; scans of paper are not accepted. The portal host reset the connection from this environment, so the portal itself was not opened. Inspections are requested through the Building Inspection Request form on forms.richmondhill.ca.",
+    "sources": [
+      {
+        "name": "City of Richmond Hill - R6 Deck Permit Application Process (Residential Deck Checklist, PDF)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "A Building Permit is required for all decks where one or more of the following applies: The deck is attached to a building (i.e. the house); The deck is more than 600 mm (2 ft.) above average grade, or; The deck is greater than 10 m2 (108 ft2) in area"
+      },
+      {
+        "name": "City of Richmond Hill - R6 Deck checklist (foundation line)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Foundation - size, spacing (minimum depth 1200 mm / 4 ft. below grade & to undisturbed soil)"
+      },
+      {
+        "name": "City of Richmond Hill - R6 Deck checklist (fee, TRCA, brick veneer)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "PERMIT FEES – $218.46 FLAT FEE ... T.R.C.A. (for properties within regulated area) ... The Ontario Building Code does not allow the attachment of decks to brick veneer"
+      },
+      {
+        "name": "City of Richmond Hill - Residential Permits (checklists and fees)",
+        "url": "https://www.richmondhill.ca/en/online-services/Residential-Permits.aspx",
+        "retrieved_at": "2026-11-03",
+        "quote": "Deck ... $218.46 flat fee; Addition or Alteration ... $27.37 per m2, building addition fee $10.40 per m2, building alteration fee; Basement Walkout ... $210.12 flat fee; Conservation authority approval (TRCA)"
+      },
+      {
+        "name": "City of Richmond Hill - Building Permits (fees by-law, online application process)",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Permits.aspx",
+        "retrieved_at": "2026-11-03",
+        "quote": "Building permit fees are calculated according to By-law 19-24 ... There are two steps to the online submission process: Pre-screening and Formal application ... the formal submission must be made and the applicable fee must be received in full within two weeks"
+      },
+      {
+        "name": "City of Richmond Hill - Building Permit FAQs (issuing division, address, abandoned applications)",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Permit-FAQs.aspx",
+        "retrieved_at": "2026-11-03",
+        "quote": "The Planning and Building Services, Building Division receives applications for and issues building permits. The Building Division is located at: 225 East Beaver Creek Road, 3rd Floor"
+      },
+      {
+        "name": "City of Richmond Hill - Building Inspections",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Inspections.aspx",
+        "retrieved_at": "2026-11-03",
+        "quote": "In order to book a building inspection, an issued building permit is required. Requests received after 3 p.m. are considered as being received on the next business day ... Request for mandatory permit inspections it will be reviewed and you will hear from us within 2 business days."
+      },
+      {
+        "name": "City of Richmond Hill - R1 Single Family Dwelling Permit Application Checklist (PDF)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R1-Residential-New-House-Checklist.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Detached, semi-detached, townhouse, duplex $27.37 per m2; Finished basement $6.56 per m2; Minimum residential permit fee $210.12 flat fee ... GRADING DEPOSIT - $7000.00 ... ROAD DAMAGE/FRONTAGE DEPOSIT - $3000.00 ... Soils Report by a Professional Engineer (dependent on location of site) ... Precautions During Excavations - Infill Housing Declaration ... FOUNDATION SURVEY - 1 copy - an original copy certified with Surveyor's Seal"
+      },
+      {
+        "name": "City of Richmond Hill - R2 Residential Addition / Alteration Application Process (PDF)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R2-Residential-Addition-Alteration-Checklist.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Addition $27.37 per m2; Residential Alteration $10.40 per m2 ... All additions greater than 400 SF in footprint area require a Site Alteration Permit ... Underpinning details ... Engineered foundation wall detail (when foundation wall exceeds maximum height permitted by OBC article 9.15.4.2)"
+      },
+      {
+        "name": "City of Richmond Hill - Residential Project Guidelines (Building Division, PDF)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/RH-Residential-Project-Guidelines.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Provide shoring for excavations as required to protect adjacent properties and prevent surface runoff from flowing onto neighbouring properties."
+      },
+      {
+        "name": "City of Richmond Hill - Comprehensive Zoning By-law 93-25, Section 2.0 Establishment of Zones (TRCA overlay)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Comprehensive-Zoning-By-Law-93-25-Sections/Section-2.0-Establishment-of-Zones.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "If a lot is subject to the Toronto and Region Conservation Authority Regulation Area (TRCA) and/or Hazardous Lands and/or the Natural Features Overlay as shown on Overlay \"E\" and/or Overlay \"F\""
+      },
+      {
+        "name": "City of Richmond Hill - Lake Wilcox Special Policy Area",
+        "url": "https://www.richmondhill.ca/en/learn-more/Lake-Wilcox-Special-Policy-Area.aspx",
+        "retrieved_at": "2026-11-03",
+        "quote": "The area around Lake Wilcox is partly located in the floodplain. The north shore of Lake Wilcox was identified as a Special Policy Area (SPA) in 1995 ... The review was based on the Toronto and Region Conservation Authority's revised floodplain mapping"
+      },
+      {
+        "name": "Lake Simcoe Region Conservation Authority - Do I need a permit?",
+        "url": "https://lsrca.on.ca/index.php/planning-permits/do-i-need-a-permit/",
+        "retrieved_at": "2026-11-03",
+        "quote": "In accordance with the Conservation Authorities Act and Ontario Regulation 41/24 ... Any development within the Regulated Area may require a permit from the Lake Simcoe Region Conservation Authority. ... Search for properties using our Interactive Regulation Mapviewer."
+      },
+      {
+        "name": "Lake Simcoe Region Conservation Authority - Lake Simcoe Watershed (municipalities and the moraine divide)",
+        "url": "https://lsrca.on.ca/index.php/home/our-watershed/",
+        "retrieved_at": "2026-11-03",
+        "quote": "situated in our municipal communities of York Region, Durham Region, Simcoe County, Barrie, Orillia and Kawartha Lakes ... The Oak Ridges Moraine is the southern watershed divide – lands drain north off the moraine to Lake Simcoe"
+      },
+      {
+        "name": "City of Richmond Hill - Tariff of Fees By-law 61-25 (2026 development application fees; building permit fees not in the retrieved text)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/2026-Development-Applications/Tariff-of-Fees-By-Law-61-25.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "That By-law 61-25 be effective as of January 1, 2026, unless otherwise noted."
+      }
+    ]
+  },
+  "climate": {
+    "station": "Richmond Hill (Climate ID 6157012; 43°52'38\" N, 79°26'52\" W; 240 m; about 0.7 km west-north-west of the reference coordinate) for every element including the frost-free period; Toronto Pearson (Climate ID 6158731, about 27 km south-west, 173 m) for the 1991-2020 comparison",
+    "normals_period": "1981-2010 for Richmond Hill (all elements computed from 1981-2006, 26 years, 1 missing, code A; frost dates from 25 years); 1991-2020 for Toronto Pearson (temperature code B, day-count elements and frost code C)",
+    "frost_free_days": 157,
+    "jan_mean_temp_c": -6.2,
+    "days_below_minus_10c": 40.9,
+    "freeze_thaw_note": "Richmond Hill 1981-2010: January daily maximum -2.2 C, daily average -6.2 C, daily minimum -10.2 C; extreme minimum -32.5 C (January); 40.9 days/yr with daily minimum < -10 C; 58.0 days/yr with daily maximum <= 0 C against 144.4 days/yr with daily minimum <= 0 C, so roughly 86 days a year cross 0 C between night and day (derived by subtraction); 150.6 cm annual snowfall, 895.2 mm annual precipitation; average last spring frost May 05, first fall frost Oct 10, frost-free period 157 days; December to February daily means -2.7, -6.2 and -4.9 C. Toronto Pearson 1991-2020: January mean -5.0 C, daily minimum -8.9 C, 34.2 days below -10 C, 49.5 days with maximum <= 0 C, 130.6 days with minimum <= 0 C, 114.5 cm snowfall, frost-free 174 days (Apr 27 to Oct 20). The Richmond Hill station, 67 m higher than Pearson and on the flank of the Oak Ridges Moraine, is colder in January, has about seven more days below -10 C, 36 cm more snow and a frost-free season 17 days shorter; the periods differ (1981-2010 against 1991-2020), so part of the gap is the warmer later period. Toronto Buttonville Airport (6158409, 5.9 km east-south-east, 198 m) appears in the 1981-2010 station list but its normals page returned station metadata and no element values.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Richmond Hill (temperature)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "Daily Average (°C) -6.2 -4.9 -0.3 6.9 13.3 18.7 21.4 20.3 15.9 9.1 3.1 -2.7 7.9 A; Daily Minimum (°C) -10.2 -9.1 -5.0 ... A; Extreme Minimum (°C) -32.5"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Richmond Hill (days with minimum < -10 C; days with maximum <= 0 C; days with minimum <= 0 C)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "< -10 °C 14.6 12.1 5.7 0.15 0.0 0.0 0.0 0.0 0.0 0.0 0.65 7.7 40.9 A; <= 0 °C 19.0 14.9 7.6 0.65 ... 58.0 A; <= 0 °C 29.4 26.5 25.5 11.9 1.2 ... 144.4 A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Richmond Hill (snowfall, precipitation, frost-free period)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "Snowfall (cm) 37.1 31.7 25.2 7.6 0.1 0.0 0.0 0.0 0.0 1.5 13.7 33.7 150.6 A; Precipitation (mm) ... 895.2 A; Average Date of Last Spring Frost May 05 A; Average Date of First Fall Frost Oct 10 A; Average Length of Frost-Free Period 157 Days A"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Richmond Hill (station metadata and years of record)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "Latitude : 43 ° 52'38.094 \" N Longitude : 79 ° 26'52.074 \" W Elevation : 240.00 m Climate ID : 6157012 ... Daily Average (°C) 1981 2006 26 1 9465 100 ... Average Length of Frost-Free Period 1981 2006 25 1 25 96.2"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 station list, search 'richmond'",
+        "url": "https://climate.weather.gc.ca/climate_normals/station_select_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains",
+        "retrieved_at": "2026-11-03",
+        "quote": "* RICHMOND HILL ON 43°52' N 79°27' W 240 m"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "Daily Average (°C) -5.0 ... B; Daily Minimum (°C) -8.9 ...; Snowfall (cm) ... 114.5 B; <= 0 °C ... 49.5 C; <= 0 °C ... 130.6 C; < -10 °C 13.4 10.8 4.0 ... 34.2 C; Average Date of Last Spring Frost Apr 27 C; Average Date of First Fall Frost Oct 20 C; Average Length of Frost-Free Period 174 Days C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Toronto Buttonville A (station metadata only; no element values returned)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=buttonville&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158409&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "TORONTO BUTTONVILLE A ... Latitude : 43 ° 51'39.000 \" N Longitude : 79 ° 22'07.000 \" W Elevation : 198.10 m Climate ID : 6158409"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": "Division B, Sentence 9.12.2.2.(1) and Table 9.12.2.2., 2024 Building Code Compendium (O. Reg. 163/24), with Sentence 9.12.2.1.(1) for excavation to undisturbed soil",
+    "note": "The 1.2 m figure is printed on the City of Richmond Hill's R6 deck checklist as 'minimum depth 1200 mm / 4 ft. below grade & to undisturbed soil'. The Ontario Building Code text was retrieved this time from the Ministry's free-download 2024 Building Code Compendium PDF on publications.gov.on.ca: Table 9.12.2.2. sets 1.2 m for 'Clay or soils not clearly defined' under a heated basement or crawl space, and '1.2 m but not less than the depth of frost penetration' where there is no heated space; rock and coarse-grained soils with good drainage have no limit; Sentence 9.12.2.2.(5) allows lesser depths where local experience shows them satisfactory or the foundation is designed for them. The Compendium is a convenience copy; the official regulation is O. Reg. 332/12 as amended by O. Reg. 163/24 on ontario.ca/laws, which still renders as a JavaScript shell without the text. The 2012 Code continues to apply to permits issued on or before December 31, 2024.",
+    "sources": [
+      {
+        "name": "City of Richmond Hill - R6 Deck checklist (foundation depth)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Foundation - size, spacing (minimum depth 1200 mm / 4 ft. below grade & to undisturbed soil)"
+      },
+      {
+        "name": "Ontario Ministry of Municipal Affairs and Housing - 2024 Building Code Compendium (free download PDF), Division B, Table 9.12.2.2.",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "9.12.2.2. Minimum Depth of Foundations (1) Except as provided in Sentences (4) to (7), the minimum depth of foundations below finished ground level shall conform to Table 9.12.2.2. ... Clay or soils not clearly defined(4) 1.2 m(3) 1.2 m 1.2 m but not less than the depth of frost penetration(3) 1.2 m but not less than the depth of frost penetration"
+      },
+      {
+        "name": "Ontario Ministry of Municipal Affairs and Housing - 2024 Building Code Compendium, Article 9.12.2.1. and edition note",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "9.12.2.1. Excavation to Undisturbed Soil (1) Excavations for foundations shall extend to undisturbed soil. ... Enclosed please find the 2024 Building Code Compendium Edition1 (O. Reg. 163/24)"
+      },
+      {
+        "name": "Ontario e-Laws - O. Reg. 332/12 Building Code (page renders as JS shell; text not retrievable)",
+        "url": "https://www.ontario.ca/laws/regulation/120332",
+        "retrieved_at": "2026-11-03",
+        "quote": "e-Laws | Ontario.ca"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-03"
+}
