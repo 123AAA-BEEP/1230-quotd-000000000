@@ -1,0 +1,431 @@
+{
+  "slug": "vaughan",
+  "name": "Vaughan",
+  "region": "York Region",
+  "province": "ON",
+  "lat": 43.85278,
+  "lon": -79.53528,
+  "sub_areas": [
+    {
+      "name": "Woodbridge",
+      "note": "Former village, amalgamated into the Town of Vaughan in 1971; the City's largest community, west of Highway 400, east of Highway 50, north of Steeles and generally south of Major Mackenzie, with its historic downtown on Woodbridge Avenue between Islington and Kipling (Wikipedia). Historic Woodbridge sits in the hilly terrain of the Humber valley at about 200 m elevation and lies on the Humber floodplain; Hurricane Hazel (1954) swelled the river from 20 m to 107 m wide there. OGS point query at the old village (43.7845, -79.6035) returns clay-to-silt till (unit 5d) over Georgian Bay Formation; a second point on the river at Highway 7 (43.7838, -79.5975) returns fine-textured glaciolacustrine silt and clay (unit 8b) over Georgian Bay."
+    },
+    {
+      "name": "Maple",
+      "note": "Community bounded by the King-Vaughan Line, Rutherford Road, Bathurst Street and Highway 400 (Wikipedia); City Hall is at 2141 Major Mackenzie Drive in Maple. OGS point queries at Keele and Major Mackenzie (43.8560, -79.5080) and at the Wikipedia reference coordinate (43.85278, -79.53528) return clay-to-silt till (unit 5d) over Georgian Bay Formation; a northern point near Kirby Road (43.8900, -79.5150) returns the same till over the Blue Mountain Formation."
+    },
+    {
+      "name": "Thornhill (Vaughan side)",
+      "note": "The western portion of Thornhill, west of Yonge Street, is in Vaughan; the community is bounded by Highways 7 and 407 (Major Mackenzie west of Bathurst), Steeles, Yonge and Dufferin (Wikipedia). OGS point query at Centre Street west of Yonge (43.8105, -79.4300) returns stone-poor sandy silt to silty sand till (unit 5b) over Georgian Bay Formation."
+    },
+    {
+      "name": "Thornhill Woods / Patterson",
+      "note": "Newer subdivisions north of Highway 7 between Bathurst and Dufferin; the point (43.8380, -79.4580) is a map placement near Bathurst and Rutherford, not a published coordinate. OGS point query returns massive to well laminated fine-textured glaciolacustrine silt and clay (unit 8a) over Georgian Bay Formation, the only unit 8a result in Vaughan."
+    },
+    {
+      "name": "Concord",
+      "note": "Community bounded by Rutherford Road, Steeles Avenue, Dufferin Street and Highway 400 (Wikipedia). OGS point query at Highway 7 and Keele (43.8005, -79.4950) returns stone-poor sandy silt to silty sand till (unit 5b) over Georgian Bay Formation."
+    },
+    {
+      "name": "Vaughan Metropolitan Centre",
+      "note": "179 ha city centre under development around Highway 7 and Jane Street, on the site of the former hamlet of Edgeley; terminus of subway Line 1 (Wikipedia). OGS point query (43.7940, -79.5270) returns fine-textured glaciolacustrine silt and clay (unit 8b, interbedded with gritty, pebbly flow till) over Georgian Bay Formation."
+    },
+    {
+      "name": "Kleinburg",
+      "note": "Historic village between two branches of the forested Humber River valley, with semi-rural estate lots to the north and the newer and larger New Kleinburg (formerly Nashville Heights) to the west, bordered by Nashville Road, Major Mackenzie Drive, Huntington Road and the CPKC line (Wikipedia). OGS point query at Islington Avenue and Nashville Road (43.8420, -79.6260) returns clay-to-silt till (unit 5d) over Georgian Bay Formation."
+    },
+    {
+      "name": "Nashville",
+      "note": "Community west of Kleinburg, considered part of Kleinburg for services (Wikipedia). OGS point query near Huntington Road and Nashville Road (43.8465, -79.6650) returns coarse-textured glaciolacustrine sand and gravel (unit 9c, foreshore and basinal deposits) over Georgian Bay Formation; the only coarse-textured surficial unit returned at any Vaughan point."
+    },
+    {
+      "name": "Vellore Village",
+      "note": "Subdivisions around Weston Road and Major Mackenzie Drive; the historic hamlet of Vellore held the Township Hall from 1850 (Wikipedia). Map-placed point (43.8450, -79.5600). OGS point query returns clay-to-silt till (unit 5d) over Georgian Bay Formation, in the same till polygon as Maple and the reference coordinate."
+    },
+    {
+      "name": "Carrville",
+      "note": "Area around Dufferin Street and Rutherford Road, east of Maple; map-placed point (43.8370, -79.4780), no separate Wikipedia article. OGS point query returns clay-to-silt till (unit 5d) over Georgian Bay Formation."
+    },
+    {
+      "name": "Islington Woods / Pine Grove",
+      "note": "Pine Grove is the oldest settlement in the Woodbridge area, on the Humber north of the old village; Boyd Conservation Area was bought by the Humber Valley Conservation Authority beside it in 1956 for flood control after Hurricane Hazel (Wikipedia). Map-placed point at Islington Avenue and Langstaff Road (43.8060, -79.5930). OGS point query returns clay-to-silt till (unit 5d) over Georgian Bay Formation."
+    },
+    {
+      "name": "Humber valley (Boyd Conservation Area)",
+      "note": "TRCA-owned park in the Humber River valley east of Islington Avenue, south of Rutherford Road; overlaps an Area of Natural and Scientific Interest (Wikipedia). OGS point query (43.8160, -79.5960) returns fine-textured glaciolacustrine silt and clay (unit 8b, interbedded with gritty, pebbly flow till) over Georgian Bay Formation."
+    },
+    {
+      "name": "Sonoma Heights",
+      "note": "Subdivision west of Islington Avenue around Rutherford Road; map-placed point (43.8225, -79.6085), no Wikipedia article. OGS point query returns fine-textured glaciolacustrine silt and clay (unit 8b) over Georgian Bay Formation, in the same polygon as the Boyd valley point."
+    },
+    {
+      "name": "North edge (Teston Road at Bathurst)",
+      "note": "Additional sample point (43.8800, -79.4650) toward the King-Vaughan Line, placed to test for Oak Ridges Moraine deposits. OGS point query returns clay-to-silt till (unit 5d) over the Blue Mountain Formation; no moraine sand and gravel was returned at any Vaughan point."
+    }
+  ],
+  "census": {
+    "population_2021": 323103,
+    "private_dwellings_occupied": 103914,
+    "single_detached_pct": 62.6,
+    "period_of_construction": {
+      "pre_1960_pct": null,
+      "1961_1980_pct": null,
+      "1981_2000_pct": null,
+      "2001_2021_pct": null
+    },
+    "derivation_note": "Statistics Canada's own Census Profile page (www12.statcan.gc.ca) returned 403 to every route tried, and the Internet Archive copy is blocked at the proxy, so the counts here are from secondary publications that cite the 2021 Census. Population 323,103 (2016: 306,233, +5.5%) living in 103,914 of 107,159 total private dwellings, land area 272.44 km2, density 1,185.9 per km2: Wikipedia, citing the Census Profile. Single-detached: York Region's 2021 Census Release Report prints 65,035 single-detached of 103,910 total units for Vaughan (63% as printed; 62.6% computed), with semi-detached 7,960 (8%), townhouse 11,410 (11%), apartment 16,015 (15%) and duplex 3,490 (3%); the City's economic development site prints 64,995 single-detached (64% in the body, 63% in its highlights) and 13,750 apartments in buildings of five or more storeys (13%). Period of construction is null: no accessible source publishes the Vaughan split, and the two www150 tables with a period-of-construction dimension (98-10-0241, 98-10-0242) stop at the census metropolitan area. Growth is the proxy: Wikipedia's census table gives 115,477 (1991), 182,022 (2001), 238,866 (2006), 288,301 (2011) and 323,103 (2021), and the article says Vaughan was Ontario's fastest-growing municipality from 1996 to 2006 (+80.2%).",
+    "sources": [
+      {
+        "name": "Wikipedia - Vaughan (population, dwellings, area; cites Statistics Canada Census Profile 2021)",
+        "url": "https://en.wikipedia.org/wiki/Vaughan",
+        "retrieved_at": "2026-11-03",
+        "quote": "Vaughan had a population of 323,103 living in 103,914 of its 107,159 total private dwellings, a change of 5.5% from its 2016 population of 306,233. With a land area of 272.44 km2"
+      },
+      {
+        "name": "York Region - 2021 Census Release Report: Age, Sex, Gender and Dwelling Types (2021 Housing Mix By Local Municipality table)",
+        "url": "https://york.ca/media/104971/download",
+        "retrieved_at": "2026-11-03",
+        "quote": "Vaughan 103,910 | Single Detached 65,035 63% | Semi Detached 7,960 8% | Townhouse 11,410 11% | Apartment 16,015 15% | Duplex 3,490 3%"
+      },
+      {
+        "name": "Vaughan Economic Development - 2021 Census Insights and Findings: Housing and Dwellings",
+        "url": "https://vaughanbusiness.ca/insights/2021-census-insights-and-findings-housing-and-dwellings/",
+        "retrieved_at": "2026-11-03",
+        "quote": "Single-detached homes within Vaughan increased 6 per cent from 2016 to a total of 64,995 in 2021"
+      },
+      {
+        "name": "Vaughan Economic Development - 2021 Census Insights and Findings: Housing Characteristics",
+        "url": "https://vaughanbusiness.ca/insights/2021-census-insights-and-findings-housing-characteristics/",
+        "retrieved_at": "2026-11-03",
+        "quote": "In 2021 there were 103,915 private households in the City of Vaughan"
+      },
+      {
+        "name": "Statistics Canada, Census Profile 2021 - Vaughan, City (CY) [Census subdivision], Ontario (NOT retrieved: HTTP 403 on www12.statcan.gc.ca for the page, the CPR2021 JSON API and the Internet Archive copy)",
+        "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=Vaughan&DGUIDlist=2021A00053519028&GENDERlist=1,2,3&STATISTIClist=1,4&HEADERlist=0",
+        "retrieved_at": "2026-11-03",
+        "quote": "Security Check (403)"
+      }
+    ]
+  },
+  "geology": {
+    "surficial": [
+      {
+        "unit": "OGS MRD128-REV unit 5d - Till",
+        "description": "Clay to silt-textured till (derived from glaciolacustrine deposits or shale). Regional literature calls this Halton Till; that name is not carried in the OGS attributes and was not verified here.",
+        "where": "Nine of seventeen query points: the reference coordinate, Maple, Vellore Village, Carrville, North Maple at Kirby Road and Teston Road at Bathurst (all in one polygon, OBJECTID 84470); Kleinburg and Islington Woods / Pine Grove (OBJECTID 86090); and the old Woodbridge village (OBJECTID 89583)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 5b - Till",
+        "description": "Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain. The same unit the survey returns on the Toronto plateau at midtown and North York.",
+        "where": "Southeast Vaughan: query points at Thornhill west of Yonge (43.8105, -79.4300) and Concord at Highway 7 and Keele (43.8005, -79.4950)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8b - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; interbedded silt and clay and gritty, pebbly flow till and rainout deposits.",
+        "where": "The Humber valley at Boyd Conservation Area and at Highway 7 in Woodbridge, Sonoma Heights, and the Vaughan Metropolitan Centre at Highway 7 and Jane (four points)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 8a - Fine-textured glaciolacustrine deposits",
+        "description": "Silt and clay, minor sand and gravel; massive to well laminated.",
+        "where": "Thornhill Woods / Patterson near Bathurst and Rutherford (43.8380, -79.4580)."
+      },
+      {
+        "unit": "OGS MRD128-REV unit 9c - Coarse-textured glaciolacustrine deposits",
+        "description": "Sand, gravel, minor silt and clay; foreshore and basinal deposits.",
+        "where": "Nashville, west of Kleinburg (43.8465, -79.6650); the only coarse-textured result in Vaughan."
+      },
+      {
+        "unit": "Oak Ridges Moraine (not returned at any Vaughan query point)",
+        "description": "Wikipedia: a pair of large ridges of glacially derived sediment between the Niagara Escarpment and Rice Lake, a rich source of sand and gravel for the aggregate industry and the recharge area for the aquifers that feed the Humber's headwaters; Taylor (1913) described its extent as from King and Maple in the west to the Trent River. The two northernmost Vaughan points (Kirby Road, Teston Road) returned clay-to-silt till, not ice-contact or moraine deposits, so at the scale of the OGS map the moraine's sand and gravel is not mapped inside Vaughan at the points queried.",
+        "where": "North of the King-Vaughan Line at the points queried; the East Humber rises on the moraine near Aurora (Wikipedia, Humber River)."
+      }
+    ],
+    "bedrock": {
+      "formation": "Georgian Bay Formation (Upper Ordovician shale) under fifteen of seventeen query points, from Woodbridge, Kleinburg and Nashville through Maple, Concord and Thornhill; Blue Mountain Formation (Upper Ordovician shale) at the two northernmost points, Kirby Road in north Maple and Teston Road at Bathurst (OGS MRD219).",
+      "description": "Georgian Bay (OGS unit 14): interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone; source map m2338 words it as grey-green and grey-blue shale, siltstone, limestone (west and central points), and source map m2544 as alternating green shale with limestone and dolostone (Thornhill, Concord, Carrville, Thornhill Woods). Blue Mountain (OGS unit 12): dark blue-grey to brown to black shale, with thin interbeds of limestone or calcareous siltstone; the original map names the Collingwood Member, black shale. No red Queenston shale was returned anywhere in Vaughan.",
+      "depth_note": "Depth to bedrock was not retrieved (no drift-thickness dataset queried). None of the seventeen Vaughan points returned the OGS 'Paleozoic bedrock at/near surface' unit; every point returned a surficial deposit of unstated thickness over the shale named above."
+    },
+    "implications_for_piles": [
+      "The City of Vaughan prints no footing depth of its own: its deck page asks for a cross-section 'detailing proposed construction, posthole depth, deck height, guard or railing height and design, connection detail to adjacent building', and the 2016-form deck package asks for a side elevation 'showing height of deck, guard details and footings'. Neither mentions helical piles, CCMC or an engineer requirement for alternative foundations. The depth therefore comes from the Ontario Building Code: Table 9.12.2.2 puts a foundation with no heated space on clay or soils not clearly defined at '1.2 m but not less than the depth of frost penetration', and Article 9.12.2.1 requires excavations for foundations to extend to undisturbed soil.",
+      "Nine of seventeen OGS points, covering Woodbridge, Kleinburg, Vellore, Maple and Carrville, fall on clay-to-silt till; Thornhill and Concord on a sandier, stone-poor till; the Humber valley, Sonoma Heights, the Vaughan Metropolitan Centre and Thornhill Woods on glaciolacustrine silt and clay; Nashville on sand and gravel. Depth, torque and capacity do not carry across these units, and the engineer's layout is set per site.",
+      "Bedrock is grey Georgian Bay shale under the city and Blue Mountain black shale at the northern edge; no point returned rock at or near the surface, so pre-drilling for rock is not the default in Vaughan. Lots in the Humber valley system (Woodbridge, Pine Grove, Boyd, Kleinburg) are inside or beside TRCA-regulated land, where the Authority's permit or clearance comes before the City can issue a building permit and a geotechnical slope stability assessment may be requested. No site-specific depth, torque or capacity figures were retrieved."
+    ],
+    "sources": [
+      {
+        "name": "Ontario Geological Survey, Surficial geology of Southern Ontario, MRD 128-REV (ArcGIS feature service, layer 3 query at the reference coordinate 43.85278, -79.53528)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.53528,43.85278&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 5d, Deposit: Till, Material: Clay to silt-textured till (derived from glaciolacustrine deposits or shale)"
+      },
+      {
+        "name": "OGS MRD 128-REV, layer 3 query at Thornhill west of Yonge (43.8105, -79.4300)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.4300,43.8105&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 5b, Deposit: Till, Material: Stone-poor, sandy silt to silty sand-textured till on Paleozoic terrain"
+      },
+      {
+        "name": "OGS MRD 128-REV, layer 3 query at the Vaughan Metropolitan Centre (43.7940, -79.5270)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.5270,43.7940&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 8b, Deposit: Fine-textured glaciolacustrine deposits, Material: silt and clay, minor sand and gravel, Description: Interbedded silt and clay and gritty, pebbly flow till and rainout deposits"
+      },
+      {
+        "name": "OGS MRD 128-REV, layer 3 query at Thornhill Woods / Patterson (43.8380, -79.4580)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.4580,43.8380&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 8a, Deposit: Fine-textured glaciolacustrine deposits, Material: silt and clay, minor sand and gravel, Description: Massive to well laminated"
+      },
+      {
+        "name": "OGS MRD 128-REV, layer 3 query at Nashville (43.8465, -79.6650)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/SurficialGeologyMRD128REV/FeatureServer/3/query?geometry=-79.6650,43.8465&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "UNIT 9c, Deposit: Coarse-textured glaciolacustrine deposits, Material: sand, gravel, minor silt and clay, Description: Foreshore and basinal deposits"
+      },
+      {
+        "name": "OGS MRD 128-REV feature service item (citation and terms)",
+        "url": "https://www.arcgis.com/sharing/rest/content/items/4cb9a34cacc04633bb85c708239877e0?f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "Ontario Geological Survey 2010. Surficial geology of Southern Ontario; Ontario Geological Survey, Miscellaneous Release--Data 128-REV"
+      },
+      {
+        "name": "Ontario Geological Survey, Paleozoic Geology of Southern Ontario, MRD 219 (ArcGIS feature service, layer 4 query at the reference coordinate 43.85278, -79.53528)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.53528,43.85278&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "FORMATION: Georgian Bay; DESCRIPT_FULL: interbedded grey-green to dark grey shale and fossiliferous calcareous siltstone to bioclastic limestone; ORIG_LITHOLOGY: grey-green and grey-blue shale, siltstone, limestone; SOURCE_MAP m2338"
+      },
+      {
+        "name": "OGS MRD 219, layer 4 query at Concord (43.8005, -79.4950)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.4950,43.8005&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "FORMATION: Georgian Bay; ORIG_LITHOLOGY: alternating green shale with limestone and dolostone; SOURCE_MAP m2544"
+      },
+      {
+        "name": "OGS MRD 219, layer 4 query at north Maple, Kirby Road (43.8900, -79.5150)",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.5150,43.8900&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+        "retrieved_at": "2026-11-03",
+        "quote": "FORMATION: Blue Mountain; DESCRIPT_FULL: dark blue-grey to brown to black shale, with thin interbeds of limestone or calcareous siltstone; ORIG_LITHOLOGY: Collingwood Member: black shale"
+      },
+      {
+        "name": "Ontario GeoHub dataset record for MRD 219",
+        "url": "https://geohub.lio.gov.on.ca/api/v3/datasets/4b1bbee3cd6f4fde8d3ce9ecfe206630",
+        "retrieved_at": "2026-11-03",
+        "quote": "Paleozoic Geology of Southern Ontario (MRD219)"
+      },
+      {
+        "name": "Wikipedia - Vaughan (communities and boundaries)",
+        "url": "https://en.wikipedia.org/wiki/Vaughan",
+        "retrieved_at": "2026-11-03",
+        "quote": "Maple: North/South - King Vaughan Line/Rutherford, East/West - Bathurst/Hwy 400 ... Concord: North/South - Rutherford/Steeles, East/West - Dufferin/Hwy 400"
+      },
+      {
+        "name": "Wikipedia - Woodbridge, Ontario",
+        "url": "https://en.wikipedia.org/wiki/Woodbridge,_Ontario",
+        "retrieved_at": "2026-11-03",
+        "quote": "As Woodbridge is on the Humber floodplain, Hurricane Hazel in 1954 devastated the community as the Humber River swelled from its usual width of 20 m at its narrowest point to 107 m"
+      },
+      {
+        "name": "Wikipedia - Kleinburg",
+        "url": "https://en.wikipedia.org/wiki/Kleinburg",
+        "retrieved_at": "2026-11-03",
+        "quote": "The historic village is located between two branches of the forested Humber River valley."
+      },
+      {
+        "name": "Wikipedia - Boyd Conservation Area",
+        "url": "https://en.wikipedia.org/wiki/Boyd_Conservation_Area",
+        "retrieved_at": "2026-11-03",
+        "quote": "a suburban land preserve owned and operated by the Toronto and Region Conservation Authority ... situated in the Humber River valley"
+      },
+      {
+        "name": "Wikipedia - Oak Ridges Moraine",
+        "url": "https://en.wikipedia.org/wiki/Oak_Ridges_Moraine",
+        "retrieved_at": "2026-11-03",
+        "quote": "Taylor formally defined the landform as the Oak Ridges Moraine in 1913. He described its extent to be from King and Maple in the west to the Trent River in the east."
+      },
+      {
+        "name": "Wikipedia - Humber River (Ontario)",
+        "url": "https://en.wikipedia.org/wiki/Humber_River_(Ontario)",
+        "retrieved_at": "2026-11-03",
+        "quote": "East Humber - The East Humber flows from north of Toronto, meeting the main branch of the Humber in Woodbridge, just north of Highway 7."
+      }
+    ]
+  },
+  "permits": {
+    "authority": "City of Vaughan Building Standards Department (title block of the City's deck permit package: 'City of Vaughan Building Standards Department 2141 Major Mackenzie Drive, Vaughan, Ontario L6A 1T1'; the City's FAQ gives 905-832-8510 and buildingstandards@vaughan.ca). Inspections are by 'Building Standards' Inspection Services.",
+    "deck_permit_required_when": "City Decks and Porches page (search-engine snippet; the page itself returned 403): 'A building permit is required for any deck or porch that is attached to a building (regardless of area or height above grade).' 'A building permit is not required for an uncovered deck maximum 18.6 metres (about 200 square feet), not exceeding 0.6metres (about 23.6 inches) above grade and not attached to an existing structure.' The City's news page words the same exemption as 'a maximum area of 18.6 square metres'. 'Although a building permit may not be required, the uncovered deck is still required to meet City zoning requirements, such as setbacks to property lines and lot coverage.' The older City package (form effective January 1, 2014, revised January 29, 2016) used a different trigger: '600mm (23 5/8 inches) or greater above grade OR any deck that is 18.6 m2 (200 sqft) or greater in building area'.",
+    "footing_depth_requirement": "No numeric footing depth is printed by the City. The Decks and Porches page asks for 'Sections and details (cross-sectional view detailing proposed construction, posthole depth, deck height, guard or railing height and design, connection detail to adjacent building, etc.)' and a foundation plan showing posthole location and spacing (search-engine snippet); the 2016-form package asks for a 'Side elevation of deck showing height of deck, guard details and footings' and notes that 'Some drawings must be designed by a professional engineer when the design falls under the scope of Parts 4 & 9, Division B of the 2012 Ontario Building Code'. Neither document mentions helical piles, screw piles, CCMC or BMEC. The governing depth is the Building Code's Table 9.12.2.2 (see code).",
+    "inspections": [
+      "Footing (houses, additions and accessory structures page: excavation complete, footing forms installed, ground within the forms not frozen)",
+      "Before backfilling the foundation",
+      "Structural framing (structure weather-tight, before insulation, vapour barriers and interior air barriers)",
+      "Deck-specific inspection list: page under Building Inspections > Residential > Decks exists but could not be retrieved"
+    ],
+    "fee_note": "Fees and Charges By-law 051-2026, effective February 24, 2026 (repeals 251-2024); Schedule F is the Building Standards Department schedule under section 7 of the Building Code Act, 1992. Search-engine snippet of the by-law: 'the minimum fee for any permit shall be $195.00 (2026 Rate)'. The per-square-metre rates for houses and additions and any flat deck fee were NOT retrieved: the by-law PDF on vaughan.ca and the escribemeetings copies return 403. The 2016-form deck package printed 'Building Permit Fee $103.00 flat fee', which is a decade old and is not current. For additions, the City's New Structure or Addition page says a grading permit is issued by Development Engineering before the associated building permit is applied for; the figures the search engine shows for that page ($945 over 40 m2, $653 under 40 m2) conflict with the Engineering Permits page ($1,003 and $693) and are not used.",
+    "timeline_note": "The 2016-form deck package: once an application is complete and fees are paid, 'the City of Vaughan endeavours to issue the permit or advise applicants of all application examination deficiencies within 10 business days from the date of the application'. No current review-time statement was retrieved.",
+    "portal_url": "https://www.vaughan.ca/about-city-vaughan/departments/building-standards",
+    "portal_note": "Building Standards' Online Permitting Portal with ePlans took effect February 10, 2025 (search-engine snippet of the department page): 'All mandatory documents MUST be uploaded to the Online Permitting Portal before a building permit application can be made'; the ePlans applicant manual (February 2025) says the Open ePlans button appears only after the Minimum Permit Fee is paid; the registered portal user is the legal applicant. Direct URL of the portal not retrieved (vaughan.ca returned 403 to every request).",
+    "sources": [
+      {
+        "name": "City of Vaughan - Decks and Porches (search-engine snippet; page returned HTTP 403 to direct and archived fetches)",
+        "url": "https://www.vaughan.ca/residential/building-and-construction/building-permits/building-permits-homes/decks-and-porches",
+        "retrieved_at": "2026-11-03",
+        "quote": "A building permit is required for any deck or porch that is attached to a building (regardless of area or height above grade)."
+      },
+      {
+        "name": "City of Vaughan - Decks and Porches (exemption; search-engine snippet)",
+        "url": "https://www.vaughan.ca/residential/building-and-construction/building-permits/building-permits-homes/decks-and-porches",
+        "retrieved_at": "2026-11-03",
+        "quote": "A building permit is not required for an uncovered deck maximum 18.6 metres (about 200 square feet), not exceeding 0.6metres (about 23.6 inches) above grade and not attached to an existing structure."
+      },
+      {
+        "name": "City of Vaughan - Decks and Porches (drawings; search-engine snippet)",
+        "url": "https://www.vaughan.ca/residential/building-and-construction/building-permits/building-permits-homes/decks-and-porches",
+        "retrieved_at": "2026-11-03",
+        "quote": "Sections and details (cross-sectional view detailing proposed construction, posthole depth, deck height, guard or railing height and design, connection detail to adjacent building, etc.)"
+      },
+      {
+        "name": "City of Vaughan - news: Creating a backyard oasis safely and correctly (search-engine snippet)",
+        "url": "https://www.vaughan.ca/news/creating-backyard-oasis-safely-and-correctly",
+        "retrieved_at": "2026-11-03",
+        "quote": "A building permit is not required for uncovered decks that have a maximum area of 18.6 square metres (about 200 square feet), are not greater than 0.6 metres (about 23.6 inches) above grade and are not attached to an existing structure."
+      },
+      {
+        "name": "City of Vaughan - New Decks and Porches, Building Permit Application Requirements (City package with the Application for a Permit to Construct or Demolish, form effective January 1, 2014, revised January 29, 2016; retrieved from a contractor's mirror copy, PDF)",
+        "url": "https://www.yourdeck.ca/wp-content/uploads/2017/07/deck%20permit%20Vaughan.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "City of Vaughan Building Standards Department 2141 Major Mackenzie Drive, Vaughan, Ontario L6A 1T1 ... Side elevation of deck showing height of deck, guard details and footings ... endeavours to issue the permit or advise applicants of all application examination deficiencies within 10 business days"
+      },
+      {
+        "name": "City of Vaughan - Building Standards (department page; search-engine snippet)",
+        "url": "https://www.vaughan.ca/about-city-vaughan/departments/building-standards",
+        "retrieved_at": "2026-11-03",
+        "quote": "All mandatory documents MUST be uploaded to the Online Permitting Portal before a building permit application can be made"
+      },
+      {
+        "name": "City of Vaughan - Building Standards Frequently Asked Questions (search-engine snippet)",
+        "url": "https://www.vaughan.ca/about-city-vaughan/departments/building-standards/building-standards-frequently-asked-questions",
+        "retrieved_at": "2026-11-03",
+        "quote": "if the property abuts open space conservation lands, refer to the Toronto and Region Conservation Authority (TRCA) for any additional restrictions"
+      },
+      {
+        "name": "City of Vaughan - Building Inspections: Houses, Additions and Accessory Structures (search-engine snippet)",
+        "url": "https://www.vaughan.ca/residential/building-and-construction/building-inspections/residential/houses-additions-and-accessory-structures",
+        "retrieved_at": "2026-11-03",
+        "quote": "excavation is complete, footing forms are installed, and the ground within the forms is not frozen ... An inspection is required before backfilling the foundation."
+      },
+      {
+        "name": "City of Vaughan - Building Inspections: Houses, Additions and Accessory Structures (framing and notification; search-engine snippet)",
+        "url": "https://www.vaughan.ca/residential/building-and-construction/building-inspections/residential/houses-additions-and-accessory-structures",
+        "retrieved_at": "2026-11-03",
+        "quote": "An inspection is required before the installation of insulation, vapour barriers and interior air barriers. At this point, structural framing is complete and the structure is weather-tight."
+      },
+      {
+        "name": "City of Vaughan - Fees and Charges By-law 051-2026 (PDF; search-engine snippet, file returned HTTP 403)",
+        "url": "https://www.vaughan.ca/sites/default/files/2026-02/051-2026.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "the minimum fee for any permit shall be $195.00 (2026 Rate)"
+      },
+      {
+        "name": "City of Vaughan - New Structure or Addition (search-engine snippet)",
+        "url": "https://www.vaughan.ca/residential/building-and-construction/building-permits/building-permits-homes/new-structure-or-addition",
+        "retrieved_at": "2026-11-03",
+        "quote": "any addition or new accessory structure such as a shed or cabana will require a permit before building ... grading permits are issued by Development Engineering before applying for the associated building permit"
+      },
+      {
+        "name": "Toronto and Region Conservation Authority - Home Additions",
+        "url": "https://trca.ca/planning-permits/home-additions/",
+        "retrieved_at": "2026-11-03",
+        "quote": "your municipality cannot legally issue a building permit until a TRCA permit or clearance has been obtained"
+      },
+      {
+        "name": "Toronto and Region Conservation Authority - Decks (garages, sheds, decks and pools page)",
+        "url": "https://trca.ca/planning-permits/decks/",
+        "retrieved_at": "2026-11-03",
+        "quote": "A permit will be required if the development activity is proposed within a TRCA Regulated Area ... does not meet the exception criteria of Ontario Regulation 41/24"
+      },
+      {
+        "name": "Toronto and Region Conservation Authority - Planning & Permits (Regulated Area Search)",
+        "url": "https://trca.ca/planning-permits/",
+        "retrieved_at": "2026-11-03",
+        "quote": "regulate development in or near valleys, streams, and wetlands, and along the Lake Ontario shoreline ... Is Your Site in a TRCA Regulated Area?"
+      }
+    ]
+  },
+  "climate": {
+    "station": "Toronto Buttonville Airport (Climate ID 6158409, threaded with 6158410 and 615HMAK; 43 51'39\" N, 79 22'07\" W; 198.1 m), about 13 km due east of the Vaughan reference coordinate (derived from the two coordinate pairs); Toronto Pearson (Climate ID 6158731; about 21 km south-south-west) for comparison. No ECCC normals station is named Vaughan, Woodbridge, Maple or Richmond Hill in the 1981-2010 or 1991-2020 sets.",
+    "normals_period": "1991-2020 for Buttonville (temperature code A, 30 years, 95.3% data coverage; day-count elements code B, 28 years; snowfall code C, 1991-2018, 25 years; frost elements code C, 21 years) and for Toronto Pearson (temperature code B). Buttonville 1981-2010 (615HMAK, computed 1986-2010, 25 years, code C) also read.",
+    "frost_free_days": 161,
+    "jan_mean_temp_c": -6.0,
+    "days_below_minus_10c": 43.6,
+    "freeze_thaw_note": "Buttonville 1991-2020: January daily average -6.0 C, daily maximum -1.7 C, daily minimum -10.1 C; February daily average -5.6 C; 43.6 days/yr with minimum < -10 C and 6.3 days < -20 C; 55.8 days/yr with maximum <= 0 C against 144.8 days/yr with minimum <= 0 C, so roughly 89 days a year cross 0 C between night and day (derived by subtraction); 112.9 days < -2 C; last spring frost May 03, first fall frost Oct 13, frost-free period 161 days; 146.4 cm annual snowfall. Buttonville 1981-2010: January -5.8 C, 45.0 days < -10 C, 157 frost-free days (May 05 to Oct 10), 142.6 cm snow. Toronto Pearson 1991-2020: January -5.0 C, 34.2 days < -10 C, 49.5 days max <= 0 C, 174 frost-free days (Apr 27 to Oct 20), 114.5 cm snow. Buttonville is 25 m higher than Pearson and inland from the lake; its record is colder, snowier and about two weeks shorter in frost-free days, and is the nearer station to every Vaughan community.",
+    "sources": [
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Buttonville (Airport), temperature",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158409&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "Daily Average (°C) -6.0 -5.6 -0.2 6.5 13.4 18.8 21.5 20.6 16.2 9.4 3.3 -2.2 8.0 A; Daily Minimum (°C) -10.1 -10.1 -5.0 ..."
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Buttonville (Airport), days with minimum temperature",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158409&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "< -10 °C 15.5 13.9 6.0 0.08 0.0 0.0 0.0 0.0 0.0 0.0 1.0 7.1 43.6 B; <= 0 °C ... 144.8 B; < -20 °C ... 6.3 B"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Buttonville (Airport), days with maximum <= 0 C, snowfall and frost-free period",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158409&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "<= 0 °C 18.4 15.5 7.2 0.54 ... 55.8 B; Snowfall (cm) ... 146.4 C; Average Date of Last Spring Frost May 03; Average Date of First Fall Frost Oct 13; Average Length of Frost-Free Period 161 Days C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1981-2010 - Toronto Buttonville A (615HMAK)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=615HMAK&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "Daily Average (°C) -5.8 -5.6 -0.4 ... C; < -10 °C ... 45.0 C; Average Length of Frost-Free Period 157 Days C; Snowfall (cm) ... 142.6 C"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 - Toronto Pearson (Airport)",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1",
+        "retrieved_at": "2026-11-03",
+        "quote": "Daily Average (°C) -5.0 ... B; < -10 °C ... 34.2 C; <= 0 °C (maximum) ... 49.5 C; Average Length of Frost-Free Period 174 Days C; Snowfall (cm) ... 114.5 B"
+      },
+      {
+        "name": "ECCC Canadian Climate Normals 1991-2020 station list, 'toronto' search (Buttonville and Pearson; no Vaughan, Woodbridge, Maple or Richmond Hill station in the 1981-2010 or 1991-2020 searches)",
+        "url": "https://climate.weather.gc.ca/climate_normals/station_select_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains",
+        "retrieved_at": "2026-11-03",
+        "quote": "6158409 TORONTO BUTTONVILLE (AIRPORT); 6158731 TORONTO PEARSON (AIRPORT); 6158350 TORONTO (CITY); 6158359 TORONTO (ISLAND)"
+      }
+    ]
+  },
+  "code": {
+    "obc_min_foundation_depth_m": 1.2,
+    "clause": "Division B, Sentence 9.12.2.2.(1) and Table 9.12.2.2., Minimum Depths of Foundations, 2024 Building Code Compendium (O. Reg. 163/24, in effect January 1, 2025)",
+    "note": "Retrieved from the Ministry of Municipal Affairs and Housing's free digital 2024 Building Code Compendium PDF (Publications Ontario). Table 9.12.2.2 sets, for 'Clay or soils not clearly defined', 1.2 m for a foundation containing a heated basement or crawl space (good or poor drainage) and '1.2 m but not less than the depth of frost penetration' for a foundation containing no heated space; for rock and, with good drainage, coarse grained soils and silt it sets no limit, and with poor drainage and no heated space 'Below the depth of frost penetration'. Sentence 9.12.2.2.(2): a foundation insulated to reduce heat flow to the soil beneath the footings is treated as containing no heated space. Article 9.12.2.1: 'Excavations for foundations shall extend to undisturbed soil.' The City of Vaughan prints no footing depth of its own, so this table is the depth a Vaughan deck or basement is checked against. Also retrieved for the ICF site: 9.15.4.1.(1) 'Flat wall insulating concrete form units shall conform to CAN/ULC-S717.1'; 9.13.2.1.(1) exterior surfaces of foundation walls below ground level shall be dampproofed (9.13.2.1.(4): not required where waterproofed); 9.14.2.1.(1) drainage at the bottom of every foundation wall that contains the building interior, and 9.14.2.1.(1.1) a drainage layer where insulation on a foundation wall extends more than 900 mm below exterior ground level.",
+    "sources": [
+      {
+        "name": "Ontario Ministry of Municipal Affairs and Housing - 2024 Building Code Compendium, Edition 1 (O. Reg. 163/24), digital PDF via Publications Ontario; Table 9.12.2.2",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "Table 9.12.2.2. Minimum Depths of Foundations ... Clay or soils not clearly defined(4): 1.2 m(3) | 1.2 m | 1.2 m but not less than the depth of frost penetration(3) | 1.2 m but not less than the depth of frost penetration"
+      },
+      {
+        "name": "2024 Building Code Compendium - Article 9.12.2.1 and Sentence 9.12.2.2.(2)",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "9.12.2.1. Excavation to Undisturbed Soil (1) Excavations for foundations shall extend to undisturbed soil. ... (2) Where a foundation is insulated in a manner that will reduce the heat flow to the soil beneath the footings, the foundation depth shall conform to that required for foundations containing no heated space."
+      },
+      {
+        "name": "2024 Building Code Compendium - Article 9.15.4.1 (ICF units), 9.13.2.1 (dampproofing), 9.14.2.1 (foundation wall drainage)",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "9.15.4.1. Flat Wall Insulating Concrete Form Units (1) Flat wall insulating concrete form units shall conform to CAN/ULC-S717.1 ... 9.14.2.1.(1.1) where the insulation on a foundation wall extends to more than 900 mm below the adjacent exterior ground level (a) a drainage layer shall be installed"
+      },
+      {
+        "name": "Concrete Ontario (RMCAO) - Cold Weather Concreting, reproducing CSA A23.1 requirements (used by the ICF site)",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf",
+        "retrieved_at": "2026-11-03",
+        "quote": "As per CSA A23.1, cold weather is when there is ... 5 °C within 24 h of placing ... temperature at a minimum of 10 °C ... of 7 MPa to withstand early frost damage"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-03"
+}

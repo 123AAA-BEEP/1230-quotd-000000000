@@ -1,0 +1,224 @@
+{
+  "slug": "richmond-hill",
+  "title": "ICF contractors in Richmond Hill: foundations | GTA ICF",
+  "description": "ICF foundations in Richmond Hill: lake clay in the south, moraine sand and a high water table in Oak Ridges, the City's $27.37 per m² fee, winter pours and costs.",
+  "h1": "ICF foundations and walls in Richmond Hill",
+  "kicker": "York Region",
+  "answer": [
+    "A basement dug in Richmond Hill meets one of three grounds, and which one depends on how far up Yonge Street the lot is. South of 16th Avenue, at Richvale, Bayview Hill and Doncrest, the Ontario Geological Survey maps laminated silt and clay from a glacial lake. Through the old village, Mill Pond, Elgin Mills and Headford it maps a stone-poor sandy silt till. On the Oak Ridges Moraine, at Oak Ridges and Lake Wilcox, it maps sand and gravel from glacial rivers over a water table Wikipedia describes as very high. Bedrock, Blue Mountain shale under most of the city, was not near the surface at any of the sixteen points queried.",
+    "The permit for a new house or an addition is issued by the Building Division of the City's Planning and Building Services and applied for online. The City prices a detached house, semi, townhouse or addition at $27.37 per square metre with a $210.12 minimum, takes a $7,000 grading deposit and a $3,000 road damage deposit before issuance, and lists a soils report by a professional engineer, dependent on the site, among the submissions. Its deck checklist prints the depth every footing here is measured against: 1200 mm below grade and to undisturbed soil."
+  ],
+  "tiles": [
+    {
+      "value": "$27.37 / m²",
+      "label": "City of Richmond Hill building permit fee for a detached house, semi, townhouse, duplex or addition; $210.12 minimum",
+      "source": {
+        "name": "City of Richmond Hill, R1 Single Family Dwelling Permit Application Checklist",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R1-Residential-New-House-Checklist.pdf"
+      }
+    },
+    {
+      "value": "3 formations",
+      "label": "of bedrock under the city on the Ontario Geological Survey map: Blue Mountain shale, Georgian Bay shale and Lindsay limestone, none at the surface",
+      "source": {
+        "name": "Ontario Geological Survey MRD 219, bedrock point query at the city centre",
+        "url": "https://services2.arcgis.com/zVN3OC2fz0Sgv7ip/arcgis/rest/services/MRD219_Paleozoic_Geology_of_Southern_Ontario/FeatureServer/4/query?geometry=-79.43944,43.87472&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
+      }
+    },
+    {
+      "value": "157 days",
+      "label": "frost-free period at the Richmond Hill climate station, May 5 to October 10, 1981 to 2010; 174 at Toronto Pearson",
+      "source": {
+        "name": "Environment Canada normals 1981 to 2010, Richmond Hill",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1"
+      }
+    },
+    {
+      "value": "1200 mm",
+      "label": "minimum footing depth below grade, to undisturbed soil, printed on the City of Richmond Hill's residential deck checklist",
+      "source": {
+        "name": "City of Richmond Hill, R6 Deck Permit Application Process",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What the excavator finds in Richmond Hill",
+    "paragraphs": [
+      "In the south of the city the dig is in lake sediment. Doncrest, Richvale, Bayview Hill and the Yonge and Highway 7 corner all return the same polygon of fine-textured glaciolacustrine silt and clay, massive to well laminated, with a pocket of clay-to-silt till at Langstaff. Laminated silt and clay stands up in a cut for the days the hole is open but gives water nowhere to go; what collects at the footing level stays until it is pumped, and the footing bears on material the engineer wants undisturbed and dry. Where water can stand against the wall the Code asks for waterproofing in place of dampproofing, and the drainage layer against the foam form earns its keep.",
+      "From about 16th Avenue north the map turns to stone-poor sandy silt till. The old village along Yonge, Mill Pond, Elgin Mills, Headford by Highway 404 and Gormley in the north-east return it, with clay-silt till south of Crosby Avenue and at Jefferson. Sandy till drains better than the lake clay and holds a vertical face less surely, so on an infill lot in the village, where the neighbour's foundation can be a few metres off, the cut is laid back or shored; the City's Residential Project Guidelines ask for shoring as required to protect adjacent properties, and its new-house checklist carries a Precautions During Excavations declaration for infill housing.",
+      "North of Gamble Road the city is on the Oak Ridges Moraine. Oak Ridges and Lake Wilcox return glaciofluvial sand and gravel, river and delta deposits, and Bond Lake returns interbedded silt, clay and gritty flow till. Wikipedia describes the moraine as porous soil feeding aquifers, with a very high water table despite Oak Ridges sitting mostly above 300 metres. Sand and gravel drains freely, which the weeping tile likes, and runs when cut, which the excavation faces do not, and a walkout basement into a moraine slope can find the water table before it finds the footing elevation. The City's checklists list a soils report by a professional engineer, dependent on the location of the site; a moraine lot is where we expect the reviewer to ask for one. Bedrock is Lindsay limestone here and Blue Mountain or Georgian Bay shale elsewhere, and no query returned it near grade, so every Richmond Hill dig is planned as a soil excavation."
+    ],
+    "table_note": "One Ontario Geological Survey point query per area, run 3 November 2026; Oak Ridges, Lake Wilcox and Gormley use Wikipedia's coordinates, the rest are map estimates inside the published boundaries. A map unit is not a lot condition: the footing is designed from what the excavation exposes and, where the Building Division asks for it, a soils report by a professional engineer.",
+    "neighbourhoods": [
+      {
+        "name": "Old village (Yonge and Major Mackenzie)",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Mill Pond",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Yonge Street south of Crosby Avenue",
+        "surface": "Clay to silt-textured till",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Elgin Mills",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Headford",
+        "surface": "Stone-poor sandy silt to silty sand till",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Gormley",
+        "surface": "Stone-poor sandy silt till; clay-silt till to the north",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Jefferson",
+        "surface": "Clay to silt-textured till",
+        "bedrock": "Lindsay, nodular limestone"
+      },
+      {
+        "name": "Oak Ridges",
+        "surface": "Glaciofluvial river and delta sand and gravel (moraine)",
+        "bedrock": "Lindsay, nodular limestone"
+      },
+      {
+        "name": "Lake Wilcox",
+        "surface": "Glaciofluvial river and delta sand and gravel (moraine)",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Bond Lake",
+        "surface": "Interbedded silt and clay with gritty flow till",
+        "bedrock": "Lindsay, nodular limestone"
+      },
+      {
+        "name": "Bayview Hill",
+        "surface": "Laminated glaciolacustrine silt and clay",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Richvale",
+        "surface": "Laminated glaciolacustrine silt and clay",
+        "bedrock": "Blue Mountain, dark shale with limestone interbeds"
+      },
+      {
+        "name": "Doncrest",
+        "surface": "Laminated glaciolacustrine silt and clay",
+        "bedrock": "Georgian Bay, grey-green shale and limestone"
+      },
+      {
+        "name": "Langstaff (Yonge and Highway 7)",
+        "surface": "Clay to silt-textured till; laminated silt and clay at Yonge and 7",
+        "bedrock": "Georgian Bay, grey-green shale and limestone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits and inspections in Richmond Hill",
+    "authority_short": "the City of Richmond Hill",
+    "paragraphs": [
+      "A foundation here is permitted as part of the house or addition above it, by the Building Division of Planning and Building Services at 225 East Beaver Creek Road, and the whole application runs online through the City's permit portal: a pre-screening submission first, then, once the Division emails its list of outstanding items and the fee, a formal application and full payment within two weeks. The fee for a detached, semi-detached, townhouse or duplex unit, and for an addition, is $27.37 per square metre; a finished basement is $6.56 per square metre and the residential minimum is $210.12. Plumbing is charged on top, $196.61 for the sanitary and storm drains and $47.97 for the water service with a $158.40 minimum. Before the permit issues the City holds a $7,000 grading deposit and a $3,000 road damage deposit, by cheque or letter of credit, for a new house and for any addition over 400 square feet of footprint, which also needs a Site Alteration Permit from Development Engineering first. All of it is charged under fee By-law 19-24.",
+      "Richmond Hill publishes no ICF checklist, but its new-house checklist says where the wall is drawn: detailed foundation, wall and roof sections, floor area calculations, the Energy Efficiency Design Summary with one of the SB-12 compliance options, and an engineered foundation wall detail wherever the wall is taller than Article 9.15.4.2 of the Building Code allows without one. The Code itself asks flat-wall ICF units to conform to CAN/ULC-S717.1 in Article 9.15.4.1, and some systems also carry a CCMC evaluation report; the system is named on the quote and its documentation goes in the permit package. Schedule 1 designer information with a BCIN or an engineer's stamp, the applicable law form L1, a survey, a tree declaration and, for infill, the Precautions During Excavations declaration round out the set. A lot in the TRCA regulated area, Overlay E of Zoning By-law 93-25, needs the authority's clearance before issuance, and on the moraine we also check the Lake Simcoe Region Conservation Authority's map viewer, since land draining north off the moraine can fall in its area under O. Reg. 41/24. We prepare the package with you.",
+      "Inspections are booked by the permit holder through the City's Building Inspection Request form; a request after 3 p.m. counts as the next business day and the Service Charter promises a reply within two business days. The City's list of housing inspection stages could not be reached when this page was written, so we book the stages the Code's sequence demands and confirm the City's names for them at issuance: the footing visit with the excavation to undisturbed soil and the forms in place before any concrete is ordered, a check of the reinforcing in the form cavity before the wall pour because the steel disappears inside the concrete, and the backfill visit with the dampproofing on, the weeping tile at the footing under its stone and the drainage layer against the foam, all of which Articles 9.13.2.1 and 9.14.2.1 of the Code require before the trench closes. For a new house the City also wants a foundation survey bearing the surveyor's seal for the completion-stage permit. We are on site for every one of those visits."
+    ],
+    "facts": [
+      {
+        "label": "Apply",
+        "value": "Building Division, Planning and Building Services, 225 East Beaver Creek Road, 3rd Floor; online pre-screening then formal application through Building Permit - Apply and Pay Online",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Permits.aspx"
+      },
+      {
+        "label": "Fees",
+        "value": "Detached, semi-detached, townhouse, duplex and additions $27.37 per m²; finished basement $6.56 per m²; alteration $10.40 per m²; residential minimum $210.12; drains $196.61, water service $47.97, plumbing minimum $158.40; fee By-law 19-24",
+        "url": "https://www.richmondhill.ca/en/online-services/Residential-Permits.aspx"
+      },
+      {
+        "label": "Deposits and pre-approvals",
+        "value": "$7,000 grading deposit and $3,000 road damage deposit before issuance; Site Alteration Permit for new houses and additions over 400 ft² of footprint; TRCA clearance inside its regulated area",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R1-Residential-New-House-Checklist.pdf"
+      },
+      {
+        "label": "On the drawings",
+        "value": "Detailed foundation, wall and roof sections; engineered foundation wall detail where the wall exceeds the height Article 9.15.4.2 permits; soils report by a professional engineer dependent on the site; Precautions During Excavations declaration for infill",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R1-Residential-New-House-Checklist.pdf"
+      },
+      {
+        "label": "Inspections",
+        "value": "Booked through the Building Inspection Request form with an issued permit; requests after 3 p.m. count as next business day; reply within 2 business days; foundation survey with the surveyor's seal for the completion stage",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Inspections.aspx"
+      },
+      {
+        "label": "ICF units in the Code",
+        "value": "Flat wall insulating concrete form units shall conform to CAN/ULC-S717.1, Article 9.15.4.1; dampproofing 9.13.2.1 and foundation wall drainage 9.14.2.1, with a drainage layer where the insulation extends more than 900 mm below grade",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Pour season and frost in Richmond Hill",
+    "paragraphs": [
+      "The Richmond Hill climate station stands at 240 metres, 0.7 km from the old village, and its record is the coldest on this site. Over 1981 to 2010 January averaged −6.2 °C with a daily minimum of −10.2 °C; 40.9 days a year went below −10 °C, 58 days never rose above freezing, and 144.4 mornings were at or below 0 °C, so about 86 days a year swung across the freezing point. Snowfall was 150.6 cm against Pearson's 114.5. The last spring frost averages May 5 and the first fall frost October 10, a frost-free period of 157 days where the airport has 174, so a pour in a Richmond Hill April or October is cold-weather work under CSA A23.1, which starts when the forecast dips under 5 °C within 24 hours of placing.",
+      "We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. In practice the mix is placed at 10 °C or more for a wall under 300 mm thick and no hotter than 32 °C, the wall is held at 10 °C through curing and reaches 7 MPa before it is left to freeze, and the form cavity is cleared of snow and ice before the pump starts. The foam form insulates the wall along its length; the top of the wall and the footing get their own covers. The footing depth does not move with the season: 1200 mm on the City's checklist, 1.2 m for clay or undefined soils under a heated basement in Table 9.12.2.2, and never above the frost penetration where the space is unheated."
+    ],
+    "facts": [
+      {
+        "label": "Winter at the Richmond Hill station",
+        "value": "January mean −6.2 °C, daily minimum −10.2 °C; 40.9 days below −10 °C; 58.0 days never above 0 °C; 144.4 days at or below 0 °C overnight; 150.6 cm of snow, 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "157 days, May 5 to October 10, Richmond Hill, 1981 to 2010; Toronto Pearson 174 days, April 27 to October 20, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnName&txtStationName=toronto&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6158731&dispBack=1"
+      },
+      {
+        "label": "Cold-weather rule",
+        "value": "CSA A23.1 as reproduced by Concrete Ontario: a forecast below 5 °C within 24 hours of placing; sections under 0.3 m placed at 10 to 32 °C; 7 MPa before early frost",
+        "url": "https://www.rmcao.org/wp-content/uploads/2024/12/Cold-Weather-Concreting-Final.pdf"
+      },
+      {
+        "label": "Footing depth",
+        "value": "1200 mm below grade to undisturbed soil on the City's R6 checklist; Building Code Table 9.12.2.2, 2024 Compendium: 1.2 m for clay or soils not clearly defined, no limit on rock or well-drained coarse soils under a heated basement",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Rock is not a line on a Richmond Hill quote; no survey point put it near the surface. Water is: the lake clay south of 16th Avenue holds it at the footing, and the moraine's high water table can meet a walkout basement in Oak Ridges or Lake Wilcox, so dewatering, waterproofing where hydrostatic pressure is expected and the drainage layer are priced from the site. Shoring beside a neighbour on a village infill lot, a soils report where the Division asks for one, and the pump's reach down a long moraine driveway are the other lines.",
+  "faqs": [
+    {
+      "q": "What does a full-depth excavation hit in Richmond Hill?",
+      "a": "It depends on the latitude. South of 16th Avenue, at Richvale, Bayview Hill and Doncrest, the Ontario Geological Survey maps laminated silt and clay from a glacial lake. Through the old village, Mill Pond, Elgin Mills and Headford it maps a stone-poor sandy silt till, with clay till at Langstaff, south of Crosby Avenue and at Jefferson. On the moraine at Oak Ridges and Lake Wilcox it maps glacial river sand and gravel. None of the sixteen points returned rock near the surface. The first metre of the dig confirms the map."
+    },
+    {
+      "q": "Is a basement on the Oak Ridges Moraine a wet basement?",
+      "a": "It can be a basement below the water table, which is a different problem from clay. Wikipedia describes the moraine's porous soil as feeding aquifers and giving Richmond Hill a very high water table. The sand and gravel drains to the weeping tile readily, but where water stands against the wall the Code asks for waterproofing rather than dampproofing, and the City's checklists list a soils report by a professional engineer dependent on the site. We expect that report to be asked for on a moraine lot, and we price the drainage and waterproofing from it."
+    },
+    {
+      "q": "What goes in a Richmond Hill permit application for an ICF foundation?",
+      "a": "The ordinary house or addition package, filed online: detailed foundation, wall and roof sections, floor area calculations, the Energy Efficiency Design Summary with an SB-12 option, Schedule 1 designer information, the applicable law form, a survey, and an engineered foundation wall detail where the wall is taller than Article 9.15.4.2 allows. The Code asks the ICF units to conform to CAN/ULC-S717.1; the system is named on the quote and its documentation goes in the package. There is no ICF-specific checklist. We prepare the package with you."
+    },
+    {
+      "q": "Can you pour an ICF foundation in a Richmond Hill winter?",
+      "a": "Yes. We pour year-round; in cold weather the concrete arrives warm, the wall is covered and the cure is allowed for, which adds time and can add cost. The Richmond Hill station records 58 days a year that never rise above freezing and 150.6 cm of snow, more than Pearson, so from October 10 to May 5 we plan every pour as cold-weather work: concrete placed at 10 °C or more, held at 10 °C through the cure, 7 MPa before frost, and the footing and the top of the wall covered."
+    },
+    {
+      "q": "How deep does the footing go in Richmond Hill?",
+      "a": "The City's own deck checklist prints 1200 mm below grade and to undisturbed soil, and the Building Code's Table 9.12.2.2 sets the same 1.2 m for a heated basement on clay or on soils not clearly defined, which covers the lake clay in the south and the tills through the centre. On the moraine's sand and gravel the table sets no limit under a heated basement, but the footing still goes where the engineer draws it and where the excavation reaches undisturbed, dry material."
+    },
+    {
+      "q": "We are adding to an older house in the village. What changes on an infill lot?",
+      "a": "Room and the neighbour. The village along Yonge and around Mill Pond is on sandy silt till that holds a face less surely than clay, and the lots are close, so the cut beside the neighbour's foundation is shored; the City's Residential Project Guidelines ask for exactly that, and its new-house checklist carries a Precautions During Excavations declaration for infill. An addition over 400 square feet of footprint needs a Site Alteration Permit and the grading and road deposits first. The engineer details how the new ICF wall ties to the existing foundation."
+    }
+  ],
+  "related_note": "We also build in Vaughan, Markham and Toronto."
+}

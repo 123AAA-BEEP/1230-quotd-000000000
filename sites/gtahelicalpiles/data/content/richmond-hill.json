@@ -1,0 +1,228 @@
+{
+  "slug": "richmond-hill",
+  "title": "Helical piles in Richmond Hill, York Region | GTA Helical Piles",
+  "description": "Helical piles in Richmond Hill: the City's three deck permit triggers, its 1200 mm footing line, moraine sand in the north, clay in the south, and winter work.",
+  "h1": "Helical pile installation in Richmond Hill",
+  "kicker": "York Region",
+  "answer": [
+    "Richmond Hill's deck checklist gives three ways a deck comes to need a building permit: it is attached to the house, it stands more than 600 mm above average grade, or it covers more than 10 square metres. Any one of the three is enough. The same checklist, the City's form R6, wants the drawings to show the foundation size and spacing with a minimum depth of 1200 mm below grade to undisturbed soil, and the permit is a flat $218.46. Nothing on it refers to helical piles, so a pile deck is filed with the engineer's foundation design standing in for the footing line.",
+    "The ground sorts itself south to north along Yonge Street. Richvale, Bayview Hill and Doncrest sit on silt and clay left by a glacial lake. Through the old village, Mill Pond, Elgin Mills and Headford the Ontario Geological Survey maps a sandy silt till. North of Gamble Road the city climbs onto the Oak Ridges Moraine, where Oak Ridges and Lake Wilcox stand on sand and gravel laid down by glacial rivers, over a water table Wikipedia calls very high. Three bedrock formations lie under all of it, and none came up near the surface at any of the sixteen points we queried."
+  ],
+  "tiles": [
+    {
+      "value": "$218.46",
+      "label": "flat fee for a deck permit on the City of Richmond Hill's R6 deck checklist",
+      "source": {
+        "name": "City of Richmond Hill, R6 Deck Permit Application Process",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf"
+      }
+    },
+    {
+      "value": "600 mm",
+      "label": "height above average grade at which a Richmond Hill deck needs a permit; attached decks and decks over 10 m² need one at any height",
+      "source": {
+        "name": "City of Richmond Hill, R6 Deck Permit Application Process",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf"
+      }
+    },
+    {
+      "value": "40.9 days",
+      "label": "a year below −10 °C at the Richmond Hill climate station, 0.7 km from the old village, 1981 to 2010",
+      "source": {
+        "name": "Environment Canada normals, Richmond Hill",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1"
+      }
+    },
+    {
+      "value": "56.7%",
+      "label": "of Richmond Hill's 69,315 occupied dwellings are single-detached houses, 2021 Census as published in the City's ward profiles",
+      "source": {
+        "name": "City of Richmond Hill, Ward 1 Profile 2021 (city-wide column)",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/WARD-1--Profile-2021-AODA.pdf"
+      }
+    }
+  ],
+  "ground": {
+    "heading": "What is under Richmond Hill",
+    "paragraphs": [
+      "Start at the south end. At Doncrest above German Mills Creek, at Richvale on both sides of Carrville Road, at Bayview Hill and at Yonge and Highway 7, the survey's surficial map returns fine-textured glaciolacustrine silt and clay, massive to well laminated, all inside one polygon. Langstaff, between those points, is a pocket of clay-to-silt till. Move north past 16th Avenue and the map changes to a stone-poor sandy silt till: the old village along Yonge, Mill Pond, Elgin Mills, Headford out by Highway 404 and Gormley in the north-east corner all return the same unit. A second clay-silt till shows up south of Crosby Avenue and again at Jefferson.",
+      "Then the moraine. Oak Ridges and Lake Wilcox return glaciofluvial deposits, river and delta sand and gravel dropped by meltwater, and Bond Lake returns interbedded silt and clay with gritty flow till. Wikipedia puts the Oak Ridges Moraine over roughly the northern third of the city, describes it as porous soil feeding aquifers, and says the result is a very high water table despite the height of the land; Oak Ridges itself sits mostly above 300 metres. Lake Wilcox, the largest kettle lake on the moraine, is 17.4 metres deep and drains to the East Humber.",
+      "Bedrock comes in three formations here rather than one. Under the centre and east, from Richvale and Bayview Hill up through the village to Gormley and Lake Wilcox, it is the Blue Mountain Formation: dark blue-grey to black shale with thin limestone interbeds. Under Doncrest, Langstaff and Yonge and Highway 7 it is Georgian Bay shale, the formation that continues south under Toronto. Under Oak Ridges, Bond Lake and Jefferson it is Lindsay Formation limestone. The survey does not give the depth to any of them, and no point returned rock at or near the surface, so a pile in Richmond Hill is designed for soil, with torque recorded on every pile and the helix sized for the coarse ground on the moraine."
+    ],
+    "table_note": "Surface and bedrock from Ontario Geological Survey point queries (MRD 128-REV and MRD 219) at one coordinate per sub-area, retrieved 3 November 2026; the Oak Ridges, Lake Wilcox and Gormley points are Wikipedia's coordinates and the rest are map estimates inside the published boundaries. A point describes its map polygon, not your lot, and the engineer lays out the piles from the site.",
+    "neighbourhoods": [
+      {
+        "name": "Old village (Yonge and Major Mackenzie)",
+        "surface": "Sandy silt till, stone-poor",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Mill Pond",
+        "surface": "Sandy silt till, stone-poor",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Yonge Street south of Crosby Avenue",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Elgin Mills",
+        "surface": "Sandy silt till, stone-poor",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Headford (Leslie St and Highway 404)",
+        "surface": "Sandy silt till, stone-poor",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Gormley",
+        "surface": "Sandy silt till; clay-to-silt till 2 km north",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Jefferson",
+        "surface": "Clay-to-silt till",
+        "bedrock": "Lindsay Formation, limestone"
+      },
+      {
+        "name": "Oak Ridges",
+        "surface": "Glaciofluvial sand and gravel (moraine)",
+        "bedrock": "Lindsay Formation, limestone"
+      },
+      {
+        "name": "Lake Wilcox",
+        "surface": "Glaciofluvial sand and gravel (moraine)",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Bond Lake",
+        "surface": "Interbedded silt, clay and flow till",
+        "bedrock": "Lindsay Formation, limestone"
+      },
+      {
+        "name": "Bayview Hill",
+        "surface": "Glaciolacustrine silt and clay, laminated",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Richvale",
+        "surface": "Glaciolacustrine silt and clay, laminated",
+        "bedrock": "Blue Mountain, dark shale"
+      },
+      {
+        "name": "Doncrest",
+        "surface": "Glaciolacustrine silt and clay, laminated",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      },
+      {
+        "name": "Langstaff (Yonge and Highway 7)",
+        "surface": "Clay-to-silt till; silt and clay at Yonge and 7",
+        "bedrock": "Georgian Bay, grey shale with limestone"
+      }
+    ]
+  },
+  "permits": {
+    "heading": "Permits in Richmond Hill",
+    "authority_short": "the City of Richmond Hill",
+    "paragraphs": [
+      "The permit comes from the Building Division of the City's Planning and Building Services, at 225 East Beaver Creek Road, and every residential application, decks included, is made and paid online. The City's process has two steps: a pre-screening submission earns a reference number and a completeness check, then an email from the Division lists what is outstanding and the fee, and the formal application with full payment has to follow within two weeks or the number lapses. Everything goes up as flattened, unprotected, black-and-white PDFs with electronic signatures; a scan of a paper drawing is refused. The deck fee is a flat $218.46, charged under fee By-law 19-24.",
+      "What the R6 checklist asks for is a site plan or survey with the deck and its setbacks, a plan view showing where it meets the house, a section with heights and connections, and drawing notes covering materials, height above average grade, joists, beams, columns, guards, stairs and the foundation line: size and spacing, minimum depth 1200 mm below grade and to undisturbed soil. It also carries a warning that the Building Code does not let a deck hang off brick veneer; the load has to reach the foundation wall. Helical piles are not named anywhere on it, and the City's addition checklist already lists a soils report by a professional engineer, dependent on the site, and underpinning details among its submissions, so an engineer's pile layout is a familiar document to the reviewer. Installation torque is logged pile by pile, and the engineer's sealed certificate of conformity, written from that log, goes to the City for the file.",
+      "Three outside checks come first. The deck must meet the setbacks in Zoning By-law 93-25, and the City will not give zoning answers by phone, only through its compliance letter service. A lot inside the Toronto and Region Conservation Authority's regulated area, which the by-law maps as Overlay E, needs TRCA clearance before the City issues anything; the checklist lists it as a pre-approval. North of the moraine crest some land drains toward Lake Simcoe, and the Lake Simcoe Region Conservation Authority regulates development in its own area under O. Reg. 41/24, so for a lot in Oak Ridges, Lake Wilcox or Gormley we check both authorities' map viewers before drawings are ordered."
+    ],
+    "facts": [
+      {
+        "label": "Permit needed when",
+        "value": "Deck attached to a building, or more than 600 mm above average grade, or larger than 10 m² (108 ft²); any one applies",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf"
+      },
+      {
+        "label": "Foundation on the City's checklist",
+        "value": "Size and spacing, minimum depth 1200 mm (4 ft) below grade and to undisturbed soil; no helical pile wording; no attachment to brick veneer",
+        "url": "https://www.richmondhill.ca/en/shared-content/resources/documents/Building-Division/R6-Residential-Deck-Checklist.pdf"
+      },
+      {
+        "label": "Deck permit fee",
+        "value": "$218.46 flat, under fee By-law 19-24; residential minimum for other work $210.12",
+        "url": "https://www.richmondhill.ca/en/online-services/Residential-Permits.aspx"
+      },
+      {
+        "label": "Review process",
+        "value": "Online pre-screening, then formal application and full payment within two weeks of the Division's email; no day-count published",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Permits.aspx"
+      },
+      {
+        "label": "Inspections",
+        "value": "Booked by the permit holder through the Building Inspection Request form; requests after 3 p.m. count as next business day; reply within 2 business days under the Service Charter",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Inspections.aspx"
+      },
+      {
+        "label": "Apply",
+        "value": "Building Division, Planning and Building Services, 225 East Beaver Creek Road, 3rd Floor; Building Permit - Apply and Pay Online (permits.richmondhill.ca)",
+        "url": "https://www.richmondhill.ca/en/online-services/Building-Permit-FAQs.aspx"
+      }
+    ]
+  },
+  "season": {
+    "heading": "Season and frost in Richmond Hill",
+    "paragraphs": [
+      "Richmond Hill has a climate station of its own, 240 metres up and 0.7 km from the old village, and its 1981 to 2010 record is the coldest we quote on this site. January averages −6.2 °C with a daily minimum of −10.2 °C. On 40.9 days a year the low drops under −10 °C, on 58 days the high never reaches 0 °C, and the overnight low is at or below freezing on 144.4 days, which leaves about 86 days when the surface freezes at night and thaws by afternoon. Snowfall averages 150.6 cm, a third more than Pearson's 114.5 cm. The average last spring frost is May 5 and the first fall frost October 10, a frost-free period of 157 days against 174 at the airport, so the moraine's height shows in the numbers.",
+      "Frost sets the depth the helix has to pass, not the season we can work in. The City's checklist puts a deck footing 1200 mm down, and the Building Code's Table 9.12.2.2 puts a foundation on clay or undefined soil at 1.2 m and never shallower than the frost penetrates, so a pile in Richmond Hill is driven below that line to the torque the engineer specified. We work through the winter: once the top of the ground has frozen we pre-drill the crust before the pile goes in, which adds time to the day and can show up in the price. There is no cure to wait for, so the deck framing or the underpinning transfer can follow the drive unit off the site."
+    ],
+    "facts": [
+      {
+        "label": "January mean",
+        "value": "−6.2 °C, daily minimum −10.2 °C, Richmond Hill station (6157012), 1981 to 2010",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1"
+      },
+      {
+        "label": "Cold days",
+        "value": "40.9 days below −10 °C; 58.0 days never above 0 °C; 144.4 days at or below 0 °C overnight; 150.6 cm of snow",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1"
+      },
+      {
+        "label": "Frost-free period",
+        "value": "157 days, May 5 to October 10, Richmond Hill station; 174 days at Toronto Pearson, 1991 to 2020",
+        "url": "https://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?searchType=stnName&txtStationName=richmond&searchMethod=contains&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&climate_id=6157012&dispBack=1"
+      },
+      {
+        "label": "Footing depth",
+        "value": "1200 mm below grade to undisturbed soil on the City's R6 checklist; 1.2 m for clay or undefined soils in Building Code Table 9.12.2.2, 2024 Compendium",
+        "url": "https://www.publications.gov.on.ca/store/20170501121/Free_Download_Files/301880.pdf"
+      }
+    ]
+  },
+  "pricing_note": "Richmond Hill is a short run up Yonge or the 404 from Toronto, so travel seldom moves the price. The ground does: the silt and clay from Richvale to Bayview Hill and the sandy till through the centre install predictably, while a moraine lot in Oak Ridges or Lake Wilcox can mean a larger helix for sand and gravel and a longer pile to find bearing above a high water table. Estate frontages in the north give the drive unit room; a tight side yard on an older village lot does not. Every one of those shows as its own line on the written quote.",
+  "faqs": [
+    {
+      "q": "When does a deck in Richmond Hill need a permit?",
+      "a": "When any one of three things is true: it is attached to the house, it sits more than 600 mm above average grade, or it is bigger than 10 square metres. A low, detached deck under 10 square metres is the only one that escapes, and it still has to respect the zoning setbacks. The fee is a flat $218.46 and the application is made online through the City's permit portal."
+    },
+    {
+      "q": "Does the City of Richmond Hill accept helical piles under a deck?",
+      "a": "Its R6 checklist does not mention them either way. It asks for the foundation size and spacing at a minimum 1200 mm below grade on undisturbed soil, and it accepts drawings with a professional engineer's stamp under Schedule 1. We file the engineer's pile layout as the foundation design, with the manufacturer's evaluation report, and after the install the engineer's sealed certificate of conformity from the torque log goes to the file. We confirm the submission with the Building Division before the drawings are ordered."
+    },
+    {
+      "q": "What is the soil like under Richmond Hill?",
+      "a": "Three bands. South of about 16th Avenue, at Richvale, Bayview Hill and Doncrest, the Ontario Geological Survey maps laminated silt and clay. Through the old village, Mill Pond, Elgin Mills and Headford it maps a sandy silt till, with pockets of clay till south of Crosby Avenue, at Langstaff and at Jefferson. On the Oak Ridges Moraine, at Oak Ridges and Lake Wilcox, it maps glacial river sand and gravel. Bedrock is Blue Mountain shale under most of the city, Georgian Bay shale under the south and Lindsay limestone under the moraine, and no point we queried had rock near the surface."
+    },
+    {
+      "q": "Can you install helical piles in Richmond Hill in winter?",
+      "a": "Yes. The Richmond Hill station records 58 days a year when the temperature never rises above freezing and 40.9 days below −10 °C, more than Pearson on both counts, so we plan for frozen ground from December to March. We pre-drill the frost crust and then drive the pile to the torque the engineer specified; it adds time to the day. The pile carries load as soon as it is in, so the build can start without waiting on concrete."
+    },
+    {
+      "q": "How much does a deck permit cost in Richmond Hill, and how long does review take?",
+      "a": "The deck fee is $218.46 flat, paid by credit card online. The City publishes no review day-count; it pre-screens the submission, emails a list of outstanding items and the fee, and expects the formal application and payment within two weeks of that email. Engineering for the pile layout is separate from the City's fee and is its own line on our quote."
+    },
+    {
+      "q": "We are in Oak Ridges or at Lake Wilcox. What is different on the moraine?",
+      "a": "The ground and the water. Both survey points return glaciofluvial sand and gravel rather than the till and clay under the rest of the city, and Wikipedia describes the moraine's water table as very high. The engineer sizes the helix for coarse ground and sets the depth from the site, not from a job in Richvale. Lake Wilcox's north shore is a Special Policy Area on the TRCA's floodplain mapping, and land draining north off the moraine may fall in the Lake Simcoe Region Conservation Authority's regulated area, so we check both map viewers before the drawings are ordered."
+    },
+    {
+      "q": "Can helical piles underpin an older house in the village?",
+      "a": "Often, yes. The City's addition and alteration checklist lists underpinning details and, where the site calls for it, a soils report by a professional engineer, so the submission route exists. In the sandy silt till through the old village and Mill Pond the engineer sets the pile depth and bracket spacing from the site, and the piles are driven to the specified torque beside the existing footing with no excavation along the wall."
+    }
+  ],
+  "related_note": "We also work in Vaughan and Markham on either side of Yonge Street, and in Toronto to the south; call for those until their pages are up."
+}
