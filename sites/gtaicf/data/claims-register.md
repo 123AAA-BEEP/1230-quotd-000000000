@@ -1,4 +1,4 @@
-# gtaicf.ca — Claims Register
+# gtaicf.com — Claims Register
 
 Status key: VERIFIED = retrievable source supports the claim as worded below. REWORDED = the draft wording is inaccurate or unsupported; the "publishable wording" column is what may go live. NEEDS-OWNER-DOCUMENT = true only if the owner supplies the named document (supplier invoice naming the ICF system, engineer's letter, warranty, test report). CUT = do not publish in any form.
 

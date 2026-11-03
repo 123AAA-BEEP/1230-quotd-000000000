@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /thanks/
 
-Sitemap: https://gtaicf.ca/sitemap.xml
+Sitemap: https://gtaicf.com/sitemap.xml

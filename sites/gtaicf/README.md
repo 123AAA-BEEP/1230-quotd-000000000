@@ -1,4 +1,4 @@
-# gtaicf.ca
+# gtaicf.com
 
 First-party lead-generation site for the same contractor as gtahelicalpiles.com, here building insulated concrete form (ICF) foundations and full-height walls across Toronto, York Region, Peel, Halton, Hamilton, Guelph and the Niagara corridor. Static Astro site, one server route for lead intake, no client JavaScript beyond the quote form, the budget calculator and analytics. The code is a clone of `sites/gtahelicalpiles`; the city data modules under `data/cities/` are shared and trade-independent.
 
@@ -20,7 +20,7 @@ Node 20 or newer.
 
 Two ways. Either works; the second needs no Git integration for the first deploy.
 
-**Dashboard.** Add New → Project → import this repository. Set **Root Directory** to `sites/gtaicf`, framework Astro (detected), add the environment variables below, Deploy. Then Settings → Domains: `gtaicf.ca` with `www` redirecting to it. Production branch: whichever branch you merge this folder into (`main` once merged; `claude/beautiful-newton-ofc7mi` until then).
+**Dashboard.** Add New → Project → import this repository. Set **Root Directory** to `sites/gtaicf`, framework Astro (detected), add the environment variables below, Deploy. Then Settings → Domains: `gtaicf.com` with `www` redirecting to it. Production branch: whichever branch you merge this folder into (`main` once merged; `claude/beautiful-newton-ofc7mi` until then).
 
 **Script.** With a token from vercel.com/account/tokens:
 
@@ -40,12 +40,12 @@ Environment variables (Vercel project settings, never committed):
 | `LEAD_WEBHOOK_URL` | Optional. Every lead is POSTed here as JSON (CRM, Zapier, a future getquotd.com intake). |
 | `RESEND_API_KEY` | Optional. With `LEAD_INBOX`, every lead is emailed via Resend. |
 | `LEAD_INBOX` | The address that receives lead emails. |
-| `LEAD_FROM` | Optional sender, default `leads@gtaicf.ca` (domain must be verified in Resend). |
-| `PUBLIC_PLAUSIBLE_DOMAIN` | Set to `gtaicf.ca` to load Plausible. Unset = no analytics script. |
+| `LEAD_FROM` | Optional sender, default `leads@gtaicf.com` (domain must be verified in Resend). |
+| `PUBLIC_PLAUSIBLE_DOMAIN` | Set to `gtaicf.com` to load Plausible. Unset = no analytics script. |
 
 With neither webhook nor Resend configured, the intake endpoint logs the lead and still returns success. That is the local preview mode; do not launch that way.
 
-Domain: apex `gtaicf.ca` canonical, `www` redirected to apex (Vercel domain settings).
+Domain: apex `gtaicf.com` canonical, `www` redirected to apex (Vercel domain settings).
 
 ## Content and data
 

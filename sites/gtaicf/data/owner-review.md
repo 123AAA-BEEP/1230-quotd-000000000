@@ -1,4 +1,4 @@
-# gtaicf.ca — owner review list
+# gtaicf.com — owner review list
 
 What the owner has to supply, confirm or strike before the ICF site leaves preview. Items marked **blocks launch** keep every page `noindex` until resolved. Everything else is copy the writers could not source to a document and wrote as our practice; confirm it or tell us to reword.
 
@@ -7,7 +7,7 @@ What the owner has to supply, confirm or strike before the ICF site leaves previ
 1. **Identity** in `data/business.json`: legal name, phone, email, hours, service address type, Google Business Profile URL, founded year. The status field stays `PLACEHOLDER` until these are real, and the build renders `noindex` and the preview strip on every page while it does.
 2. **Consent text** (`consent_text`, `consent_version`): approve the draft wording or supply yours; the version string is stored with every lead.
 3. **Lead delivery**: `LEAD_WEBHOOK_URL` or `RESEND_API_KEY` + `LEAD_INBOX` + `LEAD_FROM` in the Vercel project. Without one of them the form accepts leads and has nowhere to send them.
-4. **Domain**: buy gtaicf.ca and point it at the Vercel project (README has the steps).
+4. **Domain**: buy gtaicf.com and point it at the Vercel project (README has the steps).
 
 ## Credentials and documents (the site says nothing about these until you supply them)
 

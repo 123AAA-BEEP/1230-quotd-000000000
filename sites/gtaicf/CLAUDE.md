@@ -1,4 +1,4 @@
-# gtaicf.ca — project context for AI-assisted sessions
+# gtaicf.com — project context for AI-assisted sessions
 
 This folder is a standalone site: the same contractor as gtahelicalpiles.com (one company, one phone, one inbox), here building insulated concrete form (ICF) foundations and full-height walls with its own crew across Toronto, York Region, Peel, Halton, Hamilton, Guelph and the Niagara corridor. It is **not** a Quotd page family. The repository-root `CLAUDE.md` and `spec/` describe Quotd (a quotes marketplace) and do not apply here. Read `README.md` in this folder first. The code is a clone of `sites/gtahelicalpiles`; keep the two in step when a shared component changes.
 

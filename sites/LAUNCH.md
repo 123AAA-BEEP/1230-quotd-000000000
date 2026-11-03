@@ -1,4 +1,4 @@
-# Launch checklist: gtahelicalpiles.com and gtaicf.ca
+# Launch checklist: gtahelicalpiles.com and gtaicf.com
 
 Both sites are complete in preview and pushed on branch `claude/beautiful-newton-ofc7mi`. Every page renders `noindex` with a preview strip, and the sitemap is empty, until `data/business.json` in each site stops being a placeholder. The steps below take each site from preview to indexed. Do them in order; steps 1 to 4 are yours, 5 to 9 are mechanical and can be done by you or by an AI session once the accounts exist.
 
@@ -23,10 +23,10 @@ Work through `sites/<site>/data/owner-review.md`. Each line is a practice statem
 
 ## 4. Domains and accounts
 
-- Buy `gtaicf.ca` and `gtahelicalpiles.com` (decided 2026-10-01: .com is the canonical helical domain; if `gtahelicalpiles.ca` is bought as well it is added to the Vercel project as a redirect to .com). Keep DNS at the registrar for now.
+- Buy `gtaicf.com` and `gtahelicalpiles.com` (decided 2026-10-01: .com is the canonical helical domain; if `gtahelicalpiles.ca` is bought as well it is added to the Vercel project as a redirect to .com). Keep DNS at the registrar for now.
 - Vercel account (Hobby is fine to start; Pro if you want team access). Create a token at vercel.com/account/tokens.
 - Resend account for lead email. Add and verify each sending domain (Resend gives you DNS records to add at the registrar). Create an API key.
-- Plausible account, add `gtahelicalpiles.com` and `gtaicf.ca` as sites.
+- Plausible account, add `gtahelicalpiles.com` and `gtaicf.com` as sites.
 - Optional: a webhook URL (Zapier, Make, a CRM, a future getquotd.com intake) if you want leads pushed somewhere besides email.
 
 ## 5. Merge to main
@@ -43,7 +43,7 @@ Option B, script, from a machine or session with the token:
 cd sites/gtahelicalpiles
 VERCEL_TOKEN=... RESEND_API_KEY=... LEAD_INBOX=you@example.com LEAD_FROM=leads@gtahelicalpiles.com PUBLIC_PLAUSIBLE_DOMAIN=gtahelicalpiles.com node scripts/vercel-setup.mjs
 cd ../gtaicf
-VERCEL_TOKEN=... RESEND_API_KEY=... LEAD_INBOX=you@example.com LEAD_FROM=leads@gtaicf.ca PUBLIC_PLAUSIBLE_DOMAIN=gtaicf.ca node scripts/vercel-setup.mjs
+VERCEL_TOKEN=... RESEND_API_KEY=... LEAD_INBOX=you@example.com LEAD_FROM=leads@gtaicf.com PUBLIC_PLAUSIBLE_DOMAIN=gtaicf.com node scripts/vercel-setup.mjs
 ```
 
 For a Claude session to run it, add `VERCEL_TOKEN` as an environment variable in the cloud environment's settings (never paste it into chat) and allow `api.vercel.com` and `vercel.com` under Network access.
@@ -62,7 +62,7 @@ Then Settings → Git: connect the repository so pushes to `main` deploy.
 
 ## 7. Domains
 
-In each Vercel project, Settings → Domains: add the apex (`gtaicf.ca`) and `www.gtaicf.ca` redirecting to the apex. Vercel shows the A record for the apex and the CNAME for www; add them at the registrar. Wait for the certificate.
+In each Vercel project, Settings → Domains: add the apex (`gtaicf.com`) and `www.gtaicf.com` redirecting to the apex. Vercel shows the A record for the apex and the CNAME for www; add them at the registrar. Wait for the certificate.
 
 ## 8. Verify on the real domain
 

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "gtaicf.ca: first-party lead-generation site for insulated concrete form (ICF) foundations and full-height walls across Toronto, Peel, Halton, Hamilton, Guelph and Niagara. Standalone Astro project; see README.md.",
+  "description": "gtaicf.com: first-party lead-generation site for insulated concrete form (ICF) foundations and full-height walls across Toronto, Peel, Halton, Hamilton, Guelph and Niagara. Standalone Astro project; see README.md.",
   "engines": {
     "node": ">=20"
   },
