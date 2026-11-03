@@ -56,12 +56,23 @@ const serviceSchema = {
   <div class="page home">
     <div class="hero">
       <p class="eyebrow eyebrow-brand">Toronto · Peel · Halton · Hamilton · Niagara</p>
-      <h1>ICF foundations and full-height walls.</h1>
+      <h1>ICF foundations and walls across Toronto and the GTA.</h1>
       <p class="lede">Insulated concrete form walls, formed, reinforced and poured by our own crew. Insulated on both faces the day they are poured, built year-round, with any ICF system your local supplier stocks.</p>
       <div class="hero-actions">
         <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
         <a href={`tel:${biz.phone_e164}`} class="btn btn-secondary btn-lg num" data-track="call_click" data-place="hero">Call {biz.phone_display}</a>
       </div>
+
+      {Array.isArray(biz.hero_photos) && biz.hero_photos.length > 0 && (
+        <div class="hero-photos" data-count={Math.min(biz.hero_photos.length, 2)}>
+          {biz.hero_photos.slice(0, 2).map((p) => (
+            <figure>
+              <img src={p.src} alt={p.alt} width={p.width} height={p.height} loading="eager" decoding="async" />
+              {p.caption && <figcaption>{p.caption}</figcaption>}
+            </figure>
+          ))}
+        </div>
+      )}
 
       <section class="policy-band" aria-label="How we work">
         <div>
@@ -177,6 +188,39 @@ const serviceSchema = {
   h1 { font-size: clamp(var(--text-4xl), 5vw, var(--text-5xl)); margin-block: var(--s4) var(--s4); max-width: 16ch; }
   .lede { font-size: var(--text-lg); line-height: 1.6; color: var(--text-muted); max-width: 36rem; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s6); }
+  /* Real job photos only (data/business.json hero_photos). One wide photo, or a
+     wide one beside a tall one, under the actions and above the policy band. */
+  .hero-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s3);
+    margin-top: var(--s8);
+  }
+  .hero-photos figure { margin: 0; min-width: 0; }
+  .hero-photos img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: var(--r-card);
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .hero-photos figcaption {
+    margin-top: var(--s2);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+  .hero-photos[data-count="2"] figure:last-child { display: none; }
+
+  @media (min-width: 36rem) {
+    .hero-photos[data-count="2"] { grid-template-columns: 2fr 1fr; }
+    .hero-photos[data-count="2"] figure:last-child { display: block; }
+    .hero-photos[data-count="2"] figure:last-child img { aspect-ratio: 3 / 4; }
+  }
+
   .policy-band { display: grid; grid-template-columns: 1fr; gap: var(--s4) var(--s6); margin-top: var(--s10); padding-block: var(--s5); border-top: 1px solid var(--border-strong); border-bottom: 1px solid var(--border); }
   @media (min-width: 36rem) { .policy-band { grid-template-columns: repeat(3, 1fr); } }
   .pb-value { font-family: var(--display); font-size: var(--text-2xl); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; color: var(--ink); }

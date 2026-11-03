@@ -50,6 +50,7 @@ Domain: apex `gtahelicalpiles.com` canonical, `www` redirected to apex (Vercel d
 ## Content and data
 
 - `data/business.json`: name, phone, email, hours, service area, credentials. While `status` starts with `PLACEHOLDER`, every page renders `noindex` and a preview strip.
+- `hero_photos` in `data/business.json`: up to two real job photos for the homepage hero, each `{ "src": "/photos/<file>.webp", "alt": "...", "caption": "<town>, <job>", "width": N, "height": N }`. Files go in `public/photos/`, named with the town and the job (for example `helical-pile-deck-oakville.webp`). The first is shown wide, the second tall beside it. Leave `null` until a real photo exists; stock and AI imagery are banned.
 - `data/prices.json`: the single source of truth for every price on the site. Illustrative ranges only; the firm price follows a site review. Carries `last_reviewed`.
 - `data/cities/<slug>.json`: one file per city page: census, geology, permits, climate, code, each fact with a source URL and retrieval date. `oakville.notes.md` records what was verified and what was not.
 - `data/content/<slug>.json`: the editorial content of each city page (answer block, tiles, ground, permits, season, pricing note, FAQ). Written from the city's data module only; the template adds the price line and the nearest-city links. A city goes live when `live: true` is set for it in `business.json`.
