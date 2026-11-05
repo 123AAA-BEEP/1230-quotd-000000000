@@ -13,7 +13,8 @@ You are working on **Quotd**: a consumer platform where homeowners get quotes fr
 3. **Sequencing (spec §3.3):** launch 10 niches × 30–50 cities. New batches ship only when the prior batch hits ≥50% indexation. Never mass-publish into a cold domain.
 4. **Anti-Bark commitments (spec §6.3):** leads sold exclusive or max-3, phone-verified (OTP) only, dead-lead credit honored without a fight.
 5. **Design (spec §8):** editorial reference-site look. The §8.1 banned list (gradient heroes, glassmorphism, emoji bullets, symmetric icon-card rows, fake social proof, stock/AI imagery, "elevate/seamless/unlock" copy) is enforced in review. Real data, real photography, serif display type, near-zero motion.
-6. **Compliance (spec §7):** TCPA/CASL consent captured with text-version + timestamp; "licensed/verified" claims only when actually verified, with dates.
+6. **Design process (owner instruction 2026-11-05):** every design decision goes through Mobbin first, then taste-skill → ui-ux-pro-max → design-motion-principles (plus design-md / awesome-claude-design references where used). Follow `spec/design-process.md`; design PRs carry a "Design trail". The tools inform decisions; spec §8 and the addendum still win.
+7. **Compliance (spec §7):** TCPA/CASL consent captured with text-version + timestamp; "licensed/verified" claims only when actually verified, with dates.
 
 ## Conventions
 
