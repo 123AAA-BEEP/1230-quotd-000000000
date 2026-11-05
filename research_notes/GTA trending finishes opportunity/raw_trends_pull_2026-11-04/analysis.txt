@@ -1,0 +1,687 @@
+=== SINGLE-TERM CURVE METRICS (each term on its own 0-100 scale) ===
+
+--- CA ---
+                term  y2019  y2020  y2021  y2022  y2023  y2024  y2025  y2026 peak_month first_month_ge25  cur_vs_peak_pct  yoy2025  yoy2026ytd  zero_months
+            limewash      5     11     19     30     42     56     74     79    2026-01          2021-05               77     32.0         8.0            6
+         microcement      0      1      5     16     22     40     56     72    2026-03          2023-03               61     38.0        45.0           32
+    venetian plaster     38     43     57     66     61     63     72     74    2026-02          2019-01               58     13.0         8.0            0
+          roman clay      3      3     13     38     38     36     55     71    2026-07          2019-01               68     52.0        42.0           35
+            tadelakt      8      4      9     26     23     18     23     33    2026-02          2019-08               27     29.0        27.0           65
+        lime plaster     10      2     11     15     29     27     46     55    2026-03          2019-08               40     69.0        32.0           43
+        clay plaster     11     27     23     22     46     42     52     59    2024-12          2019-04               78     22.0        34.0           38
+       mineral paint     40     70     75     59     44     37     32     31    2021-02          2019-01               31    -14.0        -3.0            0
+        german smear     14     13     23     11      0     12      6      0    2024-03          2019-04                1    -55.0       -96.0           70
+      brick staining     21     32     48     34     32     27     29     26    2020-06          2019-03                3      9.0       -19.0           46
+          thin brick     45     70     64     69     64     56     64     73    2021-01          2019-01               65     14.0        17.0            1
+  fluted wall panels      0      0      0     10     42     63     68     79    2025-02          2022-02               87      9.0        12.0           44
+    slat wall panels      0      0      3     24     37     54     66     83    2026-01          2021-03               78     21.0        28.0           36
+      wood slat wall      2     10     27     51     61     75     70     73    2024-01          2021-01               63     -7.0         7.0           13
+     acoustic panels     26     37     34     37     40     47     63     77    2026-03          2019-01               71     36.0        31.0            0
+    board and batten     42     63     75     72     68     70     71     75    2021-03          2019-01               86      2.0         3.0            0
+         wainscoting     59     70     71     60     52     49     49     50    2021-02          2019-01               51     -1.0         4.0            0
+    colour drenching      0      0      0      0      0     11     49     54    2026-01          2024-02               54    355.0         8.0           72
+     wallpaper mural     39     49     47     45     47     46     52     62    2026-02          2019-01               54     13.0        24.0            0
+grasscloth wallpaper     33     57     54     51     49     44     42     57    2021-04          2019-01               49     -4.0        45.0            5
+            terrazzo     59     62     80     79     75     76     78     81    2021-09          2019-01               79      2.0         6.0            0
+   polished concrete     76     68     60     66     56     56     67     77    2026-03          2019-01               58     19.0        23.0            0
+       shou sugi ban     58     68     57     42     40     35     34     28    2020-05          2019-01               20     -5.0       -23.0            3
+  plaster range hood      0      0      0      0      0      0      8      0    2025-11          2025-11                2      NaN         NaN           93
+   plaster fireplace      0      6     24     34     40     37     34     20    2025-02          2020-02                6     -7.0       -41.0           58
+      arched doorway      0      5      0      0      0      0     22     10    2026-07          2020-08                3      NaN       -58.0           88
+      textured walls     53     53     62     56     50     54     62     69    2021-03          2019-01               70     14.0        18.0            8
+              stucco     58     68     66     58     54     54     57     64    2020-07          2019-01               67      6.0        10.0            0
+                keim     54     65     58     62     56     58     71     64    2026-04          2019-01               65     22.0        -6.0            1
+          lime paint     24     41     46     53     58     65     62     80    2026-03          2019-03               73     -4.0        34.0            1
+      limewash brick      5     14     13     21     21     17     19     19    2025-08          2019-05               26     14.0       -10.0           71
+   wood slat ceiling      6      0      0      4      4      0     21     21    2026-03          2019-11                6      NaN        24.0           84
+       plaster walls     73     78     75     67     67     64     65     68    2020-12          2019-01               65      2.0         7.0            0
+             romabio      8      5      0      6      6      0     26     14    2019-03          2019-03                4      NaN       -50.0           84
+      limewash paint      0      5     19     36     52     61     74     76    2026-01          2021-05               73     21.0         5.0           23
+microcement bathroom      0      0      0      0      0      0      0     20    2026-06          2026-01                5      NaN         NaN           91
+    polished plaster      8      0      0      0      0      0      0      0    2019-06          2019-06                0      NaN         NaN           94
+        micro cement      0      0      0      4     11     38     57     67    2025-11          2023-12               72     51.0        33.0           52
+     color drenching      0      0      0      0      0      4     20     50    2026-01          2024-03               38    442.0       331.0           79
+       textured wall     28     40     39     43     48     52     57     73    2026-02          2019-01               65     10.0        34.0            0
+
+--- CA-ON ---
+                term  y2019  y2020  y2021  y2022  y2023  y2024  y2025  y2026 peak_month first_month_ge25  cur_vs_peak_pct  yoy2025  yoy2026ytd  zero_months
+            limewash      5     11     28     37     49     63     75     75    2026-01          2021-02               70     19.0         7.0           13
+         microcement      0      0      2      9     20     33     52     61    2026-02          2021-06               58     59.0        33.0           44
+    venetian plaster     20     29     41     55     52     60     50     59    2026-03          2019-03               38    -15.0        19.0           16
+          roman clay      0      0      6      0     10      0     14     38    2025-04          2021-10                5      NaN       279.0           83
+            tadelakt      0      0      0      0      0      0      0      9    2026-10          2026-10               33      NaN         NaN           94
+        lime plaster      0      0      0      0      0     12      7     34    2026-03          2024-03                4    -45.0       368.0           87
+        clay plaster      0      6      0      0     17      0      7     13    2026-10          2020-08               33      NaN         NaN           88
+       mineral paint     41     74     85     61     44     37     33     31    2021-02          2019-01               31    -11.0        -4.0            0
+        german smear      0      5     10      6      0      8      0      0    2024-03          2020-09                1   -100.0         NaN           89
+      brick staining     11     26     32     17     22     22     15     25    2021-04          2019-04                2    -35.0        42.0           59
+          thin brick     30     59     50     69     55     21     37     65    2026-09          2019-01               77     75.0       106.0           19
+  fluted wall panels      0      0      0     14     19     50     51     67    2024-10          2022-02               78      3.0        22.0           53
+    slat wall panels      0      0      0     14     32     42     57     77    2026-01          2022-04               82     34.0        40.0           50
+      wood slat wall      0      2     18     47     51     64     62     57    2024-02          2021-02               45     -3.0        -9.0           28
+     acoustic panels     30     44     37     40     43     49     65     81    2026-01          2019-01               71     34.0        30.0            0
+    board and batten     43     64     73     64     55     54     55     60    2021-03          2019-01               71      1.0         8.0            0
+         wainscoting     56     67     72     58     46     42     41     43    2022-01          2019-01               43     -3.0         7.0            0
+    colour drenching      7      0      0      0      0      0     16     25    2026-01          2019-08                6      NaN        89.0           86
+     wallpaper mural     31     42     44     39     40     40     43     54    2026-02          2019-01               46      7.0        29.0            1
+grasscloth wallpaper     22     46     49     32     39     28     26     45    2021-01          2019-03               25     -5.0        88.0           41
+            terrazzo     52     57     68     69     66     63     68     70    2026-02          2019-01               68      9.0         5.0            0
+   polished concrete     76     72     63     65     57     52     61     71    2020-02          2019-01               70     17.0        24.0            0
+       shou sugi ban     44     66     50     19     28     24     14      3    2021-02          2019-02                2    -42.0       -96.0           46
+  plaster range hood      0      0      0      0      0      0      0      9    2026-07          2026-07                0      NaN         NaN           94
+   plaster fireplace      0      0      0      0      0      0     22     10    2025-09          2025-09                3      NaN       -41.0           90
+      arched doorway      0      0      0      0      0      0      8      0    2025-02          2025-02                0      NaN      -100.0           94
+      textured walls      7     29     33     24     24      5     16     22    2026-01          2019-05                5    227.0       274.0           64
+              stucco     62     72     71     60     56     53     54     59    2020-06          2019-01               61      1.0         7.0            0
+                keim      8      0     13     24     11     38      0     26    2024-01          2019-11                4   -100.0         NaN           74
+          lime paint     12     42     42     51     48     60     57     73    2026-04          2019-03               69     -4.0        32.0           11
+      limewash brick      0      0     13     13     13      0      8      1    2025-04          2021-05                3      NaN       -91.0           87
+   wood slat ceiling      0      0      0      0      0      8      7      9    2024-10          2024-10                3    -11.0         NaN           91
+       plaster walls     75     76     72     64     59     56     56     53    2020-12          2019-01               44      0.0        -2.0            0
+             romabio      0      0      8      0      8      0     16      1    2025-08          2021-09                2      NaN       -96.0           90
+      limewash paint      0      0      9     31     42     52     60     58    2026-08          2021-05               68     14.0         1.0           35
+microcement bathroom      0      0      0      0      8      0      0      1    2023-12          2023-12                4      NaN         NaN           93
+        micro cement      0      0      0      0     12     16     46     60    2025-11          2023-06               70    190.0        60.0           70
+     color drenching      0      0      0      0      0      0      0      9    2026-10          2026-10               33      NaN         NaN           94
+       textured wall     21     42     37     45     48     46     53     69    2026-02          2019-01               62     16.0        31.0            5
+
+=== LIMEWASH-ANCHORED RELATIVE SCALE (batched queries; values = mean index, limewash in same batch) ===
+
+[CA b1]  (limewash 2026 mean = 78.9)
+  limewash                 m2019=5.1 m2021=19.4 m2022=30.1 m2023=42.4 m2024=56.2 m2025=74.1 m2026=78.9 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  microcement              m2019=0.0 m2021=2.6 m2022=8.8 m2023=12.8 m2024=22.6 m2025=31.0 m2026=40.4 peak=56 peakm=2026-03  rel-to-limewash-2026=0.51
+  venetian plaster         m2019=11.8 m2021=17.5 m2022=20.4 m2023=18.8 m2024=19.5 m2025=22.2 m2026=23.5 peak=31 peakm=2026-02  rel-to-limewash-2026=0.3
+  roman clay               m2019=0.5 m2021=2.4 m2022=7.3 m2023=7.2 m2024=6.9 m2025=10.6 m2026=13.6 peak=19 peakm=2026-07  rel-to-limewash-2026=0.17
+  tadelakt                 m2019=1.0 m2021=1.0 m2022=3.2 m2023=2.8 m2024=2.3 m2025=2.9 m2026=4.2 peak=12 peakm=2026-02  rel-to-limewash-2026=0.05
+
+[CA b2]  (limewash 2026 mean = 35.7)
+  limewash                 m2019=2.4 m2021=8.8 m2022=13.7 m2023=19.2 m2024=25.6 m2025=33.7 m2026=35.7 peak=45 peakm=2026-01  rel-to-limewash-2026=1.0
+  lime plaster             m2019=0.9 m2021=1.0 m2022=1.2 m2023=2.6 m2024=2.3 m2025=3.9 m2026=5.0 peak=9 peakm=2026-03  rel-to-limewash-2026=0.14
+  clay plaster             m2019=0.8 m2021=1.5 m2022=1.3 m2023=2.8 m2024=2.7 m2025=3.2 m2026=3.5 peak=6 peakm=2024-12  rel-to-limewash-2026=0.1
+  polished plaster         m2019=0.2 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=3 peakm=2019-06  rel-to-limewash-2026=0.0
+  mineral paint            m2019=39.9 m2021=75.4 m2022=59.4 m2023=43.6 m2024=36.8 m2025=31.8 m2026=31.3 peak=100 peakm=2021-02  rel-to-limewash-2026=0.88
+
+[CA b3]  (limewash 2026 mean = 78.8)
+  limewash                 m2019=5.1 m2021=19.4 m2022=30.1 m2023=42.4 m2024=56.2 m2025=74.1 m2026=78.8 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  german smear             m2019=2.8 m2021=4.5 m2022=2.2 m2023=0.0 m2024=2.5 m2025=1.1 m2026=0.1 peak=20 peakm=2024-03  rel-to-limewash-2026=0.0
+  brick staining           m2019=2.8 m2021=6.4 m2022=4.6 m2023=4.1 m2024=3.7 m2025=3.9 m2026=3.5 peak=13 peakm=2020-06  rel-to-limewash-2026=0.04
+  thin brick               m2019=12.6 m2021=17.8 m2022=19.3 m2023=18.0 m2024=15.8 m2025=18.0 m2026=20.5 peak=28 peakm=2021-01  rel-to-limewash-2026=0.26
+  brick slips              m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=0 peakm=2019-01  rel-to-limewash-2026=0.0
+
+[CA b4]  (limewash 2026 mean = 47.0)
+  limewash                 m2019=2.9 m2021=11.7 m2022=18.0 m2023=25.2 m2024=33.7 m2025=44.3 m2026=47.0 peak=60 peakm=2026-01  rel-to-limewash-2026=1.0
+  fluted wall panels       m2019=0.0 m2021=0.0 m2022=1.5 m2023=6.2 m2024=9.1 m2025=10.1 m2026=11.5 peak=15 peakm=2025-02  rel-to-limewash-2026=0.24
+  slat wall panels         m2019=0.0 m2021=0.5 m2022=5.0 m2023=7.6 m2024=11.3 m2025=13.6 m2026=17.1 peak=21 peakm=2026-01  rel-to-limewash-2026=0.36
+  wood slat wall           m2019=0.7 m2021=8.2 m2022=15.8 m2023=18.9 m2024=23.1 m2025=21.6 m2026=22.5 peak=31 peakm=2024-01  rel-to-limewash-2026=0.48
+  acoustic panels          m2019=26.3 m2021=33.8 m2022=36.7 m2023=39.5 m2024=46.6 m2025=63.2 m2026=77.5 peak=100 peakm=2026-03  rel-to-limewash-2026=1.65
+
+[CA b5]  (limewash 2026 mean = 34.6)
+  limewash                 m2019=2.2 m2021=8.5 m2022=13.3 m2023=18.8 m2024=24.8 m2025=32.7 m2026=34.6 peak=44 peakm=2026-01  rel-to-limewash-2026=1.0
+  board and batten         m2019=41.8 m2021=74.8 m2022=72.1 m2023=67.7 m2024=69.6 m2025=71.2 m2026=75.5 peak=100 peakm=2021-03  rel-to-limewash-2026=2.18
+  wainscoting              m2019=46.7 m2021=56.3 m2022=47.7 m2023=41.0 m2024=39.3 m2025=38.7 m2026=40.0 peak=79 peakm=2021-02  rel-to-limewash-2026=1.16
+  colour drenching         m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.8 m2025=3.5 m2026=3.9 peak=7 peakm=2025-01  rel-to-limewash-2026=0.11
+  wallpaper mural          m2019=8.8 m2021=10.7 m2022=10.0 m2023=10.7 m2024=10.4 m2025=11.8 m2026=14.3 peak=23 peakm=2026-02  rel-to-limewash-2026=0.41
+
+[CA b6]  (limewash 2026 mean = 35.0)
+  limewash                 m2019=2.2 m2021=8.5 m2022=13.3 m2023=19.0 m2024=24.8 m2025=32.8 m2026=35.0 peak=44 peakm=2026-01  rel-to-limewash-2026=1.0
+  grasscloth wallpaper     m2019=3.3 m2021=5.3 m2022=5.1 m2023=4.9 m2024=4.5 m2025=4.2 m2026=5.6 peak=10 peakm=2021-04  rel-to-limewash-2026=0.16
+  terrazzo                 m2019=59.2 m2021=79.5 m2022=79.0 m2023=75.2 m2024=76.0 m2025=77.8 m2026=80.9 peak=100 peakm=2021-09  rel-to-limewash-2026=2.31
+  polished concrete        m2019=14.9 m2021=11.8 m2022=13.0 m2023=10.9 m2024=10.9 m2025=13.2 m2026=15.0 peak=20 peakm=2026-03  rel-to-limewash-2026=0.43
+  microcement bathroom     m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.8 peak=4 peakm=2026-06  rel-to-limewash-2026=0.02
+
+[CA b7]  (limewash 2026 mean = 78.7)
+  limewash                 m2019=5.1 m2021=19.4 m2022=30.1 m2023=42.4 m2024=56.2 m2025=74.1 m2026=78.7 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  shou sugi ban            m2019=20.4 m2021=20.2 m2022=14.8 m2023=14.2 m2024=12.5 m2025=11.8 m2026=9.7 peak=35 peakm=2020-05  rel-to-limewash-2026=0.12
+  plaster range hood       m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.8 m2026=0.0 peak=10 peakm=2025-11  rel-to-limewash-2026=0.0
+  plaster fireplace        m2019=0.0 m2021=2.8 m2022=4.0 m2023=4.8 m2024=4.2 m2025=4.0 m2026=2.4 peak=12 peakm=2025-02  rel-to-limewash-2026=0.03
+  arched doorway           m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=2.4 m2026=1.1 peak=11 peakm=2026-07  rel-to-limewash-2026=0.01
+
+[CA b8]  (limewash 2026 mean = 9.8)
+  limewash                 m2019=0.6 m2021=2.3 m2022=3.7 m2023=5.2 m2024=7.0 m2025=9.2 m2026=9.8 peak=13 peakm=2026-01  rel-to-limewash-2026=1.0
+  textured walls           m2019=1.0 m2021=1.3 m2022=1.2 m2023=0.9 m2024=1.2 m2025=1.2 m2026=1.5 peak=2 peakm=2019-11  rel-to-limewash-2026=0.15
+  stucco                   m2019=58.2 m2021=65.5 m2022=58.4 m2023=54.5 m2024=53.8 m2025=56.9 m2026=64.4 peak=100 peakm=2020-07  rel-to-limewash-2026=6.57
+  smooth stucco            m2019=0.1 m2021=0.1 m2022=0.1 m2023=0.1 m2024=0.1 m2025=0.0 m2026=0.2 peak=1 peakm=2019-03  rel-to-limewash-2026=0.02
+  romabio                  m2019=0.1 m2021=0.0 m2022=0.1 m2023=0.1 m2024=0.0 m2025=0.3 m2026=0.2 peak=1 peakm=2019-03  rel-to-limewash-2026=0.02
+
+[CA b9]  (limewash 2026 mean = 78.7)
+  limewash                 m2019=5.1 m2021=19.4 m2022=30.1 m2023=42.4 m2024=56.2 m2025=74.1 m2026=78.7 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  keim                     m2019=10.8 m2021=11.5 m2022=12.2 m2023=11.2 m2024=11.7 m2025=14.2 m2026=12.5 peak=20 peakm=2026-04  rel-to-limewash-2026=0.16
+  lime paint               m2019=10.2 m2021=19.2 m2022=22.2 m2023=24.1 m2024=27.3 m2025=26.2 m2026=33.5 peak=42 peakm=2026-03  rel-to-limewash-2026=0.43
+  limewash brick           m2019=0.6 m2021=1.4 m2022=2.3 m2023=2.2 m2024=1.8 m2025=2.0 m2026=1.9 peak=11 peakm=2025-08  rel-to-limewash-2026=0.02
+  wood slat ceiling        m2019=0.7 m2021=0.0 m2022=0.4 m2023=0.4 m2024=0.0 m2025=2.2 m2026=2.4 peak=11 peakm=2026-03  rel-to-limewash-2026=0.03
+
+[CA b10]  (limewash 2026 mean = 78.8)
+  limewash                 m2019=5.1 m2021=19.4 m2022=30.1 m2023=42.4 m2024=56.2 m2025=74.1 m2026=78.8 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  microtopping             m2019=0.0 m2021=1.1 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=7 peakm=2020-11  rel-to-limewash-2026=0.0
+  micro cement             m2019=0.0 m2021=0.0 m2022=1.0 m2023=2.9 m2024=9.9 m2025=15.3 m2026=18.0 peak=27 peakm=2025-11  rel-to-limewash-2026=0.23
+  plaster walls            m2019=44.8 m2021=46.0 m2022=41.2 m2023=41.0 m2024=39.1 m2025=40.1 m2026=41.5 peak=61 peakm=2020-12  rel-to-limewash-2026=0.53
+  lime wash                m2019=4.4 m2021=14.2 m2022=21.6 m2023=24.9 m2024=30.6 m2025=36.6 m2026=45.9 peak=58 peakm=2026-04  rel-to-limewash-2026=0.58
+
+[CA b11]  (limewash 2026 mean = 0.2)
+  limewash                 m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.2 m2026=0.2 peak=1 peakm=2025-07  rel-to-limewash-2026=1.0
+  color drenching          m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=0 peakm=2019-01  rel-to-limewash-2026=0.0
+  wall paneling            m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=0 peakm=2019-01  rel-to-limewash-2026=0.0
+  accent wall              m2019=1.0 m2021=1.7 m2022=1.3 m2023=1.2 m2024=1.2 m2025=1.1 m2026=1.0 peak=2 peakm=2020-04  rel-to-limewash-2026=5.0
+  wallpaper                m2019=55.1 m2021=66.4 m2022=68.1 m2023=59.2 m2024=52.2 m2025=48.7 m2026=44.5 peak=100 peakm=2020-09  rel-to-limewash-2026=222.5
+
+[CA b12]  (limewash 2026 mean = 78.8)
+  limewash                 m2019=5.1 m2021=19.4 m2022=30.1 m2023=42.4 m2024=56.2 m2025=74.1 m2026=78.8 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  limewash paint           m2019=0.0 m2021=7.7 m2022=15.2 m2023=22.0 m2024=25.9 m2025=31.2 m2026=31.7 peak=42 peakm=2026-01  rel-to-limewash-2026=0.4
+  venetian plaster walls   m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.6 m2024=0.0 m2025=0.0 m2026=0.1 peak=7 peakm=2023-07  rel-to-limewash-2026=0.0
+  plaster finish           m2019=0.5 m2021=0.7 m2022=3.2 m2023=4.2 m2024=2.4 m2025=4.7 m2026=5.6 peak=13 peakm=2026-09  rel-to-limewash-2026=0.07
+  textured wall            m2019=15.5 m2021=21.1 m2022=23.6 m2023=26.3 m2024=28.1 m2025=30.8 m2026=39.6 peak=54 peakm=2026-02  rel-to-limewash-2026=0.5
+
+[CA-ON b1]  (limewash 2026 mean = 75.5)
+  limewash                 m2019=5.2 m2021=28.2 m2022=36.7 m2023=48.7 m2024=62.8 m2025=74.9 m2026=75.5 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  microcement              m2019=0.0 m2021=1.4 m2022=6.2 m2023=14.3 m2024=22.8 m2025=36.4 m2026=43.6 peak=70 peakm=2026-02  rel-to-limewash-2026=0.58
+  venetian plaster         m2019=7.8 m2021=15.9 m2022=21.1 m2023=19.8 m2024=22.8 m2025=19.2 m2026=22.3 peak=38 peakm=2026-03  rel-to-limewash-2026=0.3
+  roman clay               m2019=0.0 m2021=1.3 m2022=0.0 m2023=2.2 m2024=0.0 m2025=3.2 m2026=8.5 peak=23 peakm=2025-04  rel-to-limewash-2026=0.11
+  tadelakt                 m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.1 peak=1 peakm=2026-10  rel-to-limewash-2026=0.0
+
+[CA-ON b2]  (limewash 2026 mean = 31.9)
+  limewash                 m2019=2.2 m2021=12.0 m2022=15.6 m2023=20.6 m2024=26.6 m2025=31.8 m2026=31.9 peak=42 peakm=2026-01  rel-to-limewash-2026=1.0
+  lime plaster             m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=1.0 m2025=0.6 m2026=2.8 peak=8 peakm=2026-03  rel-to-limewash-2026=0.09
+  clay plaster             m2019=0.0 m2021=0.0 m2022=0.0 m2023=1.4 m2024=0.0 m2025=0.6 m2026=1.1 peak=8 peakm=2026-10  rel-to-limewash-2026=0.03
+  polished plaster         m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=0 peakm=2019-01  rel-to-limewash-2026=0.0
+  mineral paint            m2019=38.6 m2021=81.2 m2022=57.4 m2023=42.5 m2024=34.8 m2025=31.1 m2026=28.2 peak=100 peakm=2021-02  rel-to-limewash-2026=0.88
+
+[CA-ON b3]  (limewash 2026 mean = 75.6)
+  limewash                 m2019=5.2 m2021=28.2 m2022=36.7 m2023=48.7 m2024=62.8 m2025=74.9 m2026=75.6 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  german smear             m2019=0.0 m2021=0.0 m2022=0.0 m2023=1.1 m2024=2.3 m2025=0.0 m2026=0.1 peak=15 peakm=2024-03  rel-to-limewash-2026=0.0
+  brick staining           m2019=3.2 m2021=8.9 m2022=4.7 m2023=6.1 m2024=6.3 m2025=4.2 m2026=7.1 peak=28 peakm=2021-04  rel-to-limewash-2026=0.09
+  thin brick               m2019=10.6 m2021=17.9 m2022=24.5 m2023=19.6 m2024=7.6 m2025=13.3 m2026=23.0 peak=36 peakm=2026-09  rel-to-limewash-2026=0.3
+  brick slips              m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=1.5 m2026=0.0 peak=18 peakm=2025-11  rel-to-limewash-2026=0.0
+
+[CA-ON b4]  (limewash 2026 mean = 46.5)
+  limewash                 m2019=3.2 m2021=17.3 m2022=22.6 m2023=29.9 m2024=38.8 m2025=46.1 m2026=46.5 peak=61 peakm=2026-01  rel-to-limewash-2026=1.0
+  fluted wall panels       m2019=0.0 m2021=0.0 m2022=3.1 m2023=4.3 m2024=11.2 m2025=11.7 m2026=15.2 peak=23 peakm=2024-10  rel-to-limewash-2026=0.33
+  slat wall panels         m2019=0.0 m2021=0.0 m2022=3.5 m2023=7.8 m2024=10.2 m2025=13.8 m2026=18.6 peak=24 peakm=2026-01  rel-to-limewash-2026=0.4
+  wood slat wall           m2019=0.0 m2021=7.2 m2022=18.5 m2023=20.1 m2024=25.2 m2025=24.5 m2026=21.8 peak=39 peakm=2024-02  rel-to-limewash-2026=0.47
+  acoustic panels          m2019=29.7 m2021=37.2 m2022=40.0 m2023=42.6 m2024=48.8 m2025=65.2 m2026=80.6 peak=100 peakm=2026-01  rel-to-limewash-2026=1.73
+
+[CA-ON b5]  (limewash 2026 mean = 25.4)
+  limewash                 m2019=1.8 m2021=9.3 m2022=12.2 m2023=16.3 m2024=21.1 m2025=25.2 m2026=25.4 peak=34 peakm=2026-01  rel-to-limewash-2026=1.0
+  board and batten         m2019=42.9 m2021=73.0 m2022=63.8 m2023=54.8 m2024=54.1 m2025=54.6 m2026=60.4 peak=100 peakm=2021-03  rel-to-limewash-2026=2.38
+  wainscoting              m2019=47.9 m2021=61.7 m2022=49.2 m2023=39.6 m2024=35.6 m2025=34.7 m2026=36.5 peak=85 peakm=2022-01  rel-to-limewash-2026=1.44
+  colour drenching         m2019=0.6 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=1.3 m2026=2.3 peak=9 peakm=2026-01  rel-to-limewash-2026=0.09
+  wallpaper mural          m2019=6.6 m2021=9.4 m2022=8.3 m2023=8.2 m2024=8.7 m2025=9.1 m2026=11.5 peak=21 peakm=2026-02  rel-to-limewash-2026=0.45
+
+[CA-ON b6]  (limewash 2026 mean = 51.4)
+  limewash                 m2019=3.5 m2021=19.0 m2022=25.0 m2023=33.3 m2024=42.8 m2025=51.2 m2026=51.4 peak=68 peakm=2026-01  rel-to-limewash-2026=1.0
+  grasscloth wallpaper     m2019=4.2 m2021=9.2 m2022=6.1 m2023=7.4 m2024=5.2 m2025=4.9 m2026=8.0 peak=19 peakm=2021-01  rel-to-limewash-2026=0.16
+  terrazzo                 m2019=51.8 m2021=68.1 m2022=69.1 m2023=65.8 m2024=62.8 m2025=68.4 m2026=70.4 peak=100 peakm=2026-02  rel-to-limewash-2026=1.37
+  polished concrete        m2019=25.3 m2021=21.2 m2022=21.8 m2023=19.0 m2024=17.5 m2025=20.5 m2026=23.7 peak=33 peakm=2020-02  rel-to-limewash-2026=0.46
+  microcement bathroom     m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.7 m2024=0.0 m2025=0.0 m2026=0.1 peak=8 peakm=2023-12  rel-to-limewash-2026=0.0
+
+[CA-ON b7]  (limewash 2026 mean = 75.5)
+  limewash                 m2019=5.2 m2021=28.2 m2022=36.7 m2023=48.7 m2024=62.8 m2025=74.9 m2026=75.5 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  shou sugi ban            m2019=13.2 m2021=14.9 m2022=5.8 m2023=8.2 m2024=7.2 m2025=4.2 m2026=0.7 peak=30 peakm=2021-02  rel-to-limewash-2026=0.01
+  plaster range hood       m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=1.3 peak=14 peakm=2026-07  rel-to-limewash-2026=0.02
+  plaster fireplace        m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=3.9 m2026=1.7 peak=17 peakm=2025-09  rel-to-limewash-2026=0.02
+  arched doorway           m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=1.2 m2026=0.0 peak=14 peakm=2025-02  rel-to-limewash-2026=0.0
+
+[CA-ON b8]  (limewash 2026 mean = 11.1)
+  limewash                 m2019=0.8 m2021=4.2 m2022=5.6 m2023=7.2 m2024=9.5 m2025=11.2 m2026=11.1 peak=15 peakm=2026-01  rel-to-limewash-2026=1.0
+  textured walls           m2019=0.2 m2021=1.2 m2022=0.9 m2023=0.8 m2024=0.2 m2025=0.6 m2026=0.9 peak=4 peakm=2026-01  rel-to-limewash-2026=0.08
+  stucco                   m2019=62.2 m2021=70.7 m2022=59.8 m2023=56.2 m2024=53.0 m2025=53.5 m2026=59.1 peak=100 peakm=2020-06  rel-to-limewash-2026=5.32
+  smooth stucco            m2019=0.0 m2021=0.2 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=3 peakm=2021-03  rel-to-limewash-2026=0.0
+  romabio                  m2019=0.0 m2021=0.2 m2022=0.0 m2023=0.2 m2024=0.0 m2025=0.3 m2026=0.0 peak=2 peakm=2021-09  rel-to-limewash-2026=0.0
+
+[CA-ON b9]  (limewash 2026 mean = 75.2)
+  limewash                 m2019=5.2 m2021=28.2 m2022=36.7 m2023=48.7 m2024=62.8 m2025=74.9 m2026=75.2 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  keim                     m2019=1.7 m2021=2.9 m2022=5.2 m2023=2.5 m2024=8.3 m2025=0.0 m2026=5.7 peak=22 peakm=2024-01  rel-to-limewash-2026=0.08
+  lime paint               m2019=5.2 m2021=18.9 m2022=23.1 m2023=21.4 m2024=27.2 m2025=25.9 m2026=32.0 peak=45 peakm=2026-04  rel-to-limewash-2026=0.43
+  limewash brick           m2019=0.0 m2021=2.3 m2022=2.3 m2023=2.2 m2024=0.0 m2025=1.5 m2026=0.2 peak=18 peakm=2025-04  rel-to-limewash-2026=0.0
+  wood slat ceiling        m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=1.5 m2025=1.3 m2026=1.7 peak=18 peakm=2024-10  rel-to-limewash-2026=0.02
+
+[CA-ON b10]  (limewash 2026 mean = 75.2)
+  limewash                 m2019=5.2 m2021=28.2 m2022=36.7 m2023=48.7 m2024=62.8 m2025=74.9 m2026=75.2 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  microtopping             m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=0 peakm=2019-01  rel-to-limewash-2026=0.0
+  micro cement             m2019=0.0 m2021=0.0 m2022=0.0 m2023=3.5 m2024=4.7 m2025=13.4 m2026=17.4 peak=29 peakm=2025-11  rel-to-limewash-2026=0.23
+  plaster walls            m2019=66.9 m2021=64.2 m2022=56.3 m2023=52.1 m2024=49.4 m2025=49.6 m2026=46.8 peak=89 peakm=2020-12  rel-to-limewash-2026=0.62
+  lime wash                m2019=1.4 m2021=12.4 m2022=20.9 m2023=27.4 m2024=31.4 m2025=35.9 m2026=40.2 peak=61 peakm=2026-04  rel-to-limewash-2026=0.53
+
+[CA-ON b11]  (limewash 2026 mean = 0.3)
+  limewash                 m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.2 m2026=0.3 peak=1 peakm=2025-11  rel-to-limewash-2026=1.0
+  color drenching          m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=0 peakm=2019-01  rel-to-limewash-2026=0.0
+  wall paneling            m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=0.0 m2025=0.0 m2026=0.0 peak=0 peakm=2019-01  rel-to-limewash-2026=0.0
+  accent wall              m2019=1.0 m2021=2.2 m2022=2.2 m2023=1.8 m2024=1.8 m2025=1.4 m2026=1.3 peak=3 peakm=2021-01  rel-to-limewash-2026=4.33
+  wallpaper                m2019=56.8 m2021=66.2 m2022=69.3 m2023=60.5 m2024=53.2 m2025=50.1 m2026=45.7 peak=100 peakm=2020-09  rel-to-limewash-2026=152.33
+
+[CA-ON b12]  (limewash 2026 mean = 75.4)
+  limewash                 m2019=5.2 m2021=28.2 m2022=36.7 m2023=48.7 m2024=62.8 m2025=74.9 m2026=75.4 peak=100 peakm=2026-01  rel-to-limewash-2026=1.0
+  limewash paint           m2019=0.0 m2021=4.6 m2022=16.1 m2023=21.8 m2024=27.8 m2025=31.8 m2026=30.1 peak=53 peakm=2026-08  rel-to-limewash-2026=0.4
+  venetian plaster walls   m2019=0.0 m2021=0.0 m2022=0.0 m2023=0.0 m2024=1.4 m2025=0.0 m2026=0.1 peak=17 peakm=2024-07  rel-to-limewash-2026=0.0
+  plaster finish           m2019=0.0 m2021=0.0 m2022=0.9 m2023=0.0 m2024=1.2 m2025=1.2 m2026=2.7 peak=28 peakm=2026-05  rel-to-limewash-2026=0.04
+  textured wall            m2019=12.8 m2021=22.2 m2022=26.7 m2023=28.8 m2024=27.2 m2025=31.3 m2026=41.1 peak=60 peakm=2026-02  rel-to-limewash-2026=0.55
+
+=== PERSON-FORM / HIRE-INTENT BATCHES ===
+
+[CA p1]
+  limewash toronto             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.5 peak=6@2026-10 nonzero_months=1/95
+  venetian plaster toronto     2022=  0.0 2023=  0.0 2024=  0.0 2025=  8.3 2026=  0.0 peak=100@2025-09 nonzero_months=1/95
+  microcement toronto          2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  7.5 peak=83@2026-02 nonzero_months=1/95
+  plasterer toronto            2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=93@2021-05 nonzero_months=2/95
+  limewash painter             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  7.5 peak=83@2026-08 nonzero_months=1/95
+
+[CA p2]
+  limewash                     2022= 30.1 2023= 42.4 2024= 56.2 2025= 74.1 2026= 78.8 peak=100@2026-01 nonzero_months=89/95
+  limewash painter             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.5 peak=6@2026-08 nonzero_months=1/95
+  venetian plaster contractor  2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  microcement installer        2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  venetian plaster toronto     2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.6 2026=  0.0 peak=7@2025-09 nonzero_months=1/95
+
+[CA p3]
+  limewash                     2022= 30.1 2023= 42.4 2024= 56.2 2025= 74.1 2026= 78.8 peak=100@2026-01 nonzero_months=89/95
+  limewash contractor          2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  limewash painting            2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.1 peak=1@2026-10 nonzero_months=1/95
+  limewash services            2022=  0.0 2023=  0.0 2024=  0.5 2025=  0.0 2026=  0.0 peak=6@2024-11 nonzero_months=1/95
+  limewash near me             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+
+[CA p4]
+  limewash                     2022= 30.1 2023= 42.4 2024= 56.2 2025= 74.1 2026= 78.5 peak=100@2026-01 nonzero_months=89/95
+  roman clay toronto           2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  microcement installer        2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  microcement contractor       2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  plaster contractor           2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.6 peak=7@2020-12 nonzero_months=2/95
+
+[CA p5]
+  limewash                     2022= 30.1 2023= 42.4 2024= 56.2 2025= 74.1 2026= 78.5 peak=100@2026-01 nonzero_months=89/95
+  limewash interior            2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.1 peak=8@2021-06 nonzero_months=2/95
+  limewash walls               2022=  0.0 2023=  0.0 2024=  4.3 2025=  3.5 2026=  5.4 peak=11@2026-02 nonzero_months=20/95
+  limewash fireplace           2022=  0.5 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.1 peak=6@2022-08 nonzero_months=2/95
+  limewash exterior            2022=  0.6 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=7@2022-03 nonzero_months=1/95
+
+[CA p6]
+  limewash                     2022= 30.1 2023= 42.4 2024= 56.2 2025= 74.1 2026= 78.5 peak=100@2026-01 nonzero_months=89/95
+  romabio                      2022=  0.5 2023=  0.5 2024=  0.0 2025=  2.2 2026=  1.3 peak=9@2019-03 nonzero_months=11/95
+  portola paints               2022=  0.4 2023=  0.6 2024=  0.0 2025=  1.2 2026=  1.4 peak=8@2026-01 nonzero_months=8/95
+  bauwerk                      2022=  1.4 2023=  1.0 2024=  0.9 2025=  2.8 2026=  0.6 peak=11@2025-07 nonzero_months=14/95
+  jh wall paints               2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.8 2026=  0.0 peak=10@2025-08 nonzero_months=1/95
+
+[CA-ON p1]
+  limewash toronto             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.6 peak=7@2026-10 nonzero_months=1/95
+  venetian plaster toronto     2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  microcement toronto          2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.5 peak=5@2026-10 nonzero_months=1/95
+  plasterer toronto            2022=  8.3 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=100@2022-06 nonzero_months=1/95
+  limewash painter             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  3.5 peak=39@2026-11 nonzero_months=1/95
+
+[CA-ON p2]
+  limewash                     2022= 36.7 2023= 48.7 2024= 62.8 2025= 74.9 2026= 75.5 peak=100@2026-01 nonzero_months=82/95
+  limewash painter             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.6 peak=7@2026-11 nonzero_months=1/95
+  venetian plaster contractor  2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  microcement installer        2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  venetian plaster toronto     2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+
+[CA-ON p3]
+  limewash                     2022= 36.7 2023= 48.7 2024= 62.8 2025= 74.9 2026= 75.5 peak=100@2026-01 nonzero_months=82/95
+  limewash contractor          2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  limewash painting            2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  1.3 peak=14@2026-03 nonzero_months=1/95
+  limewash services            2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  limewash near me             2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+
+[CA-ON p4]
+  limewash                     2022= 36.7 2023= 48.7 2024= 62.8 2025= 74.9 2026= 75.5 peak=100@2026-01 nonzero_months=82/95
+  roman clay toronto           2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  microcement installer        2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  microcement contractor       2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  plaster contractor           2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+
+[CA-ON p5]
+  limewash                     2022= 36.7 2023= 48.7 2024= 62.8 2025= 74.9 2026= 75.5 peak=100@2026-01 nonzero_months=82/95
+  limewash interior            2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.1 peak=1@2026-10 nonzero_months=1/95
+  limewash walls               2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  1.3 peak=13@2026-01 nonzero_months=2/95
+  limewash fireplace           2022=  0.0 2023=  1.5 2024=  0.0 2025=  1.2 2026=  0.1 peak=18@2023-12 nonzero_months=3/95
+  limewash exterior            2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+
+[CA-ON p6]
+  limewash                     2022= 36.7 2023= 48.7 2024= 62.8 2025= 74.9 2026= 75.5 peak=100@2026-01 nonzero_months=82/95
+  romabio                      2022=  0.0 2023=  1.2 2024=  0.0 2025=  2.6 2026=  0.9 peak=16@2025-08 nonzero_months=6/95
+  portola paints               2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+  bauwerk                      2022=  0.0 2023=  0.0 2024=  2.3 2025=  3.5 2026=  0.1 peak=16@2025-07 nonzero_months=6/95
+  jh wall paints               2022=  0.0 2023=  0.0 2024=  0.0 2025=  0.0 2026=  0.0 peak=0@2019-01 nonzero_months=0/95
+
+=== RELATED QUERIES (CA, 2024-01 to 2026-11) ===
+
+[RQ|limewash]
+  top:
+     {'query': 'limewash paint', 'value': 100}
+     {'query': 'limewash wall', 'value': 23}
+     {'query': 'limewash walls', 'value': 21}
+     {'query': 'brick limewash', 'value': 16}
+     {'query': 'limewash wallpaper', 'value': 11}
+     {'query': 'what is limewash', 'value': 9}
+     {'query': 'limewash fireplace', 'value': 9}
+     {'query': 'lime wash paint', 'value': 8}
+     {'query': 'romabio', 'value': 7}
+     {'query': 'romabio limewash', 'value': 7}
+     {'query': 'faux limewash', 'value': 6}
+     {'query': 'diy limewash', 'value': 6}
+     {'query': 'bauwerk limewash', 'value': 6}
+     {'query': 'sherwin williams limewash', 'value': 5}
+     {'query': 'limewash beige', 'value': 5}
+     {'query': 'limewash bathroom', 'value': 5}
+     {'query': 'limewash brush', 'value': 5}
+     {'query': 'faux limewash paint', 'value': 3}
+     {'query': 'venetian plaster', 'value': 2}
+  rising:
+     {'query': 'limewash beige', 'value': 250}
+     {'query': 'venetian plaster', 'value': 250}
+     {'query': 'limewash brush', 'value': 150}
+     {'query': 'faux limewash paint', 'value': 140}
+     {'query': 'faux limewash', 'value': 110}
+     {'query': 'limewash wallpaper', 'value': 70}
+     {'query': 'sherwin williams limewash', 'value': 60}
+
+[RQ|venetian plaster]
+  top:
+     {'query': 'venetian plaster walls', 'value': 100}
+     {'query': 'venetian plaster paint', 'value': 98}
+     {'query': 'venetian plaster wall', 'value': 94}
+     {'query': 'how to venetian plaster', 'value': 90}
+     {'query': 'venetian plaster fireplace', 'value': 81}
+     {'query': 'venetian plaster home depot', 'value': 54}
+     {'query': 'what is venetian plaster', 'value': 43}
+     {'query': 'venetian plaster texture', 'value': 25}
+     {'query': 'marmorino venetian plaster', 'value': 24}
+     {'query': 'microcement', 'value': 22}
+     {'query': 'modern masters venetian plaster', 'value': 17}
+     {'query': 'venetian plaster bathroom', 'value': 16}
+     {'query': 'black venetian plaster', 'value': 16}
+     {'query': 'venetian plaster wallpaper', 'value': 15}
+  rising:
+     {'query': 'microcement', 'value': 400}
+     {'query': 'venetian plaster texture', 'value': 90}
+     {'query': 'venetian plaster bathroom', 'value': 70}
+     {'query': 'what is venetian plaster', 'value': 60}
+     {'query': 'marmorino venetian plaster', 'value': 50}
+
+[RQ|microcement]
+  top:
+     {'query': 'microcement canada', 'value': 100}
+     {'query': 'microcement bathroom', 'value': 68}
+     {'query': 'microcement floor', 'value': 46}
+     {'query': 'microcement wall', 'value': 43}
+     {'query': 'microcement shower', 'value': 42}
+     {'query': 'what is microcement', 'value': 40}
+     {'query': 'micro cement', 'value': 37}
+     {'query': 'microcement kitchen', 'value': 25}
+     {'query': 'microcement countertop', 'value': 22}
+     {'query': 'microcement flooring', 'value': 22}
+     {'query': 'surecrete', 'value': 9}
+     {'query': 'microcement texture', 'value': 9}
+     {'query': 'venetian plaster', 'value': 9}
+     {'query': 'concretta microcement', 'value': 7}
+  rising:
+     {'query': 'surecrete', 'value': 125250}
+     {'query': 'microcement texture', 'value': 122700}
+     {'query': 'concretta microcement', 'value': 99400}
+     {'query': 'microcement wall', 'value': 600}
+     {'query': 'what is microcement', 'value': 170}
+     {'query': 'microcement kitchen', 'value': 90}
+     {'query': 'microcement shower', 'value': 90}
+
+[RQ|roman clay]
+  top:
+     {'query': 'roman clay paint', 'value': 100}
+     {'query': 'portola roman clay', 'value': 47}
+     {'query': 'roman clay wall', 'value': 46}
+     {'query': 'roman clay fireplace', 'value': 21}
+     {'query': 'portola paints roman clay', 'value': 18}
+     {'query': 'venetian plaster', 'value': 10}
+  rising:
+     {'query': 'roman clay paint', 'value': 60}
+
+[RQ|plaster walls]
+  top:
+     {'query': 'how to plaster walls', 'value': 100}
+     {'query': 'lath and plaster walls', 'value': 26}
+     {'query': 'asbestos plaster walls', 'value': 19}
+     {'query': 'venetian plaster walls', 'value': 18}
+     {'query': 'venetian plaster', 'value': 17}
+     {'query': 'how to paint plaster walls', 'value': 14}
+     {'query': 'asbestos in plaster walls', 'value': 12}
+     {'query': 'anchors for plaster walls', 'value': 11}
+     {'query': 'how to remove plaster walls', 'value': 10}
+     {'query': 'how to fix plaster walls', 'value': 9}
+     {'query': 'lime plaster walls', 'value': 9}
+     {'query': 'textured plaster walls', 'value': 8}
+     {'query': 'cracks in plaster walls', 'value': 7}
+     {'query': 'plaster walls vs drywall', 'value': 7}
+     {'query': 'how to patch plaster walls', 'value': 5}
+     {'query': 'clay plaster walls', 'value': 4}
+     {'query': 'stud finder for plaster walls', 'value': 4}
+     {'query': 'best anchors for plaster walls', 'value': 4}
+     {'query': 'screws for plaster walls', 'value': 4}
+     {'query': 'best stud finder for plaster walls', 'value': 2}
+     {'query': 'how to find studs in plaster walls', 'value': 2}
+     {'query': 'best screws for plaster walls', 'value': 1}
+     {'query': 'hanging things on plaster walls', 'value': 1}
+  rising:
+     {'query': 'how to find studs in plaster walls', 'value': 160}
+     {'query': 'hanging things on plaster walls', 'value': 150}
+     {'query': 'best stud finder for plaster walls', 'value': 90}
+     {'query': 'lime plaster walls', 'value': 70}
+     {'query': 'best screws for plaster walls', 'value': 70}
+     {'query': 'best anchors for plaster walls', 'value': 70}
+     {'query': 'clay plaster walls', 'value': 40}
+
+=== CITY / REGION (CA, Nov 2024 - Nov 2026) ===
+[CITY|limewash] {'Québec': 100, 'Manitoba': 97, 'British Columbia': 92, 'Ontario': 87, 'Alberta': 84, 'Saskatchewan': 83, 'Nova Scotia': 72, 'New Brunswick': 60, 'Newfoundland and Labrador': 39, 'Nunavut': 0, 'Northwest Territories': 0, 'Prince Edward Island': 0, 'Yukon Territory': 0}
+[REGION|limewash] {'Québec': 100, 'Manitoba': 97, 'British Columbia': 92, 'Ontario': 87, 'Alberta': 84, 'Saskatchewan': 83, 'Nova Scotia': 72, 'New Brunswick': 60, 'Newfoundland and Labrador': 39, 'Nunavut': 0, 'Northwest Territories': 0, 'Prince Edward Island': 0, 'Yukon Territory': 0}
+[CITY|microcement] {'British Columbia': 100, 'Ontario': 88, 'Alberta': 72, 'Manitoba': 62, 'Saskatchewan': 59, 'Québec': 56, 'Nova Scotia': 37, 'Newfoundland and Labrador': 0, 'New Brunswick': 0, 'Nunavut': 0, 'Northwest Territories': 0, 'Prince Edward Island': 0, 'Yukon Territory': 0}
+[REGION|microcement] {'British Columbia': 100, 'Ontario': 88, 'Alberta': 72, 'Manitoba': 62, 'Saskatchewan': 59, 'Québec': 56, 'Nova Scotia': 37, 'Newfoundland and Labrador': 0, 'New Brunswick': 0, 'Nunavut': 0, 'Northwest Territories': 0, 'Prince Edward Island': 0, 'Yukon Territory': 0}
+[CITY|venetian plaster] {'Manitoba': 100, 'Saskatchewan': 99, 'British Columbia': 89, 'Alberta': 86, 'Ontario': 79, 'New Brunswick': 53, 'Québec': 47, 'Nova Scotia': 41, 'Newfoundland and Labrador': 0, 'Nunavut': 0, 'Northwest Territories': 0, 'Prince Edward Island': 0, 'Yukon Territory': 0}
+[REGION|venetian plaster] {'Manitoba': 100, 'Saskatchewan': 99, 'British Columbia': 89, 'Alberta': 86, 'Ontario': 79, 'New Brunswick': 53, 'Québec': 47, 'Nova Scotia': 41, 'Newfoundland and Labrador': 0, 'Nunavut': 0, 'Northwest Territories': 0, 'Prince Edward Island': 0, 'Yukon Territory': 0}
+[CITY|roman clay] {'Prince Edward Island': 100, 'British Columbia': 29, 'Manitoba': 23, 'Alberta': 21, 'Ontario': 17, 'Québec': 11, 'New Brunswick': 0, 'Newfoundland and Labrador': 0, 'Northwest Territories': 0, 'Nunavut': 0, 'Nova Scotia': 0, 'Saskatchewan': 0, 'Yukon Territory': 0}
+[REGION|roman clay] {'Prince Edward Island': 100, 'British Columbia': 29, 'Manitoba': 23, 'Alberta': 21, 'Ontario': 17, 'Québec': 11, 'New Brunswick': 0, 'Newfoundland and Labrador': 0, 'Northwest Territories': 0, 'Nunavut': 0, 'Nova Scotia': 0, 'Saskatchewan': 0, 'Yukon Territory': 0}
+
+=== US / GB leading indicator batch (limewash anchored) ===
+
+[US|b1]
+  limewash             {2019: 14, 2020: 19, 2021: 23, 2022: 32, 2023: 39, 2024: 47, 2025: 56, 2026: 68} peak=100@2026-04 last3=56.5
+  microcement          {2019: 0, 2020: 2, 2021: 3, 2022: 4, 2023: 5, 2024: 12, 2025: 20, 2026: 25} peak=40@2026-04 last3=18.0
+  venetian plaster     {2019: 12, 2020: 13, 2021: 14, 2022: 16, 2023: 16, 2024: 16, 2025: 18, 2026: 20} peak=31@2026-04 last3=16.5
+  roman clay           {2019: 2, 2020: 3, 2021: 4, 2022: 7, 2023: 8, 2024: 10, 2025: 11, 2026: 16} peak=23@2026-04 last3=12.2
+  tadelakt             {2019: 1, 2020: 2, 2021: 3, 2022: 4, 2023: 4, 2024: 5, 2025: 5, 2026: 5} peak=7@2025-04 last3=4.0
+
+[GB|b1]
+  limewash             {2019: 14, 2020: 18, 2021: 22, 2022: 32, 2023: 45, 2024: 62, 2025: 76, 2026: 91} peak=100@2026-08 last3=95.5
+  microcement          {2019: 10, 2020: 14, 2021: 20, 2022: 25, 2023: 26, 2024: 42, 2025: 54, 2026: 64} peak=78@2026-08 last3=64.8
+  venetian plaster     {2019: 12, 2020: 23, 2021: 36, 2022: 34, 2023: 32, 2024: 28, 2025: 32, 2026: 28} peak=49@2021-03 last3=24.8
+  roman clay           {2019: 4, 2020: 4, 2021: 4, 2022: 4, 2023: 4, 2024: 6, 2025: 5, 2026: 7} peak=10@2023-01 last3=6.2
+  tadelakt             {2019: 6, 2020: 6, 2021: 6, 2022: 7, 2023: 7, 2024: 7, 2025: 7, 2026: 7} peak=10@2022-01 last3=6.8
+
+=== LIMEWASH MONTHLY CA (benchmark) ===
+2019-01-01      0
+2019-02-01     10
+2019-03-01      0
+2019-04-01      8
+2019-05-01      9
+2019-06-01      8
+2019-07-01     11
+2019-08-01      0
+2019-09-01      9
+2019-10-01      6
+2019-11-01      0
+2019-12-01      0
+2020-01-01      0
+2020-02-01      8
+2020-03-01      6
+2020-04-01      6
+2020-05-01     16
+2020-06-01     12
+2020-07-01     17
+2020-08-01     17
+2020-09-01     11
+2020-10-01     13
+2020-11-01     12
+2020-12-01     15
+2021-01-01     14
+2021-02-01     11
+2021-03-01     16
+2021-04-01     22
+2021-05-01     28
+2021-06-01     19
+2021-07-01     23
+2021-08-01     23
+2021-09-01     21
+2021-10-01     20
+2021-11-01     18
+2021-12-01     18
+2022-01-01     43
+2022-02-01     23
+2022-03-01     31
+2022-04-01     20
+2022-05-01     27
+2022-06-01     34
+2022-07-01     40
+2022-08-01     29
+2022-09-01     32
+2022-10-01     27
+2022-11-01     30
+2022-12-01     25
+2023-01-01     39
+2023-02-01     49
+2023-03-01     49
+2023-04-01     35
+2023-05-01     37
+2023-06-01     35
+2023-07-01     49
+2023-08-01     42
+2023-09-01     47
+2023-10-01     49
+2023-11-01     35
+2023-12-01     43
+2024-01-01     57
+2024-02-01     52
+2024-03-01     57
+2024-04-01     59
+2024-05-01     59
+2024-06-01     55
+2024-07-01     48
+2024-08-01     60
+2024-09-01     54
+2024-10-01     61
+2024-11-01     57
+2024-12-01     56
+2025-01-01     74
+2025-02-01     67
+2025-03-01     73
+2025-04-01     64
+2025-05-01     79
+2025-06-01     66
+2025-07-01     88
+2025-08-01     76
+2025-09-01     86
+2025-10-01     66
+2025-11-01     80
+2025-12-01     70
+2026-01-01    100
+2026-02-01     69
+2026-03-01     82
+2026-04-01     78
+2026-05-01     82
+2026-06-01     69
+2026-07-01     89
+2026-08-01     81
+2026-09-01     75
+2026-10-01     74
+2026-11-01     67
+
+=== MICROCEMENT MONTHLY CA ===
+2019-01-01      0
+2019-02-01      0
+2019-03-01      0
+2019-04-01      0
+2019-05-01      0
+2019-06-01      0
+2019-07-01      0
+2019-08-01      0
+2019-09-01      0
+2019-10-01      0
+2019-11-01      0
+2019-12-01      0
+2020-01-01      0
+2020-02-01      0
+2020-03-01      0
+2020-04-01      0
+2020-05-01      0
+2020-06-01      0
+2020-07-01      0
+2020-08-01      0
+2020-09-01     13
+2020-10-01      0
+2020-11-01      0
+2020-12-01      0
+2021-01-01     10
+2021-02-01      0
+2021-03-01     13
+2021-04-01      0
+2021-05-01      0
+2021-06-01     19
+2021-07-01      0
+2021-08-01      0
+2021-09-01     15
+2021-10-01      0
+2021-11-01      0
+2021-12-01      0
+2022-01-01     16
+2022-02-01      0
+2022-03-01     17
+2022-04-01     20
+2022-05-01     19
+2022-06-01     14
+2022-07-01     18
+2022-08-01     19
+2022-09-01     17
+2022-10-01     16
+2022-11-01     16
+2022-12-01     16
+2023-01-01     22
+2023-02-01     24
+2023-03-01     27
+2023-04-01     19
+2023-05-01     22
+2023-06-01     26
+2023-07-01     20
+2023-08-01     26
+2023-09-01     28
+2023-10-01     20
+2023-11-01     15
+2023-12-01     21
+2024-01-01     30
+2024-02-01     37
+2024-03-01     35
+2024-04-01     32
+2024-05-01     30
+2024-06-01     45
+2024-07-01     28
+2024-08-01     53
+2024-09-01     42
+2024-10-01     50
+2024-11-01     58
+2024-12-01     41
+2025-01-01     58
+2025-02-01     55
+2025-03-01     45
+2025-04-01     58
+2025-05-01     65
+2025-06-01     40
+2025-07-01     46
+2025-08-01     38
+2025-09-01     40
+2025-10-01     67
+2025-11-01     89
+2025-12-01     65
+2026-01-01     91
+2026-02-01     93
+2026-03-01    100
+2026-04-01     79
+2026-05-01     63
+2026-06-01     78
+2026-07-01     56
+2026-08-01     69
+2026-09-01     59
+2026-10-01     54
+2026-11-01     52
